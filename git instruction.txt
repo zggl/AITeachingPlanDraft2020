@@ -1,7 +1,22 @@
-1) cd "M:\快盘\我的在线文档(从WPS在线文档迁移)\0020 人工智能课程-研究生\人工智能导论tex"
+1) cd "M:\xxxx\人工智能导论tex"
 
 dir
 
 2) git init  
 
-3) git add .    
+3) git config --global core.autocrlf false
+
+
+4) git add .    
+
+ git config --global user.email "xxxx@gmail.com"
+
+git config --global user.name "yyyy"
+
+5) git commit -m '人工智能教案'
+
+6)  git remote add origin https://github.com/zggl/AITeachingPlanDraft2020/
+
+git pull --rebase origin master
+
+7）git push -u origin master
