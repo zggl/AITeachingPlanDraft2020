@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  13 FEB 2020 11:48
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  21 FEB 2020 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8827,11 +8827,15 @@ LaTeX Warning: Empty bibliography on input line 125.
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
-(./AIMaster2020.aux (./tex/preface.aux) (./tex/overview.aux)
-(./tex/chapter1.aux) (./tex/chapter2.aux) (./tex/chapter3.aux)
-(./tex/chapter4.aux) (./tex/chapter5.aux) (./tex/chapter6.aux)
-(./tex/chapter7.aux) (./tex/chapter8.aux) (./tex/chapter9.aux)
-(./tex/chapter10.aux) (./tex/chapter11.aux))
+(./AIMaster2020.aux
+
+Package pdfbase Warning: Rerun to get internal references right!
+
+(./tex/preface.aux) (./tex/overview.aux) (./tex/chapter1.aux)
+(./tex/chapter2.aux) (./tex/chapter3.aux) (./tex/chapter4.aux)
+(./tex/chapter5.aux) (./tex/chapter6.aux) (./tex/chapter7.aux)
+(./tex/chapter8.aux) (./tex/chapter9.aux) (./tex/chapter10.aux)
+(./tex/chapter11.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 129.
 
@@ -8854,10 +8858,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97112 strings out of 492922
- 2323402 string characters out of 6136750
- 2940536 words of memory out of 5000000
- 98197 multiletter control sequences out of 15000+600000
+ 97113 strings out of 492922
+ 2323423 string characters out of 6136750
+ 2940553 words of memory out of 5000000
+ 98198 multiletter control sequences out of 15000+600000
  740440 words of font info for 387 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,23n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
