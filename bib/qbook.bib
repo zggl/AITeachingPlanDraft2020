@@ -1,0 +1,554 @@
+%# -*- coding: utf-8-unix -*-
+% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addtolength{\itemsep}{-1.5ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{raecompressive2019,
+author = {Rae, Jack W and Potapenko, Anna and Jayakumar, Siddhant M and
+          Hillier, Chloe and Lillicrap, Timothy P},
+title = {Compressive Transformers for Long-Range Sequence Modelling},
+journal = {arXiv preprint},
+url = {https://arxiv.org/abs/1911.05507},
+year = {2019},
+}
+
+@inproceedings{glorot2011,
+  title={Deep sparse rectifier neural networks},
+  author={Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
+  booktitle={Proceedings of the fourteenth international conference on artificial intelligence and statistics},
+  pages={315--323},
+  year={2011}
+}
+
+@article{BradCarlile2017,
+  author    = {Brad Carlile and
+               Guy Delamarter and
+               Paul Kinney and
+               Akiko Marti and
+               Brian Whitney},
+  title     = {Improving Deep Learning by Inverse Square Root Linear Units (ISRLUs)},
+  journal   = {CoRR},
+  volume    = {abs/1710.09967},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1710.09967},
+  archivePrefix = {arXiv},
+  eprint    = {1710.09967},
+  timestamp = {Mon, 13 Aug 2018 16:47:06 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1710-09967},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{hendrycks2016gelu,
+  title={Gaussian Error Linear Units (GELUs)},
+  author={Hendrycks, Dan and Gimpel, Kevin},
+  journal={arXiv preprint arXiv:1606.08415},
+  year={2016}
+}
+
+@article{DabneyKurth-Nelson2020-9599,
+   Author = {Dabney, Will and Kurth-Nelson, Zeb and Uchida, Naoshige and Starkweather, Clara Kwon and Hassabis, Demis and Munos, Rémi and Botvinick, Matthew},
+   Title = {A distributional code for value in dopamine-based reinforcement learning},
+   Journal = {Nature},
+   Volume = {577},
+   Number = {7792},
+   Pages = {671-675},
+   DOI = {10.1038/s41586-019-1924-6},
+   Abstract = {Since its introduction, the reward prediction error theory of dopamine has explained a wealth of empirical phenomena, providing a unifying framework for understanding the representation of reward and value in the brain1–3. According to the now canonical theory, reward predictions are represented as a single scalar quantity, which supports learning about the expectation, or mean, of stochastic outcomes. Here we propose an account of dopamine-based reinforcement learning inspired by recent artificial intelligence research on distributional reinforcement learning4–6. We hypothesized that the brain represents possible future rewards not as a single mean, but instead as a probability distribution, effectively representing multiple future outcomes simultaneously and in parallel. This idea implies a set of empirical predictions, which we tested using single-unit recordings from mouse ventral tegmental area. Our findings provide strong evidence for a neural realization of distributional reinforcement learning.},
+   Year = {2020} }
+
+@inproceedings{Long2015-9593,
+   Author = {J. Long and E. Shelhamer and T. Darrell},
+   Title = {Fully convolutional networks for semantic segmentation},
+   BookTitle = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   Series= {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   Pages = {3431-3440},
+   Abstract = {Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic segmentation. Our key insight is to build “fully convolutional” networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet [20], the VGG net [31], and GoogLeNet [32]) into fully convolutional networks and transfer their learned representations by fine-tuning [3] to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional network achieves state-of-the-art segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU on 2012), NYUDv2, and SIFT Flow, while inference takes less than one fifth of a second for a typical image.},
+   Keywords = {image classification; image segmentation; inference mechanisms; learning (artificial intelligence); fully convolutional networks; semantic segmentation; visual models; pixels-to-pixels; inference; learning; contemporary classification networks; PASCAL VOC; NYUDv2; SIFT flow; Semantics; Training; Convolution; Image segmentation; Computer architecture; Deconvolution; Adaptation models},
+   Year = {2015} }
+
+@INPROCEEDINGS{Piramanayagam2018-9591,
+   Author = {Piramanayagam, Sankaranarayanan and Saber, Eli and Schwartzkopf, Wade and Koehler, W. Frederick},
+   Title = {Supervised Classification of Multisensor Remotely Sensed Images Using a Deep Learning Framework},
+   Volume = {10},
+   Month = {2018},
+   journal={Remote Sensing — Open Access Journal},
+   Abstract = {In this paper, we present a convolutional neural network (CNN)-based method to efficiently combine information from multisensor remotely sensed images for pixel-wise semantic classification. The CNN features obtained from multiple spectral bands are fused at the initial layers of deep neural networks as opposed to final layers. The early fusion architecture has fewer parameters and thereby reduces the computational time and GPU memory during training and inference. We also propose a composite fusion architecture that fuses features throughout the network. The methods were validated on four different datasets: ISPRS Potsdam, Vaihingen, IEEE Zeebruges and Sentinel-1, Sentinel-2 dataset. For the Sentinel-1,-2 datasets, we obtain the ground truth labels for three classes from OpenStreetMap. Results on all the images show early fusion, specifically after layer three of the network, achieves results similar to or better than a decision level fusion mechanism. The performance of the proposed architecture is also on par with the state-of-the-art results.},
+   Keywords = {image classification; deep learning; multisensor data; sentinel data},
+   ISBN = {2072-4292
+},
+   Year = {2018} }
+
+@incollection{NIPS2015-5850,
+title = {Training Very Deep Networks},
+author = {Srivastava, Rupesh K and Greff, Klaus and Schmidhuber, J\"{u}rgen},
+booktitle = {Advances in Neural Information Processing Systems 28},
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+pages = {2377--2385},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5850-training-very-deep-networks.pdf}
+}
+
+@inproceedings{HeCVPR2016-9590,
+   Author = {K. He and X. Zhang and S. Ren and J. Sun},
+   Title = {Deep Residual Learning for Image Recognition},
+   BookTitle = {2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   Series= {2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   Pages = {770-778},
+   Abstract = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+   Keywords = {image classification; learning (artificial intelligence); neural nets; object detection; COCO segmentation; ImageNet localization; ILSVRC & COCO 2015 competitions; deep residual nets; COCO object detection dataset; visual recognition tasks; CIFAR-10; ILSVRC 2015 classification task; ImageNet test set; VGG nets; residual nets; ImageNet dataset; residual function learning; deeper neural network training; image recognition; deep residual learning; Training; Degradation; Complexity theory; Image recognition; Neural networks; Visualization; Image segmentation},
+   Year = {2016} }
+
+@article{Hinton2006-9587,
+   Author = {Hinton, G. E. and Salakhutdinov, R. R.},
+   Title = {Reducing the Dimensionality of Data with Neural Networks},
+   Journal = {Science},
+   Volume = {313},
+   Number = {5786},
+   Pages = {504},
+   DOI = {10.1126/science.1127647},
+   Abstract = {High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors. Gradient descent can be used for fine-tuning the weights in such “autoencoder” networks, but this works well only if the initial weights are close to a good solution. We describe an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data.},
+   Year = {2006} }
+
+@article{HochreiterNC1997,
+author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+title = {Long Short-Term Memory},
+journal = {Neural Computation},
+volume = {9},
+number = {8},
+pages = {1735-1780},
+year = {1997},
+doi = {10.1162/neco.1997.9.8.1735},
+abstract = { Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms. }
+}
+
+@InProceedings{MahonyCVC2019,
+author="O'Mahony, Niall
+and Campbell, Sean
+and Carvalho, Anderson
+and Harapanahalli, Suman
+and Hernandez, Gustavo Velasco
+and Krpalkova, Lenka
+and Riordan, Daniel
+and Walsh, Joseph",
+editor="Arai, Kohei
+and Kapoor, Supriya",
+title="Deep Learning vs. Traditional Computer Vision",
+booktitle="Advances in Computer Vision",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="128--144",
+abstract="Deep Learning has pushed the limits of what was possible in the domain of Digital Image Processing. However, that is not to say that the traditional computer vision techniques which had been undergoing progressive development in years prior to the rise of DL have become obsolete. This paper will analyse the benefits and drawbacks of each approach. The aim of this paper is to promote a discussion on whether knowledge of classical computer vision techniques should be maintained. The paper will also explore how the two sides of computer vision can be combined. Several recent hybrid methodologies are reviewed which have demonstrated the ability to improve computer vision performance and to tackle problems not suited to Deep Learning. For example, combining traditional computer vision techniques with Deep Learning has been popular in emerging domains such as Panoramic Vision and 3D vision for which Deep Learning models have not yet been fully optimised.",
+isbn="978-3-030-17795-9"
+}
+
+@InProceedings{Rosten2006,
+author="Rosten, Edward
+and Drummond, Tom",
+editor="Leonardis, Ale{\v{s}}
+and Bischof, Horst
+and Pinz, Axel",
+title="Machine Learning for High-Speed Corner Detection",
+booktitle="Computer Vision -- ECCV 2006",
+year="2006",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="430--443",
+abstract="Where feature points are used in real-time frame-rate applications, a high-speed feature detector is necessary. Feature detectors such as SIFT (DoG), Harris and SUSAN are good methods which yield high quality features, however they are too computationally intensive for use in real-time applications of any complexity. Here we show that machine learning can be used to derive a feature detector which can fully process live PAL video using less than 7{\%} of the available processing time. By comparison neither the Harris detector (120{\%}) nor the detection stage of SIFT (300{\%}) can operate at full frame rate.",
+isbn="978-3-540-33833-8"
+}
+
+
+@article{Goldenshluger2004,
+title = "The Hough transform estimator",
+journal = "Ann. Statist.",
+volume = "32",
+pages = "1908--1932",
+year = "2004",
+author = "Goldenshluger, Alexander and Zeevi, Assaf. ",}
+
+@article{WANG2018144,
+title = "Deep learning for smart manufacturing: Methods and applications",
+journal = "Journal of Manufacturing Systems",
+volume = "48",
+pages = "144 - 156",
+year = "2018",
+note = "Special Issue on Smart Manufacturing",
+issn = "0278-6125",
+doi = "https://doi.org/10.1016/j.jmsy.2018.01.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0278612518300037",
+author = "Jinjiang Wang and Yulin Ma and Laibin Zhang and Robert X. Gao and Dazhong Wu",
+keywords = "Smart manufacturing, Deep learning, Computational intelligence, Data analytics",
+abstract = "Smart manufacturing refers to using advanced data analytics to complement physical science for improving system performance and decision making. With the widespread deployment of sensors and Internet of Things, there is an increasing need of handling big manufacturing data characterized by high volume, high velocity, and high variety. Deep learning provides advanced analytics tools for processing and analysing big manufacturing data. This paper presents a comprehensive survey of commonly used deep learning algorithms and discusses their applications toward making manufacturing “smart”. The evolvement of deep learning technologies and their advantages over traditional machine learning are firstly discussed. Subsequently, computational methods based on deep learning are presented specially aim to improve system performance in manufacturing. Several representative deep learning models are comparably discussed. Finally, emerging topics of research on deep learning are highlighted, and future trends and challenges associated with deep learning for smart manufacturing are summarized."
+}
+
+
+@article{BouraouiKR2019,
+title = "From Shallow to Deep Interactions Between Knowledge Representation, Reasoning and Machine Learning (Kay R. Amel group)",
+author = "Zied Bouraoui, Antoine Cornuéjols, Thierry Denœux, Sébastien Destercke, Didier Dubois, Romain Guillaume, João Marques-Silva, Jérôme Mengin, Henri Prade, Steven Schockaert, Mathieu Serrurier, Christel Vrain",
+volume = "",
+pages = "",
+year = "2019",
+journal={},
+abstract = "This paper proposes a tentative and original survey of meeting points between Knowledge Representation and Reasoning (KRR) and Machine Learning (ML), two areas which have been developing quite separately in the last three decades. Some common concerns are identified and discussed such as the types of used representation, the roles of knowledge and data, the lack or the excess of information, or the need for explanations and causal understanding. Then some methodologies combining reasoning and learning are reviewed (such as inductive logic programming, neuro-symbolic reasoning, formal concept analysis, rule-based representations and ML, uncertainty in ML, or case-based reasoning and analogical reasoning), before discussing examples of synergies between KRR and ML (including topics such as belief functions on regression, EM algorithm versus revision, the semantic description of vector representations, the combination of deep learning with high level inference, knowledge graph completion, declarative frameworks for data mining, or preferences and recommendation). This paper is the first step of a work in progress aiming at a better mutual understanding of research in KRR and ML, and how they could cooperate.
+"
+}
+
+@article{Raissi2017,
+title = "Machine learning of linear differential equations using Gaussian processes",
+journal = "Journal of Computational Physics",
+volume = "348",
+pages = "683 - 693",
+year = "2017",
+issn = "0021-9991",
+doi = "https://doi.org/10.1016/j.jcp.2017.07.050",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999117305582",
+author = "Maziar Raissi and Paris Perdikaris and George Em Karniadakis",
+keywords = "Probabilistic machine learning, Inverse problems, Fractional differential equations, Uncertainty quantification, Functional genomics",
+abstract = "This work leverages recent advances in probabilistic machine learning to discover governing equations expressed by parametric linear operators. Such equations involve, but are not limited to, ordinary and partial differential, integro-differential, and fractional order operators. Here, Gaussian process priors are modified according to the particular form of such operators and are employed to infer parameters of the linear equations from scarce and possibly noisy observations. Such observations may come from experiments or “black-box” computer simulations, as demonstrated in several synthetic examples and a realistic application in functional genomics."
+}
+
+@article{Sirignano2018,
+title = "{DGM}: A deep learning algorithm for solving partial differential equations",
+journal = "Journal of Computational Physics",
+volume = "375",
+pages = "1339 - 1364",
+year = "2018",
+issn = "0021-9991",
+doi = "https://doi.org/10.1016/j.jcp.2018.08.029",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999118305527",
+author = "Justin Sirignano and Konstantinos Spiliopoulos",
+keywords = "Partial differential equations, Machine learning, Deep learning, High-dimensional partial differential equations",
+abstract = "High-dimensional PDEs have been a longstanding computational challenge. We propose to solve high-dimensional PDEs by approximating the solution with a deep neural network which is trained to satisfy the differential operator, initial condition, and boundary conditions. Our algorithm is meshfree, which is key since meshes become infeasible in higher dimensions. Instead of forming a mesh, the neural network is trained on batches of randomly sampled time and space points. The algorithm is tested on a class of high-dimensional free boundary PDEs, which we are able to accurately solve in up to 200 dimensions. The algorithm is also tested on a high-dimensional Hamilton–Jacobi–Bellman PDE and Burgers' equation. The deep learning algorithm approximates the general solution to the Burgers' equation for a continuum of different boundary conditions and physical conditions (which can be viewed as a high-dimensional space). We call the algorithm a “Deep Galerkin Method (DGM)” since it is similar in spirit to Galerkin methods, with the solution approximated by a neural network instead of a linear combination of basis functions. In addition, we prove a theorem regarding the approximation power of neural networks for a class of quasilinear parabolic PDEs."
+}
+
+@article {Han2018PNAS,
+	author = {Han, Jie Qun and Jentzen, Arnulf and E Weinan},
+	title = {Solving high-dimensional partial differential equations using deep learning},
+	volume = {115},
+	number = {34},
+	pages = {8505--8510},
+	year = {2018},
+	doi = {10.1073/pnas.1718942115},
+	publisher = {National Academy of Sciences},
+	abstract = {Partial differential equations (PDEs) are among the most ubiquitous tools used in modeling problems in nature. However, solving high-dimensional PDEs has been notoriously difficult due to the {\textquotedblleft}curse of dimensionality.{\textquotedblright} This paper introduces a practical algorithm for solving nonlinear PDEs in very high (hundreds and potentially thousands of) dimensions. Numerical results suggest that the proposed algorithm is quite effective for a wide variety of problems, in terms of both accuracy and speed. We believe that this opens up a host of possibilities in economics, finance, operational research, and physics, by considering all participating agents, assets, resources, or particles together at the same time, instead of making ad hoc assumptions on their interrelationships.Developing algorithms for solving high-dimensional partial differential equations (PDEs) has been an exceedingly difficult task for a long time, due to the notoriously difficult problem known as the {\textquotedblleft}curse of dimensionality.{\textquotedblright} This paper introduces a deep learning-based approach that can handle general high-dimensional parabolic PDEs. To this end, the PDEs are reformulated using backward stochastic differential equations and the gradient of the unknown solution is approximated by neural networks, very much in the spirit of deep reinforcement learning with the gradient acting as the policy function. Numerical results on examples including the nonlinear Black{\textendash}Scholes equation, the Hamilton{\textendash}Jacobi{\textendash}Bellman equation, and the Allen{\textendash}Cahn equation suggest that the proposed algorithm is quite effective in high dimensions, in terms of both accuracy and cost. This opens up possibilities in economics, finance, operational research, and physics, by considering all participating agents, assets, resources, or particles together at the same time, instead of making ad hoc assumptions on their interrelationships.},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/115/34/8505},
+	eprint = {https://www.pnas.org/content/115/34/8505.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@INPROCEEDINGS{Long2015,
+author={Ming sheng Long and Yue Cao and Jian min Wang and Michael Jordan},
+booktitle={International Conference on Machine Learning},
+title={Learning transferable features with deep adaptation networks},
+year={2015},
+pages={97–105},
+}
+
+@INPROCEEDINGS{Zhang2017,
+author={Y. {Zhang} and P. {David} and B. {Gong}},
+booktitle={2017 IEEE International Conference on Computer Vision (ICCV)},
+title={Curriculum Domain Adaptation for Semantic Segmentation of Urban Scenes},
+year={2017},
+volume={},
+number={},
+pages={2039-2049},
+abstract={During the last half decade, convolutional neural networks (CNNs) have triumphed over semantic segmentation, which is a core task of various emerging industrial applications such as autonomous driving and medical imaging. However, to train CNNs requires a huge amount of data, which is difficult to collect and laborious to annotate. Recent advances in computer graphics make it possible to train CNN models on photo-realistic synthetic data with computer-generated annotations. Despite this, the domain mismatch between the real images and the synthetic data significantly decreases the models' performance. Hence we propose a curriculum-style learning approach to minimize the domain gap in semantic segmentation. The curriculum domain adaptation solves easy tasks first in order to infer some necessary properties about the target domain; in particular, the first task is to learn global label distributions over images and local distributions over landmark superpixels. These are easy to estimate because images of urban traffic scenes have strong idiosyncrasies (e.g., the size and spatial relations of buildings, streets, cars, etc.). We then train the segmentation network in such a way that the network predictions in the target domain follow those inferred properties. In experiments, our method significantly outperforms the baselines as well as the only known existing approach to the same problem.},
+keywords={computer graphics;convolution;image classification;image segmentation;learning (artificial intelligence);neural nets;traffic engineering computing;curriculum domain adaptation;semantic segmentation;urban scenes;convolutional neural networks;CNNs;computer graphics;CNN models;urban traffic scenes;segmentation network;computer-generated annotations;curriculum-style learning;Image segmentation;Semantics;Training;Adaptation models;Computer vision;Buildings},
+doi={10.1109/ICCV.2017.223},
+ISSN={2380-7504},
+month={Oct},}
+
+@INPROCEEDINGS{Ghifary2015,
+author={M. {Ghifary} and W. B. {Kleijn} and M. {Zhang} and D. {Balduzzi}},
+booktitle={2015 IEEE International Conference on Computer Vision (ICCV)},
+title={Domain Generalization for Object Recognition with Multi-task Autoencoders},
+year={2015},
+volume={},
+number={},
+pages={2551-2559},
+abstract={The problem of domain generalization is to take knowledge acquired from a number of related domains, where training data is available, and to then successfully apply it to previously unseen domains. We propose a new feature learning algorithm, Multi-Task Autoencoder (MTAE), that provides good generalization performance for cross-domain object recognition. The algorithm extends the standard denoising autoencoder framework by substituting artificially induced corruption with naturally occurring inter-domain variability in the appearance of objects. Instead of reconstructing images from noisy versions, MTAE learns to transform the original image into analogs in multiple related domains. It thereby learns features that are robust to variations across domains. The learnt features are then used as inputs to a classifier. We evaluated the performance of the algorithm on benchmark image recognition datasets, where the task is to learn features from multiple datasets and to then predict the image label from unseen datasets. We found that (denoising) MTAE outperforms alternative autoencoder-based models as well as the current state-of-the-art algorithms for domain generalization.},
+keywords={image denoising;learning (artificial intelligence);object recognition;domain generalization;multitask autoencoder;feature learning algorithm;cross-domain object recognition;standard denoising autoencoder;MTAE;image recognition;Training;Object recognition;Noise reduction;Feature extraction;Standards;Robustness;Image reconstruction},
+doi={10.1109/ICCV.2015.293},
+ISSN={2380-7504},
+month={Dec},}
+
+@INPROCEEDINGS{Long2015CVPR,
+author={Jonathan Long and Evan Shelhamer and Trevor Darrell},
+title={Fully convolutional networks for semantic segmentation},
+booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+pages={3431– 3440},
+pages={2015}
+}
+
+@INPROCEEDINGS{GoodfellowGAN2014,
+author={Ian Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and SherjilOzair, Aaron Courville and Yoshua Bengio},
+title={Generative adversarial nets},
+booktitle={In Advances in Neural Information Processing Systems},
+pages={2672–2680},
+pages={2014}
+}
+
+@INPROCEEDINGS{ZhuPark20178237506,
+author={J. {Zhu} and T. {Park} and P. {Isola} and A. A. {Efros}},
+booktitle={2017 IEEE International Conference on Computer Vision (ICCV)},
+title={Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks},
+year={2017},
+volume={},
+number={},
+pages={2242-2251},
+abstract={Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. However, for many tasks, paired training data will not be available. We present an approach for learning to translate an image from a source domain X to a target domain Y in the absence of paired examples. Our goal is to learn a mapping G : X → Y such that the distribution of images from G(X) is indistinguishable from the distribution Y using an adversarial loss. Because this mapping is highly under-constrained, we couple it with an inverse mapping F : Y → X and introduce a cycle consistency loss to push F(G(X)) ≈ X (and vice versa). Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc. Quantitative comparisons against several prior methods demonstrate the superiority of our approach.},
+keywords={computer vision;learning (artificial intelligence);cycle consistency loss;unpaired image-to-image translation;inverse mapping;image pair alignment;cycle-consistent adversarial networks;vision problem;graphics problem;learning;image distribution;adversarial loss;object transfiguration;collection style transfer;photo enhancement;Training;Painting;Training data;Semantics;Extraterrestrial measurements;Graphics},
+doi={10.1109/ICCV.2017.244},
+ISSN={2380-7504},
+month={Oct},}
+
+@ARTICLE{Adhikari-2019,
+AUTHOR={Adhikari, Shyam Prasad and Yang, Heechan and Kim, Hyongsuk},	
+TITLE={Learning Semantic Graphics Using Convolutional Encoder–Decoder Network for Autonomous Weeding in Paddy},	
+JOURNAL={Frontiers in Plant Science},	
+VOLUME={10},
+PAGES={1404},	
+YEAR={2019},	
+URL={https://www.frontiersin.org/article/10.3389/fpls.2019.01404},	
+DOI={10.3389/fpls.2019.01404},	
+ISSN={1664-462X},
+ABSTRACT={Weeds in agricultural farms are aggressive growers which compete for nutrition and other resources with the crop and reduce production. The increasing use of chemicals to control them has inadvertent consequences to the human health and the environment. In this work, a novel neural network training method combining semantic graphics for data annotation and an advanced encoder–decoder network for (a) automatic crop line detection and (b) weed (wild millet) detection in paddy fields is proposed. The detected crop lines act as a guiding line for an autonomous weeding robot for inter-row weeding, whereas the detection of weeds enables autonomous intra-row weeding. The proposed data annotation method, semantic graphics, is intuitive, and the desired targets can be annotated easily with minimal labor. Also, the proposed “extended skip network” is an improved deep convolutional encoder–decoder neural network for efficient learning of semantic graphics. Quantitative evaluations of the proposed method demonstrated an increment of 6.29% and 6.14% in mean intersection over union (mIoU), over the baseline network on the task of paddy line detection and wild millet detection, respectively. The proposed method also leads to a 3.56% increment in mIoU and a significantly higher recall compared to a popular bounding box-based object detection approach on the task of wild–millet detection.}
+}
+
+@article{RumelhartHinton1986-9415,
+   Author = {Rumelhart, David E. and Hinton, Geoffrey E. and Williams, Ronald J.},
+   Title = {Learning representations by back-propagating errors},
+   Journal = {Nature},
+   Volume = {323},
+   Number = {6088},
+   Pages = {533-536},
+   DOI = {10.1038/323533a0},
+   Abstract = {We describe a new learning procedure, back-propagation, for networks of neurone-like units. The procedure repeatedly adjusts the weights of the connections in the network so as to minimize a measure of the difference between the actual output vector of the net and the desired output vector. As a result of the weight adjustments, internal ‘hidden’ units which are not part of the input or output come to represent important features of the task domain, and the regularities in the task are captured by the interactions of these units. The ability to create useful new features distinguishes back-propagation from earlier, simpler methods such as the perceptron-convergence procedure1.},
+   Year = {1986} }
+
+@mastersthesis{江欢 2009全蕴涵三Ⅰ算法,
+author={江欢},
+title={模糊推理中CRI算法与全蕴涵三Ⅰ算法的等价性研究},
+school={西南大学},
+year={2009},
+type={硕士论文}
+}
+
+@book{Wegman1988Signal,
+AUTHOR =  {S. A. Kassam },
+    TITLE =        {Signal Detection in Non-Gaussian Noise},
+    PUBLISHER =    {Springer-Verlag},
+    YEAR =         {1988},
+    address=       {New York}
+}
+
+@book{SMKay1998FundamentalSSP,
+    AUTHOR =       {S. M. Kay},
+    TITLE =        {Fundamentals of Statistical Signal Processing},
+    PUBLISHER =    {Prentice-Hall},
+    YEAR =         {1998},
+    address=       {Upper Saddle River, New Jersey},
+}
+@book{CoverThomas1991EIT,
+    AUTHOR =       {T.~M.~Cover and J.~A~Thomas},
+    TITLE =        {Elements of Information Theory},
+    PUBLISHER =    {Wiley},
+    YEAR =         {1991},
+    address=       {New York}
+}
+
+@article {EK85,
+	AUTHOR = {Ed Turner and Karen Gold},
+	TITLE = {Rubik's groups},
+	JOURNAL = {\textbf{\textit{American Mathematical Monthly}}},
+	VOLUME = {92},
+	NUMBER = {9},
+	PAGES = {617-629},
+	YEAR = {1985}
+}
+
+@article {G03,
+	AUTHOR = {Gabriel Navarro},
+	TITLE = {On the fundamental theorem of finite abelian groups},
+	JOURNAL = {\textbf{\textit{American Mathematical Monthly}}},
+	VOLUME = {110},
+	NUMBER = {2},
+	PAGES = {153-154},
+	YEAR = {2003}
+}
+
+@article {G64,
+	AUTHOR = {Gert Sabidussi},
+	TITLE = {Vertex-transitive graphs},
+	JOURNAL = {\textbf{\textit{Monatshefte fur Mathematik}}},
+	VOLUME = {68},
+	NUMBER = {5},
+	PAGES = {426-438},
+	YEAR = {1964}
+}
+
+@article {BDC64,
+	AUTHOR = { B.A. Kennedy and D.A. McQuarrie and Jr,C.H. Brubaker },
+	TITLE = {Group theory and isomerism},
+	JOURNAL = {\textbf{\textit{Inorganic Chemistry}}},
+	VOLUME = {3},
+	NUMBER = {2},
+	PAGES = {265-268},
+	YEAR = {1964}
+}
+
+@book{U05,
+	title = {\textbf{\textit{International Tables for Crystallography}}},
+	publisher = {Springer},
+	year = {2005},
+	edition   = {5th edition},
+	author = { Uri Shmueli},
+	volume={  A}
+}
+
+@book{D65,
+	title = {\textbf{\textit{Molecular Symmetry}}},
+	publisher = {D. Van Nostrand},
+	year = {1965},
+	adress={London},
+	author = { David S. Schonland}
+}
+
+@book{ST69,
+	title = {\textbf{\textit{Theory of Groups and its Application to
+	Physical Problems}}},
+	publisher = { Academic Press},
+	year = {1969},
+	author = {S. Bhagavantam and T. Venkatarayudu},
+	address={ New York}
+}
+
+@book{D07,
+	title = {\textbf{\textit{Music: a Mathematical Offering}}},
+	publisher = { Cambridge University Press},
+	year = {2007},
+	author = { David J. Benson},
+	address={Cambridge CB2 2RU, UK}
+}
+
+@book{C78,
+	title = {\textbf{\textit{Field Theory and its Classic Problems}}},
+	publisher = {Mathematical Association of America},
+	year = {1978},
+	author = {  Charles Robert Hadlock},
+	series={Number 19 in
+	Carus Mathematical Monographs}
+}
+
+@book{WI64,
+	title = {\textbf{\textit{ Groups and their Graphs}}},
+	publisher = {Mathematical Association of America},
+	year = {1964},
+	author = {  Wilhelm Magnus and Israel Grossman},
+	series={Anneli Lax New
+	Mathematical Library}
+}
+
+@book{HBE02,
+	title = {The SmallGroups library
+	—— a GAP package},
+	year = {2002},
+	author = { Hans Ulrich Besche and Bettina Eick and Eamonn O'Brien}
+}
+
+@book{JS03,
+	title = {Classification of finite abelian groups},
+	publisher={ Course notes available on
+	the World Wide Web},
+	year = {2003},
+	author = { John M. Sullivan}
+}
+
+@book{P88,
+	title = {\textbf{\textit{Group representations in probability and statistics}}},
+	publisher = { Academic Press},
+	year = {1988},
+	author = { Persi Diaconis},
+	address={ Institute of Mathe-
+	matical Statistics, Hayward, CA},
+	series={Institute of
+	Mathematical Statistics Lecture Notes——Monograph Series,11}
+	
+}
+
+
+
+@online {J05,
+	AUTHOR = {Jonathan Goss},
+	TITLE = {Point group symmetry},
+	URL = {www.phys.ncl.ac.uk/staff/njpg/symmetry/},
+	YEAR = {2005}
+	
+}
+
+@online {L03,
+	AUTHOR = {Larry Copes},
+	TITLE = {Representations of contra dance moves},
+	URL = { www.edmath.org/copes/contra/representations.html},
+	YEAR = {2003}
+	
+}
+
+@online {I03,
+	AUTHOR = { Ivars Peterson},
+	TITLE = { Contra dances, matrices, and groups},
+	URL = {www.sciencenews.org/articles/20030308/mathtrek.asp},
+	YEAR = {2003}
+	
+}
+
+
+@book{M91,
+	author = {Michael Artin},
+	title = { \textbf{\textit{Algebra}}},
+	publisher = {Prentice Hall},
+	address = { Englewood Cliffs, NJ},
+	year = {1991}
+	
+}
+
+@book{J02,
+	title = {\textbf{\textit{A First Course in Abstract Algebra}}},
+	publisher = {Addison-Wesley},
+	address = {  Reading, MA},
+	year = {2002},
+	edition   = {seventh edition},
+	author = { John B. Fraleigh}
+}
+
+@book{D01,
+	title = {\textbf{\textit{Solved and Unsolved Problems in Number Theory}}},
+	publisher = {American
+	Mathematical Society Chelsea Publishing},
+	address = {   Providence, RI},
+	year = {2001},
+	edition   = {fourth edition},
+	author = { Daniel Shanks}
+}
+
+@book{J04,
+	title = {\textbf{\textit{Contemporary Abstract Algebra}}},
+	publisher = {Houghton Mifflin Company},
+	year = {2004},
+	author = { Joseph Gallian}
+}
+
+@book{E30,
+	title = {\textbf{\textit{Algebraic Equations, An Introduction to the Theories of Lagrange
+	and Galois}}},
+	publisher = {Columbia University Press},
+	year = {1930},
+	author = {  Edgar Dehn},
+	adress={New York}
+}
