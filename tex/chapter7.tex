@@ -1110,7 +1110,19 @@ E&=-\frac 1 2 \big(w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{31}v_
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{深度神经网络——DNN}
-2006年, Hinton利用预训练方法缓解了局部最优解问题, 将隐含层推动到了7层 \cite{Hinton2006-9587}, 神经网络真正意义上有了“深度”, 由此揭开了深度学习的热潮. 这里的“深度”并没有固定的定义——在语音识别中4层网络就能够被认为是“较深”, 而在图像识别中常见到20层以上的网络. 为了克服梯度消失, ReLU、maxout等传输函数代替了sigmoid, 形成了如今DNN的基本形式. 单从结构上来说, 全连接的DNN和图\ref{MultilayerPercepton020201}的多层感知机是没有任何区别的. DNN就是用了很多超出浅层神经网络的技巧的多层网络, 它能够“深”到解决神经网络很难解决的问题.
+2006年, Hinton利用预训练方法缓解了局部最优解问题, 将隐含层推动到了7层 \cite{Hinton2006-9587}, 神经网络真正意义上有了“深度”, 由此揭开了深度学习的热潮. 这里的“深度”并没有固定的定义——在语音识别中4层网络就能够被认为是“较深”, 而在图像识别中常见到20层以上的网络. 为了克服梯度消失, ReLU、maxout等传输函数代替了sigmoid, 形成了如今DNN的基本形式. 单从结构上来说, 全连接的DNN和图\ref{MultilayerPercepton020201}的多层感知机是没有任何区别的.
+
+DNN是用了很多浅层神经网络的技巧之外的多层网络, 它能够“深”到解决神经网络很难解决的问题.
+深度学习则是AI训练的重要手段之一,  学习要靠硬件和算法支撑 这方面. 在深层学习方面, 存在来给个阵营: Intel力挺CPU, NVIDIA则力挺GPU.
+2020年3月, Intel实验室联合美国莱斯大学宣布了一种突破性的深度学习新算法SLIDE.
+SLIDE基于散列开发, 而非当前最富盛名的BP算法（反向传播算法）所基于的矩阵乘法.
+借助SLIDE, CPU用于传统AI模型深度学习训练的效率大大提升.
+\begin{exampleT}
+一套拥有44个Xeon核心的平台和一套由8张NVIDIA Vlta V100加速卡支撑的平台（TensorFlow框架, 价值10万美元）执行相同的训练任务, 前者用时1小时, 后者则花了3.5小时.
+Intel还表示, 它们这套平台尚未充分优化, 还是“残血”状态, 比如处理器的DLBoost并未启用.
+不过, 这套44核至强平台的CPU型号并未公布, 一说就是22核心44线程的至强铂金6238, 一说是双路至强铂金6238, 还有可能是未发布的产品.
+\end{exampleT}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1126,9 +1138,18 @@ E&=-\frac 1 2 \big(w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{31}v_
 \caption{DNN的各种结构(1)}
 \label{DNN191218121500010}
 \end{figure}
+使用Matlab中的DNN 设计APP可以很快设计出DNN网络 \ref{DNNDesigner20200304}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{DNNDesigner.pdf}
+\caption{Matlab中的DNN 设计APP}
+\label{DNNDesigner20200304}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{高速公路网络（Highway network）}
-高速公路网络和深度残差学习（DRL）进一步避免了梯度消失，网络层数达到了前所未有的一百多层（深度残差学习: 152层）\cite{HeCVPR2016-9590, NIPS2015-5850}.
+高速公路网络和深度残差学习（DRL）进一步避免了梯度消失, 网络层数达到了前所未有的一百多层（深度残差学习: 152层）\cite{HeCVPR2016-9590, NIPS2015-5850}.
 高速公路网络受LSTM门机制的启发, 给网络添加一个传递门和一个搬运门. Highway网络再输入某一层网络的数据一部分经过非线性变换, 另一部分直接从该网络跨过去不做任何转换, 就想走在高速公路上一样, 而多少的数据需要非线性变换, 多少的数据可以直接跨过去, 是由一个权值矩阵和输入数据共同决定的.
 \begin{align}
 \mathbf{y}=H\left(\mathbf{x}, \mathbf{W}_{\mathbf{H}}\right) \cdot T\left(\mathbf{x}, \mathbf{W}_{\mathbf{T}}\right)+\mathbf{x} \cdot C\left(\mathbf{x}, \mathbf{W}_{\mathbf{C}}\right)
@@ -1149,7 +1170,7 @@ $C=(c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点�
 \caption{Highway网络的迭代误差}
 \label{20170105154423858}
 \end{figure}
-当网络很深的时候，使用了Highway的网络更容易收敛。
+当网络很深的时候, 使用了Highway的网络更容易收敛.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{残差网络}
 残差网络用于解决由深度增加而出现错误率增加的情况, 通过拟合残差映射来取代直接的拟合映射.
@@ -1183,7 +1204,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
 
 2、为了保持每一层网络的参数差不多, 每当经过了池化层输入的维度减少了一般, 那么滤子的个数就要增加一倍.
 
-其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层，而直接到后面的层中去，只不过Highway网络需要一个权值来控制每次直接通过的数据量，而深度残差网络就直接让一部分数据通到了后面。
+其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层, 而直接到后面的层中去, 只不过Highway网络需要一个权值来控制每次直接通过的数据量, 而深度残差网络就直接让一部分数据通到了后面.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{卷积神经网络 (Convolutional Neural Networks, CNN)}
 人工神经网络包括多个神经网络层（卷积层、全连接层、LSTM等）, 每一层又包括很多神经元, 超过三层的非线性神经网络都可以被成为深度神经网络.
@@ -1467,7 +1488,7 @@ CELU \cite{hendrycks2016gelu} 定义为
 \end{align}
 \end{remark}
 \begin{remark}
-高斯线性误差单元 (GELU), 是高性能神经网络的一种激活函数. GELU的非线性体现在它的随机正则化算子会随机地应用恒等映射和零映射到神经元的输入上. 
+高斯线性误差单元 (GELU), 是高性能神经网络的一种激活函数. GELU的非线性体现在它的随机正则化算子会随机地应用恒等映射和零映射到神经元的输入上.
 GELU的非线性权重输入由幅值决定, 不同于ReLUs中由符号决定.
 \begin{align}
   \operatorname{GELU}(x)=x P(X \leq x)=x \Phi(x)
@@ -1486,13 +1507,40 @@ Bent-identity
 \begin{align}
   f(x) = \frac{\sqrt{x^2 + 1} - 1}{2} +x
 \end{align}
-Rothaus在1976年提出.因为Bent函数既是非线性度最优的布尔函数, 介于 Identity 与 ReLU 之间的一种折衷选择. 它允许非线性行为, 尽管其非零导数有效提升了学习并克服了与 ReLU 相关的静默神经元的问题. 
-由于其导数可在 1 的任意一侧返回值，因此它可能容易受到梯度爆炸和消失的影响.
 
-\href{https://arxiv.org/pdf/1901.05894.pdf}{LiSHT function}: Linearly Scaled Hyperbolic Tangent
+Synthesization of many useful properties of other activations, including PReLU, ELU, and SELU and CIFAR -10 experiments  validation \cite{Godfrey2019-9846}, 2019 IEEE International Conference on Systems, Man and Cybernetics (SMC), 6-9 Oct. 2019.
 
+Rothaus在1976年提出.因为Bent函数既是非线性度最优的布尔函数, 介于 Identity 与 ReLU之间的一种折衷选择. 它允许非线性行为, 尽管其非零导数有效提升了学习并克服了与 ReLU相关的静默神经元的问题.
+由于其导数可在 1 的任意一侧返回值, 因此它可能容易受到梯度爆炸和消失的影响.
+
+\href{https://arxiv.org/pdf/1901.05894.pdf}{LiSHT (Linearly Scaled Hyperbolic Tangent) function}:
 \begin{align}
-  \phi(x)=x \cdot g(x)
+  \phi(x)=x \cdot g(x), g(x)=\operatorname{Tanh}(x)=\frac{\exp ^{x}-\exp ^{-x}}{\exp ^{x}+\exp ^{-x}}
+\end{align}
+
+
+
+Swish activation function \cite{Ramachandran2018}
+\begin{align}
+  y(x)=x /\left(1+e^{-x}\right).
+\end{align}
+
+\href{https://arxiv.org/pdf/1808.00783.pdf}{ELiSH-\href{https://workshops.aapr.at/wp-content/uploads/2019/05/ARW-OAGM19_41.pdf}{The Quest for the Golden Activation Function}: Proceedings of the ARW \& OAGM Workshop 2019, May 9-10, 2019 in Steyr, Austria}(Exponential Linear Sigmoid SquasHing)
+
+A piecewise activation function, which shares the goodness of Swish in positive part \& ELU and Sigmoid in its negative part.
+In Swish, Sigmoid improves the information flow and Linear avoids a vanishing gradient, which is also the main motivation to design ELiSH.
+\begin{align}
+    y(x)=\left\{\begin{array}{ll}
+    x /\left(1+e^{-x}\right) & x \geq 0 \\
+    \left(e^{x}-1\right) /\left(1+e^{-x}\right) & x<0
+    \end{array}\right.
+\end{align}
+HardELiSH as a multiplication of HardSigmoid and ELU in negative part and HardSigmoid and Linear in positive part
+\begin{align}
+    y(x)=\left\{\begin{array}{ll}
+    x \times \max (0, \min (1,(x+1) / 2)) & x \geq 0 \\
+    \left(e^{x}-1\right) \times \max (0, \min (1,(x+1) / 2)) & x<0
+    \end{array}\right.
 \end{align}
 
 Soft shrinkage function elementwise:
@@ -1616,7 +1664,7 @@ Inverse square root linear unit (ISRLU) \cite{BradCarlile2017}
 f(x)=\left\{\begin{array}{ll}
 {\frac{x}{\sqrt{1+\alpha x^{2}}}} & {\text { for } x<0} \\
 {x} & {\text { for } x \geq 0}
-\end{array}\right., x\in \left(-\frac{1}{\sqrt{\alpha}}, \infty\right)  
+\end{array}\right., x\in \left(-\frac{1}{\sqrt{\alpha}}, \infty\right)
 \end{align}
 
 SoftPlus \cite{glorot2011}
@@ -2312,4 +2360,12 @@ Uber研究员Jeff Clune已经表示明年会加入Open AI . 他还是新兴领�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{think}
 假设$w_1(0)=0.2, w_2(0)=0.4, \theta(0)=0.3, \eta=0.4$, 请用单层感知器完成逻辑或运算的学习过程.
+\end{think}
+
+\begin{think}
+学习无监督的方式快速训练生成型循环神经网络(Recurrent World Models Facilitate Policy Evolution, David Ha(谷歌AI)和Jürgen Schmidhuber) \cite{ha2018worldmodels}.
+\end{think}
+
+\begin{think}
+  运行如下位置的演示代码：\href{https://colab.research.google.com/drive/16a3G7Hh8Pv1X1PhZAUBEnZEkXThzDeHJ#scrollTo=D_a2USyd4giE}{Convolutional Neural Network}
 \end{think}

@@ -483,6 +483,17 @@ linewidth=1pt]{exaBox}
 \definecolor{thinkcolor}{RGB}{227,196,144}
 \definecolor{observecolor}{RGB}{153,201,227}
 \definecolor{explorecolor}{RGB}{178,217,200}
+%%=====================================================================
+\definecolor{main}{RGB}{127,191,51}
+\definecolor{seco}{RGB}{0,145,215}
+\definecolor{thid}{RGB}{180,27,131}
+\definecolor{bule}{RGB}{18,29,57}
+\definecolor{bablue}{RGB}{248,248,248}
+\definecolor{RoyalBlue}{RGB}{65,105,225}
+\definecolor{DoderBlue}{RGB}{30,144,255}
+\definecolor{MediumSlateBlue}{RGB}{123,104,238}
+\definecolor{SlateBlue}{RGB}{106,90,205}
+\definecolor{CornflowerBlue}{RGB}{100,149,237}
 
 \tcbset{
     common/.style={
@@ -588,7 +599,41 @@ linewidth=1pt]{exaBox}
 %    showstringspaces=false,%不显示代码字符串中间的空格标记
 %    stringstyle=\ttfamily, % 代码字符串的特殊格式
 %        }
+%%%%-------------------例---------------
+\tikzstyle{newexamplesty}
+          =[draw=RoyalBlue, fill=bablue,very thick,rectangle,
+           rounded corners, inner sep=10pt, inner ysep=20pt,
+           text=black,fill opacity=0.8]
+\tikzstyle{newexamplestytitle}
+         =[fill=DoderBlue, text=white]
 
+\newcounter{Newexample}[section]
+\renewcommand{\theNewexample}{\thesection.\arabic{Newexample}}
+\NewEnviron{newexam}[1][{}]{%
+\noindent\centering
+\begin{tikzpicture}
+\node [newexamplesty] (dbox){\begin{minipage}{0.8\textwidth}\itshape\BODY\end{minipage}};
+\node[newexamplestytitle, right=10pt] at (dbox.north west)
+ {\bf\textsf{例 \stepcounter{Newexample}\theNewexample\; #1}};
+\node[newexamplestytitle, rounded corners] at (dbox.east) {$\heartsuit$};
+\end{tikzpicture}
+}[\par\vspace{.5\baselineskip}]
+%%%%------------------------------------
+\newcounter{Newrem}
+\renewcommand{\theNewrem}{\arabic{Newrem}}
+\NewEnviron{newrem}[1][{}]{%
+\noindent\centering
+\begin{tikzpicture}
+\node[newthemsty] (box){
+     \begin{minipage}{0.93\columnwidth}
+        \sffamily\BODY
+     \end{minipage}};
+\node[newthemstytitle,right=10pt] at (box.north west){
+     \bf\textsf{注解 \stepcounter{Newrem}\theNewrem\; #1}};
+\node[newthemstytitle, rounded corners] at (box.east) {$\clubsuit$};
+\end{tikzpicture}
+}[\par\vspace{.5\baselineskip}]
+%%%%------------------------------------
 \usepackage{ClassFile/extarrows}
 \usepackage{chemarrow}
 \usepackage[saturated]{tikzpeople}
