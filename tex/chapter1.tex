@@ -1964,7 +1964,7 @@ CPU版本安装: pip install -i https://mirror.baidu.com/pypi/simple paddlepaddl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{现有自适应方法在图像分割上的挑战}
 
-除了传统的有标注源域上的任务损失外, 深度无监督领域自适应(UDA)方法通常还会训练其他损失函数来处理领域偏移, 如差异损失(discrepancy loss)[2]、对抗损失\footnote{\href{https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/biggan_generation_with_tf_hub.ipynb}{BigGAN Large Scale GAN Training for High Fidelity Natural Image Synthesis}\label{GANnote2020031201}}(adversarial loss)\cite{GoodfellowGAN2014}、重构损失(reconstruction loss)\cite{GoodfellowGAN2014} 等.
+除了传统的有标注源域上的任务损失外, 深度无监督领域自适应(UDA)方法通常还会训练其他损失函数来处理领域偏移, 如差异损失(discrepancy loss)[2]、对抗损失\footnote{\href{https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/biggan_generation_with_tf_hub.ipynb}{BigGAN： Large Scale GAN Training for High Fidelity Natural Image Synthesis} \label{GANnote2020031201}}(adversarial loss)\cite{GoodfellowGAN2014}、重构损失(reconstruction loss)\cite{GoodfellowGAN2014}等.
 目前语义分割任务上从合成数据到真实场景的领域自适应方法都集中在单数据源设置上, 没有考虑从多个不同分布的数据源收集数据这一更实际的场景. 简单地将不同的源组合成一个源并直接使用单一源 DA 不会有很好的效果, 因为来自不同源域的图像在学习过程中可能会相互干扰. 早期对多源 DA(multi-source DA,  MDA)的研究使用了浅层模型.
 近年来, 人们提出了一些多源深度 UDA 方法, 这些方法主要针对图像分类 \cite{Ghifary2015}. 由于以下原因, 直接将这些 MDA 方法从分类扩展到分割可能不会有很好的效果. (1) 分割是一个结构化的预测任务, 其决策函数比分类更复杂, 因为它必须在指数大的标签空间中解析预测 \cite{Zhang2017}. (2) 目前的 MDA 方法主要关注特征级对齐, 只对高层次的信息进行对齐. 这对于粗粒度的分类任务来说可能足够了, 但是对于细粒度的语义分割来说显然是不够的, 因为分割是像素级的预测. (3) 这些 MDA 方法只将每个源域和目标域对齐. 虽然不同的源域被匹配到目标域, 但在不同的源域之间可能存在显著的不一致.
 
@@ -2969,9 +2969,9 @@ Ray 与 TensorFlow、PyTorch 和 MXNet 等深度学习框架互相兼容, 在很
 %%%%%%%%--------------------------------------------------------
 \subsection{DEAP}
 
-Python中的分布式进化算法是一种进化计算框架, 用于快速原型化和测试想法. 它结合了实现最常见的进化计算技术所需的数据结构和工具, 例如遗传算法, 遗传编程, 进化策略, 粒子群优化, 微分进化, 交通流量和分布估计算法. 自2009年以来由拉瓦尔大学（UniversitéLaval）开发 (WIKI). 
+Python中的分布式进化算法是一种进化计算框架, 用于快速原型化和测试想法. 它结合了实现最常见的进化计算技术所需的数据结构和工具, 例如遗传算法, 遗传编程, 进化策略, 粒子群优化, 微分进化, 交通流量和分布估计算法. 自2009年以来由拉瓦尔大学（UniversitéLaval）开发 (WIKI).
 
-{DEAP}: Evolutionary Algorithms Made Easy \cite{DEAPJMLR2012
+{DEAP}: Evolutionary Algorithms Made Easy \cite{DEAPJMLR2012}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{学习网站}
 清华大学计算机科学与技术系教授唐杰成立的新开放获取期刊——《\href{https://www.aiopens.net/main/index.html}{AI open}》, 2020专注 AI的开放共享, 免费获取.
@@ -2999,6 +2999,8 @@ AWS云服务：\href{https://aws.amazon.com/cn/}{AWS}
 \href{http://aistudio.baidu.com/#/projectoverview}{百度AI Studio官网}
 
 \href{https://github.com/openstack/horizon}{Facebook强化学习AI平台: Horizon}
+
+\href{https://leetcode-cn.com/problemset/all/}{力扣}
 
 \href{https://www.paperswithcode.com/}{Paper with Code}
 

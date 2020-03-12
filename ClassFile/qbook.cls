@@ -120,6 +120,25 @@
 \definecolor{c3}{RGB}{107, 190, 190}
 \definecolor{c4}{RGB}{100, 172, 174}
 \definecolor{c5}{RGB}{95, 162, 162}
+
+
+\definecolor{intnull}{RGB}{213,229,255}
+\definecolor{inteins}{RGB}{128,179,255}
+\definecolor{intzwei}{RGB}{42,127,255}
+\definecolor{intdrei}{RGB}{0,85,212}
+\definecolor{intvier}{RGB}{0,51,128}
+\definecolor{intfunf}{RGB}{0,34,85}
+
+\definecolor{main}{RGB}{127,191,51}
+\definecolor{seco}{RGB}{0,145,215}
+\definecolor{thid}{RGB}{180,27,131}
+\definecolor{bule}{RGB}{18,29,57}
+\definecolor{bablue}{RGB}{248,248,248}
+\definecolor{RoyalBlue}{RGB}{65,105,225}
+\definecolor{DoderBlue}{RGB}{30,144,255}
+\definecolor{MediumSlateBlue}{RGB}{123,104,238}
+\definecolor{SlateBlue}{RGB}{106,90,205}
+\definecolor{CornflowerBlue}{RGB}{100,149,237}
 %======================================================================
 % 设置日期显示格式为yyyy-mm-dd
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
@@ -319,17 +338,20 @@
  		separator sign none
  	},
  	propstyle/.style={
- 		common,
- 		colframe=thid,
- 		colbacktitle=thid,
- 		overlay unbroken and last={\node[anchor=south east, outer sep=6pt] at (\textwidth-width,0) {\textcolor{thid}{$\spadesuit$}}; },
+ 		commondef,
+ 		colframe=SlateBlue,
+        fonttitle=\heiti\bfseries,
+        colbacktitle=SlateBlue,
+ 		overlay unbroken and last={\node[anchor=south east, outer sep=6pt] at (\textwidth-width,0) {\textcolor{SlateBlue}{$\spadesuit$}}; },
  		separator sign none
  	},
  }
 
 \newtcbtheorem[auto counter,number within=chapter]{mydef}{\q@label@defn}{defstyle}{def}
 \newtcbtheorem[use counter from=mydef]{mythm}{\q@label@thm}{thmstyle}{thm}
-\newtcbtheorem[use counter from=mydef]{myprop}{\q@label@prop}{propstyle}{prop}
+
+\newtcbtheorem[auto counter,number within=chapter]{myprop}{\q@label@prop}{propstyle}{prop}
+
 \newtheorem{keypoint}{\q@label@keypoint}[chapter]  %环境名keypoint
 \newtcbtheorem[use counter from=mydef]{mylem}{\q@label@lem}{propstyle}{lemma}
 
@@ -397,28 +419,28 @@
 \RequirePackage[framemethod=default]{mdframed}
 % Example box
 \newmdenv[skipabove=5pt,
-skipbelow=7pt,
-rightline=false,
-leftline=true,
-topline=false,
-bottomline=false,
-backgroundcolor=sthlmGreen!5,
-linecolor=sthlmGreen,
-innerleftmargin=0.5pt,
-innerrightmargin=0pt,
-innertopmargin=0pt,
-innerbottommargin=0pt,
-leftmargin=0cm,
-rightmargin=0cm,
-linewidth=1pt]{exaBox}
-\newtheoremstyle{blacknumexa}% Theorem style Example
-{5pt}% Space above
-{5pt}% Space below
-{\kaishu}% Body font
-{} % Indent amount
-{\small\bf\kaishu\color{sthlmGreen}}% Theorem head font
-{\;}% Punctuation after theorem head
-{0.25em}% Space after theorem head
+    skipbelow=7pt,
+    rightline=false,
+    leftline=true,
+    topline=false,
+    bottomline=false,
+    backgroundcolor=sthlmGreen!5,
+    linecolor=sthlmGreen,
+    innerleftmargin=0.5pt,
+    innerrightmargin=0pt,
+    innertopmargin=0pt,
+    innerbottommargin=0pt,
+    leftmargin=0cm,
+    rightmargin=0cm,
+    linewidth=1pt]{exaBox}
+    \newtheoremstyle{blacknumexa}% Theorem style Example
+    {5pt}% Space above
+    {5pt}% Space below
+    {\kaishu}% Body font
+    {} % Indent amount
+    {\small\bf\kaishu\color{sthlmGreen}}% Theorem head font
+    {\;}% Punctuation after theorem head
+    {0.25em}% Space after theorem head
 {\small\sffamily\color{sthlmGreen}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
 	\thmnote{\nobreakspace\the\thm@notefont\heiti\color{sthlmGreen}\nobreakspace(#3)}}% Optional
 
@@ -618,7 +640,7 @@ linewidth=1pt]{exaBox}
 \node[newexamplestytitle, rounded corners] at (dbox.east) {$\heartsuit$};
 \end{tikzpicture}
 }[\par\vspace{.5\baselineskip}]
-%%%%------------------------------------
+%%%%----------------注------------------
 \newcounter{Newrem}
 \renewcommand{\theNewrem}{\arabic{Newrem}}
 \NewEnviron{newrem}[1][{}]{%
