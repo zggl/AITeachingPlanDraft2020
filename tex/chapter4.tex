@@ -1314,6 +1314,72 @@ $\bullet$ 机遇性博弈: 存在不可预测性的博弈, 例如掷币等.
 
 (3) 整个博弈过程始终站在某一方的立场上, 例如MAX方. 所有能使自己一方获胜的终局都是本原问题, 相应的节点是可解节点; 所有使对方获胜的终局都是不可解节点.
 \end{itemize}
+
+%%%%%%%%--------------------------------
+\begin{example}
+假设有七枚钱币任一选手只能将已分好的一堆钱币分成两堆个数不等的钱币, 两位选手轮流进行, 直到每一堆都只有一个或两个钱币, 不能再分为止, 哪个选手遇到不能再分的情况, 则为输.
+\end{example}
+
+\begin{answer}
+用数字序如上一个说明表示一个状态下一步的谁来分, 如其中数字表示不同堆中钱币的个数表示(7,MN)表示只有一个由七枚钱币组成的堆, 由MIN来分,
+MIN有三种可供选择的分法,即(6,1,MAX)、(5,2,MAX)、(4,3,MAX), 其中MAX表示另一选手, 不论哪一种方法, MAX在它的基础上再做符合要求的划分,
+整个过程如图\ref{AI32fig001}所示在图中已将双方可能的分法完全表示出来了, 而且从中可以看出, 无论MIN开始时怎么分法, MAX存在可以获胜方案.
+MIN取胜的策略用双箭头表示.
+\end{answer}
+%%%%%%%----------------------------------------
+\begin{figure}[H]
+\begin{center}
+\begin{tikzpicture}[font={\sf \small},scale=0.8]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (fqb100) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {$(7,\textup{MIN})$}; % 7min
+
+\node (fqb201)[draw, process,align=center,below=1cm of fqb100,xshift=-2cm] {$(6,1,\textup{MAX})$};      %61max
+\node (fqb202)[draw, process,align=center,below=1cm of fqb100,xshift=0cm] {$(5,2,\textup{MAX})$};       %52max
+\node (fqb203)[draw, process,align=center,below=1cm of fqb100,xshift=2cm] {$(4,3,\textup{MAX})$};       %43max
+\draw [->,dashed](fqb100)--(fqb201);
+\draw [->,dashed](fqb100)--(fqb202);
+\draw [->,dashed](fqb100)--(fqb203);
+
+\node (fqb301)[draw, process,align=center,below=1cm of fqb201,xshift=-2cm] {$(5,1,1,\textup{MIN})$};      %511min
+\node (fqb302)[draw, process,align=center,below=1cm of fqb201,xshift=0.6cm] {$(4,2,1,\textup{MIN})$};     %421min
+\node (fqb303)[draw, process,align=center,below=1cm of fqb203,xshift=-0.5cm] {$(3,2,2,\textup{MIN})$};    %322min
+\node (fqb304)[draw, process,align=center,below=1cm of fqb203,xshift=2cm] {$(3,3,1,\textup{MIN})$};       %331min
+
+\draw [->,dashed](fqb201)--(fqb301);
+\draw [->,bule, thick](fqb201)--(fqb302); %%
+\draw [->,bule, thick](fqb202)--(fqb302);%%
+\draw [->,dashed](fqb202)--(fqb303);
+\draw [->,bule, thick](fqb203)--(fqb302);%%
+\draw [->,bule, thick](fqb203)--(fqb304);%%
+
+\node (fqb401)[draw, process,align=center,below=2.5cm of fqb201,xshift=-1cm] {$(4,1,1,1,\textup{MAX})$};      %4111max
+\node (fqb402)[draw, process,align=center,below=2.5cm of fqb201,xshift=2cm] {$(3,2,1,1,\textup{MAX})$};       %3211max
+\node (fqb403)[draw, process,align=center,below=2.5cm of fqb203,xshift=1.5cm] {$(2,2,2,1,\textup{MAX})$};     %2221max
+
+\draw [->,dashed](fqb301)--(fqb401);
+\draw [->,dashed](fqb301)--(fqb402);
+\draw [->,dashed](fqb302)--(fqb402);
+\draw [->,dashed](fqb304)--(fqb402);
+\draw [->,dashed](fqb303)--(fqb403);
+
+
+\node (fqb501)[draw, process,align=center,below=1cm of fqb401,xshift=0cm] {$(3,1,1,1,1,\textup{MIN})$};      %31111min
+\node (fqb502)[draw, process,align=center,below=1cm of fqb402,xshift=1cm] {$(2,2,1,1,1,\textup{MIN})$};       %21111min
+
+\draw [->,dashed](fqb401)--(fqb501);
+\draw [->,bule, thick](fqb402)--(fqb502);%%
+
+\node (fqb601)[draw, process,align=center,below=1cm of fqb501,xshift=0.5cm] {$(2,1,1,1,1,\textup{MAX})$};      %211111max
+\draw [->,dashed](fqb501)--(fqb601);%%
+\end{tikzpicture}
+\end{center}
+\vspace{-0.5cm}
+\caption{分钱币问题的博弈图}
+\label{AI32fig001}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{极大极小过程}
 对简单的博弈问题, 可生成整个博弈树, 找到必胜的策略.
@@ -1324,7 +1390,7 @@ $\bullet$ 机遇性博弈: 存在不可预测性的博弈, 例如掷币等.
       \ding{173} 对于MIN节点, 由于MIN方总是选择估值最小的走步, 因此, MIN节点的倒推值应取其后继节点估值的最小值.
 \end{itemize}
 这样一步一步的计算倒推值, 直至求出初始节点的倒推值为止. 这一过程称为\textbf{极大极小过程}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%--------------------------------
 \begin{example}
 (\textbf{一子棋游戏}) 设有一个三行三列的棋盘, 如下图所示, 两个棋手轮流走步, 每个棋手走步时往空格上摆一个自己的棋子, 谁先使自己的棋子成三子一线为赢.
 \end{example}设\textbf{MAX}方的棋子用$\times$标记, \textbf{MIN}方的棋子用$○$标记, 并规定\textbf{MAX}方先走步.
@@ -1411,7 +1477,7 @@ $\bullet$ 机遇性博弈: 存在不可预测性的博弈, 例如掷币等.
 \end{think}
 %%%%%%------------------------------------
 \begin{think}
- 请用A算法求解图3-12所示的八数码顺. 
+ 请用A算法求解图3-12所示的八数码顺.
 \end{think}
 
 %%%%%%------------------------------------
@@ -1422,7 +1488,7 @@ $\bullet$ 机遇性博弈: 存在不可预测性的博弈, 例如掷币等.
 \includegraphics[width=0.76\textwidth]{20200314174705.jpg}
 \caption{博弈树}
 \label{20200314174705fig51}
-\end{figure}   
+\end{figure}
 \end{think}
 
 %%%%%%------------------------------------
