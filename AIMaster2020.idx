@@ -14,31 +14,31 @@
 \indexentry{SSP Grounding|hyperpage}{239}
 \indexentry{可解节点|hyperpage}{271}
 \indexentry{希望树|hyperpage}{273}
-\indexentry{MRSR|hyperpage}{299}
-\indexentry{Leave-one-out(LOO)|hyperpage}{300}
-\indexentry{PRESS|hyperpage}{300}
-\indexentry{LARS|hyperpage}{300}
-\indexentry{LOO criterion|hyperpage}{300}
-\indexentry{Tikhonov Regularization|hyperpage}{300}
-\indexentry{Ridge Regression|hyperpage}{300}
-\indexentry{Tikhonov–Miller method|hyperpage}{301}
-\indexentry{Phillips–Twomey method|hyperpage}{301}
-\indexentry{Linear regularization|hyperpage}{301}
-\indexentry{Non-linear least-squares|hyperpage}{301}
-\indexentry{Lowpass Operators|hyperpage}{301}
-\indexentry{Fourier operator|hyperpage}{301}
-\indexentry{TROP-ELM|hyperpage}{302}
-\indexentry{Nelder–Mead approach|hyperpage}{304}
-\indexentry{Nelder–Mead minimization approach|hyperpage}{304}
-\indexentry{Classification and regression|hyperpage}{305}
-\indexentry{Regression and Classification|hyperpage}{305}
-\indexentry{Empirical Data Analysis|hyperpage}{342}
-\indexentry{Cauchy function|hyperpage}{343}
-\indexentry{Clustering Algorithms|hyperpage}{350}
-\indexentry{Clusters-Arbitrarily Shaped |hyperpage}{350}
-\indexentry{Science|hyperpage}{351}
-\indexentry{Local Density Maxima|hyperpage}{351}
-\indexentry{Local Density Maxima|hyperpage}{351}
-\indexentry{FCN-8|hyperpage}{455}
-\indexentry{FCN-8|hyperpage}{455}
-\indexentry{VGGNet|hyperpage}{457}
+\indexentry{MRSR|hyperpage}{301}
+\indexentry{Leave-one-out(LOO)|hyperpage}{302}
+\indexentry{PRESS|hyperpage}{302}
+\indexentry{LARS|hyperpage}{302}
+\indexentry{LOO criterion|hyperpage}{302}
+\indexentry{Tikhonov Regularization|hyperpage}{302}
+\indexentry{Ridge Regression|hyperpage}{302}
+\indexentry{Tikhonov–Miller method|hyperpage}{303}
+\indexentry{Phillips–Twomey method|hyperpage}{303}
+\indexentry{Linear regularization|hyperpage}{303}
+\indexentry{Non-linear least-squares|hyperpage}{303}
+\indexentry{Lowpass Operators|hyperpage}{303}
+\indexentry{Fourier operator|hyperpage}{303}
+\indexentry{TROP-ELM|hyperpage}{304}
+\indexentry{Nelder–Mead approach|hyperpage}{306}
+\indexentry{Nelder–Mead minimization approach|hyperpage}{306}
+\indexentry{Classification and regression|hyperpage}{307}
+\indexentry{Regression and Classification|hyperpage}{307}
+\indexentry{Empirical Data Analysis|hyperpage}{344}
+\indexentry{Cauchy function|hyperpage}{345}
+\indexentry{Clustering Algorithms|hyperpage}{352}
+\indexentry{Clusters-Arbitrarily Shaped |hyperpage}{352}
+\indexentry{Science|hyperpage}{353}
+\indexentry{Local Density Maxima|hyperpage}{353}
+\indexentry{Local Density Maxima|hyperpage}{353}
+\indexentry{FCN-8|hyperpage}{459}
+\indexentry{FCN-8|hyperpage}{459}
+\indexentry{VGGNet|hyperpage}{461}
