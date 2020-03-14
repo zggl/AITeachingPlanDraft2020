@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  13 MAR 2020 07:05
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  13 MAR 2020 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5441,14 +5441,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 2095.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2095.
- [171] [172]) [173]
+ [171] [172] [173]) [174]
 \openout2 = `tex/chapter3.aux'.
 
- (./tex/chapter3.tex [174
-
-
-
-]
+ (./tex/chapter3.tex
 第三章
 File: figures/KRC412184.jpg Graphic file (type bmp)
 <figures/KRC412184.jpg>
@@ -5456,7 +5452,11 @@ File: figures/KRC412184.jpg Graphic file (type bmp)
 LaTeX Warning: Citation 'BouraouiKR2019' on page 175 undefined on input line 16
 .
 
-[175]
+[175
+
+
+
+]
 Package mdframed Info: mdframed works in twoside mode on input line 31.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9000,10 +9000,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97396 strings out of 492922
- 2333318 string characters out of 6136750
- 2951031 words of memory out of 5000000
- 98444 multiletter control sequences out of 15000+600000
+ 97410 strings out of 492922
+ 2333556 string characters out of 6136750
+ 2951032 words of memory out of 5000000
+ 98458 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,23n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
