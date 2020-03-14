@@ -152,16 +152,16 @@
 \contentsline {paragraph}{产生式与蕴涵式、条件语句的区别}{140}{paragraph*.132}% 
 \contentsline {subsection}{\numberline {2.2.4}产生式系统的基本结构——系统结构及说明}{141}{subsection.2.2.4}% 
 \contentsline {paragraph}{综合数据库DB(Data Base)}{141}{paragraph*.133}% 
-\contentsline {paragraph}{控制系统(Control system)}{141}{paragraph*.135}% 
-\contentsline {subparagraph}{控制系统}{141}{subparagraph*.136}% 
+\contentsline {paragraph}{控制系统(Control system)}{142}{paragraph*.135}% 
+\contentsline {subparagraph}{控制系统}{142}{subparagraph*.136}% 
 \contentsline {subparagraph}{控制系统的主要任务}{142}{subparagraph*.137}% 
 \contentsline {subsection}{\numberline {2.2.5}产生式系统的过程——基本过程}{144}{subsection.2.2.5}% 
-\contentsline {paragraph}{按推理方向}{144}{paragraph*.139}% 
+\contentsline {paragraph}{按推理方向}{145}{paragraph*.139}% 
 \contentsline {paragraph}{按规则库的性质及结构}{145}{paragraph*.140}% 
 \contentsline {subparagraph}{恢复的产生式系统}{147}{subparagraph*.141}% 
 \contentsline {subsection}{\numberline {2.2.6}产生式系统的特点}{147}{subsection.2.2.6}% 
 \contentsline {paragraph}{主要优点}{147}{paragraph*.143}% 
-\contentsline {paragraph}{主要缺点}{147}{paragraph*.144}% 
+\contentsline {paragraph}{主要缺点}{148}{paragraph*.144}% 
 \contentsline {section}{\numberline {2.3}语义网络表示法}{148}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}语义网络}{148}{subsection.2.3.1}% 
 \contentsline {subsubsection}{\numberline {2.3.1.1}语义网络}{148}{subsubsection.2.3.1.1}% 
@@ -170,7 +170,7 @@
 \contentsline {paragraph}{事实的表示}{149}{paragraph*.149}% 
 \contentsline {paragraph}{规则的表示}{149}{paragraph*.151}% 
 \contentsline {paragraph}{基本的语义关系}{149}{paragraph*.153}% 
-\contentsline {subparagraph}{1) 实例关系: ISA}{149}{subparagraph*.154}% 
+\contentsline {subparagraph}{1) 实例关系: ISA}{150}{subparagraph*.154}% 
 \contentsline {subparagraph}{2) 分类关系: AKO}{150}{subparagraph*.156}% 
 \contentsline {subparagraph}{3) 成员关系: A-Member-of}{150}{subparagraph*.158}% 
 \contentsline {subparagraph}{4) 属性关系}{150}{subparagraph*.160}% 
@@ -302,30 +302,30 @@
 \contentsline {subsubsection}{\numberline {4.1.3.2}问题的分解}{247}{subsubsection.4.1.3.2}% 
 \contentsline {subparagraph}{分解}{247}{subparagraph*.266}% 
 \contentsline {subparagraph}{等价变换}{248}{subparagraph*.267}% 
-\contentsline {section}{\numberline {4.2}状态空间的盲目搜索}{252}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}一般图搜索过程}{252}{subsection.4.2.1}% 
+\contentsline {section}{\numberline {4.2}状态空间的盲目搜索}{251}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}一般图搜索过程}{251}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}广度优先和深度优先搜索}{253}{subsection.4.2.2}% 
 \contentsline {subsubsection}{\numberline {4.2.2.1}广度优先搜索}{253}{subsubsection.4.2.2.1}% 
 \contentsline {paragraph}{广度优先}{253}{paragraph*.274}% 
 \contentsline {subparagraph}{基本思想}{253}{subparagraph*.275}% 
-\contentsline {subparagraph}{搜索算法}{254}{subparagraph*.276}% 
-\contentsline {subsubsection}{\numberline {4.2.2.2}深度优先搜索}{255}{subsubsection.4.2.2.2}% 
-\contentsline {paragraph}{深度优先搜索}{255}{paragraph*.279}% 
-\contentsline {subparagraph}{基本思想}{255}{subparagraph*.280}% 
+\contentsline {subparagraph}{搜索算法}{253}{subparagraph*.276}% 
+\contentsline {subsubsection}{\numberline {4.2.2.2}深度优先搜索}{254}{subsubsection.4.2.2.2}% 
+\contentsline {paragraph}{深度优先搜索}{254}{paragraph*.279}% 
+\contentsline {subparagraph}{基本思想}{254}{subparagraph*.280}% 
 \contentsline {subparagraph}{算法描述}{255}{subparagraph*.281}% 
 \contentsline {subsection}{\numberline {4.2.3}代价树搜索}{256}{subsection.4.2.3}% 
 \contentsline {paragraph}{代价树的广度优先搜索}{256}{paragraph*.283}% 
-\contentsline {subparagraph}{代价树的广度优先搜索算法}{257}{subparagraph*.284}% 
-\contentsline {subparagraph}{代价树的深度优先搜索算法}{257}{subparagraph*.285}% 
+\contentsline {subparagraph}{代价树的广度优先搜索算法}{256}{subparagraph*.284}% 
+\contentsline {subparagraph}{代价树的深度优先搜索算法}{257}{subparagraph*.286}% 
 \contentsline {section}{\numberline {4.3}搜索策略}{258}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}状态空间的启发式搜索}{258}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}启发性信息和估价函数}{258}{subsection.4.3.2}% 
 \contentsline {paragraph}{启发性信息的概念}{258}{paragraph*.287}% 
 \contentsline {paragraph}{启发性信息的种类}{258}{paragraph*.288}% 
 \contentsline {paragraph}{启发性信息的作用}{258}{paragraph*.289}% 
-\contentsline {paragraph}{启发性信息和估价函数}{259}{paragraph*.290}% 
+\contentsline {paragraph}{启发性信息和估价函数}{258}{paragraph*.290}% 
 \contentsline {subsection}{\numberline {4.3.3}A算法}{259}{subsection.4.3.3}% 
-\contentsline {paragraph}{类型}{260}{paragraph*.292}% 
+\contentsline {paragraph}{类型}{259}{paragraph*.292}% 
 \contentsline {subsection}{\numberline {4.3.4}A$^*$算法}{261}{subsection.4.3.4}% 
 \contentsline {paragraph}{A*算法的可纳性}{261}{paragraph*.295}% 
 \contentsline {subparagraph}{$A^*$算法可纳性的证明}{262}{subparagraph*.296}% 
@@ -481,10 +481,10 @@
 \contentsline {subparagraph}{信息熵}{413}{subparagraph*.434}% 
 \contentsline {subparagraph}{条件熵}{414}{subparagraph*.435}% 
 \contentsline {paragraph}{ID3算法及举例}{414}{paragraph*.436}% 
-\contentsline {subsection}{\numberline {7.5.2}解释学习的空间描述}{417}{subsection.7.5.2}% 
+\contentsline {subsection}{\numberline {7.5.2}解释学习的空间描述}{418}{subsection.7.5.2}% 
 \contentsline {subsection}{\numberline {7.5.3}解释学习的模型}{418}{subsection.7.5.3}% 
-\contentsline {subsection}{\numberline {7.5.4}解释学习的基本原理}{418}{subsection.7.5.4}% 
-\contentsline {paragraph}{解释泛化学习方法-1}{418}{paragraph*.442}% 
+\contentsline {subsection}{\numberline {7.5.4}解释学习的基本原理}{419}{subsection.7.5.4}% 
+\contentsline {paragraph}{解释泛化学习方法-1}{419}{paragraph*.442}% 
 \contentsline {paragraph}{解释泛化学习方法-2}{419}{paragraph*.443}% 
 \contentsline {subsection}{\numberline {7.5.5}浅层神经学习的心理学基础}{422}{subsection.7.5.5}% 
 \contentsline {subsection}{\numberline {7.5.6}感知器学习}{423}{subsection.7.5.6}% 
