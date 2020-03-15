@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  14 MAR 2020 21:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  14 MAR 2020 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2978,9 +2978,6 @@ LaTeX Warning: Label `AI:7bf40ad1cb80Fig4' multiply defined.
 
 LaTeX Warning: Label `VSstudio2019CNTK013001' multiply defined.
 
-
-LaTeX Warning: Label `VSstudio2019CNTK013001' multiply defined.
-
 ) (./tex/chapter2.aux
 
 LaTeX Warning: Label `def:1' multiply defined.
@@ -4003,112 +4000,160 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [44] [45] [46]
 File: figures/9PWh-fyqincu5408120.jpg Graphic file (type bmp)
 <figures/9PWh-fyqincu5408120.jpg>
- [47] [48]
-Package mdframed Info: mdframed works in twoside mode on input line 1247.
+ [47]
+Package mdframed Info: mdframed works in twoside mode on input line 1200.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1247.
- [49]
-Package mdframed Info: mdframed works in twoside mode on input line 1281.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1281.
-File: figures/Examp2019120101.png Graphic file (type bmp)
-<figures/Examp2019120101.png>
- [50]
-Underfull \vbox (badness 1286) has occurred while \output is active []
+(mdframed)              on input line 1200.
+File: figures/AIqushi013002.PNG Graphic file (type bmp)
+<figures/AIqushi013002.PNG>
 
- [51]
-[52] [53]
-Package mdframed Info: mdframed works in twoside mode on input line 1400.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1400.
-
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [54]
-Package mdframed Info: mdframed works in twoside mode on input line 1421.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1421.
-
-[55] [56]
-File: figures/tuili2019120102.png Graphic file (type bmp)
-<figures/tuili2019120102.png>
- [57]
-File: figures/turing320191203.png Graphic file (type bmp)
-<figures/turing320191203.png>
- [58] [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [48]
+[49] [50]
+File: figures/AI20191218182232.jpg Graphic file (type bmp)
+<figures/AI20191218182232.jpg>
+File: figures/AI20191218182305.png Graphic file (type bmp)
+<figures/AI20191218182305.png>
+ [51]
+File: figures/AI20191218182524.jpg Graphic file (type bmp)
+<figures/AI20191218182524.jpg>
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+File: figures/AI20191218182642.jpg Graphic file (type bmp)
+<figures/AI20191218182642.jpg>
+
+[54]
+File: figures/AI20191218182713.jpg Graphic file (type bmp)
+<figures/AI20191218182713.jpg>
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \vbox (badness 4205) has occurred while \output is active []
+
+ [57]
+[58]
+Package mdframed Info: mdframed works in twoside mode on input line 1473.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1473.
+ [59]
+Package mdframed Info: mdframed works in twoside mode on input line 1507.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1507.
+File: figures/Examp2019120101.png Graphic file (type bmp)
+<figures/Examp2019120101.png>
  [60]
-Underfull \vbox (badness 3179) has occurred while \output is active []
+Underfull \vbox (badness 2689) has occurred while \output is active []
 
  [61]
-[62] [63] [64]
+[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Package mdframed Info: mdframed works in twoside mode on input line 1626.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1626.
+
+[64]
+Package mdframed Info: mdframed works in twoside mode on input line 1647.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1647.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+[66]
+File: figures/tuili2019120102.png Graphic file (type bmp)
+<figures/tuili2019120102.png>
+File: figures/turing320191203.png Graphic file (type bmp)
+<figures/turing320191203.png>
+ [67] [68] [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [71]
+[72] [73] [74]
 File: figures/BG20200306160800.jpg Graphic file (type bmp)
 <figures/BG20200306160800.jpg>
 File: figures/AID20200306160821.jpg Graphic file (type bmp)
 <figures/AID20200306160821.jpg>
-Package mdframed Info: mdframed works in twoside mode on input line 1661.
+
+Underfull \vbox (badness 1590) has occurred while \output is active []
+
+ [75]
+Package mdframed Info: mdframed works in twoside mode on input line 1887.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1661.
- [65]
-Package mdframed Info: Not enough space on this page on input line 1663.
+(mdframed)              on input line 1887.
 File: figures/xiangqitupian120104.png Graphic file (type bmp)
 <figures/xiangqitupian120104.png>
 File: figures/fdanogetrwkxywvp!1200.jpeg Graphic file (type bmp)
 <figures/fdanogetrwkxywvp!1200.jpeg>
 File: figures/b9xcph5lw6yp0cgb1200.png Graphic file (type bmp)
 <figures/b9xcph5lw6yp0cgb1200.png>
- [66]
 
-LaTeX Warning: Citation 'Han2018PNAS' on page 67 undefined on input line 1701.
+[76]
+Package mdframed Info: mdframed works in twoside mode on input line 1919.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1919.
 
 
-LaTeX Warning: Citation 'Sirignano2018' on page 67 undefined on input line 1701
+LaTeX Warning: Citation 'Han2018PNAS' on page 77 undefined on input line 1932.
+
+
+LaTeX Warning: Citation 'Sirignano2018' on page 77 undefined on input line 1932
 .
 
 
-LaTeX Warning: Citation 'Raissi2017' on page 67 undefined on input line 1701.
+LaTeX Warning: Citation 'Raissi2017' on page 77 undefined on input line 1932.
 
-[67]
-Package mdframed Info: mdframed works in twoside mode on input line 1723.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1723.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 1743.
- [68]
-File: figures/DNNBSDE1218.png Graphic file (type bmp)
-<figures/DNNBSDE1218.png>
-Package mdframed Info: mdframed works in twoside mode on input line 1756.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1756.
- [69]
-Package mdframed Info: Not enough space on this page on input line 1758.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [77]
+Package mdframed Info: mdframed works in twoside mode on input line 1954.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1954.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1974.
+
+[78]
+File: figures/DNNBSDE1218.png Graphic file (type bmp)
+<figures/DNNBSDE1218.png>
+Package mdframed Info: mdframed works in twoside mode on input line 1988.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1988.
+ [79]
+Package mdframed Info: Not enough space on this page on input line 1990.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80]
 File: figures/934ceac90e21bd317dae.jpeg Graphic file (type bmp)
 <figures/934ceac90e21bd317dae.jpeg>
 
-Underfull \vbox (badness 2103) has occurred while \output is active []
-
- [71]
+[81]
 File: figures/A87bf40ad1cb80.png Graphic file (type bmp)
 <figures/A87bf40ad1cb80.png>
 File: figures/Boston1233465768.PNG Graphic file (type bmp)
 <figures/Boston1233465768.PNG>
 File: gif2pnffolder/SurenaIV1.png Graphic file (type bmp)
 <gif2pnffolder/SurenaIV1.png>
-
-<a0,fr0>
+ <a0,fr0>
 File: gif2pnffolder/SurenaIV2.png Graphic file (type bmp)
 <gif2pnffolder/SurenaIV2.png>
  <a0,fr1>
@@ -4136,202 +4181,176 @@ File: gif2pnffolder/SurenaIV9.png Graphic file (type bmp)
 <a0,fr8>
 File: gif2pnffolder/SurenaIV10.png Graphic file (type bmp)
 <gif2pnffolder/SurenaIV10.png>
- <a0,fr9> [72] [73]
+ <a0,fr9> [82]
 File: figures/b151f8198618e3f6.jpg Graphic file (type bmp)
 <figures/b151f8198618e3f6.jpg>
 File: figures/267f9e2f0708ff82.jpg Graphic file (type bmp)
 <figures/267f9e2f0708ff82.jpg>
+ [83]
 File: figures/softissuerobot.jpg Graphic file (type bmp)
 <figures/softissuerobot.jpg>
- [74]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [84]
+Underfull \vbox (badness 3179) has occurred while \output is active []
 
- [75]
-[76]
+ [85]
+[86]
 File: figures/AIPCB811.png Graphic file (type bmp)
 <figures/AIPCB811.png>
- [77]
+ [87]
 File: figures/BaiduPeddle20191217.png Graphic file (type bmp)
 <figures/BaiduPeddle20191217.png>
 File: figures/BAIDUAIpaddletest202013001.PNG Graphic file (type bmp)
 <figures/BAIDUAIpaddletest202013001.PNG>
 
-Underfull \vbox (badness 1728) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [88]
 File: figures/Simetics8dbce236d19619.jpeg Graphic file (type bmp)
 <figures/Simetics8dbce236d19619.jpeg>
 
 Underfull \vbox (badness 4291) has occurred while \output is active []
 
- [79]
+ [89]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 1967.
+(Font)              scaled to size 8.0pt on input line 2220.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 1967.
+(Font)              scaled to size 9.03374pt on input line 2220.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 1967.
+(Font)              scaled to size 9.03374pt on input line 2220.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.1303pt on input line 1967.
+(Font)              scaled to size 8.1303pt on input line 2220.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 1967.
+(Font)              scaled to size 9.03374pt on input line 2220.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1967.
+(Font)              scaled to size 6.0pt on input line 2220.
 
 
-LaTeX Warning: Citation 'GoodfellowGAN2014' on page 80 undefined on input line 
-1967.
+LaTeX Warning: Citation 'GoodfellowGAN2014' on page 90 undefined on input line 
+2220.
 
 
-LaTeX Warning: Citation 'GoodfellowGAN2014' on page 80 undefined on input line 
-1967.
+LaTeX Warning: Citation 'GoodfellowGAN2014' on page 90 undefined on input line 
+2220.
 
 
-LaTeX Warning: Citation 'Ghifary2015' on page 80 undefined on input line 1969.
+LaTeX Warning: Citation 'Ghifary2015' on page 90 undefined on input line 2222.
 
 
-LaTeX Warning: Citation 'Zhang2017' on page 80 undefined on input line 1969.
+LaTeX Warning: Citation 'Zhang2017' on page 90 undefined on input line 2222.
 
 
-Overfull \hbox (28.89723pt too wide) in paragraph at lines 1967--1970
+Overfull \hbox (28.89723pt too wide) in paragraph at lines 2220--2223
 \TU/SimSun(0)/m/n/12.045 失[][][][][][]\T1/ntxtlf/m/n/12.045 (adversarial loss)[
 []]\TU/SimSun(0)/m/n/12.045 、|  重 构 损 失 \T1/ntxtlf/m/n/12.045 (re-con-struc-tio
 n loss)[[]]
  []
 
 
-LaTeX Warning: Citation 'GoodfellowGAN2014' on page 80 undefined on input line 
-1971.
+LaTeX Warning: Citation 'GoodfellowGAN2014' on page 90 undefined on input line 
+2224.
 
 
-LaTeX Warning: Citation 'ZhuPark20178237506' on page 80 undefined on input line
- 1971.
+LaTeX Warning: Citation 'ZhuPark20178237506' on page 90 undefined on input line
+ 2224.
 
 File: figures/MADANe38db3d1e.jpeg Graphic file (type bmp)
 <figures/MADANe38db3d1e.jpeg>
-[80]
+[90]
 
-LaTeX Warning: Citation 'Long2015CVPR' on page 81 undefined on input line 1980.
+LaTeX Warning: Citation 'Long2015CVPR' on page 91 undefined on input line 2233.
 
 
-[81] [82]
-Package mdframed Info: mdframed works in twoside mode on input line 2019.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2019.
- [83]
-Package mdframed Info: mdframed works in twoside mode on input line 2058.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2058.
-Package mdframed Info: mdframed works in twoside mode on input line 2062.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2062.
- [84]
-File: figures/WolframAlphaode.JPG Graphic file (type bmp)
-<figures/WolframAlphaode.JPG>
- [85] [86]
+[91]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [92]
+Package mdframed Info: mdframed works in twoside mode on input line 2274.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2274.
+
+[93]
+Package mdframed Info: mdframed works in twoside mode on input line 2313.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2313.
+Package mdframed Info: mdframed works in twoside mode on input line 2317.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2317.
+File: figures/WolframAlphaode.JPG Graphic file (type bmp)
+<figures/WolframAlphaode.JPG>
+
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [94]
+[95] [96] [97]
 File: figures/NNODEeq003.png Graphic file (type bmp)
 <figures/NNODEeq003.png>
 
-Overfull \hbox (0.85832pt too wide) in paragraph at lines 2257--2257
+Overfull \hbox (0.85832pt too wide) in paragraph at lines 2512--2512
 []|\T1/ntxtlf/m/n/12.045 Mathematica(30s)| 
  []
 
-[88]
-Overfull \hbox (5.07634pt too wide) in paragraph at lines 2277--2287
+
+Overfull \hbox (5.07634pt too wide) in paragraph at lines 2532--2542
  [] 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 2293.
+[98]
+Package mdframed Info: mdframed works in twoside mode on input line 2548.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2293.
+(mdframed)              on input line 2548.
 File: figures/YINhexi20191218195628.jpg Graphic file (type bmp)
 <figures/YINhexi20191218195628.jpg>
-[89]
-File: figures/DanielWinkler628.jpg Graphic file (type bmp)
-<figures/DanielWinkler628.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90]
+ [99]
+File: figures/DanielWinkler628.jpg Graphic file (type bmp)
+<figures/DanielWinkler628.jpg>
 File: figures/pixabay20191218200623.jpg Graphic file (type bmp)
 <figures/pixabay20191218200623.jpg>
 
-[91]
-Package mdframed Info: mdframed works in twoside mode on input line 2334.
+[100]
+Package mdframed Info: mdframed works in twoside mode on input line 2589.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2334.
+(mdframed)              on input line 2589.
 
 
 LaTeX Font Warning: Font shape `TU/KaiTi(0)/bx/n' undefined
-(Font)              using `TU/KaiTi(0)/m/n' instead on input line 2334.
+(Font)              using `TU/KaiTi(0)/m/n' instead on input line 2589.
 
-Package mdframed Info: mdframed works in twoside mode on input line 2346.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2346.
-[92]
-Package mdframed Info: mdframed works in twoside mode on input line 2357.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2357.
-Package mdframed Info: mdframed works in twoside mode on input line 2367.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2367.
- [93]
-Package mdframed Info: mdframed works in twoside mode on input line 2375.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2375.
-Package mdframed Info: mdframed works in twoside mode on input line 2383.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2383.
- [94]
-Package mdframed Info: mdframed works in twoside mode on input line 2388.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2388.
-File: figures/AIqushi013002.PNG Graphic file (type bmp)
-<figures/AIqushi013002.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
-[96] [97]
-File: figures/AI20191218182232.jpg Graphic file (type bmp)
-<figures/AI20191218182232.jpg>
-File: figures/AI20191218182305.png Graphic file (type bmp)
-<figures/AI20191218182305.png>
- [98]
-File: figures/AI20191218182524.jpg Graphic file (type bmp)
-<figures/AI20191218182524.jpg>
- [99]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [100]
-File: figures/AI20191218182642.jpg Graphic file (type bmp)
-<figures/AI20191218182642.jpg>
-
+Package mdframed Info: Not enough space on this page on input line 2599.
 [101]
-File: figures/AI20191218182713.jpg Graphic file (type bmp)
-<figures/AI20191218182713.jpg>
+Package mdframed Info: Not enough space on this page on input line 2599.
+Package mdframed Info: mdframed works in twoside mode on input line 2601.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2601.
+Package mdframed Info: mdframed works in twoside mode on input line 2612.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2612.
  [102]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Package mdframed Info: mdframed works in twoside mode on input line 2622.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2622.
  [103]
+Package mdframed Info: mdframed works in twoside mode on input line 2630.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2630.
+Package mdframed Info: mdframed works in twoside mode on input line 2638.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2638.
 File: figures/TensorFlow1224.JPG Graphic file (type bmp)
 <figures/TensorFlow1224.JPG>
-
-[104] [105]
+ [104] [105]
 File: gif2pnffolder/tensorsflowing1.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing1.png>
  <a1,fr0>
@@ -4349,14 +4368,14 @@ File: gif2pnffolder/tensorsflowing5.png Graphic file (type bmp)
  <a1,fr4>
 File: gif2pnffolder/tensorsflowing6.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing6.png>
- <a1,fr5>
+
+<a1,fr5>
 File: gif2pnffolder/tensorsflowing7.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing7.png>
  <a1,fr6>
 File: gif2pnffolder/tensorsflowing8.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing8.png>
-
-<a1,fr7>
+ <a1,fr7>
 File: gif2pnffolder/tensorsflowing9.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing9.png>
  <a1,fr8>
@@ -4374,14 +4393,14 @@ File: gif2pnffolder/tensorsflowing13.png Graphic file (type bmp)
  <a1,fr12>
 File: gif2pnffolder/tensorsflowing14.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing14.png>
- <a1,fr13>
+
+<a1,fr13>
 File: gif2pnffolder/tensorsflowing15.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing15.png>
  <a1,fr14>
 File: gif2pnffolder/tensorsflowing16.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing16.png>
-
-<a1,fr15>
+ <a1,fr15>
 File: gif2pnffolder/tensorsflowing17.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing17.png>
  <a1,fr16>
@@ -4396,14 +4415,14 @@ File: gif2pnffolder/tensorsflowing20.png Graphic file (type bmp)
  <a1,fr19>
 File: gif2pnffolder/tensorsflowing21.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing21.png>
- <a1,fr20>
+
+<a1,fr20>
 File: gif2pnffolder/tensorsflowing22.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing22.png>
  <a1,fr21>
 File: gif2pnffolder/tensorsflowing23.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing23.png>
-
-<a1,fr22>
+ <a1,fr22>
 File: gif2pnffolder/tensorsflowing24.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing24.png>
  <a1,fr23>
@@ -4418,14 +4437,14 @@ File: gif2pnffolder/tensorsflowing27.png Graphic file (type bmp)
  <a1,fr26>
 File: gif2pnffolder/tensorsflowing28.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing28.png>
- <a1,fr27>
+
+<a1,fr27>
 File: gif2pnffolder/tensorsflowing29.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing29.png>
  <a1,fr28>
 File: gif2pnffolder/tensorsflowing30.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing30.png>
-
-<a1,fr29>
+ <a1,fr29>
 File: gif2pnffolder/tensorsflowing31.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing31.png>
  <a1,fr30>
@@ -4440,14 +4459,14 @@ File: gif2pnffolder/tensorsflowing34.png Graphic file (type bmp)
  <a1,fr33>
 File: gif2pnffolder/tensorsflowing35.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing35.png>
- <a1,fr34>
+
+<a1,fr34>
 File: gif2pnffolder/tensorsflowing36.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing36.png>
  <a1,fr35>
 File: gif2pnffolder/tensorsflowing37.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing37.png>
-
-<a1,fr36>
+ <a1,fr36>
 File: gif2pnffolder/tensorsflowing38.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing38.png>
  <a1,fr37>
@@ -4462,14 +4481,14 @@ File: gif2pnffolder/tensorsflowing41.png Graphic file (type bmp)
  <a1,fr40>
 File: gif2pnffolder/tensorsflowing42.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing42.png>
- <a1,fr41>
+
+<a1,fr41>
 File: gif2pnffolder/tensorsflowing43.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing43.png>
  <a1,fr42>
 File: gif2pnffolder/tensorsflowing44.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing44.png>
-
-<a1,fr43>
+ <a1,fr43>
 File: gif2pnffolder/tensorsflowing45.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing45.png>
  <a1,fr44>
@@ -4484,14 +4503,14 @@ File: gif2pnffolder/tensorsflowing48.png Graphic file (type bmp)
  <a1,fr47>
 File: gif2pnffolder/tensorsflowing49.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing49.png>
- <a1,fr48>
+
+<a1,fr48>
 File: gif2pnffolder/tensorsflowing50.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing50.png>
  <a1,fr49>
 File: gif2pnffolder/tensorsflowing51.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing51.png>
-
-<a1,fr50>
+ <a1,fr50>
 File: gif2pnffolder/tensorsflowing52.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing52.png>
  <a1,fr51>
@@ -4506,14 +4525,14 @@ File: gif2pnffolder/tensorsflowing55.png Graphic file (type bmp)
  <a1,fr54>
 File: gif2pnffolder/tensorsflowing56.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing56.png>
- <a1,fr55>
+
+<a1,fr55>
 File: gif2pnffolder/tensorsflowing57.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing57.png>
  <a1,fr56>
 File: gif2pnffolder/tensorsflowing58.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing58.png>
-
-<a1,fr57>
+ <a1,fr57>
 File: gif2pnffolder/tensorsflowing59.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing59.png>
  <a1,fr58>
@@ -4528,14 +4547,14 @@ File: gif2pnffolder/tensorsflowing62.png Graphic file (type bmp)
  <a1,fr61>
 File: gif2pnffolder/tensorsflowing63.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing63.png>
- <a1,fr62>
+
+<a1,fr62>
 File: gif2pnffolder/tensorsflowing64.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing64.png>
  <a1,fr63>
 File: gif2pnffolder/tensorsflowing65.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing65.png>
-
-<a1,fr64>
+ <a1,fr64>
 File: gif2pnffolder/tensorsflowing66.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing66.png>
  <a1,fr65>
@@ -4550,14 +4569,14 @@ File: gif2pnffolder/tensorsflowing69.png Graphic file (type bmp)
  <a1,fr68>
 File: gif2pnffolder/tensorsflowing70.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing70.png>
- <a1,fr69>
+
+<a1,fr69>
 File: gif2pnffolder/tensorsflowing71.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing71.png>
  <a1,fr70>
 File: gif2pnffolder/tensorsflowing72.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing72.png>
-
-<a1,fr71>
+ <a1,fr71>
 File: gif2pnffolder/tensorsflowing73.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing73.png>
  <a1,fr72>
@@ -4572,14 +4591,14 @@ File: gif2pnffolder/tensorsflowing76.png Graphic file (type bmp)
  <a1,fr75>
 File: gif2pnffolder/tensorsflowing77.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing77.png>
- <a1,fr76>
+
+<a1,fr76>
 File: gif2pnffolder/tensorsflowing78.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing78.png>
  <a1,fr77>
 File: gif2pnffolder/tensorsflowing79.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing79.png>
-
-<a1,fr78>
+ <a1,fr78>
 File: gif2pnffolder/tensorsflowing80.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing80.png>
  <a1,fr79>
@@ -4594,14 +4613,14 @@ File: gif2pnffolder/tensorsflowing83.png Graphic file (type bmp)
  <a1,fr82>
 File: gif2pnffolder/tensorsflowing84.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing84.png>
- <a1,fr83>
+
+<a1,fr83>
 File: gif2pnffolder/tensorsflowing85.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing85.png>
  <a1,fr84>
 File: gif2pnffolder/tensorsflowing86.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing86.png>
-
-<a1,fr85>
+ <a1,fr85>
 File: gif2pnffolder/tensorsflowing87.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing87.png>
  <a1,fr86>
@@ -4616,14 +4635,14 @@ File: gif2pnffolder/tensorsflowing90.png Graphic file (type bmp)
  <a1,fr89>
 File: gif2pnffolder/tensorsflowing91.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing91.png>
- <a1,fr90>
+
+<a1,fr90>
 File: gif2pnffolder/tensorsflowing92.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing92.png>
  <a1,fr91>
 File: gif2pnffolder/tensorsflowing93.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing93.png>
-
-<a1,fr92>
+ <a1,fr92>
 File: gif2pnffolder/tensorsflowing94.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing94.png>
  <a1,fr93>
@@ -4638,14 +4657,14 @@ File: gif2pnffolder/tensorsflowing97.png Graphic file (type bmp)
  <a1,fr96>
 File: gif2pnffolder/tensorsflowing98.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing98.png>
- <a1,fr97>
+
+<a1,fr97>
 File: gif2pnffolder/tensorsflowing99.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing99.png>
  <a1,fr98>
 File: gif2pnffolder/tensorsflowing100.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing100.png>
-
-<a1,fr99>
+ <a1,fr99>
 File: gif2pnffolder/tensorsflowing101.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing101.png>
  <a1,fr100>
@@ -4660,14 +4679,14 @@ File: gif2pnffolder/tensorsflowing104.png Graphic file (type bmp)
  <a1,fr103>
 File: gif2pnffolder/tensorsflowing105.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing105.png>
- <a1,fr104>
+
+<a1,fr104>
 File: gif2pnffolder/tensorsflowing106.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing106.png>
  <a1,fr105>
 File: gif2pnffolder/tensorsflowing107.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing107.png>
-
-<a1,fr106>
+ <a1,fr106>
 File: gif2pnffolder/tensorsflowing108.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing108.png>
  <a1,fr107>
@@ -4682,14 +4701,14 @@ File: gif2pnffolder/tensorsflowing111.png Graphic file (type bmp)
  <a1,fr110>
 File: gif2pnffolder/tensorsflowing112.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing112.png>
- <a1,fr111>
+
+<a1,fr111>
 File: gif2pnffolder/tensorsflowing113.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing113.png>
  <a1,fr112>
 File: gif2pnffolder/tensorsflowing114.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing114.png>
-
-<a1,fr113>
+ <a1,fr113>
 File: gif2pnffolder/tensorsflowing115.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing115.png>
  <a1,fr114>
@@ -4704,14 +4723,14 @@ File: gif2pnffolder/tensorsflowing118.png Graphic file (type bmp)
  <a1,fr117>
 File: gif2pnffolder/tensorsflowing119.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing119.png>
- <a1,fr118>
+
+<a1,fr118>
 File: gif2pnffolder/tensorsflowing120.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing120.png>
  <a1,fr119>
 File: gif2pnffolder/tensorsflowing121.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing121.png>
-
-<a1,fr120>
+ <a1,fr120>
 File: gif2pnffolder/tensorsflowing122.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing122.png>
  <a1,fr121>
@@ -4726,14 +4745,14 @@ File: gif2pnffolder/tensorsflowing125.png Graphic file (type bmp)
  <a1,fr124>
 File: gif2pnffolder/tensorsflowing126.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing126.png>
- <a1,fr125>
+
+<a1,fr125>
 File: gif2pnffolder/tensorsflowing127.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing127.png>
  <a1,fr126>
 File: gif2pnffolder/tensorsflowing128.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing128.png>
-
-<a1,fr127>
+ <a1,fr127>
 File: gif2pnffolder/tensorsflowing129.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing129.png>
  <a1,fr128>
@@ -4748,14 +4767,14 @@ File: gif2pnffolder/tensorsflowing132.png Graphic file (type bmp)
  <a1,fr131>
 File: gif2pnffolder/tensorsflowing133.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing133.png>
- <a1,fr132>
+
+<a1,fr132>
 File: gif2pnffolder/tensorsflowing134.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing134.png>
  <a1,fr133>
 File: gif2pnffolder/tensorsflowing135.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing135.png>
-
-<a1,fr134>
+ <a1,fr134>
 File: gif2pnffolder/tensorsflowing136.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing136.png>
  <a1,fr135>
@@ -4770,14 +4789,14 @@ File: gif2pnffolder/tensorsflowing139.png Graphic file (type bmp)
  <a1,fr138>
 File: gif2pnffolder/tensorsflowing140.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing140.png>
- <a1,fr139>
+
+<a1,fr139>
 File: gif2pnffolder/tensorsflowing141.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing141.png>
  <a1,fr140>
 File: gif2pnffolder/tensorsflowing142.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing142.png>
-
-<a1,fr141>
+ <a1,fr141>
 File: gif2pnffolder/tensorsflowing143.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing143.png>
  <a1,fr142>
@@ -4792,14 +4811,14 @@ File: gif2pnffolder/tensorsflowing146.png Graphic file (type bmp)
  <a1,fr145>
 File: gif2pnffolder/tensorsflowing147.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing147.png>
- <a1,fr146>
+
+<a1,fr146>
 File: gif2pnffolder/tensorsflowing148.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing148.png>
  <a1,fr147>
 File: gif2pnffolder/tensorsflowing149.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing149.png>
-
-<a1,fr148>
+ <a1,fr148>
 File: gif2pnffolder/tensorsflowing150.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing150.png>
  <a1,fr149>
@@ -4814,14 +4833,14 @@ File: gif2pnffolder/tensorsflowing153.png Graphic file (type bmp)
  <a1,fr152>
 File: gif2pnffolder/tensorsflowing154.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing154.png>
- <a1,fr153>
+
+<a1,fr153>
 File: gif2pnffolder/tensorsflowing155.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing155.png>
  <a1,fr154>
 File: gif2pnffolder/tensorsflowing156.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing156.png>
-
-<a1,fr155>
+ <a1,fr155>
 File: gif2pnffolder/tensorsflowing157.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing157.png>
  <a1,fr156>
@@ -4836,14 +4855,14 @@ File: gif2pnffolder/tensorsflowing160.png Graphic file (type bmp)
  <a1,fr159>
 File: gif2pnffolder/tensorsflowing161.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing161.png>
- <a1,fr160>
+
+<a1,fr160>
 File: gif2pnffolder/tensorsflowing162.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing162.png>
  <a1,fr161>
 File: gif2pnffolder/tensorsflowing163.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing163.png>
-
-<a1,fr162>
+ <a1,fr162>
 File: gif2pnffolder/tensorsflowing164.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing164.png>
  <a1,fr163>
@@ -4858,14 +4877,14 @@ File: gif2pnffolder/tensorsflowing167.png Graphic file (type bmp)
  <a1,fr166>
 File: gif2pnffolder/tensorsflowing168.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing168.png>
- <a1,fr167>
+
+<a1,fr167>
 File: gif2pnffolder/tensorsflowing169.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing169.png>
  <a1,fr168>
 File: gif2pnffolder/tensorsflowing170.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing170.png>
-
-<a1,fr169>
+ <a1,fr169>
 File: gif2pnffolder/tensorsflowing171.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing171.png>
  <a1,fr170>
@@ -4880,14 +4899,14 @@ File: gif2pnffolder/tensorsflowing174.png Graphic file (type bmp)
  <a1,fr173>
 File: gif2pnffolder/tensorsflowing175.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing175.png>
- <a1,fr174>
+
+<a1,fr174>
 File: gif2pnffolder/tensorsflowing176.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing176.png>
  <a1,fr175>
 File: gif2pnffolder/tensorsflowing177.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing177.png>
-
-<a1,fr176>
+ <a1,fr176>
 File: gif2pnffolder/tensorsflowing178.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing178.png>
  <a1,fr177>
@@ -4902,14 +4921,14 @@ File: gif2pnffolder/tensorsflowing181.png Graphic file (type bmp)
  <a1,fr180>
 File: gif2pnffolder/tensorsflowing182.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing182.png>
- <a1,fr181>
+
+<a1,fr181>
 File: gif2pnffolder/tensorsflowing183.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing183.png>
  <a1,fr182>
 File: gif2pnffolder/tensorsflowing184.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing184.png>
-
-<a1,fr183>
+ <a1,fr183>
 File: gif2pnffolder/tensorsflowing185.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing185.png>
  <a1,fr184>
@@ -4924,14 +4943,14 @@ File: gif2pnffolder/tensorsflowing188.png Graphic file (type bmp)
  <a1,fr187>
 File: gif2pnffolder/tensorsflowing189.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing189.png>
- <a1,fr188>
+
+<a1,fr188>
 File: gif2pnffolder/tensorsflowing190.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing190.png>
  <a1,fr189>
 File: gif2pnffolder/tensorsflowing191.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing191.png>
-
-<a1,fr190>
+ <a1,fr190>
 File: gif2pnffolder/tensorsflowing192.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing192.png>
  <a1,fr191>
@@ -4946,14 +4965,14 @@ File: gif2pnffolder/tensorsflowing195.png Graphic file (type bmp)
  <a1,fr194>
 File: gif2pnffolder/tensorsflowing196.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing196.png>
- <a1,fr195>
+
+<a1,fr195>
 File: gif2pnffolder/tensorsflowing197.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing197.png>
  <a1,fr196>
 File: gif2pnffolder/tensorsflowing198.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing198.png>
-
-<a1,fr197>
+ <a1,fr197>
 File: gif2pnffolder/tensorsflowing199.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing199.png>
  <a1,fr198>
@@ -4968,14 +4987,14 @@ File: gif2pnffolder/tensorsflowing202.png Graphic file (type bmp)
  <a1,fr201>
 File: gif2pnffolder/tensorsflowing203.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing203.png>
- <a1,fr202>
+
+<a1,fr202>
 File: gif2pnffolder/tensorsflowing204.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing204.png>
  <a1,fr203>
 File: gif2pnffolder/tensorsflowing205.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing205.png>
-
-<a1,fr204>
+ <a1,fr204>
 File: gif2pnffolder/tensorsflowing206.png Graphic file (type bmp)
 <gif2pnffolder/tensorsflowing206.png>
  <a1,fr205>
@@ -4994,15 +5013,15 @@ File: figures/TenserflowGPU1060.PNG Graphic file (type bmp)
 <figures/TenserflowGPU1060.PNG>
 
 [107] [108]
-Package mdframed Info: mdframed works in twoside mode on input line 2706.
+Package mdframed Info: mdframed works in twoside mode on input line 2728.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2706.
+(mdframed)              on input line 2728.
  [109]
-Package mdframed Info: mdframed works in twoside mode on input line 2745.
+Package mdframed Info: mdframed works in twoside mode on input line 2767.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2745.
+(mdframed)              on input line 2767.
  [110] [111]
 Underfull \vbox (badness 7522) has occurred while \output is active []
 
@@ -5020,6 +5039,9 @@ File: figures/VSstudio2019CNTK013001.PNG Graphic file (type bmp)
 <figures/VSstudio2019CNTK013001.PNG>
 File: figures/NUgget0130.PNG Graphic file (type bmp)
 <figures/NUgget0130.PNG>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [116]
 File: figures/ImageKJ2020022901.jpg Graphic file (type bmp)
 <figures/ImageKJ2020022901.jpg>
@@ -5027,31 +5049,27 @@ File: figures/ImageKJ2020022901.jpg Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [117]
-File: figures/ImageKJ2020022901.jpg Graphic file (type bmp)
-<figures/ImageKJ2020022901.jpg>
 File: figures/ImageHisilicon.jpg Graphic file (type bmp)
 <figures/ImageHisilicon.jpg>
-
-[118]
 File: figures/ImageKuangshi.jpg Graphic file (type bmp)
 <figures/ImageKuangshi.jpg>
- [119]
 
-LaTeX Warning: Citation 'DEAPJMLR2012' on page 120 undefined on input line 2974
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+ [118]
+
+LaTeX Warning: Citation 'DEAPJMLR2012' on page 119 undefined on input line 2986
 .
 
+[119]
 File: figures/AIOpenGitClone.PNG Graphic file (type bmp)
 <figures/AIOpenGitClone.PNG>
-[120]
+ [120]
 
 LaTeX Warning: Citation 'raecompressive2019' on page 121 undefined on input lin
-e 3043.
+e 3055.
 
-[121] [122] [123]
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [124])
-[125]
+[121] [122] [123] [124]) [125]
 \openout2 = `tex/chapter2.aux'.
 
  (./tex/chapter2.tex [126
@@ -9090,10 +9108,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97580 strings out of 492922
- 2336576 string characters out of 6136750
- 2953494 words of memory out of 5000000
- 98625 multiletter control sequences out of 15000+600000
+ 97554 strings out of 492922
+ 2334806 string characters out of 6136750
+ 2952933 words of memory out of 5000000
+ 98599 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
