@@ -639,7 +639,7 @@
  {\bf\textsf{例 \stepcounter{Newexample}\theNewexample\; #1}};
 \node[newexamplestytitle, rounded corners] at (dbox.east) {$\heartsuit$};
 \end{tikzpicture}
-}[\par\vspace{.5\baselineskip}]
+}[\par\vspace{.05\baselineskip}]
 %%%%----------------注------------------
 \newcounter{Newrem}
 \renewcommand{\theNewrem}{\arabic{Newrem}}
@@ -654,7 +654,7 @@
      \bf\textsf{注解 \stepcounter{Newrem}\theNewrem\; #1}};
 \node[newthemstytitle, rounded corners] at (box.east) {$\clubsuit$};
 \end{tikzpicture}
-}[\par\vspace{.5\baselineskip}]
+}[\par\vspace{.05\baselineskip}]
 %%%%------------------------------------
 \usepackage{ClassFile/extarrows}
 \usepackage{chemarrow}
