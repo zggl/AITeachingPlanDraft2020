@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  23 MAR 2020 08:17
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  23 MAR 2020 08:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9091,10 +9091,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97732 strings out of 492922
- 2343378 string characters out of 6136750
+ 97733 strings out of 492922
+ 2343387 string characters out of 6136750
  2954370 words of memory out of 5000000
- 98772 multiletter control sequences out of 15000+600000
+ 98773 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
