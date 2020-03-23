@@ -193,26 +193,26 @@
 \contentsline {paragraph}{继承的一般过程}{164}{paragraph*.190}% 
 \contentsline {subsection}{\numberline {2.3.8}匹配}{164}{subsection.2.3.8}% 
 \contentsline {subsection}{\numberline {2.3.9}语义网络表示法的特征}{165}{subsection.2.3.9}% 
-\contentsline {section}{\numberline {2.4}框架表示法}{165}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}框架表示法}{166}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}框架理论}{166}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}框架结构和框架表示}{166}{subsection.2.4.2}% 
 \contentsline {paragraph}{框架的基本结构}{167}{paragraph*.192}% 
 \contentsline {paragraph}{学生框架}{167}{paragraph*.193}% 
-\contentsline {paragraph}{硕士生框架}{167}{paragraph*.194}% 
-\contentsline {paragraph}{实例框架}{168}{paragraph*.195}% 
-\contentsline {paragraph}{框架系统的基本结构}{169}{paragraph*.196}% 
-\contentsline {subparagraph}{框架之间的纵向联系}{169}{subparagraph*.197}% 
+\contentsline {paragraph}{硕士生框架}{168}{paragraph*.194}% 
+\contentsline {paragraph}{实例框架}{169}{paragraph*.195}% 
+\contentsline {paragraph}{框架系统的基本结构}{170}{paragraph*.196}% 
+\contentsline {subparagraph}{框架之间的纵向联系}{170}{subparagraph*.197}% 
 \contentsline {subparagraph}{框架之间的横向联系}{170}{subparagraph*.198}% 
 \contentsline {paragraph}{基本过程}{170}{paragraph*.200}% 
-\contentsline {paragraph}{特性继承}{170}{paragraph*.201}% 
+\contentsline {paragraph}{特性继承}{171}{paragraph*.201}% 
 \contentsline {paragraph}{If-Needed与If-Added过程的区别}{171}{paragraph*.202}% 
 \contentsline {paragraph}{匹配和填槽}{171}{paragraph*.203}% 
 \contentsline {subsection}{\numberline {2.4.3}框架表示法的特征}{172}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2.5}过程表示法}{172}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}过程表示法}{173}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}过程表示的主要优缺点}{174}{subsection.2.5.1}% 
 \contentsline {section}{\numberline {2.6}问题规约法}{175}{section.2.6}% 
 \contentsline {section}{\numberline {2.7}模糊认知图}{175}{section.2.7}% 
-\contentsline {section}{\numberline {2.8}作业}{175}{section.2.8}% 
+\contentsline {section}{\numberline {2.8}作业}{176}{section.2.8}% 
 \contentsline {chapter}{\numberline {第三章\hspace {.3em}}知识推理方法}{179}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}什么是推理}{180}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}推理所用的事实}{180}{subsection.3.1.1}% 

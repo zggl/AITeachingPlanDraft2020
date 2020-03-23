@@ -1556,23 +1556,23 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{center}
-\begin{tikzpicture}[font={\sf \small}]
-\def \smbwd{2cm}
-\def \smbwe{4cm}
-\thispagestyle{empty}
-%定义流程图的具体形状
-\node (qLPV) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {王强};      % 王强
-\node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=-1.5cm] {28岁};      %28岁
-\node (UniSampling2)[draw, process,align=center,right=3cm of qLPV,yshift=0cm] {经理};         %经理
-\node (UniSampling3)[draw, process,align=center,right=3cm of qLPV,yshift=1.5cm] {理想公司};     %理想公司
-\node (UniSampling4)[draw, process,align=center,right=3cm of UniSampling3,yshift=0cm] {中关村};%中关村
-\draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.15cm,xshift=-1.05cm,rotate=-25] {Age};
-\draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.25cm,xshift=-0.85cm] {Work-for};
-\draw[->] (qLPV.east)->(UniSampling3)node[left,yshift=-0.25cm,xshift=-1.35cm,rotate=20] {Headship};
-\draw[->] (UniSampling3)->(UniSampling4)node[left,yshift=0.25cm,xshift=-1.05cm] {Located-at};
-\end{tikzpicture}
-\caption{关于王强的语义网络}
-\label{Wq2020021302}
+    \begin{tikzpicture}[font={\sf \small},scale=0.78]
+        \def \smbwd{2cm}
+        \def \smbwe{4cm}
+        %定义流程图的具体形状
+        \node (qLPV) at (0,-0.75) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {王强};            % 王强
+        \node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=-1.5cm] {28岁};               %28岁
+        \node (UniSampling2)[draw, process,align=center,right=3cm of qLPV,yshift=-0.3cm] {经理};                %经理
+        \node (UniSampling3)[draw, process,align=center,right=3cm of qLPV,yshift=0.85cm] {理想公司};             %理想公司
+        \node (UniSampling4)[draw, process,align=center,right=3cm of UniSampling3,yshift=0cm] {中关村};         %中关村
+        \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.42cm,rotate=-18, xshift=-1.05cm] {Age};
+        \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.185cm,,rotate=-5, xshift=-0.55cm] {Headship};
+        \draw[->] (qLPV.east)->(UniSampling3)node[left,yshift=0.25cm,rotate=10, xshift=-1.05cm] {Work-for};
+        \draw[->] (UniSampling3)->(UniSampling4)node[left,yshift=0.20cm,xshift=-1.15cm] {Located-at};
+    \end{tikzpicture}
+    \vspace{-0.2cm}
+    \caption{王强工作的语义网络}
+    \label{AI32fig032205}
 \end{center}
 \end{figure}
 \end{example}
@@ -1582,7 +1582,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 李新的汽车的款式是“捷达”、银灰色.
 王红的汽车的款式是“凯越”、红色.
 李新和王红的汽车均属于具体概念,可增加“汽车” 这个抽象概念.
-图\ref{AI32fig10}语义网络的基本网元.
+图\ref{AI32fig10}给出了本例的语义网络.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%-------------------------------------
@@ -1851,7 +1851,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
     (3) 当待求解问题的网络片断与知识库中的某语义网络片断相匹配时, 则与询问处相匹配的事实就是问题的解.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam278}
-    假设例\ref{Wq2020021302}的语义网络已在知识库中, 问王强在哪个公司工作.
+    假设例\ref{AI32fig032205}的语义网络已在知识库中, 问王强在哪个公司工作.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1865,15 +1865,20 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (qLPV) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {?};      % ?
-\node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=0cm] {王强};      % 王强
+\node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=0cm] {王强};       % 王强
 \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.25cm,xshift=-1.05cm] {Work for};
 \end{tikzpicture}
 \caption{例\ref{Chap2exam278}的语义网络}
 \label{AI32fig105}
 \end{center}
 \end{figure}
-当用该语义网络片段与图\ref{Wq2020021302}所示的语义网络进行匹配时, 由“工作在”弧所指的结点可知, 职员王强工作在“理想公司”, 这就得到了问题的答案.
+当用该语义网络片段与图\ref{AI32fig032205}所示的语义网络进行匹配时, 由“工作在”弧所指的结点可知, 职员王强工作在“理想公司”, 这就得到了问题的答案.
 若还想知道职员王强的其它情况, 则可在语义网络中增加相应的空结点.
+
+%%%%%------------------------------------------
+\begin{think}
+    用人工智能常见的编程语言给出例\ref{Chap2exam278}的一个实现.
+\end{think}
 %%%%%-----------------------------------------
 \subsection{语义网络表示法的特征}
     主要优点:
