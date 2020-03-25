@@ -19,6 +19,8 @@
 \end{tcolorbox}
 注: 美国斯坦福大学计算机科学系教授，女，1976年出生于北京, 2015年12月入选2015年“全球百大思想者”. 2018年3月，获“影响世界华人大奖”.
 现为美国斯坦福大学红杉讲席教授，美国国家工程院院士, 类人人工智能研究院（HAI）院长。
+
+法国国民议会议员、数学家赛德里克·维拉尼 (Cédric Villani) 在其2018年提交的报告《有意义的人工智能》(For A Meaningful Artificial Intelligence) 中指出, “人工智能的雄心在于理解并复制人类认知”.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[htbp]
 %	\centering
@@ -2956,7 +2958,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple boto3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CNTK}
 Microsoft Cognitive Toolkit是微软出品的开源深度学习工具包.
-CNTK的性能比Caffe, Theano, TensoFlow等主流工具都要强. 它支持CPU和GPU模式, 所以没有GPU, 或者神经网络比较小的实验, 直接用CPU版的CNTK跑就行了. \href{https://github.com/Microsoft/CNTK}{开源主页}上的CNTK把神经网络描述成一个图论中的有向图, 叶子节点代表输入或者网络参数, 其他节点计算步骤. 它支持卷积神经网络和递归神经网络. \index{有向图}
+CNTK的性能比贾扬清的 Caffe, Theano, TensoFlow等主流工具都要强. 它支持CPU和GPU模式, 所以没有GPU, 或者神经网络比较小的实验, 直接用CPU版的CNTK跑就行了. \href{https://github.com/Microsoft/CNTK}{开源主页}上的CNTK把神经网络描述成一个图论中的有向图, 叶子节点代表输入或者网络参数, 其他节点计算步骤. 它支持卷积神经网络和递归神经网络. \index{有向图}
 
 去\href{https://github.com/Microsoft/CNTK/wiki/CNTK-Binary-Download-and-Configuration}{页面}找符合自己系统的版本.
 Windows用户有编译好的\href{https://cntk.ai/nightly-windows.html}{CPU和GPU版本}. 解压, 然后把目录添加到PATH变量.
@@ -2981,6 +2983,7 @@ VS Comunity 2019离线安装需要的\href{https://www.nuget.org/packages?q=CNTK
 \end{figure}
 
 深度学习框架已经成为人工智能竞赛的制高点. 世界范围内, 市场主流的开源深度学习框架大多数是国外厂商或机构主导, 比如 Google的 TensorFlow和 Facebook的 PyTorch占据了大部分市场份额.
+阿里开源了 XDL, 华为开源了 MindSpore. 就在不久前, 清华大学也开源了其深度学习框架 Jittor计图.
 我国的开发者高度依赖国外的开源框架. 2019年 7月, 长江商学院经济学教授许成钢给出了一个数据, 几乎 93\% 的中国研究者使用的人工智能开源软件包, 是美国的机构开发提供的.
 2015 年, 国防科技大学主导的超级计算机 “天河二号”, 因英特尔至强处理器断供, 打断了原定升级计划. 被 “卡住脖子” 的天河二号, 在 2018 年借助中国自研的 Matrix-2000 加速卡才完成升级.
 2019 年, 华为海思总裁一份致员工信广为传播：多年前, 公司做出了极限生存的假设, 预计有一天, 所有美国的先进芯片和技术将不可获得. 为了这个以为永远不会发生的假设, 数千海思儿女为公司的生存打造 “备胎”.
@@ -2991,7 +2994,7 @@ VS Comunity 2019离线安装需要的\href{https://www.nuget.org/packages?q=CNTK
 \caption{常见的开源框架}
 \label{VSstudio2019CNTK013001}
 \end{figure}
-2015年, 国防科技大学主导的超级计算机 “天河二号”, 至强处理器的断供打断天河二号的原定升级计划, 在 2018 年借助中国自研的 Matrix-2000 加速卡才完成升级.
+2015年, 国防科技大学主导的超级计算机 “天河二号”, 至强处理器的断供打断天河二号的原定升级计划, 在 2018 年借助中国自研的 Matrix-2000加速卡才完成升级.
 2019年, 华为海思总裁一份致员工信广为传播：多年前, 公司做出了极限生存的假设, 预计有一天, 海思为公司的生存打造了 “备胎”, 为脱离美国的先进芯片和技术依赖做了很好地准备.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -3000,21 +3003,29 @@ VS Comunity 2019离线安装需要的\href{https://www.nuget.org/packages?q=CNTK
 \caption{海思Hisilicon}
 \label{ImageHisilicon2020001}
 \end{figure}
-旷视的MegEngine 经历了 8 版迭代. 在核心的深度学习框架上发展出了自有的技术生态, MegEngine 演进成了 Brain++——一个涵盖了深度学习算法开发的所有环节的人工智能算法平台, 针对数据管理, 算力调度和深度学习训练框架, 分别构建了三个组成部分： MegData（数据管理平台）、MegCompute（深度学习云计算平台 ）和即将开源的MegEngine（深度学习框架）
+旷视的天元框架MegEngine经历了 8版迭代. 在核心的深度学习框架上发展出了自有的技术生态, MegEngine 演进成了 Brain++——一个涵盖了深度学习算法开发的所有环节的人工智能算法平台, 针对数据管理, 算力调度和深度学习训练框架, 分别构建了三个组成部分： MegData（数据管理平台）、MegCompute（深度学习云计算平台 ）和即将开源的MegEngine（深度学习框架）
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\textwidth]{ImageKuangshi.jpg}
-\caption{MegEngine深度学习框架}
+\includegraphics[width=0.45\textwidth]{ImageKuangshi.jpg}
+\includegraphics[width=0.45\textwidth]{KuangshiTY20200325190557.jpg}
+\caption{MegEngine深度学习框架和旷视天元架构}
 \label{ImageKuangshi2020001}
 \end{figure}
+2020年3月25日, 旷视新发布的开源深度学习框架天元. 旷视 Brain++生产力平台，包括天元框架、云计算平台和数据管理平台。旷视称其为算法、算力、数据能力三位一体架构，为使用者提供一站式解决方案，让深度学习更易使用。 
+旷视已在我国新一代人工智能开源开放平台OpenI启智社区 和全球最大的开源社区 GitHub上发布天元Alpha版源代码，同时旷视还发布了在线深度学习工具MegStudio，以及汇聚了全球顶尖算法预训练模型的模型中心ModelHub，支持开发者开箱即用。
+\begin{itemize}
+\item \href{https://github.com/MegEngine/Models}{MegEngine旷视天元}
+\item \href{https://github.com/MegEngine/Models}{MegEngine Models}
+\item \href{https://github.com/zggl/Docs}{MegEngine Documentations}
+\end{itemize}
 %%%%%%%%--------------------------------------------------------
 \subsection{伯克利官方 AI开源框架 Ray}
 Ray 专门为人工智能应用设计, 通过这款框架, 运行于笔记本电脑上的原型算法仅需加入数行代码就可以转化为高效的分布式计算应用. 近日, 该框架已被开源, \href{https://github.com/ray-project/ray}{GitHub下载-Linux和MacOS}.
 
-Ray 与 TensorFlow、PyTorch 和 MXNet 等深度学习框架互相兼容, 在很多应用上, 在 Ray 中使用一个或多个深度学习框架都是非常自然的(例如, UC Berkeley 的强化学习库就用到了很多 TensorFlow 与 PyTorch).
+Ray 与 TensorFlow、PyTorch 和 MXNet 等深度学习框架互相兼容, 在很多应用上, 在 Ray中使用一个或多个深度学习框架都是非常自然的(例如, UC Berkeley 的强化学习库就用到了很多 TensorFlow 与 PyTorch).
 
-与其他分布式系统的关系：目前的很多流行分布式系统都不是以构建 AI 应用为目标设计的, 缺乏人工智能应用的相应支持与 API, UC Berkeley 的研究人员认为, 目前的分布式系统缺乏以下一些特性：
+与其他分布式系统的关系：目前的很多流行分布式系统都不是以构建 AI应用为目标设计的, 缺乏人工智能应用的相应支持与 API, UC Berkeley 的研究人员认为, 目前的分布式系统缺乏以下一些特性：
 
 \begin{itemize}
 \item 支持毫秒级的任务处理, 每秒处理百万级的任务;

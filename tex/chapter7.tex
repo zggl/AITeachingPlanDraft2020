@@ -10,11 +10,8 @@
 对机器学习的认识和定义可以从多个方面进行：
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tcolorbox}[colback=white!50,colframe=orange!50,title=机器学习]
-\begin{center}
 学习是人类获取知识的重要途径和自然智能的重要标志, 机器学习则是机器获取知识的重要途径和人工智能的重要标志.
 它是人工智能的一个分支, 探索如何让计算机通过经验学习提高性能---Stuart Russell (伯克利人工智能学家, 友善及安全 AI 的先驱之一).
-\hfill
-\end{center}
 \end{tcolorbox}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tcolorbox}[colback=white!50,colframe=orange!50,title=机器学习]
@@ -203,6 +200,33 @@
 \end{figure}
 如何自动化机器学习管道(Axel de Romblay)：
 从摄取数据到 预处理、优化, 然后预测结果, 每个步骤都由人来控制和执行. AutoML 主要关注两个主要方面：数据采集 / 收集和预测. 中间发生的所有其他步骤都可以轻松实现自动化, 同时提供经过优化并准备好进行预测的模型.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{netZooPy库}
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PandaPy
+
+能够使用混合int，float，datetime，str等数据类型进行机器学习项目，消耗的内存比Pandas少大约三分之一！
+
+1）对于小型数据集（即加号，多号，对数）的简单计算，PandaPy比Pandas快25倍-80倍.
+
+2）对于小型数据集上的表函数（即组，枢纽，放置，连接，填充，填充）, PyPanda比Pandas快5倍-100倍.
+
+3）对于大多数使用小数据的用例，PandaPy比Dask，Modin Ray和Pandas快.
+
+3、Google Earth Engine – 300多个Jupyter笔记本可分析地理空间数据.
+
+\href{https://github.com/netZoo/netZooM}{netZooM-github}, \href{https://github.com/netZoo/netZooPy}{netZooPy-github}, \href{https://github.com/DanyWind/fast_neptune}{Fast Neptune库}使我们能够快速记录启动机器学习实验所需的所有信息.
+
+Using PANDA to infer gene regulatory networks
+
+panda.mlx
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.46\textwidth]{pandamatlab2020032501.PNG}
+\caption{netZooM (panda工具箱)}
+\label{pandamatlab2020032501}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{记忆学习}
 
