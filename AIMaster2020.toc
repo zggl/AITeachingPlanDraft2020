@@ -211,6 +211,7 @@
 \contentsline {section}{\numberline {2.5}过程表示法}{173}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}过程表示的主要优缺点}{174}{subsection.2.5.1}% 
 \contentsline {section}{\numberline {2.6}模糊认知图}{175}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}模糊认知图的参数训练}{176}{subsection.2.6.1}% 
 \contentsline {section}{\numberline {2.7}作业}{176}{section.2.7}% 
 \contentsline {chapter}{\numberline {第三章\hspace {.3em}}知识推理方法}{179}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}什么是推理}{180}{section.3.1}% 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  25 MAR 2020 19:18
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  26 MAR 2020 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5079,7 +5079,11 @@ File: figures/AIOpenGitClone.PNG Graphic file (type bmp)
 LaTeX Warning: Citation 'raecompressive2019' on page 123 undefined on input lin
 e 3111.
 
-[123] [124] [125] [126]) [127]
+[123] [124]
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+ [125]
+[126]) [127]
 \openout2 = `tex/chapter2.aux'.
 
  (./tex/chapter2.tex [128
@@ -5482,20 +5486,20 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 2208.
  [174]
-Underfull \vbox (badness 6268) has occurred while \output is active []
-
- [175]
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+Missing character: There is no ​ in font ntx-Regular-tlf-t1!
+ [175] [176]
 File: figures/YUYINETlizi01.png Graphic file (type bmp)
 <figures/YUYINETlizi01.png>
-
-[176]) [177]
+ [177]) [178]
 \openout2 = `tex/chapter3.aux'.
 
- (./tex/chapter3.tex [178
-
-
-
-]
+ (./tex/chapter3.tex
 第三章
 File: figures/KRC412184.jpg Graphic file (type bmp)
 <figures/KRC412184.jpg>
@@ -5503,7 +5507,11 @@ File: figures/KRC412184.jpg Graphic file (type bmp)
 LaTeX Warning: Citation 'BouraouiKR2019' on page 179 undefined on input line 16
 .
 
-[179]
+[179
+
+
+
+]
 Package mdframed Info: mdframed works in twoside mode on input line 31.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9103,10 +9111,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97742 strings out of 492922
- 2343696 string characters out of 6136750
- 2954531 words of memory out of 5000000
- 98780 multiletter control sequences out of 15000+600000
+ 97743 strings out of 492922
+ 2343703 string characters out of 6136750
+ 2954545 words of memory out of 5000000
+ 98781 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
