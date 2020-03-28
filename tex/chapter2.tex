@@ -1493,7 +1493,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %%%%%-----------------------------------------
 \paragraph{一元关系的描述}
 应该说, 语义网络表示的是二元关系. 如何用它来描述一元关系?
-结点1表示实体, 结点2表示实体的性质或属性等, 弧表示语义关系.
+具体做法为: 结点1表示实体, 结点2表示实体的性质或属性等, 弧表示语义关系.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}
 “李刚是一个人”为一元关系, 其语义网络如前所示 (图\ref{ISAExam2020021201}).
@@ -1502,29 +1502,28 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \begin{example}用语义网络表示“动物能运动、会吃” .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
+\vspace{--.2cm}
 \begin{center}
-\begin{tikzpicture}[font={\sf \small}]
-\def \smbwd{2cm}
-\def \smbwe{4cm}
-\thispagestyle{empty}
-%定义流程图的具体形状
-\node (qLPV) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {动物};      % 动物
-\node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=-1cm] {\,吃\,};     %人
-\node (UniSampling2)[draw, process,align=center,right=3cm of qLPV,yshift=1cm] {运动};         %人
-\draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.25cm,rotate=10,xshift=-1.55cm] {Can};
-\draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.05cm,rotate=-10,xshift=-1.55cm,rotate=20] {Can};
-\end{tikzpicture}
+    \begin{tikzpicture}[font={\sf \small},scale=0.4]
+    \def \smbwd{1cm}
+    \def \smbwe{2cm}
+    %定义流程图的具体形状
+    \node (qLPV) at (0,0.8) [draw, process, yshift=-1cm] {动物};                                  %  动物
+    \node (UniSampling1)[draw, process,align=center, right=3cm of qLPV,yshift=-1cm] {\,吃\,};    % 吃
+    \node (UniSampling2)[draw, process,align=center, right=3cm of qLPV,yshift=1cm] {运动};       % 运动
+    \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.05cm,rotate=10,xshift=-1.05cm] {Can};
+    \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=-0.05cm,rotate=-12,xshift=-1.05cm] {Can};
+    \end{tikzpicture}
 \end{center}
+\vspace{-0.2cm}
 \end{figure}
 \end{example}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%-----------------------------------------
 \subsection{二元关系表示}
 单个二元关系可直接用一个基本网元来表示, 如前介绍的一些常用的二元关系及其表示.
 %%%%%--------------------------------
 \begin{remark}
-  二元关系可用二元谓词$P(x,y)$表示的关系, 其中, $x,y$为实体, $P$为实体之间的关系.
+  二元关系是可用二元谓词$P(x,y)$表示的关系, 其中, $x,y$为实体, $P$为实体之间的关系.
 对复杂关系, 可通过一些相对独立的二元或一元关系的组合来实现.
 \end{remark}
 %%%%%--------------------------------
@@ -1546,7 +1545,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{figure}
 %%%%%-------------------------------------
 %%%%%--------------------------------
-\begin{example}
+\begin{example}\label{wangqianli2.69}
 用语义网络表示:
 \begin{Verbatim}
         王强是理想公司的经理;
@@ -1567,24 +1566,22 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
         \node (UniSampling4)[draw, process,align=center,right=3cm of UniSampling3,yshift=0cm] {中关村};         %中关村
         \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.42cm,rotate=-18, xshift=-1.05cm] {Age};
         \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.185cm,,rotate=-5, xshift=-0.55cm] {Headship};
-        \draw[->] (qLPV.east)->(UniSampling3)node[left,yshift=0.25cm,rotate=10, xshift=-1.05cm] {Work-for};
+        \draw[->] (qLPV.east)->(UniSampling3)node[left,yshift=0.25cm,rotate=13, xshift=-1.55cm] {Work-for};
         \draw[->] (UniSampling3)->(UniSampling4)node[left,yshift=0.20cm,xshift=-1.15cm] {Located-at};
     \end{tikzpicture}
     \vspace{-0.2cm}
-    \caption{王强工作的语义网络}
+    \caption{例\ref{wangqianli2.69}的语义网络}
     \label{AI32fig032205}
 \end{center}
 \end{figure}
 \end{example}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam266}
-李新的汽车的款式是“捷达”、银灰色.
-王红的汽车的款式是“凯越”、红色.
+李新的汽车的款式是银灰色“捷达”.
+王红的汽车的款式是红色“凯越”.
 李新和王红的汽车均属于具体概念,可增加“汽车” 这个抽象概念.
 图\ref{AI32fig10}给出了本例的语义网络.
 \end{example}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%-------------------------------------
 \begin{figure}[htbp]
 \centering
@@ -1599,14 +1596,13 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 可用多元谓词$P(x_1, x_2,\cdots)$表示的关系, 其中, 个体$x_1, x_2,\cdots$为实体, 谓词$P$说明这些实体之间的关系.
 \end{mydef}
 
-用语义网络表示多元关系时, 可把它转化为一个或多个二员关系的组合, 然后再利用下一节讨论的合取关系的表示方法, 把这种多元关系表示出来.
-
-多元关系的表示方法: 西蒙提出\uwave{增加情况和动作结点的描述方法}.
+多元关系的表示方法: 用语义网络表示多元关系时, 可把它转化为一个或多个二元关系的组合, 然后再利用下一节讨论的合取关系的表示方法, 把这种多元关系表示出来.
+具体来说: \uwave{增加情况和动作结点的描述方法}(西蒙).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam268}
 用语义网络表示: `\uwave{小燕子这只燕子从春天到秋天占有一个巢}".
 \end{example}
-需要设立一个\textbf{占有权结点}, 表示占有物和占有时间等.
+需要设立一个\textbf{占有权结点}, 表示占有物或者占有时间等概念.
 %%%%%-------------------------------------
 \begin{figure}[H]
 \centering
@@ -1625,6 +1621,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \label{AI32fig102}
 \end{figure}
 %%%%%-------------------------------------
+\paragraph{动作结点的表示}
 用语义网络表示事件或动作时, 需要设立一个事件或动作结点.
 
 \textbf{动作结点}: 由一些向外引出的弧来指出动作的主体与客体.
@@ -1632,11 +1629,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \begin{example}\label{Chap2exam269}
 用于语义网络表示: “常河给江涛一张磁盘作为礼物”.
 \end{example}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{事件结点}: 如上例用一个事件结点描述.
-
-\textbf{表示方法}: 可通过增加合取结点和析取结点来实现.
 %%%%%-------------------------------------
 \begin{figure}[H]
 \centering
@@ -1646,6 +1639,10 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \label{AI32fig103}
 \end{figure}
 %%%%%-------------------------------------
+
+\textbf{事件结点}: 如上例用一个事件结点描述.
+
+\textbf{表示方法}: 可通过增加合取结点和析取结点来实现.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam270}
 用语义网络表示如下事实: “参赛者有教师、有学生、有高、有低”.
@@ -1660,7 +1657,9 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{center}
 然后再按照他们的逻辑关系用语义网络表示出来.
 
-可分为基本语义关系的否定和一般语义关系的否定. 基本语义关系的否定的表示, 可通过在有向弧上直接标注该基本语义关系的否定的方法来解决.
+%%%%%-------------------------------------
+\paragraph{语义关系的否定表示}
+    分为基本语义关系的否定和一般语义关系的否定. 基本语义关系的否定的表示, 可通过在有向弧上直接标注该基本语义关系的否定的方法来解决.
 %%%%%-------------------------------------
 \begin{figure}[H]
 \centering
@@ -1691,7 +1690,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \label{AI32fig00105}
 \end{center}
 \end{figure}
-一般语义关系的否定的表示. 对一般语义关系的否定, 通常需要引进“非”节点来表示.
+一般语义关系的否定表示: 对一般语义关系的否定, 通常需要引进“非”节点来表示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam271}
 用语义网络表示:  常河没有给江涛一张磁盘.
@@ -1720,7 +1719,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \draw[thick,->](Gei.west)->(Changhe)node[right,yshift=0.25cm,xshift=1.5cm] {Giver};
 
 \node (Cipan)[draw, process,align=center,above=1cm of Gei,yshift=0cm] {一张磁盘};       %磁盘
-\draw[thick,->](Gei)->(Cipan)node[left,yshift=-0.75cm,xshift=0cm] {Gift};
+\draw[thick,->](Gei)->(Cipan)node[left,yshift=-0.85cm,xshift=0cm] {Gift};
 \node (Fei)[draw, process,align=center,below=1cm of Gei,yshift=0cm] {非};              %非
 \draw[thick,->](Fei)->(Gei.south)node[left,yshift=0.25cm,xshift=-1cm] {};
 \end{tikzpicture}
@@ -1729,14 +1728,12 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \caption{例\ref{Chap2exam271}的语义网络}
 \label{AI32fig106}
 \end{figure}
-%%%%%-------------------------------------
 %%%%%-----------------------------------------
 \paragraph{蕴含的表示}
 通过增加蕴含关系节点来实现.
-
 在蕴含关系中, 有两条指向蕴含节点的弧, 一条代表前提条件, 标记为ANTE;另一条代表结论, 标记为CONSE.
 \begin{example}\label{Chap2exam273}
- 用语义网络表示如下知识:  “如果学校组织大学生机器人竞赛活动, 那么李强就参加比赛”.
+    用语义网络表示如下知识:  “如果学校组织大学生机器人竞赛活动, 那么李强就参加比赛”.
 \end{example}
 该蕴含关系的语义网络如图\ref{AI32fig107},其中机器人竞赛的组织者是学校, 参赛对象是学生操纵的机器人, 而机器人只不过是一种智能机器.
 %%%%%-------------------------------------
@@ -1750,7 +1747,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \subsection{存在和全称量词的表示}
 \begin{center}
 \begin{minipage}{0.9\textwidth}
-\textcolor[rgb]{0,0,1}{\textbf{存在量词}}: 可直接用“ISA”、“AKO”等这样的语义关系来表示.
+\textcolor[rgb]{0,0,1}{\textbf{存在量词}}: 可直接用“ISA”和“AKO”等这样的语义关系来表示.
 
 \textcolor[rgb]{0,0,1}{\textbf{全称量词}}: 可采用亨德里克提出的网络分区技术.
 
@@ -1778,11 +1775,10 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
       $g$是一个实例结点, 代表$GS$中的一个具体例子, 如上所提到的事实.
       $s$是一个全称变量, 表示任意一个学生.
       $I$是一个存在变量, 表示某一次学习.
-      $P$是一个存在变量, 表示某一门程序设计语言.
-
-      这样, $s,L,P$之间的语义联系就构成一个子空间, 它表示对每一个学生$s$, 都存在一个学习事件$l$ 和一门程序设计语言$P$.
+      $P$是一个存在变量, 表示某一门程序设计语言. 这样, $s,L,P$之间的语义联系就构成一个子空间, 它表示对每一个学生$s$, 都存在一个学习事件$l$ 和一门程序设计语言$p$.
 \end{flushleft}
-在从结点$g$引出的三条弧中, 弧“ISA”说明结点$g$是GS中一个实例; 弧“$F$”说明它所代表的子空间及其具体形式; 弧“$\forall$”说明它所代表的全称量词.
+
+\indent 在从结点$g$引出的三条弧中, 弧“ISA”说明结点$g$是GS中一个实例; 弧“$F$”说明它所代表的子空间及其具体形式; 弧“$\forall$”说明它所代表的全称量词.
 每一个全称量词都需要一条这样的弧, 子空间中有多少个全称量词, 就需要有多少条这样的弧.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}\label{Chap2exam275}
@@ -1829,14 +1825,14 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{继承的一般过程} 继承是在结点上用弧表示彼此的连接、从属和属性关系,  从上一节点得到需要的属性.
 
-(1) 建立一个结点表, 用来存放待求解结点和所有以ISA、AKO等继承弧与此结点相连的那些结点. 初始情况下, 表中只有待求解结点.
+(1) 建立一个结点表, 用来存放待求解结点和所有以ISA和AKO等继承弧与此结点相连的那些结点. 初始情况下, 表中只有待求解结点.
 
 (2) 检查表中的第一个结点是否是有继承弧. 如果有,就把该弧所指的所有结点放入结点表的末尾, 记录这些结点的所有属性, 并从结点表中删除第一个结点. 如果没有继承弧, 仅从结点表中删除第一个结点.
 
 (3) 重复(2), 直到结点表为空. 此时, 记录下来的所有属性都是待求解结点继承来的属性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}
-  在图\ref{AI32fig09}所示的语义网络中, 通过继承关系可以得到“鸟”具有: 会吃、能运动的属性.
+    在图\ref{AI32fig09}所示的语义网络中, 通过继承关系可以得到“鸟”具有: 会吃、能运动的属性.
 \end{example}
 %%%%%-----------------------------------------
 \subsection{匹配}
@@ -1913,7 +1909,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 它认为人们对现实世界中各种事物的认识都是以一种类似于框架的结构存储在记忆中的, 当遇到一个新事物时, 就从记忆中找出一个合适的框架, 并根据新的情况对其细节加以修改和补充, 从而形成对这个新事物的认识.
 
 \begin{example}
-    对饭店、教室等的认识.
+    对饭店和教室等的认识.
 \begin{itemize}
     \item \textbf{框架}: 是人们认识事物的一种通用的数据结构形式. 即当新情况发生时, 人们只要把新的数据加入到该通用数据结构中便可形成一个具体的实体(类), 这样的通用数据结构就称为框架.
     \item \textbf{实例框架}: 对于一个框架, 当人们把观察或认识到的具体细节填入后, 就得到了该框架的一个具体实例, 框架的这种具体实例被称为实例框架.
@@ -1931,19 +1927,19 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \begin{Verbatim}
 Frame <MASTER>
     Name: Unit(Last-name, First-name)
-    Sex: Area(male, female)
-              Default:  male
-    Age: Unit(Years)
+    Sex:  Area(male, female)
+          Default: male
+    Age:  Unit(Years)
     Major: Unit(Major)
     Field: Unit(Field)
     Advisor: Unit(Last-name, First-name)
-    Project : Area(National, Provincial, Other)
-                     Default: National
+    Project: Area(National, Provincial, Other)
+             Default: National
     Paper: Area(SCI, EI, Core, General)
-                  Default: Core
+           Default: Core
     Address: <S-Address>
     Telephone: Home  Unit(Number)
-     Mobile  Unit(Number)
+    Mobile:    Unit(Number)
 \end{Verbatim}
 
 %%%%%-----------------------------------------
@@ -1951,15 +1947,15 @@ Frame <MASTER>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%原文引用
 \begin{Verbatim}
 <框架名>
-槽名1:   侧面名11       值111, 值112, ……
+槽名1:   侧面名11  值111, 值112, ……
                  侧面名12       值121, 值122, ……
                      :
-槽名2:   侧面名21       值211, 值212, ……
+槽名2:   侧面名21  值211, 值212, ……
                  侧面名22       值221, 值222, ……
                       :
     :
     :
-槽名n:   侧面名n1       值n11, 值n12, ……
+槽名n:   侧面名n1  值n11, 值n12, ……
                  侧面名n2       值n21, 值n22, ……
                       :
                  侧面名nm     值nm1, 值nm2, ……
@@ -1971,14 +1967,14 @@ Frame <MASTER>
 \begin{Verbatim}
 Frame <Student>
     Name: Unit(Last-name, First-name)
-    Sex: Area(male, female)
-              Default: male
-    Age: Unit(Years)
-              If-Needed: Ask-Age
-    Address: < S-Address>
+    Sex:  Area(male, female)
+          Default: male
+    Age:  Unit(Years)
+          If-Needed: Ask-Age
+    Address: <S-Address>
     Telephone: Home  Unit(Number)
-                        Mobile  Unit(Number)
-                        If-Needed: Ask-Telephone
+               Mobile  Unit(Number)
+               If-Needed: Ask-Telephone
 \end{Verbatim}
 %%%%%-----------------------------------------
 \paragraph{硕士生框架}
@@ -1987,21 +1983,21 @@ Frame <Student>
 Frame <Master>
     AKO: Student
     Major: Unit(Major)
-                If-Needed: Ask- Major
-                       If-Added: Check-Major
+                If-Needed: Ask-Major
+                If-Added:  Check-Major
     Field: Unit(Direction-Name)
-                If- Needed: Ask - Field
+                If-Needed: Ask-Field
     Advisor: Unit(Last-name, First-name)
-                     If-Needed: Ask-Visor
+                If-Needed: Ask-Visor
     Project : Area(National, Provincial, Other)
-                    Default: National
+                Default: National
     Paper: Area(SCI, EI, Core, General)
-                  Default: Core
+                Default: Core
 \end{Verbatim}
 在Master框架中, 用到了一个系统预定义槽名AKO. 所谓\textbf{系统预定义槽名}, 是指框架表示法中事先定义好的可公用的一些标准槽名. AKO与其在语义网络中的含义相似, 其直观含义为“是一种”.
 当AKO作为下层框架的槽名时, 其槽值为上层框架的框架名, 表示该下层框架所描述的事物比其上层框架更具体. 并且, 由AKO所联系的框架之间具有属性的继承关系.
 
-框架的继承技术, 通常由框架中设置的3个侧面: Default、If- Needed、If-Added所提供的缺省推理功能来组合实现.
+框架的继承技术, 通常由框架中设置的3个侧面: Default、If-Needed、If-Added所提供的缺省推理功能来组合实现.
 
 \textbf{Default}: 该侧面的作用是为相应槽提供缺省值. 当其所在槽没有填入槽值时, 系统就以此侧面值作为该槽的默认值.
 \begin{example}
@@ -2020,9 +2016,9 @@ Frame <Master>
 %%%%%-----------------------------------------
 \paragraph{实例框架}
 \begin{example}
-  假设有杨叶和柳青2个硕士生, 当把他们的具体情况分别添入Master框架后, 可得实例框架Master-1和Master-2.
+    假设有杨叶和柳青2个硕士生, 当把他们的具体情况分别添入Master框架后, 可得实例框架Master-1和Master-2.
 \end{example}
-这2个实例框架可表示如下:
+    这2个实例框架可表示如下:
 
 硕士生-1框架:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%原文引用
@@ -2041,43 +2037,43 @@ Frame <Master-1>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%原文引用
 \begin{Verbatim}
 Frame <Master-2>
-    ISA: Master
+    ISA:  Master
     Name: Liu Qing
-    Age: 22
-    Major: Computer
+    Age:  22
+    Major:   Computer
     Advisor: Lin Hai
-    Paper:  EI
+    Paper:   EI
 \end{Verbatim}
-在这2个实例框架中, 我们又用到了一个系统预定以槽名ISA. 该预定义槽名与语义网络中的ISA弧的语义相似, 其直观含义为“是一个”, 表示一个事物是另一个事物的一个具体实例, 用来描述一个具体事物与其抽象概念间的实例关系.
+    在这2个实例框架中, 我们又用到了一个系统预定义槽名ISA. 该预定义槽名与语义网络中的ISA弧的语义相似, 其直观含义为“是一个”, 表示一个事物是另一个事物的一个具体实例, 用来描述一个具体事物与其抽象概念间的实例关系.
 \begin{example}
-  Master-1和Master-2是2个具体的Master.
+    Master-1和Master-2是2个具体的Master.
 \end{example}
 %%%%%-----------------------------------------
 \paragraph{框架系统的基本结构}
-当知识比较复杂时, 往往需要通过诸框架之间的横向或纵向联系形成一种框架系统.
+    当知识比较复杂时, 往往需要通过诸框架之间的横向或纵向联系形成一种框架系统.
 %%%%%-----------------------------------------
 \subparagraph{框架之间的纵向联系}
 是指那种具有继承关系的上下层框架之间的联系.
 \begin{example}
-  在图\ref{AI32fig11}中, 学生可按照接受教育的层次分为本科生、硕士生和博士生. 每类学生又可按照所学专业的不同, 分为不同专业的学生等.
+    在图\ref{AI32fig11}中, 学生可按照接受教育的层次分为本科生、硕士生和博士生. 每类学生又可按照所学专业的不同, 分为不同专业的学生等.
 \end{example}
 
-框架之间的纵向联系是通过预定以槽名AKO和ISA等来实现的.
+框架之间的纵向联系是通过预定义槽名AKO和ISA等来实现的.
 \begin{example}
-  前面的例子, AKO实现了Student框架与Master框架之间的纵向联系, ISA实现了Master框架与Master-1实例框架之间的联系.
+    前面的例子, AKO实现了Student框架与Master框架之间的纵向联系, ISA实现了Master框架与Master-1实例框架之间的联系.
 \end{example}
 \subparagraph{框架之间的横向联系}
-是指那种以另外一个框架名作为一个槽的槽值或侧面值所建立起来的框架之间的联系. 如下图给出的框架系统中, Student框架与S-Addre框架之间就是一种横向联系(图\ref{AI32fig11}).
+    是指那种以另外一个框架名作为一个槽的槽值或侧面值所建立起来的框架之间的联系. 如下图给出的框架系统中, Student框架与S-Addre框架之间就是一种横向联系(图\ref{AI32fig11}).
 %%%%%-------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{kuangjia2019112511.PNG}
-\caption{框架系统的基本结构}
-\label{AI32fig11}
+    \centering
+    \includegraphics[width=0.6\textwidth]{kuangjia2019112511.PNG}
+    \caption{框架系统的基本结构}
+    \label{AI32fig11}
 \end{figure}
 %%%%%-----------------------------------------
 \paragraph{基本过程}
-在框架系统中, 问题求解主要是通过对框架的继承、匹配与填槽来实现的. 求解问题分为如下三步:
+    在框架系统中, 问题求解主要是通过对框架的继承、匹配与填槽来实现的. 求解问题分为如下三步:
 
 1) 把该问题用框架表示出来.
 
@@ -2088,51 +2084,51 @@ Frame <Master-2>
 \paragraph{特性继承}
 特性继承过程
 \begin{itemize}
-\item  特性继承主要是通过ISA、AKO链来实现的. 当需要查询某一事物的某个属性, 且描述该事物的框架为提供其属性值时, 系统就沿ISA和AKO链追溯到具有相同槽的类或超类框架.
-\item  如果该槽提供有Default侧面值, 就继承该默认值作为查询结果返回.
-\item  如果该槽提供有If-Needed侧面供继承, 则执行If-Needed操作, 去产生一个值作为查询结果.
-\item  如果对某个事物的某一属性进行了赋值或修改操作, 则系统会自动沿ISA和AKO链追溯到具有相应的类或超类框架, 只要发现类或超类框架中的同名槽具有If-Added侧面, 就执行If-Added操作, 作相应的后继处理.
+    \item  特性继承主要是通过ISA、AKO链来实现的. 当需要查询某一事物的某个属性, 且描述该事物的框架为提供其属性值时, 系统就沿ISA和AKO链追溯到具有相同槽的类或超类框架.
+    \item  如果该槽提供有Default侧面值, 就继承该默认值作为查询结果返回.
+    \item  如果该槽提供有If-Needed侧面供继承, 则执行If-Needed操作, 去产生一个值作为查询结果.
+    \item  如果对某个事物的某一属性进行了赋值或修改操作, 则系统会自动沿ISA和AKO链追溯到具有相应的类或超类框架, 只要发现类或超类框架中的同名槽具有If-Added侧面, 就执行If-Added操作, 作相应的后继处理.
 \end{itemize}
 %%%%%-----------------------------------------
 \paragraph{If-Needed与If-Added过程的区别}
-它们的主要区别在于激活时机和操作目的不同.
+    它们的主要区别在于激活时机和操作目的不同.
 \begin{itemize}
-\item If-Needed操作是在系统试图查询某个事物框架中未记载的属性值时激活, 并根据查询需求, 被动地即时产生所需要的属性值;
-\item If-Added操作是在系统对某个事务框架的属性作赋值或修改工作后激活, 目的在于通过规定的后继处理, 主动做好配套操作, 以消除可能存在的不一致问题.
+    \item If-Needed操作是在系统试图查询某个事物框架中未记载的属性值时激活, 并根据查询需求, 被动地即时产生所需要的属性值;
+    \item If-Added操作是在系统对某个事务框架的属性作赋值或修改工作后激活, 目的在于通过规定的后继处理, 主动做好配套操作, 以消除可能存在的不一致问题.
 \end{itemize}
 \begin{example}
 以前面的学生框架为例
 \begin{itemize}
-\item 若要查询Master-1的Sex, 则可直接回答;但要查询Master-2的Sex, 则需要沿ISA链和AKO链到Student框架取其默认值male.
-\item 若要查询Master-2的Field, 需要沿ISA链到Master框架, 执行Field槽If-Needed侧面的Ask-Field操作, 即时产生一个值, 假设产生的值是Data-Mining, 则表示Master-2的研究方向为数据挖掘.
-\item 如果要修改Master-2的Major, 需要沿ISA链到Master框架, 执行Major槽If-Added侧面的Check-Major操作, 对Field、Advisor进行修改, 以保持知识的一致性.
+    \item 若要查询Master-1的Sex, 则可直接回答;但要查询Master-2的Sex, 则需要沿ISA链和AKO链到Student框架取其默认值male.
+    \item 若要查询Master-2的Field, 需要沿ISA链到Master框架, 执行Field槽If-Needed侧面的Ask-Field操作, 即时产生一个值, 假设产生的值是Data-Mining, 则表示Master-2的研究方向为数据挖掘.
+    \item 如果要修改Master-2的Major, 需要沿ISA链到Master框架, 执行Major槽If-Added侧面的Check-Major操作, 对Field、Advisor进行修改, 以保持知识的一致性.
 \end{itemize}
 \end{example}
 %%%%%-----------------------------------------
 \paragraph{匹配和填槽}
-框架的匹配实际上是通过对相应槽的槽名和槽值逐个进行比较, 并利用继承关系来实现的.
+    框架的匹配实际上是通过对相应槽的槽名和槽值逐个进行比较, 并利用继承关系来实现的.
 \begin{example}
-假设前面讨论的学生框架系统已建立在知识库中, 若要求从知识库中找出一个满足如下条件的硕士生:
+    假设前面讨论的学生框架系统已建立在知识库中, 若要求从知识库中找出一个满足如下条件的硕士生:
 \begin{center}
-  male, Age<25>, Major为Computer, Project为National
+    male, Age<25>, Major为Computer, Project为National
 \end{center}
-把这些条件用框架表示出来, 就可得到如下的初始问题框架:
+    把这些条件用框架表示出来, 就可得到如下的初始问题框架:
 \begin{Verbatim}
-    Frame: Master-x
+    Frame: <Master-x>
         Name:
-        Age: Years <25>
-        Sex: male
+        Age:   Years <25>
+        Sex:   male
         Major: Computer
         Projec: National
 \end{Verbatim}
 \end{example}
-用此框架和知识库中的框架匹配, 显然“Master -2”框架可以匹配. 因为Age、Sex 、Major槽都符合要求, Project槽虽然没有给出, 但由继承性可知它取默认值National, 完全符合初始问题框架Master-x的要求, 所以要找的学生有可能是Liu Qing.
+    用此框架和知识库中的框架匹配, 显然“Master -2”框架可以匹配. 因为Age、Sex和Major槽都符合要求, Project槽虽然没有给出, 但由继承性可知它取默认值National, 完全符合初始问题框架Master-x的要求, 所以要找的学生有可能是Liu Qing.
 %%%%%-----------------------------------------
 \subsection{框架表示法的特征}
 框架表示法的优点
 \begin{itemize}
 \item 结构性: 最突出特点是善于表示结构性知识, 它能够把知识的内部结构关系以及知识间的特殊联系表示出来.
-\item 深层性:  框架表示法不仅可以从多个方面、多重属性表示知识, 而且还可以通过ISA、AKO等槽以嵌套结构分层地对知识进行表示, 因此能用来表达事物间复杂的深层联系.
+\item 深层性: 框架表示法不仅可以从多个方面、多重属性表示知识, 而且还可以通过ISA、AKO等槽以嵌套结构分层地对知识进行表示, 因此能用来表达事物间复杂的深层联系.
 \item 继承性: 在框架系统中, 下层框架可以继承上层框架的槽值, 也可以进行补充和修改, 这样既减少知识冗余, 又较好地保证了知识的一致性.
 \item 自然性: 框架能把与谋个实体或实体集相关特性都集中在一起, 从而高度模拟了人脑对实体多方面、多层次的存储结构, 直观自然, 易于理解.
 \end{itemize}
@@ -2145,7 +2141,7 @@ Frame <Master-2>
 \end{itemize}
 %%%%%-----------------------------------------
 \section{过程表示法}
-过程性知识表示是将有关某一问题领域的知识, 连同如何使用这些知识的方法, 均隐式地表示为一个求解问题的过程.
+    过程性知识表示是将有关某一问题领域的知识, 连同如何使用这些知识的方法, 均隐式地表示为一个求解问题的过程.
 %
 %2.6.1 知识表示方法
 %
@@ -2178,11 +2174,11 @@ Frame <Master-2>
 
     其过程规则表示为:
 
-             BR(Teacher, ?z, ?y)         (需求解的问题)
+             BR(Teacher, ?z, ?y)          (需求解的问题)
 
-             GOAL(Classmate, ?$x, y$)   (求$y$的同班同学是谁)
+             GOAL(Classmate, ?$x, y$)     (求$y$的同班同学是谁)
 
-             GOAL(Teacher, $z, x$)       (已知$z$是$x$的老师)
+             GOAL(Teacher, $z, x$)        (已知$z$是$x$的老师)
 
              INSERT(Teacher,  $z, y$)     (对数据库的插入操作)
 
@@ -2208,11 +2204,11 @@ Frame <Master-2>
 \begin{example}
 设综合数据库中有以下已知事实:
 \begin{center}
-(Classmate,杨叶,柳青)
+    (Classmate,杨叶,柳青)
 
-(Teacher,林海,杨叶)
+    (Teacher,林海,杨叶)
 \end{center}
-已知杨叶与柳青是同班同学, 林海是杨叶的老师.
+    已知杨叶与柳青是同班同学, 林海是杨叶的老师.
 
 假设需要求解的问题是: 找出两个人$w$及$v$, 其中$w$是$v$的老师.
 
@@ -2220,23 +2216,23 @@ Frame <Master-2>
 \end{example}
 %%%%-----------------------------------
 \begin{answer}
-     (1) 在过程规则库中找出对于问题GOAL(Teacher,?w, ?v), 其激发条件可以满足的过程规则. 显然, BR(Teacher,  z, y)经如下变量代换$w/z,  v/y$后可以匹配, 因此选用该过程规则.
+     (1) 在过程规则库中找出对于问题GOAL(Teacher,?w, ?v), 其激发条件可以满足的过程规则. 显然, BR(Teacher,  z, y)经如下变量代换$w/z, v/y$后可以匹配, 因此选用该过程规则.
 
-(2) 执行该过程规则中的第一个语句GOAL(Classmate, ?x, y). 此时, 其中的$y$已被$v$代换. 经与已知事实(Classmate,杨叶,柳青)匹配, 分别求得了变量$x$及$v$的值, 即
+    (2) 执行该过程规则中的第一个语句GOAL(Classmate, ?x, y). 此时, 其中的$y$已被$v$代换. 经与已知事实(Classmate,杨叶,柳青)匹配, 分别求得了变量$x$及$v$的值, 即
 \begin{center}
-  $x$=杨叶,$v$=柳青
+    $x$=杨叶,$v$=柳青
 \end{center}
 
-(3) 执行该过程规则中的第二个语句GOAL(Teacher, z, x). 此时, $x$的值已经知道, $z$已被$w$代换. 经与已知事实(Teacher, 林海 ,杨叶)匹配, 求得了变量$w$的值, 即
+    (3) 执行该过程规则中的第二个语句GOAL(Teacher, z, x). 此时, $x$的值已经知道, $z$已被$w$代换. 经与已知事实(Teacher, 林海 ,杨叶)匹配, 求得了变量$w$的值, 即
 \begin{center}
-  $w$=林海
+    $w$=林海
 \end{center}
 
-(4) 执行该过程规则中的第三个语句INSERT(Teacher, z, y), 此时, $z$与$y$的值均以知道, 分别是林海和杨叶, 因此这时插入数据库的事实是:
+    (4) 执行该过程规则中的第三个语句INSERT(Teacher, z, y), 此时, $z$与$y$的值均以知道, 分别是林海和杨叶, 因此这时插入数据库的事实是:
 \begin{center}
     (Teacher,林海,   杨叶)
 \end{center}
-这表明“林海也是杨叶的老师”, 求得了问题的解.
+    这表明“林海也是杨叶的老师”, 求得了问题的解.
 \end{answer}
 %%%%%-----------------------------------------
 \subsection{过程表示的主要优缺点}
@@ -2263,19 +2259,19 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 \item $U: C_{i} \rightarrow u_{i}$​表示概念节点$C_i$​到激活度$u_i$​的映射, 则$U(t)=\left(u_{1}(t), u_{2}(t), \dots, u_{c}(t)\right)$表示当前$t$时刻所有概念节点的激活度, 也就是$G$的在$t$时刻的状态, 其中$u_{i}(t) \in[0,1]$.
 \item 压缩函数(squashing function)用$f$表示, 表示概念节点的激活度在$t$时刻到$t+1$时刻的转换函数, 即
 \begin{align}
-  u_{i}(t+1)=f\left(\sum_{j=1}^{c} w_{i j} u_{j}(t)\right),
+    u_{i}(t+1)=f\left(\sum_{j=1}^{c} w_{i j} u_{j}(t)\right),
 \end{align}
 其中$f$用sigmoid函数进行表示, 以此将激活度映射到$[0,1]$的区间中: $f(u)=\frac{1}{1+e^{-\tau u}}$, ​sigmoid函数中的$\tau$表示一个陡峭参数(steepness parameter), 其中, $\tau$越大, sigmoid函数形状越接近阶跃函数. 通常情况下$\tau=5$.
 \end{itemize}
 
-将模糊反馈动力系统中的因果事件、参与值、目标与趋势等通过各概念问的弧线连接起来的图结构, 节点是概念、实体等, 弧表示概念或实体间的因果关系, 在结构上可以看作是面向对象的单层带反馈的神经网络. 
+将模糊反馈动力系统中的因果事件、参与值、目标与趋势等通过各概念问的弧线连接起来的图结构, 节点是概念、实体等, 弧表示概念或实体间的因果关系, 在结构上可以看作是面向对象的单层带反馈的神经网络.
 %%%%%-----------------------------
 \begin{remark}
     模糊认知图的每个节点与弧都有很强的语义, 整个图都具有语义性. 它支持专家先验知识及因果关系的表示与推理, 这些都蕴涵在概念节点及概念节点间的关系中, 并且可以通过概念间的关系来表示模糊推理, 由整个图中各概念节点的相互作用来模拟系统的动态行为, 是一种无监督模型.
 \end{remark}
-%%%%%-----------------------------    
+%%%%%-----------------------------
 \begin{remark}
-    认知概念可以是系统的事件、目标、感情及趋势等；概念值为模糊值, 也可以是二值, 反映该节点对某概念以某种程度发生或表示概念状态是关还是开. 概念节点的输出与概念节点自身的状态水平和外部因果联系的强度有关. 
+    认知概念可以是系统的事件、目标、感情及趋势等；概念值为模糊值, 也可以是二值, 反映该节点对某概念以某种程度发生或表示概念状态是关还是开. 概念节点的输出与概念节点自身的状态水平和外部因果联系的强度有关.
 \end{remark}
 %%%%%-----------------------------
 \begin{remark}
@@ -2293,18 +2289,18 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 \begin{align}
     \textup{SSE}=\sum_{j=1}^{N} \sum_{i=1}^{c}\left(u_{i j}-t_{i j}\right)
 \end{align}
-即最小化期望输出与实际输出之间的差异. 
+即最小化期望输出与实际输出之间的差异.
 %%%%%-------------------------------------------------------------------
 \section{作业}
 
 %%%%%------------------------------------------
 \begin{think}
-请用语义网络表示如下知识: 高老师从3月到7月给计算机系的学生讲“计算机网络”课.
+    请用语义网络表示如下知识: 高老师从3月到7月给计算机系的学生讲“计算机网络”课.
 \end{think}
 
 %%%%%------------------------------------------
 \begin{observe}
-用谓词逻辑知识表示方法表示如下知识:
+    用谓词逻辑知识表示方法表示如下知识:
 
 (1) 有人喜欢梅花, 有人喜欢菊花, 有人既喜欢梅花又喜欢菊花.
 
@@ -2313,13 +2309,13 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 
 %%%%%------------------------------------------
 \begin{think}
-  人工智能对知识表示有什么要求?
+    人工智能对知识表示有什么要求?
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
-用一阶谓词逻辑表示下面的句子： a)并不是所有的学生选修了历史和生物.  b)历史考试中只有一个学生不及格.
-c)只有一个学生历史和生物考试都不及格. d)历史考试的最高分比生物考试的最高分要高.
+    用一阶谓词逻辑表示下面的句子： a)并不是所有的学生选修了历史和生物.  b)历史考试中只有一个学生不及格.
+    c)只有一个学生历史和生物考试都不及格. d)历史考试的最高分比生物考试的最高分要高.
 \end{think}
 
 %%%%%------------------------------------------
