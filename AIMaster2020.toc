@@ -2,7 +2,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {chapter}{前\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}言}{i}{chapter*.1}% 
 \contentsline {paragraph}{在线课程}{i}{paragraph*.5}% 
-\contentsline {chapter}{概\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}览}{xv}{chapter*.7}% 
+\contentsline {chapter}{概\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}览}{vii}{chapter*.7}% 
 \contentsline {chapter}{\numberline {第一章\hspace {.3em}}人工智能概述}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}AI的定义及其研究目标}{2}{section.1.1}% 
 \contentsline {subsection}{\numberline {1.1.1}AI的定义及其研究目标}{2}{subsection.1.1.1}% 
@@ -309,7 +309,7 @@
 \contentsline {subsubsection}{\numberline {4.1.3.1}问题的分解与等价变换}{253}{subsubsection.4.1.3.1}% 
 \contentsline {subsubsection}{\numberline {4.1.3.2}问题的分解}{253}{subsubsection.4.1.3.2}% 
 \contentsline {subparagraph}{分解}{253}{subparagraph*.270}% 
-\contentsline {subparagraph}{等价变换}{254}{subparagraph*.271}% 
+\contentsline {subparagraph}{等价变换}{253}{subparagraph*.271}% 
 \contentsline {section}{\numberline {4.2}状态空间的盲目搜索}{257}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}一般图搜索过程}{257}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}广度优先和深度优先搜索}{259}{subsection.4.2.2}% 
