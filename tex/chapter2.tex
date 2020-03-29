@@ -1156,7 +1156,7 @@ $\bullet$ \textbf{优点}: 不使用与问题无关的规则. 因此, 对那些�
 \subsubsection{语义网络}
 \begin{mydef}{语义网络}{1}
 语义网络是一种用实体及其语义关系来表达知识的有向图.
-结点代表实体, 表示各种事物、概念、情况、属性、状态、事件和动作等;
+结点代表\uwave{实体, 表示各种事物、概念、情况、属性、状态、事件和动作}等;
 弧代表语义关系, 表示它所连结的两个实体之间的语义联系, 它必须带有标识.
 \end{mydef}
 %%%%%-----------------------------------------
@@ -1293,10 +1293,10 @@ $\bullet$ \textbf{优点}: 不使用与问题无关的规则. 因此, 对那些�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{example}
 %%%%%-----------------------------------------
-\subparagraph{3) 成员关系:  A-Member-of}
+\subparagraph{3) 成员关系: A-Member-of}
 体现的是“个体与集体”的关系, 含义为“是一员”, 表示一个事物是另一个事物的一个成员.
 %%%%%-------------------------------------
-\begin{example}A-Member-of例子
+\begin{example} AMO例子
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{center}
@@ -1313,7 +1313,9 @@ $\bullet$ \textbf{优点}: 不使用与问题无关的规则. 因此, 对那些�
 \end{figure}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-上述关系的主要特征是\uwave{属性的继承性, 处在具体层的结点可以继承抽象层结点的所有属性}.
+\begin{remark}
+    上述关系的主要特征是\uwave{属性的继承性, 处在具体层的结点可以继承抽象层结点的所有属性}.
+\end{remark}
 %%%%%-----------------------------------------
 \subparagraph{4) 属性关系}
 指事物和其属性之间的关系. 常用的属性关系有:
@@ -1403,7 +1405,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-聚类关系与实例、分类、成员关系的主要区别: \uwave{聚类关系一般不具备属性的继承性}.
+聚类关系与实例、分类和成员关系的主要区别: \uwave{聚类关系一般不具备属性的继承性}.
 如上述两个例子, 大脑不一定具有人的各种属性. 黑板也不具有墙的各种属性.
 \end{remark}
 %%%%%-----------------------------------------
@@ -1414,6 +1416,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
     \item After: 含义为“在后”, 表示一个事件在另一个事件之后发生.
 \end{itemize}
 %%%%%-------------------------------------
+
 \begin{example}例如: “北京奥运会在悉尼奥运会之后”.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1489,7 +1492,12 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %%%%%-----------------------------------------
 \paragraph{一元关系}
 指可以用一元谓词$P(x)$表示的关系. 谓词$P$说明实体的性质和属性.
-描述的是一些最简单、最直观的事物或概念, 常用: “是”、“有”、“会”、“能”等语义关系来说明. 如, “雪是白的”.
+描述的是一些最简单、最直观的事物或概念, 常用: “是”、“有”、“会”和“能”等语义关系来说明.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
+\begin{example}
+    “雪是白的”.
+\end{example}
+
 %%%%%-----------------------------------------
 \paragraph{一元关系的描述}
 应该说, 语义网络表示的是二元关系. 如何用它来描述一元关系?
@@ -1511,8 +1519,8 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
     \node (qLPV) at (0,0.8) [draw, process, yshift=-1cm] {动物};                                  %  动物
     \node (UniSampling1)[draw, process,align=center, right=3cm of qLPV,yshift=-1cm] {\,吃\,};    % 吃
     \node (UniSampling2)[draw, process,align=center, right=3cm of qLPV,yshift=1cm] {运动};       % 运动
-    \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.05cm,rotate=10,xshift=-1.05cm] {Can};
-    \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=-0.05cm,rotate=-12,xshift=-1.05cm] {Can};
+    \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.0cm,rotate=10,xshift=-1.35cm] {Can};
+    \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=-0.1cm,rotate=-12,xshift=-1.35cm] {Can};
     \end{tikzpicture}
 \end{center}
 \vspace{-0.2cm}
@@ -1565,7 +1573,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
         \node (UniSampling3)[draw, process,align=center,right=3cm of qLPV,yshift=0.85cm] {理想公司};             %理想公司
         \node (UniSampling4)[draw, process,align=center,right=3cm of UniSampling3,yshift=0cm] {中关村};         %中关村
         \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.42cm,rotate=-18, xshift=-1.05cm] {Age};
-        \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.185cm,,rotate=-5, xshift=-0.55cm] {Headship};
+        \draw[->] (qLPV.east)->(UniSampling2)node[left,yshift=0.18cm,,rotate=-3, xshift=-0.55cm] {Headship};
         \draw[->] (qLPV.east)->(UniSampling3)node[left,yshift=0.25cm,rotate=13, xshift=-1.55cm] {Work-for};
         \draw[->] (UniSampling3)->(UniSampling4)node[left,yshift=0.20cm,xshift=-1.15cm] {Located-at};
     \end{tikzpicture}
@@ -1604,15 +1612,57 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{example}
 需要设立一个\textbf{占有权结点}, 表示占有物或者占有时间等概念.
 %%%%%-------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.45\textwidth]{tuli20191125101.PNG}
+%\caption{例\ref{Chap2exam268}的语义网络}
+%\label{AI32fig101}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{tuli20191125101.PNG}
-\caption{例\ref{Chap2exam268}的语义网络}
-\label{AI32fig101}
+\begin{center}
+    \begin{tikzpicture}[font={\sf \small},scale=0.78]
+        \def \smbwd{2cm}
+        \def \smbwe{4cm}
+        %定义流程图的具体形状
+        \node (qLPV) at (0,-0.75) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {小燕子};            % 小燕子
+        \node (zhanyouquan)[draw, process,align=center,below=2cm of qLPV] {\textcolor[rgb]{0,0,1}{占有权}};       %占有权
+        \node (zhanyouzige)[draw, process,align=center,below=2cm of zhanyouquan] {占有资格};                      %占有资格
+        \node (yanzi)[draw, process,align=center,right=2cm of qLPV] {燕子};                                       %燕子
+        \node (chao)[draw, process,align=center,below=1cm of yanzi] {巢};                                        %巢
+        \draw[<-] (qLPV)--(zhanyouquan)node[left] {};
+        \draw[->] (zhanyouquan)->(zhanyouzige)node[left,rotate=-90, yshift=-0.4cm,xshift=-0.3cm] {AKO};
+        \draw[->] (qLPV)--(yanzi)node[left,xshift=-0.85cm,yshift=0.25cm] {ISA};
+
+        \node (niao)[draw, process,align=center,right=1cm of yanzi] {鸟};                                         %鸟
+        \node (niaowo)[draw, process,align=center,below=1cm of niao] {鸟窝};                                      %鸟窝
+        \node (shijian)[draw, process,align=center,below=0.3cm of niaowo] {时间};                                 %时间
+        \draw[->] (yanzi)--(niao)node[left,yshift=0.2cm,xshift=-0.3cm] {AKO};
+
+        \draw[->] (zhanyouquan)|-(chao);
+        \draw[->] (chao)--(niaowo)node[left,yshift=0.2cm,xshift=-0.5cm] {AKO};
+
+        \node (Chun)[draw, process,align=center,right=1cm of zhanyouquan] {春天};                                     %春天
+
+        \draw[->] (Chun)--(shijian)node[left,xshift=-0.9cm,yshift=-0.2cm] {AKO};
+
+        \node (Qiu)[draw, process,align=center,below=1cm of Chun]{秋天};                                              %秋天
+        \draw[->] (Qiu)node[left,xshift=2.08cm,yshift=0.2cm] {AKO}-|(shijian);
+         \draw[->] (zhanyouquan)--(Chun)node[left,yshift=0.2cm,xshift=-0.5cm] {Start};
+        \draw[->] (zhanyouquan)|-(Qiu)node[left,yshift=0.2cm,xshift=-0.8cm] {End};
+        \node (qingkuang)[draw, process,align=center,right=1cm of zhanyouzige]{情况};                                 %情况
+        \draw[->] (zhanyouzige)--(qingkuang)node[left,xshift=-0.6cm,yshift=0.2cm] {AKO};
+
+
+    \end{tikzpicture}
+    \vspace{-0.2cm}
+    \caption{例\ref{Chap2exam268}的语义网络}
+    \label{AI32fig101}
+\end{center}
 \end{figure}
 %%%%%-------------------------------------
 
-对上述问题, 也可以把占有作为一种关系, 并用一条弧来表示, 但在这种表示方法下, 占有关系就无法表示了.
+对上述问题, 也可以把占有作为一种关系, 并用一条弧来表示, 但在这种表示方法下, 占有时间关系就无法表示了.
 %%%%%-------------------------------------
 \begin{figure}[H]
 \centering
@@ -1656,10 +1706,6 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{Verbatim}
 \end{center}
 然后再按照他们的逻辑关系用语义网络表示出来.
-
-%%%%%-------------------------------------
-\paragraph{语义关系的否定表示}
-    分为基本语义关系的否定和一般语义关系的否定. 基本语义关系的否定的表示, 可通过在有向弧上直接标注该基本语义关系的否定的方法来解决.
 %%%%%-------------------------------------
 \begin{figure}[H]
 \centering
@@ -1668,6 +1714,9 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \label{AI32fig104}
 \end{figure}
 %%%%%-------------------------------------
+\paragraph{语义关系的否定表示}
+    分为基本语义关系的否定和一般语义关系的否定. 基本语义关系的否定表示, 可通过在有向弧上直接标注该基本语义关系的否定这一方法来解决.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}
 用语义网络表示: 书不在桌子上.
@@ -1714,13 +1763,13 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %定义流程图的具体形状
 \node (Gei) at (2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {给};   % 给
 \node (jiangtao)[draw, process,align=center,right=3cm of Gei,yshift=0cm] {江涛};        %江涛
-\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
+\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1.1cm] {Receiver};
 \node (Changhe)[draw, process,align=center,left=3cm of Gei,yshift=0cm] {常河};          %常河
 \draw[thick,->](Gei.west)->(Changhe)node[right,yshift=0.25cm,xshift=1.5cm] {Giver};
 
 \node (Cipan)[draw, process,align=center,above=1cm of Gei,yshift=0cm] {一张磁盘};       %磁盘
 \draw[thick,->](Gei)->(Cipan)node[left,yshift=-0.85cm,xshift=0cm] {Gift};
-\node (Fei)[draw, process,align=center,below=1cm of Gei,yshift=0cm] {非};              %非
+\node (Fei)[draw, process,align=center,below=1cm of Gei,yshift=0cm] {\textcolor[rgb]{0,0,1}{非}};              %非
 \draw[thick,->](Fei)->(Gei.south)node[left,yshift=0.25cm,xshift=-1cm] {};
 \end{tikzpicture}
 \end{center}
@@ -1774,8 +1823,8 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
       $GS$是一个概念结点, 它表示具有全称量化的一般事件.
       $g$是一个实例结点, 代表$GS$中的一个具体例子, 如上所提到的事实.
       $s$是一个全称变量, 表示任意一个学生.
-      $I$是一个存在变量, 表示某一次学习.
-      $P$是一个存在变量, 表示某一门程序设计语言. 这样, $s,L,P$之间的语义联系就构成一个子空间, 它表示对每一个学生$s$, 都存在一个学习事件$l$ 和一门程序设计语言$p$.
+      $l$是一个存在变量, 表示某一次学习.
+      $p$是一个存在变量, 表示某一门程序设计语言. 这样, $s,l,p$之间的语义联系就构成一个子空间, 它表示对每一个学生$s$, 都存在一个学习事件$l$ 和一门程序设计语言$p$.
 \end{flushleft}
 
 \indent 在从结点$g$引出的三条弧中, 弧“ISA”说明结点$g$是GS中一个实例; 弧“$F$”说明它所代表的子空间及其具体形式; 弧“$\forall$”说明它所代表的全称量词.
@@ -1832,7 +1881,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 (3) 重复(2), 直到结点表为空. 此时, 记录下来的所有属性都是待求解结点继承来的属性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
 \begin{example}
-    在图\ref{AI32fig09}所示的语义网络中, 通过继承关系可以得到“鸟”具有: 会吃、能运动的属性.
+    在图\ref{AI32fig09}所示的语义网络中, 通过继承关系可以得到“鸟”具有: 会吃和能运动的属性.
 \end{example}
 %%%%%-----------------------------------------
 \subsection{匹配}
@@ -1851,7 +1900,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-根据这个问题的要求, 可构造如下语义网络片断.
+    根据这个问题的要求, 可构造如下语义网络片断.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{center}
@@ -1868,7 +1917,7 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \label{AI32fig105}
 \end{center}
 \end{figure}
-当用该语义网络片段与图\ref{AI32fig032205}所示的语义网络进行匹配时, 由“工作在”弧所指的结点可知, 职员王强工作在“理想公司”, 这就得到了问题的答案.
+    当用该语义网络片段与图\ref{AI32fig032205}所示的语义网络进行匹配时, 由“工作在”弧所指的结点可知, 职员王强工作在“理想公司”, 这就得到了问题的答案.
 若还想知道职员王强的其它情况, 则可在语义网络中增加相应的空结点.
 
 %%%%%------------------------------------------
@@ -1879,9 +1928,9 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 \subsection{语义网络表示法的特征}
     主要优点:
 \begin{itemize}
-    \item \uwave{结构性} 把事物的属性以及事物间的各种语义联系显式地表示出来, 是一种结构化的知识表示方法. 在这种方法中, 下层结点可以继承、新增、变异上层结点的属性.
-    \item \uwave{联想性} 本来是作为人类联想记忆模型提出来的, 它着重强调事物间的语义联系, 体现了人类的联想思维过程.
-    \item \uwave{自索引性} 把各接点之间的联系以明确、简洁的方式表示出来, 通过与某一结点连结的弧可以很容易的找出与该结点有关的信息, 而不必查找整个知识库. 这种自索引能力有效的避免搜索时所遇到的组合爆炸问题.
+    \item \uwave{结构性} 把事物的属性以及事物间的各种语义联系显式地表示出来, 是一种结构化的知识表示方法. 在这种方法中, 下层结点可以继承、新增和变异上层结点的属性.
+    \item \uwave{联想性} 作为人类联想记忆模型提出来的, 它着重强调事物间的语义联系, 体现了人类的联想思维过程.
+    \item \uwave{自索引性} 把各结点之间的联系以明确、简洁的方式表示出来, 通过与某一结点连结的弧可以很容易的找出与该结点有关的信息, 而不必查找整个知识库. 这种自索引能力有效的避免搜索中遇到的组合爆炸问题.
     \item \uwave{自然性} 这种带有标识的有向图, 可比较直观地把知识表示出来, 符合人们表达事物间关系的习惯, 并且与自然语言语义网络之间的转换也比较容易实现.
 \end{itemize}
 主要缺点:
@@ -1905,18 +1954,16 @@ Part-of : 含义为“是一部分”, 表示一个事物是另一个事物的�
 %2.5.5 框架表示法的特征
 %%%%%-----------------------------------------
 \subsection{框架理论}
-    框架理论是明斯基于1975年作为理解视觉、自然语言对话及其它复杂行为基础的智能行为提出来的一种方法.
+    框架理论是明斯基于1975年作为理解视觉、自然语言对话及由复杂行为基础而产生的智能行为等提出来的一种方法.
 它认为人们对现实世界中各种事物的认识都是以一种类似于框架的结构存储在记忆中的, 当遇到一个新事物时, 就从记忆中找出一个合适的框架, 并根据新的情况对其细节加以修改和补充, 从而形成对这个新事物的认识.
-
-\begin{example}
-    对饭店和教室等的认识.
 \begin{itemize}
-    \item \textbf{框架}: 是人们认识事物的一种通用的数据结构形式. 即当新情况发生时, 人们只要把新的数据加入到该通用数据结构中便可形成一个具体的实体(类), 这样的通用数据结构就称为框架.
-    \item \textbf{实例框架}: 对于一个框架, 当人们把观察或认识到的具体细节填入后, 就得到了该框架的一个具体实例, 框架的这种具体实例被称为实例框架.
+    \item \textbf{框架}: 是人们认识事物的一种通用的数据结构形式. 即当新情况发生时, 人们只要把新的数据加入到该通用数据结构中, 便可形成一个具体的实体(类), 这样的通用数据结构就称为框架.
+    \item \textbf{实例框架}: 对于一个框架, 当人们\uwave{把观察或认识到的具体细节填入}后, 就得到了该框架的一个具体实例, 框架的这种具体实例被称为实例框架.
     \item \textbf{框架系统}: 在框架理论中, 框架是知识的基本单位, 把一组有关的框架连结起来便可形成一个框架系统.
-    \item \textbf{框架系统推理}: 由框架之间的协调来完成.
+    \item \textbf{框架系统推理}: 由\uwave{框架之间的协调}来完成.
 \end{itemize}
-\end{example}
+框架之间的相互联系主要表现在框架的层次结构, 即通过ISA链, 各个框架之间特殊与一般的继承关系得以表达;
+框架之间的横向联系还可以用框架中的槽值表示框架之间的关系.
 %%%%%-----------------------------------------
 \subsection{框架结构和框架表示}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%例
@@ -1948,17 +1995,17 @@ Frame <MASTER>
 \begin{Verbatim}
 <框架名>
 槽名1:   侧面名11  值111, 值112, ……
-                 侧面名12       值121, 值122, ……
-                     :
+        侧面名12  值121, 值122, ……
+                   :
 槽名2:   侧面名21  值211, 值212, ……
-                 侧面名22       值221, 值222, ……
-                      :
-    :
-    :
+        侧面名22  值221, 值222, ……
+                   :
+                   :
+                   :
 槽名n:   侧面名n1  值n11, 值n12, ……
-                 侧面名n2       值n21, 值n22, ……
-                      :
-                 侧面名nm     值nm1, 值nm2, ……
+        侧面名n2  值n21, 值n22, ……
+                   :
+        侧面名nm  值nm1, 值nm2, ……
 \end{Verbatim}
 
 %%%%%-----------------------------------------
@@ -1989,15 +2036,15 @@ Frame <Master>
                 If-Needed: Ask-Field
     Advisor: Unit(Last-name, First-name)
                 If-Needed: Ask-Visor
-    Project : Area(National, Provincial, Other)
+    Project: Area(National, Provincial, Other)
                 Default: National
     Paper: Area(SCI, EI, Core, General)
                 Default: Core
 \end{Verbatim}
 在Master框架中, 用到了一个系统预定义槽名AKO. 所谓\textbf{系统预定义槽名}, 是指框架表示法中事先定义好的可公用的一些标准槽名. AKO与其在语义网络中的含义相似, 其直观含义为“是一种”.
 当AKO作为下层框架的槽名时, 其槽值为上层框架的框架名, 表示该下层框架所描述的事物比其上层框架更具体. 并且, 由AKO所联系的框架之间具有属性的继承关系.
-
-框架的继承技术, 通常由框架中设置的3个侧面: Default、If-Needed、If-Added所提供的缺省推理功能来组合实现.
+%%%%%-----------------------------------------
+\paragraph{框架的继承技术} 通常由框架中设置的3个侧面: Default、If-Needed和If-Added所提供的缺省推理功能来组合实现.
 
 \textbf{Default}: 该侧面的作用是为相应槽提供缺省值. 当其所在槽没有填入槽值时, 系统就以此侧面值作为该槽的默认值.
 \begin{example}
@@ -2006,13 +2053,20 @@ Frame <Master>
 
 \textbf{If- Needed}: 该侧面的作用是提供一个为相应槽赋值的过程. 当某个槽不能提供统一的缺省值时, 可在该槽增加一个If-Needed侧面, 系统通过调用该侧面提供的过程, 产生相应的属性值.
 \begin{example}
-  Age 槽、Telephone槽等.
+  Age槽和Telephone槽等.
 \end{example}
 
 \textbf{If-Added}: 该侧面的作用是提供一个因相应槽值变化而引起的后继处理过程. 当某个槽的槽值变化会影响到一些相关槽时, 需要在该槽增加一个If-Added侧面, 系统通过调用该侧面提供的过程去完成对其相关槽的后继处理.
 \begin{example}
   Major槽, 由于专业的变化, 可能会引起Field和Advisor的变化, 因此需要调用If-Added侧面提供的Check-Major过程进行后继处理.
 \end{example}
+\begin{example}
+    给出宾馆、饭店和智慧教室的框架结构.
+\end{example}
+% 宾馆框架包括名字、地址、星级、朝向、服务范围、电话、传真、部门、成立时间、功用和缺省属性等
+% 饭店还包括菜系、
+% 宾馆包括大堂、房间、停车场、娱乐中心和会议室、空调、床、电话、传真、部门、成立时间等设施
+% 智慧教室：互动屏幕、电脑、桌子、椅子、楼宇名、门牌号、周次、日历、是否有课、授课对象、课程性质等
 %%%%%-----------------------------------------
 \paragraph{实例框架}
 \begin{example}
@@ -2030,7 +2084,7 @@ Frame <Master-1>
     Major: Computer
     Field: Web-Intelligence
     Advisor: Lin Hai
-    Project : Provincial
+    Project: Provincial
 \end{Verbatim}
 
 硕士生-2框架:
@@ -2040,9 +2094,9 @@ Frame <Master-2>
     ISA:  Master
     Name: Liu Qing
     Age:  22
-    Major:   Computer
+    Major: Computer
     Advisor: Lin Hai
-    Paper:   EI
+    Paper:  EI
 \end{Verbatim}
     在这2个实例框架中, 我们又用到了一个系统预定义槽名ISA. 该预定义槽名与语义网络中的ISA弧的语义相似, 其直观含义为“是一个”, 表示一个事物是另一个事物的一个具体实例, 用来描述一个具体事物与其抽象概念间的实例关系.
 \begin{example}
@@ -2063,7 +2117,7 @@ Frame <Master-2>
     前面的例子, AKO实现了Student框架与Master框架之间的纵向联系, ISA实现了Master框架与Master-1实例框架之间的联系.
 \end{example}
 \subparagraph{框架之间的横向联系}
-    是指那种以另外一个框架名作为一个槽的槽值或侧面值所建立起来的框架之间的联系. 如下图给出的框架系统中, Student框架与S-Addre框架之间就是一种横向联系(图\ref{AI32fig11}).
+    是指那种以另外一个框架名作为一个槽的槽值或侧面值所建立起来的框架之间的联系. 如下图给出的框架系统中, Student框架与S-Address框架之间就是一种横向联系(图\ref{AI32fig11}).
 %%%%%-------------------------------------
 \begin{figure}[H]
     \centering
@@ -2084,7 +2138,7 @@ Frame <Master-2>
 \paragraph{特性继承}
 特性继承过程
 \begin{itemize}
-    \item  特性继承主要是通过ISA、AKO链来实现的. 当需要查询某一事物的某个属性, 且描述该事物的框架为提供其属性值时, 系统就沿ISA和AKO链追溯到具有相同槽的类或超类框架.
+    \item  特性继承主要是通过ISA和AKO链来实现的. 当需要查询某一事物的某个属性, 且描述该事物的框架为提供其属性值时, 系统就沿ISA和AKO链追溯到具有相同槽的类或超类框架.
     \item  如果该槽提供有Default侧面值, 就继承该默认值作为查询结果返回.
     \item  如果该槽提供有If-Needed侧面供继承, 则执行If-Needed操作, 去产生一个值作为查询结果.
     \item  如果对某个事物的某一属性进行了赋值或修改操作, 则系统会自动沿ISA和AKO链追溯到具有相应的类或超类框架, 只要发现类或超类框架中的同名槽具有If-Added侧面, 就执行If-Added操作, 作相应的后继处理.
@@ -2093,7 +2147,7 @@ Frame <Master-2>
 \paragraph{If-Needed与If-Added过程的区别}
     它们的主要区别在于激活时机和操作目的不同.
 \begin{itemize}
-    \item If-Needed操作是在系统试图查询某个事物框架中未记载的属性值时激活, 并根据查询需求, 被动地即时产生所需要的属性值;
+    \item If-Needed操作是在系统试图查询某个实物框架中未记载的属性值时激活, 并根据查询需求, 被动地即时产生所需要的属性值;
     \item If-Added操作是在系统对某个事务框架的属性作赋值或修改工作后激活, 目的在于通过规定的后继处理, 主动做好配套操作, 以消除可能存在的不一致问题.
 \end{itemize}
 \begin{example}
@@ -2115,7 +2169,7 @@ Frame <Master-2>
     把这些条件用框架表示出来, 就可得到如下的初始问题框架:
 \begin{Verbatim}
     Frame: <Master-x>
-        Name:
+        Name: \, ?
         Age:   Years <25>
         Sex:   male
         Major: Computer
@@ -2128,17 +2182,21 @@ Frame <Master-2>
 框架表示法的优点
 \begin{itemize}
 \item 结构性: 最突出特点是善于表示结构性知识, 它能够把知识的内部结构关系以及知识间的特殊联系表示出来.
-\item 深层性: 框架表示法不仅可以从多个方面、多重属性表示知识, 而且还可以通过ISA、AKO等槽以嵌套结构分层地对知识进行表示, 因此能用来表达事物间复杂的深层联系.
+\item 深层性: 框架表示法不仅可以从多个方面、多重属性表示知识, 而且还可以通过ISA、AKO等槽以\uwave{嵌套结构分层的方式}对知识进行表示, 因此能用来表达事物间复杂的深层联系.
 \item 继承性: 在框架系统中, 下层框架可以继承上层框架的槽值, 也可以进行补充和修改, 这样既减少知识冗余, 又较好地保证了知识的一致性.
-\item 自然性: 框架能把与谋个实体或实体集相关特性都集中在一起, 从而高度模拟了人脑对实体多方面、多层次的存储结构, 直观自然, 易于理解.
+\item 自然性: 框架能把与某个实体或实体集相关的特性都集中在一起, 从而高度模拟了人脑对实体多方面和多层次存储结构的需求, 直观自然, 易于理解.
 \end{itemize}
 
 \indent\textbf{框架表示法的不足}
 \begin{itemize}
-\item 缺乏框架的形式理论: 至今, 还没有建立框架的形式理论, 其推理和一致性检查机制并非基于良好定义的语义.
+\item 框架缺乏形式理论: 至今, 还没有建立框架的形式理论, 其推理和一致性检查机制并非基于良好定义的语义.
 \item 缺乏过程性知识表示: 框架系统不便于表示过程性知识, 缺乏如何使用框架中知识的描述能力. 框架推理过程需要用到一些与领域无关的推理规则, 而这些规则在框架系统中又很难表达.
 \item 清晰性难以保证: 由于各框架本身的数据结构不一定相同, 从而框架系统的清晰性很难保证.
 \end{itemize}
+%%%%%-----------------------------------------
+\section{面向对象的知识表示(知识+方法)}
+认为世界由各种“对象”组成，每个对象类都定义了所谓“方法”（method），它们实际上可视为允许作用于该类对象上的各种操作。
+面向对象知识表示方法与框架表示方法有许多相似之处，如层次分类和特性继承机制等。但由于应用目标不同，实现和使用方式有较大区别。框架表示法旨在支持知识的陈述性表示，强调事物的结构化描述和对人思维方式的模拟。面向对象表示法则强调信息的结构化处理，注重信息和信息处理的封装和程序设计的模块化。
 %%%%%-----------------------------------------
 \section{过程表示法}
     过程性知识表示是将有关某一问题领域的知识, 连同如何使用这些知识的方法, 均隐式地表示为一个求解问题的过程.
@@ -2151,19 +2209,21 @@ Frame <Master-2>
 
 过程表示没有固定的表示形式, 如何描述知识完全取决于具体问题. 以过程规则表示形式为例, 一个过程规则由以下4部分组成:
 
-(1) 激发条件
+(1) 激发条件: 激发条件由\uwave{推理方向}和\uwave{调用模式}两部分组成.
 \begin{itemize}
-\item 激发条件由推理方向和调用模式两部分组成.
+\item
 \item 推理方向用于指出推理是正向推理(FR)还是反向推理(BR).
-\item 正向推理, 只有当综合数据库中的已有事实可以与其“调用模式”匹配时, 该过程规则才能被激活;
-\item 反向推理, 只有当“调用模式”与查询目标或子目标匹配时才能将该过程规则激活.
+
+    $\bullet$ 正向推理的激活条件: 当综合数据库中的已有事实可以与其“调用模式”匹配时才能将该过程规则激活;
+
+    $\bullet$ 反向推理的激活条件: 当“调用模式”与查询目标或子目标匹配时才能将该过程规则激活.
 \end{itemize}
 
 (2) 演绎操作: 演绎操作由一系列的子目标构成. 当前面的激发条件满足时, 将执行这里列出的演绎操作.
 
-(3) 状态转换: 状态转换槽的作用是来完成对综合数据库的增、删、改操作.
+(3) 状态转换: 状态转换槽的作用是来完成对综合数据库的增、删和改操作.
 
-(4) 返回: 过程规则的最后一个语句使返回语句, 用于指出将控制权返回到调用该过程规则的上一级过程规则那里去.
+(4) 返回: 过程规则的最后一个语句是返回语句, 用于指出将控制权返回到调用该过程规则的上一级过程规则那里去.
 %%%%%---------------------------------------------
 \begin{example}
 下面给出一个关于同学问题的过程表示.
@@ -2174,29 +2234,24 @@ Frame <Master-2>
 
     其过程规则表示为:
 
-             BR(Teacher, ?z, ?y)          (需求解的问题)
+        \quad\ding{172}BR(Teacher, ?z, ?y)          (需求解的问题)
 
-             GOAL(Classmate, ?$x, y$)     (求$y$的同班同学是谁)
+        \quad\ding{173}GOAL(Classmate, ?$x, y$)     (求$y$的同班同学是谁)
 
-             GOAL(Teacher, $z, x$)        (已知$z$是$x$的老师)
+        \quad\ding{174}GOAL(Teacher, $z, x$)        (已知$z$是$x$的老师)
 
-             INSERT(Teacher,  $z, y$)     (对数据库的插入操作)
+        \quad\ding{175}INSERT(Teacher,  $z, y$)     (对数据库的插入操作)
 
-             RETURN
+        \quad\ding{176}RETURN
 
-其中: BR是逆向推理标志;
-
-     GOAL表示求解子目标, 即进行过程调用;
-
-     INSERT表示对数据库进行插入操作;
-
+其中: BR是逆向推理标志; GOAL表示求解子目标, 即进行过程调用; INSERT表示对数据库进行插入操作;
      RETURN作为结束标志;
 
      带“？”的变量表示其值将在该过程中求得.
 \end{example}
 问题求解的基本过程:
 
-每当有一个新的目标时, 就从可以匹配的过程规则中选择一个执行之. 在该规则的执行过程中可能会产生新的目标, 此时就调用相应的过程规则并执行它. 反复进行这一过程, 直至执行到RETURN语句.
+每当有一个新的目标时, 就从可以匹配的过程规则中选择一个执行. 在该规则的执行过程中可能会产生新的目标, 此时就调用相应的过程规则并执行它. 反复进行这一过程, 直至执行到RETURN语句.
 只要碰到 RETURN语句, 就将调用返回当前过程的上一级过程规则, 并依次逐级返回.
 如果某过程规则运行失败, 就另选择一个同层的可匹配过程规则执行, 如果不存在这样的过程规则, 则返回失败标志, 并将控制权移交给上一级过程规则.
 
@@ -2208,27 +2263,25 @@ Frame <Master-2>
 
     (Teacher,林海,杨叶)
 \end{center}
-    已知杨叶与柳青是同班同学, 林海是杨叶的老师.
-
-假设需要求解的问题是: 找出两个人$w$及$v$, 其中$w$是$v$的老师.
-
-该问题可表示为: GOAL(Teacher, ?w, ?v).
+    已知杨叶与柳青是同班同学, 林海是杨叶的老师. 假设需要求解的问题是: \textbf{找出两个人$w$及$v$, 其中$w$是$v$的老师}.
 \end{example}
 %%%%-----------------------------------
 \begin{answer}
-     (1) 在过程规则库中找出对于问题GOAL(Teacher,?w, ?v), 其激发条件可以满足的过程规则. 显然, BR(Teacher,  z, y)经如下变量代换$w/z, v/y$后可以匹配, 因此选用该过程规则.
+该问题可表示为: GOAL(Teacher, ?w, ?v).
+
+    (1) 在过程规则库中找出问题GOAL(Teacher,?w, ?v)的激发条件可以满足的过程规则. 显然, BR(Teacher,  z, y)经变量代换$w/z, v/y$后可以匹配, 因此选用该过程规则.
 
     (2) 执行该过程规则中的第一个语句GOAL(Classmate, ?x, y). 此时, 其中的$y$已被$v$代换. 经与已知事实(Classmate,杨叶,柳青)匹配, 分别求得了变量$x$及$v$的值, 即
 \begin{center}
-    $x$=杨叶,$v$=柳青
+    $x$=杨叶,$v/y$=柳青
 \end{center}
 
     (3) 执行该过程规则中的第二个语句GOAL(Teacher, z, x). 此时, $x$的值已经知道, $z$已被$w$代换. 经与已知事实(Teacher, 林海 ,杨叶)匹配, 求得了变量$w$的值, 即
 \begin{center}
-    $w$=林海
+    $w/z$=林海
 \end{center}
 
-    (4) 执行该过程规则中的第三个语句INSERT(Teacher, z, y), 此时, $z$与$y$的值均以知道, 分别是林海和杨叶, 因此这时插入数据库的事实是:
+    (4) 执行该过程规则中的第三个语句INSERT(Teacher, z, y), 此时, $z$与$y$的值均已经知道, 分别是林海和杨叶, 因此这时插入数据库的事实是:
 \begin{center}
     (Teacher,林海,   杨叶)
 \end{center}
@@ -2238,9 +2291,9 @@ Frame <Master-2>
 \subsection{过程表示的主要优缺点}
 \begin{itemize}
 \item  表示效率高.
-\item  过程表示法是用程序来表示知识的, 而程序能准确的表明先做什么, 后作什么以及怎样做, 并直接嵌入一些启发式的控制信息, 因此, 可以避免选择及匹配那些无关的知识, 也不需要跟踪那些不必要的路径, 从而提高了系统的运行效率.
+\item  过程表示法是用程序来表示知识的, 而程序能准确的表明先做什么, 后作什么以及怎样做, 并直接嵌入一些启发式的控制信息, 可以避免选择及匹配那些无关的知识, 也不需要跟踪那些不必要的路径, 从而提高了系统的运行效率.
 \item  控制系统容易实现.
-\item  由于控制性质是已嵌入到程序中, 因而控制系统就比较容易设计.
+\item  由于控制性质已嵌入到程序中, 因而控制系统就比较容易设计.
 \end{itemize}
 
 主要缺点: 不易修改及添加新知识, 而且当对某一过程进行修改时, 又可能影响到其它过程, 对系统的维护带来不便.
@@ -2283,13 +2336,19 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 %%%%%-----------------------------
 \subsection{模糊认知图的参数训练}
 
-通常概念节点会通过模糊C均值聚类得到的中心表示, 这也是信息粒化的过程, 之后, 对FCM的训练即是转换为一个对其权重矩阵$W$的优化问题.
-权值的优化一般是通过启发式算法, 例如粒子群算法和基于梯度的算法.
-通过训练数据进行优化的损失函数一般选取为误差平方和
+    通常概念节点会通过模糊C均值聚类得到的中心表示, 这也是信息粒化的过程, 之后, 对FCM的训练即是转换为一个对其权重矩阵$W$的优化问题.
+    权值的优化一般是通过启发式算法, 例如粒子群算法和基于梯度的算法.
+    通过训练数据进行优化的损失函数一般选取为误差平方和
 \begin{align}
-    \textup{SSE}=\sum_{j=1}^{N} \sum_{i=1}^{c}\left(u_{i j}-t_{i j}\right)
+    \textup{SSE}=\sum_{j=1}^{N} \sum_{i=1}^{c}\left(u_{i j}-t_{i j}\right),
 \end{align}
 即最小化期望输出与实际输出之间的差异.
+%%%%%-------------------------------------------------------------------
+\section{小结}
+    知识是有关信息关联在一起形成的信息结构, 具有相对正确性、不确定性、可表示性和可利用性等特点.
+    对知识的表示可以分为符号表示法和连接机制表示法. 知识表示法都是面向符号的知识表示方法.
+    在这些表示方法中, 谓词逻辑、产生式系统和状态空间表示法属于非结构化的知识表示范畴, 语义网络、框架、面向对象和脚本技术属于结构化的知识表示范畴.
+    这些表示方法各自有各自的长处, 分别适用于不同的情况.
 %%%%%-------------------------------------------------------------------
 \section{作业}
 
@@ -2297,14 +2356,17 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 \begin{think}
     请用语义网络表示如下知识: 高老师从3月到7月给计算机系的学生讲“计算机网络”课.
 \end{think}
-
+%%%%%------------------------------------------
+\begin{think}
+    用语义网络表示“军用飞机有轰炸机和战斗机; 民用飞机有客机和货运机”.
+\end{think}
 %%%%%------------------------------------------
 \begin{observe}
     用谓词逻辑知识表示方法表示如下知识:
 
-(1) 有人喜欢梅花, 有人喜欢菊花, 有人既喜欢梅花又喜欢菊花.
+    (1) 有人喜欢梅花, 有人喜欢菊花, 有人既喜欢梅花又喜欢菊花.
 
-(2) 不是每个计算机系的学生都喜欢在计算机上编程序.
+    (2) 不是每个计算机系的学生都喜欢在计算机上编程序.
 \end{observe}
 
 %%%%%------------------------------------------
@@ -2314,40 +2376,66 @@ FCM 的概念值和弧的权值都可以为模糊值, 是一种软计算方法, 
 
 %%%%%------------------------------------------
 \begin{think}
-    用一阶谓词逻辑表示下面的句子： a)并不是所有的学生选修了历史和生物.  b)历史考试中只有一个学生不及格.
-    c)只有一个学生历史和生物考试都不及格. d)历史考试的最高分比生物考试的最高分要高.
+    用一阶谓词逻辑表示下面的句子: a)并不是所有的学生选修了历史和生物. b)历史考试中只有一个学生不及格. c)只有一个学生历史和生物考试都不及格. d)历史考试的最高分比生物考试的最高分要高.
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
 语义网络示例如图\ref{YUYINETlizi01}, 给出其描述.
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.4\textwidth]{YUYINETlizi01.png}
+%\caption{语义网络示例}
+%\label{YUYINETlizi01}
+%\end{figure}
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{YUYINETlizi01.png}
-\caption{语义网络示例}
-\label{YUYINETlizi01}
+\begin{center}
+    \begin{tikzpicture}[font={\sf \small}]
+    \def \smbwd{2cm}
+    \def \smbwe{4cm}
+    \node (Plane) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {飞机};                                             % 飞机
+    \node (Plane1) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm, xshift=-2cm, below=1cm of Plane] {军用飞机};        % 民用飞机
+    \node (Plane2) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm, xshift=2cm, below=1cm of Plane] {民用飞机};         % 民用飞机
+
+    \draw[->](Plane1)node[left,rotate=0,yshift=0.6cm,xshift=0.3cm] {AKO}--(Plane) ;
+    \draw[->](Plane2)node[left,rotate=0,yshift=0.6cm,xshift=0.1cm] {AKO}--(Plane) ;
+
+    \node (Bomber1)[draw, process,align=center,right=3cm of qLPV,xshift=-2cm, below=1cm of Plane1] {轰炸机};                               % 轰炸机
+    \node (Fighter1)[draw, process,align=center,right=3cm of qLPV,xshift=1.25cm, below=1cm of Plane1] {战斗机};                            % 战斗机
+
+    \draw[->] (Bomber1)node[left,rotate=0,yshift=0.7cm,xshift=0.3cm] {AKO}--(Plane1) ;
+    \draw[->] (Fighter1)node[left,rotate=0,yshift=0.6cm,xshift=0.4cm] {AKO}--(Plane1) ;
+
+    \node (Keji) at (0,0) [draw, process,minimum height=0.5cm,xshift=-0.75cm, below=1cm of Plane2] {客机};                                 % 客机
+    \node (carrier1)[draw, process,align=center,right=3cm of qLPV,yshift=0cm,xshift=2cm, below=1cm of Plane2] {货运机};                    % 货运机
+    \draw[->] (Keji)node[left,rotate=0,yshift=0.6cm,xshift=0.2cm] {AKO}--(Plane2);
+    \draw[->] (carrier1)node[left,rotate=0,yshift=0.6cm,xshift=0.25cm]{AKO}--(Plane2);
+    \end{tikzpicture}
+    \caption{语义网络示例}
+    \label{YUYINETlizi01}
+    \end{center}
 \end{figure}
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
-  产生式表示法中事实和规则怎么表示?用产生式表示法设计一个医学知识库.
+  产生式表示法中事实和规则怎么表示? 用产生式表示法设计一个医学知识库.
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
-  以一所大学人员状况为例,说明语义网络的基本描述格式.
+  以一所研究性大学人员状况为例, 说明语义网络的基本描述格式.
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
-  框架表示法有什么特点?试构造一个描述你的卧室的框架系统.
+  框架表示法有什么特点? 试构造一个描述你的卧室的框架系统.
 \end{think}
 
 %%%%%------------------------------------------
 \begin{think}
-  八数码问题也称为九宫问题. 在$3\times 3$的棋盘,摆有八个棋子,每个棋子上标有1~8的某一数字,不同棋子上标的数字不相同. 棋盘上还有一个空格,与空格相邻的棋子可以移到空格中.
-  要求解决的问题是,给出一个初始状态和一个目标状态,找出一种从初始状态转变成目标状态的移动序列.
+  八数码问题也称为九宫问题. 在$3\times 3$的棋盘, 摆有八个棋子, 每个棋子上标有1~8的某一数字,不同棋子上标的数字不相同. 棋盘上还有一个空格, 与空格相邻的棋子可以移到空格中.
+  要求解决的问题是, 给出一个初始状态和一个目标状态, 找出一种从初始状态转变成目标状态的移动序列.
 \end{think}
 
 %\begin{figure}[H]
