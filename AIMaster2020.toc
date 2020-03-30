@@ -194,7 +194,7 @@
 \contentsline {subsection}{\numberline {2.3.7}继承}{164}{subsection.2.3.7}% 
 \contentsline {paragraph}{继承的一般过程}{164}{paragraph*.192}% 
 \contentsline {subsection}{\numberline {2.3.8}匹配}{164}{subsection.2.3.8}% 
-\contentsline {subsection}{\numberline {2.3.9}语义网络表示法的特征}{165}{subsection.2.3.9}% 
+\contentsline {subsection}{\numberline {2.3.9}语义网络表示法的优缺点:}{165}{subsection.2.3.9}% 
 \contentsline {section}{\numberline {2.4}框架表示法}{166}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}框架理论}{166}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}框架结构和框架表示}{166}{subsection.2.4.2}% 
@@ -207,10 +207,10 @@
 \contentsline {subparagraph}{框架之间的纵向联系}{170}{subparagraph*.200}% 
 \contentsline {subparagraph}{框架之间的横向联系}{170}{subparagraph*.201}% 
 \contentsline {paragraph}{基本过程}{170}{paragraph*.203}% 
-\contentsline {paragraph}{特性继承}{171}{paragraph*.204}% 
+\contentsline {paragraph}{特性继承过程}{171}{paragraph*.204}% 
 \contentsline {paragraph}{If-Needed与If-Added过程的区别}{171}{paragraph*.205}% 
 \contentsline {paragraph}{匹配和填槽}{171}{paragraph*.206}% 
-\contentsline {subsection}{\numberline {2.4.3}框架表示法的特征}{172}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.3}框架表示法的优缺点}{172}{subsection.2.4.3}% 
 \contentsline {section}{\numberline {2.5}面向对象的知识表示(知识+方法)}{173}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}过程表示法}{173}{section.2.6}% 
 \contentsline {subsection}{\numberline {2.6.1}过程表示的主要优缺点}{175}{subsection.2.6.1}% 

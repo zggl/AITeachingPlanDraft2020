@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  30 MAR 2020 08:06
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  30 MAR 2020 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5418,12 +5418,16 @@ Package mdframed Info: mdframed works in twoside mode on input line 1901.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1901.
- [164] [165]
+ [164]
+Underfull \vbox (badness 2547) has occurred while \output is active []
+
+ [165]
 Package mdframed Info: mdframed works in twoside mode on input line 1973.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1973.
- [166] [167]
+
+[166] [167]
 Package mdframed Info: mdframed works in twoside mode on input line 2053.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5447,11 +5451,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 2075.
  [169]
-Package mdframed Info: mdframed works in twoside mode on input line 2105.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2105.
-
 Overfull \hbox (24.18643pt too wide) in paragraph at lines 2113--2114
 [] [] \TU/SimHei(0)/bx/n/12.045 框 架 之 间 的 纵 向 联 系[] \TU/SimSun(0)/m/n/12.045 是 
 指 那 种 具 有 继 承 关 系 的 上 下 层 框 架 之 间 的 联 系\T1/ntxtlf/m/n/12.045 .                 
@@ -5469,24 +5468,28 @@ Package mdframed Info: mdframed detected package amsthm
 File: figures/kuangjia2019112511.PNG Graphic file (type bmp)
 <figures/kuangjia2019112511.PNG>
 [170]
-Package mdframed Info: mdframed works in twoside mode on input line 2156.
+Package mdframed Info: mdframed works in twoside mode on input line 2155.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2156.
-Package mdframed Info: mdframed works in twoside mode on input line 2167.
+(mdframed)              on input line 2155.
+Package mdframed Info: mdframed works in twoside mode on input line 2166.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2167.
+(mdframed)              on input line 2166.
  [171] [172]
-Package mdframed Info: mdframed works in twoside mode on input line 2231.
+Package mdframed Info: mdframed works in twoside mode on input line 2230.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2231.
+(mdframed)              on input line 2230.
+LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <7.52812> not available
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 2254.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 6.77525pt on input line 2254.
  [173]
-Package mdframed Info: mdframed works in twoside mode on input line 2262.
+Package mdframed Info: mdframed works in twoside mode on input line 2265.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2262.
+(mdframed)              on input line 2265.
  [174]
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
@@ -5599,10 +5602,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 683.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 683.
-LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <7.52812> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 686.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 6.77525pt on input line 686.
  [199]
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
 Package mdframed Info: mdframed works in twoside mode on input line 720.
@@ -8995,11 +8994,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 291.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 291.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-308' on page 518 undefined on input lin
-e 293.
-
 ) [518]
 \openout2 = `tex/chapter10.aux'.
 
@@ -9096,15 +9090,11 @@ LaTeX Warning: Empty bibliography on input line 125.
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
-(./AIMaster2020.aux
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-(./tex/preface.aux) (./tex/overview.aux) (./tex/chapter1.aux)
-(./tex/chapter2.aux) (./tex/chapter3.aux) (./tex/chapter4.aux)
-(./tex/chapter5.aux) (./tex/chapter6.aux) (./tex/chapter7.aux)
-(./tex/chapter8.aux) (./tex/chapter9.aux) (./tex/chapter10.aux)
-(./tex/chapter11.aux))
+(./AIMaster2020.aux (./tex/preface.aux) (./tex/overview.aux)
+(./tex/chapter1.aux) (./tex/chapter2.aux) (./tex/chapter3.aux)
+(./tex/chapter4.aux) (./tex/chapter5.aux) (./tex/chapter6.aux)
+(./tex/chapter7.aux) (./tex/chapter8.aux) (./tex/chapter9.aux)
+(./tex/chapter10.aux) (./tex/chapter11.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 129.
 
@@ -9127,10 +9117,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 97855 strings out of 492922
- 2345511 string characters out of 6136750
- 2956703 words of memory out of 5000000
- 98895 multiletter control sequences out of 15000+600000
+ 97828 strings out of 492922
+ 2343762 string characters out of 6136750
+ 2956248 words of memory out of 5000000
+ 98868 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2441b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
