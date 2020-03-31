@@ -348,19 +348,13 @@
  }
 
 \newtcbtheorem[auto counter,number within=chapter]{mydef}{\q@label@defn}{defstyle}{def}
-\newtcbtheorem[use counter from=mydef]{mythm}{\q@label@thm}{thmstyle}{thm}
-
+\newtcbtheorem[auto counter,number within=chapter]{mythm}{\q@label@thm}{thmstyle}{thm}
 \newtcbtheorem[auto counter,number within=chapter]{myprop}{\q@label@prop}{propstyle}{prop}
-
 \newtheorem{keypoint}{\q@label@keypoint}[chapter]  %环境名keypoint
 \newtcbtheorem[use counter from=mydef]{mylem}{\q@label@lem}{propstyle}{lemma}
-
 \newtheorem{observation}[tcb@cnt@mydef]{{\makebox[0pt][r]{\scriptsize\color{red!90}\textdbend\quad}\textbf{\q@label@rem}}}
-
 \newenvironment{answer}{\par\noindent\textbf{\textcolor[rgb]{0.0157,0.2863,0.3686}{解}: }\color{black!90}}{\par\vspace{.5\baselineskip}}
-
-\newenvironment{remark}
-{\begin{observation}} {\end{observation}}
+\newenvironment{remark}{\begin{observation}} {\end{observation}}
 %======================================================================
 % 引用样式为“图x.y”等
 \newcommand{\requ}[1]{(\ref{#1})}

@@ -147,14 +147,35 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{学习系统}
 如果一 个系统在与环境相互作用时, 能利用过去与环境作用时 得到的信息, 并提高其性能 , 那么这样的系统就是学习 系统. 它包括环境、学习环 节、知识库和执行环节(图\ref{AI32fig2701}).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.76\textwidth]{zhengxiangtuili2019112701.PNG}
+%\caption{学习系统}
+%\label{AI32fig2701}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{zhengxiangtuili2019112701.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small},scale=0.8]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {环境};         % 环境
+\node (nCz)[draw, process,align=center,right=1.5cm of ABC0,yshift=0cm] {\textcolor[rgb]{0,0,1}{学习环节}};       %学习环节
+\draw[->](ABC0)--(nCz);
+\node (AB0)[draw, process,align=center,right=1.5cm of nCz,yshift=0cm,xshift=1.0cm] {知识库};                    %知识库
+\node (ss0)[align=center,above=1cm of AB0,xshift=1.0cm]{};
+\draw[->](nCz)--(AB0);
+\node (AMn)[draw, process,align=center,right=1.5cm of AB0,yshift=0cm] {\textcolor[rgb]{0,0,1}{执行环节}};        %执行环节
+\draw[->](AB0)--(AMn);
+\draw[->](AMn)|-(ss0.center)-|(nCz);
+\end{tikzpicture}
+\end{center}
 \caption{学习系统}
 \label{AI32fig2701}
 \end{figure}
-
 环境是学习系统所感知到的外界信息集合, 也是学习系统的外界来源. 信息的水平(一般化程度)和质量(正确性)对学习系统影响较大.
 
 \begin{itemize}

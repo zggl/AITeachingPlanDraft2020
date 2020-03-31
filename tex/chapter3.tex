@@ -319,7 +319,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 \begin{figure}[H]
 \begin{center}
-    \begin{tikzpicture}[decision/.style={diamond, draw, fill=blue!20, text width=5.5cm, aspect=5,align=flush center, inner sep=0pt},font={\sf \small},scale=0.6]
+    \begin{tikzpicture}[decision/.style={diamond, draw, fill=blue!20, text width=5.5cm, aspect=5,align=flush center, inner sep=0pt},font={\sf \small},scale=0.5]
         \def \smbwd{2cm}
         \def \smbwe{4cm}
         %定义流程图的具体形状
@@ -343,7 +343,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
         \draw[->] (AddtoKB)-|(leftabove0.center)-|(IsDBsolvable.north);
 
         \node (QueryNewFact)[draw,diamond, fill=blue!20, aspect=1,text width=1.5cm, align=center,right=0.8cm of KNset] {询问用户\\有此\\事实吗?};                                          %可补充新事实吗
-        \node (ToDB)[draw, process,align=center,right=0.8cm of QueryNewFact]{假设\\成立\\并放\\入DB};
+        \node (ToDB)[draw, process,align=center,right=0.6cm of QueryNewFact]{假设\\成立\\并放\\入DB};
         \draw[->] (QueryNewFact)--(ToDB);
         \draw[->] (KNset)node[left,xshift=4.4cm,yshift=-0.2cm] {$N$}--(QueryNewFact);
         \draw[->] (QueryNewFact)node[left,yshift=-1.8cm]{$N$}|-(CollapSolve.north);
@@ -352,7 +352,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
         \node (AddNewtop)[draw,process,align=center,xshift=1.8cm,right=0.6cm of IsKNavailable] {该假设成立};
         \draw[->] (IsKNavailable)node[left,xshift=4.6cm,yshift=-0.2cm] {$Y$}--(AddNewtop);
 
-        \node (NewAssu)[draw,process,align=center,xshift=0.7cm,right=1.6cm of AddNewtop] {还有\\新的\\假设吗?};
+        \node (NewAssu)[draw,process,align=center,right=1.3cm of AddNewtop] {还有\\新的\\假设吗?};
         \node (SuccQuit)[draw,process,align=center,below=5cm of NewAssu] {成功退出};
         \draw[->] (AddNewtop)--(NewAssu);
         \draw[->] (NewAssu)node[left,yshift=-1.35cm] {$N$}--(SuccQuit);
@@ -414,9 +414,9 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \subsubsection{经典数理逻辑的主要理论成果}
 1) 西班牙的罗门$\cdot$卢乐(12世纪末13世纪初)提出制造可解决各种问题的通用逻辑机.
 
-2) 17世纪, 英国的弗朗西斯·培根(Francis Bacon, 1561一1626年)在《新工具》中提出了归纳法. 随后, 德国莱布尼兹做出了四则运算的手摇计算器, 并提出了“通用符号”和“推理计算”的思想.
+2) 17世纪, 英国的弗朗西斯·培根(Francis Bacon, 1561-1626年)在《新工具》中提出了归纳法. 随后, 德国莱布尼兹做出了四则运算的手摇计算器, 并提出了“通用符号”和“推理计算”的思想.
 
-3) 19世纪, 英国乔治·布尔(George Boole, 1815.11.2～1864)创立了布尔代数, 奠定了现代形式逻辑研究的基础. 德国弗里德里希·路德维希·戈特洛布·弗雷格(德语：Friedrich Ludwig Gottlob Frege; 1848年11月8日—1925年7月26日)完善了命题逻辑, 创建了一阶谓词演算系统.
+3) 19世纪, 英国乔治·布尔(George Boole, 1815-1864)创立了布尔代数, 奠定了现代形式逻辑研究的基础. 德国弗里德里希·路德维希·戈特洛布·弗雷格(德语：Friedrich Ludwig Gottlob Frege; 1848年11月8日—1925年7月26日)完善了命题逻辑, 创建了一阶谓词演算系统.
 
 4) 20世纪初, 哥德尔对一阶谓词完全性定理与$N$形式系统的不完全性定理进行了证明. 在此基础上, 克林对一般递归函数理论作了深入的研究, 建立了演算理论. 英国艾伦·麦席森·图灵(Alan Mathison Turing, 1912年6月23日—1954年6月7日)建立了描述算法的机械性思维过程, 提出了理想计算机模型(即图灵机), 创立了自动机理论.
 
@@ -788,14 +788,14 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 %%%%%%%----------------------------------------%%%
 \begin{remark}
-  通常, 置换是用希腊字母$\theta$、$\sigma$、$\alpha$、 $\lambda$等来表示的.
+    通常, 置换是用希腊字母$\theta$、$\sigma$、$\alpha$、 $\lambda$等来表示的.
 \end{remark}
 %%%%%%%----------------------------------------%%%
 \begin{mydef}{\textbf{例示}}{1}
 设$\theta =\{t_1/x_1,t_2/x_2,\cdots,t_n/x_n\}$是一个置换, $F$是一个谓词公式, 把公式$F$中出现的所有$x_i$换成$t_i(i=1,2,\cdots,n)$, 得到一个新的公式$G$, 称$G$为$F$在置换$\theta $下的\textbf{例示}, 记作$G=F\theta $.
 \end{mydef}
 \begin{remark}
-一个谓词公式的任何例示都是该公式的逻辑结论.
+    一个谓词公式的任何例示都是该公式的逻辑结论.
 \end{remark}
 
 %%%%%%%----------------------------------------%%%
@@ -815,13 +815,13 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
       \ding{173}   当$y_j\in { x_1, x_2 ,\cdots, x_n }时$, 删去$u_j/y_j\, (j=1, 2 ,\cdots, m)$, 最后剩下的元素所构成的集合.
 \end{mydef}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{example}
   设$\theta =\{ f(y)/x, z/y \}, \lambda =\{a/x, b/y ,y/z \}$, 求$\theta $与$\lambda $的合成.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
-先求出集合
+    先求出集合
 \begin{align}
   \{f(b/y)/x, (y/z)/y, a/x, b/y\} , y/z=\{f(b)/x, y/y, a/x, b/y , y/z\},
 \end{align}
@@ -831,7 +831,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \end{align}
 \end{result}
 \begin{remark}
-  合一可理解为是寻找项对变量的置换, 使两个谓词公式一致.
+    合一可理解为是寻找项对变量的置换, 使两个谓词公式一致.
 \end{remark}
 
 %%%%%%%----------------------------------------%%%
@@ -871,14 +871,14 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \section{自然演绎推理}
 %%%%%%%----------------------------------------%%%
 \begin{mydef}{自然演绎推理}{1}
-从一组已知为真的事实出发, 直接运用经典逻辑中的推理规则推出结论的过程称为自然演绎推理.
+    从一组已知为真的事实出发, 直接运用经典逻辑中的推理规则推出结论的过程称为自然演绎推理.
 \end{mydef}
 
 自然演绎推理最基本的推理规则是三段论推理, 它包括:
 \begin{itemize}
-\item 假言推理         $P,  P\rightarrow Q \Rightarrow  Q$;
-\item 拒取式            $\neg  Q,  P\rightarrow Q \Rightarrow  P$;
-\item 假言三段论     $P\rightarrow Q,  Q\rightarrow R \Rightarrow  P\rightarrow R$.
+    \item 假言推理         $P,  P\rightarrow Q \Rightarrow  Q$;
+    \item 拒取式            $\neg  Q,  P\rightarrow Q \Rightarrow  P$;
+    \item 假言三段论     $P\rightarrow Q,  Q\rightarrow R \Rightarrow  P\rightarrow R$.
 \end{itemize}
 
 %%%%%%%---------------------------------------------
@@ -890,10 +890,10 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 证明: 因为
 \begin{itemize}
-\item $A, A\rightarrow C\Rightarrow  C$;                    假言推理;
-\item $B,  C\Rightarrow  B\wedge C$;                        引入合取词;
-\item $B\wedge C, B\wedge C\rightarrow D \Rightarrow  D$;  假言推理;
-\item $D,  D\rightarrow Q \Rightarrow  Q$,                 假言推理.
+    \item $A, A\rightarrow C\Rightarrow  C$;                    假言推理;
+    \item $B,  C\Rightarrow  B\wedge C$;                        引入合取词;
+    \item $B\wedge C, B\wedge C\rightarrow D \Rightarrow  D$;  假言推理;
+    \item $D,  D\rightarrow Q \Rightarrow  Q$,                 假言推理.
 \end{itemize}
 因此, $Q$为真.
 %%%%%%%----------------------------------------%%%
@@ -1072,7 +1072,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \end{itemize}
 %%%%%%%----------------------------------------%%%
 \begin{example}
-上步所得公式中存在量词$(\exists  y)$和$(\exists  z)$都位于$(\forall x)$的辖域内, 因此都需要用Skolem函数来替换. 设替换$y$和$z$的Skolem函数分别是$f(x)$和$g(x)$, 则替换后的式子为
+    上步所得公式中存在量词$(\exists  y)$和$(\exists  z)$都位于$(\forall x)$的辖域内, 因此都需要用Skolem函数来替换. 设替换$y$和$z$的Skolem函数分别是$f(x)$和$g(x)$, 则替换后的式子为
 \begin{align}
   (\forall x)(\neg P(x,f(x))\vee (Q(x,g(x))\wedge \neg R(x,g(x)))).
 \end{align}
@@ -1082,7 +1082,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 Skolem标准形的一般形式为
 \begin{align}
-  (\forall x_1)\cdots(\forall x_n) M(x_1,x_2,\cdots,x_n),
+    (\forall x_1)\cdots(\forall x_n) M(x_1,x_2,\cdots,x_n),
 \end{align}
 其中, $M(x_1,x_2,\cdots,x_n)$是Skolem标准形的母式, 它由子句的合取所构成.
 
@@ -1094,7 +1094,7 @@ Skolem标准形的一般形式为
 \begin{example}
 前面的公式化为Skolem标准形后为
 \begin{align}
-  (\forall x)((\neg P(x,f(x))\vee Q(x,g(x))\wedge (\neg P(x,f(x))\vee \neg R(x,g(x)))).
+    (\forall x)((\neg P(x,f(x))\vee Q(x,g(x))\wedge (\neg P(x,f(x))\vee \neg R(x,g(x)))).
 \end{align}
 \end{example}
 
@@ -1139,63 +1139,63 @@ Skolem标准形的一般形式为
 
 这个结论很重要, 是归结原理的主要依据, 可用定理的形式来描述.
 
-\begin{mythm}{不可满足的充要条件}{1}
+\begin{mythm}{不可满足的充要条件}{}\label{AIthm3.1}
 设有谓词公式$F$, 其标准子句集为$S$, 则$F$为不可满足的充要条件是$S$为不可满足的.
 \end{mythm}
 
 为证明此定理, 先作如下说明:  为讨论问题方便, 设给定的谓词公式$F$已为前束形
 \begin{align}
-  (Q_1x_1)\cdots (Q_rx_r)\cdots (Q_nx_n)M(x_1,x_2,\cdots,x_n),
+    (Q_1x_1)\cdots (Q_rx_r)\cdots (Q_nx_n)M(x_1,x_2,\cdots,x_n),
 \end{align}
 其中, $M(x_1,x_2,\cdots,x_n)$已化为合取范式. 由于将$F$化为这种前束形是一种很容易实现的等价运算, 因此这种假设是可以的.
 
 又设$(Q_r x_r)$是第一个出现的存在量词$(\exists x_r)$, 即$F$为
 \begin{align}
-  F=(x_1)\cdots(x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
+    F=(x_1)\cdots(x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
 \end{align}
 为把$F$化为Skolem形, 需要先消去这个$(\exists  x_r)$, 并引入Skolem函数, 得到
 \begin{align}
-  F_1=(x_1)\cdots(x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n)M(x_1,\cdots,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots,x_n).
+    F_1=(x_1)\cdots(x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n)M(x_1,\cdots,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots,x_n).
 \end{align}
-%%%%%%%----------------------------------------%%%%%%%
+%%%%%%%----------------------------------------%
 \begin{remark}
 若能证明
 \begin{align}
-  F \textup{不可满足} \Leftrightarrow  F_1\textup{不可满足}.
+    F \textup{不可满足} \Leftrightarrow  F_1\textup{不可满足}.
 \end{align}
 则同理可证
 \begin{align}
-  F_1\textup{不可满足} \Leftrightarrow  F_2\textup{不可满足}.
+    F_1\textup{不可满足} \Leftrightarrow  F_2\textup{不可满足}.
 \end{align}
 重复这一过程, 直到证明了
 \begin{align}
-  F_{m-1}\textup{不可满足} \Leftrightarrow  F_m\textup{不可满足}
+    F_{m-1}\textup{不可满足} \Leftrightarrow  F_m\textup{不可满足}
 \end{align}
 为止.
 \end{remark}
 此时, $F_m$已为$F$的Skolem标准形. 而$S$只不过是$F_m$的一种集合表示形式. 因此有
 \begin{align}
-  F_m\textup{不可满足} \Leftrightarrow \textup{不可满足}.
+    F_m\textup{不可满足} \Leftrightarrow \textup{不可满足}.
 \end{align}
 \begin{proof}
 (用反证法证明)
 \begin{align}
-  F\textup{不可满足} \Leftrightarrow  F_1\textup{不可满足}.
+    F\textup{不可满足} \Leftrightarrow  F_1\textup{不可满足}.
 \end{align}
 
 先证明 $\Rightarrow$
 
-      已知$F$不可满足, 假设$F_1$是可满足的, 则存在一个解释$I$, 使$F_1$在解释$I$下为真. 即对任意$x_1,\cdots ,x_{r-1}$在$I$的设定下有
+    已知$F$不可满足, 假设$F_1$是可满足的, 则存在一个解释$I$, 使$F_1$在解释$I$下为真. 即对任意$x_1,\cdots ,x_{r-1}$在$I$的设定下有
 \begin{align}
   (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x_1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 亦即对任意的$x_1,\cdots ,x_{r-1}$都有一个$f(x_1,\cdots ,x_{r-1})$使
 \begin{align}
-  (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
+    (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 即在$I$下有
 \begin{align}
-  (\forall x_1)\cdots (\forall x_{r-1}) (\exists  xr)(Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1},\cdots,x_n)
+    (\forall x_1)\cdots (\forall x_{r-1}) (\exists  xr)(Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1},\cdots,x_n)
 \end{align}
 为真. 即$F$在$I$下为真.
 
@@ -1243,22 +1243,22 @@ Skolem标准形的一般形式为
 归结推理的核心是求两个子句的归结式.
 %%%%%%%----------------------------------------%%%
 \begin{mydef}{互补文字}{1}
-   若$P$是原子谓词公式, 则称$P$与$\neg P$为互补文字.
+    若$P$是原子谓词公式, 则称$P$与$\neg P$为互补文字.
 \end{mydef}
 %%%%%%%----------------------------------------%%%
-\begin{mydef}{亲本子句}{1}
-   设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为归结, 称$C_{12}$为$C_1$和$C_2$的
+\begin{mydef}{亲本子句}{defqibenzj}
+    设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为归结, 称$C_{12}$为$C_1$和$C_2$的
    归结式, 称$C_1$和$C_2$ 为$C_{1 2}$的亲本子句.
 \end{mydef}
 %%%%%%%----------------------------------------%%%
 \begin{example}
-  设$C_1 =P\vee Q\vee R$, $C_2=\neg P\vee S$, 求$C_1$和$C_2$的归结式$C_{12}$.
+    设$C_1 =P\vee Q\vee R$, $C_2=\neg P\vee S$, 求$C_1$和$C_2$的归结式$C_{12}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 这里$L_1=P$, $L_2=\neg P$, 通过归结可以得到
              $$C_{12}= Q\vee R\vee S.$$
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{example}
   设$C_1=\neg Q$, $C_2=Q$, 求$C_1$和$C_2$的归结式$C_{12}$.
 \end{example}
@@ -1315,36 +1315,36 @@ Skolem标准形的一般形式为
 \label{AI32fig14}
 \end{figure}
 %%%%%%%-----------------------------------------------
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
-这里$L_1=\neg Q$, $L_2=Q$, 通过归结可以得到
+    这里$L_1=\neg Q$, $L_2=Q$, 通过归结可以得到
 \begin{align}
-  C_{12}= \textup{NIL}.
+    C_{12}= \textup{NIL}.
 \end{align}
 \end{result}
 %%%%%%%----------------------------------------%%%%
 \begin{example}
-  设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
+    设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 若先对$C_1,C_2$归结, 可得到
 \begin{align}
-  C_{1 2}=\neg P.
+    C_{1 2}=\neg P.
 \end{align}
 然后再对$C_{12}$和$C_3$归结, 得到
 \begin{align}
-  C_{123}=\textup{NIL}.
+    C_{123}=\textup{NIL}.
 \end{align}
 如果改变归结顺序, 同样可以得到相同的结果, 即其归结过程是不唯一的.
 \end{result}
 
 其归结归结过程可用图\ref{AI32fig14}来表示, 该树称为\textbf{归结树}.
 %%%%%%%----------------------------------------%%%%
-\begin{mythm}{}{1}\label{AIthm3.1}
-  归结式$C_{12}$是其亲本子句$C_1 $和$C_2$的逻辑结论.
+\begin{mythm}{归结式的亲本子句}{}\label{AIthm3.1}
+    归结式$C_{12}$是其亲本子句$C_1 $和$C_2$的逻辑结论.
 \end{mythm}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{proof}
 (按定义)设$C_1 =L\vee C_1 '$, $C_2 =\neg L\vee C_2 '$关于解释$I$为真, 则只需证明$C_{1 2}= C_1' \vee C_2 '$关于解释$I$也为真.
 对于解释$I, L$和$\neg L$中必有一个为假.
@@ -1359,17 +1359,17 @@ Skolem标准形的一般形式为
 上述定理是\textbf{归结原理}中的一个重要定理, 由它可得到以下两个推论:
 %%%%%%%----------------------------------------%%%%
 \begin{myprop}{归结式的不可满足性}{1}
-设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若用$C_{1 2}$代替$C_1$ 和$C_2$ 后得到新的子句集$S_1$, 则由$S_1$的不可满足性可以推出原子句集$S$的不可满足性. 即: $S_1$的不可满足性 $\Rightarrow  S$的不可满足性.
+    设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若用$C_{1 2}$代替$C_1$ 和$C_2$ 后得到新的子句集$S_1$, 则由$S_1$的不可满足性可以推出原子句集$S$的不可满足性. 即: $S_1$的不可满足性 $\Rightarrow  S$的不可满足性.
 \end{myprop}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{proof}
-设$S=\{ C_1 , C_2 , C_3, \cdots \cdots , C_n\}$, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 则用$C_{1 2}$代替$C_1$ 和$C_2$ 后可得到一个新的子句集$$S_1=\{C_{1 2}, C_3, \cdots , C_n\}.$$
+    设$S=\{ C_1 , C_2 , C_3, \cdots \cdots , C_n\}$, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 则用$C_{1 2}$代替$C_1$ 和$C_2$ 后可得到一个新的子句集$$S_1=\{C_{1 2}, C_3, \cdots , C_n\}.$$
 
 设$S_1$是不可满足的, 则对不满足$S_1$的任一解释$I$, 都可能有以下两种情况:
 
  \ding{172} 解释$I$使$C_{1 2}$为真, 则$C_3, \cdots \cdots , C_n$中必有一个为假, 即$S$是不可满足的.
 
- \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理3.2有$\neg  (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
+ \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.1}有$\neg  (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
 
 因此可以得出
 \begin{center}
@@ -1378,12 +1378,12 @@ Skolem标准形的一般形式为
 \end{proof}
 %%%%%%%----------------------------------------%%%%
 \begin{myprop}{归结式的不可满足性}{1}
-设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中得到新的子句集$S_2$, 则$S$与$S_2$的不可满足性是等价的. 即:
+    设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中得到新的子句集$S_2$, 则$S$与$S_2$的不可满足性是等价的. 即:
 \begin{center}
   $S_2$的不可满足性$\Leftrightarrow S$的不可满足性.
 \end{center}\end{myprop}
 \begin{proof}
-设$S=\{ C_1, C_2, C_3, \cdots , C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots , C_n$中必有一子句为假, 因而$S2=\{ C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
+设$S=\{ C_1, C_2, C_3, \cdots , C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots , C_n$中必有一子句为假, 因而$S_2=\{ C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
 
 再证明 $\Rightarrow$
 
@@ -1391,7 +1391,7 @@ Skolem标准形的一般形式为
 
      \quad\ding{172} 解释$I$使$C_{1 2}$为真, 则$C_1, C_2, C_3, \cdots , C_n$中必有一个为假, 即S是不可满足的.
 
-     \quad\ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理3.2有$\neg (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
+     \quad\ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.2}有$\neg (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
 
      由此可见$S$与$S_2$的不可满足性是等价的. 即
      \begin{center}
@@ -1405,15 +1405,15 @@ Skolem标准形的一般形式为
 在命题逻辑中, 对不可满足的子句集$S$, 其归结原理是完备的.
 这种不可满足性可用如下定理描述:
 %%%%%%%-----------------------------------------------
-\begin{mythm}{子句集的不可满足}{1}\label{AIthm3.2}
-  子句集$S$是不可满足的, 当且仅当存在一个从$S$到空子句的归结过程.
+\begin{mythm}{子句集的不可满足}{}\label{AIthm3.3}
+    子句集$S$是不可满足的, 当且仅当存在一个从$S$到空子句的归结过程.
 \end{mythm}
 
 (2) 命题逻辑的归结反演
 
 \textbf{归结原理}: 假设$F$为已知前提, $G$为欲证明的结论, 归结原理把证明$G$为$F$的逻辑结论转化为证明$F\wedge \neg G$为不可满足.
 
-再根据定理3.1, 在不可满足的意义上, 公式集$F\wedge \neg G$与其子句集是等价的, 即把公式集上的不可满足转化为子句集上的不可满足.
+再根据定理\label{thm361}, 在不可满足的意义上, 公式集$F\wedge \neg G$与其子句集是等价的, 即把公式集上的不可满足转化为子句集上的不可满足.
 
 应用归结原理证明定理的过程称为\textbf{归结反演}.
 
@@ -1426,13 +1426,13 @@ Skolem标准形的一般形式为
     \quad\ding{174} 把$\{F, \neg G\}$化为子句集S.
 
     \quad\ding{175}  应用归结原理对子句集$S$中的子句进行归结, 并把每次得到的归结式并入$S$中. 如此反复进行, 若出现空子句, 则停止归结, 此时就证明了$G$为真.
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{example}
   设已知的公式集为$\{P, (P\wedge Q)\rightarrow R, (S\vee T)\rightarrow Q, T\}$, 求证结论$R$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
-假设结论$R$为假, 将$\neg R$加入公式集, 并化为子句集
+    假设结论$R$为假, 将$\neg R$加入公式集, 并化为子句集
 $$S=\{P,\neg P\vee \neg Q\vee R, \neg S\vee Q, \neg T\vee Q, T, \neg R\}.$$
 其归结过程如图\ref{AI32fig15}示出的归结演绎树所示. 该树根为空子句.
 %%%%%%%-----------------------------------------------
@@ -1487,23 +1487,23 @@ $$S=\{P,\neg P\vee \neg Q\vee R, \neg S\vee Q, \neg T\vee Q, T, \neg R\}.$$
 
 %%%%%%%--------------------------------------
 \paragraph{谓词逻辑的归结}~{}
-在谓词逻辑中, 由于子句集中的谓词一般都含有变元, 因此不能像命题逻辑那样直接消去互补文字. 而需要先用一个最一般合一对变元进行代换, 然后才能进行归结. 可见, 谓词逻辑的归结要比命题逻辑的归结麻烦一些.
+    在谓词逻辑中, 由于子句集中的谓词一般都含有变元, 因此不能像命题逻辑那样直接消去互补文字. 而需要先用一个最一般合一对变元进行代换, 然后才能进行归结. 可见, 谓词逻辑的归结要比命题逻辑的归结麻烦一些.
 %%%%%%%--------------------------------------
 \subparagraph{谓词逻辑的归结原理}
-谓词逻辑中的归结式可用如下定义来描述:
+    谓词逻辑中的归结式可用如下定义来描述:
 %%%%%%%----------------------------------------%%%
 \begin{mydef}{互补文字}{1}\label{AI32Def321}
-设$C_1$和$C_2$是两个没有公共变元的子句, $L_1$和$L_2$分别是$C_1$和$C_2$中的文字. 如果$L_1$和$L_2$存在最一般合一$\sigma$, 则称
-\begin{align}
-  C_{12}=({C_1\sigma }-{ L_1\sigma })\cup ({ C_2\sigma }-{ L_2\sigma })
-\end{align}
-为$C_1$和$C_2$的二元归结式, 而$L_1$和$L_2$为归结式上的文字.
+    设$C_1$和$C_2$是两个没有公共变元的子句, $L_1$和$L_2$分别是$C_1$和$C_2$中的文字. 如果$L_1$和$L_2$存在最一般合一$\sigma$, 则称
+    \begin{align}
+      C_{12}=({C_1\sigma }-{ L_1\sigma })\cup ({ C_2\sigma }-{ L_2\sigma })
+    \end{align}
+    为$C_1$和$C_2$的二元归结式, 而$L_1$和$L_2$为归结式上的文字.
 \end{mydef}
 %%%%%%%---------------------------------------------
 \begin{example}
   设$C_1=P(a)\vee R(x)$, $C_2=\neg P(y)\vee Q(b)$, 求$C_{12}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 取$L_1= P(a),  L_2=\neg P(y)$, 则$L_1$和$L_2$的最一般合一是$\sigma={a/y}$. 根据\ref{AI32Def321},可得
 \begin{align}
@@ -1515,11 +1515,11 @@ C_{12}=( {C_1\sigma }-{L_1\sigma }) \cup  ({C_2 \sigma }-{L_2\sigma })
 \end{result}
 %%%%%%%--------------------------------------
 \begin{example}
-   设$C_1=P(x)\vee Q(a), C_2=\neg P(b)\vee R(x)$, 求 $C_{12}$.
+    设$C_1=P(x)\vee Q(a), C_2=\neg P(b)\vee R(x)$, 求 $C_{12}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
-由于$C_1$和$C_2$有相同的变元$x$, 不符合定义3.20的要求. 为了进行归结, 需要修改$C_2$中变元的名字, 令$C_2=\neg P(b)\vee R(y)$.
+由于$C_1$和$C_2$有相同的变元$x$, 不符合定义\label{defqibenzj}的要求. 为了进行归结, 需要修改$C_2$中变元的名字, 令$C_2=\neg P(b)\vee R(y)$.
 此时$L_1= P(x)$, $L_2 =\neg P(b)$, $L_1$和$L_2$的最一般合一是$\sigma =\{b/x\}$. 则有
 \begin{align}
 C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
@@ -1534,7 +1534,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 (1) 这里使用集合符号和集合的运算, 目的是为了方便说明问题. 即先将子句$C_i\sigma$和$L_i\sigma$写成集合的形式, 在集合表示下做减法和并集运算, 然后再写成子句集的形式.
 
 (2) 定义中还要求$C_1$和$C_2$无公共变元, 这也是合理的.
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{example}
 例如$C_1=P(x), C_2=\neg P(f(x))$, 而$S=\{C_1,  C_2\}$是不可满足的. 但由于$C_1$和$C_2$的变元相同, 就无法合一了. 没有归结式, 就不能用归结法证明$S$的不可满足性, 这就限制了归结法的使用范围.
 如果对$C_1$或$C_2$的变元进行换名, 便可通过合一, 对$C_1$和$C_2$进行归结. 如上例, 若先对$C_2$进行换名, 即$C_2=\neg P(f(y))$, 则可对$C_1$和$C_2$进行归结, 得到一个空子句, 从而证明了$S$是不可满足的.
@@ -1544,7 +1544,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \begin{example}
   设$C_1=P(x)\vee \neg Q(b), C_2=\neg P(a)\vee Q(y)\vee R(z)$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
   对$C_1$和$C_2$通过最一般合一($\sigma =\{a/x, b/y\}$)的作用, 可以得到两个互补对.
 \end{result}
@@ -1556,7 +1556,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \begin{example}
   设$C_1=P(x)\vee P(f(a))\vee Q(x) , C_2=\neg P(y)\vee R(b)$, 求$C_{1 2}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 对参加归结的某个子句, 若其内部有可合一的文字, 则在进行归结之前应先对这些文字进行合一.
 
@@ -1569,7 +1569,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
   C_{12}=R(b)\vee Q(f(a)).
 \end{align}
 \end{result}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{mydef}{因子}{1}
   我们把$C_1\sigma$称为$C_1$的因子. 一般来说, 若子句C中有两个或两个以上的文字具有最一般合一$\sigma$, 则称$C\sigma$为子句C的因子. 如果$C\sigma$是一个单文字, 则称它为$C$的单元因子.
 \end{mydef}
@@ -1591,23 +1591,23 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{mydef}
 %%%%%%%-----------------------------------------------
 \begin{example}
-  设$C_1=P(y)\vee P(f(x))\vee Q(g(x)), C_2 =\neg P(f(g(a)))\vee Q(b)$, 求$C_{12}$.
+    设$C_1=P(y)\vee P(f(x))\vee Q(g(x)), C_2 =\neg P(f(g(a)))\vee Q(b)$, 求$C_{12}$.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
-对$C_1$, 取最一般合一$\sigma ={f(x)/y}$, 得$C_1$的因子
+    对$C_1$, 取最一般合一$\sigma ={f(x)/y}$, 得$C_1$的因子
 \begin{align}
-  C_1\sigma =P(f(x))\vee Q(g(x)),
+    C_1\sigma =P(f(x))\vee Q(g(x)),
 \end{align}
 对$C_1$的因子和$C_2$归结($\sigma={g(a)/x }$), 可得到$C_1$和$C_2$的二元归结式
 \begin{align}
-  C_{12}=Q(g(g(a)))\vee Q(b).
+    C_{12}=Q(g(g(a)))\vee Q(b).
 \end{align}
 \end{result}
-%%%%%%%----------------------------------------%%%%%%%
+%%%%%%%----------------------------------------%
 \begin{remark}
-对谓词逻辑, 定理\ref{AIthm3.1}仍然适用, 即归结式$C_{12}$是其亲本子句$C_1$和$C_2$的逻辑结论. 用归结式取代它在子句集$S$中的亲本子句, 所得到的子句集仍然保持着原子句集$S$的不可满足性.
-此外, 对谓词逻辑定理\ref{AIthm3.2}也仍然适用, 即从不可满足的意义上说, 一阶谓词逻辑的归结原理完备.
+    对谓词逻辑, 定理\ref{AIthm3.2}仍然适用, 即归结式$C_{12}$是其亲本子句$C_1$和$C_2$的逻辑结论. 用归结式取代它在子句集$S$中的亲本子句, 所得到的子句集仍然保持着原子句集$S$的不可满足性.
+此外, 对谓词逻辑定理\ref{AIthm3.3}也仍然适用, 即从不可满足的意义上说, 一阶谓词逻辑的归结原理完备.
 \end{remark}
 %%%%%%%--------------------------------------
 \subparagraph{谓词逻辑的归结反演}
@@ -1616,8 +1616,8 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \begin{example}~{}
 	
 \begin{itemize}
-\item 在步骤(3)化简子句集时, 谓词逻辑需要把由谓词构成的公式集化为子句集;
-\item 在步骤(4)按归结原理进行归结时, 谓词逻辑的归结原理需要考虑两个亲本子句的最一般合一.
+    \item 在步骤(3)化简子句集时, 谓词逻辑需要把由谓词构成的公式集化为子句集;
+    \item 在步骤(4)按归结原理进行归结时, 谓词逻辑的归结原理需要考虑两个亲本子句的最一般合一.
 \end{itemize}
 \end{example}
 %%%%%%%-----------------------------------------------
@@ -1629,7 +1629,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{align}
 求证$G$是$F$的逻辑结论.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{proof}
 先把$G$否定, 并放入$F$中, 得到的$\{F, \neg G\}$为
 \begin{align}
@@ -1707,10 +1707,10 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 为了进一步加深对谓词逻辑归结的理解, 下面再给出一个经典的归结问题.
 %%%%%%%-----------------------------------------------
 \begin{example}
-(\textbf{“快乐学生”问题}) 假设: 任何通过计算机考试并获奖的人都是快乐的, 任何肯学习或幸运的人都可以通过所有考试, 张不肯学习但他是幸运的, 任何幸运的人都能获奖.
+    (\textbf{“快乐学生”问题}) 假设: 任何通过计算机考试并获奖的人都是快乐的, 任何肯学习或幸运的人都可以通过所有考试, 张不肯学习但他是幸运的, 任何幸运的人都能获奖.
 求证: 张是快乐的.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 先定义谓词:
 \begin{Verbatim}
@@ -1738,12 +1738,12 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 
 “任何幸运的人都能获奖”.
 \begin{align}
-  (\forall x) (\textup{Lucky}(x)\rightarrow \textup{Win}(x, prize))
+    (\forall x) (\textup{Lucky}(x)\rightarrow \textup{Win}(x, prize))
 \end{align}
 
 结论“张是快乐的”的否定:
 \begin{align}
-  \neg \textup{Happy}(\textup{zhang})
+    \neg \textup{Happy}(\textup{zhang})
 \end{align}
 \end{result}
 
@@ -1765,7 +1765,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{guijieyuanli2019112517.PNG}
+\includegraphics[width=0.6\textwidth]{guijieyuanli2019112517.PNG}
 \caption{归结树}
 \label{AI32fig17}
 \end{figure}
@@ -1779,15 +1779,15 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \textbf{假设}: 所有不贫穷并且聪明的人都是快乐的, 那些看书的人是聪明的. 李明能看书且不贫穷, 快乐的人过着幸福的生活.
 \textbf{求证}: 李明过着幸福的生活.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{result}
 先定义谓词:
 \begin{itemize}
-\item Poor($x$)    \,\,  $x$是贫穷的;
-\item Smart($x$)   \,  $x$是聪明的;
-\item Happy($x$)    \, $x$是快乐的;
-\item Read($x$)     \,\, $x$能看书;
-\item Exciting($x$) \, $x$过着幸福的生活.
+    \item Poor($x$)    \,\,  $x$是贫穷的;
+    \item Smart($x$)   \,  $x$是聪明的;
+    \item Happy($x$)    \, $x$是快乐的;
+    \item Read($x$)     \,\, $x$能看书;
+    \item Exciting($x$) \, $x$过着幸福的生活.
 \end{itemize}
 
 再将问题用谓词表示为: “所有不贫穷并且聪明的人都是快乐的”.
@@ -1802,17 +1802,17 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 
 “李明能看书且不贫”.
 \begin{align}
-  \textup{Read}(\textup{Liming})\wedge \neg \textup{Poor}(\textup{Liming}).
+    \textup{Read}(\textup{Liming})\wedge \neg \textup{Poor}(\textup{Liming}).
 \end{align}
 
 “快乐的人过着幸福的生活”.
 \begin{align}
-  (\forall z) (\textup{Happy}(z)\rightarrow \textup{Exciting}(z)).
+    (\forall z) (\textup{Happy}(z)\rightarrow \textup{Exciting}(z)).
 \end{align}
 
 目标“李明过着幸福的生活”的否定.
 \begin{align}
-  \neg \textup{Exciting}(\textup{Liming}).
+    \neg \textup{Exciting}(\textup{Liming}).
 \end{align}
 \end{result}
 
@@ -1986,7 +1986,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \caption{支持集策略}
 \label{AI32fig21}
 \end{figure}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 从上述归结过程可以看出, 各级归结式数目要比宽度优先策略生成的少, 但在第二级还没有空子句. 就是说这种策略限制了子句集元素的剧增, 但会增加空子句所在的深度. 此外, 支持集策略具有逆向推理的含义, 由于进行归结的亲本子句中至少有一个与目标子句有关, 因此推理过程可以看作是沿目标、子目标的方向前进的.
 %%%%%%%-----------------------------------------------
 \subsection{删除策略}
@@ -2135,16 +2135,16 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 
 \draw[thick,-](ABC0)--(Ra1);
 \draw[thick,-](Ia0)--(Ra1);
-\draw[thick,-](ABC0)--(RanegA); 
-\draw[thick,-](RyLy0)--(RanegA); 
+\draw[thick,-](ABC0)--(RanegA);
+\draw[thick,-](RyLy0)--(RanegA);
 \draw[thick,-](La0)--(nRa1);
-\draw[thick,-](RyLy0)--(nRa1); 
+\draw[thick,-](RyLy0)--(nRa1);
 \draw[thick,-](RyLy0)--(nRa1);
 \draw[thick,-](La0)--(nRa1);
 \node (nI0)[draw, process,align=center,below=1.35cm of Ra1,yshift=0cm,xshift=-3cm] {$\neg\mathbf{I}(a)$};
-\draw[thick,-](ABC0)--(nI0);   
-\draw[thick,-](nRa1)--(nI0);     
-\node (nLa)[draw, process,align=center,right=1.35cm of nI0,yshift=0cm,xshift=2cm] {$\mathbf{L}(a)$}; 
+\draw[thick,-](ABC0)--(nI0);
+\draw[thick,-](nRa1)--(nI0);
+\node (nLa)[draw, process,align=center,right=1.35cm of nI0,yshift=0cm,xshift=2cm] {$\mathbf{L}(a)$};
 \draw[thick,-](RanegA)--(nLa);
 \draw[thick,-](Ia0)--(nLa);
 \node (nLa0)[draw, process,align=center,right=1.35cm of nLa,yshift=0cm,xshift=2cm] {$\mathbf{L}(a)$};
@@ -2152,9 +2152,9 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \draw[thick,-](RyLy0)--(nLa0);
 \node (nnnmI0)[draw, process,align=center,right=1.35cm of nLa0,yshift=0cm,xshift=2cm] {$\neg\mathbf{I}(a)$};
 \draw[thick,-](La0)--(nnnmI0);
-\draw[thick,-](RanegA)--(nnnmI0);      
-\node (nilnil)[draw, process,align=center,below=1.35cm of nil0,yshift=0cm,xshift=1cm] {\textup{NIL}}; 
-\draw[thick,-](nI0)--(nilnil);     
+\draw[thick,-](RanegA)--(nnnmI0);
+\node (nilnil)[draw, process,align=center,below=1.35cm of nil0,yshift=0cm,xshift=1cm] {\textup{NIL}};
+\draw[thick,-](nI0)--(nilnil);
 \draw[thick,-](Ia0)--(nilnil);
 \end{tikzpicture}
 \end{center}
@@ -2176,7 +2176,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{align}
 用祖先过滤策略证明$S$为不可满足.
 \end{example}
-%%%%%%%----------------------------------------%%%%%%
+%%%%%%%----------------------------------------
 \begin{proof}
 从$S$出发, 按祖先过滤策略归结过程如图\ref{AI32fig24}所示.
 %%%%%%%-----------------------------------------------
@@ -2518,15 +2518,15 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \def \smbwe{4cm}
 \thispagestyle{empty}
 %定义流程图的具体形状
-\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{A} \vee C}$};  
-\node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{C}}$};            
-\node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{B} \vee G}$};            
-\node (La0)[draw, process,align=center,right=8cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{G}}$};       
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{A} \vee C}$};
+\node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{C}}$};
+\node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{B} \vee G}$};
+\node (La0)[draw, process,align=center,right=8cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{G}}$};
 %\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
 
-\node (Ra1)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{A}}$};        
-\node (RanegA)[draw, process,align=center,right=1cm of Ra1,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{A}\vee \mathbf{B}}$};        
-\node (nRa1)[draw, process,align=center,below=2cm of RyLy0,yshift=0cm,xshift=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{B}}$};  
+\node (Ra1)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{A}}$};
+\node (RanegA)[draw, process,align=center,right=1cm of Ra1,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{A}\vee \mathbf{B}}$};
+\node (nRa1)[draw, process,align=center,below=2cm of RyLy0,yshift=0cm,xshift=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{B}}$};
 
 \draw[thick,-](ABC0)--(Ra1);
 \draw[thick,-](Ia0)--(Ra1);
@@ -2602,7 +2602,7 @@ Skolem化后为
 \end{itemize}
 %%%%%%%-----------------------------------------------%%%
 \begin{example}
-对上述目标公式的与/或形, 可用如下的与/或树\ref{AI32fig2019120130}表示. 
+对上述目标公式的与/或形, 可用如下的与/或树\ref{AI32fig2019120130}表示.
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[font={\sf \small}]
