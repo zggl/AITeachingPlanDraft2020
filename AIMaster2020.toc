@@ -268,36 +268,36 @@
 \contentsline {subparagraph}{谓词逻辑的归结原理}{214}{subparagraph*.230}% 
 \contentsline {subparagraph}{谓词逻辑的归结反演}{217}{subparagraph*.231}% 
 \contentsline {section}{\numberline {3.6}归结演绎推理的归结策略}{221}{section.3.6}% 
-\contentsline {subsection}{\numberline {3.6.1}广度优先}{222}{subsection.3.6.1}% 
-\contentsline {subsection}{\numberline {3.6.2}支持集策略}{223}{subsection.3.6.2}% 
-\contentsline {subsection}{\numberline {3.6.3}删除策略}{224}{subsection.3.6.3}% 
+\contentsline {subsection}{\numberline {3.6.1}广度优先}{221}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}支持集策略}{222}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.3}删除策略}{223}{subsection.3.6.3}% 
 \contentsline {paragraph}{纯文字删除法}{224}{paragraph*.237}% 
-\contentsline {paragraph}{重言式删除法}{225}{paragraph*.238}% 
-\contentsline {paragraph}{包孕删除法}{225}{paragraph*.239}% 
-\contentsline {paragraph}{单文字子句策略}{225}{paragraph*.240}% 
-\contentsline {paragraph}{线形输入策略}{226}{paragraph*.242}% 
-\contentsline {paragraph}{祖先过滤策略}{227}{paragraph*.244}% 
-\contentsline {subsection}{\numberline {3.6.4}用归结反演求取问题的答案}{228}{subsection.3.6.4}% 
+\contentsline {paragraph}{重言式删除法}{224}{paragraph*.238}% 
+\contentsline {paragraph}{包孕删除法}{224}{paragraph*.239}% 
+\contentsline {paragraph}{单文字子句策略}{224}{paragraph*.240}% 
+\contentsline {paragraph}{线形输入策略}{225}{paragraph*.242}% 
+\contentsline {paragraph}{祖先过滤策略}{226}{paragraph*.244}% 
+\contentsline {subsection}{\numberline {3.6.4}用归结反演求取问题的答案}{227}{subsection.3.6.4}% 
 \contentsline {section}{\numberline {3.7}基于规则的演绎推理}{229}{section.3.7}% 
-\contentsline {subsection}{\numberline {3.7.1}规则正向演绎推理}{230}{subsection.3.7.1}% 
-\contentsline {paragraph}{事实表达式的与/或形变换}{230}{paragraph*.247}% 
+\contentsline {subsection}{\numberline {3.7.1}规则正向演绎推理}{229}{subsection.3.7.1}% 
+\contentsline {paragraph}{事实表达式的与/或形变换}{229}{paragraph*.247}% 
 \contentsline {paragraph}{事实表达式的与/或形变换}{230}{paragraph*.248}% 
-\contentsline {paragraph}{规则的与/或形变换}{232}{paragraph*.250}% 
-\contentsline {paragraph}{目标公式的表示形式}{233}{paragraph*.251}% 
+\contentsline {paragraph}{规则的与/或形变换}{231}{paragraph*.250}% 
+\contentsline {paragraph}{目标公式的表示形式}{232}{paragraph*.251}% 
 \contentsline {paragraph}{规则正向演绎系统}{233}{paragraph*.252}% 
-\contentsline {subparagraph}{命题逻辑的规则演绎过程}{234}{subparagraph*.253}% 
+\contentsline {subparagraph}{命题逻辑的规则演绎过程}{233}{subparagraph*.253}% 
 \contentsline {subparagraph}{谓词逻辑情况}{235}{subparagraph*.256}% 
-\contentsline {subsection}{\numberline {3.7.2}规则逆向演绎推理}{236}{subsection.3.7.2}% 
+\contentsline {subsection}{\numberline {3.7.2}规则逆向演绎推理}{235}{subsection.3.7.2}% 
 \contentsline {section}{\numberline {3.8}知识图谱(knowledge graph)一阶归纳推理}{237}{section.3.8}% 
 \contentsline {subsection}{\numberline {3.8.1}基于符号逻辑的推理——本体推理}{237}{subsection.3.8.1}% 
-\contentsline {subsection}{\numberline {3.8.2}基于图结构和统计规则挖掘的推理}{238}{subsection.3.8.2}% 
+\contentsline {subsection}{\numberline {3.8.2}基于图结构和统计规则挖掘的推理}{237}{subsection.3.8.2}% 
 \contentsline {section}{\numberline {3.9}知识图谱推理(路径排序算法)}{238}{section.3.9}% 
-\contentsline {section}{\numberline {3.10}因果推理(辛普森悖论、D-分离、do算子)}{241}{section.3.10}% 
+\contentsline {section}{\numberline {3.10}因果推理(辛普森悖论、D-分离、do算子)}{240}{section.3.10}% 
 \contentsline {section}{\numberline {3.11}*模糊逻辑}{241}{section.3.11}% 
 \contentsline {section}{\numberline {3.12}多值逻辑}{243}{section.3.12}% 
-\contentsline {section}{\numberline {3.13}Luckasiewicz逻辑}{244}{section.3.13}% 
-\contentsline {section}{\numberline {3.14}三I算法的逻辑基础}{244}{section.3.14}% 
-\contentsline {section}{\numberline {3.15}强化学习}{244}{section.3.15}% 
+\contentsline {section}{\numberline {3.13}Luckasiewicz逻辑}{243}{section.3.13}% 
+\contentsline {section}{\numberline {3.14}三I算法的逻辑基础}{243}{section.3.14}% 
+\contentsline {section}{\numberline {3.15}强化学习}{243}{section.3.15}% 
 \contentsline {section}{\numberline {3.16}作业}{246}{section.3.16}% 
 \contentsline {chapter}{\numberline {第四章\hspace {.3em}}产生式系统的搜索策略}{247}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}搜索的基本概念}{248}{section.4.1}% 
@@ -321,41 +321,41 @@
 \contentsline {paragraph}{深度优先搜索}{260}{paragraph*.283}% 
 \contentsline {subparagraph}{基本思想}{260}{subparagraph*.284}% 
 \contentsline {subparagraph}{算法描述}{261}{subparagraph*.285}% 
-\contentsline {subsection}{\numberline {4.2.3}代价树搜索}{262}{subsection.4.2.3}% 
-\contentsline {paragraph}{代价树的广度优先搜索}{262}{paragraph*.287}% 
+\contentsline {subsection}{\numberline {4.2.3}代价树搜索}{261}{subsection.4.2.3}% 
+\contentsline {paragraph}{代价树的广度优先搜索}{261}{paragraph*.287}% 
 \contentsline {subparagraph}{代价树的广度优先搜索算法}{262}{subparagraph*.288}% 
 \contentsline {subparagraph}{代价树的深度优先搜索算法}{263}{subparagraph*.290}% 
-\contentsline {section}{\numberline {4.3}搜索策略}{264}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}状态空间的启发式搜索}{264}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}启发性信息和估价函数}{264}{subsection.4.3.2}% 
-\contentsline {paragraph}{启发性信息的概念}{264}{paragraph*.291}% 
-\contentsline {paragraph}{启发性信息的种类}{264}{paragraph*.292}% 
-\contentsline {paragraph}{启发性信息的作用}{264}{paragraph*.293}% 
+\contentsline {section}{\numberline {4.3}搜索策略}{263}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}状态空间的启发式搜索}{263}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}启发性信息和估价函数}{263}{subsection.4.3.2}% 
+\contentsline {paragraph}{启发性信息的概念}{263}{paragraph*.291}% 
+\contentsline {paragraph}{启发性信息的种类}{263}{paragraph*.292}% 
+\contentsline {paragraph}{启发性信息的作用}{263}{paragraph*.293}% 
 \contentsline {paragraph}{启发性信息和估价函数}{264}{paragraph*.294}% 
-\contentsline {subsection}{\numberline {4.3.3}A算法}{265}{subsection.4.3.3}% 
-\contentsline {paragraph}{类型}{265}{paragraph*.296}% 
-\contentsline {subsection}{\numberline {4.3.4}A$^*$算法}{267}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.3}A算法}{264}{subsection.4.3.3}% 
+\contentsline {paragraph}{类型}{264}{paragraph*.296}% 
+\contentsline {subsection}{\numberline {4.3.4}A$^*$算法}{266}{subsection.4.3.4}% 
 \contentsline {paragraph}{A*算法的可纳性}{267}{paragraph*.299}% 
-\contentsline {subparagraph}{$A^*$算法可纳性的证明}{268}{subparagraph*.300}% 
-\contentsline {paragraph}{$A^*$算法的最优性}{271}{paragraph*.301}% 
-\contentsline {paragraph}{$h(n)$的单调限制}{272}{paragraph*.302}% 
-\contentsline {subsection}{\numberline {4.3.5}$A^*$算法应用举例}{274}{subsection.4.3.5}% 
-\contentsline {subsection}{\numberline {4.3.6}算法应用举例}{275}{subsection.4.3.6}% 
-\contentsline {subsubsection}{\numberline {4.3.6.1}$A^*$算法应用举例}{275}{subsubsection.4.3.6.1}% 
-\contentsline {paragraph}{与/或树的一般搜索}{276}{paragraph*.304}% 
+\contentsline {subparagraph}{$A^*$算法可纳性的证明}{267}{subparagraph*.300}% 
+\contentsline {paragraph}{$A^*$算法的最优性}{270}{paragraph*.301}% 
+\contentsline {paragraph}{$h(n)$的单调限制}{271}{paragraph*.302}% 
+\contentsline {subsection}{\numberline {4.3.5}$A^*$算法应用举例}{273}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}算法应用举例}{274}{subsection.4.3.6}% 
+\contentsline {subsubsection}{\numberline {4.3.6.1}$A^*$算法应用举例}{274}{subsubsection.4.3.6.1}% 
+\contentsline {paragraph}{与/或树的一般搜索}{275}{paragraph*.304}% 
 \contentsline {paragraph}{与/或树的广度优先}{276}{paragraph*.306}% 
 \contentsline {subparagraph}{与/或树的广度优先搜索算法}{276}{subparagraph*.307}% 
-\contentsline {subparagraph}{搜索过程}{277}{subparagraph*.308}% 
-\contentsline {paragraph}{与/或树的深度优先搜索}{278}{paragraph*.310}% 
-\contentsline {subparagraph}{搜索过程}{279}{subparagraph*.311}% 
+\contentsline {subparagraph}{搜索过程}{276}{subparagraph*.308}% 
+\contentsline {paragraph}{与/或树的深度优先搜索}{277}{paragraph*.310}% 
+\contentsline {subparagraph}{搜索过程}{278}{subparagraph*.311}% 
 \contentsline {section}{\numberline {4.4}与/或树的启发式搜索}{279}{section.4.4}% 
-\contentsline {paragraph}{解树的代价与希望树}{280}{paragraph*.313}% 
-\contentsline {paragraph}{希望树}{281}{paragraph*.315}% 
-\contentsline {section}{\numberline {4.5}博弈树的启发式搜索}{284}{section.4.5}% 
-\contentsline {subsection}{\numberline {4.5.1}极大极小过程}{285}{subsection.4.5.1}% 
-\contentsline {subsection}{\numberline {4.5.2}$\alpha $-$\beta $剪枝}{288}{subsection.4.5.2}% 
-\contentsline {paragraph}{剪枝方法}{288}{paragraph*.324}% 
-\contentsline {section}{\numberline {4.6}作业}{289}{section.4.6}% 
+\contentsline {paragraph}{解树的代价与希望树}{279}{paragraph*.313}% 
+\contentsline {paragraph}{希望树}{280}{paragraph*.315}% 
+\contentsline {section}{\numberline {4.5}博弈树的启发式搜索}{283}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}极大极小过程}{284}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}$\alpha $-$\beta $剪枝}{287}{subsection.4.5.2}% 
+\contentsline {paragraph}{剪枝方法}{287}{paragraph*.324}% 
+\contentsline {section}{\numberline {4.6}作业}{288}{section.4.6}% 
 \contentsline {chapter}{\numberline {第五章\hspace {.3em}}计算智能}{291}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}概述}{292}{section.5.1}% 
 \contentsline {subsection}{\numberline {5.1.1}什么是计算智能}{292}{subsection.5.1.1}% 

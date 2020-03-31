@@ -506,7 +506,7 @@ $Q_{01}$     &  $b=0, m=0$或$3, c\leq 2 $         &  $b=1, c=c+1$\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{yushu2019112533.PNG}
+\includegraphics[angle=90,width=0.6\textwidth]{yushu2019112533.PNG}
 \caption{与/或树 }
 \label{AI32fig33}
 \end{figure}
@@ -677,7 +677,7 @@ $Q_{01}$     &  $b=0, m=0$或$3, c\leq 2 $         &  $b=1, c=c+1$\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.66\textwidth]{yushu2019112538.PNG}
+\includegraphics[angle=90,width=0.66\textwidth]{yushu2019112538.PNG}
 \caption{八数码难题的全局择优搜索树}
 \label{AI32fig38}
 \end{figure}
@@ -994,7 +994,7 @@ $f(n)=d(n)+P(n)$, $d(n)$ 深度, $P(n)$与目标距离 $f^*=g^*+h^*$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{yushu2019112539.PNG}
+\includegraphics[angle=90,width=0.76\textwidth]{yushu2019112539.PNG}
 \caption{八数码难题$h(n)=P(n)$的搜索树}
 \label{AI32fig39}
 \end{figure}
@@ -1032,7 +1032,7 @@ M-C问题的搜索过程如图\ref{AI32fig40}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{yushu2019112540.PNG}
+\includegraphics[angle=90,width=0.76\textwidth]{yushu2019112540.PNG}
 \caption{传教士和魔鬼问题的搜索图}
 \label{AI32fig40}
 \end{figure}
@@ -1463,7 +1463,6 @@ MIN取胜的策略用双箭头表示.
 
 由$F,G$的倒推值可推出节点$C$的倒推值大于4, 再由$C$可推出节点$A$的倒推值小于4, 即$A$的$\beta$值为4. 另外, 由节点$P,Q$推出的节点$I$的倒推值为5, 因此$D$的倒推值大于 5, 即$D$的$\alpha$值为5.
 此时, $D$的其它子节点的倒推值无论是多少都不能使$D$及$A$的倒推值减少或增大, 所以$D$的其他分枝被减去, 并可确定$A$的倒推值为4 .
-
 依此类推, 最终推出$S_0$的倒推值为4.
 %%%%%%----------------------------------------------
 \section{作业}
@@ -1471,10 +1470,7 @@ MIN取胜的策略用双箭头表示.
 \begin{think}
 何谓估价函数, 在估价函数中, $g(n)$和$h(n)$各起什么作用?
 \end{think}
-%%%%%%------------------------------------
-\begin{think}
-  用matlab或Python语言实现深度优先、宽度优先搜索算法.
-\end{think}
+
 %%%%%%------------------------------------
 \begin{think}
  请用A算法求解图3-12所示的八数码顺.
@@ -1485,12 +1481,15 @@ MIN取胜的策略用双箭头表示.
 对图\ref{20200314174705fig51}所示的博弈树, 其中最后一行的数字是假设的估计值. 1)计算各节点的倒推值. 2)利用剪枝剪去不必要的分枝.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{20200314174705.jpg}
+\includegraphics[angle=90,width=0.6\textwidth]{20200314174705.jpg}
 \caption{博弈树}
 \label{20200314174705fig51}
 \end{figure}
 \end{think}
-
+%%%%%%------------------------------------
+\begin{think}
+  用matlab或Python语言实现图 4–31 博弈树的深度优先和宽度优先搜索算法.
+\end{think}
 %%%%%%------------------------------------
 \begin{custom}[explorecolor]{探索}
 设有如下结构的移动将牌游戏:

@@ -1454,21 +1454,21 @@ $$S=\{P,\neg P\vee \neg Q\vee R, \neg S\vee Q, \neg T\vee Q, T, \neg R\}.$$
 \node (nCz)[draw, process,align=center,right=3cm of ABC0,yshift=0cm] {$\neg R$};      %R1
 %\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
 
-\node (AB0)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1.0cm] {$\neg P \vee \neg Q$};        %20
+\node (AB0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=1.0cm] {$\neg P \vee \neg Q$};        %20
 \draw[thick,-](ABC0)--(AB0);%21
 
-\node (AMn)[draw, process,align=center,below=2cm of nCz,yshift=0cm] {$P$};
+\node (AMn)[draw, process,align=center,below=1cm of nCz,yshift=0cm] {$P$};
 \draw[thick,-](nCz)--(AB0);
 
-\node (Bn)[draw, process,align=center,below=2cm of AB0,yshift=0cm,xshift=1.05cm] {$\neg Q$};        %30
+\node (Bn)[draw, process,align=center,below=1cm of AB0,yshift=0cm,xshift=1.05cm] {$\neg Q$};        %30
 \draw[thick,-](AB0)--(Bn);
-\node (Bk)[draw, process,align=center,below=2cm of AMn,yshift=0cm,xshift=1.0cm] {$\neg T\vee Q$};   %31
+\node (Bk)[draw, process,align=center,below=1cm of AMn,yshift=0cm,xshift=1.0cm] {$\neg T\vee Q$};   %31
 \draw[thick,-](AMn)--(Bn);
 
 \node (nT4)[draw, process,align=center,below=1cm of Bn,yshift=0cm,xshift=1.05cm] {$\neg T$};        %40
 \node (T4)[draw, process,align=center,below=1cm of Bn,yshift=0cm,xshift=3.5cm] {$T$};        %40
 
-\node (nil0)[draw, process,align=center,below=2cm of nT4,yshift=0cm,xshift=1cm] {\textup{NIL}};        %50
+\node (nil0)[draw, process,align=center,below=1cm of nT4,yshift=0cm,xshift=1cm] {\textup{NIL}};        %50
 \draw[thick,-](Bn)-- (nT4);
 \draw[thick,-](Bk)-- (nT4);
 %
@@ -1686,7 +1686,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \node (AMn)[draw, process,align=center,below=2cm of nCz,yshift=0cm] {$A(m,n)$};   %21
 \draw[thick,-](nCz)--(AB0);
 
-\node (Bn)[draw, process,align=center,below=2cm of AB0,yshift=0cm,xshift=1.5cm] {$\neg \mathbf{B}(\mathbf{n})$};        %30
+\node (Bn)[draw, process,align=center,below=1.5cm of AB0,yshift=0cm,xshift=1.5cm] {$\neg \mathbf{B}(\mathbf{n})$};        %30
 \draw[thick,-](AB0)--(Bn)node[left,yshift=0.5cm,xshift=-0.6cm] {$\{m/x,n/y\}$};
 \node (Bk)[draw, process,align=center,below=2cm of AMn,yshift=0cm] {$B(k)$};   %31
 \draw[thick,-](AMn)--(Bk);
@@ -1868,10 +1868,60 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{example}
 
 宽度优先策略的归结树如下:
- %%%%%%%-----------------------------------------------
+%%%%%%%-----------------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.76\textwidth]{Gguijieshu2019112520.PNG}
+%\caption{广义归结树}
+%\label{AI32fig20}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{Gguijieshu2019112520.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(x) \vee \mathbf{R}(x)}$};
+\node (S)[align=center,left=1cm of ABC0] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{S}}$};
+\node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{I}(a)}$};
+\node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{R}(y) \vee \mathbf{L}(y)}$};
+\node (La0)[draw, process,align=center,right=8cm of ABC0,xshift=1cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{L}(a)}$};
+%\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
+
+\node (Ra1)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=0cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{R}(a)}$};
+\node (S1)[align=center,left=1.5cm of Ra1] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{S1}}$};
+\node (RanegA)[draw, process,align=center,right=1cm of Ra1,yshift=0cm,xshift=2.75cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(x) \vee \mathbf{L}(x)}$};
+\node (nRa1)[draw, process,align=center,right=1.5cm of RanegA,yshift=0cm,xshift=2.25cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{R}(a)}$};
+
+\draw[thick,-](ABC0)--(Ra1);
+\draw[thick,-](Ia0)--(Ra1);
+\draw[thick,-](ABC0)--(RanegA);
+\draw[thick,-](RyLy0)--(RanegA);
+\draw[thick,-](La0)--(nRa1);
+\draw[thick,-](RyLy0)--(nRa1);
+\draw[thick,-](RyLy0)--(nRa1);
+\draw[thick,-](La0)--(nRa1);
+
+\node (nI0)[draw, process,align=center,below=1.5cm of Ra1,yshift=0cm,xshift=0.0cm] {$\mathbf{L}(a)$};
+\node (S2)[align=center,left=1.5cm of nI0,yshift=0cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{S2}}$};
+\draw[thick,-](Ra1)--(nI0);
+\draw[thick,-](RyLy0)--(nI0);
+\node (nLa)[draw, process,align=center,right=1.05cm of nI0,yshift=0cm,xshift=0.5cm] {$\mathbf{L}(a)$};
+\draw[thick,-](RanegA)--(nLa);
+\draw[thick,-](Ia0)--(nLa);
+\node (nLa0)[draw, process,align=center,right=1.cm of nLa,yshift=0cm,xshift=0.5cm] {$\neg\mathbf{I}(a)$};
+\draw[thick,-](nRa1)--(nLa0);
+\draw[thick,-](ABC0)--(nLa0);
+\node (nnnmI0)[draw, process,align=center,right=1.5cm of nLa0,yshift=0cm,xshift=0.5cm] {$\neg\mathbf{I}(a)$};
+\draw[thick,-](La0)--(nnnmI0);
+\draw[thick,-](RanegA)--(nnnmI0);
+\node (nilnil)[draw, process,align=center,right=1.cm of nnnmI0,yshift=0cm,xshift=0.6cm] {\textup{NIL}};
+\draw[thick,-](Ra1)--(nilnil);
+\draw[thick,-](nRa1)--(nilnil);
+\end{tikzpicture}
+\end{center}
 \caption{广义归结树}
 \label{AI32fig20}
 \end{figure}
@@ -2037,8 +2087,6 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \caption{单文字子句策略}
 \label{AI32fig22}
 \end{figure}
-%%%%%%%----------------------------------------%%%%%%
-%%%%%%%-----------------------------------------------
 %%%%%%%-----------------------------------------------
 \paragraph{线形输入策略}~{}
 这种策略要求每次参加归结的两个亲本子句中, 至少应该有一个是初始子句集中的子句. 所谓初始子句集是指开始归结时所使用的子句集.
@@ -2060,14 +2108,59 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{align}
 \end{example}
 从$S$出发很容易找到一棵归结反演树, 但不存在线性输入策略的归结反演树.
- %%%%%%%-----------------------------------------------
+%%%%%%%-----------------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.6\textwidth]{Gguijieshu2019112523.PNG}
+%\caption{线形输入策略}
+%\label{AI32fig23}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{Gguijieshu2019112523.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(x) \vee \mathbf{R}(x)}$};
+\node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{I}(a)}$};
+\node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{R}(y) \vee \mathbf{L}(y)}$};
+\node (La0)[draw, process,align=center,right=8cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{L}(a)}$};
+%\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
+
+\node (Ra1)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{R}(a)}$};
+\node (RanegA)[draw, process,align=center,right=1cm of Ra1,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(x) \vee \mathbf{L}(x)}$};
+\node (nRa1)[draw, process,align=center,right=1.5cm of RanegA,yshift=0cm,xshift=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{R}(a)}$};
+
+\draw[thick,-](ABC0)--(Ra1);
+\draw[thick,-](Ia0)--(Ra1);
+\draw[thick,-](ABC0)--(RanegA); 
+\draw[thick,-](RyLy0)--(RanegA); 
+\draw[thick,-](La0)--(nRa1);
+\draw[thick,-](RyLy0)--(nRa1); 
+\draw[thick,-](RyLy0)--(nRa1);
+\draw[thick,-](La0)--(nRa1);
+\node (nI0)[draw, process,align=center,below=1.35cm of Ra1,yshift=0cm,xshift=-3cm] {$\neg\mathbf{I}(a)$};
+\draw[thick,-](ABC0)--(nI0);   
+\draw[thick,-](nRa1)--(nI0);     
+\node (nLa)[draw, process,align=center,right=1.35cm of nI0,yshift=0cm,xshift=2cm] {$\mathbf{L}(a)$}; 
+\draw[thick,-](RanegA)--(nLa);
+\draw[thick,-](Ia0)--(nLa);
+\node (nLa0)[draw, process,align=center,right=1.35cm of nLa,yshift=0cm,xshift=2cm] {$\mathbf{L}(a)$};
+\draw[thick,-](Ra1)--(nLa0);
+\draw[thick,-](RyLy0)--(nLa0);
+\node (nnnmI0)[draw, process,align=center,right=1.35cm of nLa0,yshift=0cm,xshift=2cm] {$\neg\mathbf{I}(a)$};
+\draw[thick,-](La0)--(nnnmI0);
+\draw[thick,-](RanegA)--(nnnmI0);      
+\node (nilnil)[draw, process,align=center,below=1.35cm of nil0,yshift=0cm,xshift=1cm] {\textup{NIL}}; 
+\draw[thick,-](nI0)--(nilnil);     
+\draw[thick,-](Ia0)--(nilnil);
+\end{tikzpicture}
+\end{center}
 \caption{线形输入策略}
 \label{AI32fig23}
 \end{figure}
-%%%%%%%-----------------------------------------------
 %%%%%%%-----------------------------------------------
 \paragraph{祖先过滤策略}~{}
 这种策略与线性输入策略有点相似, 但是, 放宽了对子句的限制. 每次参加归结的两个亲本子句, 只要满足以下两个条件中的任意一个就可进行归结:
@@ -2086,10 +2179,41 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 %%%%%%%----------------------------------------%%%%%%
 \begin{proof}
 从$S$出发, 按祖先过滤策略归结过程如图\ref{AI32fig24}所示.
- %%%%%%%-----------------------------------------------
+%%%%%%%-----------------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.56\textwidth]{Gguijieshu2019112524.PNG}
+%\caption{祖先过滤策略}
+%\label{AI32fig24}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.56\textwidth]{Gguijieshu2019112524.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{Q}(x) \vee \neg \mathbf{P}(x)}$};
+\node (Ia0)[draw, process,align=center,right=1cm of ABC0,xshift=0.5cm]{$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{Q}(\mathbf{y}) \vee \neg \mathbf{P}(\mathbf{y})}$};
+
+\node (RyLy0)[draw, color=blue,process,align=center,below=1cm of ABC0,yshift=0cm,xshift=-0.3cm] {$\textcolor[rgb]{0,0.0,1}{\neg P(x)}$};
+\draw (ABC0)--(RyLy0);
+\draw (Ia0)-- (RyLy0);
+\node (La0)[draw, process,align=center,below=1cm of Ia0,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{Q}(\mathbf{w}) \vee \mathbf{P}(\mathbf{w})}$};
+
+\node (Ra1)[draw, process,color=blue,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.2cm] {$\textcolor[rgb]{0.02,0.0,1}{\neg \mathbf{Q}(\mathbf{w})}$};
+\draw (RyLy0)--(Ra1);
+\draw (La0)-- (Ra1);
+\node (RanegA)[draw, process,align=center,below=1cm of La0,yshift=0cm,xshift=-0.45cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{Q}(a) \vee \mathbf{P}(a)}$};
+
+\node (nRa1)[draw, process,color=blue,align=center,below=1.0cm of Ra1,yshift=0cm,xshift=1.0cm] {$\textcolor[rgb]{0.02,0.0,1}{\mathbf{P}(a)}$};
+\draw (Ra1)--(nRa1);
+\draw (RanegA)--(nRa1);
+\node (nI0)[draw, process,align=center,below=0.5cm of nRa1,yshift=0cm,xshift=-0.5cm] {NIL};
+\draw (RyLy0)--(nI0);
+\draw (nRa1)--(nI0);
+\end{tikzpicture}
+\end{center}
 \caption{祖先过滤策略}
 \label{AI32fig24}
 \end{figure}
@@ -2157,7 +2281,7 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{Gguijieshu2019112525.PNG}
+\includegraphics[width=0.6\textwidth]{Gguijieshu2019112525.PNG}
 \caption{祖先过滤策略}
 \label{AI32fig25}
 \end{figure}
@@ -2220,9 +2344,36 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 %%%%%%%-----------------------------------------------
 \begin{example}对上例所给出的与/或式, 可用如下与/或树来表示.
 %%%%%%%-----------------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.6\textwidth]{Gguijieshu2019112526.PNG}
+%\caption{与或树}
+%\label{AI32fig26}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{Gguijieshu2019112526.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{Q}(\mathbf{z}, \mathbf{a}) \wedge((\neg \mathbf{R}(\mathbf{y}) \wedge \neg \mathbf{P}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{a}, \mathbf{y}))}$};
+
+\node (Ia0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=-1.0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{Q}(\mathbf{z}, \mathbf{a})}$};
+\node (RyLy0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=3.0cm] {$\textcolor[rgb]{0,0.0,1}{(\neg \mathbf{R}(\mathbf{y}) \wedge \neg \mathbf{P}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{a}, \mathbf{y})}$};
+\draw[->](ABC0)--(Ia0);
+\draw[->](ABC0)--(RyLy0);
+\node (La0)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=-2.0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{R}(\mathbf{y}) \wedge \neg \mathbf{P}(\mathbf{y})}$};
+\node (Ra1)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{S}(\mathbf{a}, \mathbf{y})}$};
+\draw[->](RyLy0)--(La0);
+\draw[->](RyLy0)--(Ra1);
+\node (nRy)[draw, process,align=center,below=1cmof La0,yshift=0cm,xshift=-1cm] {$\textcolor[rgb]{0.2,0.0,1}{\neg \mathbf{R}(y)}$};
+\node (nPy)[draw, process,align=center,below=1cmof La0,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{P}(y)}$};
+\draw[->](La0)--(nRy);
+\draw[->](La0)--(nPy);
+\end{tikzpicture}
+\end{center}
 \caption{与或树}
 \label{AI32fig26}
 \end{figure}
@@ -2353,9 +2504,43 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{align}
 其归结过程如图\ref{AI32fig2019120128}所示.
 %%%%%%%-----------------------------------------------
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.6\textwidth]{Gguijieshu2019112528.PNG}
+%\caption{与或树}
+%\label{AI32fig2019120128}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{Gguijieshu2019112528.PNG}
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{A} \vee C}$};  
+\node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{C}}$};            
+\node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{B} \vee G}$};            
+\node (La0)[draw, process,align=center,right=8cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{G}}$};       
+%\draw[thick,->] (Gei.east)->(jiangtao) node[left,yshift=0.25cm,xshift=-1cm] {Receiver};
+
+\node (Ra1)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{A}}$};        
+\node (RanegA)[draw, process,align=center,right=1cm of Ra1,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{A}\vee \mathbf{B}}$};        
+\node (nRa1)[draw, process,align=center,below=2cm of RyLy0,yshift=0cm,xshift=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg\mathbf{B}}$};  
+
+\draw[thick,-](ABC0)--(Ra1);
+\draw[thick,-](Ia0)--(Ra1);
+
+\draw[thick,-](RyLy0)--(nRa1);
+\draw[thick,-](La0)--(nRa1);
+\node (nil0)[draw, process,align=center,below=1.35cm of Ra1,yshift=0cm,xshift=3cm] {B};        %30
+\node (nilnil)[draw, process,align=center,below=1.35cm of nil0,yshift=0cm,xshift=1cm] {\textup{NIL}};        %30
+\draw[thick,-](RanegA)--(nil0);
+\draw[thick,-](Ra1)--(nil0);
+\draw[thick,-](nil0)--(nilnil);
+\draw[thick,-](nRa1)--(nilnil);
+\end{tikzpicture}
+\end{center}
 \caption{与或树}
 \label{AI32fig2019120128}
 \end{figure}
@@ -2377,7 +2562,7 @@ $F$规则为: $P(u, v)\rightarrow (S(u)\vee N(v))$.
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.76\textwidth]{Gguijieshu2019112529.PNG}
+\includegraphics[width=0.6\textwidth]{Gguijieshu2019112529.PNG}
 \caption{与或树}
 \label{AI32fig2019120129}
 \end{figure}
@@ -2417,7 +2602,34 @@ Skolem化后为
 \end{itemize}
 %%%%%%%-----------------------------------------------%%%
 \begin{example}
-对上述目标公式的与/或形, 可用如下的与/或树\ref{AI32fig2019120130}表示. 在目标公式的与/或树中, 若把叶节点用它们之间的合取及析取关系连接起来, 就可得到原目标公式的三个子目标:
+对上述目标公式的与/或形, 可用如下的与/或树\ref{AI32fig2019120130}表示. 
+\begin{figure}[H]
+\begin{center}
+\begin{tikzpicture}[font={\sf \small}]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{P}(\mathbf{f}(\mathbf{z})) \vee \mathbf{Q}(\mathbf{f}(\mathbf{y}), \mathbf{y}) \wedge(\neg \mathbf{R}(\mathbf{f}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{y}))}$};
+
+\node (Ia0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=-1.0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{P}(\mathbf{f}(\mathbf{z}))}$};
+\node (RyLy0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=3.0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{Q}(\mathrm{f}(\mathrm{y}), \mathrm{y}) \wedge(\neg \mathrm{R}(\mathrm{f}(\mathrm{y})) \vee \neg \mathrm{S}(\mathrm{y}))}$};
+\draw[->](ABC0)--(Ia0);
+\draw[->](ABC0)--(RyLy0);
+\node (La0)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=-2.0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{Q}(f(y), y)}$};
+\node (Ra1)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{R}(\mathbf{f}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{y})}$};
+\draw[->](RyLy0)--(La0);
+\draw[->](RyLy0)--(Ra1);
+\node (nRy)[draw, process,align=center,below=1cmof Ra1,yshift=0cm,xshift=-1cm] {$\textcolor[rgb]{0.2,0.0,1}{\neg \mathbf{R}(\mathbf{f}(\mathbf{y}))}$};
+\node (nPy)[draw, process,align=center,below=1cmof Ra1,yshift=0cm,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{S}(\mathbf{y})}$};
+\draw[->](Ra1)--(nRy);
+\draw[->](Ra1)--(nPy);
+\end{tikzpicture}
+\end{center}
+\caption{与或树}
+\label{AI32fig2019120130}
+\end{figure}
+在目标公式的与/或树中, 若把叶节点用它们之间的合取及析取关系连接起来, 就可得到原目标公式的三个子目标:
 
 $\neg P(f(z))$;
 
@@ -2428,12 +2640,13 @@ $Q(f(y), y)\wedge \neg  R(f(y))$;
 即: 子目标是文字的合取式.
 \end{example}
 %%%%%%%-----------------------------------------------
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{Gguijieshu2019112530.PNG}
-\caption{与或树}
-\label{AI32fig2019120130}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.76\textwidth]{Gguijieshu2019112530.PNG}
+%\caption{与或树}
+%\label{AI32fig2019120130}
+%\end{figure}
+%%%%%%%----------------------------------------
 %%%%%%%-----------------------------------------------
 \section{知识图谱(knowledge graph)一阶归纳推理}
 由有向图构成，被用来描述现实世界中实体及实体之间的关系，是人工智能中进行知识表达的重要方式。哲学上把现象和现象之间那种“引起和被引起”的关系，叫做因果关系，其中引起某种现象产生的现象叫做原因，被某种现象引起的现象叫做结果。因果推理是一种重要的推理手段，是人类智能的重要组成。了解基于路径排序的知识图谱推理方法、基于结构因果模型(structural causal model, SCM)和因果图（causal diagram）以及相关的辛普森悖论、D-分离、do算子等知识。
@@ -2700,7 +2913,7 @@ $S$蕴涵、剩余型蕴涵、QL蕴涵和D蕴涵各自同时满足有序性和�
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.46\textwidth]{wangguojun20191218121937.jpg}
+\includegraphics[width=0.4\textwidth]{wangguojun20191218121937.jpg}
 \caption{王国俊教授}
 \label{wangguojun20191218121937}
 \end{figure}
@@ -2757,26 +2970,25 @@ Q算法的动作策略选择较为关键, 合适的动作策略能提高学习�
 \index{Q-Learning Algorithm Used for Average Reward}
 \textbf{平均奖励Q-Learning算法} (\textbf{Q-Learning algorithm used for average reward}) \cite{gosavi2004reinforcement}.
 
-\textbf{步骤 1}. Set all $Q(l,u) \leftarrow 0$. Set $k$, the number of state changes, to 0. Set $\rho^k$, the estimate of the average reward
-per transition in the $k$th transition, to 0. Also set $W$ to 0. Run the algorithm for $k_{\max}$ iterations, where $k_{\max}$ is sufficiently large. Start system simulation at any arbitrary state. Select some state to be a special state $s^{*}$.
+\textbf{步骤 1}. 令所有$Q(l,u) \leftarrow 0$. $k=$是状态变化数. $\rho^k=0$表示第$k$阶段平均奖赏估计. $W=0$, 程序最大运行次数$k_{\max}$, $k_{\max}$应足够大. Start system simulation at any arbitrary state. Select some state to be a special state $s^{*}$.
 
 \textbf{步骤 2}. Let the current state be $i$. Select action a with a probability of $1/|A (i)|$ where $A(i)$ denotes the set of
 actions allowed in state $i$. A greedy action in state $i$ is the action associated with the highest Q-value for $i$.
 
-\textbf{步骤 3}. Simulate action $a$. Let the next state be $j$. Let $r(i, a, j)$ be the immediate reward earned in going to $j$ from $i$ under $a$. Then update $Q(i,a)$ as follows:
+\textbf{步骤 3}. 仿真动作$a$. Let the next state be $j$. 令$r(i, a, j)$为在动作$a$下, 从$i$到$j$的奖赏. 更新律$Q(i,a)$定义为
 \begin{eqnarray}
   Q(i,a)\leftarrow (1-\alpha(k))Q(i,a)+\alpha(k)[r(i,a,j)-\rho^k+M_b^j],
 \end{eqnarray}
-where $M_b^j= 0$ if $j = s$ (this is called \textbf{SSP grounding})\index{SSP Grounding} and $M^j_b= \max_{b\in A}(j)Q(j,b)$ otherwise.
+其中$M_b^j= 0$ if $j = s$ (称为\textbf{SSP grounding})\index{SSP Grounding}, 否则 $M^j_b= \max_{b\in A}(j)Q(j,b)$.
 
 \textbf{Step 4}. If a greedy action was selected in Step 2, then increment $W$ as follows: $W \leftarrow W + r(i, a, j)$ and then update $\rho^k$ as follows:
 \begin{eqnarray}
   \rho^{k+1}= (1 - \beta(k))\rho^k+ \beta(k)\frac{W}{k}.
 \end{eqnarray}
 
-\textbf{Step 5}. If $k < k_{\max}$, set $i \leftarrow j, k \leftarrow k + 1$, and then go to Step 2. Otherwise, go to Step 6.
+\textbf{Step 5}. 若$k < k_{\max}$, 令$i \leftarrow j, k \leftarrow k + 1$, and then go to Step 2. Otherwise, go to Step 6.
 
-\textbf{Step 6}. For each state $i$, select $\mu(i)\in  \mathop{\arg\max}_{a\in A }(i)Q(i, a)$. The policy (solution) generated by the algorithm is $\mu$. Stop.
+\textbf{Step 6}. 对于状态$i$, select $\mu(i)\in  \mathop{\arg\max}_{a\in A }(i)Q(i, a)$. The policy (solution) generated by the algorithm is $\mu$. Stop.
 
 %\textbf{Q-Learning Algorithm} \cite{Rahimiyan2010-5452971,Weissensteiner2009-5061503}, \cite{AraabiBN2007-4126273, AdamS2012-5719642}, \cite{MoodyJ2001-935097,
 %Kao-ShingHwang2004-1321086} \index{Q-Learning Algorithm}
