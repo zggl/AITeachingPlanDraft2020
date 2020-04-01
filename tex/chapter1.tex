@@ -94,6 +94,9 @@
       \ding{173}\textbf{新皮层}是大脑皮层中较晚进化出来的区域, 它负责感官知觉、发出运动指令、进行空间推理和有意识思维, 也是智人语言产生的地方.
       解剖学将新皮层分为四个脑叶：\uwave{额叶、顶叶、颞叶和枕叶}. 对包括人类在内的灵长类动物而言, 新皮层大得异乎寻常.
       刺猬的新皮层占大脑重量的16\%, 夜猴（一种小型猴子）占46\%, 黑猩猩占76\%. 人类新皮层所占的比例则更大.
+      
+      当动物觉察到安全信息时，杏仁核-内侧前额叶-海马环路的theta同步化活动降低，而高频gamma同步化活动增强. 在恐惧记忆消退期间，杏仁核中间神经元的6~12 Hz 振荡及高频gamma （70~120 Hz） 振荡强度增加，与恐惧提取相关的低频gamma （30~70 Hz） 活动强度则降低， 另外，杏仁核的高频gamma与mPFC的theta振荡发生跨频段耦合，并接受来自mPFC的抑制性theta输入. 随着消退的进行，mPFC的高频 gamma振荡增强，以调节恐惧记忆的消退. 以人类为对象的研究结果显示，恐惧记忆的习得与dACC（图中橙色区域）相关，而vmPFC更多地参与到恐惧消退中.。在消退期间，vmPFC（图中红色区域）内低频gamma（36~44 Hz） 活动减弱。与此同时，海马通过调控情景信息参与到恐惧记忆的消退中（图中绿色所示为人类研究结果，蓝色所示为动物研究结果）。
+      
     \begin{figure}[H]
     \begin{center}
     \quad\quad\quad
@@ -2956,6 +2959,12 @@ Metaflow具有内置功能, 可以自动快照Amazon S3中的所有代码和数�
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple boto3
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{华为MindSpore框架}
+华为MindSpore框架具有开发态友好、运行态高效、部署态灵活等三大优势。展开来说，开发态友好，也就是用AI算法取代代码，为用户降低开发门槛。为了方便开发者调试，MindSpore利用一行代码，完成了切换，既方便用户调试，又保证运行时性能。
+运行态高效，即面向昇腾芯片优化，实现IoT设备到云灵活部署，它的模型可大可小。在AI训练过程中，分布式训练非常重要，为了实现分布式训练，开发者首先设计算法逻辑。
+在设计开发分布训练策略时，算法科学家需要分析数据量，参数量及其网络拓扑，模型切分策略，设计一个性能比较优的并行训练策略。
+华为的MindSpore，提供了端边云方案，我们在一个框架上只需要开发一套，就可以顺利用到云侧和端侧。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CNTK}
 Microsoft Cognitive Toolkit是微软出品的开源深度学习工具包.
 CNTK的性能比贾扬清的 Caffe, Theano, TensoFlow等主流工具都要强. 它支持CPU和GPU模式, 所以没有GPU, 或者神经网络比较小的实验, 直接用CPU版的CNTK跑就行了. \href{https://github.com/Microsoft/CNTK}{开源主页}上的CNTK把神经网络描述成一个图论中的有向图, 叶子节点代表输入或者网络参数, 其他节点计算步骤. 它支持卷积神经网络和递归神经网络. \index{有向图}
@@ -2979,6 +2988,16 @@ VS Comunity 2019离线安装需要的\href{https://www.nuget.org/packages?q=CNTK
 \includegraphics[width=0.85\textwidth]{VSstudio2019CNTK013001.PNG}
 \includegraphics[width=0.95\textwidth]{NUgget0130.PNG}
 \caption{VS Studio 2019安装CNTK(Nugget)}
+\label{VSstudio2019CNTK013001}
+\end{figure}
+
+微软亚洲研究院机器学习组提出了基于半监督学习的神经网络结构搜索算法 SemiNAS ，能在相同的搜索耗时下提高搜索精度，以及在相同的搜索精度下减少搜索耗时。SemiNAS 可在 ImageNet（mobile setting） 上达到23.5%的 top-1 错误率和6.8%的 top-5 错误率。同时，SemiNAS 第一次将神经网络结构搜索引入文本到语音合成任务（Text to Speech, TTS）上，在低资源和鲁棒性两个场景下取得了效果提升。
+NAS 在近些年取得了突破性进展，它通过自动化设计神经网络架构，在很多任务（如图像分类、物体识别、语言模型、机器翻译）上取得了比人类专家设计的网络更好的结果。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{NAS20200331181652.jpg}
+\caption{NAS 框架}
 \label{VSstudio2019CNTK013001}
 \end{figure}
 
@@ -3012,7 +3031,7 @@ VS Comunity 2019离线安装需要的\href{https://www.nuget.org/packages?q=CNTK
 \caption{MegEngine深度学习框架和旷视天元架构}
 \label{ImageKuangshi2020001}
 \end{figure}
-2020年3月25日, 旷视新发布的开源深度学习框架天元. 旷视 Brain++生产力平台，包括天元框架、云计算平台和数据管理平台。旷视称其为算法、算力、数据能力三位一体架构，为使用者提供一站式解决方案，让深度学习更易使用。 
+2020年3月25日, 旷视新发布的开源深度学习框架天元. 旷视 Brain++生产力平台，包括天元框架、云计算平台和数据管理平台。旷视称其为算法、算力、数据能力三位一体架构，为使用者提供一站式解决方案，让深度学习更易使用。
 旷视已在我国新一代人工智能开源开放平台OpenI启智社区 和全球最大的开源社区 GitHub上发布天元Alpha版源代码，同时旷视还发布了在线深度学习工具MegStudio，以及汇聚了全球顶尖算法预训练模型的模型中心ModelHub，支持开发者开箱即用。
 \begin{itemize}
 \item \href{https://github.com/MegEngine/Models}{MegEngine旷视天元}
