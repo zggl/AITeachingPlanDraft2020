@@ -45,7 +45,7 @@
 演绎推理是从已有知识出发, 去推出蕴含在这些已知知识中的适合于某种个别情况的结论. 是一种由一般到个别的推理方法, 其核心是\textcolor[rgb]{0,0,1}{\textbf{三段论：假言推理、拒取式和假言三段论}}.
 \end{mydef}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
   假言三段论
 $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
@@ -96,7 +96,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \begin{mydef}{枚举归纳推理}{1}
     指在进行归纳时, 如果已知某类事物中的有限个具体事物都具有某种属性, 则可推出该类事物都具有此种属性.
 \end{mydef}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 设有如下事例:
 
@@ -490,7 +490,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \paragraph{谓词公式的解释}~{}
 由于谓词公式中可能包含有个体常量、变元或函数, 因此, 必须先考虑这些个体常量和函数在个体域上的取值, 然后才能根据它们的具体取值为谓词分别指派真值.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{解释}{1}
 设$D$是谓词公式$P$的非空个体域, 若对$P$中的个体常量、函数和谓词按如下规定赋值:
 
@@ -503,7 +503,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 (3) 为每个$n$元谓词指派一个从$D_n$到$\{F, T\}$的映射.  则称这些指派为$P$在$D$上的一个解释$I$
 \end{mydef}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
   设个体域$D=\{1, 2\}$, 求公式$A=(\forall x)( \forall y)P(x, y)$在$D$上的解释, 并指出在每一种解释下公式$A$的真值.
 \end{example}
@@ -614,7 +614,7 @@ $a$	&$f(1)$&$	F(2)$\\
 %%%%%%%---------------------------------------------
 \subsection{谓词公式的永真性和可满足性}
  为了以后推理的需要, 下面先定义:
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{永真公式}{1}
 如果谓词公式$P$对非空个体域$D$上的任一解释都取得真值T, 则称$P$在$D$上是永真的；如果$P$在任何非空个体域上均是永真的, 则称$P$永真.
 \end{mydef}
@@ -624,11 +624,11 @@ $a$	&$f(1)$&$	F(2)$\\
 对于谓词公式$P$, 如果至少存在$D$上的一个解释, 使公式$P$在此解释下的真值为$T$, 则称公式$P$在$D$上是\textbf{可满足的}.
 谓词公式的可满足性也称为相容性.
 \end{mydef}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{永假公式}{1}
 如果谓词公式$P$对非空个体域$D$上的任一解释都取真值$F$, 则称$P$在$D$上是永假的；如果$P$在任何非空个体域上均是永假的, 则称\textbf{$P$永假}.
 \end{mydef}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{remark}
   谓词公式的永假性又称不可满足性. 后面给出的归结推理, 就是采用一种逻辑上的反证法, 将永真性转换为不可满足性的证明.
 \end{remark}
@@ -658,7 +658,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 谓词公式的等价性和永真蕴含性可分别用相应的等价式和永真蕴含式来表示, 这些等价式和永真蕴含式都是演绎推理的主要依据, 因此也称它们为\textbf{推理规则}.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{谓词公式的等价式}{1}
 设$P$与$Q$是$D$上的两个谓词公式, 若对$D$上的任意解释, $P$与$Q$都有相同的真值, 则称$P$与$Q$在$D$上是等价的. 如果$D$是任意非空个体域, 则称$P$与$Q$是\textbf{等价}的, 记作$P\Leftrightarrow Q$.
 \end{mydef}
@@ -690,7 +690,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 (10) 量词分配率    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (∃x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{永真蕴含}{1}
 对谓词公式$P$和$Q$, 如果$P\rightarrow Q$永真, 则称\textbf{$P$永真蕴含$Q$}, 且称$Q$为$P$的逻辑结论, $P$为$Q$的前提, 记作\textcolor[rgb]{0,0,1}{$P \Rightarrow Q$}.
 \end{mydef}
@@ -720,7 +720,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \begin{remark}
   数据科学是科学研究的``第四范式"——图灵奖Jim Gray.
 \end{remark}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{前束范式}{1}
 设$F$为一谓词公式, 如果其中的所有量词均非否定地出现在公式的最前面, 且它们的辖域为整个公式, 则称$F$为前束范式.
 
@@ -738,7 +738,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 \textbf{任一谓词公式均可化为与其对应的前束范式}, 其化简方法将在后面子句集的化简中讨论.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{Skolem范式}{1}
 如果前束范式中所有的存在量词都在全称量词之前, 则称这种形式的谓词公式为Skolem范式.
 \end{mydef}
@@ -765,13 +765,13 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
  对谓词$W_1(A)$可看作是由全程固化推理(即$(\forall x)(W_1(x) \Rightarrow  W_1(A))$推出的, 其中A是任一个体常量. 要使用假言推理, 首先需要找到项$A$对变元$x$的置换, 使$W_1(A)$与$W_1(x)$一致.
 \end{remark}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{合一}{1}
 寻找项对变元的置换, 使谓词一致的过程叫做\textcolor[rgb]{0,0,1}{\textbf{合一}}的过程.
 \end{mydef}
 
 下面讨论置换与合一的有关概念与方法. 置换可简单的理解为是在一个谓词公式中用置换项去替换变量.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{置换}{1}
 置换是形如
             $$\{t_1/x_1,t_2/x_2,\cdots,t_n/x_n\}$$
@@ -786,11 +786,11 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \end{remark}
 \end{example}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{remark}
     通常, 置换是用希腊字母$\theta$、$\sigma$、$\alpha$、 $\lambda$等来表示的.
 \end{remark}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{\textbf{例示}}{1}
 设$\theta =\{t_1/x_1,t_2/x_2,\cdots,t_n/x_n\}$是一个置换, $F$是一个谓词公式, 把公式$F$中出现的所有$x_i$换成$t_i(i=1,2,\cdots,n)$, 得到一个新的公式$G$, 称$G$为$F$在置换$\theta $下的\textbf{例示}, 记作$G=F\theta $.
 \end{mydef}
@@ -798,14 +798,14 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
     一个谓词公式的任何例示都是该公式的逻辑结论.
 \end{remark}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{置换}{1}
 设
 \begin{align}
     &\theta =\{t_1/x_1,t_2/x_2,\cdots,t_n/x_n\},\\
     &\lambda =\{u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}
 \end{align}
-是两个置换. 则$\theta$与$\lambda$的合成也是一个置换, 记作$\theta \circ \lambda$. 它是从集合
+是两个置换. 则$\theta$与$\lambda$的合成$\theta \circ \lambda$也是一个置换. 它是从集合
 \begin{align}
   \{ t_1\lambda /x_1, t_2\lambda /x_2, \cdots , t_n\lambda /x_n,  u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}
 \end{align}
@@ -813,28 +813,28 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
       \ding{172}  当$t_i\lambda =x_i$时, 删去$t_i\lambda /x_i\, (i=1, 2 ,\cdots, n)$;
 
-      \ding{173}   当$y_j\in { x_1, x_2 ,\cdots, x_n }时$, 删去$u_j/y_j\, (j=1, 2 ,\cdots, m)$, 最后剩下的元素所构成的集合.
+      \ding{173}  当$y_j\in { x_1, x_2 ,\cdots, x_n }时$, 删去$u_j/y_j\, (j=1, 2 ,\cdots, m)$, 最后剩下的元素所构成的集合.
 \end{mydef}
 %%%%%%%----------------------------------------
 \begin{example}
-  设$\theta =\{ f(y)/x, z/y \}, \lambda =\{a/x, b/y ,y/z \}$, 求$\theta $与$\lambda $的合成.
+    设$\theta =\{ f(y)/x, z/y \}, \lambda =\{a/x, b/y ,y/z \}$, 求$\theta $与$\lambda $的合成.
 \end{example}
 %%%%%%%----------------------------------------
 \begin{result}
     先求出集合
 \begin{align}
-  \{f(b/y)/x, (y/z)/y, a/x, b/y\} , y/z=\{f(b)/x, y/y, a/x, b/y , y/z\},
+  \{f(y)\lambda/x, (z\lambda)/y, a/x, b/y , y/z\}=\{f(b)/x, y/y, a/x, b/y , y/z\},
 \end{align}
-其中, $f(b)/x$中的$f(b)$是置换$\lambda$作用于$f(y)$的结果；$y/y$中的$y$是置换$\lambda$作用于$z$的结果. 在该集合中, $y/y$满足定义中的条件①, 需要删除；$a/x$和$b/y$满足定义中的条件②, 也需要删除. 最后得
+其中, $f(b)/x$中的$f(b)$是置换$\lambda$作用于$f(y)$的结果；$y/y$中的$y$是置换$\lambda$作用于$z$的结果. 在该集合中, $y/y$满足定义中的删除条件①；$a/x$和$b/y$满足定义中的删除条件②, 也需要删除. 最后得
 \begin{align}
   \theta \circ \lambda =\{f(b)/x, y/z\}.
 \end{align}
 \end{result}
 \begin{remark}
-    合一可理解为是寻找项对变量的置换, 使两个谓词公式一致.
+    合一可理解为就是寻找项对变量的置换, 使两个谓词公式一致.
 \end{remark}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{合一}{1}
 设有公式集$F=\{F_1, F_2,\cdots,F_n\}$, 若存在一个置换$\theta$, 可使
 \begin{align}
@@ -843,7 +843,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 则称$\theta$是$F$的一个合一. 称$F_1,F_2,\cdots,F_n$是可合一的.
 \end{mydef}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 设有公式集$F=\{P(x,y,f(y)), P(a,g(x),z)\}$, 则
 \begin{align}
@@ -857,7 +857,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
   一般来说, 一个公式集的合一不是唯一的.
 \end{remark}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{最一般合一}{1}
 设$\sigma$是公式集$F$的一个合一, 如果对F的任一个合一$\theta$ 都存在一个置换$\lambda$, 使得$\theta =\sigma \circ \lambda$, 则称$\sigma$是一个最一般合一.
 \end{mydef}
@@ -869,7 +869,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 %%%%%%%---------------------------------------------
 \section{自然演绎推理}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{自然演绎推理}{1}
     从一组已知为真的事实出发, 直接运用经典逻辑中的推理规则推出结论的过程称为自然演绎推理.
 \end{mydef}
@@ -896,7 +896,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
     \item $D,  D\rightarrow Q \Rightarrow  Q$,                 假言推理.
 \end{itemize}
 因此, $Q$为真.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 设已知如下事实:
 
@@ -959,17 +959,17 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 鲁滨逊归结原理是在子句集的基础上讨论问题的. 因此, 讨论归结演绎推理之前, 需要先讨论子句集的有关概念.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{文字}{1}
 原子谓词公式及其否定统称为文字.
 \end{mydef}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
   $P(x)$、$Q(x)$、$\neg  P(x)$、 $\neg  Q(x)$等都是文字.
 \end{example}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{子句}{1}
    任何文字的析取式称为子句.
 \end{mydef}
@@ -978,7 +978,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
   $P(x)\vee Q(x)$, $P(x, f(x))\vee Q(x,g(x))$都是子句.
 \end{example}
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{空子句}{1}
    不含任何文字的子句称为空子句.
 \end{mydef}
@@ -986,7 +986,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
  由于空子句不含有任何文字, 也就不能被任何解释所满足, 因此空子句是永假的, 不可满足的.
 空子句一般被记为NIL.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{子句集}{1}
    由子句或空子句所构成的集合称为子句集.
 \end{mydef}
@@ -994,14 +994,14 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 在谓词逻辑中, 任何一个谓词公式都可以通过应用等价关系及推理规则化成相应的子句集. 其化简步骤如下:
 
-(1) 消去连接词“$\rightarrow$”和“$\longleftrightarrow$”. 需要反复使用如下等价公式:
+(1) \textbf{消去连接词}“$\rightarrow$”和“$\longleftrightarrow$”. 需要反复使用如下等价公式:
 \begin{align}
     &P\rightarrow Q \Leftrightarrow \neg  P\vee Q\\
     &P\longleftrightarrow Q \Leftrightarrow  (P\wedge Q)\vee (\neg P\wedge \neg Q).
 \end{align}
 即可消去谓词公式中的连接词“$\rightarrow$”和“$\longleftrightarrow$”.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}公式
 \begin{align}
   (\forall x)((\forall y)P(x,y)\rightarrow \neg  (\forall y)(Q(x,y)\rightarrow R(x,y))),
@@ -1012,7 +1012,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \end{align}
 \end{example}
 
-(2) 减少否定符号的辖域
+(2) \textbf{减少否定符号的辖域}
 
 反复使用双重否定率
 \begin{align}
@@ -1037,7 +1037,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
   (\forall x)((\exists  y)\neg P(x, y)\vee (\exists  y)(Q(x, y) \wedge \neg R(x, y))).
 \end{align}
 
-(3) 对变元标准化
+(3) \textbf{对变元标准化}
 
 在一个量词的辖域内, 把谓词公式中受该量词约束的变元全部用另外一个没有出现过的任意变元代替, 使不同量词约束的变元有不同的名字.
 %%%%---------------------------------------------
@@ -1048,11 +1048,11 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 \end{align}
 \end{example}
 
-(4) 化为前束范式
+(4) \textbf{化为前束范式}
 
 化为前束范式的方法:把所有量词都移到公式的左边, 并且在移动时不能改变其相对顺序. 由于第(3)步已对变元进行了标准化, 每个量词都有自己的变元, 这就消除了任何由变元引起冲突的可能, 因此这种移动是可行的.
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 上式化为前束范式后为
 \begin{align}
@@ -1066,11 +1066,11 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 \item 若存在量词位于一个或多个全称量词的辖域内, 例如
 \begin{align}
-  (\forall x_1)\cdots(\forall x_n) (\exists  y)\,P(x_1, x_2 ,\cdots, x_n ,y).
+    (\forall x_1)\cdots(\forall x_n) (\exists  y)\,P(x_1, x_2 ,\cdots, x_n ,y).
 \end{align}
 则需要用Skolem函数$f(x_1,x_2,\cdots, x_n)$替换受该存在量词约束的变元$y$, 然后再消去该存在量词.
 \end{itemize}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
     上步所得公式中存在量词$(\exists  y)$和$(\exists  z)$都位于$(\forall x)$的辖域内, 因此都需要用Skolem函数来替换. 设替换$y$和$z$的Skolem函数分别是$f(x)$和$g(x)$, 则替换后的式子为
 \begin{align}
@@ -1090,7 +1090,7 @@ Skolem标准形的一般形式为
 \begin{align}
   P\vee (Q\wedge R) \Leftrightarrow  (P\vee Q)\wedge (P\vee R).
 \end{align}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 前面的公式化为Skolem标准形后为
 \begin{align}
@@ -1098,10 +1098,10 @@ Skolem标准形的一般形式为
 \end{align}
 \end{example}
 
-(7) 消去全称量词
+(7)\textbf{ 消去全称量词}
 
 由于母式中的全部变元均受全称量词的约束, 并且全称量词的次序已无关紧要, 因此可以省掉全称量词. 仍假设剩下的母式的变元是被全称量词量化的.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 上式消去全称量词后为
 \begin{align}
@@ -1109,10 +1109,10 @@ Skolem标准形的一般形式为
 \end{align}
 \end{example}
 
-(8) 消去合取词
+(8) \textbf{消去合取词}
 
 在母式中消去所有合取词, 把母式用子句集的形式表示出来. 子句集中的每一个元素都是一个子句.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 上式的子句集中包含以下两个子句
 \begin{align}
@@ -1121,10 +1121,10 @@ Skolem标准形的一般形式为
 \end{align}
 \end{example}
 
-(9) 更换变量名称
+(9) \textbf{更换变量名称}
 
 对子句集中的某些变量重新命名, 使任意两个子句中不出现相同的变量名. 由于每一个子句都对应着母式中的一个合取元, 并且所有变元都是由全称量词量化的, 因此任意两个不同子句的变量之间实际上不存在任何关系. 这样, 更换变量名是不会影响公式的真值的.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
 对前面的公式, 可把第二个子句集中的变元名$x$更换为$y$, 得到如下子句集
 \begin{align}
@@ -1140,7 +1140,7 @@ Skolem标准形的一般形式为
 这个结论很重要, 是归结原理的主要依据, 可用定理的形式来描述.
 
 \begin{mythm}{不可满足的充要条件}{}\label{AIthm3.1}
-设有谓词公式$F$, 其标准子句集为$S$, 则$F$为不可满足的充要条件是$S$为不可满足的.
+设有谓词公式$F$, 其标准子句集为$S$, 则$F$不可满足的充要条件是$S$为不可满足的.
 \end{mythm}
 
 为证明此定理, 先作如下说明:  为讨论问题方便, 设给定的谓词公式$F$已为前束形
@@ -1241,16 +1241,16 @@ Skolem标准形的一般形式为
 \paragraph{命题逻辑的归结}~{}
 
 归结推理的核心是求两个子句的归结式.
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{mydef}{互补文字}{1}
     若$P$是原子谓词公式, 则称$P$与$\neg P$为互补文字.
 \end{mydef}
-%%%%%%%----------------------------------------%%%
-\begin{mydef}{亲本子句}{defqibenzj}
-    设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为归结, 称$C_{12}$为$C_1$和$C_2$的
+%%%%%%%------------------------------------------
+\begin{mydef}{归与亲本子句}{defqibenzj}
+    设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为\uwave{归结}, 称$C_{12}$为$C_1$和$C_2$的
    归结式, 称$C_1$和$C_2$ 为$C_{1 2}$的亲本子句.
 \end{mydef}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{example}
     设$C_1 =P\vee Q\vee R$, $C_2=\neg P\vee S$, 求$C_1$和$C_2$的归结式$C_{12}$.
 \end{example}
@@ -1279,15 +1279,15 @@ Skolem标准形的一般形式为
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (ABC0) at (-1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{0,0,1}{$\neg \bm P \vee \bm Q$}}; % PQR0
-\node (nCz)[draw, process,align=center,right=2cm of ABC0,yshift=0cm] {\textcolor[rgb]{0,0,1}{$\neg \bm Q$}};      %R1
+\node (nCz)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {\textcolor[rgb]{0,0,1}{$\neg \bm Q$}};      %R1
 
-\node (AB0)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1.0cm] {\textcolor[rgb]{0,0,1}{$\neg \bm P$}};        %20
-\node (AMn)[draw, process,align=center,below=2cm of nCz,yshift=0cm] {\textcolor[rgb]{0,0,1}{$\bm P$}};
+\node (AB0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=1.0cm] {\textcolor[rgb]{0,0,1}{$\neg \bm P$}};        %20
+\node (AMn)[draw, process,align=center,below=1cm of nCz,yshift=0cm] {\textcolor[rgb]{0,0,1}{$\bm P$}};
 
 \draw[thick,-](ABC0)--(AB0);%21
 \draw[thick,-](nCz)--(AB0);
 
-\node (nil0)[draw, process,align=center,below=2cm of AB0,yshift=0cm,xshift=1cm] {\textcolor[rgb]{0,0,1}{\textup{NIL}}};        %30
+\node (nil0)[draw, process,align=center,below=1cm of AB0,yshift=0cm,xshift=1cm] {\textcolor[rgb]{0,0,1}{\textup{NIL}}};        %30
 \draw[thick,-](AB0)--(nil0);
 \draw[thick,-](AMn)--(nil0);
 \end{tikzpicture}
@@ -1298,15 +1298,15 @@ Skolem标准形的一般形式为
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (ABC0) at (1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm P \vee \bm Q$}}; % PQR0
-\node (nCz)[draw, process,align=center,right=2cm of ABC0,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm P$}};      %R1
+\node (nCz)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm P$}};      %R1
 
-\node (AB0)[draw, process,align=center,below=2cm of ABC0,yshift=0cm,xshift=1.0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\bm  Q$}};        %20
-\node (AMn)[draw, process,align=center,below=2cm of nCz,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm Q$}};
+\node (AB0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=1.0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\bm  Q$}};        %20
+\node (AMn)[draw, process,align=center,below=1cm of nCz,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm Q$}};
 
 \draw[thick,-](ABC0)--(AB0);%21
 \draw[thick,-](nCz)--(AB0);
 
-\node (nil0)[draw, process,align=center,below=2cm of AB0,yshift=0cm,xshift=1cm] {\textcolor[rgb]{0.2,0.6,0.2}{\textup{NIL}}};        %30
+\node (nil0)[draw, process,align=center,below=1cm of AB0,yshift=0cm,xshift=1cm] {\textcolor[rgb]{0.2,0.6,0.2}{\textup{NIL}}};        %30
 \draw[thick,-](AB0)--(nil0);
 \draw[thick,-](AMn)--(nil0);
 \end{tikzpicture}
@@ -1322,7 +1322,7 @@ Skolem标准形的一般形式为
     C_{12}= \textup{NIL}.
 \end{align}
 \end{result}
-%%%%%%%----------------------------------------%%%%
+%%%%%%%------------------------------------------%
 \begin{example}
     设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
 \end{example}
@@ -1340,7 +1340,7 @@ Skolem标准形的一般形式为
 \end{result}
 
 其归结归结过程可用图\ref{AI32fig14}来表示, 该树称为\textbf{归结树}.
-%%%%%%%----------------------------------------%%%%
+%%%%%%%------------------------------------------%
 \begin{mythm}{归结式的亲本子句}{}\label{AIthm3.1}
     归结式$C_{12}$是其亲本子句$C_1 $和$C_2$的逻辑结论.
 \end{mythm}
@@ -1357,7 +1357,7 @@ Skolem标准形的一般形式为
 \end{proof}
 
 上述定理是\textbf{归结原理}中的一个重要定理, 由它可得到以下两个推论:
-%%%%%%%----------------------------------------%%%%
+%%%%%%%------------------------------------------%
 \begin{myprop}{归结式的不可满足性}{1}
     设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若用$C_{1 2}$代替$C_1$ 和$C_2$ 后得到新的子句集$S_1$, 则由$S_1$的不可满足性可以推出原子句集$S$的不可满足性. 即: $S_1$的不可满足性 $\Rightarrow  S$的不可满足性.
 \end{myprop}
@@ -1376,7 +1376,7 @@ Skolem标准形的一般形式为
   $S_1$的不可满足性$\Rightarrow S$的不可满足性.
 \end{center}
 \end{proof}
-%%%%%%%----------------------------------------%%%%
+%%%%%%%------------------------------------------%
 \begin{myprop}{归结式的不可满足性}{1}
     设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中得到新的子句集$S_2$, 则$S$与$S_2$的不可满足性是等价的. 即:
 \begin{center}
@@ -1491,13 +1491,13 @@ $$S=\{P,\neg P\vee \neg Q\vee R, \neg S\vee Q, \neg T\vee Q, T, \neg R\}.$$
 %%%%%%%--------------------------------------
 \subparagraph{谓词逻辑的归结原理}
     谓词逻辑中的归结式可用如下定义来描述:
-%%%%%%%----------------------------------------%%%
-\begin{mydef}{互补文字}{1}\label{AI32Def321}
+%%%%%%%------------------------------------------
+\begin{mydef}{归结式上的文字}{1}
     设$C_1$和$C_2$是两个没有公共变元的子句, $L_1$和$L_2$分别是$C_1$和$C_2$中的文字. 如果$L_1$和$L_2$存在最一般合一$\sigma$, 则称
     \begin{align}
       C_{12}=({C_1\sigma }-{ L_1\sigma })\cup ({ C_2\sigma }-{ L_2\sigma })
     \end{align}
-    为$C_1$和$C_2$的二元归结式, 而$L_1$和$L_2$为归结式上的文字.
+    为$C_1$和$C_2$的二元归结式, 而$L_1$和$L_2$为归结式上的文字.\label{AI32Def321}
 \end{mydef}
 %%%%%%%---------------------------------------------
 \begin{example}
@@ -1505,7 +1505,7 @@ $$S=\{P,\neg P\vee \neg Q\vee R, \neg S\vee Q, \neg T\vee Q, T, \neg R\}.$$
 \end{example}
 %%%%%%%----------------------------------------
 \begin{result}
-取$L_1= P(a),  L_2=\neg P(y)$, 则$L_1$和$L_2$的最一般合一是$\sigma={a/y}$. 根据\ref{AI32Def321},可得
+取$L_1= P(a),  L_2=\neg P(y)$, 则$L_1$和$L_2$的最一般合一是$\sigma={a/y}$. 根据定义\ref{AI32Def321},可得
 \begin{align}
 C_{12}=( {C_1\sigma }-{L_1\sigma }) \cup  ({C_2 \sigma }-{L_2\sigma })
               &=({P(a), R(x)}-{P(a)})\cup ({\neg P(a), Q(b)}-{\neg P(a)})\notag\\
@@ -1570,13 +1570,13 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \end{align}
 \end{result}
 %%%%%%%----------------------------------------
-\begin{mydef}{因子}{1}
+\begin{mydef}{单元因子}{1}
   我们把$C_1\sigma$称为$C_1$的因子. 一般来说, 若子句C中有两个或两个以上的文字具有最一般合一$\sigma$, 则称$C\sigma$为子句C的因子. 如果$C\sigma$是一个单文字, 则称它为$C$的单元因子.
 \end{mydef}
 
 应用因子概念, 可对谓词逻辑中的归结原理给出如下定义:
-%%%%%%%----------------------------------------%%%
-\begin{mydef}{互补文字}{1}
+%%%%%%%------------------------------------------
+\begin{mydef}{二元归结式}{1}
 若$C_1$和$C_2$是无公共变元的子句, 则
 
 \quad   \ding{172} $C_1$和$C_2$的二元归结式;
@@ -2023,7 +2023,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 %%%%%%%-----------------------------------------------
 \paragraph{包孕删除法}~{}
 设有子句$C_1$和$C_2$, 如果存在一个置换$\sigma $, 使得$C_1\sigma \subseteq C_2$, 则称$C_1$包孕于$C_2$.
-%%%%%%%----------------------------------------%%%%%
+%%%%%%%------------------------------------------%%
 \begin{example}
     $P(x)$             包孕于   $P(y)\vee Q(z)$             $\sigma ={x/y}$;
 
@@ -2243,7 +2243,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 已知: “张和李是同班同学, 如果$x$和$y$是同班同学, 则$x$的教室也是$y$的教室, 现在张在302教室上课.”
 问: “现在李在哪个教室上课?”
 \end{example}
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \begin{result}
 首先定义谓词:
 
@@ -2396,7 +2396,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{example}
 
 利用与/或树的这个性质, 可以把与/或树看作是对子句集的简洁表示. 不过, 表达式的与/或树表示要比子句集表示的通用性差一些, 原因是与/或树中的合取元没有进一步展开, 因此不能象在子句形中那样对某些变量进行改名, 这就限制了与/或树表示的灵活性.
-%%%%%%%-----------------------------------------------%%%%
+%%%%%%%-------------------------------------------------%
 \begin{example}
   上面的最后一个子句, 在子句集中其变量$y$可全部改名为$x$, 但却无法在与/或树中加以表示, 因而失去了通用性, 并且可能带来一些困难.
 \end{example}
@@ -2447,7 +2447,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 %%%%%%%-----------------------------------------------
 \paragraph{目标公式的表示形式}
 与/或树正向演绎系统要求目标公式用子句形表示. 如果目标公式不是子句形, 则需要化成子句形. 把一个目标公式转化为子句形的步骤与第3节所述的化简子句形的步骤类似, 但Skolem化的过程不同. 目标公式的Skolem化过程是化简子句形的Skolem过程的对偶形式, 即把目标公式中属于存在量词辖域内的全称变量用存在量词量化变量的Skolem函数来代替, 使经Skolem化目标公式只剩下存在量词, 然后再对析取元作变量替换, 最后把存在量词消掉.
-%%%%%%%-----------------------------------------------%%%%
+%%%%%%%-------------------------------------------------%
 \begin{example}
 设目标公式为
 \begin{align}
@@ -2475,7 +2475,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 %%%%%%%-----------------------------------------------
 \subparagraph{命题逻辑的规则演绎过程}
 由于命题逻辑中的公式不含变元, 因此其规则演绎过程比较简单.
-%%%%%%%-----------------------------------------------%%%
+%%%%%%%-------------------------------------------------
 \begin{example}
 设已知事实为: $A\vee B$, $F$规则为:
 \begin{align}
@@ -2485,7 +2485,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 
 目标公式为: $C\vee G$.
 \end{example}
-%%%%%%%-----------------------------------------------%%%
+%%%%%%%-------------------------------------------------
 \begin{proof}
 先将已知事实用与/或树表示出来, 然后再用匹配弧把$r_1$和$r_2$分别连接到事实与/或树中与$r_1$和$r_2$前件匹配的两个不同端节点, 由于出现了以目标节点为终节点的解树, 故推理过程结束. 这一证明过程可用图\ref{AI32fig2019120127}表示.
 在该图中, 双箭头表示匹配弧, 它相当于一个单线连接符.
@@ -2600,7 +2600,7 @@ Skolem化后为
 \item 子表达式之间的析取关系用单一连接符连接, 表示为或的关系;
 \item 子表达式之间的合取关系则用$k$线连接符连接, 表示为与的关系.
 \end{itemize}
-%%%%%%%-----------------------------------------------%%%
+%%%%%%%-------------------------------------------------
 \begin{example}
 对上述目标公式的与/或形, 可用如下的与/或树\ref{AI32fig2019120130}表示.
 \begin{figure}[H]
@@ -2661,7 +2661,7 @@ $\bullet$ 基于图结构和统计规则挖掘的推理（如: PRA、 AMIE）
 $\bullet$ 基于知识图谱表⽰学习的推理（如: TransE）
 
 $\bullet$ 基于概率逻辑的⽅法（如: Statistical Relational Learning）
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \subsection{基于符号逻辑的推理——本体推理}
 
 传统的符号逻辑推理中主要与知识图谱有关的推理手段是基于描述逻辑的本体推理。
@@ -2676,7 +2676,7 @@ $\bullet$ 基于Datalog转换的⽅法如KAON、 RDFox等
 
 $\bullet$ 基于产⽣式规则的算法（如rete）:  Jena 、 Sesame、 OWLIM等
 
-%%%%%%%----------------------------------------%%%
+%%%%%%%------------------------------------------
 \subsection{基于图结构和统计规则挖掘的推理}
 
 主要方法:
