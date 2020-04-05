@@ -22,13 +22,13 @@
 本章主要讨论神经计算、进化计算和模糊计算问题.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{什么是计算智能}
-计算智能(Computational Intelligence, CI)目前还没有一个统一的定义, 使用较多的是美国科学家贝慈德克(J. C. Bezdek)从计算智能系统角度所给出的定义:
+计算智能(Computational Intelligence, CI)目前还没有一个统一的定义, 使用较多的是美国科学家贝慈德克(J. C. Bezdek)从计算智能系统角度给出的定义:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{计算智能}{1}
-如果一个系统仅处理低层的数值数据, 含有模式识别部件, 没有使用人工智能意义上的知识, 且具有计算适应性、计算容错力、接近人的计算速度和近似于人的误差率这4个特性, 则它是计算智能的.
+如果一个系统仅处理低层的数值数据, 含有模式识别部件, 没有使用人工智能意义上的知识, 且具有计算适应性、计算容错力、接近或高于人的计算速度和近似于人的误差率这4个特性, 则它是计算智能的.
 \end{mydef}
 \begin{remark}
-  从学科范畴看, 计算智能是在神经网络(Neural Networks, NN)、进化计算(Evolutionary Computation, EC)及模糊系统(Fuzzy System, FS)这3个领域发展相对成熟的基础上形成的一个统一的学科概念.
+  从学科范畴看, 计算智能是在神经网络(Neural Networks, NN)、进化计算(Evolutionary Computation, EC)及模糊系统(Fuzzy System, FS)这3个领域发展相对成熟基础上形成的一个统一的学科概念.
 \end{remark}
 
 $\bullet$神经网络是一种对人类智能的结构模拟方法, 它是通过对大量人工神经元的广泛并行互联, 构造人工神经网络系统去模拟生物神经系统的智能机理的.
@@ -42,13 +42,13 @@ $\bullet$模糊计算是一种对人类智能的逻辑模拟方法, 它是通过
 
 $\bullet$ 第一, 计算智能是借鉴仿生学的思想, 基于生物神经系统的结构、进化和认知对自然智能进行模拟的.
 
-$\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为基础, 以分布、并行计算为特征的自然智能模拟方法.
+$\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为基础, 以分布和并行计算为特征的自然智能模拟方法.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{计算智能与人工智能的关系}
 目前, 对计算智能与人工智能的关系有2种不同观点, 一种观点认为计算智能是人工智能的一个子集, 另一种观点认为计算智能和人工智能是不同的范畴.
 
-第一种观点的代表人物是贝慈德克. 他把智能(Intelligence, I)和神经网络(Neural Network, NN)都分为计算的(Computational, C)、人工的(Artificial, A)和生物的(Biological,B)3个层次, 并以模式识别(PR)为例, 给出了图\ref{AI32fig26000001}所示的智能的层次结构.
+第一种观点的代表人物是贝慈德克. 他把智能(Intelligence, I)和神经网络(Neural Network, NN)分为计算的(Computational, C)、人工的(Artificial, A)和生物的(Biological,B)3个层次, 并以模式识别(PR)为例, 给出了图\ref{AI32fig26000001}所示的智能的层次结构.
 
 在图\ref{AI32fig26000001}中, 底层是计算智能(CI), 它通过数值计算来实现, 其基础是CNN; 中间层是人工智能(AI), 它通过人造的符号系统实现, 其基础是ANN; 顶层是生物智能(BI), 它通过生物神经系统来实现, 其基础是BNN.
 按照贝慈德克的观点, CNN是指按生物激励模型构造的NN, ANN是指CNN+知识, BNN是指人脑, 即ANN包含了CNN, BNN又包含了ANN. 对智能也一样, 贝慈德克认为AI包含了CI, BI又包含了AI, 即计算智能是人工智能的一个子集.
@@ -89,9 +89,9 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 
 \textcolor[rgb]{0,0,1}{常见误解---StuartRussell}
 
-「神经网络是一种新型计算机」. 在实践中, 几乎所有的神经网络都运行在普通的计算机架构上. 一些公司正在设计专用机器, 它们有时会被称作是「神经计算机」, 可以有效地运行神经网络, 但目前为止, 这类机器无法提供足够的优势, 值得花费大量时间去开发.
+1) 「\uwave{神经网络是一种新型计算机}」. 在实践中, 几乎所有的神经网络都运行在普通的计算机架构上. 一些公司正在设计专用机器, 它们有时会被称作是「神经计算机」, 可以有效地运行神经网络, 但目前为止, 这类机器无法提供足够的优势, 值得花费大量时间去开发.
 
-「神经网络像大脑一样工作」. 事实上, 生物神经元的工作方式比神经网络复杂得多, 自然界存在很多种不同的神经元, 神经元的连接可以随时间进行改变, 大脑中也存在其他的机制, 可以影响动物的行为.
+2) 「\uwave{神经网络像大脑一样工作}」. 事实上, 生物神经元的工作方式比神经网络复杂得多, 自然界存在很多种不同的神经元, 神经元的连接可以随时间进行改变, 大脑中也存在其他的机制, 可以影响动物的行为.
 
 本节的主要内容包括: 神经计算基础、人工神经网络的互连结构和神经网络的典型模型.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,7 +109,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \label{AI32fig2602}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-细胞体由细胞核、细胞质和细胞膜等组成, 其直径大约为0.5-100$\si{\mu m}$大小不等. 细胞体是神经元的主体, 用于处理由树突接受的其它神经元传来的信号, 其内部是细胞核, 外部是细胞膜, 细胞膜的外面是许多向外延伸出的纤维.
+细胞体由细胞核、细胞质和细胞膜等组成, 其直径大约为0.5-100 $\si{\mu m}$大小不等. 细胞体是神经元的主体, 用于处理由树突接受的其它神经元传来的信号, 其内部是细胞核, 外部是细胞膜, 细胞膜的外面是许多向外延伸出的纤维.
 
 轴突是由细胞体向外延伸出的所有纤维中最长的一条分枝, 用来向外传递神经元产生的输出电信号.
 \begin{itemize}
@@ -125,7 +125,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 
 \textbf{抑制状态}是指神经元在没有产生冲动时的工作状态. \textbf{兴奋状态}是指神经元产生冲动时的工作状态.
 
-通常情况下, 神经元膜电位约为-70 毫伏, 膜内为负, 膜外为正, 处于抑制状态. 当神经元受到外部刺激时, 其膜电位随之发生变化, 即膜内电位上升、膜外电位下降, 当膜内外的电位差大于阈值电位(约+40毫伏)时, 神经元产生冲动而进入兴奋状态.
+通常情况下, 神经元膜电位约为-70毫伏, 膜内为负, 膜外为正, 处于抑制状态. 当神经元受到外部刺激时, 其膜电位随之发生变化, 即膜内电位上升、膜外电位下降, 当膜内外的电位差大于阈值电位(约+40毫伏)时, 神经元产生冲动而进入兴奋状态.
 
 \begin{remark}
   神经元每次冲动的持续时间大约1毫秒左右, 在此期间即使刺激强度再增加也不会引起冲动强度的增加. 神经元每次冲动结束后, 都会重新回到抑制状态. 如果神经元受到的刺激作用不能使细胞膜内外的电位差大于阈值电位, 则神经元不会产生冲动, 将仍处于抑制状态.
@@ -322,13 +322,13 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \end{figure}
 其中, 输入向量为$X=(x_1,x_2,\cdots,x_n)$; 输出向量为$Y=(y_1,y_2,\cdots,y_m)$; 输入层各个输入到相应神经元的连接权值分别是$w_{ij}, i=1,2,..,n, j=1,2,.., m$.
 
-若假设各神经元的阈值分别是$\theta_j, j=1,2,\cdots,m$, 则各神经元的输出$y_j, j=1,2,\cdots,m$分别为:
+若假设各神经元的阈值分别是$\theta_j, j=1,2,\cdots,m$, 则各神经元的输出$y_j, j=1,2, \cdots, m$分别为:
 \begin{align}
-  {y}_{{j}}={f}\left(\sum_{{i}=1}^{{n}} w_{{ij}} {x}_{{i}}-\theta_{{j}}\right), {j}=1,2, \ldots, {m}
+    {y}_{{j}}={f}\left(\sum_{{i}=1}^{{n}} w_{{ij}} {x}_{{i}}-\theta_{{j}}\right), {j}=1,2, \ldots, {m}
 \end{align}
 其中, 由所有连接权值$w_{ij}$构成的连接权值矩阵$W$为:
 \begin{align}
-  W=\left(
+    W=\left(
   \begin{array}{lll}
   {w_{11}} & {w_{12}} & {\cdots w_{1 {m}}} \\ {w_{21}} & {w_{22}} & {\cdots w_{2 {m}}} \\
   {\vdots} & {\vdots} & {\vdots} \\ {w_{{nl}}} & {w_{{n} 2}} & {\cdots w_{{nm}}}.
@@ -358,7 +358,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (qLPV) at (0,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {反馈网络};      % 李刚
-\node (qLPVtex1) at (0,-0.6) [minimum width=\smbwd, minimum height=0.5cm] {可含有反馈链接};      %
+\node (qLPVtex1) at (0,-0.65) [minimum width=\smbwd, minimum height=0.5cm] {可含有反馈链接};      %
 \node (UniSampling1)[draw, process,align=center,right=3cm of qLPV,yshift=1cm] {单层反馈网络};%
 \node (UniSampling2)[draw, process,align=center,right=3cm of qLPV,yshift=-1cm] {多层反馈网络};%
 \draw[->] (qLPV.east)->(UniSampling1)node[left,yshift=0.25cm,rotate=-20,xshift=-1.05cm] {};
@@ -946,17 +946,23 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{ELM}
-Fig.\ref{OPELM20161021fig2} shows the three steps of OP-ELM. The optimally pruned extreme learning machine (OP-ELM) is proposed in (EIML Group. The op-elm toolbox, Available online at /http://www.cis.hut.fi/projects/eiml/research/download ``corrupt" some of the neurons. As described at more length in \cite{Miche2008OP, Miche2008A, Miche2010OP}, it can be illustrated on a toy example as in Fig. 1: the plots give the ELM fit in light blue dots over the training points in black crosses. On the leftmost part of the figure,
-the fit by the ELM is good, but when a pure random noise variable is added, on the rightmost figure (the added noise variable is not pictured on the figure), the fit becomes loose and spread.
+最优剪枝极值学习机（OP-ELM）如图\ref{OPELM20161021fig2}, 图\ref{OPELM20161021fig2}显示了OP-ELM的三个步骤. 
+提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱找到}.
+如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量（添加的噪声变量没有在图上显示）时,拟合会变得松散和扩散.
+实际上, ELM的并没为这种情况设计. 本文的OP-ELM提出了一种三个步骤的方法来解决这个问题 , 简言之, 为了解决含噪声的问题, 需要给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
+in practice the \textbf{MRSR} \index{MRSR}\cite{SimiläTikka2005-32497} implementation of LARS is used for it also applies to multi-output cases), which sorts them by their usefulness regarding the output. And then a
+首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 实际上, 实现了LARS算法的MRSR算法也适用于多输出情况, 根据它们在输出值大小对它们进行排序. 然后, 用一个漏掉一个的准则来确定在最终的OP-ELM模型结构中需要保留多少个被分类的神经元.
+这里将不对\textbf{LARS algorithm}做详细的叙述, 其实现来自Lasso方法, 对于OP-ELM, 它提供了对隐藏神经元的排序方法,
+这是由于OP-ELM算法设计总的神经元和输出之间的关系是线性的.
 
-Indeed, the ELM is not designed to cope with such variables irrelevant to the problem at hand. In this spirit, the \textbf{OP-ELM} proposes a three-steps methodology, shortly described here, to address this issue. The idea is to build a wrapper around the original ELM, with a neuron pruning strategy. For this matter, as can be seen in Fig. 2, the construction of the SLFN by the ELM is retained, and two steps are added afterwards. First comes a ranking of the neurons by a least angle regression (LARS \cite{EfronHastie2004-32498}; in practice the \textbf{MRSR} \index{MRSR}\cite{SimiläTikka2005-32497} implementation of LARS is used for it also applies to multi-output cases), which sorts them by their usefulness regarding the output. And then a leave-one-out criterion is used to determine how many of the-sorted-neurons should be kept for the final OP-ELM model structure.
-
-The \textbf{LARS algorithm} is not detailed here since it is described and discussed at length (or more precisely the idea it implements, Lasso) in Section 3, but it has the property of providing an exact ranking of the hidden-layer neurons in the case of the OP-ELM, since the relation between the neurons and the output is linear (by design of the OP-ELM).
-
-The \textbf{leave-one-out}\index{Leave-one-out(LOO)} (LOO) method is usually a costly approach to optimize a parameter since it requires to train the model on the whole data set but one sample, and evaluate on this sample, repeatedly for all the samples of the data set. In the OP-ELM structure though, the situation is linear (between the hidden layer and the output one), and the LOO error has a closed matrix form, given by \textbf{Allen's prediction sum of squares} (PRESS)\index{PRESS} \cite{MADavid1972} (details of the computation of the PRESS LOO error are given in Section 4). This closed form allows for fast computation of the mean square error and hence of the output weights $\bm b$, making the OP-ELM still computationally efficient and more robust than the original ELM to irrelevant/ correlated variables. Hence, the OP-ELM can be seen as a ``regularized" ELM, by the use of a \textbf{LARS}\index{LARS} approach, which is a $L_1$ penalty on a regression problem, here.
-
-Meanwhile, the decision over the final number of neurons to retain (by a \textbf{LOO criterion}\index{LOO criterion}) has shown potential instabilities (numerically), due to the nature of the matrix operations performed in the PRESS formula (see Section 4 for these calculations). The proposed solution in this paper is to use regularization in the calculations of the PRESS formula. In the following are reviewed the most well-known algorithms used to perform regularization, using a $L_1$ and $L_2$ (and jointly $L_1$ and $L_2$) penalty on the regression problem. The proposed approach in Section 4 combines both $L_1$ and $L_2$ penalties in the OP-ELM, to regularize the network.
+为了优化参数,(LOO)方法通常是一种代价高昂的方法, 因为它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值. 
+在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于压LOO误差的计算细节见第4节). 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$,使得OP-ELM在计算上仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”ELM.
+通过使用一个{LARS}方法,这里是对回归问题的$L_1$约束.
+同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项. 
+同时,由于在压力公式中执行的矩阵运算的性质(这些计算见第4节),决定保留的神经元的最终数量（通过{LOO criteria}索引{LOO criteria}）显示出潜在的不稳定性（数值）. 
+本文提出的解决方案是在压力公式的计算中使用正则化.
+下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项. 
+第4节中提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
 \begin{figure}[t]
 \begin{center}
 \includegraphics[scale=0.7]{OPELM20161021.PNG}
@@ -965,42 +971,52 @@ Meanwhile, the decision over the final number of neurons to retain (by a \textbf
 used to rank the neurons of the hidden layer; finally the selection of the optimal number of neurons for the OP-ELM model is performed using a Leave-One-Out criterion.}
 \label{OPELM20161021fig2}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Tikhonov regularization}\index{Tikhonov Regularization}
-Tikhonov regularization, named for Andrey Tikhonov, is the most commonly used method of regularization of ill-posed problems. In statistics, the method is known as \textbf{ridge regression}\index{Ridge Regression}, and with multiple independent discoveries, it is also variously known as the \textbf{Tikhonov–Miller method}\index{Tikhonov–Miller method}, the \textbf{Phillips–Twomey method}\index{Phillips–Twomey method}, the \textbf{Constrained linear inversion method}, and the method of \textbf{linear regularization}\index{Linear regularization}. It is related to the \textbf{Levenberg–Marquardt algorithm} for \textbf{non-linear least-squares}\index{Non-linear least-squares} problems.
-
-Suppose that for a known matrix $\bm A$ and vector $\bm b$, we wish to find a vector $\bm {x}$ such that
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Tikhonov 正则化}\index{Tikhonov Regularization}
+Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用的正则化方法之一.
+在统计学上, 这种方法被称为岭回归, 在有多个独立发现的情况下, 它也被称为\textbf{Tikhonov–Miller method}、\textbf{Phillips–Twomey method}, 约束线性反演方法和线性正则化索引方法. 
+它与针对非线性回归最小二乘问题的Levenberg-Marquardt算法有关.
+假设对于已知的矩阵$\bm A$和向量$\bm b$, 我们希望找到向量$\bm{x}$, 使得下式成立
 \begin{align}
    \bm A\bm {x} =\bm {b}.
 \end{align}
-The standard approach is ordinary least squares linear regression. However, if no $\bm x$ satisfies the equation or more than one $\displaystyle x$ does—that is the solution is not unique—the problem is said not to be well posed. In such cases, ordinary least squares estimation leads to an overdetermined (over-fitted), or more often an underdetermined (under-fitted) system of equations. Most real-world phenomena have the effect of \textbf{low-pass filters} in the forward direction where $\displaystyle A$ maps $ \bm {x}$ to $ \bm {b}$. Therefore, in solving the inverse-problem, the inverse mapping operates as a high-pass filter that has the undesirable tendency of amplifying noise (eigenvalues / singular values are largest in the reverse mapping where they were smallest in the forward mapping). In addition, ordinary least squares implicitly nullifies every element of the reconstructed version of $\bm {x}$ that is in the null-space of $A$, rather than allowing for a model to be used as a prior for $\bm {x}$. Ordinary least squares seeks to minimize the sum of squared residuals, which can be compactly written as
+
+上述问题的标准解方法是最小二乘线性回归. 然而, 如果没有$\bm x$满足等式,或者有多个$\displaystyle x$满足等式, 则解决方案不是唯一的, 该问题称为不适定问题.
+在这种情况下,普通最小二乘估计会导致方程组的超定(过拟合),或者更常见的是欠定(欠拟合).
+大多数现实世界的现象都具有向前方向的低通滤波器的效果,其中$A$将$\bm{x}$映射到$\bm{b}$. 
+因此, 在求解逆问题时,逆映射用作高通滤波器, 具有放大噪声的不良倾向(特征值/奇异值在逆映射中最大, 而在正向映射中最小).
+此外, 普通的最小二乘法隐式地将重构版本$\bm{x}$的每个元素(在$A$的空空间中)置空, 而不允许将模型用作$\bm{x}$的前置. 
+最小二乘法寻求最小化残差平方和, 其紧凑格式可写为
 \begin{align}
    \|\bm A\bm {x} -\bm {b} \|^{2}
 \end{align}
-where $\left\|\cdot \right\|$ is the Euclidean norm. In order to give preference to a particular solution with desirable properties, a regularization term can be included in this minimization:
+其中$\left\|\cdot\right\|$是欧几里德范数. 为了得到具有期望性质的特定解, 对于适定的Tikhonov矩阵$\Gamma$, 可在最小化问题中包括正则化项：
 \begin{align}
   \|\bm A\bm {x} -\bm {b} \|^{2}+\|\Gamma \bm {x} \|^{2}
 \end{align}
-for some suitably chosen \textbf{Tikhonov matrix}, $\Gamma$. In many cases, this matrix is chosen as a multiple of the identity matrix $ (\Gamma =\alpha I)$, giving preference to solutions with smaller norms; this is known as $L_2$ regularization \cite{Ng2004-32636}. In other cases, \textbf{lowpass operators}\index{Lowpass Operators} (e.g., a difference operator or a \textbf{weighted Fourier operator}\index{Fourier operator}) may be used to enforce smoothness if the underlying vector is believed to be mostly continuous. This regularization improves the conditioning of the problem, thus enabling a direct numerical solution. An explicit solution, denoted by $\hat {x}$, is given by:
+
+许多情况下, 该矩阵被选为恒等矩阵$(\Gamma=\alpha I)$, 优先选择具有较小范数的解; 这是熟知的$L_2$正则化方法 \cite{Ng2004-32636}.
+在其他情况下, 则可以使用textbf{lowpass operators}\index{lowpass operators}(例如,差分运算符或\textbf{weighted Fourier operator})来强制平滑.
+这种正则化改进了问题的解, 从而使直接求得数值解成为可能. 由$\hat{x}$表示的显式解由以下公式给出：
 \begin{align}
   {\hat {x}}=(\bm A^{T}\bm A+\Gamma ^{T}\Gamma )^{-1}\bm A^{T}\bm {b}
 \end{align}
 
-The effect of regularization may be varied via the scale of matrix $\Gamma$. For $ \Gamma =0$ this reduces to the unregularized least squares solution provided that $(A^TA)^{-1}$ exists.
+正则化的效果可以通过矩阵$\Gamma$的尺度变化.对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
+除了线性回归之外, $L_2$正则化还用于许多上下文中, 例如使用logistic回归或支持向量机分类\cite{Fan2008LIBLINEAR}以及矩阵因式分解\cite{Guan2012Online}.
+Tikhonov正则化是在许多不同的上下文中独立发明的. 从Andrey Tikhonov和David L. Phillips的工作中, 它在积分方程中的应用广为人知. 
+有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E.Hoerl和Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov（Kriging）滤波器}. 
+在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}
 
-$L_2$ regularization is used in many contexts aside from linear regression, such as classification with logistic regression or support vector machines \cite{Fan2008LIBLINEAR}, and matrix factorization \cite{Guan2012Online}.
-
-\textbf{Tikhonov regularization} has been invented independently in many different contexts. It became widely known from its application to integral equations from the work of Andrey Tikhonov and David L. Phillips. Some authors use the term \textbf{Tikhonov–Phillips regularization}. The finite-dimensional case was expounded by Arthur E. Hoerl, who took a statistical approach, and by Manus Foster, who interpreted this method as a \textbf{Wiener–Kolmogorov (Kriging) filter}. Following Hoerl, it is known in the statistical literature as \textbf{ridge regression}.
-
-\textbf{Generalized Tikhonov regularization}
-
-For general multivariate normal distributions for $\bm x$ and the data error, one can apply a transformation of the variables to reduce to the case above. Equivalently, one can seek an $\bm x$ to minimize
+对于$\bm x$的一般多元正态分布和数据误差,可以应用变量转换来减少上述情况. 同样地, 可以寻找$\bm x$以最小化
 \begin{align}
   \|\bm A\bm x-\bm b\|_{P}^{2}+\|\bm x-\bm x_{0}\|_{Q}^{2}\,
 \end{align}
-where we have used $\left\|\bm x\right\|_{\bm Q}^{2}$ to stand for the weighted norm $ \bm x^{T}\bm Q\bm x$ (compare with the Mahalanobis distance). In the Bayesian interpretation $\bm P$ is the inverse covariance matrix of $\bm b, \bm x_0$ is the expected value of $x$, and $\bm Q$ is the inverse covariance matrix of $\bm x$. The Tikhonov matrix is then given as a factorization of the matrix $\displaystyle \bm Q=\Gamma ^{T}\Gamma$ (e.g. the \textbf{Cholesky factorization}), and is considered a \textbf{whitening filter}.
+其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$（与Mahalanobis距离比较）. 
+贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵. 
+然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$（例如，\textbf{Cholesky factorization}）的因子分解给出, 并将其视为一个\textbf{whitening filter}.
 
-This generalized problem has an optimal solution $x^{*}$ which can be solved explicitly using the formula
+这个广义问题有一个最优解$x^{}$，可以用公式显式地求解
 \begin{align}
   \bm x^{*}=(\bm A^{T}\bm P\bm A+\bm Q)^{-1}(\bm A^{T}\bm P\bm b+\bm Q\bm x_{0}).\,
 \end{align}
@@ -1008,11 +1024,10 @@ or equivalently
 \begin{align}
   \bm x^{*}=\bm x_{0}+(\bm A^{T}\bm P\bm A+\bm Q)^{-1}(\bm A^{T}\bm P(\bm b-\bm A \bm x_{0})).\,
 \end{align}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{TROP-ELM}\index{TROP-ELM}
-\textbf{TROP-ELM}: A double-regularized ELM using LARS and Tikhonov regularization \cite{MichevanHeeswijk2011-30641}, 2011.
-
-Fig. \ref{TROPEMLmodel20161021fig2} shows the proposed regularized OP-ELM (TROP-ELM).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{TROP-ELM算法}\index{TROP-ELM}
+\textbf{TROP-ELM}: 基于LARS和Tikhonov正则化的双正则化ELM\cite{MichevanHeeswijk2011-30641}, 2011.
+图\ref{TROPEMLmodel20161021fig2}显示了建议的正则化OP-ELM（TROP-ELM）。
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{TROPEMLmodel20161021.PNG}
@@ -1020,17 +1035,17 @@ Fig. \ref{TROPEMLmodel20161021fig2} shows the proposed regularized OP-ELM (TROP-
 \caption{The proposed regularized OP-ELM (TROP-ELM) as a modification of Fig. \ref{OPELM20161021fig2}.}
 \label{TROPEMLmodel20161021fig2}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Allen's PRESS(prediction sum of squares)}
-The original PRESS formula used in the OP-ELM was proposed by Allen in \cite{MADavid1972}. The original PRESS formula can be expressed as
+OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. 原始的PRESS公式可以表示为
 \begin{align}
   \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X)^{-1}\bm x^T y  }
        {1-\bm x_i(\bm X^T \bm X)^{-1}\bm x_i^T}\right)^2,
 \end{align}
-which means that each observation is ``predicted" using the other $n-1$ observations and the residuals are finally squared and summed up. Algorithm \ref{AllenPRESS161018Algorithm1} proposes to implement this formula in an efficient way, by matrix computations.
+从公式可以看出, 每个观测值都是用其他$n-1$观测值“预测”的, 残差最终被平方和相加. 算法通过矩阵运算, 有效地实现了该公式.
 
 \textbf{Algorithm 1.}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{algorithm}
 %\caption{Allen's PRESS algorithm.}
 %\label{AllenPRESS161018Algorithm1}
@@ -1043,30 +1058,35 @@ which means that each observation is ``predicted" using the other $n-1$ observat
 %\STATE Reduced to a $\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$
 % \end{algorithmic}
 %\end{algorithm}
-1: Compute the utility matrix $\bm C= (\bm X^T X)^{-1}$
 
-2: And $\bm P = \bm X\bm C$;
+1: 计算矩阵的逆$\bm C= (\bm X^T X)^{-1}$
 
-3: Compute the pseudo-inverse $\bm w = \bm C\bm X^T\bm y$;
+2: 计算$\bm P = \bm X\bm C$;
 
-4: Compute the denominator of the PRESS $D = \bm 1-\textup{diag}(\bm P\bm X^T)$;
+3: 计算伪逆$\bm w = \bm C\bm X^T\bm y$;
 
-5: And finally the PRESS error $e = \frac{y-\bm X \bm w} {\bm D} $;
+4: 计算PRES的分子$D = \bm 1-\textup{diag}(\bm P\bm X^T)$;
 
-6: Reduced to a $\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$
+5: 计算PRESS的误差$e = \frac{y-\bm X \bm w} {\bm D} $;
 
-The main drawback of this approach lies in the use of a pseudo-inverse in the calculation (in the \textbf{Moore–Penrose sense}), which can lead to numerical instabilities if the data set $\bm X$ is not full rank. This is unfortunately very often the case, with real world data sets. The following approach proposes two improvements on the computation of the original \textbf{PRESS}: regularization and fast matrix calculations.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Tikhonov-regularized PRESS (TR-PRESS)}
-In \cite{Golub1979Generalized}, Golub et al. note that the singular value decomposition (SVD) approach to compute the PRESS statistic is preferable to the traditional pseudo-inverse mentioned above, for numerical reasons. In this very same paper is proposed a generalization of Allen's PRESS, as the \textbf{generalized cross-validation} (GCV) method, which is technically superior to the original \textbf{PRESS}, for it can handle cases were the data is extremely badly defined—for example if all $X$ entries are 0 except the diagonal ones.
+6: 优化误差$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$
 
-In practice, from our experiments, while the GCV is supposably superior, it leads to identical solutions with an increased computational time, compared to the original \textbf{PRESS} and the Tikhonov regularized version of PRESS presented below. Algorithm 1 gives the computational steps used, in matrix form, to determine the $\textup{MSE}^{\textup{TR-PRESS}}$ from
+这种方法的主要缺点在于在计算中使用伪逆（在\textbf{Moore–Penrose sense}中）,如果数据集$\bm X$不是全秩,则可能导致数值不稳定性.不幸的是,现实世界中的数据集经常出现这种情况.下面的方法对原始的计算提出了两个改进:正则化和快速矩阵计算.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Tikhonov正则化的PRESS (TR-PRESS)}
+%for numerical reasons. In this very same paper is proposed a generalization of Allen's PRESS, as the \textbf{generalized cross-validation} (GCV) method, which is technically superior to the original \textbf{PRESS}, for it can handle cases were the data is extremely badly defined—for example if all $X$ entries are 0 except the diagonal ones.
+在\cite{golub1979 generalized}中, Golub等人注意到: 使用奇异值分解（SVD）方法计算PRESS的统计结果比传统的伪逆方法更好.
+在同一篇论文中,我们提出了Allen's PRESS的一个推广, 即广义交叉验证（GCV）方法, 它在技术上优于原始的方法,因为它可以处理数据定义非常糟糕的情况, 例如, 如果除对角线项外,所有的$X$项都是0.
+
+实际上, 从我们的实验来看, 虽然GCV具有无可替代的优越性, 和原始的PRESS和Tikhonov正则化的PRESS相比, 它会导致计算时间陡增. 算法1以矩阵形式给出了用于确定$\textup{MSE}^{\textup{TR-PRESS}}$的计算步骤
 \begin{align}
   \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x^T y  }
        {1-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x_i^T}\right)^2
 \end{align}
-which is the regularized version of Eq. (18). The notation $A\circ B$ denotes element-wise product between matrices $\bm A$ and $\bm B$ (Schur product). It is used in step 4 of Algorithm 2 for it is faster than standard matrix product.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+这是公式（18）的正规化结果.
+符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘.
+在算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{algorithm}
 %\caption{Tikhonov-regularized PRESS.}
 %\label{Tikhonov-regularizedPRESS161018Algorithm2}
@@ -1083,138 +1103,124 @@ which is the regularized version of Eq. (18). The notation $A\circ B$ denotes el
 % \end{algorithmic}
 %\end{algorithm}
 
-Decompose $\bm X$ by SVD: $\bm X = \bm U\bm S\bm V^T$;
+用SVD分解$\bm X$: $\bm X = \bm U\bm S\bm V^T$;
 
-Compute the products (used later): $A = \bm X\bm V$ and $B = \bm U^T\bm y$;
+计算后面将要用到的乘积: $A = \bm X\bm V$ and $B = \bm U^T\bm y$;
 
-repeat
+重复如下步骤:
 
-Using the SVD of $\bm X$, compute the $\bm C$ matrix by:
+对$\bm X$用SVD分解, 按如下方式计算矩阵$\bm C$:
 
-Compute the $\bm P$ matrix by: $\bm P = \bm C\bm B$;
+计算 $\bm P$: $\bm P = \bm C\bm B$;
 
-Compute $\bm D$ by: $\bm D = \bm 1-\textup{diag}(\bm C\bm U^T)$;
+计算 $\bm D$: $\bm D = \bm 1-\textup{diag}(\bm C\bm U^T)$;
 
-Evaluate $e = \frac{y-\bm P} {\bm D}$ and the actual  MSE by $\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
+计算 $e = \frac{y-\bm P} {\bm D}$和MSE$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
 
-\textbf{until} convergence on $\lambda$ is achieved
+直到$\lambda$收敛.
 
-Keep the best $\textup{MSE}^{\textup{TR-PRESS}}$ and the $\lambda$ value associated.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+关联$\textup{MSE}^{\textup{TR-PRESS}}$ 和$\lambda$ 的最优值.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \textbf{Algorithm \ref{Tikhonov-regularizedPRESS161018Algorithm2}}. \textbf{Tikhonov-regularized PRESS}. In practice, the REPEAT part of this algorithm (convergence for l) is solved by a \textbf{Nelder–Mead approach} \index{Nelder–Mead approach} \cite{Nelder1965A}, a.k.a. downhill simplex.
 
-Globally, the algorithm uses the SVD of $\bm X$ to avoid computational issues, and introduces the Tikhonov regularization parameter in the calculation of the pseudo-inverse by the SVD. This specific implementation happens to run very quickly, thanks to the pre-calculation of utility matrices ($\bm A, \bm B$ and $\bm C$) before the optimization of $\lambda$.
-
-In practice, the optimization of $\lambda$ in this algorithm is performed by a \textbf{Nelder–Mead minimization approach}\index{Nelder–Mead minimization approach} \cite{Nelder1965A}, which happens to converge very quickly on this problem (fminsearch function in Matlab). Through the use of this modified version of PRESS, the OP-ELM has an $L_2$ penalty on the regression weights (regression between the hidden and output layer), for which the neurons have already been ranked using an $L_1$ penalty. Fig. \ref{TROPEMLmodel20161021fig2} is a modified version of Fig. \ref{OPELM20161021fig2} illustrating the \textbf{TROP-ELM} approach.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Globally, the algorithm uses the SVD of $\bm X$ to avoid computational issues, and introduces the Tikhonov regularization parameter in the calculation of the pseudo-inverse by the SVD. This specific implementation happens to run very quickly, thanks to the pre-calculation of utility matrices ($\bm A, \bm B$ and $\bm C$) before the optimization of $\lambda$.
+在全局上,该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数.由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A、\bm B$和$\bm C$）,所以此特定实现碰巧运行得非常快.
+%In practice, the optimization of $\lambda$ in this algorithm is performed by a \textbf{Nelder–Mead minimization approach}\index{Nelder–Mead minimization approach} \cite{Nelder1965A}, which happens to converge very quickly on this problem (fminsearch function in Matlab). Through the use of this modified version of PRESS, the OP-ELM has an $L_2$ penalty on the regression weights (regression between the hidden and output layer), for which the neurons have already been ranked using an $L_1$ penalty. Fig. \ref{TROPEMLmodel20161021fig2} is a modified version of Fig. \ref{OPELM20161021fig2} illustrating the \textbf{TROP-ELM} approach.
+在实际应用中,该算法中$\lambda$的优化是通过一种{textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(在Matlab中是fminsearch函数).通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序.图 \ref{TROPEMLmodel20161021fig2}是图的修改版本. 图\ref{OPELM20161021fig2}说明了\textbf{TROP-ELM}方法.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
-Now we use the new learning paradigm to train the RVFL network. Given a set of additional privileged information
-$\{\widetilde {\bm x}_i \in \mathbb R^d; i = 1,\cdots,N\}$ in the training process, the training data becomes $\{(\bm x_i,\widetilde {\bm x}_i; y_i)|\bm x_i \in \mathbb R^n, {\bm x}_i\in \mathbb R^d; y_i\in \mathbb R^m; i =1,\cdots,N\}$. In this new training set, $\bm x_i \in X$ is the original feature and in general the privileged feature $\bm x_i \in \widetilde X$ belongs to the privileged feature space $\widetilde X$ that is different from the original feature space $X$.
+现在我们使用新的学习范式来训练RVFL网络. 
+%Given a set of additional privileged information $\{\widetilde {\bm x}_i \in \mathbb R^d; i = 1,\cdots,N\}$ in the training process, the training data becomes $\{(\bm x_i,\widetilde {\bm x}_i; y_i)|\bm x_i \in \mathbb R^n, {\bm x}_i\in \mathbb R^d; y_i\in \mathbb R^m; i =1,\cdots,N\}$. In this new training set, $\bm x_i \in X$ is the original feature and in general the privileged feature $\bm x_i \in \widetilde X$ belongs to the privileged feature space $\widetilde X$ that is different from the original feature space $X$.
+在这个新的训练集中,$\bm x_i\in X$是原始功能,一般来说,特权功能$\bm x_i\in \widetilde x$属于特权功能空间$\widetilde x$, 它不同于原始功能空间$x$。
 
-
-The model structure of the RVFL is so simple, why does the RVFL work well for most tasks? Giryes et. al. [42] give
-a possible theoretical explanation for this open problem. To
-provide this explanation, first of all, Giryes et. al. reveal the
-essence of training in learning algorithms. Generally speaking,
-the angles of samples between different classes are larger than
-that of samples within the same class [43]. Therefore, the role
-of training in learning algorithms is that ’the angles between
-points from different classes are penalized more than the
-angles between the points in the same class’ [42]. Moreover,
-in this big data era, due to the highly complicated model architecture, it is quick difficult to tune all parameters in leaning
-process, which needs extremely high computational cost. To
-tackle this problem, randomization is an ideal choice for some
-learning algorithms, leading to cheaper computational cost. A
-great random initialization allows the learning algorithm to be
-a universal one before training. Now we revisit the RVFL. The
-RVFL uses the hybrid strategy to train the entire network. In
-the RVFL, the random initial parameters between the input
-layer and the enhancement nodes handle well input samples
-having distinguishable angles, and the turned output weights
-further deal with the remaining data.
-
-The RVFL network is a classical single layer feedforward neural network, and the architecture of the RVFL is shown in Figure \ref{RVFLNN181102Sys}. The RVFL initializes randomly all weights and biases between the input layer and enhancement nodes, and then these parameters are fixed and do not need to be tuned during the training stage. The output weights on red solid lines in Figure \ref{RVFLNN181102Sys} can be calculated by the Moore-Penrose pseudoinverse \cite{PaoPhillips1995-6471,IgelnikPao1995-6470} or the ridge regression \cite{Bishop2012-6469}. Moreover, the direct link between the input layer and the output layer is an effective and simple regularization technique preventing RVFL networks from overfitting.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Giryes et. al. [42] give a possible theoretical explanation for this open problem. To provide this explanation, first of all, Giryes et. al. reveal the essence of training in learning algorithms. Generally speaking,the angles of samples between different classes are larger than that of samples within the same class [43]. Therefore, the role of training in learning algorithms is that ’the angles between points from different classes are penalized more than the angles between the points in the same class’ [42]. Moreover,in this big data era, due to the highly complicated model architecture, it is quick difficult to tune all parameters in leaning process, which needs extremely high computational cost. To tackle this problem, randomization is an ideal choice for some learning algorithms, leading to cheaper computational cost. A great random initialization allows the learning algorithm to be a universal one before training. Now we revisit the RVFL. The RVFL uses the hybrid strategy to train the entire network. In the RVFL, the random initial parameters between the input layer and the enhancement nodes handle well input samples having distinguishable angles, and the turned output weights further deal with the remaining data.
+RVFL的模型结构如此简单,为什么RVFL能很好地完成大多数任务? Giryes等人.[42]对这个开放问题给出一个可能的理论解释.为了提供这个解释,首先,Giryes等人.揭示学习算法训练的本质.一般来说,不同类别之间的样本角度大于同一类别内的样本角度[43].因此,训练在学习算法中的作用是“不同类别的点之间的角度比同一类别的点之间的角度受到的惩罚更大”[42].而且,在这个大数据时代,由于模型结构高度复杂,学习过程中很难对所有参数进行快速调整,这就需要极高的计算成本.为了解决这个问题,随机化是一些学习算法的理想选择,从而降低了计算成本.一个伟大的随机初始化允许学习算法是一个通用的训练前.现在我们再次访问RVFL.RVFL使用混合策略来训练整个网络.在RVFL中,输入层和增强节点之间的随机初始参数处理具有可分辨角度的良好输入样本,旋转输出权重进一步处理剩余数据.
+RVFL网络是一种经典的单层前向神经网络,其结构如图\ref{RVFLNN181102Sys}所示. RVFL随机初始化输入层和增强节点之间的所有权重和偏差, 然后这些参数在训练阶段不需要调整.
+图\ref{RVFLNN181102Sys}中红色实线代表的输出权重可以通过Moore-Penrose伪逆(\cite{paopillips1995-6471,IgelnikPao1995-6470})或岭回归(引用{Bishop2012-6469})来计算.
+此外, 输入层和输出层之间的直接连接是防止RVFL网络过度拟合的一种有效而简单的正则化技术.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[tb]
 \centering
-  \includegraphics[width=0.75\textwidth]{RVFL20181102Sys.PNG}
+  \includegraphics[width=0.85\textwidth]{RVFL20181102Sys.PNG}
   \caption{The architecture of the RVFL network.}
   \label{RVFLNN181102Sys}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The RVFL+ is an unified learning algorithm for all binary, multiclass classification and regression, and the output function in (19) can be straightforwardly applied for all three
-cases. \index{Classification and regression}\index{Regression and Classification}
+RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习算法, 并且(19)中的输出函数可以直接应用于所有三种情况.
 \begin{enumerate}
-  \item Binary Classification: The predicted label of the test
-sample is determined by
+  \item Binary Classification: The predicted label of the test sample is determined by
+  %二元分类:测试样品的预测标签由
 \begin{align}
   \hat y = \textup{sign}(f_{test}(z))
 \end{align}
-  \item Multiclass Classification: We adopt the one-vs.-all (OvA) strategy to determine the predicted label in the multiclass classification. Let $f_{test}^k (z)$ be the output function of the k-th output nodes. The predicted label of the test sample is determined by
+  \item %Multiclass Classification: We adopt the one-vs.-all (OvA) strategy to determine the predicted label in the multiclass classification. Let $f_{test}^k (z)$ be the output function of the k-th output nodes. The predicted label of the test sample is determined by
+      多类分类:我们采用一对多(OvA)策略来确定多类分类中的预测标签.设$f{test}^k（z）$为第k个输出节点的输出函数.测试样品的预期标签由
 \begin{align}
   \hat y = \arg \max_{ k \in 1,\cdots,m} f_{test}^k (z)
 \end{align}
-  \item  Regression: The predicted value is equal to the output function $f_{test}(z)$ of the RVFL+
+  \item  %Regression: The predicted value is equal to the output function $f_{test}(z)$ of the RVFL+
+  回归:预测值等于RVFL的输出函数$f{test}（z）$+
 \begin{align}
   \hat y = f_{test}(z)
 \end{align}
 \end{enumerate}
 
-Following the formula of the SVM+ in \cite{VAPNIK2009544}, we can write the RVFL+ as
+按照\cite{VAPNIK2009544}中的SVM+公式，我们可以将RVFL+写成
 \begin{align}
 &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2 \|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))\notag\\
 &s.t.\,\, \bm h(\tilde x_i){\bm w} = \bm y_i - \zeta_i (\tilde {\bm w}; {\tilde h}({\tilde {\bm x}}_i)), \forall \leq i \leq  N.\label{RVFL20181102eq8}
 \end{align}
-where $\gamma$ is a regularization coefficient. Likewise to $\bm h(\bm x_i)$, ${\tilde {\bm h}}({\tilde {\bm x}}_i)$ is also an enhanced layer output vector corresponding to the privileged feature ${\tilde {\bm x}}_i$, which can be calculated in the same fashion. $\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))$ is the correcting function (or slack function) in the privileged feature space, and $\tilde {\bm w}$ is an output weight vector for the correcting function.
+%Likewise to $\bm h(\bm x_i)$, ${\tilde {\bm h}}({\tilde {\bm x}}_i)$ is also an enhanced layer output vector corresponding to the privileged feature ${\tilde {\bm x}}_i$, which can be calculated in the same fashion. $\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))$ is the correcting function (or slack function) in the privileged feature space, and $\tilde {\bm w}$ is an output weight vector for the correcting function.
+其中$\gamma$是正则化系数. 与$\bm h（\bm x_i）$类似, ${\tilde{\bm h}}（{\tilde{\bm x_r}}i）$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量,可以用相同的方式计算.
+$\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空间中的更正函数（或可宽延函数）,而$\tilde{\bm w}$是更正函数的输出权重向量.
 \begin{align}\label{RVFL20181102eq9}
 \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}
 \end{align}
 
-Substituting \eqref{RVFL20181102eq9} into \eqref{RVFL20181102eq8}, we have the primal form of the RVFL+ as follows.
+将\eqref{RVFL20181102eq9}代入\eqref{RVFL20181102eq8}, 得到RVFL+表达形式.
 \begin{align}
 &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}\notag\\
 &s.t.\,\,\bm h(\tilde x_i){\bm w} =\bm y_i - {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}, \forall \leq i \leq  N.\label{RVFL20181102eq10}
 \end{align}
-From \eqref{RVFL20181102eq10}, we note that the RVFL+ minimizes the objective function over both w and w~. Therefore, Not only the original features but also the privileged information determine meanwhile the separating hyperplane of the RVFL+ during the training stage.
-
-Moreover, in contrasts to the primal form of the SVM+ in \cite{VAPNIK2009544}, the correcting function of the RVFL+ is either positive or negative. In other words, the RVFL+ does not consider a group of constraints $\zeta_i(\tilde {\bm h}, b, \phi({\bm x}_i)) \geq 0 (i = 1,\cdots,N)$. As a result, the number of constraints in the RVFL+ is at least N less than that of the SVM+ for the binary classification, which results that the RVFL+ has much milder optimization constraints than the SVM+.
-
-Furthermore, in order to address the optimization problem in \eqref{RVFL20181102eq10}, we construct the Lagrangian function $\mathscr L (\bm w, \tilde{\bm w},\bm \lambda)$ as
+从\eqref{RVFL20181102eq10}, 我们注意到RVFL+最小化了$w$和$\tilde w$上的目标函数. 因此, 训练阶段RVFL+的分离超平面不仅取决于原始特征, 还取决于优先考虑的信息.
+此外, 与SVM+的原始模型相比\cite{VAPNIK2009544}, RVFL+的修正函数是正的或负的.
+换句话说, RVFL+不考虑约束组$\zeta_i（\tilde{\bm h}, b, \phi（{\bm x}i））\geq 0（i=1, \cdots, N）$.
+对于二值分类, RVFL+中的约束数目至少比SVM+少N个, 这使得RVFL+的优化约束要比SVM+的小得多.
+此外, 为了解决\eqref{RVFL20181102eq10}中的优化问题, 构造如下的Lagrangian函数$\mathscr L（\bm w, \tilde{\bm w}, \bm\lambda）$
 \begin{align}
 \min\limits_{\bm w, \tilde{\bm w},\bm \lambda} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}-\sum_{i=1}^N  \bm \lambda_i(\bm h(\tilde {\bm x}_i){\bm w} -\bm y_i +{\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}),
 \end{align}
-where $\bm \lambda = [\bm \lambda_1,\cdots, \bm \lambda_N]^T$ are Lagrange multipliers. To find solutions, we use the KKT condition to calculate the saddle points of the Lagrangian function $\mathscr L (\bm w, \tilde{\bm w},\bm \lambda)$ with respect to $\bm w, \tilde{\bm w}$ and $\bm \lambda$.
+其中$\bm\lambda=[\bm\lambda_1, \cdots, \bm\lambda_N]^T$是拉格朗日乘子. 为了找到解, 我们使用KKT条件来计算Lagrangian函数$\mathscr L（\bm w, \tilde{\bm w},\bm\lambda）$关于变量$\bm w,\tilde{\bm w}$和$\bm\lambda$的鞍点.
 \begin{align}
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \bm w}= 0 \Rightarrow  \bm w = \bm  H^T \bm \lambda, \label{RVFL20181102eq12}\\
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \tilde{\bm w}} = 0 \Rightarrow  \tilde{\bm w} = \frac 1  \gamma  (\tilde{\bm  H}^T  \bm \lambda - \tilde{\bm  H}^T C \bm 1), \label{RVFL20181102eq13}\\
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \bm \lambda_i} = 0 \Rightarrow  \bm h(\bm x_i)\bm w - \bm y_i + \tilde {\bm h}({\bm x}_i) \tilde{\bm w} = 0, 1 \leq  i \leq  N.\label{RVFL20181102eq14}
 \end{align}
-where $\bm 1 \in \mathbb R^{N\times m}$ is an identify matrix. $\tilde {\bm H}$ is also a concatenated output matrix from the enhancement nodes, which corresponds to the privileged features.
-
-Substituting \eqref{RVFL20181102eq12} and \eqref{RVFL20181102eq13} into \eqref{RVFL20181102eq14}, we have
+其中$\bm 1\in\mathbb R^{N\times m}$是单位矩阵。$\tilde{\bm H}$也是来自增强节点的连接输出矩阵, 它对应于RVFL的特性.
+将\eqref{RVFL20181102eq12}和\eqref{RVFL20181102eq13}代入\eqref{RVFL20181102eq14}, 得到
 \begin{align}
   \bm H \bm H^T  \bm \lambda + \frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  (\bm \lambda -C \bm 1) = \bm Y \label{RVFL20181102eq15}
 \end{align}
 
-We can further reformulate \eqref{RVFL20181102eq15} as
+可以进一步将\eqref{RVFL20181102eq15}重写为
 \begin{align}
   \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )\bm \lambda  = \bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T  \label{RVFL20181102eq16}
 \end{align}
-Combining \eqref{RVFL20181102eq12} and \eqref{RVFL20181102eq16}, we obtain the closed-form solution to the RVFL+ as follows.
+再由\eqref{RVFL20181102eq12}和\eqref{RVFL20181102eq16}, 得到RVFL+As的最后闭式解
 \begin{align}
 \bm  w =\bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )^{-1} \left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ) \label{RVFL20181102eq17}
 \end{align}
-According to the ridge regression \cite{Bishop2012-6469}, we also impose an additional term $\frac {\bm I} C $ in order to avoid singularity and guarantee the stability of the RVFL+. As a result, we can achieve the aftermost closed-form solution to the RVFL+ as
+根据岭回归方法\cite{Bishop2012-6469}, 为了避免奇异性并保证RVFL+的稳定性, 我们还附加了一个$\frac{\bm I}C$项. 因此,我们可以得到RVFL+As的最终闭式解
 \begin{align}
 \bm w = \bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T +\frac{ \bm I} C \right)^{-1} \left(\bm Y -\frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right )
 \label{RVFL20181102eq18}
 \end{align}
-Consequently, the output function of the RVFL+ is defined as
+RVFL+ 输出函数定义为
 \begin{align}
   f(x) =\bm  h (\bm x)\bm w =\bm h(\bm  x)\bm H^ T \left(\bm H \bm H^T  +\frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  +\frac{\bm  I} C \right)^{-1}\left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ).
 \end{align}
-In addition, we can obtain straightforwardly the output function $f_{test}(\bm z) = \bm h(\bm z)\bm w$ in the test stage, when using the test data z instead of the training data $\bm x$.
+此外,在测试阶段,当使用测试数据$\bm z$而不是训练数据$\bm x$时, 我们可以直接获得输出函数$f_{test}（\bm z）=\bm h（\bm z）-\bm w$.
 \subsubsection{区间二型模糊集}
 本节将随机向量函数链接网络(RVFL) 推广到了张量结构,  增强节点使用了区间二型模糊集来扩展非线性激活函数, 主要目的是用二型模糊集来捕捉输入输出关系中蕴含的高阶信息.
 提出了两种随机向量函数链接网络, 一种是区间二型随机向量函数链接网络, 另一种是基于张量的二型随机向量函数链接网络.
@@ -1310,7 +1316,7 @@ In addition, we can obtain straightforwardly the output function $f_{test}(\bm z
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 TT2-RVFL 的输出模型如图 \ref{TensorRVFL20180927-2}:
 \begin{align}
-  \bm Y=\mathcal A *_N \mathcal X+\bm H \bm \Omega,\label{TensorRVFLEq05}
+    \bm Y=\mathcal A *_N \mathcal X+\bm H \bm \Omega,\label{TensorRVFLEq05}
 \end{align}
 其中 $\mathcal A *_N \mathcal X$ 为增强节点的张量乘积, $\bm H \bm \Omega$ 为线性部分的输出 ,  $\mathcal X$ 为增强节点部分的权重矩阵;
 类似于RVFL, $\bm H$ 是输入数据矩阵, 单列输出的数据需要复制一次, 以便与张量和矩阵的运算结果相容, $\Omega$是线性部分的权矩阵, 且$\mathcal A$是一个张量, 它是由 叠加区间二型模糊集的映射结果得到的张量.
@@ -1364,7 +1370,7 @@ RVFL常使用 Radbas ($y = \exp(-s^2)$), Sine ($y = \textup{sine} (s)$), Sigmoid
 不确定加权方法\cite{RunklerCoupland2018-6356}  被用于区间二型模糊激活函数的解模糊化计算,
 它代表了隶属函数隶属度对于整体解模糊化结果的影响程度, 映射结果由下式计算得到
 \begin{align} \label{TensorRVFLEq08}
-  u_{UW} (x) =\frac 1 2 (\underline u(x) + \bar u(x))\cdot (1+\underline u(x)-\bar u(x))^\gamma,
+    u_{UW} (x) =\frac 1 2 (\underline u(x) + \bar u(x))\cdot (1+\underline u(x)-\bar u(x))^\gamma,
 \end{align}
 其中 $\gamma > 0$ 用于调整由$(1+\underline u(x)-\bar u(x))^\gamma$给出解模糊化结果.
 不确定加权方法推广了简单的平均下隶属和上隶属度方法, 清晰输出结果由下式给出
@@ -1401,7 +1407,8 @@ TT2-RVFL 的输出可用下式表示
 \begin{align}
   \bm Y=\alpha\mathcal A *_N \mathcal X+(1-\alpha)\bm H \bm \Omega, 0\leq \alpha\leq 1,\label{TensorRVFLEq08}
 \end{align}
-其中 $\alpha$是TT2-RVFL的平衡因子, $\mathcal A$是区间二型模糊激活函数的映射结果, $\mathcal X$是权重矩阵, $\bm Y=[\bm y\, \bm y]$, 从输入到增强节点的权重向量$\bm {a} _{i} \,(i=1,2,\cdots, L)$是随机生成的,  使得 $\underline\Phi$, $\bar\Phi$不饱和;  $\bm\Omega=[\bm \omega\, \bm \omega]$是待求的输入权重矩阵,  $\bm H$ 是由输入样本构建的输入矩阵.
+其中 $\alpha$是TT2-RVFL的平衡因子, $\mathcal A$是区间二型模糊激活函数的映射结果, $\mathcal X$是权重矩阵, $\bm Y=[\bm y\, \bm y]$, 从输入到增强节点的权重向量$\bm {a} _{i} \,(i=1,2,\cdots, L)$是随机生成的, 
+使得 $\underline\Phi$, $\bar\Phi$不饱和; $\bm\Omega=[\bm \omega\, \bm \omega]$是待求的输入权重矩阵, $\bm H$ 是由输入样本构建的输入矩阵.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
   当下三角隶属函数和上三角隶属函数一样时, TT2-RVFL 退化为RVFL, 也即, 激活函数是一型模糊集. 当不适用直接连接方式,  TT2-RVFL 将会退化为张量型极限学习机 \cite{HuangZhao2018NCAA-5838}. 当同时使用RVFL和张量结构时,  TT2-RVFL是这两种结构的混合结果.
@@ -1423,7 +1430,7 @@ TT2-RVFL 的输出可用下式表示
 %\STATE 对矩阵$A$做奇异值分解, $A$ 可以分解为 $A=U S V^*$, 其中 $V^*$ 是矩阵$V$的共轭转置.
 %\STATE 分别将矩阵$U, S$和$V^*$ 转换为相应阶次的张量$\mathcal U, \mathcal S$ 和$\mathcal V^*$.
 %\STATE 输出: 通过$\mathcal A^+ = \mathcal V *_N\mathcal S^+ *_N \mathcal U^*$计算张量$\mathcal A$的 M-P逆.
-% \end{algorithmic}
+%\end{algorithmic}
 %\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1689,7 +1696,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \label{NetEvolving2020020401}
 \end{figure}
 
-进化计算主要包括
+进化计算主要包括一下四个分支:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item 遗传算法(Genetic Algorithm, GA)
@@ -1808,14 +1815,41 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 
 其算法流程如图\ref{AI32fig2019120226518}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.76\textwidth]{AI32C420191126518.PNG}
+%\caption{}
+%\label{AI32fig2019120226518}
+%\end{figure}
+%%%%%%%----------------------------------------
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{AI32C420191126518.PNG}
-\caption{}
+\begin{center}
+\begin{tikzpicture}[decision/.style={diamond, draw, fill=blue!20, text width=3.5cm, aspect=5,align=flush center, inner sep=0pt},font={\sf \small},scale=0.78]
+\def \smbwd{2cm}
+\def \smbwe{4cm}
+\thispagestyle{empty}
+%定义流程图的具体形状
+\node (ABC0) at (-1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{1,0,1}{生成初始种群并编码}};   % PQR0
+\node (nCz)[draw, process,align=center,below=0.5cm of ABC0,yshift=0cm] {计算个体适应值并评价};                                                %R1
+\node (nCzleft0)[align=center,right=4cm of nCz,yshift=1.05cm] {\textcolor[rgb]{0,0,1}{}};                                                      %R1
+\draw[thick,thick,->](ABC0)--(nCz);
+\node (AB0)[draw, decision,align=center,below=0.5cm of nCz,yshift=0cm,xshift=0.0cm] {满足终止条件吗?};                  %20
+\draw[thick,thick,->](nCz)--(AB0);
+\node (Choose)[draw, process,align=center,below=1cm of AB0,yshift=0cm] {\textcolor[rgb]{0,0,1}{选择}};
+\draw[thick,thick,->](AB0)--node[left,xshift=0.1cm]{$Y$}(Choose);
+\node (Cross)[draw, process,align=center,below=0.5cm of Choose,yshift=0cm] {\textcolor[rgb]{0,0,1}{交叉}};
+\draw[thick,thick,->](Choose)--(Cross);
+\node (Mutation)[draw, process,align=center,below=0.5cm of Cross,yshift=0cm] {\textcolor[rgb]{0,0,1}{变异}};
+\draw[thick,thick,->](Cross)--(Mutation);
+\draw[thick,->](Mutation)-|(nCzleft0.center)-|(nCz.north);
+\node (nil0)[draw, process,align=center,right=3cm of Choose] {\textcolor[rgb]{1,0,1}{中止}};
+\draw[thick,->](AB0)node[left,xshift=3.2cm,yshift=-0.2cm] {$N$}-| (nil0);                                              %30
+\end{tikzpicture}
+\end{center}
+\caption{简单GA算法的流程图}
 \label{AI32fig2019120226518}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{遗传编码}
 
 常用的遗传编码算法有霍兰德二进制码、格雷码(Gray Code)、实数编码和字符编码等.
@@ -1846,7 +1880,8 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 设有二进制串$b_1,b_2,\cdots,b_n$, 对应的格雷串为$a_1,a_2,\cdots,a_n$, 则从二进制编码到格雷编码的变换为:
 
 \begin{align}
-  a_{i}=\left\{\begin{array}{ll}{b_{1},} & {i=1} \\ {b_{i-1} \oplus b_{i}} & {i>1}\end{array}\right.
+  a_{i}=\left\{\begin{array}{ll}{b_{1},} & {i=1} \\
+  {b_{i-1} \oplus b_{i}}, & {i>1}\end{array}\right.
 \end{align}
 其中, ⊕表示模2加法. 而从一个格雷串到二进制串的变换为:
 \begin{align}
@@ -1892,8 +1927,8 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \begin{align}
 f(x)=
 \left\{\begin{array}{ll}
-{f_{\max }(x)-f(x)} &f(x)<f_{\max}(x) \\
-{0} & f(x)\geq f_{\max }(x)
+{f_{\max }(x)-f(x)}, &f(x)<f_{\max}(x) \\
+{0}, & f(x)\geq f_{\max }(x)
 \end{array}
 \right.
 \end{align}
@@ -1925,16 +1960,16 @@ f(x)=
 \end{align}
 其中, $f(x)$是加速转换前的适应度函数; $f'(x)$是加速转换后的适应度函数;  $\alpha$和$\beta$是转换系数.
 
-    \ding{173}  非线性加速
+\ding{173}  非线性加速
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item 幂函数变换方法
    \begin{align}
-     f'(x)=f(x)k
+        f'(x)=f(x)k
    \end{align}
 \item 指数变换方法
          \begin{align}
-           f'(x)=exp^{-\beta f(x)}
+            f'(x)=exp^{-\beta f(x)}
          \end{align}
 \end{itemize}
 
@@ -1952,7 +1987,7 @@ f(x)=
 
     比例选择方法(Proportional Model)的基本思想是: 各个个体被选中的概率与其适应度大小成正比.
 
-    常用的比例选择策略包括: (1) 轮盘赌选择. (2)繁殖池选择
+    常用的比例选择策略包括: (1) 轮盘赌选择. (2) 繁殖池选择.
 
 \item 轮盘赌选择
 
@@ -1962,13 +1997,12 @@ f(x)=
 \end{align}
 其中, $P(x_i)$是个体$x_i$的相对适应度, 即个体$x_i$被选中的概率; $f(x_i)$是个体$x_i$的原始适应度; 是种群的累加适应度.
 \end{itemize}
-轮盘赌选择算法的基本思想是: 根据每个个体的选择概率$P(x_i)$将一个圆盘分成$N$个扇区, 其中第$i$个扇区的中心角为:
+    轮盘赌选择算法的基本思想是: 根据每个个体的选择概率$P(x_i)$将一个圆盘分成$N$个扇区, 其中第$i$个扇区的中心角为:
 \begin{align}
   2 \pi \frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f_{i}\left(x_{j}\right)}=2 \pi p\left(x_{i}\right)
 \end{align}
 
-并再设立一个固定指针. 当进行选择时, 可以假想转动圆盘, 若圆盘静止时指针指向第$i$个扇区, 则选择个体$i$. 其物理意义如图5-19所示.
-
+并再设立一个固定指针. 当进行选择时, 可以假想转动圆盘, 若圆盘静止时指针指向第$i$个扇区, 则选择个体$i$.
 从统计角度看, 个体的适应度值越大, 其对应的扇区的面积越大, 被选中的可能性也越大. 这种方法有点类似于发放奖品使用的轮盘, 并带有某种赌博的意思, 因此亦被称为\textbf{轮盘赌选择}.
 
 (2)交叉操作
@@ -2521,19 +2555,19 @@ $S_{24}$=11110\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它算法*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{鱼群算法}
+\subsection{鱼群算法}\index{鱼群算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{鸟群算法}
+\subsection{鸟群算法}\index{鸟群算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{象群算法}
+\subsection{象群算法}\index{象群算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{蚁群算法}
+\subsection{蚁群算法}\index{蚁群算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{狼群算法}
+\subsection{狼群算法}\index{狼群算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{蝙蝠算法}
+\subsection{蝙蝠算法}\index{蝙蝠算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{随机森林}
+\subsection{随机森林}\index{随机森林}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \begin{center}
@@ -3119,7 +3153,7 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 \end{align}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{模糊关系的合成}
+\subsection{模糊关系的合成}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊关系}{1}
 设$R_1$与$R_2$分别是$U\times V$与$U\times W$上的两个模糊关系, 则$R_1$与$R_2$的合成是从$U$到$W$的一个模糊关系, 记为   $R_1\circ R_2$. 其隶属函数为
@@ -3140,9 +3174,9 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 \begin{align}
   R=R_{1} \circ R_{2}=\left[\begin{array}{ll}{0.5} & {0.5} \\ {0.7} & {0.8}\end{array}\right]
 \end{align}
-其方法是把$R_1$的第$i$行元素分别与$R_2$的第$j$列的对应元素相比较, 两个数中取最小者, 然后再在所得的一组最小数中取最大的一个, 并以此数作为$R_1\circ R_2$的元素$R(i,j)$. \end{example}
+其方法是把$R_1$的第$i$行元素分别与$R_2$的第$j$列的对应元素相比较, 两个数中取最小者, 然后再在所得的一组最小数中取最大的一个, 并以此数作为$R_1\circ R_2$的元素$R(i,j)$. 
+\end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{模糊变换}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊变换}{1}
 设$F=\{\mu_F(u_1),\mu_F(u_2),\cdots, \mu_F(u_n)\}$, 是论域$U$上的模糊集, $R$是$U\times V$上的模糊关系, 则$F\circ R=G$称为模糊变换.

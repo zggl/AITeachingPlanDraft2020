@@ -273,15 +273,15 @@ The  professor  trains  Jack.
 目前, 用于语义分析的技术比较多, 本节仅简单介绍语义文法和格文法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{语义文法}
-    语义文法是在上下文无关文法的基础上, 将“名词短语”、“动词短语”、“名词”等这些不含有语义信息的纯语法类别, 用所讨论领域的专门信息, 像“山”、“水”、“动物”、等这些具有很强语义约束的语义类别来代替. 利用语义文法进行语义分析, 就可以排除像“论文收到教授”这类无意义的句子.
+    语义文法是在上下文无关文法的基础上, 将“名词短语”、“动词短语”和“名词”等这些不含有语义信息的纯语法类别, 用所讨论领域的专门信息, 像“山”、“水”和“动物”、等这些具有很强语义约束的语义类别来代替. 利用语义文法进行语义分析, 就可以排除像“论文收到教授”这类无意义的句子.
 
 \begin{example}
 下面是一个关于舰船信息的语义文法的例子:
 \begin{Verbatim}
-        S $\rightarrow $ PRESENT  the  ATTRIBUTE  of  SHIP
-        PRESENT $\rightarrow $ what  is  | can  you  tell  me
+        S $\rightarrow $ PRESENT the ATTRIBUTE of SHIP
+        PRESENT $\rightarrow $ what is | can you tell me
         ATTRIBUTE $\rightarrow $ length | class
-        SHIP $\rightarrow $ the  SHIPNAME | CLASSNAME  class  ship
+        SHIP $\rightarrow $ the  SHIPNAME | CLASSNAME class ship
         SHIPNAME $\rightarrow $ Huanghe | Changjiang
         CLASSNAME $\rightarrow $ carrier | submarine
 \end{Verbatim}
