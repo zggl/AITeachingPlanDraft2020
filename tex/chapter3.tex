@@ -159,8 +159,8 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 演绎推理是一种让人“放心”, 而偏于”保守“的推理机制. 而常识推理是在实践和经验的基础上进行的, 是一种从特殊性到普遍性的推理, 具有“容错”的特征.
 通过不断的发现矛盾与限制矛盾, 修正和维护知识, 其知识的正确性, 既不取决于逻辑的推理规则, 也不取决于以知识为前提的推理过程, 而是取决于推理的结果与事实的符合程度.
-演绎推理的真值只能是或“真”或“假”.
 
+演绎推理的真值只能是或“真”或“假”.
 常识推理的真值可以是从“真”到“假”之间的任意一个过渡值. 因此, 在常识推理中, 往往会用一种确定度来表示结果的真实程度.
 而在正畸思维中, 往往是这样一种常识推理的心理思维活动在其中起决定性作用, 因此, 如何将常识推理, 或说不确定性推理的思维活动采用定量的形式让计算机处理, 将会大大提高数字化人工智能正畸技术的发展.
 %%%%%%%---------------------------------------------
@@ -179,7 +179,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \paragraph{控制策略的分类}~{}
 由于智能系统的推理过程一般表现为一种搜索过程, 因此, 推理的控制策略又可分为\uwave{推理策略}和\uwave{搜索策略}.
 \begin{itemize}
-\item 推理策略: 主要解决推理方向、推理冲突等问题, 如推理方向控制策略、求解策略、限制策略、冲突消解策略等.
+\item 推理策略: 主要解决推理方向和推理冲突等问题, 如推理方向控制策略、求解策略、限制策略和冲突消解策略等.
     \begin{itemize}
     \item 推理方向控制策略用于确定推理的方向控制, 可分为正向推理、逆向推理、混合推理及双向推理.
     \item 求解策略是指仅求一个解, 还是求所有解或最优解等.
@@ -207,7 +207,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 (5) 询问用户是否可以进一步补充新的事实, 若可补充, 则将补充的新事实加入综合数据库中, 然后转(3); 否则表示无解, 失败退出.
 
 至于如何根据综合数据库中的事实到知识库中选取可用知识, 当知识库中有多条知识可用时, 应先使用哪一条知识等. 这些问题涉及到了知识的匹配方法和冲突消解策略, 以后将会分别讨论.
-其流程如图\ref{AI32fig12}所示:
+正向推理求解的算法流程如图\ref{AI32fig12}所示:
 %%%%%%%-----------------------------------------------%
 %\begin{figure}[H]
 %\centering
@@ -434,7 +434,15 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \subsubsection{逻辑学的分类}
 
 逻辑学是一门研究\uwave{思维形式及思维规律}的科学.  从17世纪德国数学家和哲学家莱布尼兹(G. Leibniz)提出数理逻辑以来, 随着人工智能的一步步的发展, 各种各样的逻辑也随之产生.
-逻辑学大体上可分为\uwave{经典逻辑、非经典逻辑和现代逻辑}. 经典逻辑与模态逻辑都是二值逻辑. 多值逻辑是具有多个命题真值的逻辑, 是向模糊逻辑的逼近. 模糊逻辑是处理具有模糊性命题的逻辑. 概率逻辑是研究基于逻辑的概率推理.
+逻辑学大体上可分为\uwave{经典逻辑、非经典逻辑和现代逻辑}. 
+
+1) 经典逻辑与模态逻辑都是二值逻辑. 
+
+2) 多值逻辑是具有多个命题真值的逻辑, 是向模糊逻辑的逼近. 
+
+3) 模糊逻辑是处理具有模糊性命题的逻辑. 
+
+4) 概率逻辑是研究基于逻辑的概率推理.
 %%%%%%%---------------------------------------------
 \subsubsection{泛逻辑的基本原理}
 
@@ -463,8 +471,10 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 常识推理是一种非单调逻辑推理方法, 即人们基于不完全的信息推出某些结论, 当人们得到更完全的信息后, 可以改变甚至收回原来的结论. 非单调逻辑可处理信息不充分情况下的推理.
 20世纪80年代, 赖特(R. Reiter, 发表篇名为``ADe—fault  Reasoning"的论文)的缺省逻辑、麦卡锡的限定逻辑、麦克德莫特和多伊尔建立的非单调逻辑推理系统(NMLS)以及摩尔的自认知逻辑都是具有开创性的非单调逻辑系统.
-常识推理是一种可能出错的不精确的推理, 即\textbf{容错推理}.
-此外, 多值逻辑和模糊逻辑也已经被引入到人工智能中, 用于处理模糊性和不完全性信息. 多值逻辑的三个典型系统是克林、卢卡西维兹和波克万的三值逻辑系统. 模糊逻辑的研究始于20世纪20年代卢卡西维兹的研究. 1972年, 扎德提出了模糊推理的关系合成原则, 现有的大多数模糊推理方法都是关系合成规则的变形或扩充.
+常识推理是一种可能出错的不精确的推理, 即\textbf{容错推理}.此外, 多值逻辑和模糊逻辑也已经被引入到人工智能中, 用于处理模糊性和不完全性信息. 
+\begin{remark}
+    多值逻辑的三个典型系统是克林、卢卡西维兹和波克万的三值逻辑系统. 模糊逻辑的研究始于20世纪20年代卢卡西维兹的研究. 1972年, 扎德提出了模糊推理的关系合成原则, 现有的大多数模糊推理方法都是关系合成规则的变形或扩充.
+\end{remark}
 %%%%%%%---------------------------------------------
 \subsection{人工智能———当代逻辑发展的动力}
 
@@ -483,6 +493,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 理论的终极形态是试图找到一个包容一切逻辑的泛逻辑, 得以形成一个完美统一的逻辑基础;
 另一方面, 我们还要不断地争论、更新和补充新的逻辑形式. 如果二者能够有机地结合, 将推动人工智能进入一个新的阶段.
 概率逻辑大都是基于二值逻辑的, 目前许多专家和学者又在基于其他逻辑的基础上研究概率推理, 使得逻辑学尽可能满足人工智能各方面的发展需要.
+
 就目前来说, 一个新的泛逻辑理论的发展和完善需要一个比较长的时期, 各自发挥其优点, 为人工智能的发展做出贡献.
 目前, 许多制约人工智能发展的问题仍有待于解决, 技术上的突破, 还有赖于逻辑学研究上的突破. 在对人工智能的研究中, 只有重视逻辑学, 努力学习与运用并不断深入挖掘其基本内容, 拓宽其研究领域, 才能更好地促进人工智能学科的发展(机器人网 2017-11-08).
 %%%%%%%---------------------------------------------
@@ -499,7 +510,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 由于谓词公式中可能包含有个体常量、变元或函数, 因此, 必须先考虑这些个体常量和函数在个体域上的取值, 然后才能根据它们的具体取值为谓词分别指派真值.
 
 %%%%%%%------------------------------------------
-\begin{mydef}{解释}{1}
+\begin{mydef}{解释I}{1}
 设$D$是谓词公式$P$的非空个体域, 若对$P$中的个体常量、函数和谓词按如下规定赋值:
 
 (1) 为每个个体常量指派$D$中的一个元素；
@@ -700,8 +711,11 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 (9) 量词转换率     $ \neg  (\exists x)P \Leftrightarrow  (\forall x)( \neg  P),
               \neg  (\forall x)P \Leftrightarrow  (\exists x) (\neg  P)$.
 
-(10) 量词分配率    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (∃x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
+(10) 量词分配率    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (\exists x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
 
+\begin{newexam}
+    运用连词化归率说明结论: $ P\rightarrow Q \Leftrightarrow P\rightarrow Q$.
+\end{newexam}
 %%%%%%%------------------------------------------
 \begin{mydef}{永真蕴含}{1}
 对谓词公式$P$和$Q$, 如果$P\rightarrow Q$永真, 则称\textbf{$P$永真蕴含$Q$}, 且称$Q$为$P$的逻辑结论, $P$为$Q$的前提, 记作\textcolor[rgb]{0,0,1}{$P \Rightarrow Q$}.
@@ -713,15 +727,15 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
       (2) 附加式     $P \Rightarrow P\vee Q,   Q \Rightarrow  P\vee Q$.
 
-      (3) 析取三段论    $\neg P, P\vee Q \Rightarrow  Q$.
+      (3) \textcolor[rgb]{0,0,1}{析取三段论}    $\neg P, P\vee Q \Rightarrow  Q$.
 
-      (4) 假言推理       $ P, P\rightarrow Q \Rightarrow  Q$.
+      (4) \textcolor[rgb]{0,0,1}{假言推理}       $ P, P\rightarrow Q \Rightarrow  Q$.
 
-      (5) 拒取式           $ \neg Q,  P\rightarrow Q \Rightarrow  P$.
+      (5) \textcolor[rgb]{0,0,1}{拒取式}           $ \neg Q,  P\rightarrow Q \Rightarrow  P$.
 
-      (6) 假言三段论     $P\rightarrow Q,  Q\rightarrow R \Rightarrow P\rightarrow R$.
+      (6) \textcolor[rgb]{0,0,1}{假言三段论}     $P\rightarrow Q,  Q\rightarrow R \Rightarrow P\rightarrow R$.
 
-      (7) 二难推理       $ P\vee Q,  P\rightarrow R, Q\rightarrow R \Rightarrow  R$.
+      (7) \textcolor[rgb]{0,0,1}{二难推理}       $ P\vee Q,  P\rightarrow R, Q\rightarrow R \Rightarrow  R$.
 
       (8) 全称固化        $(\forall x)P(x) \Rightarrow P(y)$, 其中, $y$是个体域中的任意个体, 依此蕴含式可消去谓词公式中的\textbf{全称量词}.
 
@@ -2971,8 +2985,8 @@ $S$蕴涵、剩余型蕴涵、QL蕴涵和D蕴涵各自同时满足有序性和�
 
 %%%%%%%----------------------------------------
 (\textbf{Q学习算法原理}\cite{Yutao2011})\index{Q学习算法}\index{Reinforcement Learning}
-Q学习是 Watkins 提出, 并由 Watkins 与 Dayan 于 1992 年基本证明其收敛性 \cite{watkins1992q}. 
-Q学习利用状态–动作对值函数 $Q(s,a)$ 进行迭代, 其最优策略使得期望折扣报酬总和最大. 
+Q学习是 Watkins 提出, 并由 Watkins 与 Dayan 于 1992 年基本证明其收敛性 \cite{watkins1992q}.
+Q学习利用状态–动作对值函数 $Q(s,a)$ 进行迭代, 其最优策略使得期望折扣报酬总和最大.
 Q学习的值函数定义如下:
 \begin{eqnarray}
   Q(s,a) =R(s,s^{'}, a) + \gamma\sum_{s^{'}\in S}P(s,s^{'}, a)\max_{a\in A}A(s^{'},a)
@@ -2986,7 +3000,7 @@ $P(s|s^{'},a)$ 为状态 $s$ 在控制动作 $a$ 发生后转移到状态 $s^{'}
     &Q^{k+1}(\tilde{s},\tilde{a})=Q^{k}(\tilde{s},\tilde{a}),\forall (\tilde{s},\tilde{a})\neq (s_k,a_k).
   \end{array}\right.
 \end{eqnarray}
-式中: $Q^k$ 代表最优值函数 $Q^{*}$ 的第 $k$ 次迭代值; $\alpha(0 <\alpha< 1)$是学习因子, 它控制动作更新速度, $\alpha$ 值越小,算法的搜索空间越大, 算法的稳定性越好, 本文 $\alpha$ 值取 0.1. 
+式中: $Q^k$ 代表最优值函数 $Q^{*}$ 的第 $k$ 次迭代值; $\alpha(0 <\alpha< 1)$是学习因子, 它控制动作更新速度, $\alpha$ 值越小,算法的搜索空间越大, 算法的稳定性越好, 本文 $\alpha$ 值取 0.1.
 Q学习算法在当前状态下总是选择具有最高 Q 值的动作, 称为贪婪策略 $\pi^{*}$, 如下式:
 \begin{eqnarray}
   \pi^{*}=\mathop{\arg\max}_{a\in A}Q^k (s,a).
@@ -3001,7 +3015,7 @@ Q算法的动作策略选择较为关键, 合适的动作策略能提高学习�
     &P^{k+1}_{\tilde{s}}(a)=P^k_{\tilde{s}}(a),\forall a\in A, \forall \tilde{s}\in S,\tilde{s}\neq s.\\
   \end{array}\right..
 \end{eqnarray}
-在每一状态下, 对应于 Q 最大值的动作称为贪婪动作, 记为 $a_g$. 式中 $\beta(0 <\beta < 1)$ 值的大小决定了动作搜索的速度, $\beta$ 值越接近1说明控制动作策略越趋于贪婪策略, 本文 $\beta$ 值取 0.5. 
+在每一状态下, 对应于 Q 最大值的动作称为贪婪动作, 记为 $a_g$. 式中 $\beta(0 <\beta < 1)$ 值的大小决定了动作搜索的速度, $\beta$ 值越接近1说明控制动作策略越趋于贪婪策略, 本文 $\beta$ 值取 0.5.
 $P^k_s(a)$ 代表第 $k$ 次迭代时状态 $s$ 下选择动作 $a$ 的概率.
 在经过足够迭代次数的探索和利用之后, $Q^k$ 将会以概率1收敛于最优值函数 $Q^{*}$, 最终得到一个 $Q^{*}$ 矩阵表示的最优控制策略.
 
