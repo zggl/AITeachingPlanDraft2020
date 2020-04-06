@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  6 APR 2020 09:15
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  6 APR 2020 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5916,9 +5916,7 @@ Missing character: There is no 理 in font ntx-Regular-tlf-t1!
 Missing character: There is no 方 in font ntx-Regular-tlf-t1!
 Missing character: There is no 法 in font ntx-Regular-tlf-t1!
  [238] [239]
-Missing character: There is no ⼀ in font SimSun/OT:script=hani;language=DFLT;!
 Missing character: There is no ⼒ in font SimSun/OT:script=hani;language=DFLT;!
-Missing character: There is no ⽤ in font SimSun/OT:script=hani;language=DFLT;!
 Missing character: There is no 第 in font ntx-Regular-tlf-t1!
 Missing character: There is no 三 in font ntx-Regular-tlf-t1!
 Missing character: There is no 章 in font ntx-Regular-tlf-t1!
@@ -5930,32 +5928,32 @@ Missing character: There is no 方 in font ntx-Regular-tlf-t1!
 Missing character: There is no 法 in font ntx-Regular-tlf-t1!
  [240]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 2853.
+(Font)              scaled to size 15.05624pt on input line 2856.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 13.55052pt on input line 2853.
+(Font)              scaled to size 13.55052pt on input line 2856.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 2853.
+(Font)              scaled to size 15.05624pt on input line 2856.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 2853.
+(Font)              scaled to size 15.05624pt on input line 2856.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 2853.
+(Font)              scaled to size 9.03374pt on input line 2856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2853.
+(hyperref)                removing `math shift' on input line 2856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 2853.
+(hyperref)                removing `superscript' on input line 2856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2853.
+(hyperref)                removing `math shift' on input line 2856.
 
-Package mdframed Info: mdframed works in twoside mode on input line 2861.
+Package mdframed Info: mdframed works in twoside mode on input line 2864.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2861.
+(mdframed)              on input line 2864.
 [241]
 File: figures/Zadel20191218120335.jpg Graphic file (type bmp)
 <figures/Zadel20191218120335.jpg>
@@ -5964,30 +5962,33 @@ File: figures/AIMIngren20191218120616.jpg Graphic file (type bmp)
 
 
 LaTeX Warning: Citation '江欢 2009全蕴涵三I算法' on page 242 undefined on input line 29
-53.
+67.
 
 [242]
 File: figures/wangguojun20191218121937.jpg Graphic file (type bmp)
 <figures/wangguojun20191218121937.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [243]
 File: figures/Gyminstall.PNG Graphic file (type bmp)
 <figures/Gyminstall.PNG>
 
 
-LaTeX Warning: Citation 'Yutao2011' on page 244 undefined on input line 2987.
+LaTeX Warning: Citation 'Yutao2011' on page 244 undefined on input line 3003.
 
 
-LaTeX Warning: Citation 'watkins1992q' on page 244 undefined on input line 2988
+LaTeX Warning: Citation 'watkins1992q' on page 244 undefined on input line 3004
 .
-
-
-LaTeX Warning: Citation 'sutton1998reinforcement' on page 244 undefined on inpu
-t line 3009.
 
 [244]
 
+LaTeX Warning: Citation 'sutton1998reinforcement' on page 245 undefined on inpu
+t line 3025.
+
+
 LaTeX Warning: Citation 'gosavi2004reinforcement' on page 245 undefined on inpu
-t line 3024.
+t line 3040.
 
 [245]) [246]
 \openout2 = `tex/chapter4.aux'.

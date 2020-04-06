@@ -298,7 +298,7 @@
 \contentsline {subsection}{\numberline {3.8.6}因果推理(辛普森悖论、D-分离和do算子)}{241}{subsection.3.8.6}% 
 \contentsline {section}{\numberline {3.9}模糊逻辑$^*$}{241}{section.3.9}% 
 \contentsline {section}{\numberline {3.10}多值逻辑}{243}{section.3.10}% 
-\contentsline {section}{\numberline {3.11}Luckasiewicz逻辑}{243}{section.3.11}% 
+\contentsline {section}{\numberline {3.11}Luckasiewicz逻辑}{244}{section.3.11}% 
 \contentsline {section}{\numberline {3.12}三I算法的逻辑基础}{244}{section.3.12}% 
 \contentsline {section}{\numberline {3.13}强化学习}{244}{section.3.13}% 
 \contentsline {section}{\numberline {3.14}作业}{246}{section.3.14}% 
