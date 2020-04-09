@@ -233,7 +233,7 @@
 \contentsline {subsubsection}{\numberline {3.1.4.1}正向推理的算法描述}{186}{subsubsection.3.1.4.1}% 
 \contentsline {paragraph}{正向推理的主要优点}{188}{paragraph*.213}% 
 \contentsline {paragraph}{正向推理的主要缺点}{188}{paragraph*.214}% 
-\contentsline {subsubsection}{\numberline {3.1.4.2}推理算法}{188}{subsubsection.3.1.4.2}% 
+\contentsline {subsubsection}{\numberline {3.1.4.2}逆向推理}{188}{subsubsection.3.1.4.2}% 
 \contentsline {subparagraph}{算法描述}{188}{subparagraph*.215}% 
 \contentsline {paragraph}{优缺点}{190}{paragraph*.217}% 
 \contentsline {subsection}{\numberline {3.1.5}混合推理的概念}{190}{subsection.3.1.5}% 
@@ -254,8 +254,8 @@
 \contentsline {subsubsection}{\numberline {3.3.1.1}命题公式的解释}{194}{subsubsection.3.3.1.1}% 
 \contentsline {paragraph}{谓词公式的解释}{194}{paragraph*.218}% 
 \contentsline {subsection}{\numberline {3.3.2}谓词公式的永真性和可满足性}{196}{subsection.3.3.2}% 
-\contentsline {subsubsection}{\numberline {3.3.2.1}等价性}{197}{subsubsection.3.3.2.1}% 
-\contentsline {subsection}{\numberline {3.3.3}谓词公式的范式}{198}{subsection.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.2.1}谓词公式的等价}{197}{subsubsection.3.3.2.1}% 
+\contentsline {subsection}{\numberline {3.3.3}谓词公式的范式}{199}{subsection.3.3.3}% 
 \contentsline {subsection}{\numberline {3.3.4}置换与合一}{199}{subsection.3.3.4}% 
 \contentsline {section}{\numberline {3.4}自然演绎推理}{202}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}归结演绎推理}{203}{section.3.5}% 

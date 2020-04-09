@@ -198,7 +198,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 (1) 把用户提供的初始证据放入综合数据库；
 
-(2) 检查综合数据库中是否包含了问题的解, 若已包含, 则求解结束, 并成功推出；否则执行下一步;
+(2) 检查综合数据库中是否包含了问题的解, 若已包含, 则求解结束, 并成功退出；否则执行下一步;
 
 (3) 检查知识库中是否有可用知识, 若有, 形成当前可用知识集, 执行下一步；否则转(5).
 
@@ -246,8 +246,8 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
         \node (AddNewFact)[draw,decision,align=center,right=0.8cm of IsKNsetEmpty] {可补充新事实吗?};                             %可补充新事实吗
         \node (FailQuit)[draw, process,align=center,below=0.8cm of AddNewFact] {失败退出};                                       %失败退出
         \draw[->] (AddNewFact)node[left,yshift=-0.8cm] {$N$}--(FailQuit);
-        \draw[->] (IsKNsetEmpty)node[left,xshift=3.34cm,yshift=-0.25cm]{$N$}--(AddNewFact);
-        \draw[->] (IsKNavailable.east)node[left,xshift=0.9cm,yshift=-0.3cm]{$Y$}-|(AddNewFact.north);
+        \draw[->] (IsKNsetEmpty)node[left,xshift=3.34cm,yshift=-0.25cm]{$Y$}--(AddNewFact);
+        \draw[->] (IsKNavailable.east)node[left,xshift=0.9cm,yshift=-0.3cm]{$N$}-|(AddNewFact.north);
 
         \node (SuccQuit)[draw,process,align=center,right=1.5cm of IsDBsolvable] {成功退出};
         \draw[->] (IsDBsolvable)node[left,xshift=3.18cm, yshift=-0.2cm]{$Y$}--(SuccQuit);
@@ -289,7 +289,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \paragraph{正向推理的主要缺点}
 推理无明确目标, 求解问题时可能会执行许多与解无关的操作, 导致推理效率较低.
 %%%%%%%---------------------------------------------
-\subsubsection{推理算法}
+\subsubsection{逆向推理}
 
 从某个假设目标出发, 逆向使用规则, 亦称为\textbf{目标驱动推理}或\textbf{逆向链推理}.
 其算法流程如图\ref{AI32fig13}:
@@ -462,9 +462,9 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 
 (1) \textbf{不确定性的推理研究}
 
-人工智能是用数值的方法表示和处理不确定信息的方法, 即给系统中每个语句或公式赋一个数值, 用来表示语句的不确定性或确定性. 比较具有代表性的有: 1976年杜达提出的主观贝叶斯模型, 1978年扎德提出的可能性模型, 1984年邦迪提出的发生率计算模型, 以及假设推理、定性推理和证据空间理论等经验性模型.
+人工智能是用\uwave{数值的方法表示和处理不确定信息的方法}, 即给系统中每个语句或公式赋一个数值, 用来表示语句的不确定或确定性. 比较具有代表性的单个模型有: 1976年杜达提出的主观贝叶斯模型, 1978年扎德提出的可能性模型, 1984年邦迪提出的发生率计算模型, 以及假设推理、定性推理和证据空间理论等经验性模型.
 
-在人工智能中, 可把归纳看成是从个别到一般的推理. 归纳逻辑是关于或然性推理的逻辑.
+在人工智能中, 可把归纳看成是从个别到一般的推理. \uwave{归纳逻辑是关于或然性推理的逻辑}.
 借助这种归纳方法和运用类比的方法, 计算机就可以通过问题的相似性, 从相应的知识库中调用有关知识来处理新问题.
 
 (2) \textbf{不完全信息的推理研究}
@@ -630,10 +630,12 @@ $a$	&$f(1)$&$	F(2)$\\
 \item 当$x=1$时, $a=1$使$P(1,1)=T$;
 \item 当$x=2$时, $a=1$使$P(2,1)=T$.
 \end{itemize}
-即$x$在$D$上的任意取值, 都存在$a=1$使$P(f(x), a)$的真值为$T$. 因此, 在此解释下公式$B$的真值为$T$.
-由上面的例子可以看出, 谓词公式的真值都是针对某一个解释而言的, 它可能在某一个解释下真值为$T$, 而在另一个解释下为$F$.
+即$x$在$D$上的任意取值, 都存在$a=1$使$P(f(x), a)$的真值为$T$. 因此, 在此解释下公式$B=(\forall x)\,P(f(x), a), D=\{1, 2\}$的真值为$T$.
 \end{result}
-
+%%%%%%%------------------------------------------
+\begin{remark}
+    由上面的例子可以看出, 谓词公式的真值都是针对某一个解释而言的, 它可能在某一个解释下真值为$T$, 而在另一个解释下为$F$.
+\end{remark}
 %%%%%%%---------------------------------------------
 \subsection{谓词公式的永真性和可满足性}
  为了推理的需要, 先定义永真公式:
@@ -643,7 +645,7 @@ $a$	&$f(1)$&$	F(2)$\\
 \end{mydef}
 
 可见, 要判定谓词公式为永真, 必须对每个非空个体域上的每个解释逐一进行判断. 当解释的个数有限时, 尽管工作量大, 公式的永真性还可以判定, 但当解释个数无限时, 永真性就很难判定.
-\begin{mydef}{相容性}{1}
+\begin{mydef}{公式的相容性}{1}
 对于谓词公式$P$, 如果至少存在$D$上的一个解释, 使公式$P$在此解释下的真值为$T$, 则称公式$P$在$D$上是\textbf{可满足的}.
 谓词公式的可满足性也称相容性.
 \end{mydef}
@@ -677,7 +679,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 %%%%%%%----------------------------------------
 \index{逻辑符号含义}
 %%%%%%%---------------------------------------------
-\subsubsection{等价性}~{}
+\subsubsection{谓词公式的等价}~{}
 
 谓词公式的等价性和永真蕴含性可分别用相应的等价式和永真蕴含式来表示, 这些等价式和永真蕴含式都是演绎推理的主要依据, 因此也称它们为\textbf{推理规则}.
 
@@ -686,39 +688,39 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 设$P$与$Q$是$D$上的两个谓词公式, 若对$D$上的任意解释, $P$与$Q$都有相同的真值, 则称$P$与$Q$在$D$上是等价的. 如果$D$是任意非空个体域, 则称$P$与$Q$是\textbf{等价}的, 记作$P\Leftrightarrow Q$.
 \end{mydef}
 
-(1) 双重否定率      $\neg(\neg P) \Leftrightarrow P$.
+(1) 双重否定律      $\neg(\neg P) \Leftrightarrow P$.
 
-(2) 交换率               $(P\vee Q) \Leftrightarrow  (Q\vee P),  ( P\wedge Q) \Leftrightarrow  ( Q\wedge P)$.
+(2) 交换律               $(P\vee Q) \Leftrightarrow  (Q\vee P),  ( P\wedge Q) \Leftrightarrow  ( Q\wedge P)$.
 
-(3) 结合率               $(P\vee Q)\vee R \Leftrightarrow  P\vee (Q\vee R),
+(3) 结合律               $(P\vee Q)\vee R \Leftrightarrow  P\vee (Q\vee R),
                (P\wedge Q)\wedge R \Leftrightarrow  P\wedge (Q\wedge R)$.
 
-(4) 分配率               $P\vee (Q\wedge R) \Leftrightarrow  (P\vee Q)\wedge (P\vee R),
+(4) 分配律               $P\vee (Q\wedge R) \Leftrightarrow  (P\vee Q)\wedge (P\vee R),
                P\wedge (Q\vee R) \Leftrightarrow  (P\wedge Q)\vee (P\wedge R)$.
 
 (5) 摩根定律        $\neg  (P\vee Q) \Leftrightarrow  P\wedge Q,
               \neg  (P\wedge Q) \Leftrightarrow P\vee Q$.
 
-(6) 吸收率              $ P\vee (P\wedge Q) \Leftrightarrow P,
+(6) 吸收律              $ P\vee (P\wedge Q) \Leftrightarrow P,
                 P\wedge (P\vee Q) \Leftrightarrow P$.
 
-(7) 补余率               $\neg P\vee P \Leftrightarrow  T, \neg  P\wedge P \Leftrightarrow  F$.
+(7) 补余律               $\neg P\vee P \Leftrightarrow  T, \neg  P\wedge P \Leftrightarrow  F$.
 
-(8) 连词化归率      $ P\rightarrow Q \Leftrightarrow  \neg P\vee Q,
+(8) 连词化归律      $ P\rightarrow Q \Leftrightarrow  \neg P\vee Q,
                P\longleftrightarrow Q \Leftrightarrow  (P\rightarrow Q)\wedge (Q\rightarrow P),
                P\longleftrightarrow Q \Leftrightarrow  (P\wedge Q)\vee (Q\wedge P)$.
 
-(9) 量词转换率     $ \neg  (\exists x)P \Leftrightarrow  (\forall x)( \neg  P),
+(9) 量词转换律     $ \neg  (\exists x)P \Leftrightarrow  (\forall x)( \neg  P),
               \neg  (\forall x)P \Leftrightarrow  (\exists x) (\neg  P)$.
 
-(10) 量词分配率    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (\exists x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
+(10) 量词分配律    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (\exists x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
 
 \begin{newexam}
     运用连词化归率说明结论: $ P\rightarrow Q \Leftrightarrow P\rightarrow Q$.
 \end{newexam}
 %%%%%%%------------------------------------------
 \begin{mydef}{永真蕴含}{1}
-对谓词公式$P$和$Q$, 如果$P\rightarrow Q$永真, 则称\textbf{$P$永真蕴含$Q$}, 且称$Q$为$P$的逻辑结论, $P$为$Q$的前提, 记作\textcolor[rgb]{0,0,1}{$P \Rightarrow Q$}.
+对谓词公式$P$和$Q$, 如果$P\rightarrow Q$永真, 则称\textbf{$P$永真蕴含$Q$}, 且称$Q$为$P$的逻辑结论, $P$为$Q$的前提, $P$永真蕴含$Q$记作\textcolor[rgb]{0,0,1}{$P \Rightarrow Q$}.
 \end{mydef}
 
 常用的永真蕴含式有:
@@ -762,7 +764,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
   $(\forall x) (\forall y) \textcolor[rgb]{0,0,1}{(}\exists z)(P(x)\wedge Q(y,z)\vee R(x,z)\textcolor[rgb]{0,0,1}{)}$是前束范式.
 \end{example}
 
-\textbf{任一谓词公式均可化为与其对应的前束范式}, 其化简方法将在后面子句集的化简中讨论.
+\textbf{任一谓词公式均可化为与其对应的前束范式}, 化简方法将在后面子句集的化简中讨论.
 
 %%%%%%%------------------------------------------
 \begin{mydef}{Skolem范式}{1}
@@ -834,7 +836,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
       \ding{172}  当$t_i\lambda =x_i$时, 删去$t_i\lambda /x_i\, (i=1, 2 ,\cdots, n)$;
 
-      \ding{173}  当$y_j\in { x_1, x_2 ,\cdots, x_n }时$, 删去$u_j/y_j\, (j=1, 2 ,\cdots, m)$, 最后剩下的元素所构成的集合.
+      \ding{173}  当$y_j\in \{ x_1, x_2 ,\cdots, x_n\}时$, 删去$u_j/y_j\, (j=1, 2 ,\cdots, m)$, 最后剩下的元素所构成的集合.
 \end{mydef}
 %%%%%%%----------------------------------------
 \begin{example}
@@ -844,7 +846,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \begin{result}
     先求出集合
 \begin{align}
-  \{f(y)\lambda/x, (z\lambda)/y, a/x, b/y , y/z\}=\{f(b)/x, y/y, a/x, b/y , y/z\},
+  \{f(y)\lambda/x, (z\lambda)/y, \lambda\}=\{f(y)\lambda/x, (z\lambda)/y,a/x, b/y , y/z\}=\{f(b)/x, y/y, a/x, b/y , y/z\},
 \end{align}
 其中, $f(b)/x$中的$f(b)$是置换$\lambda$作用于$f(y)$的结果；$y/y$中的$y$是置换$\lambda$作用于$z$的结果. 在该集合中, $y/y$满足定义中的删除条件①；$a/x$和$b/y$满足定义中的删除条件②, 也需要删除. 最后得
 \begin{align}
@@ -880,7 +882,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 %%%%%%%------------------------------------------
 \begin{mydef}{最一般合一}{1}
-设$\sigma$是公式集$F$的一个合一, 如果对$F$的任一个合一$\theta$ 都存在一个置换$\lambda$, 使得$\theta =\sigma \circ \lambda$, 则称$\sigma$是一个\textbf{最一般合一}.
+设$\sigma$是公式集$F$的一个合一, 如果对$F$的任一个合一$\theta$ 都存在一个置换$\lambda$, 使得$\theta =\sigma \circ \lambda$, 则称$\sigma$是一个\textbf{最一般合一(MGU)}.
 \end{mydef}
 
 %%%%-----------------------------------
@@ -939,7 +941,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 \quad   (3) Lang($x$)   \,\,\,\,    $x$是一门程序设计语言课
 
-把例{C3examp0355}的已知事实及待求解问题用谓词公式表示如下:
+把例\ref{C3examp0355}的已知事实及待求解问题用谓词公式表示如下:
 
 \quad   (1) Prog($x$) $\rightarrow$ Like(Wang , $x$)
 
@@ -949,9 +951,9 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 应用推理规则进行推理:
 
-\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\,\,\,   全称固化;
+\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad   全称固化;
 
-\quad   (2) Lang($C$), Lang(y)$\rightarrow$ Prog(y) $\Rightarrow$  Prog($C$) \,\,\,  假言推理  $\{C/y\}$;
+\quad   (2) Lang($C$), Lang(y)$\rightarrow$ Prog(y) $\Rightarrow$  Prog($C$) \qquad\qquad\qquad  假言推理  $\{C/y\}$;
 
 \quad   (3) Prog($C$),  Prog(x)$\rightarrow$ Like(Wang , x) $\Rightarrow$  Like(Wang , $C$)\,\,\,  假言推理 $ \{C/x\}$.
 
