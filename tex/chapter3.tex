@@ -951,7 +951,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 应用推理规则进行推理:
 
-\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad   全称固化;
+\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\qquad\qquad\qquad\qquad   全称固化;
 
 \quad   (2) Lang($C$), Lang(y)$\rightarrow$ Prog(y) $\Rightarrow$  Prog($C$) \qquad\qquad\qquad  假言推理  $\{C/y\}$;
 
@@ -961,7 +961,8 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \end{proof}
 
 %%%%-----------------------------------
-\begin{remark}
+\begin{remark}自然演绎推理的优缺点
+
 \textcolor[rgb]{0,0,1}{\textbf{优点}}: 定理证明过程自然, 易于理解, 并且有丰富的可用推理规则.
 
 \textcolor[rgb]{0,0,1}{\textbf{缺点}}: 是容易产生知识爆炸, 推理过程中得到的中间结论数量一般按指数规律递增, 不利于复杂问题的推理, 甚至难以实现.
@@ -1089,11 +1090,14 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \begin{itemize}
 \item 若存在量词不出现在全称量词的辖域内(即它的左边没有全称量词), 只要用一个新的个体常量替换受该存在量词约束的变元, 就可消去该存在量词.
 
-\item 若存在量词位于一个或多个全称量词的辖域内, 例如
+\item 若存在量词位于一个或多个全称量词的辖域内, 
+%%%%%%%------------------------------------------
+\begin{example}
 \begin{align}
     (\forall x_1)\cdots(\forall x_n) (\exists  y)\,P(x_1, x_2 ,\cdots, x_n ,y).
 \end{align}
-则需要用Skolem函数$f(x_1,x_2,\cdots, x_n)$替换受该存在量词约束的变元$y$, 然后再消去该存在量词.
+则需要用Skolem函数$f(x_1,x_2,\cdots, x_n)$替换受该存在量词约束的变元$y$, 然后再消去该存在量词.  
+\end{example}
 \end{itemize}
 %%%%%%%------------------------------------------
 \begin{example}
@@ -1273,7 +1277,7 @@ Skolem标准形的一般形式为
     若$P$是原子谓词公式, 则称$P$与$\neg P$为互补文字.
 \end{mydef}
 %%%%%%%------------------------------------------
-\begin{mydef}{归与亲本子句}{defqibenzj}
+\begin{mydef}{归结与亲本子句}{defqibenzj}
     设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为\uwave{归结}, 称$C_{12}$为$C_1$和$C_2$的
    归结式, 称$C_1$和$C_2$ 为$C_{1 2}$的亲本子句.
 \end{mydef}
@@ -1290,6 +1294,30 @@ Skolem标准形的一般形式为
   设$C_1=\neg Q$, $C_2=Q$, 求$C_1$和$C_2$的归结式$C_{12}$.
 \end{example}
 \end{result}
+%%%%%%%----------------------------------------
+\begin{result}
+    这里$L_1=\neg Q$, $L_2=Q$, 通过归结可以得到
+\begin{align}
+    C_{12}= \textup{NIL}.
+\end{align}
+\end{result}
+%%%%%%%------------------------------------------%
+\begin{example}
+    设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
+\end{example}
+%%%%%%%----------------------------------------
+\begin{result}
+若先对$C_1,C_2$归结, 可得到
+\begin{align}
+    C_{1 2}=\neg P.
+\end{align}
+然后再对$C_{12}$和$C_3$归结, 得到
+\begin{align}
+    C_{123}=\textup{NIL}.
+\end{align}
+如果改变归结顺序, 先计算归结式$C_{13}$, 同样可以得到相同的结果$C_{123}=\textup{NIL}$, 即其归结过程是不唯一的.
+\end{result}
+其归结归结过程可用图\ref{AI32fig14}来表示, 该树称为\textbf{归结树}.
 %%%%%%%-----------------------------------------------
 %\begin{figure}[H]
 %\centering
@@ -1325,7 +1353,7 @@ Skolem标准形的一般形式为
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (ABC0) at (1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm P \vee \bm Q$}}; % PQR0
-\node (nCz)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm P$}};      %R1
+\node (nCz)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\bm P$}};      %R1
 
 \node (AB0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=1.0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\bm  Q$}};        %20
 \node (AMn)[draw, process,align=center,below=1cm of nCz,yshift=0cm] {\textcolor[rgb]{0.2,0.6,0.2}{$\neg \bm Q$}};
@@ -1342,31 +1370,6 @@ Skolem标准形的一般形式为
 \label{AI32fig14}
 \end{figure}
 %%%%%%%-----------------------------------------------
-%%%%%%%----------------------------------------
-\begin{result}
-    这里$L_1=\neg Q$, $L_2=Q$, 通过归结可以得到
-\begin{align}
-    C_{12}= \textup{NIL}.
-\end{align}
-\end{result}
-%%%%%%%------------------------------------------%
-\begin{example}
-    设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
-\end{example}
-%%%%%%%----------------------------------------
-\begin{result}
-若先对$C_1,C_2$归结, 可得到
-\begin{align}
-    C_{1 2}=\neg P.
-\end{align}
-然后再对$C_{12}$和$C_3$归结, 得到
-\begin{align}
-    C_{123}=\textup{NIL}.
-\end{align}
-如果改变归结顺序, 同样可以得到相同的结果, 即其归结过程是不唯一的.
-\end{result}
-
-其归结归结过程可用图\ref{AI32fig14}来表示, 该树称为\textbf{归结树}.
 %%%%%%%------------------------------------------%
 \begin{mythm}{归结式的亲本子句}{}\label{AIthm3.1}
     归结式$C_{12}$是其亲本子句$C_1 $和$C_2$的逻辑结论.
@@ -3088,5 +3091,5 @@ $P^k_s(a)$ 代表第 $k$ 次迭代时状态 $s$ 下选择动作 $a$ 的概率.
 
 %%%%%%---------------------------------
 \begin{think}
-  对所有的x、y、z来说,如果y是x父亲,z是y的父亲,则z是x的道每个,又知每个人都有父亲, 试问是否会有这样的个人X和Y,使得X是Y的祖父?
+  对所有的x、y、z来说, 如果y是x父亲, z是y的父亲,则z是x的道每个, 又知每个人都有父亲, 试问是否会有这样的个人X和Y, 使得X是Y的祖父?
 \end{think}
