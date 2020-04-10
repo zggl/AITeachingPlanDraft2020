@@ -946,7 +946,7 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-最优剪枝极值学习机（OP-ELM）如图\ref{OPELM20161021fig2}, 图\ref{OPELM20161021fig2}显示了OP-ELM的三个步骤. 
+最优剪枝极值学习机（OP-ELM）如图\ref{OPELM20161021fig2}, 图\ref{OPELM20161021fig2}显示了OP-ELM的三个步骤.
 提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱找到}.
 如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量（添加的噪声变量没有在图上显示）时,拟合会变得松散和扩散.
 实际上, ELM的并没为这种情况设计. 本文的OP-ELM提出了一种三个步骤的方法来解决这个问题 , 简言之, 为了解决含噪声的问题, 需要给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
@@ -955,13 +955,13 @@ in practice the \textbf{MRSR} \index{MRSR}\cite{SimiläTikka2005-32497} implemen
 这里将不对\textbf{LARS algorithm}做详细的叙述, 其实现来自Lasso方法, 对于OP-ELM, 它提供了对隐藏神经元的排序方法,
 这是由于OP-ELM算法设计总的神经元和输出之间的关系是线性的.
 
-为了优化参数,(LOO)方法通常是一种代价高昂的方法, 因为它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值. 
+为了优化参数,(LOO)方法通常是一种代价高昂的方法, 因为它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值.
 在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于压LOO误差的计算细节见第4节). 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$,使得OP-ELM在计算上仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”ELM.
 通过使用一个{LARS}方法,这里是对回归问题的$L_1$约束.
-同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项. 
-同时,由于在压力公式中执行的矩阵运算的性质(这些计算见第4节),决定保留的神经元的最终数量（通过{LOO criteria}索引{LOO criteria}）显示出潜在的不稳定性（数值）. 
+同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
+同时,由于在压力公式中执行的矩阵运算的性质(这些计算见第4节),决定保留的神经元的最终数量（通过{LOO criteria}索引{LOO criteria}）显示出潜在的不稳定性（数值）.
 本文提出的解决方案是在压力公式的计算中使用正则化.
-下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项. 
+下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
 第4节中提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
 \begin{figure}[t]
 \begin{center}
@@ -974,7 +974,7 @@ used to rank the neurons of the hidden layer; finally the selection of the optim
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Tikhonov 正则化}\index{Tikhonov Regularization}
 Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用的正则化方法之一.
-在统计学上, 这种方法被称为岭回归, 在有多个独立发现的情况下, 它也被称为\textbf{Tikhonov–Miller method}、\textbf{Phillips–Twomey method}, 约束线性反演方法和线性正则化索引方法. 
+在统计学上, 这种方法被称为岭回归, 在有多个独立发现的情况下, 它也被称为\textbf{Tikhonov–Miller method}、\textbf{Phillips–Twomey method}, 约束线性反演方法和线性正则化索引方法.
 它与针对非线性回归最小二乘问题的Levenberg-Marquardt算法有关.
 假设对于已知的矩阵$\bm A$和向量$\bm b$, 我们希望找到向量$\bm{x}$, 使得下式成立
 \begin{align}
@@ -983,9 +983,9 @@ Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用�
 
 上述问题的标准解方法是最小二乘线性回归. 然而, 如果没有$\bm x$满足等式,或者有多个$\displaystyle x$满足等式, 则解决方案不是唯一的, 该问题称为不适定问题.
 在这种情况下,普通最小二乘估计会导致方程组的超定(过拟合),或者更常见的是欠定(欠拟合).
-大多数现实世界的现象都具有向前方向的低通滤波器的效果,其中$A$将$\bm{x}$映射到$\bm{b}$. 
+大多数现实世界的现象都具有向前方向的低通滤波器的效果,其中$A$将$\bm{x}$映射到$\bm{b}$.
 因此, 在求解逆问题时,逆映射用作高通滤波器, 具有放大噪声的不良倾向(特征值/奇异值在逆映射中最大, 而在正向映射中最小).
-此外, 普通的最小二乘法隐式地将重构版本$\bm{x}$的每个元素(在$A$的空空间中)置空, 而不允许将模型用作$\bm{x}$的前置. 
+此外, 普通的最小二乘法隐式地将重构版本$\bm{x}$的每个元素(在$A$的空空间中)置空, 而不允许将模型用作$\bm{x}$的前置.
 最小二乘法寻求最小化残差平方和, 其紧凑格式可写为
 \begin{align}
    \|\bm A\bm {x} -\bm {b} \|^{2}
@@ -1004,16 +1004,16 @@ Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用�
 
 正则化的效果可以通过矩阵$\Gamma$的尺度变化.对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
 除了线性回归之外, $L_2$正则化还用于许多上下文中, 例如使用logistic回归或支持向量机分类\cite{Fan2008LIBLINEAR}以及矩阵因式分解\cite{Guan2012Online}.
-Tikhonov正则化是在许多不同的上下文中独立发明的. 从Andrey Tikhonov和David L. Phillips的工作中, 它在积分方程中的应用广为人知. 
-有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E.Hoerl和Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov（Kriging）滤波器}. 
+Tikhonov正则化是在许多不同的上下文中独立发明的. 从Andrey Tikhonov和David L. Phillips的工作中, 它在积分方程中的应用广为人知.
+有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E.Hoerl和Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov（Kriging）滤波器}.
 在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}
 
 对于$\bm x$的一般多元正态分布和数据误差,可以应用变量转换来减少上述情况. 同样地, 可以寻找$\bm x$以最小化
 \begin{align}
   \|\bm A\bm x-\bm b\|_{P}^{2}+\|\bm x-\bm x_{0}\|_{Q}^{2}\,
 \end{align}
-其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$（与Mahalanobis距离比较）. 
-贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵. 
+其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$（与Mahalanobis距离比较）.
+贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵.
 然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$（例如，\textbf{Cholesky factorization}）的因子分解给出, 并将其视为一个\textbf{whitening filter}.
 
 这个广义问题有一个最优解$x^{}$，可以用公式显式地求解
@@ -1129,7 +1129,7 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 在实际应用中,该算法中$\lambda$的优化是通过一种{textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(在Matlab中是fminsearch函数).通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序.图 \ref{TROPEMLmodel20161021fig2}是图的修改版本. 图\ref{OPELM20161021fig2}说明了\textbf{TROP-ELM}方法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
-现在我们使用新的学习范式来训练RVFL网络. 
+现在我们使用新的学习范式来训练RVFL网络.
 %Given a set of additional privileged information $\{\widetilde {\bm x}_i \in \mathbb R^d; i = 1,\cdots,N\}$ in the training process, the training data becomes $\{(\bm x_i,\widetilde {\bm x}_i; y_i)|\bm x_i \in \mathbb R^n, {\bm x}_i\in \mathbb R^d; y_i\in \mathbb R^m; i =1,\cdots,N\}$. In this new training set, $\bm x_i \in X$ is the original feature and in general the privileged feature $\bm x_i \in \widetilde X$ belongs to the privileged feature space $\widetilde X$ that is different from the original feature space $X$.
 在这个新的训练集中,$\bm x_i\in X$是原始功能,一般来说,特权功能$\bm x_i\in \widetilde x$属于特权功能空间$\widetilde x$, 它不同于原始功能空间$x$。
 
@@ -1407,7 +1407,7 @@ TT2-RVFL 的输出可用下式表示
 \begin{align}
   \bm Y=\alpha\mathcal A *_N \mathcal X+(1-\alpha)\bm H \bm \Omega, 0\leq \alpha\leq 1,\label{TensorRVFLEq08}
 \end{align}
-其中 $\alpha$是TT2-RVFL的平衡因子, $\mathcal A$是区间二型模糊激活函数的映射结果, $\mathcal X$是权重矩阵, $\bm Y=[\bm y\, \bm y]$, 从输入到增强节点的权重向量$\bm {a} _{i} \,(i=1,2,\cdots, L)$是随机生成的, 
+其中 $\alpha$是TT2-RVFL的平衡因子, $\mathcal A$是区间二型模糊激活函数的映射结果, $\mathcal X$是权重矩阵, $\bm Y=[\bm y\, \bm y]$, 从输入到增强节点的权重向量$\bm {a} _{i} \,(i=1,2,\cdots, L)$是随机生成的,
 使得 $\underline\Phi$, $\bar\Phi$不饱和; $\bm\Omega=[\bm \omega\, \bm \omega]$是待求的输入权重矩阵, $\bm H$ 是由输入样本构建的输入矩阵.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
@@ -1416,14 +1416,14 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展: 1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .  2) 为了和增强节点的运算相容, TT2-RVFL的线性部分需要 复制权重向量一次, 权重矩阵 $\bm\Omega$等于 $[\bm \omega\, \bm \omega]$, 其中 $\bm \omega$为权重列向量.  3) 对于输出$\bm Y$, 和以前的输出向量 $\bm y$不同, TT2-RVFL需要重复该向量一次, 以便和张量运算相容.
+  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展: 1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .  2) 为了和增强节点的运算相容, TT2-RVFL的线性部分需要 复制权重向量一次, 权重矩阵 $\bm\Omega$等于 $[\bm \omega\, \bm \omega]$, 其中 $\bm \omega$为权重列向量. 3) 对于输出$\bm Y$, 和以前的输出向量 $\bm y$不同, TT2-RVFL需要重复该向量一次, 以便和张量运算相容.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{algorithm} [!ht]
 %\caption{偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}}
 %\label{T2RVFL3:alg1}
-%\begin{algorithmic} [1] %
+%\begin{algorithmic}[1] %
 %\REQUIRE 输入: 张量$\mathcal A$, $I_{1 \cdots N} $ 和指标 $J_{1 \cdots N} $.
 %\ENSURE $N$ 为偶数, $I=\prod_{i=1} ^N I_i$, $J=\prod_{i=1} ^N J_i$.
 %\STATE 变换张量$\mathcal A\in \mathbb R^{I_{1 \cdots N} \times J_{1 \cdots N} } $ 为矩阵 $A\in \mathbb R^{I\times J} $.
@@ -1436,7 +1436,7 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL中的张量逆} \label{Trapezoidsection5-1}
 张量方程 $\mathcal A *_N \mathcal X = \mathcal Y$的张量运算被用于求解 TT2-RVFL网络的权重向量,  该运算非常适合计算TT2-RVFL增强节点部分的权重向量.
-求解方程使用的偶数阶张量的 Moore-Penrose (M-P)逆在算法 \ref{T2RVFL3:alg1} 中给出,  在得到M-P逆的基础上, 可以很容易算出权重矩阵.
+求解方程使用的偶数阶张量的 Moore-Penrose (M-P)逆在算法 \ref{T2RVFL3:alg1} 中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
 方程$\mathcal A *_N \mathcal X = \mathcal Y$的解也是如下张量方程的解
@@ -3174,7 +3174,7 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 \begin{align}
   R=R_{1} \circ R_{2}=\left[\begin{array}{ll}{0.5} & {0.5} \\ {0.7} & {0.8}\end{array}\right]
 \end{align}
-其方法是把$R_1$的第$i$行元素分别与$R_2$的第$j$列的对应元素相比较, 两个数中取最小者, 然后再在所得的一组最小数中取最大的一个, 并以此数作为$R_1\circ R_2$的元素$R(i,j)$. 
+其方法是把$R_1$的第$i$行元素分别与$R_2$的第$j$列的对应元素相比较, 两个数中取最小者, 然后再在所得的一组最小数中取最大的一个, 并以此数作为$R_1\circ R_2$的元素$R(i,j)$.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
