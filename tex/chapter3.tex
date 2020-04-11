@@ -1154,7 +1154,7 @@ Skolem标准形的一般形式为
 
 (9) \textbf{更换变量名称}
 
-对子句集中的某些变量重新命名, 使任意两个子句中不出现相同的变量名. 
+对子句集中的某些变量重新命名, 使任意两个子句中不出现相同的变量名.
 由于每一个子句都对应着母式中的一个合取元, 并且所有变元都是由全称量词量化, 因此任意两个不同子句的变量之间实际上不存在任何关系. 这样, 更换变量名是不会影响公式的真值的.
 %%%%%%%------------------------------------------
 \begin{example}
@@ -1455,7 +1455,7 @@ Skolem标准形的一般形式为
 
     \quad\ding{174} 把$\{F, \neg G\}$化为子句集S.
 
-    \quad\ding{175}  应用归结原理对子句集$S$中的子句进行归结, 并把每次得到的归结式并入$S$中. 如此反复进行, 若出现空子句, 则停止归结, 此时就证明了$G$为真.  
+    \quad\ding{175}  应用归结原理对子句集$S$中的子句进行归结, 并把每次得到的归结式并入$S$中. 如此反复进行, 若出现空子句, 则停止归结, 此时就证明了$G$为真.
 \end{remark}
 %%%%%%%----------------------------------------
 \begin{example}
@@ -1576,7 +1576,7 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 没有归结式, 就不能用归结法证明$S$的不可满足性, 这就限制了归结法的使用范围.
 如果对$C_1$或$C_2$的变元进行换名, 便可通过合一, 对$C_1$和$C_2$进行归结.
 如上例, 若先对$C_2$进行换名, 即$C_2=\neg P(f(y))$, 则可对$C_1$和$C_2$进行归结, 得到一个空子句, 从而证明了$S$是不可满足的.
-事实上, 在由公式集化为子句集的过程中, 其最后一步就是做换名处理. 因此, 定义中假设$C_1$ 和$C_2$ 没有相同变元是可以的.  
+事实上, 在由公式集化为子句集的过程中, 其最后一步就是做换名处理. 因此, 定义中假设$C_1$ 和$C_2$ 没有相同变元是可以的.
 \end{remark}
 
 %%%%%%%----------------------------------------
@@ -1729,11 +1729,8 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 \draw[thick,-](AMn)--(Bk);
 
 \node (nil0)[draw, process,align=center,below=0.75cm of Bn,yshift=0cm,xshift=1cm] {\textup{Nil}};                           %40
-\draw[thick,-](Bn)-- (nil0)node[left,yshift=1cm,xshift=-0.5cm] {$\{n/k\}$};
+\draw[thick,-](Bn)-- (nil0)node[left,yshift=0.6cm,xshift=-0.55cm] {$\{n/k\}$};
 \draw[thick,-](Bk)-- (nil0);
-%
-%\node (Fei)[draw, process,align=center,below=2cm of Gei,yshift=0cm] {非};                                                   %非
-%\draw[thick,->](Fei)->(Gei.south)node[left,yshift=0.25cm,xshift=-1cm] {};
 \end{tikzpicture}
 \end{center}
 \caption{归结树}
@@ -1760,17 +1757,17 @@ C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
 
 再将问题用谓词表示如下: “任何通过计算机考试并奖的人都是快乐的”.
 \begin{align}
-  (\forall x)(\textup{Pass(x, computer)}\wedge \textup{Win(x, prize)}\rightarrow \textup{Happy(x)})
+    (\forall x)(\textup{Pass(x, computer)}\wedge \textup{Win(x, prize)}\rightarrow \textup{Happy(x)})
 \end{align}
 
 “任何肯学习或幸运的人都可以通过所有考试”.
 \begin{align}
-  (\forall x) (\forall  y) (\textup{Study}(x)\vee \textup{Lucky}(x)\rightarrow \textup{Pass}(x, y))
+    (\forall x) (\forall  y) (\textup{Study}(x)\vee \textup{Lucky}(x)\rightarrow \textup{Pass}(x, y))
 \end{align}
 
 “张不肯学习但他是幸运的”.
 \begin{align}
-  \neg \textup{Study}(\textup{zhang})\wedge \textup{Lucky}(\textup{zhang})
+    \neg \textup{Study}(\textup{zhang})\wedge \textup{Lucky}(\textup{zhang})
 \end{align}
 
 “任何幸运的人都能获奖”.

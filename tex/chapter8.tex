@@ -203,7 +203,7 @@ The  professor  trains  Jack.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{自顶向下与自底向上分析}
-自顶向下分析, 是指从起始符开始应用文法规则, 一层一层地向下产生分析树的各个分支, 直至生成与输入语句相匹配的完整的句子结构为止.
+    自顶向下分析, 是指从起始符开始应用文法规则, 一层一层地向下产生分析树的各个分支, 直至生成与输入语句相匹配的完整的句子结构为止.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -216,25 +216,25 @@ The  professor  trains  Jack.
 进行分析的过程是:
     首先从起始符“语句”开始, 正向运用规则:
 \begin{center}
-  语句 $\rightarrow$\,  句子   终标符
+    语句 $\rightarrow$\,  句子   终标符
 \end{center}
 把分析树的根节点“语句”替换为它的两个子节点“句子”和“终标符”.
     然后再对新生成的节点“句子”使用规则:
 \begin{center}
-  句子 $\rightarrow$\,  名词短语   动词短语
+    句子 $\rightarrow$\,  名词短语   动词短语
 \end{center}
 将其替换为两个子节点“名词短语”与“动词短语”.
     对于“名词短语”, 有两条规则可用, 若按规则的排列顺序, 则选用
 \begin{center}
-  名词短语 $\rightarrow$\,  冠词    名词
+    名词短语 $\rightarrow$\,  冠词    名词
 \end{center}
 将“名词短语”被替换为“冠词”和“名词”, 生成两个新节点. 对“冠词”使用规则:
 \begin{center}
-  冠词 $\rightarrow$\,  The
+    冠词 $\rightarrow$\,  The
 \end{center}
 对名词使用规则:
 \begin{center}
-  名词 $\rightarrow$\,  professor
+    名词 $\rightarrow$\,  professor
 \end{center}
 以此进行$\cdots$, 得到如图8.8所示的自顶向下的分析树.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -414,7 +414,7 @@ DeepMind提出了Transformer的一个简单变种:  Compressive Transformer模�
 %%%%%%---------------------------------
 \begin{think}
   什么是文本生成的语言模型?举例说明构建语言模型的方法。
-\end{think} 
+\end{think}
 
 %%%%%%---------------------------------
 \begin{think}

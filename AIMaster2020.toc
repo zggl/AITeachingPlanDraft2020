@@ -516,9 +516,10 @@
 \contentsline {subsection}{\numberline {7.8.5}循环神经网络(Recurrent Neural Networks, RNN)}{478}{subsection.7.8.5}% 
 \contentsline {subsection}{\numberline {7.8.6}深度神经网络轻量化}{487}{subsection.7.8.6}% 
 \contentsline {subsection}{\numberline {7.8.7}防止CNN的过拟合——diffGrad}{490}{subsection.7.8.7}% 
-\contentsline {section}{\numberline {7.9}强化学习及深度强化学习}{490}{section.7.9}% 
-\contentsline {section}{\numberline {7.10}AI的未来-NeurlPS 2019}{490}{section.7.10}% 
-\contentsline {section}{\numberline {7.11}作业}{491}{section.7.11}% 
+\contentsline {subsection}{\numberline {7.8.8}无限宽度DNN}{490}{subsection.7.8.8}% 
+\contentsline {section}{\numberline {7.9}强化学习及深度强化学习}{491}{section.7.9}% 
+\contentsline {section}{\numberline {7.10}AI的未来-NeurlPS 2019}{491}{section.7.10}% 
+\contentsline {section}{\numberline {7.11}作业}{492}{section.7.11}% 
 \contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{493}{chapter.8}% 
 \contentsline {paragraph}{Transformer 架构}{494}{paragraph*.516}% 
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{495}{section.8.1}% 
