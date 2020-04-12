@@ -524,7 +524,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \end{mydef}
 %%%%%%%------------------------------------------
 \begin{example}
-  设个体域$D=\{1, 2\}$, 求公式$A=(\forall x)( \forall y)P(x, y)$在$D$上的解释, 并指出在每一种解释下公式$A$的真值.
+    设个体域$D=\{1, 2\}$, 求公式$A=(\forall x)( \forall y)P(x, y)$在$D$上的解释, 并指出在每一种解释下公式$A$的真值.
 \end{example}
 %%%%%%%----------------------------------------%%
 \begin{result}
@@ -547,13 +547,13 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 %%%%%%%----------------------------------------
 这就是公式$A$在$D$上的一个解释. 从这个解释可以看出:
 \begin{itemize}
-\item 当$x=1, y=1$时, 有$P(x,y)$的真值为$T$;
-\item 当$x=2, y=1$时, 有$P(x,y)$的真值为$T$;
+    \item 当$x=1, y=1$时, 有$P(x,y)$的真值为$T$;
+    \item 当$x=2, y=1$时, 有$P(x,y)$的真值为$T$;
 \end{itemize}
 即对$x$在$D$上的任意取值, 都存在$y=1$使$P(x,y)$的真值为$T$. 因此, 在此解释下公式$A$的真值为$T$.
 %%%%%%%-----------------------------------------------
 \begin{remark}
-  一个谓词公式在其个体域上的解释不是唯一的.
+    一个谓词公式在其个体域上的解释不是唯一的.
 \begin{example}
 对公式$A$, 若给出另一组真值指派.
 %%%%%%%----------------------------------------
@@ -577,8 +577,8 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \end{remark}
 从 这个解释可以看出:
 \begin{itemize}
-\item 当$x=1,y=1$时, $P(x,y)$的真值为$T$;
-\item 当$x=2,y=1$时, $P(x,y)$的真值为$F$;
+    \item 当$x=1,y=1$时, $P(x,y)$的真值为$T$;
+    \item 当$x=2,y=1$时, $P(x,y)$的真值为$F$;
 \end{itemize}
 即对$x$在$D$上的任意取值, 不存在一个$y$, 使得$P(x,y)$的真值为$T$. 因此, 在此解释下公式$A$的真值为$F$.
 \begin{remark}
@@ -587,7 +587,7 @@ $$A\rightarrow B, B\rightarrow C \Rightarrow A\rightarrow C.$$
 \end{result}
 %%%%%%%---------------------------------------------
 \begin{example}
-  设个体域$D=\{1, 2\}$, 求公式$B=(\forall x)\,P(f(x), a)$在$D$上的解释, 并指出在该解释下公式$B$的真值.
+    设个体域$D=\{1, 2\}$, 求公式$B=(\forall x)\,P(f(x), a)$在$D$上的解释, 并指出在该解释下公式$B$的真值.
 \end{example}
 \begin{result}
 设对个体常量$a$和函数$f(x)$的值指派如表\ref{AI_table2019113003},
@@ -638,20 +638,20 @@ $a$	&$f(1)$&$	F(2)$\\
 \end{remark}
 %%%%%%%---------------------------------------------
 \subsection{谓词公式的永真性和可满足性}
- 为了推理的需要, 先定义永真公式:
+    为了推理的需要, 先定义永真公式:
 %%%%%%%------------------------------------------
 \begin{mydef}{永真公式}{1}
-如果谓词公式$P$对非空个体域$D$上的任一解释都取真值T, 则称$P$在$D$上是永真的；如果$P$在任何非空个体域上均是永真的, 则称$P$永真.
+    如果谓词公式$P$对非空个体域$D$上的任一解释都取真值$T$, 则称$P$在$D$上是永真的；如果$P$在任何非空个体域上均是永真的, 则称$P$永真.
 \end{mydef}
 
 可见, 要判定谓词公式为永真, 必须对每个非空个体域上的每个解释逐一进行判断. 当解释的个数有限时, 尽管工作量大, 公式的永真性还可以判定, 但当解释个数无限时, 永真性就很难判定.
 \begin{mydef}{公式的相容性}{1}
-对于谓词公式$P$, 如果至少存在$D$上的一个解释, 使公式$P$在此解释下的真值为$T$, 则称公式$P$在$D$上是\textbf{可满足的}.
+对于谓词公式$P$, 如果至少存在$D$上的一个解释$I$, 使公式$P$在解释$I$下的真值为$T$, 则称公式$P$在$D$上是\textbf{可满足的}.
 谓词公式的可满足性也称相容性.
 \end{mydef}
 %%%%%%%------------------------------------------
 \begin{mydef}{永假公式}{1}
-如果谓词公式$P$对非空个体域$D$上的任一解释都取真值$F$, 则称$P$在$D$上是永假的；如果$P$在任何非空个体域上均是永假的, 则称\textbf{$P$永假}.
+    如果谓词公式$P$对非空个体域$D$上的任一解释$I$下都取真值$F$, 则称$P$在$D$上是永假的; 如果$P$在任何非空个体域上均是永假的, 则称\textbf{$P$永假}.
 \end{mydef}
 %%%%%%%------------------------------------------
 \begin{remark}
@@ -685,7 +685,7 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 
 %%%%%%%------------------------------------------
 \begin{mydef}{谓词公式的等价式}{1}
-设$P$与$Q$是$D$上的两个谓词公式, 若对$D$上的任意解释, $P$与$Q$都有相同的真值, 则称$P$与$Q$在$D$上是等价的. 如果$D$是任意非空个体域, 则称$P$与$Q$是\textbf{等价}的, 记作$P\Leftrightarrow Q$.
+设$P$与$Q$是$D$上的两个谓词公式, 若对$D$上的任意解释$I$, $P$与$Q$都有相同的真值, 则称$P$与$Q$在$D$上是等价的. 如果$D$是任意非空个体域, 则称$P$与$Q$是\textbf{等价}的, 记作$P\Leftrightarrow Q$.
 \end{mydef}
 
 (1) 双重否定律      $\neg(\neg P) \Leftrightarrow P$.
@@ -693,30 +693,29 @@ $\supset$&$\cup$&$\cap$&$\rightarrow$&$\leftarrow$&$\leftrightarrow$&$\Rightarro
 (2) 交换律               $(P\vee Q) \Leftrightarrow  (Q\vee P),  ( P\wedge Q) \Leftrightarrow  ( Q\wedge P)$.
 
 (3) 结合律               $(P\vee Q)\vee R \Leftrightarrow  P\vee (Q\vee R),
-               (P\wedge Q)\wedge R \Leftrightarrow  P\wedge (Q\wedge R)$.
+               (P\wedge Q)\wedge R \Leftrightarrow P\wedge (Q\wedge R)$.
 
-(4) 分配律               $P\vee (Q\wedge R) \Leftrightarrow  (P\vee Q)\wedge (P\vee R),
-               P\wedge (Q\vee R) \Leftrightarrow  (P\wedge Q)\vee (P\wedge R)$.
+(4) 分配律               $P\vee (Q\wedge R) \Leftrightarrow (P\vee Q)\wedge (P\vee R),
+               P\wedge (Q\vee R) \Leftrightarrow (P\wedge Q)\vee (P\wedge R)$.
 
-(5) 摩根定律        $\neg  (P\vee Q) \Leftrightarrow  P\wedge Q,
+(5) 摩根定律        $\neg  (P\vee Q) \Leftrightarrow P\wedge Q,
               \neg  (P\wedge Q) \Leftrightarrow P\vee Q$.
 
 (6) 吸收律              $ P\vee (P\wedge Q) \Leftrightarrow P,
                 P\wedge (P\vee Q) \Leftrightarrow P$.
 
-(7) 补余律               $\neg P\vee P \Leftrightarrow  T, \neg  P\wedge P \Leftrightarrow  F$.
+(7) 补余律               $\neg P\vee P \Leftrightarrow T, \neg  P\wedge P \Leftrightarrow F$.
 
 (8) 连词化归律      $ P\rightarrow Q \Leftrightarrow  \neg P\vee Q,
-               P\longleftrightarrow Q \Leftrightarrow  (P\rightarrow Q)\wedge (Q\rightarrow P),
-               P\longleftrightarrow Q \Leftrightarrow  (P\wedge Q)\vee (Q\wedge P)$.
+               P\longleftrightarrow Q \Leftrightarrow (P\rightarrow Q)\wedge (Q\rightarrow P),
+               P\longleftrightarrow Q \Leftrightarrow (P\wedge Q)\vee (Q\wedge P)$.
 
-(9) 量词转换律     $ \neg  (\exists x)P \Leftrightarrow  (\forall x)( \neg  P),
-              \neg  (\forall x)P \Leftrightarrow  (\exists x) (\neg  P)$.
+(9) 量词转换律     $ \neg  (\exists x)P \Leftrightarrow (\forall x)( \neg  P), \neg (\forall x)P \Leftrightarrow (\exists x) (\neg  P)$.
 
-(10) 量词分配律    $(\forall x) (P\wedge Q) \Leftrightarrow  (\forall x)P\wedge (\forall x)Q, (\exists x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
+(10) 量词分配律    $(\forall x) (P\wedge Q) \Leftrightarrow (\forall x)P\wedge (\forall x)Q, (\exists x) (P\vee Q) \Leftrightarrow  (\exists x)P\vee (\exists x)Q$.
 
 \begin{newexam}
-    运用连词化归律说明结论: $ P\rightarrow Q \Leftrightarrow \neg P\vee Q$.
+    运用连词化归律说明结论: $P\rightarrow Q \Leftrightarrow \neg P\vee Q$.
 \end{newexam}
 %%%%%%%------------------------------------------
 \begin{mydef}{永真蕴含}{1}
@@ -826,11 +825,11 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 设
 \begin{align}
     &\theta =\{t_1/x_1,t_2/x_2,\cdots,t_n/x_n\},\\
-    &\lambda =\{u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}
+    &\lambda =\{u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}.
 \end{align}
 是两个置换. 则$\theta$与$\lambda$的合成$\theta \circ \lambda$也是一个置换. 它是从集合
 \begin{align}
-  \{ t_1\lambda /x_1, t_2\lambda /x_2, \cdots , t_n\lambda /x_n,  u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}
+  \{ t_1\lambda /x_1, t_2\lambda /x_2, \cdots , t_n\lambda /x_n,  u_1/y_1, u_2/y_2, \cdots , u_m/y_m \}.
 \end{align}
 中删去以下两种形式的元素:
 
@@ -913,10 +912,10 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 证明: 因为
 \begin{itemize}
-    \item $A, A\rightarrow C\Rightarrow  C$;                    假言推理;
-    \item $B,  C\Rightarrow  B\wedge C$;                        引入合取词;
+    \item $A, A\rightarrow C\Rightarrow  C$;                   假言推理;
+    \item $B,  C\Rightarrow  B\wedge C$;                       引入合取词;
     \item $B\wedge C, B\wedge C\rightarrow D \Rightarrow  D$;  假言推理;
-    \item $D,  D\rightarrow Q \Rightarrow  Q$,                 假言推理.
+    \item $D,  D\rightarrow Q \Rightarrow Q$,                  假言推理.
 \end{itemize}
 因此, $Q$为真.
 %%%%%%%------------------------------------------
@@ -951,7 +950,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 应用推理规则进行推理:
 
-\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\qquad\qquad\qquad\qquad   全称固化;
+\quad   (1) Lang($y$)$\rightarrow$ Prog(y)\qquad\qquad\qquad\qquad\qquad\qquad\qquad             全称固化;
 
 \quad   (2) Lang($C$), Lang(y)$\rightarrow$ Prog(y) $\Rightarrow$  Prog($C$) \qquad\qquad\qquad  假言推理  $\{C/y\}$;
 
@@ -975,7 +974,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 由\ref{AI32C3Sec3.2}节可知, 要证明$P\rightarrow Q$永真, 就是要证明$P\rightarrow Q$在任何一个非空的个体域上都是永真的. 这将是非常困难的, 甚至是不可实现的.
 为此, 人们进行了大量的探索, 后来发现可以采用反证法的思想, 即把关于永真性的证明转化为关于不可满足性的证明.
-即要证明$P\rightarrow Q$永真, 只要能够证明$P\wedge \neg Q$是不可满足的就可以了(原因是$\neg  (P\rightarrow Q) \Leftrightarrow  \neg (\neg  P\vee Q) \Leftrightarrow  P\wedge \neg  Q$.
+即要证明$P\rightarrow Q$永真, 只要能够证明$P\wedge \neg Q$是不可满足的就可以了(原因是$\neg (P\rightarrow Q) \Leftrightarrow \neg (\neg  P\vee Q) \Leftrightarrow  P\wedge \neg Q$.
 这方面最有成效的工作就是\textbf{鲁宾逊归结原理}. 它使定理证明的机械化成为现实.
 %%%%%%%---------------------------------------------
 \subsection{子句集及其化简}
@@ -1026,11 +1025,11 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 %%%%%%%------------------------------------------
 \begin{example}\label{C3exam3.64}公式
 \begin{align}
-  (\forall x)((\forall y)P(x,y)\rightarrow \neg  (\forall y)(Q(x,y)\rightarrow R(x,y))),
+    (\forall x)((\forall y)P(x,y)\textcolor[rgb]{0,0,1}{\rightarrow} \neg  (\forall y)(Q(x,y)\rightarrow R(x,y))),
 \end{align}
 经等价变化后为
 \begin{align}\label{C3equa3.12}
-  (\forall x)(\neg (\forall y)P(x,y)\vee \neg  (\forall y)(\neg Q(x,y)\vee R(x,y))).
+    (\forall x)(\neg (\forall y)P(x,y)\vee \neg  (\forall y)(\neg Q(x,y)\vee R(x,y))).
 \end{align}
 \end{example}
 
@@ -1038,7 +1037,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 反复使用双重否定率
 \begin{align}
-  \neg (\neg P) \Leftrightarrow  P.
+    \neg (\neg P) \Leftrightarrow  P.
 \end{align}
 
 \textbf{摩根定律}
@@ -1055,7 +1054,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 将每个否定符号“$\neg$”移到仅靠谓词的位置, 使得每个否定符号最多只作用于一个谓词上.
 
 \begin{example}
-例\ref{C3exam3.64}中的公式\ref{C3equa3.12}经等价变换后为
+    例\ref{C3exam3.64}中的公式\ref{C3equa3.12}经等价变换后为
 \begin{align}
   (\forall x)((\exists  y)\neg P(x, y)\vee (\exists  y)(Q(x, y) \wedge \neg R(x, y))).
 \end{align}
@@ -1068,7 +1067,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \begin{example}
 上式经变换后为
 \begin{align}
-  (\forall x)((\exists  y)\neg P(x, y)\vee (\exists  z)( Q(x, z) \wedge \neg R(x, z))).
+  (\forall x)((\exists  y)\neg P(x, y)\vee (\exists  \textcolor[rgb]{0,0,1}{z})( Q(x, \textcolor[rgb]{0,0,1}{z}) \wedge \neg R(x, \textcolor[rgb]{0,0,1}{z}))).
 \end{align}
 \end{example}
 
@@ -1080,7 +1079,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \begin{example}
 上式化为前束范式后为
 \begin{align}
-  (\forall x)(\exists  y) (\exists  z)(\neg P(x, y)\vee ( Q(x, z) \wedge \neg R(x, z))).
+  (\forall x)(\exists  y) (\exists  \textcolor[rgb]{0,0,1}{z})(\neg P(x, y)\vee ( Q(x, z) \wedge \neg R(x, z))).
 \end{align}
 \end{example}
 
@@ -1125,7 +1124,7 @@ Skolem标准形的一般形式为
 \begin{example}
 前面的公式化为Skolem标准形后为
 \begin{align}
-    (\forall x)((\neg P(x,f(x))\vee Q(x,g(x))\wedge (\neg P(x,f(x))\vee \neg R(x,g(x)))).
+    (\forall x)((\neg P(x,f(x))\vee Q(x,g(x))\wedge \textcolor[rgb]{0,0,1}{(}\neg P(x,f(x))\vee \neg R(x,g(x))\textcolor[rgb]{0,0,1}{)}).
 \end{align}
 \end{example}
 
@@ -1136,7 +1135,7 @@ Skolem标准形的一般形式为
 \begin{example}
 上式消去全称量词后为
 \begin{align}
-  (\neg P(x,f(x))\vee Q(x,g(x)) \wedge (\neg P(x,f(x))\vee \neg R(x,g(x))).
+  (\neg P(x,f(x))\vee Q(x,g(x)) \textcolor[rgb]{0,0,1}{\wedge} \textcolor[rgb]{0,0,1}{(}\neg P(x,f(x))\vee \neg R(x,g(x))\textcolor[rgb]{0,0,1}{)}.
 \end{align}
 \end{example}
 
@@ -1147,7 +1146,7 @@ Skolem标准形的一般形式为
 \begin{example}
 上式的子句集中包含以下两个子句
 \begin{align}
-  &\neg P(x,f(x))\vee Q(x,g(x)).\\
+  &\neg P(x,f(x))\vee Q(x,g(x)),\\
   &\neg P(x,f(x))\vee \neg R(x,g(x)).
 \end{align}
 \end{example}
@@ -1166,7 +1165,7 @@ Skolem标准形的一般形式为
 \end{example}
 %%%%%%%---------------------------------------------
 \paragraph{子句集及其化简}~{}
-在上述化简过程中, 由于在消去存在量词时所用的Skolem函数可以不同, 因此化简后的标准子句集是不唯一的.
+在上述化简过程中, 由于在消去存在量词时, 所用的Skolem函数可以不同, 因此化简后的标准子句集是不唯一的.
 这样, 当原谓词公式为非永假时, 它与其标准子句集并不等价. 但当原谓词公式为永假(不可满足)时, 其标准子句集则一定是永假的, 即\uwave{Skolem化并不影响原谓词公式的永假性}.
 
 不可满足的充要条件这一结论很重要, 是归结原理的主要依据, 可用定理的形式来描述.
@@ -1183,11 +1182,11 @@ Skolem标准形的一般形式为
 
 又设$(Q_r x_r)$是第一个出现的存在量词$(\exists x_r)$, 即$F$为
 \begin{align}
-    F=(x_1)\cdots(x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
+    F=(\forall x_1)\cdots(\forall x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
 \end{align}
 为把$F$化为Skolem形, 需要先消去这个$(\exists  x_r)$, 并引入Skolem函数, 得到
 \begin{align}
-    F_1=(x_1)\cdots(x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n)M(x_1,\cdots,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots,x_n).
+    F_1=(\forall x_1)\cdots(\forall x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n)M(x_1,\cdots,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots,x_n).
 \end{align}
 %%%%%%%----------------------------------------%
 \begin{remark}
@@ -1235,36 +1234,37 @@ Skolem标准形的一般形式为
 
 再证明必要性, 已知$F_1$不可满足, 假设$F$是可满足的. 于是便有某个解释$I$使$F$在$I$下为真. 即对任意的$x_1,\cdots ,x_{r-1}$在$I$的设定下都可找到一个$x_r$使
 \begin{align}
-  (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1}\cdots ,x_n)
+    (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 若扩充$I$, 使它包含一个函数$f(x_1,\cdots ,x_{r-1})$, 且有
 \begin{align}
-  x_r= f(x_1,\cdots,x_{r-1})
+    x_r= f(x_1,\cdots,x_{r-1}),
 \end{align}
 这样, 就可以把所有的$f(x_1,\cdots ,x_{r-1})$映射到$x_r$, 从而得到一个新的解释$I'$, 并且在此解释下对任意的$x_1,\cdots ,x_{r-1}$都有
 \begin{align}
-  (Q_{r+1}x_{r+1})\cdots (Q_n x_n) M(x_1,\cdots ,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots ,x_n)
+    (Q_{r+1}x_{r+1})\cdots (Q_n x_n) M(x_1,\cdots ,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 即在$I'$下有
 \begin{align}
-  (\forall x_1)\cdots (\forall x_{r-1}) (Q_{r+1}x_{r+1})\cdots (Q_n x_n)M(x_1,\cdots ,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots ,x_n)
+    (\forall x_1)\cdots (\forall x_{r-1}) (Q_{r+1}x_{r+1})\cdots (Q_n x_n)M(x_1,\cdots ,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 它说明$F_1$在解释$I'$下为真. 但这与前提$F_1$是不可满足的相矛盾, 即假设$F$为可满足是错误的. 从而可以得出“若$F_1$不可满足, 则必有$F$不可满足”.
 于是, 定理得证.
 \end{proof}
-
-由此定理可知, 证明一个谓词公式是不可满足的, 只要证明其相应的标准子句集是不可满足的就可以了. 至于如何证明一个子句集的不可满足性, 由下面的海伯伦理论和鲁宾逊归结原理来解决.
-
+\begin{remark}
+    由此定理可知, 证明一个谓词公式是不可满足的, 只要证明其相应的标准子句集是不可满足的就可以了. 至于如何证明一个子句集的不可满足性, 由下面的海伯伦理论和鲁宾逊归结原理来解决.
+\end{remark}
 %%%%%%%---------------------------------------------
 \subsection{鲁滨逊归结原理}
+鲁滨逊归结原理包括: \textbf{命题逻辑的归结原理和谓词逻辑的归结原理}.
 %%%%%%%--------------------------------------
-\subparagraph{鲁滨逊归结原理基本思想}~{}
+\subparagraph{鲁滨逊归结原理基本思想}
 \textbf{1) 子句集中的子句之间是合取关系}. 因此, 子句集中只要有一个子句为不可满足, 则整个子句集就是不可满足的.
 
 \textbf{2) 空子句是不可满足的}. 因此, 一个子句集中如果包含有空子句, 则此子句集就一定是不可满足的.
 
-首先把欲证明问题的结论否定, 并加入子句集, 得到一个扩充的子句集$S'$. 然后设法检验子句集$S'$是否含有空子句, 若含有空子句, 则表明$S'$是不可满足的；若不含有空子句, 则继续使用归结法, 在子句集中选择合适的子句进行归结, 直至导出空子句或不能继续归结为止.
-鲁滨逊归结原理包括: \textbf{命题逻辑的归结原理和谓词逻辑的归结原理}.
+首先把欲证明问题的结论否定, 并加入子句集, 得到一个扩充的子句集$S'$. 然后设法检验子句集$S'$是否含有空子句, 若含有空子句, 则表明$S'$是不可满足的;
+若不含有空子句, 则继续使用归结法, 在子句集中选择合适的子句进行归结, 直至导出空子句或不能继续归结为止.
 %%%%%%%--------------------------------------
 \subsubsection{命题逻辑的归结}~{}
 
@@ -1288,7 +1288,7 @@ Skolem标准形的一般形式为
              $$C_{12}= Q\vee R\vee S.$$
 %%%%%%%----------------------------------------
 \begin{example}
-  设$C_1=\neg Q$, $C_2=Q$, 求$C_1$和$C_2$的归结式$C_{12}$.
+    设$C_1=\neg Q$, $C_2=Q$, 求$C_1$和$C_2$的归结式$C_{12}$.
 \end{example}
 \end{result}
 %%%%%%%----------------------------------------
@@ -1300,11 +1300,11 @@ Skolem标准形的一般形式为
 \end{result}
 %%%%%%%------------------------------------------%
 \begin{example}
-    设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2 ,C_3$的归结式$C_{123}$.
+    设$C_1  =\neg P \vee  Q$ , $C_2 =\neg Q,C_3=P$, 求$C_1,C_2$和$C_3$的归结式$C_{123}$.
 \end{example}
 %%%%%%%----------------------------------------
 \begin{result}
-若先对$C_1,C_2$归结, 可得到
+    若先对$C_1,C_2$归结, 可得到
 \begin{align}
     C_{1 2}=\neg P.
 \end{align}
@@ -1367,7 +1367,6 @@ Skolem标准形的一般形式为
 \label{AI32fig14}
 \end{figure}
 %%%%%%%-----------------------------------------------
-%%%%%%%-------------------------------------------
 \begin{mythm}{归结式的亲本子句}{}\label{AIthm3.1}
     归结式$C_{12}$是其亲本子句$C_1 $和$C_2$的逻辑结论.
 \end{mythm}
@@ -1392,9 +1391,9 @@ Skolem标准形的一般形式为
 
 设$S_1$是不可满足的, 则对不满足$S_1$的任一解释$I$, 都可能有以下两种情况:
 
- \ding{172} 解释$I$使$C_{1 2}$为真, 则$C_3, \cdots \cdots , C_n$中必有一个为假, 即$S$是不可满足的.
+ \ding{172} 解释$I$使$C_{1 2}$为真, 则$C_3, \cdots \cdots, C_n$中必有一个为假, 即$S$是不可满足的.
 
- \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.1}, 有$\neg  (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$或$C_2$为假. 即$S$也是不可满足的.
+ \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.1}, 有$\neg  (C_1 \wedge C_2)$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$或$C_2$为假. 即$S$也是不可满足的.
 
 因此可以得出
 \begin{center}
@@ -1405,16 +1404,16 @@ Skolem标准形的一般形式为
 \begin{myprop}{归结式的不可满足性}{1}
     设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中得到新的子句集$S_2$, 则\emph{$S$与$S_2$的不可满足性是等价的}. 即:
 \begin{center}
-  $S_2$的不可满足性$\Leftrightarrow S$的不可满足性.
+    $S_2$的不可满足性$\Leftrightarrow S$的不可满足性.
 \end{center}\end{myprop}
 \begin{proof}
-设$S=\{ C_1, C_2, C_3, \cdots , C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots , C_n$中必有一子句为假, 因而$S_2=\{ C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
+设$S=\{C_1, C_2, C_3, \cdots, C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots , C_n$中必有一子句为假, 因而$S_2=\{C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
 
 再证明 $\Rightarrow$
 
 设$S_2$是不可满足的,则对不满足$S_2$的任一解释$I$, 都可能有以下两种情况:
 
-     \quad\ding{172} 解释$I$使$C_{1 2}$为真, 则$C_1, C_2, C_3, \cdots , C_n$中必有一个为假, 即S是不可满足的.
+     \quad\ding{172} 解释$I$使$C_{1 2}$为真, 则$C_1, C_2, C_3, \cdots, C_n$中必有一个为假, 即$S$是不可满足的.
 
      \quad\ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.2}有$\neg (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
 
@@ -1626,11 +1625,11 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \end{example}
 %%%%%%%----------------------------------------
 \begin{result}
-    对$C_1$, 取最一般合一$\sigma =\{f(x)/y\}$, 得$C_1$的因子
+    对$C_1$取最一般合一$\sigma =\{f(x)/y\}$, 得$C_1$的因子
 \begin{align}
     C_1\sigma =P(f(x))\vee Q(g(x)),
 \end{align}
-对$C_1$的因子和$C_2$归结($\sigma=\{g(a)/x\}$), 可得到$C_1$和$C_2$的二元归结式
+对$C_1$的因子和$C_2$归结(合一$\sigma=\{g(a)/x\}$), 可得到$C_1$和$C_2$的二元归结式
 \begin{align}
     C_{12}=Q(g(g(a)))\vee Q(b).
 \end{align}
@@ -1665,29 +1664,29 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
     先把$G$否定, 并放入$F$中, 得到的$\{F, \neg G\}$为
 \begin{align}
   \{
-    &(\forall  x)((\exists   y)(A(x,y)\wedge B(y))\rightarrow (\exists   y)(C(y)\wedge D(x,y))),\\
-    &\neg (\neg (\exists   x)C(x)\rightarrow (\forall  x)(\forall  y)(A(x,y)\rightarrow \neg  B(y)))\}.
+    &(\forall x)((\exists y)(A(x,y)\wedge B(y))\rightarrow (\exists y)(C(y)\wedge D(x,y))),\\
+    &\neg (\neg (\exists x)C(x)\rightarrow (\forall  x)(\forall y)(A(x,y)\rightarrow \neg B(y)))\}.
 \end{align}
 
 再把$\{F,\neg G\}$化成子句集, 得到
 
-     (1) $\neg A(x,y)\vee \neg  B(y) \vee C(f(x))$
+     (1) $\neg A(x,y)\vee \neg B(y) \vee C(f(x))$
 
-     (2) $\neg  A(u,v)\vee \neg  B(v) \vee D(u,f(u))$
+     (2) $\neg A(u,v)\vee \neg B(v) \vee D(u,f(u))$
 
-     (3) $\neg  C(z)$
+     (3) $\neg C(z)$
 
-     (4)  $A(m,n)$
+     (4) $A(m,n)$
 
-     (5)  $B(k)$, 其中, (1)、(2)是由$F$化出的两个子句, (3)、(4)和(5)是由$\neg G$化出的3个子句.
+     (5) $B(k)$, 其中(1)、(2)是由$F$化出的两个子句, (3)、(4)和(5)是由$\neg G$化出的3个子句.
 
 最后应用谓词逻辑的归结原理对上述子句集进行归结, 其过程为
 
-     (6) $\neg  A(x,y)\vee  \neg  B(y)$, 由(1)和(3)归结, 取$\sigma=\{f(x)/z\}$,
+     (6) $\neg  A(x,y)\vee  \neg  B(y)$, 由(1)和(3)归结, 取合一$\sigma=\{f(x)/z\}$,
 
-     (7) $\neg  B(n)$, 由(4)和(6)归结, 取$\sigma =\{m/x,n/y\}$,
+     (7) $\neg  B(n)$, 由(4)和(6)归结, 取合一$\sigma =\{m/x,n/y\}$,
 
-     (8) $\textup{NIL}$, 由(5)和(7)归结, 取$\sigma=\{n/k\}$, 因此, $G$是$F$的逻辑结论.
+     (8) $\textup{NIL}$, 由(5)和(7)归结, 取合一$\sigma=\{n/k\}$, 因此, $G$是$F$的逻辑结论.
 \end{proof}
 
 上述归结过程可用归结树(图\ref{AI32fig16})来表示
@@ -1748,27 +1747,27 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 
 再将问题用谓词表示如下: “任何通过计算机考试并奖的人都是快乐的”.
 \begin{align}
-    (\forall x)(\textup{Pass(x, computer)}\wedge \textup{Win(x, prize)}\rightarrow \textup{Happy(x)})
+    (\forall x)(\textup{Pass(x, computer)}\wedge \textup{Win(x, prize)}\rightarrow \textup{Happy(x)}).
 \end{align}
 
 “任何肯学习或幸运的人都可以通过所有考试”.
 \begin{align}
-    (\forall x) (\forall  y) (\textup{Study}(x)\vee \textup{Lucky}(x)\rightarrow \textup{Pass}(x, y))
+    (\forall x) (\forall  y) (\textup{Study}(x)\vee \textup{Lucky}(x)\rightarrow \textup{Pass}(x, y)).
 \end{align}
 
 “张不肯学习但他是幸运的”.
 \begin{align}
-    \neg \textup{Study}(\textup{zhang})\wedge \textup{Lucky}(\textup{zhang})
+    \neg \textup{Study}(\textup{zhang})\wedge \textup{Lucky}(\textup{zhang}).
 \end{align}
 
 “任何幸运的人都能获奖”.
 \begin{align}
-    (\forall x) (\textup{Lucky}(x)\rightarrow \textup{Win}(x, prize))
+    (\forall x) (\textup{Lucky}(x)\rightarrow \textup{Win}(x, prize)).
 \end{align}
 
 结论“张是快乐的”的否定:
 \begin{align}
-    \neg \textup{Happy}(\textup{zhang})
+    \neg \textup{Happy}(\textup{zhang}).
 \end{align}
 \end{result}
 
@@ -1809,8 +1808,8 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
     \item Poor($x$)     \quad\,\,\,\,  $x$是不富足的;
     \item Smart($x$)    \quad\,  $x$是聪明的;
     \item Happy($x$)    \, $x$是快乐的;
-    \item Read($x$)     \,\,\, $x$能看书;
-    \item Exciting($x$) \, $x$过着幸福的生活.
+    \item Read($x$)     \,\,\,\, $x$能看书;
+    \item Exciting($x$) \,\, $x$过着幸福的生活.
 \end{itemize}
 
 再将问题用谓词表示为: “所有不贫穷并且聪明的人都是快乐的”.
@@ -1841,17 +1840,17 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 
 将上述谓词公式转化为子句集如下:
 
-    (1) $\textup{Poor}(x)\vee \neg \textup{Smart}(x)\vee \textup{Happy}(x)$;
+\qquad (1) $\textup{Poor}(x)\vee \neg \textup{Smart}(x)\vee \textup{Happy}(x)$;
 
-    (2) $\neg \textup{Read}(y)\vee \textup{Smart}(y)$;
+\qquad (2) $\neg \textup{Read}(y)\vee \textup{Smart}(y)$;
 
-    (3) \textup{Read}(Liming);
+\qquad (3) \textup{Read}(Liming);
 
-    (4) $\neg \textup{Poor}(\textup{Liming})$;
+\qquad (4) $\neg \textup{Poor}(\textup{Liming})$;
 
-    (5) $\neg \textup{Happy}(z)\vee \textup{Exciting}(z)$;
+\qquad (5) $\neg \textup{Happy}(z)\vee \textup{Exciting}(z)$;
 
-    (6) $\neg \textup{Exciting}(\textup{Liming})$. (结论的否定)
+\qquad (6) $\neg \textup{Exciting}(\textup{Liming})$. (结论的否定)
 
  %%%%%%%-----------------------------------------------
 \begin{figure}[H]
@@ -2057,15 +2056,15 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
     设有子句$C_1$和$C_2$, 如果存在一个置换$\sigma $, 使得$C_1\sigma \subseteq C_2$, 则称$C_1$包孕于$C_2$.
 %%%%%%%-------------------------------------------%
 \begin{example}
-    $P(x)$             包孕于   $P(y)\vee Q(z)$             $\sigma ={x/y}$;
+    $P(x)$             包孕于   $P(y)\vee Q(z)$             $\sigma =\{x/y\}$;
 
-    $P(x)$             包孕于   $P(a)$                      $\sigma ={a/x}$;
+    $P(x)$             包孕于   $P(a)$                      $\sigma =\{a/x\}$;
 
-    $P(x)$             包孕于   $P(a)\vee Q(z)$             $\sigma ={a/x}$;
+    $P(x)$             包孕于   $P(a)\vee Q(z)$             $\sigma =\{a/x\}$;
 
-    $P(x) \vee Q(a)$ 包孕于 $P(f(a))\vee Q(a)\vee R(y)$    $\sigma ={f(a)/x}$;
+    $P(x) \vee Q(a)$ 包孕于 $P(f(a))\vee Q(a)\vee R(y)$    $\sigma =\{f(a)/x\}$;
 
-    $P(x) \vee Q(y)$ 包孕于 $P(a)\vee Q(u)\vee R(w)$        $\sigma ={a/x, u/y}$.
+    $P(x) \vee Q(y)$ 包孕于 $P(a)\vee Q(u)\vee R(w)$        $\sigma =\{a/x, u/y\}$.
 \end{example}
 
 对子句集来说, 把其中包孕的子句删去后, 不会影响该子句集的不可满足性. 因此, 可从子句集中删除哪些包孕的子句.
@@ -2280,30 +2279,37 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 %%%%%%%------------------------------------------
 \begin{result}
 首先定义谓词:
-
+\begin{center}
+\begin{flushleft}
 \quad $C(x, y)$:     $x$和$y$是同班同学;
 
-\quad $\textup{At}(x, u)$:    $x$在$u$教室上课.
-
+\quad $\textup{At}(x, u)$:    $x$在$u$教室上课.  
+\end{flushleft}
+\end{center}
 把已知前提用谓词公式表示如下:
-
+\begin{center}
+\begin{flushleft}
 \quad C(zhang, li);
 
 \quad $(\forall x) (\forall y) (\forall u) (C(x, y)\wedge \textup{At}(x, u)\rightarrow At(y,u))$;
 
-\quad \textup{At}(zhang, 302).
-
+\quad \textup{At}(zhang, 302).  
+\end{flushleft}
+\end{center}
 把目标的否定用谓词公式表示如下:
 
 $$\neg (\exists  v)\textup{At}(\textup{li}, v).$$
 
 把上述公式化为子句集:
-
+\begin{center}
+\begin{flushleft}
 \textup{C(zhang, li)};
 
 $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 
-\textup{At}(zhang, 302).
+\textup{At}(zhang, 302).  
+\end{flushleft}
+\end{center}
 
 把目标的否定化成子句式, 并用重言式
 
