@@ -373,7 +373,6 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 前向网络属于非循环连接模式, 它的每个神经元的输入都没有包含该神经元先前的输出, 因此不具有“短期记忆”的性质.
 
 反馈网络则不同, 它的每个神经元的输入都有可能包含有该神经元先前输出的反馈信息, 即一个神经元的输出是由该神经元当前的输入和先前的输出这两者来决定的, 这就有点类似于人类的短期记忆的性质.
-
 反馈网络的典型例子是后面将要介绍的Hopfield网络.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{人工神经网络的典型模型}
@@ -967,7 +966,7 @@ in practice the \textbf{MRSR} \index{MRSR}\cite{SimiläTikka2005-32497} implemen
 \begin{center}
 \includegraphics[scale=0.7]{OPELM20161021.PNG}
 \end{center}
-\caption{Illustration of the three OP-ELM steps: the SLFN is first built using the ELM approach (random initialization of internal weights and biases); then a LARS algorithm is
+\caption{OP-ELM的三部分框架结构: the SLFN is first built using the ELM approach (random initialization of internal weights and biases); then a LARS algorithm is
 used to rank the neurons of the hidden layer; finally the selection of the optimal number of neurons for the OP-ELM model is performed using a Leave-One-Out criterion.}
 \label{OPELM20161021fig2}
 \end{figure}
@@ -988,18 +987,18 @@ Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用�
 此外, 普通的最小二乘法隐式地将重构版本$\bm{x}$的每个元素(在$A$的空空间中)置空, 而不允许将模型用作$\bm{x}$的前置.
 最小二乘法寻求最小化残差平方和, 其紧凑格式可写为
 \begin{align}
-   \|\bm A\bm {x} -\bm {b} \|^{2}
+   \|\bm A\bm {x} -\bm {b} \|^{2}.
 \end{align}
 其中$\left\|\cdot\right\|$是欧几里德范数. 为了得到具有期望性质的特定解, 对于适定的Tikhonov矩阵$\Gamma$, 可在最小化问题中包括正则化项：
 \begin{align}
-  \|\bm A\bm {x} -\bm {b} \|^{2}+\|\Gamma \bm {x} \|^{2}
+  \|\bm A\bm {x} -\bm {b} \|^{2}+\|\Gamma \bm {x} \|^{2}.
 \end{align}
 
 许多情况下, 该矩阵被选为恒等矩阵$(\Gamma=\alpha I)$, 优先选择具有较小范数的解; 这是熟知的$L_2$正则化方法 \cite{Ng2004-32636}.
 在其他情况下, 则可以使用textbf{lowpass operators}\index{lowpass operators}(例如,差分运算符或\textbf{weighted Fourier operator})来强制平滑.
 这种正则化改进了问题的解, 从而使直接求得数值解成为可能. 由$\hat{x}$表示的显式解由以下公式给出：
 \begin{align}
-  {\hat {x}}=(\bm A^{T}\bm A+\Gamma ^{T}\Gamma )^{-1}\bm A^{T}\bm {b}
+  {\hat {x}}=(\bm A^{T}\bm A+\Gamma ^{T}\Gamma )^{-1}\bm A^{T}\bm {b}.
 \end{align}
 
 正则化的效果可以通过矩阵$\Gamma$的尺度变化.对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
@@ -1160,7 +1159,7 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
   \hat y = \arg \max_{ k \in 1,\cdots,m} f_{test}^k (z)
 \end{align}
   \item  %Regression: The predicted value is equal to the output function $f_{test}(z)$ of the RVFL+
-  回归:预测值等于RVFL的输出函数$f{test}（z）$+
+  回归:预测值等于RVFL的输出函数$f——{{test}}（z）$
 \begin{align}
   \hat y = f_{test}(z)
 \end{align}
@@ -1175,7 +1174,7 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
 其中$\gamma$是正则化系数. 与$\bm h（\bm x_i）$类似, ${\tilde{\bm h}}（{\tilde{\bm x_r}}i）$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量,可以用相同的方式计算.
 $\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空间中的更正函数（或可宽延函数）,而$\tilde{\bm w}$是更正函数的输出权重向量.
 \begin{align}\label{RVFL20181102eq9}
-\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}
+\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}.
 \end{align}
 
 将\eqref{RVFL20181102eq9}代入\eqref{RVFL20181102eq8}, 得到RVFL+表达形式.
@@ -1200,25 +1199,25 @@ $\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空�
 其中$\bm 1\in\mathbb R^{N\times m}$是单位矩阵。$\tilde{\bm H}$也是来自增强节点的连接输出矩阵, 它对应于RVFL的特性.
 将\eqref{RVFL20181102eq12}和\eqref{RVFL20181102eq13}代入\eqref{RVFL20181102eq14}, 得到
 \begin{align}
-  \bm H \bm H^T  \bm \lambda + \frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  (\bm \lambda -C \bm 1) = \bm Y \label{RVFL20181102eq15}
+  \bm H \bm H^T  \bm \lambda + \frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  (\bm \lambda -C \bm 1) = \bm Y. \label{RVFL20181102eq15}
 \end{align}
 
 可以进一步将\eqref{RVFL20181102eq15}重写为
 \begin{align}
-  \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )\bm \lambda  = \bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T  \label{RVFL20181102eq16}
+  \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )\bm \lambda  = \bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T.  \label{RVFL20181102eq16}
 \end{align}
 再由\eqref{RVFL20181102eq12}和\eqref{RVFL20181102eq16}, 得到RVFL+As的最后闭式解
 \begin{align}
-\bm  w =\bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )^{-1} \left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ) \label{RVFL20181102eq17}
+\bm  w =\bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )^{-1} \left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ). \label{RVFL20181102eq17}
 \end{align}
 根据岭回归方法\cite{Bishop2012-6469}, 为了避免奇异性并保证RVFL+的稳定性, 我们还附加了一个$\frac{\bm I}C$项. 因此,我们可以得到RVFL+As的最终闭式解
 \begin{align}
-\bm w = \bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T +\frac{ \bm I} C \right)^{-1} \left(\bm Y -\frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right )
+\bm w = \bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T +\frac{ \bm I} C \right)^{-1} \left(\bm Y -\frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ).
 \label{RVFL20181102eq18}
 \end{align}
 RVFL+ 输出函数定义为
 \begin{align}
-  f(x) =\bm  h (\bm x)\bm w =\bm h(\bm  x)\bm H^ T \left(\bm H \bm H^T  +\frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  +\frac{\bm  I} C \right)^{-1}\left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ).
+  f(x) =\bm  h (\bm x)\bm w =\bm h(\bm  x)\bm H^ T \left(\bm H \bm H^T  +\frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  +\frac{\bm  I} C \right)^{-1}\left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right).
 \end{align}
 此外,在测试阶段,当使用测试数据$\bm z$而不是训练数据$\bm x$时, 我们可以直接获得输出函数$f_{test}（\bm z）=\bm h（\bm z）-\bm w$.
 \subsubsection{区间二型模糊集}
@@ -1999,9 +1998,8 @@ f(x)=
 \end{itemize}
     轮盘赌选择算法的基本思想是: 根据每个个体的选择概率$P(x_i)$将一个圆盘分成$N$个扇区, 其中第$i$个扇区的中心角为:
 \begin{align}
-  2 \pi \frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f_{i}\left(x_{j}\right)}=2 \pi p\left(x_{i}\right)
+  2 \pi \frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f_{i}\left(x_{j}\right)}=2 \pi p\left(x_{i}\right).
 \end{align}
-
 并再设立一个固定指针. 当进行选择时, 可以假想转动圆盘, 若圆盘静止时指针指向第$i$个扇区, 则选择个体$i$.
 从统计角度看, 个体的适应度值越大, 其对应的扇区的面积越大, 被选中的可能性也越大. 这种方法有点类似于发放奖品使用的轮盘, 并带有某种赌博的意思, 因此亦被称为\textbf{轮盘赌选择}.
 
@@ -2012,7 +2010,6 @@ f(x)=
     \ding{172} 二进制交叉
 
     二进制交叉(Binary Valued Crossover)是指二进制编码情况下所采用的交叉操作, 它主要包括单点交叉、两点交叉、多点交叉和均匀交叉等方法.
-
 
     \ding{173} 单点交叉
 
@@ -2096,6 +2093,7 @@ f(x)=
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有两个父代的个体串$A=001101$和$B=110010$, 若随机生成的模版$T=010011$, 则交叉后的两个新的个体是$A'=011010$和$B'=100101$. 即
+\begin{center}
 \begin{Verbatim}
     A:   0 0 1 1 0 1
     B:   1 1 0 0 1 0
@@ -2103,6 +2101,7 @@ f(x)=
     A':  0 1 1 1 1 0
     B':  1 0 0 0 0 1
 \end{Verbatim}
+\end{center}
 
     \ding{177} 实值交叉
 \end{example}
@@ -2147,15 +2146,13 @@ f(x)=
 
  当个体的染色体采用实数编码表示时, 其变异操作应采用实值变异方法. 该方法是用另外一个在规定范围内的随机实数去替换原变异位置上的基因值, 产生一个新的个体. 最常用的实值变异操作有:
 
- 基于位置的变异方法
-
-该方法是先随机地产生两个变异位置, 然后将第二个变异位置上的基因移动到第一个变异位置的前面.
+ 基于位置的变异方法——该方法是先随机地产生两个变异位置, 然后将第二个变异位置上的基因移动到第一个变异位置的前面.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设选中的个体向量$C=20\,  16\,  19\,  12\,  21\,  30$, 若随机产生的两个变异位置分别时2和4, 则变异后的新的个体向量是:
 \begin{align}
-  C'= 20\,  12 \, 16 \, 19\,  21\,  30
+    C'= 20\,  12 \, 16 \, 19\,  21\,  30
 \end{align}
 \end{example}
 
@@ -2165,7 +2162,7 @@ f(x)=
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-设选中的个体向量$D=20\,  12 \, 16 \, 19\,  21\,  30$, 若随机产生的两个变异位置分别时2和4, 则变异后的新的个体向量是:
+    设选中的个体向量$D=20\,  12 \, 16 \, 19\,  21\,  30$, 若随机产生的两个变异位置分别时2和4, 则变异后的新的个体向量是:
 \begin{align}
   D'= 20\,  19\,  16\,  12 \, 21 \, 30
 \end{align}
@@ -2173,7 +2170,7 @@ f(x)=
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-用遗传算法求函数$f(x)=x_2$的最大值, 其中$x\in [0,31],x\in \mathbb Z$间的整数.
+    用遗传算法求函数$f(x)=x_2$的最大值, 其中$x\in [0,31],x\in \mathbb Z$间的整数.
 \end{example}
 
 解: 这个问题本身比较简单, 其最大值很显然是在$x=31$处. 但作为一个例子, 它有着较好的示范性和可理解性.
