@@ -1538,8 +1538,8 @@ Skolem标准形的一般形式为
 取$L_1= P(a),  L_2=\neg P(y)$, 则$L_1$和$L_2$的最一般合一是$\sigma=\{a/y\}$. 根据定义3.81,可得
 \begin{align}
 C_{12}=( {C_1\sigma }-\{L_1\sigma \}) \cup  ({C_2 \sigma }-\{L_2\sigma \})
-              &=({P(a), R(x)}-{P(a)})\cup ({\neg P(a), Q(b)}-{\neg P(a)})\notag\\
-              &=({R(x)})\cup({Q(b)})= {R(x), Q(b)}\notag\\
+              &=(\{P(a), R(x)\}-\{P(a)\})\cup (\{\neg P(a), Q(b)\}-\{\neg P(a)\})\notag\\
+              &=(\{R(x)\})\cup(\{Q(b)\})= \{R(x), Q(b)\}\notag\\
               &=R(x)\vee Q(b).
 \end{align}
 \end{result}
@@ -1552,9 +1552,9 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma \}) \cup  ({C_2 \sigma }-\{L_2\sigma \})
 由于$C_1$和$C_2$有相同的变元$x$, 不符合定义\label{defqibenzj}的要求. 为了进行归结, 需要修改$C_2$中变元的名字, 令$C_2=\neg P(b)\vee R(y)$.
 此时$L_1= P(x)$, $L_2 =\neg P(b)$, $L_1$和$L_2$的最一般合一是$\sigma =\{b/x\}$. 则有
 \begin{align}
-C_{12}=( {C_1\sigma }-{L_1\sigma })\cup  ({C_2\sigma }-{L_2\sigma })
-            &=({P(b), Q(a)}-{P(b)}) \cup  ({\neg P(b), R(y)}-{\neg P(b)})\notag\\
-            &=({Q(a)}) \cup  ({R(y)})= \{Q(a), R(y)\}\notag\\
+C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
+            &=(\{P(b), Q(a)\}-\{P(b)\}) \cup  (\{\neg P(b), R(y)\}-\{\neg P(b)\})\notag\\
+            &=(\{Q(a)\}) \cup  (\{R(y)\})= \{Q(a), R(y)\}\notag\\
             &=Q(a)\vee R(y).
 \end{align}
 \end{result}
