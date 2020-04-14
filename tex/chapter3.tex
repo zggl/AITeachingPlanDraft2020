@@ -1054,7 +1054,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 将每个否定符号“$\neg$”移到仅靠谓词的位置, 使得每个否定符号最多只作用于一个谓词上.
 
 \begin{example}
-    例\ref{C3exam3.64}中的公式\ref{C3equa3.12}经等价变换后为
+    例\ref{C3exam3.64}中的公式\eqref{C3equa3.12}经等价变换后为
 \begin{align}
   (\forall x)((\exists  y)\neg P(x, y)\vee (\exists  y)(Q(x, y) \wedge \neg R(x, y))).
 \end{align}
@@ -1112,9 +1112,9 @@ Skolem标准形的一般形式为
 \begin{align}
     (\forall x_1)\cdots(\forall x_n) M(x_1,x_2,\cdots,x_n),
 \end{align}
-其中, $M(x_1,x_2,\cdots,x_n)$是Skolem标准形的母式, 它由子句的合取所构成.
+其中, $M(x_1,x_2,\cdots,x_n)$是\uwave{Skolem标准形的母式(由子句的合取所构成)}.
 \begin{remark}
-把谓词公式化为Skolem标准形需要使用以下等价关系
+把谓词公式化为Skolem标准形, 需要使用以下等价关系
 \begin{align}
     P\vee (Q\wedge R) \Leftrightarrow  (P\vee Q)\wedge (P\vee R).
 \end{align}
@@ -1123,19 +1123,19 @@ Skolem标准形的一般形式为
 %%%%%%%------------------------------------------
 \begin{example}
 前面的公式化为Skolem标准形后为
-\begin{align}
+\begin{align}\label{C3equ3.27}
     (\forall x)((\neg P(x,f(x))\vee Q(x,g(x))\wedge \textcolor[rgb]{0,0,1}{(}\neg P(x,f(x))\vee \neg R(x,g(x))\textcolor[rgb]{0,0,1}{)}).
 \end{align}
 \end{example}
 
-(7)\textbf{ 消去全称量词}
+(7) \textbf{消去全称量词}
 
 由于母式中的全部变元均受全称量词的约束, 并且全称量词的次序已无关紧要, 因此可以省掉全称量词. 仍假设剩下的母式的变元是被全称量词量化的.
 %%%%%%%------------------------------------------
 \begin{example}
-上式消去全称量词后为
+    式\eqref{C3equ3.27}消去全称量词后为
 \begin{align}
-  (\neg P(x,f(x))\vee Q(x,g(x)) \textcolor[rgb]{0,0,1}{\wedge} \textcolor[rgb]{0,0,1}{(}\neg P(x,f(x))\vee \neg R(x,g(x))\textcolor[rgb]{0,0,1}{)}.
+    (\neg P(x,f(x))\vee Q(x,g(x)) \textcolor[rgb]{0,0,1}{\wedge} \textcolor[rgb]{0,0,1}{(}\neg P(x,f(x))\vee \neg R(x,g(x))\textcolor[rgb]{0,0,1}{)}.
 \end{align}
 \end{example}
 
@@ -1202,12 +1202,11 @@ Skolem标准形的一般形式为
 \begin{align}
     F_{m-1}\textup{不可满足} \Leftrightarrow  F_m\textup{不可满足}
 \end{align}
-为止.
-\end{remark}
-此时, $F_m$已为$F$的Skolem标准形. 而$S$只不过是$F_m$的一种集合表示形式. 因此有
+为止 .此时, $F_m$已为$F$的Skolem标准形. 而$S$只不过是$F_m$的一种集合表示形式. 因此有
 \begin{align}
-    F_m\textup{不可满足} \Leftrightarrow \textup{不可满足}.
+    F_m\textup{不可满足} \Leftrightarrow S \textup{不可满足}.
 \end{align}
+\end{remark}
 \begin{proof}
 (用反证法证)
 \begin{align}
@@ -1275,8 +1274,8 @@ Skolem标准形的一般形式为
 \end{mydef}
 %%%%%%%------------------------------------------
 \begin{mydef}{归结与亲本子句}{defqibenzj}
-    设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为\uwave{归结}, 称$C_{12}$为$C_1$和$C_2$的
-   归结式, 称$C_1$和$C_2$ 为$C_{1 2}$的亲本子句.
+    设$C_1$和$C_2$是子句集中的任意两个子句, 如果$C_1$中的文字$L_1$与$C_2$中的文字$L_2$互补, 那么可从$C_1$和$C_2$中分别消去$L_1$和$L_2$, 并将$C_1$ 和$C_2$中余下的部分按析取关系构成一个新的子句$C_{12}$, 则称这一过程为\uwave{归结}.
+    称$C_{12}$为$C_1$和$C_2$的归结式, 称$C_1$和$C_2$ 为$C_{1 2}$的亲本子句.
 \end{mydef}
 %%%%%%%------------------------------------------
 \begin{example}
@@ -1372,7 +1371,7 @@ Skolem标准形的一般形式为
 \end{mythm}
 %%%%%%%----------------------------------------
 \begin{proof}
-(按定义)设$C_1 =L\vee C_1 '$, $C_2 =\neg L\vee C_2 '$关于解释$I$为真, 则只需证明$C_{1 2}= C_1' \vee C_2 '$关于解释$I$也为真.
+由已知条件, 子句$C_1 $和$C_2$的归结式是$C_{12}$, (按定义), 知$C_1 =L\vee C_1 '$, $C_2 =\neg L\vee C_2 '$关于解释$I$为真, 则只需证明$C_{1 2}= C_1' \vee C_2 '$关于解释$I$也为真.
 对于解释$I$, 文字$L$和$\neg L$中必有一个为假.
 若$L$为假, 则必有$C_1'$为真, 不然就会使$C_1$为假, 这将与前提假设$C_1$为真矛盾, 因此只能有$C_1'$为真.
 同理, 若$\neg L$为假, 则必有$C_2'$为真.
@@ -1393,7 +1392,7 @@ Skolem标准形的一般形式为
 
  \ding{172} 解释$I$使$C_{1 2}$为真, 则$C_3, \cdots \cdots, C_n$中必有一个为假, 即$S$是不可满足的.
 
- \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.1}, 有$\neg  (C_1 \wedge C_2)$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$或$C_2$为假. 即$S$也是不可满足的.
+ \ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理3.2 ($C_1 \wedge C_2\Rightarrow C_{12} \Leftrightarrow \neg C_{12}\Rightarrow \neg C_1 \vee \neg C_2$), 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$或$C_2$为假. 即$S$也是不可满足的.
 
 因此可以得出
 \begin{center}
@@ -1407,9 +1406,9 @@ Skolem标准形的一般形式为
     $S_2$的不可满足性$\Leftrightarrow S$的不可满足性.
 \end{center}\end{myprop}
 \begin{proof}
-设$S=\{C_1, C_2, C_3, \cdots, C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots , C_n$中必有一子句为假, 因而$S_2=\{C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
+设$S=\{C_1, C_2, C_3, \cdots, C_n\}$是不可满足的, 则$C_1, C_2, C_3, \cdots, C_n$中必有一子句为假. 不妨设$C_1, C_2$可归结, 因而$S_2=\{C_{12}, C_1, C_2, C_3, \cdots \cdots , C_n\}$必为不可满足.
 
-再证明 $\Rightarrow$
+再证明 $\Rightarrow$.
 
 设$S_2$是不可满足的,则对不满足$S_2$的任一解释$I$, 都可能有以下两种情况:
 
@@ -1419,7 +1418,7 @@ Skolem标准形的一般形式为
 
      由此可见$S$与$S_2$的不可满足性是等价的. 即
      \begin{center}
-     	$S$的不可满足性 $\Leftrightarrow  S_2$的不可满足性.
+     	$S$的不可满足性 $\Leftrightarrow S_2$的不可满足性.
      \end{center}
 \end{proof}
 
@@ -2283,7 +2282,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \begin{flushleft}
 \quad $C(x, y)$:     $x$和$y$是同班同学;
 
-\quad $\textup{At}(x, u)$:    $x$在$u$教室上课.  
+\quad $\textup{At}(x, u)$:    $x$在$u$教室上课.
 \end{flushleft}
 \end{center}
 把已知前提用谓词公式表示如下:
@@ -2293,7 +2292,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 
 \quad $(\forall x) (\forall y) (\forall u) (C(x, y)\wedge \textup{At}(x, u)\rightarrow At(y,u))$;
 
-\quad \textup{At}(zhang, 302).  
+\quad \textup{At}(zhang, 302).
 \end{flushleft}
 \end{center}
 把目标的否定用谓词公式表示如下:
@@ -2307,7 +2306,7 @@ $$\neg (\exists  v)\textup{At}(\textup{li}, v).$$
 
 $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 
-\textup{At}(zhang, 302).  
+\textup{At}(zhang, 302).
 \end{flushleft}
 \end{center}
 
