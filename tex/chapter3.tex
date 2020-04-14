@@ -1641,20 +1641,17 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 %%%%%%%--------------------------------------
 \subsubsection{谓词逻辑的归结反演}
 谓词逻辑的归结反演过程与命题逻辑的归结反演过程相比, 其步骤基本相同, 但每步的处理对象不同.
-%%%%%%%-----------------------------------------------
-\begin{example}~{}
-	
+%%%%%%%-----------------------------------------------	
 \begin{itemize}
     \item 在步骤(3)化简子句集时, 谓词逻辑需要把由谓词构成的公式集化为子句集;
     \item 在步骤(4)按归结原理进行归结时, 谓词逻辑的归结原理需要考虑两个亲本子句的最一般合一.
 \end{itemize}
-\end{example}
 %%%%%%%-----------------------------------------------
 \begin{example}
 已知
 \begin{align}
- &F:  (\forall x)((\exists  y)(A(x, y)\wedge B(y))\rightarrow (\exists  y)(C(y)\wedge D(x, y))),\\
- &G: \neg (\exists  x)C(x)\rightarrow (\forall x)(\forall y)(A(x, y)\rightarrow \neg B(y)).
+ &F:  (\forall x)((\exists  y)(A(x, y)\wedge B(y))\textcolor[rgb]{0,0,1}{\rightarrow} (\exists  y)(C(y)\wedge D(x, y))),\\
+ &G: \neg (\exists  x)C(x)\textcolor[rgb]{0,0,1}{\rightarrow} (\forall x)(\forall y)(A(x, y)\rightarrow \neg B(y)).
 \end{align}
 求证$G$是$F$的逻辑结论.
 \end{example}
@@ -1662,24 +1659,23 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \begin{proof}
     先把$G$否定, 并放入$F$中, 得到的$\{F, \neg G\}$为
 \begin{align}
-  \{
-    &(\forall x)((\exists y)(A(x,y)\wedge B(y))\rightarrow (\exists y)(C(y)\wedge D(x,y))),\\
-    &\neg (\neg (\exists x)C(x)\rightarrow (\forall  x)(\forall y)(A(x,y)\rightarrow \neg B(y)))\}.
+  \{F, \neg G\}=\{
+    &(\forall x)((\exists y)(A(x,y)\wedge B(y))\textcolor[rgb]{0,0,1}{\rightarrow} (\exists y)(C(y)\wedge D(x,y))),\\
+    &\neg (\neg (\exists x)C(x)\textcolor[rgb]{0,0,1}{\rightarrow} (\forall  x)(\forall y)(A(x,y)\rightarrow \neg B(y)))\}.
 \end{align}
 
 再把$\{F,\neg G\}$化成子句集, 得到
 
-     (1) $\neg A(x,y)\vee \neg B(y) \vee C(f(x))$
+     (1) $\neg A(x,y)\vee \neg B(y) \vee C(f(x))$.
 
-     (2) $\neg A(u,v)\vee \neg B(v) \vee D(u,f(u))$
+     (2) $\neg A(u,v)\vee \neg B(v) \vee D(u,f(u))$.
 
-     (3) $\neg C(z)$
+     (3) $\neg C(z)$.
 
-     (4) $A(m,n)$
+     (4) $A(m,n)$.
 
      (5) $B(k)$, 其中(1)、(2)是由$F$化出的两个子句, (3)、(4)和(5)是由$\neg G$化出的3个子句.
-
-最后应用谓词逻辑的归结原理对上述子句集进行归结, 其过程为
+     最后应用谓词逻辑的归结原理对上述子句集进行归结, 其过程为
 
      (6) $\neg  A(x,y)\vee  \neg  B(y)$, 由(1)和(3)归结, 取合一$\sigma=\{f(x)/z\}$,
 
@@ -1806,8 +1802,8 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \begin{itemize}
     \item Poor($x$)     \quad\,\,\,\,  $x$是不富足的;
     \item Smart($x$)    \quad\,  $x$是聪明的;
-    \item Happy($x$)    \, $x$是快乐的;
-    \item Read($x$)     \,\,\,\, $x$能看书;
+    \item Happy($x$)    \,\,\, $x$是快乐的;
+    \item Read($x$)     \,\,\,\,\,\, $x$能看书;
     \item Exciting($x$) \,\, $x$过着幸福的生活.
 \end{itemize}
 
