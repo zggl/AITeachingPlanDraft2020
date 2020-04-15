@@ -1179,13 +1179,13 @@ Skolem标准形的一般形式为
 
 又设$(Q_r x_r)$是第一个出现的存在量词$(\exists x_r)$, 即$F$为
 \begin{align}
-    F=(\forall x_1)\cdots(\forall x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
+    F=(\forall x_1)\cdots(\forall x_{r-1}) \textcolor[rgb]{0,0,1}{(\exists  x_r)}(Q_{r+1}x_{r+1})\cdots(Q_nx_n)\,M(x_1,\cdots,x_{r-1},x_r,x_{r+1},\cdots,x_n),
 \end{align}
 为把$F$化为Skolem形, 需要先消去这个$(\exists  x_r)$, 并引入Skolem函数, 得到
 \begin{align}
-    F_1=(\forall x_1)\cdots(\forall x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n)M(x_1,\cdots,x_{r-1},f(x_1,\cdots x_{r-1}),x_{r+1}\cdots,x_n).
+    F_1=(\forall x_1)\cdots(\forall x_{r-1}) (Q_{r+1}x_{r+1})\cdots(Q_n x_n) M(x_1, \cdots, x_{r-1}, \textcolor[rgb]{0,0,1}{f(x_1,\cdots x_{r-1})}, x_{r+1}\cdots,x_n).
 \end{align}
-%%%%%%%----------------------------------------%
+%%%%%%%----------------------------------------
 \begin{remark}
 若能证明
 \begin{align}
@@ -1210,19 +1210,17 @@ Skolem标准形的一般形式为
     F\textup{不可满足} \Leftrightarrow  F_1\textup{不可满足}.
 \end{align}
 
-先证明充分性$\Rightarrow$
-
-    已知$F$不可满足, 假设$F_1$是可满足的, 则存在一个解释$I$, 使$F_1$在解释$I$下为真. 即对任意$x_1,\cdots ,x_{r-1}$在$I$的设定下有
+先证明充分性, 已知$F$不可满足, 假设$F_1$是可满足的, 则存在一个解释$I$, 使$F_1$在解释$I$下为真. 即对任意$x_1,\cdots ,x_{r-1}$在$I$的设定下有
 \begin{align}
   (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x_1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 亦即对任意的$x_1,\cdots ,x_{r-1}$都有一个$f(x_1,\cdots ,x_{r-1})$使
 \begin{align}
-    (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
+    (Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},f(x_1,\cdots ,x_{r-1}),x_{r+1}\cdots ,x_n)
 \end{align}
 为真. 即在$I$下有
 \begin{align}
-    (\forall x_1)\cdots (\forall x_{r-1}) (\exists  xr)(Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1},\cdots,x_n)
+    (\forall x_1)\cdots (\forall x_{r-1}) (\exists  x_r)(Q_{r+1}x_{r+1})\cdots (Q_nx_n)M(x_1,\cdots ,x_{r-1},x_r,x_{r+1},\cdots,x_n)
 \end{align}
 为真. 即$F$在$I$下为真.
 
@@ -1383,7 +1381,7 @@ Skolem标准形的一般形式为
 \end{myprop}
 %%%%%%%----------------------------------------
 \begin{proof}
-    设$S=\{ C_1 , C_2 , C_3, \cdots \cdots , C_n\}$, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 则用$C_{1 2}$代替$C_1$ 和$C_2$ 后可得到一个新的子句集$$S_1=\{C_{1 2}, C_3, \cdots , C_n\}.$$
+    设$S=\{ C_1 , C_2 , C_3, \cdots \cdots , C_n\}$, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 则用$C_{1 2}$代替$C_1$ 和$C_2$ 后, 可得到一个新的子句集$$S_1=\{C_{1 2}, C_3, \cdots , C_n\}.$$
 
 设$S_1$是不可满足的, 则对不满足$S_1$的任一解释$I$, 都可能有以下两种情况:
 
@@ -1398,7 +1396,7 @@ Skolem标准形的一般形式为
 \end{proof}
 %%%%%%%-------------------------------------------
 \begin{myprop}{归结式的不可满足性}{1}
-    设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中得到新的子句集$S_2$, 则\emph{$S$与$S_2$的不可满足性是等价的}. 即:
+    设$C_1$ 和$C_2$ 是子句集$S$中的两个子句, $C_{1 2}$是$C_1$ 和$C_2$ 的归结式, 若把$C_{1 2}$加入$S$中, 得到新的子句集$S_2$, 则\emph{$S$与$S_2$的不可满足性是等价的}. 即:
 \begin{center}
     $S_2$的不可满足性$\Leftrightarrow S$的不可满足性.
 \end{center}\end{myprop}
@@ -1411,7 +1409,7 @@ Skolem标准形的一般形式为
 
      \quad\ding{172} 解释$I$使$C_{1 2}$为真, 则$C_1, C_2, C_3, \cdots, C_n$中必有一个为假, 即$S$是不可满足的.
 
-     \quad\ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 根据定理\label{AIthm3.2}有$\neg (C_1 \wedge C_2 )$永真, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
+     \quad\ding{173} 解释$I$使$C_{1 2}$为假, 即$\neg C_{1 2}$为真, 由推理规则的拒取式, 即$\neg C_1 \vee \neg C_2 $永真, 它说明解释$I$使$C_1$为假, 或$C_2$为假. 即$S$也是不可满足的.
 
      由此可见$S$与$S_2$的不可满足性是等价的. 即
      \begin{center}
@@ -1432,7 +1430,7 @@ Skolem标准形的一般形式为
 \subsubsection{命题逻辑的归结反演}
 
 \textbf{归结原理}: 假设$F$为已知前提, $G$为欲证明的结论, 归结原理把证明$G$为$F$的逻辑结论转化为证明$F\wedge \neg G$为不可满足.
-再根据定理\label{thm361}, 在不可满足的意义下, 公式集$F\wedge \neg G$与其子句集是等价的, 即把公式集上的不可满足转化为子句集上的不可满足.
+再根据定理3.1, 在不可满足的意义下, 公式集$F\wedge \neg G$与其子句集是等价的, 即把公式集上的不可满足转化为子句集上的不可满足.
 
 \begin{mydef}{归结反演}{1}
     应用归结原理证明定理的过程称为\textbf{归结反演}.

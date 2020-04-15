@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 APR 2020 07:14
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 APR 2020 07:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5678,231 +5678,231 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 6.0pt on input line 1193.
 
 [208] [209]
-Package mdframed Info: mdframed works in twoside mode on input line 1278.
+Package mdframed Info: mdframed works in twoside mode on input line 1276.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1278.
-Package mdframed Info: mdframed works in twoside mode on input line 1286.
+(mdframed)              on input line 1276.
+Package mdframed Info: mdframed works in twoside mode on input line 1284.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1286.
-Package mdframed Info: mdframed works in twoside mode on input line 1298.
+(mdframed)              on input line 1284.
+Package mdframed Info: mdframed works in twoside mode on input line 1296.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1298.
+(mdframed)              on input line 1296.
  [210]
-Package mdframed Info: Not enough space on this page on input line 1300.
+Package mdframed Info: Not enough space on this page on input line 1298.
  [211]
 
 LaTeX Font Warning: Font shape `TU/KaiTi(0)/m/it' undefined
-(Font)              using `TU/KaiTi(0)/m/n' instead on input line 1401.
+(Font)              using `TU/KaiTi(0)/m/n' instead on input line 1399.
 
 [212]
-Package mdframed Info: mdframed works in twoside mode on input line 1452.
+Package mdframed Info: mdframed works in twoside mode on input line 1450.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1452.
+(mdframed)              on input line 1450.
  [213]
-Package mdframed Info: mdframed works in twoside mode on input line 1524.
+Package mdframed Info: mdframed works in twoside mode on input line 1522.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1524.
+(mdframed)              on input line 1522.
  [214]
-Package mdframed Info: Not enough space on this page on input line 1526.
+Package mdframed Info: Not enough space on this page on input line 1524.
 
-Overfull \hbox (8.47173pt too wide) detected at line 1535
+Overfull \hbox (8.47173pt too wide) detected at line 1533
 []
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1538.
+Package mdframed Info: mdframed works in twoside mode on input line 1536.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1538.
+(mdframed)              on input line 1536.
 
-Overfull \hbox (7.61655pt too wide) detected at line 1550
+Overfull \hbox (7.61655pt too wide) detected at line 1548
 []
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1561.
+Package mdframed Info: mdframed works in twoside mode on input line 1559.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1561.
-Package mdframed Info: mdframed works in twoside mode on input line 1574.
+(mdframed)              on input line 1559.
+Package mdframed Info: mdframed works in twoside mode on input line 1572.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1574.
-Package mdframed Info: mdframed works in twoside mode on input line 1583.
+(mdframed)              on input line 1572.
+Package mdframed Info: mdframed works in twoside mode on input line 1581.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1583.
+(mdframed)              on input line 1581.
 [215]
-Package mdframed Info: mdframed works in twoside mode on input line 1619.
+Package mdframed Info: mdframed works in twoside mode on input line 1617.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1619.
+(mdframed)              on input line 1617.
  [216]
-Package mdframed Info: mdframed works in twoside mode on input line 1647.
+Package mdframed Info: mdframed works in twoside mode on input line 1645.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1647.
+(mdframed)              on input line 1645.
  [217]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 1700.
+(Font)              scaled to size 10.53937pt on input line 1698.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 1700.
+(Font)              scaled to size 7.0pt on input line 1698.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.0pt on input line 1700.
+(Font)              scaled to size 5.0pt on input line 1698.
 
-Overfull \hbox (29.24529pt too wide) in paragraph at lines 1723--1725
+Overfull \hbox (29.24529pt too wide) in paragraph at lines 1721--1723
 []\TU/SimSun(0)/m/n/12.045 为 了 进 一 步 加 深 对 谓 词 逻 辑 归 结 的 理 解\T1/ntxtlf/m/n/12.0
 45 , \TU/SimSun(0)/m/n/12.045 下 面 再 给 出 一 个 经 典 的 归 结 问 题\T1/ntxtlf/m/n/12.045 
 .                     
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1725.
+Package mdframed Info: mdframed works in twoside mode on input line 1723.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1725.
+(mdframed)              on input line 1723.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.045pt on input line 1741.
+(Font)              scaled to size 12.045pt on input line 1739.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 1741.
+(Font)              scaled to size 8.0pt on input line 1739.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.0pt on input line 1741.
+(Font)              scaled to size 6.0pt on input line 1739.
 [218]
 File: figures/guijieyuanli2019112517.PNG Graphic file (type bmp)
 <figures/guijieyuanli2019112517.PNG>
 
-Overfull \hbox (29.24529pt too wide) in paragraph at lines 1790--1792
+Overfull \hbox (29.24529pt too wide) in paragraph at lines 1788--1790
 []\TU/SimSun(0)/m/n/12.045 为 了 进 一 步 加 深 对 谓 词 逻 辑 归 结 的 理 解\T1/ntxtlf/m/n/12.0
 45 , \TU/SimSun(0)/m/n/12.045 下 面 再 给 出 一 个 经 典 的 归 结 问 题\T1/ntxtlf/m/n/12.045 
 .                     
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1792.
+Package mdframed Info: mdframed works in twoside mode on input line 1790.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1792.
+(mdframed)              on input line 1790.
 [219]
 File: figures/guijieyuanli2019112518.PNG Graphic file (type bmp)
 <figures/guijieyuanli2019112518.PNG>
  [220] [221]
-Package mdframed Info: mdframed works in twoside mode on input line 1876.
+Package mdframed Info: mdframed works in twoside mode on input line 1874.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1876.
+(mdframed)              on input line 1874.
  [222]
-Package mdframed Info: mdframed works in twoside mode on input line 1953.
+Package mdframed Info: mdframed works in twoside mode on input line 1951.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1953.
+(mdframed)              on input line 1951.
  [223]
-Package mdframed Info: mdframed works in twoside mode on input line 2027.
+Package mdframed Info: mdframed works in twoside mode on input line 2025.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2027.
+(mdframed)              on input line 2025.
 
-Overfull \hbox (20.81366pt too wide) in paragraph at lines 2035--2038
+Overfull \hbox (20.81366pt too wide) in paragraph at lines 2033--2036
 [] []\TU/SimHei(0)/bx/n/12.045 重 言 式 删 除 法[]   \TU/SimSun(0)/m/n/12.045 如 果 一 个
  子 句 中 包 含 有 互 补 的 文 字 对\T1/ntxtlf/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 则 称 该 
 子 句 为 \TU/SimHei(0)/bx/n/12.045 重 言 式\T1/ntxtlf/m/n/12.045 .                   
   
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 2038.
+Package mdframed Info: mdframed works in twoside mode on input line 2036.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2038.
-Package mdframed Info: mdframed works in twoside mode on input line 2050.
+(mdframed)              on input line 2036.
+Package mdframed Info: mdframed works in twoside mode on input line 2048.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2050.
+(mdframed)              on input line 2048.
 [224]
-Package mdframed Info: mdframed works in twoside mode on input line 2071.
+Package mdframed Info: mdframed works in twoside mode on input line 2069.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2071.
-Package mdframed Info: mdframed works in twoside mode on input line 2121.
+(mdframed)              on input line 2069.
+Package mdframed Info: mdframed works in twoside mode on input line 2119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2121.
+(mdframed)              on input line 2119.
  [225]
-Package mdframed Info: mdframed works in twoside mode on input line 2131.
+Package mdframed Info: mdframed works in twoside mode on input line 2129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2131.
-Package mdframed Info: mdframed works in twoside mode on input line 2199.
+(mdframed)              on input line 2129.
+Package mdframed Info: mdframed works in twoside mode on input line 2197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2199.
+(mdframed)              on input line 2197.
  [226]
-Package mdframed Info: mdframed works in twoside mode on input line 2268.
+Package mdframed Info: mdframed works in twoside mode on input line 2266.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2268.
+(mdframed)              on input line 2266.
  [227]
 File: figures/Gguijieshu2019112525.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112525.PNG>
  [228]
-Package mdframed Info: mdframed works in twoside mode on input line 2326.
+Package mdframed Info: mdframed works in twoside mode on input line 2324.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2326.
+(mdframed)              on input line 2324.
  [229]
-Package mdframed Info: mdframed works in twoside mode on input line 2362.
+Package mdframed Info: mdframed works in twoside mode on input line 2360.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2362.
+(mdframed)              on input line 2360.
 
-Overfull \hbox (25.8003pt too wide) in paragraph at lines 2374--2377
+Overfull \hbox (25.8003pt too wide) in paragraph at lines 2372--2375
 [] []\TU/SimHei(0)/bx/n/12.045 事 实 表 达 式 的 与\T1/ntxtlf/b/n/12.045 /\TU/SimHei(0
 )/bx/n/12.045 或 形 变 换[]   \TU/SimSun(0)/m/n/12.045 事 实 表 达 式 的 与\T1/ntxtlf/m/n/
 12.045 /\TU/SimSun(0)/m/n/12.045 或 形 可 用 一 棵 与\T1/ntxtlf/m/n/12.045 /\TU/SimSun
 (0)/m/n/12.045 或 树 表 示 出 来\T1/ntxtlf/m/n/12.045 .                     
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 2377.
+Package mdframed Info: mdframed works in twoside mode on input line 2375.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2377.
+(mdframed)              on input line 2375.
 [230]
-Package mdframed Info: mdframed works in twoside mode on input line 2432.
+Package mdframed Info: mdframed works in twoside mode on input line 2430.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2432.
+(mdframed)              on input line 2430.
  [231]
-Package mdframed Info: mdframed works in twoside mode on input line 2483.
+Package mdframed Info: mdframed works in twoside mode on input line 2481.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2483.
-Package mdframed Info: Not enough space on this page on input line 2501.
+(mdframed)              on input line 2481.
+Package mdframed Info: Not enough space on this page on input line 2499.
  [232]
-Package mdframed Info: Not enough space on this page on input line 2501.
-Package mdframed Info: mdframed works in twoside mode on input line 2511.
+Package mdframed Info: Not enough space on this page on input line 2499.
+Package mdframed Info: mdframed works in twoside mode on input line 2509.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2511.
+(mdframed)              on input line 2509.
 File: figures/Gguijieshu2019112527.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112527.PNG>
  [233] [234]
-Package mdframed Info: mdframed works in twoside mode on input line 2585.
+Package mdframed Info: mdframed works in twoside mode on input line 2583.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2585.
+(mdframed)              on input line 2583.
 File: figures/Gguijieshu2019112529.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112529.PNG>
-Package mdframed Info: mdframed works in twoside mode on input line 2615.
+Package mdframed Info: mdframed works in twoside mode on input line 2613.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2615.
+(mdframed)              on input line 2613.
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 2628.
+(mdframed)              on input line 2626.
  [235]
-Package mdframed Info: mdframed works in twoside mode on input line 2636.
+Package mdframed Info: mdframed works in twoside mode on input line 2634.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2636.
+(mdframed)              on input line 2634.
  [236]
 Missing character: There is no ⽤ in font SimSun/OT:script=hani;language=DFLT;!
 Missing character: There is no ⾏ in font SimSun/OT:script=hani;language=DFLT;!
@@ -5932,32 +5932,32 @@ Missing character: There is no 方 in font ntx-Regular-tlf-t1!
 Missing character: There is no 法 in font ntx-Regular-tlf-t1!
  [240]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 2857.
+(Font)              scaled to size 15.05624pt on input line 2855.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 13.55052pt on input line 2857.
+(Font)              scaled to size 13.55052pt on input line 2855.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 15.05624pt on input line 2857.
+(Font)              scaled to size 15.05624pt on input line 2855.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 15.05624pt on input line 2857.
+(Font)              scaled to size 15.05624pt on input line 2855.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 2857.
+(Font)              scaled to size 9.03374pt on input line 2855.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2857.
+(hyperref)                removing `math shift' on input line 2855.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 2857.
+(hyperref)                removing `superscript' on input line 2855.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2857.
+(hyperref)                removing `math shift' on input line 2855.
 
-Package mdframed Info: mdframed works in twoside mode on input line 2865.
+Package mdframed Info: mdframed works in twoside mode on input line 2863.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2865.
+(mdframed)              on input line 2863.
 [241]
 File: figures/Zadel20191218120335.jpg Graphic file (type bmp)
 <figures/Zadel20191218120335.jpg>
@@ -5966,7 +5966,7 @@ File: figures/AIMIngren20191218120616.jpg Graphic file (type bmp)
 
 
 LaTeX Warning: Citation '江欢 2009全蕴涵三I算法' on page 242 undefined on input line 29
-68.
+66.
 
 [242]
 File: figures/wangguojun20191218121937.jpg Graphic file (type bmp)
@@ -5979,20 +5979,20 @@ File: figures/Gyminstall.PNG Graphic file (type bmp)
 <figures/Gyminstall.PNG>
 
 
-LaTeX Warning: Citation 'Yutao2011' on page 244 undefined on input line 3004.
+LaTeX Warning: Citation 'Yutao2011' on page 244 undefined on input line 3002.
 
 
-LaTeX Warning: Citation 'watkins1992q' on page 244 undefined on input line 3005
+LaTeX Warning: Citation 'watkins1992q' on page 244 undefined on input line 3003
 .
 
 [244]
 
 LaTeX Warning: Citation 'sutton1998reinforcement' on page 245 undefined on inpu
-t line 3026.
+t line 3024.
 
 
 LaTeX Warning: Citation 'gosavi2004reinforcement' on page 245 undefined on inpu
-t line 3041.
+t line 3039.
 
 [245]) [246]
 \openout2 = `tex/chapter4.aux'.
@@ -9085,10 +9085,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 ### simple group (level 1) entered at line 1128 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 98003 strings out of 492922
- 2344384 string characters out of 6136750
- 2967005 words of memory out of 5000000
- 99052 multiletter control sequences out of 15000+600000
+ 98002 strings out of 492922
+ 2344374 string characters out of 6136750
+ 2966958 words of memory out of 5000000
+ 99051 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2445b,3992s stack positions out of 5000i,500n,10000p,200000b,80000s
