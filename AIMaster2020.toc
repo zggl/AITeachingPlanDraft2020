@@ -261,7 +261,7 @@
 \contentsline {section}{\numberline {3.5}归结演绎推理}{203}{section.3.5}% 
 \contentsline {subsection}{\numberline {3.5.1}子句集及其化简}{203}{subsection.3.5.1}% 
 \contentsline {paragraph}{子句集及其化简}{207}{paragraph*.224}% 
-\contentsline {subsection}{\numberline {3.5.2}鲁滨逊归结原理}{210}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.2}鲁滨逊归结原理}{209}{subsection.3.5.2}% 
 \contentsline {subparagraph}{鲁滨逊归结原理基本思想}{210}{subparagraph*.225}% 
 \contentsline {subsubsection}{\numberline {3.5.2.1}命题逻辑的归结}{210}{subsubsection.3.5.2.1}% 
 \contentsline {subsubsection}{\numberline {3.5.2.2}命题逻辑的归结反演}{213}{subsubsection.3.5.2.2}% 
