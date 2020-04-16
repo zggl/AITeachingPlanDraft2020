@@ -1655,7 +1655,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
     先把$G$否定, 并放入$F$中, 得到的$\{F, \neg G\}$为
 \begin{align}
   \{F, \neg G\}=\{
-    &(\forall x)((\exists y)(A(x,y)\wedge B(y))\textcolor[rgb]{0,0,1}{\rightarrow} (\exists y)(C(y)\wedge D(x,y))),\\
+    &(\forall x)((\exists y)(A(x,y)\wedge B(y))\textcolor[rgb]{0,0,1}{\rightarrow} (\exists y)(C(y)\wedge D(x,y))),\notag\\
     &\neg (\neg (\exists x)C(x)\textcolor[rgb]{0,0,1}{\rightarrow} (\forall  x)(\forall y)(A(x,y)\rightarrow \neg B(y)))\}.
 \end{align}
 
@@ -1678,7 +1678,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 
      (8) $\textup{NIL}$, 由(5)和(7)归结, 取合一$\sigma=\{n/k\}$, 因此, $G$是$F$的逻辑结论.
 \end{proof}
-
+得到的子句集为$\{\neg A(x,y)\vee \neg B(y)\vee C(f(x)), \neg A(u,v)\vee \neg B(v), D(u,f(u)), \neg C(z), A(m,n), B(k)\}$. 
 上述归结过程可用归结树(图\ref{AI32fig16})来表示
  %%%%%%%-----------------------------------------------
 %\begin{figure}[H]

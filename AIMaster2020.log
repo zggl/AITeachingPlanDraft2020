@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 APR 2020 07:50
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 APR 2020 08:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5753,6 +5753,25 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 5.0pt on input line 1698.
 
+Overfull \hbox (5.3498pt too wide) in paragraph at lines 1681--1718
+\TU/SimSun(0)/m/n/12.045 得 到 的 子 句 集 为 $\LMS/ntxsy/m/n/12.045 f:\OML/ntxmi/m/it
+/12.045 A\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x; y\LMS/ntxsy/m/n/12.04
+5 º _ :\OML/ntxmi/m/it/12.045 B\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 y\
+LMS/ntxsy/m/n/12.045 º _ \OML/ntxmi/m/it/12.045 C\LMS/ntxsy/m/n/12.045 ¹\OML/nt
+xmi/m/it/12.045 f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 x\LMS/ntxsy/m/n/
+12.045 ºº\OML/ntxmi/m/it/12.045 ; \LMS/ntxsy/m/n/12.045 :\OML/ntxmi/m/it/12.045
+ A\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 u; v\LMS/ntxsy/m/n/12.045 º _ :
+\OML/ntxmi/m/it/12.045 B\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 v\LMS/ntx
+sy/m/n/12.045 º\OML/ntxmi/m/it/12.045 ; D\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it
+/12.045 u; f\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 u\LMS/ntxsy/m/n/12.04
+5 ºº\OML/ntxmi/m/it/12.045 ; \LMS/ntxsy/m/n/12.045 :\OML/ntxmi/m/it/12.045 C\LM
+S/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 z\LMS/ntxsy/m/n/12.045 º\OML/ntxmi/m
+/it/12.045 ; A\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045 m; n\LMS/ntxsy/m/n/
+12.045 º\OML/ntxmi/m/it/12.045 ; B\LMS/ntxsy/m/n/12.045 ¹\OML/ntxmi/m/it/12.045
+ k\LMS/ntxsy/m/n/12.045 ºg$\T1/ntxtlf/m/n/12.045 .
+ []
+
+
 Overfull \hbox (29.24529pt too wide) in paragraph at lines 1721--1723
 []\TU/SimSun(0)/m/n/12.045 为 了 进 一 步 加 深 对 谓 词 逻 辑 归 结 的 理 解\T1/ntxtlf/m/n/12.0
 45 , \TU/SimSun(0)/m/n/12.045 下 面 再 给 出 一 个 经 典 的 归 结 问 题\T1/ntxtlf/m/n/12.045 
@@ -9085,10 +9104,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 ### simple group (level 1) entered at line 1128 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 98002 strings out of 492922
- 2344374 string characters out of 6136750
- 2966958 words of memory out of 5000000
- 99051 multiletter control sequences out of 15000+600000
+ 98001 strings out of 492922
+ 2344366 string characters out of 6136750
+ 2966906 words of memory out of 5000000
+ 99050 multiletter control sequences out of 15000+600000
  740448 words of font info for 388 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  159i,24n,424p,2445b,3992s stack positions out of 5000i,500n,10000p,200000b,80000s
