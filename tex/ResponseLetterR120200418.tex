@@ -1,0 +1,164 @@
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.0cm,bottom=2.0cm}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{subfigure}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amsmath,amssymb,amsfonts,amssymb}
+%% The amsthm package provides extended theorem environments
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{enumerate}
+
+\usepackage{amsopn}
+%\graphicspath{{JFI/IPWeightingFun/}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{assumption}{Assumption}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}
+
+\makeatletter
+\long\def\@makecaption#1#2{%
+\vskip\abovecaptionskip
+\sbox\@tempboxa{#1.\quad #2}%
+\ifdim \wd\@tempboxa >\hsize
+ #1.\quad #2\par
+\else
+ \global \@minipagefalse
+ \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+\fi
+\vskip\belowcaptionskip}
+\makeatother
+
+%\renewcommand{figurename}{\textbf{Fig.}}
+\renewcommand\figurename{Fig.}
+
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\bfseries \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\linespread{1.2}
+\begin{document}
+\pagestyle{plain}
+\title{The thorough and point-by-point description of the changes implemented (Revision 1)}
+\maketitle
+
+Thanks for the comments on our manuscript ``Receding horizon $H_{\infty}$ control for nonlinear systems with tensor product model transformation''.  We would like to gratefully thank the reviewer for his or her valuable recommendation on this paper. We have rechecked the paper and references carefully. \textcolor[rgb]{1,0,0}{The revised parts are shown in bold type in revised paper}. The following responses have been prepared to address all of the reviewers' comments in a point-by-point fashion.
+\vskip 0.3cm
+
+\textbf{Reviewer(s)' Comments to Author:}
+
+\textbf{Handling AE:} The paper is well written and organized, and the main results have some originality. I think the addressed problem is interesting and the paper contains acceptable materials. So, I recommend acceptance of the paper for Oral presentation in CCC 2020.
+
+------------------------------------------------------------------------------------------------
+
+\textit{\textbf{Reviewer \#1:} In this paper, a tensor product-based control method is proposed for external non-linear disturbances. Based on the TP model, the knowledge of multicellular systems is used to transform a linear variable parameter model into a linear parameter weighted combination. A set of weighted matrix inequality conditions is proposed. }
+
+\textit{Using the conditions of linear matrix inequality and based on the PDC method, it is obtained that the system gradually meets $H_{\infty}$ performance under external disturbances. }
+
+\textit{Finally, three examples show that the $H_{\infty}$ controller using the tensor product model has stable control, so that all states eventually approach the origin. However, there are some comments as follows:}
+
+\textbf{Problem 1:} \textit{In the process of demonstrating that the derivative of the performance index is less than 0, reducing the conservativeness of the system with the convenience of calculation, it need be explained clearly.}
+
+\textbf{Answer 1} Thanks for the valuable comments.
+
+\textbf{Problem 2:} \textit{Three examples verify the stability of the rolling time-domain $H_{\infty}$ controller for a nonlinear system based on the tensor product model transformation. If it can be compared with other methods of controllers to highlight the superiority of the tensor product model transformation .}
+
+\textbf{Answer 2} Thanks for the valuable comments.
+
+------------------------------------------------------------------------------------------------
+
+\textit{\textbf{Reviewer \#2:} The paper studied the problem of receding horizon $H_{\infty}$ control for nonlinear systems with tensor product model transformation. }
+
+\textit{A new set of matrix inequality conditions on the terminal weighting matrix is proposed for TP modeled nonlinear systems wherein non-increasing monotonicity of the optimal cost is guaranteed. The paper is well written. I recommend this paper for publication,however, the following comments should be solved in the revision: }
+
+Many thanks for the comments from reviewer 2.
+
+\textbf{Problem 1:} \textit{In Section III, what is the pratical background of the novel finite horizon cost function given by (4), the authors should clarify it.}
+
+\textbf{Answer 1} Thanks for the valuable comments.
+
+\textbf{Problem 2:} \textit{What is the methods used in the study of H infinity performance? Some comparisons should be made between the existing result such as Information Sciences, 2020, 512: 327-337.}
+
+
+[1] Optimal performance of LTI systems over power constrained erasure channels. Information Sciences, 2020. 512: p. 327-337.
+
+
+\textbf{Answer 2} Thanks for the valuable comments.
+
+------------------------------------------------------------------------------------------------
+
+\textit{\textbf{Reviewer \#3:}  In this paper, a novel tensor-product based receding horizon $H_{\infty}$ control (TPRHHC) method for nonlinear systems with external disturbance is proposed and linear matrix inequalities are given to show the stability of the system. The following comments are provided to enhance the quality of this paper as follows:}
+
+Many thanks for the comments from reviewer 3.
+
+\textbf{Problem 1:} \textit{The introduction lacks logicality and the necessity of doing research about TPRHHC is not clear.}
+
+\textbf{Answer 1} Thanks for the valuable comments.
+
+\textbf{Problem 2:} \textit{Please elaborate the technology tensor product and what are the pros and cons of this technology?}
+
+\textbf{Answer 2} Thanks for the valuable comments.
+
+\textbf{Problem 3:} \textit{The English writing is not formal and correct enough. }
+
+\textbf{Answer 3} Thanks for the valuable comments.
+
+\textbf{Problem 4:} \textit{ In the simulation, the comparison of TPRHHC and RHC should be given to show the advantages of the proposed control scheme.}
+
+\textbf{Answer 4} Thanks for the valuable comments.
+
+\textbf{Problem 5:} \textit{Why do the authors choose these three special systems to verify the proposed control scheme? These three examples may not complex enough.}
+
+\textbf{Answer 5} Thanks for the valuable comments.
+
+------------------------------------------------------------------------------------------------
+
+\textit{\textbf{Reviewer \#4:} Some problems that I concerned are given in the following.}
+
+Many thanks for the comments from reviewer 4.
+
+\textbf{Problem 1:} \textit{The last paragraph on the first page had better be divided into two paragraphs.}
+
+\textbf{Answer 1} Thanks for your valuable comments.
+
+\textbf{Problem 2:} \textit{Page 2,$S(p(t)) \in \operatorname{conv}\left\{S_{1}, S_{2}, \cdots,S_{r}\right\}\left\{\sum_{i=1}^{r} w_{i} S_{i}: w_{i} \leq 0, \sum_{i=1}^{r} w_{i}=1\right\}$,can you sure $\omega_i \leq 0$?}
+
+\textbf{Answer 2} Thanks for your valuable comments.
+
+\textbf{Problem 3:} \textit{Page 2,$u=\sum_{i=1}^{r} K_i x$,Why the expression of the controller has nothing to do with fuzzy member functions?}
+
+\textbf{Answer 3} Thanks for your valuable comments.
+
+\textbf{Problem 4:} \textit{There exist some grammar mistakes and typos in this paper. Some of them are listed as follows:}
+
+\begin{itemize}
+\item  \textit {page 1: a) the main feature of RHC is its performance index has a moving initial time and a moving terminal time.}
+
+    \textit{ b) In [10], a distributed receding horizon control method of a vehicle platoon with nonlinear dynamics is designed a novel optimization problem and detailed distributed;}
+
+    \textit{c) moreover, it handles atypical measurement noise;}
+
+\item \textit{Page 2: In Remark1, $r$ should be $i$;}
+\item \textit{Page 4: First, Before the main theorem we need the the following;}
+\item \textit{Page 5: $\dot{x}(t))$}
+\item \textit{page 6: $[x(t), y(t), z(t)]^{T} \in R^{3}$}
+\end{itemize}
+
+
+\textbf{Answer 4} Thanks for your valuable comments.
+
+------------------------------------------------------------------------------------------------
+\end{document} 

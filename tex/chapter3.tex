@@ -1896,7 +1896,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \thispagestyle{empty}
 %定义流程图的具体形状
 \node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(x) \vee \mathbf{R}(x)}$};
-\node (S)[align=center,left=1cm of ABC0] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{S}}$};
+\node (S)[align=center,left=1cm of ABC0] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{S}_0}$};
 \node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{I}(a)}$};
 \node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm,xshift=0.6cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{R}(y) \vee \mathbf{L}(y)}$};
 \node (La0)[draw, process,align=center,right=8cm of ABC0,xshift=1cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{L}(a)}$};
@@ -1937,23 +1937,23 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \caption{广义归结树}
 \label{AI32fig20}
 \end{figure}
-从这个例子可以看出, 宽度优先策略归结出了许多无用的子句, 既浪费事间, 又浪费空间. 但是, 这种策略在当问题有解时保证能找到最短归结路径.
+从这个例子可以看出, 宽度优先策略归结出了许多无用的子句, 既浪费时间, 又浪费空间. 但是, 这种策略在当问题有解时保证能找到最短归结路径.
 因此, 它是一种完备的归结策略. 宽度优先对复杂问题的归结容易产生组合爆炸, 但对简单问题仍是一种比较好的归结策略.
 %%%%%%%-----------------------------------------------
 \subsection{支持集策略}
  支持集策略是沃斯(Wos)等人在1965年提出的一种归结策略.
 \begin{remark}
-    要求每一次参加归结的两个亲本子句中至少应该有一个子句是由目标公式的否定所得到的或它们的后裔.
+    要求每一次参加归结的两个亲本子句中至少应该有一个子句是由目标公式的否定或它们的后裔所得到.
 \end{remark}
  可以证明支持集策略是完备的, 即当子句集为不可满足时, 则由支持集策略一定能够归结出一个空子句.
- 也可以把支持集策略看成是在宽度优先策略中引入了某种限制条件, 这种限制条件代表一种启发信息, 因而有较高的效率.
+ 可把支持集策略看成是在宽度优先策略中引入了某种限制条件, 这种限制条件代表一种启发信息, 因而有较高的效率.
 %%%%%%%-----------------------------------------------
 \begin{example}
 设有如下子句集:
 \begin{align}
     S=\{\neg I(x)\vee R(x),  I(a),\neg  R(y)\vee L(y), \neg L(a)\},
 \end{align}
-其中, $\neg I(x)\vee R(x)$为目标公式的否定. 用支持集策略证明$S$为不可满足.
+其中, $\neg I(x)\vee R(x)$为目标公式的否定子句. 试用支持集策略证明$S$不可满足.
 \end{example}
  %%%%%%%-----------------------------------------------
 %\begin{figure}[H]
@@ -1970,7 +1970,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \def \smbwe{4cm}
 \thispagestyle{empty}
 %定义流程图的具体形状
-\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(\mathbf{x}) \vee \neg \mathbf{R}(\mathbf{x})}$}; % 10
+\node (ABC0) at (-2,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{I}(\mathbf{x}) \vee \mathbf{R}(\mathbf{x})}$}; % 10
 \node (Ia0)[draw, process,align=center,right=1cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{I}(\mathbf{a})}$};           %12
 \node (RyLy0)[draw, process,align=center,right=3cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg\mathbf{R}(\mathbf{y})\vee \mathbf{L}(\mathbf{y})}$};           %132
 \node (La0)[draw, process,align=center,right=8cm of ABC0,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{L}(\mathbf{a})}$};      %14
@@ -1981,11 +1981,12 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \draw[thick,-](ABC0)--(Ra1);
 \draw[thick,-](ABC0)--(IxLx1);
 \draw[thick,-](Ia0)--(Ra1);
-\draw[thick,-](La0)--(Ra1);
+\draw[thick,-](Ra1)--(La0);
 
 \node (La2)[draw, process,align=center,below=2cm of Ra1,yshift=0cm,xshift=1.75cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{L}(\mathbf{a})}$};        %30
 \node (La21)[draw, process,align=center,right=2cm of La2,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{L}(\mathbf{a})}$};        %31
 \node (Ia2)[draw, process,align=center,below=2cm of IxLx1,yshift=0cm] {$\textcolor[rgb]{0,0.0,1}{\neg\mathbf{I}(\mathbf{a})}$};   %31
+\draw[thick,-](Ra1)--(La2);
 \draw[thick,-](Ia0)--(La21);
 \draw[thick,-](RyLy0)--(La2);
 \draw[thick,-](RyLy0)--(IxLx1);
@@ -2002,72 +2003,72 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \label{AI32fig21}
 \end{figure}
 %%%%%%%----------------------------------------
-从上述归结过程可以看出, 各级归结式数目要比宽度优先策略生成的少, 但在第二级还没有空子句. 就是说这种策略限制了子句集元素的剧增, 但会增加空子句所在的深度. 此外, 支持集策略具有逆向推理的含义, 由于进行归结的亲本子句中至少有一个与目标子句有关, 因此推理过程可以看作是沿目标、子目标的方向前进的.
+从上述使用支持集策略的归结过程可以看出, 各级归结式数目要比宽度优先策略生成的少, 但在第二级还没有空子句.
+支持集策略限制了子句集元素的剧增, 但会增加空子句所在的深度. 此外, 支持集策略具有逆向推理的含义, 由于进行归结的亲本子句中至少有一个与目标子句有关, 因此推理过程可以看作是沿目标和子目标的方向前进的.
 %%%%%%%-----------------------------------------------
 \subsection{删除策略}
 在寻找可归结子句的归结过程中, 子句集中的子句越多, 需要付出的代价就会越大. 如果在归结时能把子句集中无用的子句删除掉, 这就会缩小搜索范围, 减少比较次数, 从而提高归结效率.
 常用的删除方法有\uwave{纯文字、重言式和包孕}.
 %%%%%%%-----------------------------------------------
-\paragraph{纯文字删除法}~{}
+\subsubsection{纯文字删除法}
 %%%%%%%----------------------------------------
 \begin{mydef}{纯文字}{1}
-    如果某文字$L$在子句集中不存在可与其互补的文字$\neg L$, 则称该文字为\textbf{纯文字}.
+    如果子句集中不存在与文字$L$互补的文字$\neg L$, 则称该文字为\textbf{纯文字}.
 \end{mydef}
 
 \begin{remark}
     在归结过程中, 纯文字不可能被消除, 用包含纯文字的子句进行归结也不可能得到空子句, 因此对包含纯文字的子句进行归结是没有意义的, 应该把它从子句集中删除.
 \end{remark}
 \begin{remark}
-    对子句集而言, 删除包含纯文字的子句, 是不影响其不可满足性的.
+    对于子句集而言, 删除包含纯文字的子句, 是不影响其不可满足性的.
 \end{remark}
 
 %%%%%%%-----------------------------------------------
 \begin{example}
 对子句集
 \begin{align}
-    S=\{P\vee Q\vee R, \neg Q\vee R,  Q, \neg R\},
+    S=\{\textcolor[rgb]{0,0,1}{P}\vee Q\vee R, \neg Q\vee R,  Q, \neg R\},
 \end{align}
 其中$P$是纯文字, 因此可以将子句$P\vee Q\vee R$从子句集S中删除.
 \end{example}
 %%%%%%%-----------------------------------------------
-\paragraph{重言式删除法}~{}
+\subsubsection{重言式删除法}
     如果一个子句中包含有互补的文字对, 则称该子句为\textbf{重言式}.
 %%%%%%%-----------------------------------------------
 \begin{example}
-\begin{align}
-    P(x)\vee \neg P(x),  P(x)\vee Q(x)\vee \neg P(x)
-\end{align}
-都是重言式, 不管$P(x)$的真值为真还是为假, $P(x)\vee \neg P(x)$和$P(x)\vee Q(x)\vee \neg P(x)$都均为真.
+    $P(x)\vee \neg P(x)$和$P(x)\vee Q(x)\vee \neg P(x)$都是重言式, 不管$P(x)$的真值为真还是为假, $P(x)\vee \neg P(x)$和$P(x)\vee Q(x)\vee \neg P(x)$都均为真.
 \end{example}
 
 重言式是真值为真的子句. 对一个子句集来说, 不管是增加还是删除一个真值为真的子句, 都不会影响该子句集的不可满足性. 因此, 可从子句集中删去重言式.
 %%%%%%%-----------------------------------------------
 \paragraph{包孕删除法}~{}
+\begin{mydef}{包孕}{1}
     设有子句$C_1$和$C_2$, 如果存在一个置换$\sigma $, 使得$C_1\sigma \subseteq C_2$, 则称$C_1$包孕于$C_2$.
+\end{mydef}
 %%%%%%%-------------------------------------------%
 \begin{example}
-    $P(x)$             包孕于   $P(y)\vee Q(z)$             $\sigma =\{x/y\}$;
+    $P(x)$             包孕于   $P(y)\vee Q(z)$,             $\sigma =\{x/y\}$;
 
-    $P(x)$             包孕于   $P(a)$                      $\sigma =\{a/x\}$;
+    $P(x)$             包孕于   $P(a)$,                      $\sigma =\{a/x\}$;
 
-    $P(x)$             包孕于   $P(a)\vee Q(z)$             $\sigma =\{a/x\}$;
+    $P(x)$             包孕于   $P(a)\vee Q(z)$,             $\sigma =\{a/x\}$;
 
-    $P(x) \vee Q(a)$ 包孕于 $P(f(a))\vee Q(a)\vee R(y)$    $\sigma =\{f(a)/x\}$;
+    $P(x) \vee Q(a)$ 包孕于 $P(f(a))\vee Q(a)\vee R(y)$,    $\sigma =\{f(a)/x\}$;
 
-    $P(x) \vee Q(y)$ 包孕于 $P(a)\vee Q(u)\vee R(w)$        $\sigma =\{a/x, u/y\}$.
+    $P(x) \vee Q(y)$ 包孕于 $P(a)\vee Q(u)\vee R(w)$,        $\sigma =\{a/x, u/y\}$.
 \end{example}
 
-对子句集来说, 把其中包孕的子句删去后, 不会影响该子句集的不可满足性. 因此, 可从子句集中删除哪些包孕的子句.
+对子句集来说, 把其中包孕的子句删去后, 不会影响该子句集的不可满足性. 因此, 可从子句集中删除那些包孕的子句.
 %%%%%%%-----------------------------------------------
-\paragraph{单文字子句策略}~{}
+\subsubsection{单文字子句策略}
 %%%%%%%----------------------------------------
 \begin{mydef}{单文字子句}{1}
-    如果一个子句只包含一个文字, 则称此子句为\textbf{单文字子句}.
+    只包含一个文字的子句称为\textbf{单文字子句}.
 \end{mydef}
 单文字子句策略是对支持集策略的进一步改进, 它要求每次参加归结的两个亲本子句中至少有一个子句是单文字子句.
 %%%%%%%-----------------------------------------------
 \begin{example}
-设有如下子句集:
+    设有如下子句集:
 \begin{align}
     S=\{\neg I(x)\vee R(x),  I(a), \neg R(y)\vee L(y), \neg L(a)\}.
 \end{align}
@@ -2113,7 +2114,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \label{AI32fig22}
 \end{figure}
 %%%%%%%-----------------------------------------------
-\paragraph{线形输入策略}~{}
+\subsubsection{线形输入策略}~{}
     这种策略要求每次参加归结的两个亲本子句中, 至少应该有一个是初始子句集中的子句. 所谓初始子句集是指开始归结时所使用的子句集.
 %%%%%%%-----------------------------------------------
 \begin{example}
@@ -2129,7 +2130,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \begin{example}
 子句集
 \begin{align}
-  S=\{Q(u)\vee P(a), \neg Q(w)\vee P(w), \neg Q(x)\vee \neg  P(x), Q(y)\vee \neg  P(y)\}.
+    S=\{Q(u)\vee P(a), \neg Q(w)\vee P(w), \neg Q(x)\vee \neg  P(x), Q(y)\vee \neg  P(y)\}.
 \end{align}
 \end{example}
 从$S$出发很容易找到一棵归结反演树, 但不存在线性输入策略的归结反演树.
@@ -2187,12 +2188,17 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \label{AI32fig23}
 \end{figure}
 %%%%%%%-----------------------------------------------
-\paragraph{祖先过滤策略}~{}
+\subsubsection{祖先过滤策略}~{}
     这种策略与线性输入策略有点相似, 但是, 放宽了对子句的限制. 每次参加归结的两个亲本子句, 只要满足以下两个条件中的任意一个就可进行归结:
 
 (1) 两个亲本子句中至少有一个是初始子句集中的子句.
 
-(2) 如果两个亲本子句都不是初始子句集中的子句, 则一个子句应该是另一个子句的先辈子句. 所谓一个子句(例如$C_1$)是另一个子句(例如$C_2$)的先辈子句是指$C_2$是由$C_1$与别的子句归结后得到的归结式.
+(2) 如果两个亲本子句都不是初始子句集中的子句, 则一个子句应该是另一个子句的先辈子句.
+
+\begin{remark}
+    所谓一个子句(例如$C_1$)是另一个子句(例如$C_2$)的先辈子句是指$C_2$是由$C_1$与别的子句归结后得到的归结式.
+\end{remark}
+
 %%%%%%%-----------------------------------------------
 \begin{example}
 设有如下子句集:
@@ -2226,7 +2232,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \draw (Ia0)-- (RyLy0);
 \node (La0)[draw, process,align=center,below=1cm of Ia0,xshift=1cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{Q}(\mathbf{w}) \vee \mathbf{P}(\mathbf{w})}$};
 
-\node (Ra1)[draw, process,color=blue,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.5cm] {$\textcolor[rgb]{0.02,0.0,1}{\neg \mathbf{Q}(\mathbf{w})}$};
+\node (Ra1)[draw, process,color=blue,align=center,below=1cm of RyLy0,yshift=0cm,xshift=2.15cm] {$\textcolor[rgb]{0.02,0.0,1}{\neg \mathbf{Q}(\mathbf{w})}$};
 \draw (RyLy0)--(Ra1);
 \draw (La0)-- (Ra1);
 \node (RanegA)[draw, process,align=center,below=1cm of La0,yshift=0cm,xshift=-0.45cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\mathbf{Q}(a) \vee \mathbf{P}(a)}$};
@@ -2251,11 +2257,11 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \subsection{用归结反演求取问题的答案}
 归结原理除了可用于定理证明外, 还可用来求取问题答案, 其思想与定理证明相似. 其一般步骤为:
 
-(1) 把问题的已知条件用谓词公式表示出来, 并化为相应的子句集;
+(1) 把问题的已知条件用谓词公式表示并化为相应的子句集$S$;
 
-(2) 把问题的目标的否定用谓词公式表示出来, 并化为子句集;
+(2) 把目标问题的否定用谓词公式表示并化为子句集;
 
-(3) 对目标否定子句集中的每个子句, 构造该子句的重言式, 即把该目标否定子句和此目标否定子句的否定之间再进行析取所得到的子句, 用这些重言式代替相应的目标否定子句式, 并把这些重言式加入到前提子句集中, 得到一个新的子句集;
+(3) 对目标否定子句集中的每个子句, 构造该子句的重言式, 即把该目标否定子句和此目标否定子句的否定之间再进行析取, 得到新的子句, 用这些重言式代替相应的目标否定子句式, 并把这些重言式加入到前提子句集中, 得到一个新的子句集;
 
 (4) 对这个新的子句集, 应用归结原理求出其证明树, 这时证明树的根子句不为空, 称这个证明树为修改的证明树;
 
@@ -2264,7 +2270,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 下面通过一个例子来说明如何求取问题的答案.
 %%%%%%%-----------------------------------------------
 \begin{example}
-已知: “张和李是同班同学, 如果$x$和$y$是同班同学, 则$x$的教室也是$y$的教室, 现在张在302教室上课.” 问: “现在李在哪个教室上课?”
+    已知: “张和李是同班同学, 如果$x$和$y$是同班同学, 则$x$的教室也是$y$的教室, 现在张在302教室上课.” 问: “现在李在哪个教室上课?”
 \end{example}
 %%%%%%%------------------------------------------
 \begin{result}
@@ -2287,23 +2293,17 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \end{flushleft}
 \end{center}
 把目标的否定用谓词公式表示如下:
-
 $$\neg (\exists  v)\textup{At}(\textup{li}, v).$$
 
 把上述公式化为子句集:
 \begin{center}
 \begin{flushleft}
-\textup{C(zhang, li)};
-
-$\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
-
-\textup{At}(zhang, 302).
+\{\textup{C(zhang, li)}, $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$, \textup{At}(zhang, 302)\}.
 \end{flushleft}
 \end{center}
 
 把目标的否定化成子句式, 并用重言式
-
-    $$\neg \textup{At(li,v)} \vee \textup{At(li,v)}.$$
+ $$\neg \textup{At(li,v)} \vee \textup{At(li,v)}.$$
 代替之.
 \end{result}
 
@@ -2322,19 +2322,22 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
     上一节讨论了归结演绎推理, 它需要把谓词公式化为子句形, 尽管这种转化在逻辑上是等价的, 但是原来蕴含在谓词公式中的一些重要信息却会在求取子句形的过程中被丢失.
 %%%%%%%-----------------------------------------------
 \begin{example}
-下面的几个蕴含式
+蕴含式
 \begin{align}
-  &\neg A\wedge \neg B\rightarrow C,  \neg A\wedge \neg C\rightarrow B,  \neg A\rightarrow B\vee C,\\
-  &\neg B\rightarrow A\vee C,
+    \neg A\wedge \neg B\rightarrow C,  \neg A\wedge \neg C\rightarrow B,  \neg A\rightarrow B\vee C,\neg B\rightarrow A\vee C,
 \end{align}
 都与子句$A\vee B\vee C$等价.
 \end{example}
 
-但在$A\vee B\vee C$中, 是根本得不到原逻辑公式中所蕴含的哪些超逻辑的含义的. 况且, 在不少情况下人们多希望使用那种接近于问题原始描述的形式来进行求解, 而不希望把问题描述化为子句集.
+但在$A\vee B\vee C$中, 是根本得不到原逻辑公式中所蕴含的那些超逻辑含义的. 况且, 在不少情况下, 人们多希望使用那种接近于问题原始描述的形式来进行求解, 而不希望把问题描述化为子句集.
+规则是一种比较接近于人们习惯的问题描述方式:
+\begin{mydef}{演绎系统}{1}
+    按照规则对问题进行描述和求解的系统称为基于规则的系统, 或者叫做基于规则的\textbf{演绎系统}.
+\end{mydef}
 
-规则是一种比较接近于人们习惯的问题描述方式, 按照这种问题描述方式进行求解的系统称为基于规则的系统, 或者叫做基于规则的\textbf{演绎系统}.
-
-\textbf{规则演绎系统}的推理可分为正向演绎推理、逆向演绎推理和双向演绎推理三种形式.
+\begin{remark}
+    \textbf{规则演绎系统}的推理可分为正向演绎推理、逆向演绎推理和双向演绎推理三种形式.
+\end{remark}
 %%%%%%%-----------------------------------------------
 \subsection{规则正向演绎推理}
 规则正向演绎对应前面所讨论过的正向推理.
@@ -2343,28 +2346,29 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 %%%%%%%-----------------------------------------------
 \paragraph{事实表达式的与/或形变换}~{}
     在一个基于规则的正向演绎系统中, 其前提条件中的事实表达式是作为系统的初始综合数据库来描述的. 对事实的化简, 只须转换成不含蕴含符号“$\rightarrow$”的与/或形表示即可, 而不必化成子句集.
+
 把事实表达式化为非蕴含形式的与/或形的主要步骤如下:
 
-(1) 利用连接词化规律“$P\rightarrow Q\Leftrightarrow \neg P\vee Q$”, 消去蕴含符号. 事实上, 在事实表达式中很少有含蕴含符号“$\rightarrow$”出现, 因为可把蕴含式表示成规则.
+(1) 利用连接词化归律“$P\rightarrow Q\Leftrightarrow \neg P\vee Q$”, 消去蕴含符号. 事实上, 在事实表达式中很少含蕴含符号“$\rightarrow$”, 因为蕴含式课表示成规则.
 
-(2) 利用狄$\cdot$摩根定律及量词转换率把“$\neg$”移到紧靠谓词的位置, 直到每个否定符号的辖域最多只含一个谓词为止.
+(2) 利用狄$\cdot$摩根定律及量词转换律, 把否定“$\neg$”移到紧靠谓词的位置, 直到每个否定符号的辖域最多只含一个谓词为止.
 
 (3) 对所得到的表达式进行前束化.
 
-(4) 对全称量词辖域内的变量进行改名和标准化, 对存在量词量化用Skolem函数代替, 使不同量词约束的变元有不同的名字.
+(4) 对全称量词辖域内的变量进行改名和标准化, 存在量词的量化可用Skolem函数实现, 使不同量词约束的变元有不同的名字.
 
-(5) 消去全称量词, 而余下的变量都被认为是全程量词量化的变量.
+(5) 消去全称量词, 余下的变量都被认为是全程量词量化的变量.
 
 (6) 对变量进行换名, 使主合取元具有不同的变量名.
 %%%-----------------------------------------------
 \begin{example}
 有如下表达式
 \begin{align}
-    (\exists  x) (\forall y)(Q(y, x)\wedge \neg ((R(y)\vee P(y))\wedge S(x, y))),
+    (\exists  x) (\forall y)(Q(y, x)\wedge \textcolor[rgb]{0.00,0.00,1.00}{\neg} \textcolor[rgb]{1.00,0.00,1.00}{(}(R(y)\vee P(y))\wedge S(x, y)\textcolor[rgb]{1.00,0.00,1.00}{)}),
 \end{align}
 可把它转化为:
 \begin{align}
-    Q(z, a)\wedge ((\neg R(y)\wedge \neg P(y))\vee \neg S(a, y)).
+    Q(\textcolor[rgb]{0.00,0.00,1.00}{z, a})\wedge ((\neg R(y)\wedge \neg P(y))\vee \neg S(a, y)).
 \end{align}
 这就是与/或形表示.
 \end{example}
@@ -2372,7 +2376,14 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 \paragraph{事实表达式的与/或形变换}~{}
     事实表达式的与/或形可用一棵与/或树表示出来.
 %%%%%%%-----------------------------------------------
-\begin{example}对上例所给出的与/或式, 可用如下与/或树来表示.
+\begin{example}
+对上例所给出的与/或式, 可用如下与/或树来表示.
+
+在图\ref{AI32C3fig26}中, 每个节点表示该事实表达式的一个子表达式, 子表达式之间的与和或关系规定如下:
+
+$\bullet$ 当某个表达式为$k$个子表达式的析取时, 例如$E_1\vee E_2\vee \cdots \vee E_k$, 其中的每个子表达式$E_i$均被表示为$E_1\vee E_2\vee \cdots \vee E_k$的后继节点, 并由一个$k$线连接符将这些后继节点都连接到其父节点, 即表示成"与"的关系.
+
+$\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge E_2\wedge \cdots \wedge E_k$, 其中的每个子表达式$E_i$均被表示成$E_1\wedge E_2\wedge \cdots \wedge E_k$的一个单一的后继节点, 并由一个单一连接符连接到其父节点, 即表示成"或"的关系.
 %%%%%%%-----------------------------------------------
 %\begin{figure}[H]
 %\centering
@@ -2394,6 +2405,10 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 \node (RyLy0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=3.0cm] {$\textcolor[rgb]{0,0.0,1}{(\neg \mathbf{R}(\mathbf{y}) \wedge \neg \mathbf{P}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{a}, \mathbf{y})}$};
 \draw[->](ABC0)--(Ia0);
 \draw[->](ABC0)--(RyLy0);
+% k线
+\node[left=0.3cm of RyLy0.south](C){};
+\def\pathone{(C) arc(180:360:0.35)}; %K线的弧
+ \fill[top color=lime, bottom color=orange, middle color=yellow, draw=white](C)--\pathone-- cycle;
 \node (La0)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=-2.0cm] {$\textcolor[rgb]{0,0.0,1}{\neg \mathbf{R}(\mathbf{y}) \wedge \neg \mathbf{P}(\mathbf{y})}$};
 \node (Ra1)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{S}(\mathbf{a}, \mathbf{y})}$};
 \draw[->](RyLy0)--(La0);
@@ -2408,16 +2423,11 @@ $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$;
 \label{AI32C3fig26}
 \end{figure}
 %%%%%%%-----------------------------------------------
-在图\ref{AI32C3fig26}中, 每个节点表示该事实表达式的一个子表达式, 子表达式之间的与、或关系规定如下:
 
-$\bullet$ 当某个表达式为$k$个子表达式的析取时, 例如$E_1\vee E_2\vee \cdots \vee E_k$, 其中的每个子表达式$E_i$均被表示为$E_1\vee E_2\vee \cdots \vee E_k$的后继节点, 并由一个$k$线连接符将这些后继节点都连接到其父节点, 即表示成"与"的关系.
-
-$\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge E_2\wedge \cdots \wedge E_k$, 其中的每个子表达式$E_i$均被表示成$E_1\wedge E_2\wedge \cdots \wedge E_k$的一个单一的后继节点, 并由一个单一连接符连接到其父节点, 即表示成"或"的关系.
-
-这样, 与/或树的根节点就是整个事实表达式, 端节点均为事实表达式中的一个文字. 有了与/或树的表示, 就可以求出其解树(结束于文字节点上的子树)集. 并且可以发现, 事实表达式的子句集与解树集之间存在着一一对应关系, 即解树集中的每个解树都对应着子句集中的一个子句.
+\uwave{与/或树的根节点就是整个事实表达式, 端节点均为事实表达式中的一个文字}. 有了与/或树的表示, 就可以求出其解树(结束于文字节点上的子树)集. 并且可以发现, 事实表达式的子句集与解树集之间存在着一一对应关系, 即解树集中的每个解树都对应着子句集中的一个子句.
 其对应方式为: 解树集中每个解树的端节点上的文字的析取就是子句集中的一个子句.
 
-上图所示的与/或树有3个解树, 分别对应这以下3个子句:
+上图所示的与/或树有3个解树, 分别对应以下3个子句:
 \begin{align*}
     &Q(z, a);\\
     &\neg R(y)\vee  \neg  S(a, y);\\
@@ -2425,22 +2435,25 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{align*}
 \end{example}
 
-利用与/或树的这个性质, 可以把与/或树看作是对子句集的简洁表示. 不过, 表达式的与/或树表示要比子句集表示的通用性差一些, 原因是与/或树中的合取元没有进一步展开, 因此不能象在子句形中那样对某些变量进行改名, 这就限制了与/或树表示的灵活性.
+利用与/或树的这个性质, 可以把与/或树看作是对子句集的简洁表示. 不过, \uwave{表达式的与/或树表示要比子句集表示的通用性差一些, 原因是与/或树中的合取元没有进一步展开, 因此不能象在子句形中那样对某些变量进行改名}, 这就限制了与/或树表示的灵活性.
 %%%%%%%--------------------------------------------------
 \begin{example}
     上面的最后一个子句, 在子句集中其变量$y$可全部改名为$x$, 但却无法在与/或树中加以表示, 因而失去了通用性, 并且可能带来一些困难.
 \end{example}
 
-还需要指出, 这里的与/或树是作为综合数据库的一种表示, 其中的变量受全称量词的约束. 而在第\ref{AIchap2}章可分解产生式系统中, 所描述的与/或树则是搜索过程的一种表示, 两者有着不同的目的和含义, 因此应用时应加以区分.
+\begin{remark}
+    这里的与/或树是作为综合数据库的一种表示, 其中的变量受全称量词的约束. 而在第\ref{AIchap2}章可分解产生式系统中, 所描述的与/或树则是搜索过程的一种表示, 两者有着不同的目的和含义, 应用时应加以区分.
+\end{remark}
 %%%%%%%-----------------------------------------------
 \paragraph{规则的与/或形变换}~{}
-与/或形正向演绎系统中是以正向方式使用规则($F$规则)对综合数据库中的与/或树结构进行变换的. 为简化这种演绎过程, 通常要求$F$规则应具有如下形式:
+    与/或形正向演绎系统中是以正向方式使用规则($F$规则)对综合数据库中的与/或树结构进行变换的. 为简化这种演绎过程, 通常要求$F$规则应具有如下形式:
 \begin{align}
     L\rightarrow W,
 \end{align}
 其中, $L$为单文字, $W$为与/或形公式. 假定出现在蕴含式中的任何变量全都受全称量词的约束, 并且这些变量已经被换名, 使得他们与事实公式和其他规则中的变量不同.
 
-如果领域知识的规则表示形式与上述要求不同, 则应将它转换成要求的形式. 其变换步骤如下:
+\begin{remark}
+    如果领域知识的规则表示形式与上述要求不同, 则应将它转换成要求的形式. 其变换步骤如下:
 
 (1) 暂时消去蕴含符号“$\rightarrow$”. 设有如下公式:
 \begin{align}
@@ -2449,7 +2462,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 
 运用等价关系“$P\rightarrow Q\Leftrightarrow \neg P\vee Q$”, 可将上式变为:
 \begin{align}
-    (\forall x)(\neg ((\exists   y) (\forall z)P(x, y,z))\vee (\forall u)Q(x, u)).
+    (\forall x)(\neg \textcolor[rgb]{1.00,0.00,1.00}{(}(\exists y) (\forall z)P(x, y,z)\textcolor[rgb]{1.00,0.00,1.00}{)}\vee (\forall u)Q(x, u)).
 \end{align}
 
 (2) 把否定符号“$\neg$”移到紧靠谓词的位置上, 使其作用域仅限于单个谓词. 通过使用狄.摩根定律及量词转换率可把上式转换为:
@@ -2471,12 +2484,18 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \begin{align}
    P(x, y,f(x,y))\rightarrow Q(x, u).
 \end{align}
+\end{remark}
 
-在上述对$F$规则的要求中, 之所以限制其前件为单文字, 是因为在进行正向演绎推理时要用$F$规则作用于表示事实的与/或树, 而该与/或树的叶节点都是单文字, 这样就可用$F$规则的前件与叶节点进行简单匹配.
-对非单文字情况, 若形式为$L_1\vee L_2\rightarrow W$, 则可将其转换成与之等价的两个规则$L_1\rightarrow W$与 $L_2\rightarrow W$进行处理.
+\begin{remark}
+    在上述对$F$规则的要求中, 之所以限制其前件为单文字, 是因为在进行正向演绎推理时要用$F$规则作用于表示事实的与/或树, 而该与/或树的叶节点都是单文字, 这样就可用$F$规则的前件与叶节点进行简单匹配.
+
+    对非单文字情况, 若形式为$L_1\vee L_2\rightarrow W$, 则可将其转换成与之等价的两个规则$L_1\rightarrow W$与 $L_2\rightarrow W$进行处理.
+\end{remark}
 %%%%%%%-----------------------------------------------
 \paragraph{目标公式的表示形式}
-    与/或树正向演绎系统要求目标公式用子句形表示. 如果目标公式不是子句形, 则需要化成子句形. 把一个目标公式转化为子句形的步骤与第3节所述的化简子句形的步骤类似, 但Skolem化的过程不同. 目标公式的Skolem化过程是化简子句形的Skolem过程的对偶形式, 即把目标公式中属于存在量词辖域内的全称变量用存在量词量化变量的Skolem函数来代替, 使经Skolem化目标公式只剩下存在量词, 然后再对析取元作变量替换, 最后把存在量词消掉.
+    与/或树正向演绎系统要求目标公式用子句形表示.
+
+    目标公式不是子句形, 则需要化成子句形. 把一个目标公式转化为子句形的步骤与第3节所述的化简子句形的步骤类似, 但Skolem化的过程不同. 目标公式的Skolem化过程是化简子句形的Skolem过程的对偶形式, 即把目标公式中属于存在量词辖域内的全称变量用存在量词量化变量的Skolem函数来代替, 使经Skolem化目标公式只剩下存在量词, 然后再对析取元作变量替换, 最后把存在量词消掉.
 %%%%%%%--------------------------------------------------
 \begin{example}
 设目标公式为
@@ -2493,18 +2512,18 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{align}
 最后, 消去存在量词得
 \begin{align}
-    P(f(y), y)\vee Q(f(z), z),
+    P(f(y), y)\vee Q(f(z), z).
 \end{align}
 这样, 目标公式中的变量都假定受存在量词的约束.
 \end{example}
 %%%%%%%-----------------------------------------------
 \paragraph{规则正向演绎系统}~{}
-规则正向演绎推理过程是从已知事实出发, 不断运用$F$规则, 推出欲证明目标公式的过程. 即先用与/或树把已知事实表示出来, 然后再用$F$规则的前件和与或树的叶节点进行匹配, 并通过一个匹配弧把匹配成功的$F$规则加入到与/或树中, 依此使用$F$规则, 直到产生一个含有以目标节点为终止节点解图为止.
+    规则正向演绎推理过程是从已知事实出发, 不断运用$F$规则, 推出欲证明目标公式的过程. 即先用与/或树把已知事实表示出来, 然后再用$F$规则的前件和与或树的叶节点进行匹配, 并通过一个匹配弧把匹配成功的$F$规则加入到与/或树中, 依此使用$F$规则, 直到产生一个含有以目标节点为终止节点解图为止.
 
 下面分别在命题逻辑和谓词逻辑的情况下来讨论规则正向演绎过程.
 %%%%%%%-----------------------------------------------
 \subparagraph{命题逻辑的规则演绎过程}
-由于命题逻辑中的公式不含变元, 因此其规则演绎过程比较简单.
+    由于命题逻辑中的公式不含变元, 因此其规则演绎过程比较简单.
 %%%%%%%-------------------------------------------------
 \begin{example}
     设已知事实为: $A\vee B$, $F$规则为:
@@ -2517,7 +2536,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{example}
 %%%%%%%-------------------------------------------------
 \begin{proof}
-先将已知事实用与/或树表示出来, 然后再用匹配弧把$r_1$和$r_2$分别连接到事实与/或树中与$r_1$和$r_2$前件匹配的两个不同端节点, 由于出现了以目标节点为终节点的解树, 故推理过程结束. 这一证明过程可用图\ref{AI32fig2019120127}表示.
+    先将已知事实用与/或树表示出来, 然后再用匹配弧把$r_1$和$r_2$分别连接到事实与/或树中与$r_1$和$r_2$前件匹配的两个不同端节点, 由于出现了以目标节点为终节点的解树, 故推理过程结束. 这一证明过程可用图\ref{AI32fig2019120127}表示.
 在该图中, 双箭头表示匹配弧, 它相当于一个单线连接符.
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
@@ -2528,7 +2547,7 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \end{figure}
 \end{proof}
 %%%%%%%-----------------------------------------------
-为了验证上述推理的正确性, 下面再用归结演绎推理给于证明. 由已知事实、规则及目标的否定可得到如下子句集:
+为了验证上述推理的正确性, 下面再用归结演绎推理给予证明. 由已知事实、规则及目标的否定可得到如下子句集:
 \begin{align}
     \{A\vee B, \neg A\vee C, \neg A\vee D, \neg B\vee E, \neg B\vee G, \neg C, \neg G\}.
 \end{align}
@@ -2575,15 +2594,17 @@ $\bullet$ 当某个表达式为$k$个子表达式的合取时, 例如$E_1\wedge 
 \label{AI32fig2019120128}
 \end{figure}
 %%%%%%%-----------------------------------------------
-可见, 用归结演绎推理对已知事实、$F$规则集目标的否定所过程的子句集进行归结, 得到了空子句NIL, 从而证明了目标公式. 它与正向演绎推理所得到的结果是一致的.
+可见, 用归结演绎推理对已知事实和$F$规则集目标的否定所过程的子句集进行归结, 得到了空子句NIL, 从而证明了目标公式. 它与正向演绎推理所得到的结果是一致的.
 %%%%%%%-----------------------------------------------
 \subparagraph{谓词逻辑情况}
     由于事实、$F$规则及目标中均含有变元, 因此, 其规则演绎过程还需要用最一般合一对变进行置换.
 %%%%%%%-----------------------------------------------
 \begin{example}
-设已知事实的与/或形表示为: $P(x, y)\vee (Q(x)\wedge R(v, y))$.
+设已知事实的与/或形表示为:
 
-$F$规则为: $P(u, v)\rightarrow (S(u)\vee N(v))$.
+$P(x, y)\vee (Q(x)\wedge R(v, y))$,
+
+$F$规则为: $P(u, v)\rightarrow (S(u)\vee N(v))$,
 
 目标公式为: $S(a)\vee N(b)\vee Q(c)$.
 \end{example}
@@ -2599,7 +2620,7 @@ $F$规则为: $P(u, v)\rightarrow (S(u)\vee N(v))$.
 %%%%%%%-----------------------------------------------
 %%%%%%%---------------------------------------------
 \subsection{规则逆向演绎推理}
-规则逆向演绎推理过程是从目标公式的与/或树出发, 反向使用规则($B$规则), 对目标公式的与/或树进行变换, 直到得出含有事实节点一致解图为止. 包括:
+规则逆向演绎推理过程是从目标公式的与/或树出发, 反向使用规则($B$规则), 对目标公式的与/或树进行变换, 直到得与有事实节点一致的解图为止. 包括:
 \begin{itemize}
 \item 目标公式的与/或形变换.
 \item 目标公式的与/或树表示.
@@ -2633,6 +2654,15 @@ Skolem化后为
 %%%%%%%-------------------------------------------------
 \begin{example}
 对上述目标公式的与/或形, 可用如下的与/或树如图\ref{AI32fig2019120130}表示.
+
+在目标公式的与/或树中, 若把叶节点用它们之间的合取及析取关系连接起来, 就可得到原目标公式的三个子目标:
+
+$\neg P(f(z))$;
+
+$Q(f(y), y)\wedge \neg  R(f(y))$;
+
+ $Q(f(y), y)\wedge \neg  S(y)$. 即: 子目标是文字的合取式.
+\end{example}
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[font={\sf \small}]
@@ -2646,6 +2676,12 @@ Skolem化后为
 \node (RyLy0)[draw, process,align=center,below=1cm of ABC0,yshift=0cm,xshift=3.0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{Q}(\mathrm{f}(\mathrm{y}), \mathrm{y}) \wedge(\neg \mathrm{R}(\mathrm{f}(\mathrm{y})) \vee \neg \mathrm{S}(\mathrm{y}))}$};
 \draw[->](ABC0)--(Ia0);
 \draw[->](ABC0)--(RyLy0);
+
+% k线
+\node[left=0.25cm of RyLy0.south](C){};
+\def\pathone{(C) arc(180:360:0.35)}; %K线的弧
+ \fill[top color=lime, bottom color=orange, middle color=yellow, draw=white](C)--\pathone-- cycle;
+
 \node (La0)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=-2.0cm] {$\textcolor[rgb]{0,0.0,1}{\mathbf{Q}(f(y), y)}$};
 \node (Ra1)[draw, process,align=center,below=1cm of RyLy0,yshift=0cm,xshift=1.5cm] {$\textcolor[rgb]{0.2,0.6,0.2}{\neg \mathbf{R}(\mathbf{f}(\mathbf{y})) \vee \neg \mathbf{S}(\mathbf{y})}$};
 \draw[->](RyLy0)--(La0);
@@ -2659,28 +2695,16 @@ Skolem化后为
 \caption{与或树}
 \label{AI32fig2019120130}
 \end{figure}
-在目标公式的与/或树中, 若把叶节点用它们之间的合取及析取关系连接起来, 就可得到原目标公式的三个子目标:
-
-$\neg P(f(z))$;
-
-$Q(f(y), y)\wedge \neg  R(f(y))$;
-
- $Q(f(y), y)\wedge \neg  S(y)$. 即: 子目标是文字的合取式.
-\end{example}
-%%%%%%%-----------------------------------------------
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=0.76\textwidth]{Gguijieshu2019112530.PNG}
-%\caption{与或树}
-%\label{AI32fig2019120130}
-%\end{figure}
-%%%%%%%----------------------------------------
 %%%%%%%-----------------------------------------------
 \section{知识图谱(knowledge graph)的一阶归纳推理}
-    由有向图构成, 被用来描述现实世界中实体及实体之间的关系, 是人工智能中进行知识表达的重要方式. 哲学上把现象和现象之间那种“引起和被引起”的关系, 叫做因果关系, 其中引起某种现象产生的现象叫做原因, 被某种现象引起的现象叫做结果.
-因果推理是一种重要的推理手段, 是人类智能的重要组成. 了解基于路径排序的知识图谱推理方法、基于结构因果模型(structural causal model, SCM)和因果图(causal diagram)以及相关的辛普森悖论、D-分离和do算子等知识
+    知识图谱由向图构成构建, 用来描述现实世界中实体及实体间的关系, 是人工智能中进行知识表达的重要方式.
+    因果推理是一种重要的推理手段, 是人类智能的重要组成.
+    本小解简单介绍基于路径排序的知识图谱推理、基于结构因果模型(structural causal model, SCM)和因果图(causal diagram)的知识图谱推理, 以及辛普森悖论、D-分离和do算子等概念.
+\begin{remark}
+    哲学上把现象和现象之间那种“引起和被引起”的关系, 叫做因果关系, 其中引起某种现象产生的现象叫做原因, 被某种现象引起的现象叫做结果.
+\end{remark}
 
-知识图谱推理的主要方法有
+知识图谱推理的主要方法有:
 
 1) 基于描述逻辑的推理, 如DL-based.
 
@@ -2691,8 +2715,10 @@ $Q(f(y), y)\wedge \neg  R(f(y))$;
 4) 基于概率逻辑的方法, 如Statistical Relational Learning.
 %%%%%%%------------------------------------------
 \subsection{基于符号逻辑的推理——本体推理}
-    传统的符号逻辑推理中主要与知识图谱有关的推理手段是基于描述逻辑的本体推理.
-描述逻辑主要被⽤来对事物的本体进⾏建模和推理, ⽤来描述和推断概念分类及其概念之间的关系. 主要方法有
+    与传统的符号逻辑推理有关的推理手段是基于描述逻辑的本体推理.
+描述逻辑主要被用来对事物的本体进行建模和推理, 描述和推断概念分类及其概念之间的关系.
+
+    描述逻辑的主要方法有:
 
 1) 基于表运算Tableaux及改进的方法: FaCT++、 Racer和Pellet Hermit等运算.
 
@@ -2703,7 +2729,7 @@ $Q(f(y), y)\wedge \neg  R(f(y))$;
 %%%%%%%------------------------------------------
 \subsection{基于图结构和统计规则挖掘的推理}
 
-图结构和统计规则挖掘的推理的主要方法:
+图结构和统计规则挖掘推理的主要方法:
 
 1) 基于路径排序学习方法有PRA和Path ranking Algorithm.
 
@@ -2763,17 +2789,20 @@ $Q(f(y), y)\wedge \neg  R(f(y))$;
 
 知识图谱的构建的流程：
 
-1. 数据来源：(数据层(Data Level)的构建)
+1. 数据来源(数据层(Data Level)的构建)
 
 百科类数据(Wikipedia半结构化, Freebase结构化),
 结构化数据(DBpedia 和YAGO 等通用语义数据集, 还包括如MusicBrainz 和DrugBank 等特定领域的知识库),
-半结构化数据, 自动化的AVP(属性-值对)抽取
-以及搜索日志挖掘, 发现最新出现的各种实体, 基于Bootstrapping的多类别协同模式学习
-      Bootstrapping方法的过程：
+半结构化数据, 自动化的AVP(属性-值对)抽取以及搜索日志挖掘, 发现最新出现的各种实体, 基于Bootstrapping的多类别协同模式学习。
+
+    Bootstrapping方法的过程：
 
     Given a hand of seed NEs of a category C:
+
     Learning context features of the seeds from queries
+
     Extracting new seed entities of category C using the learnt context  features
+
     Expanding context features using the expanded seed set
 
 \# 属性-值对(attribute-value pair, 又称AVP)用来刻画实体的内在特性；而关系(relation)用来连接两个实体, 刻画它们之间的关联
@@ -2784,9 +2813,9 @@ $Q(f(y), y)\wedge \neg  R(f(y))$;
 
 (2) 知识图谱schema构建, 相当于为其建立本体(Ontology) , 最基本的本体包括概念、概念层次、属性、属性值类型、关系、关系定义域(Domain)概念集以及关系值域(Range)概念集.
 
-自顶向下的方式是指通过本体编辑器(Ontology Editor)预先构建本体, 本体构建不是从无到有的过程, 而是依赖于从百科类和结构化数据得到的高质量知识中所提取的模式信息.
+$\bullet$ 自顶向下的方式是指通过本体编辑器(Ontology Editor)预先构建本体, 本体构建不是从无到有的过程, 而是依赖于从百科类和结构化数据得到的高质量知识中所提取的模式信息.
 
-自底向上的方式则通过上面介绍的各种抽取技术, 特别是通过搜索日志和Web Table抽取发现的类别、属性和关系, 并将这些置信度高的模式合并到知识图谱中. 合并过程将使用类似实体对齐的对齐算法.
+$\bullet$ 自底向上的方式则通过上面介绍的各种抽取技术, 特别是通过搜索日志和Web Table抽取发现的类别、属性和关系, 并将这些置信度高的模式合并到知识图谱中. 合并过程将使用类似实体对齐的对齐算法.
 
 (3) 不一致性的解决.
 
@@ -2827,8 +2856,8 @@ Type对应的实例往往是动态变化的.
 (2)  问题回答
 
 知识图谱对于搜索所带来的另一个革新是直接返回答案, 而不仅仅是排序的文档列表.
-搜索引擎不仅要理解查询中涉及到的实体及其属性, 更需要理解查询所对应的语义信息. 搜索引擎通过高效的图搜索, 在知识图谱中查找连接这些实体及属性的子图并转换为相应的图查询——
-\href{https://www.w3.org/TR/rdf-sparql-query/}{用于RDF上的查询语言SPARQL}.
+搜索引擎不仅要理解查询中涉及到的实体及其属性, 更需要理解查询所对应的语义信息.
+搜索引擎通过高效的图搜索, 在知识图谱中查找连接这些实体及属性的子图并转换为相应的图查询——\href{https://www.w3.org/TR/rdf-sparql-query/}{用于RDF上的查询语言SPARQL}.
 
 \ding{172} 基于知识图谱表示学习的关系推理
 
@@ -2837,35 +2866,41 @@ Type对应的实例往往是动态变化的.
 \ding{173} 基于概率逻辑的方法: Statistical Relational Learning.
 
 概率逻辑学习有时也叫Relational Machine Learning (RML), 关注关系的不确定性和复杂性.
-通常使用Bayesian networks 或者 Markov networks.
+通常使用Bayesian networks或者 Markov networks.
 
 \ding{174} 基于符号逻辑的推理
 
-本体概念推理： 图谱中基于RDF来作为资源描述语言, RDF是Resource Description Framework的简称.
-但是RDF表示关系层次受限, 因此有了RDFS,在RDF的基础上, 新增了Class, subClassOf, type, Property, subPropertyOf和Domain, Range等词汇, 可以更好的表述相关关系.
+本体概念推理： 图谱中基于RDF(Resource Description Framework)来作为资源描述语言.
+但是RDF表示关系层次受限, 因此有了RDFS, 在RDF的基础上, 新增了Class, subClassOf, type, Property, subPropertyOf和Domain, Range等词汇, 可以更好的表述相关关系.
 %%%%%%%---------------------------------------------
 \subsection{因果推理(辛普森悖论、D-分离和do算子)}
 
-路径张量分解的知识图谱推理算法-Knowledge Graph Reasoning Based on Paths of Tensor Factorization
-张量分解技术在用于知识图谱学习和推理过程中时, 只考虑知识图谱中实体与实体间的直接关系, 忽略知识图谱图形结构的特点.
-因此,文中提出基于路径张量分解的知识图谱推理算法(PRESCAL), 利用路径排列算法(PRA)获得知识图谱中各实体对间的关系路径.
+路径张量分解的知识图谱推理算法(Knowledge Graph Reasoning Based on Paths of Tensor Factorization, 张量分解技术在知识图谱学习和推理过程中的应用)只考虑知识图谱中实体与实体间的直接关系, 忽略知识图谱图形结构的特点,
+提出基于路径张量分解的知识图谱推理算法(PRESCAL), 利用路径排列算法(PRA)获得知识图谱中各实体对间的关系路径.
 然后对实体对间的关系路径进行张量分解,并在优化更新过程中采用交替最小二乘法.
 实验表明, 在路径问题回答任务和实体链接预测任务中, PRESCAL可以取得较好的预测准确率.
 %%%%%%%---------------------------------------------
 \section{模糊逻辑$^*$}
-逻辑原词为Logic. 逻是指人类进行抽象思维的合理原则, 是用概念、判断、推理、论证 的方法进行思维以获取接近真理的知识的规则. 逻辑学是古希腊哲学家亚里士多德创立的, 至今已有几十种, 诸如, 数理逻辑、哲学逻辑、模糊逻辑、辩证逻辑、制约逻辑等等. 最基本的逻辑是形式逻辑, 又称普通逻辑. 形式逻辑的三个要素是概念、判断、推理, 它同时符合四条基本规律, 那就是同一律、不矛盾律、排中律和充足理由律. 换句话说, 凡是满足公理体系中基本规律的思维过程就是符合逻辑的.
-1965年美国数学家L. Zadeh首先提出了Fuzzy集合的概念, 导致了Fuzzy数学的诞生.
-模糊逻辑, 用一个词语来形容, 就是“顾名思义”. 在量化学产生之前, 人类通过类比的方法来描述需要表达的对象. 比如：绳结记事. 所以, 类比逻辑是人类常用的模糊逻辑.
+    逻辑学是古希腊哲学家亚里士多德创立的, 至今已有几十种, 诸如, 数理逻辑、哲学逻辑、模糊逻辑、辩证逻辑、制约逻辑等等. 最基本的逻辑是形式逻辑, 又称普通逻辑. 形式逻辑的三个要素是概念、判断、推理, 它同时符合四条基本规律, 那就是同一律、不矛盾律、排中律和充足理由律. 换句话说, 凡是满足公理体系中基本规律的思维过程就是符合逻辑的.
 
+\begin{mydef}{逻辑}{1}
+    逻辑是指人类进行抽象思维的合理原则, 是用概念、判断、推理和论证 的方法进行思维以获取接近真理的知识的规则.
+\end{mydef}
+
+1965年美国数学家L. Zadeh首先提出了Fuzzy集合的概念, 导致了Fuzzy数学的诞生.
+模糊逻辑顾名思义, 就是通过类比人类处理问题的方法来表达现实世界的对象. 比如：绳结记事. 类比逻辑是人类常用的模糊逻辑.
 类比逻辑往往使用于解释描述性表达. 建立信息对称关系, 以便于在下次表达时, 可以减少信息不对称成本.
-通过类比逻辑, 人们进一步发展, 把相似属性的对象归类为一起, 这就产生了归纳逻辑. 人们从个体对象中的特殊属性, 归纳在一起, 之后可以发现涵盖于所有对象的普遍属性.
+通过类比逻辑, 人们将相似属性的对象归类就产生了归纳逻辑. 归纳在一起可以发现涵盖于所有对象的普遍属性.
 %%%%%%%-----------------------------------------------
 \begin{example}
-  五谷杂粮.
+    五谷杂粮.
 \end{example}
 
 归纳逻辑使用于发现性表达. 当人们的经验已经无法了解新的事物的时候, 归纳逻辑可以运用已有的经验, 将所有的相似特点归纳在一起, 之后发现新的属性, 成为新的经验.
-人们生活在竞争中, 而决定胜利的一方往往取决于经验的多少. 经验越多, 取胜的概论越高; 经验越少, 越容易失败. 所以, 博弈逻辑也是一种模糊逻辑. 博弈的过程, 是使用模糊逻辑不断地模糊判断. 比如掷骰子, 谁对骰子了解得越多, 胜率可能越高.
+人们生活在竞争中, 而决定胜利的一方往往取决于经验的多少. 经验越多, 取胜的概论越高; 经验越少, 越容易失败. 所以, 博弈逻辑也是一种模糊逻辑.
+\begin{remark}
+    博弈的过程, 是使用模糊逻辑不断地模糊判断. 比如掷骰子, 谁对骰子了解得越多, 胜率可能越高.
+\end{remark}
 
 模糊逻辑是通过不确定判断, 建立不确定的判断系统. 比如Fuzzy集合, 把只取0和1二值的普通集合概念推广为在$[0, 1]$区间上取无穷多值的模糊集合概念, 并用“隶属度”这一概念来精确地刻画元素与模糊集合之间的关系.
 %%%%%%%-----------------------------------------------
@@ -2965,9 +3000,9 @@ Zadeh于1973年首次提出了基于模糊集合理论的模糊推理算法(推�
 CRI算法与全蕴涵三I算法的存在某种等价性, 可以帮助解决CRI算法逻辑语义不足, 全蕴涵三I算法没有统一解形式的问题.
 文\cite{江欢 2009全蕴涵三I算法}通过将经典二值逻辑中蕴涵算子所满足的两条性质：
 
-有序性(Ordering property)：$ x\leq y\longmapsto I(x,y)=1$.
+1) 有序性(Ordering property)：$ x\leq y\longmapsto I(x,y)=1$.
 
-传输律(Law of importation)： $I(T(x,y),z)=I(x,I(y,z))$.
+2) 传输律(Law of importation)： $I(T(x,y),z)=I(x,I(y,z))$.
 
 有序性和传输律都被纳入到模糊逻辑的框架下(其中I为模糊蕴涵算子, $T$为$T$范数, $x,y,z\in [0,1])$, 讨论四类重要的模糊蕴涵算子, 即$S$蕴涵、剩余型蕴涵、$QL$蕴涵和$D$蕴涵, 各自同时满足以上两条性质的充分必要条件.
 在此基础上, 探讨了FMP模型和FMT模型下CRI算法与全蕴涵三I算法的等价性, 进而得出了FMP模型和FMT模型下全蕴涵三I算法解的统一形式.
@@ -3064,12 +3099,12 @@ $P^k_s(a)$ 代表第 $k$ 次迭代时状态 $s$ 下选择动作 $a$ 的概率.
 
 %%%%%%---------------------------------
 \begin{think}
- 什么是三段论推理?
+    什么是三段论推理?
 \end{think}
 
 %%%%%%---------------------------------
 \begin{think}
-  什么是自然演绎推理?
+    什么是自然演绎推理?
 \end{think}
 
 %%%%%%---------------------------------
@@ -3085,5 +3120,5 @@ $P^k_s(a)$ 代表第 $k$ 次迭代时状态 $s$ 下选择动作 $a$ 的概率.
 
 %%%%%%---------------------------------
 \begin{think}
-  对所有的x、y、z来说, 如果y是x父亲, z是y的父亲,则z是x的道每个, 又知每个人都有父亲, 试问是否会有这样的个人X和Y, 使得X是Y的祖父?
+    对所有的x、y和z来说, 如果y是x父亲, z是y的父亲,则z是x的祖父; 又知每个人都有父亲, 试问是否会有这样的X和Y, 使得X是Y的祖父?
 \end{think}

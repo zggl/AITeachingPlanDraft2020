@@ -3,11 +3,9 @@
 \chapter{计算智能}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tcolorbox}[colback=white!50,colframe=orange!50,title=计算智能]
-\begin{center}
 计算智能是信息科学、生命科学、认知科学等不同学科相互交叉的产物. 它主要借鉴仿生学的思想, 基于人们对生物体智能机理的认识, 采用数值计算的方法去模拟和实现人类的智能.
 计算智能的主要研究领域包括: 神经计算、进化计算、模糊计算、免疫计算、DNA计算和人工生命等.
 \hfill
-\end{center}
 \end{tcolorbox}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -404,9 +402,9 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \begin{align}
 W=\left(
 \begin{array}{llll}
-{w_{11}} & {w_{12}} & {\cdots w_{1 {m}}} \\
-{w_{21}} & {w_{22}} & {\cdots w_{2 {m}}} \\
-{\vdots} & {\vdots} & {} \\
+{w_{11}} & {w_{12}} & \cdots          &w_{1 {m}} \\
+{w_{21}} & {w_{22}} & \cdots         &w_{2 {m}} \\
+{\vdots} & {\vdots} &                &\vdots\\
 {w_{{n} 1}} & {w_{{n} 2}} & {\cdots} & {w_{{nm}}}.
 \end{array}
 \right)
@@ -1785,9 +1783,11 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \item 染色体(Chromos): 染色体是指对个体进行编码后所得到的编码串. 染色体中的每1位称为基因, 染色体上由若干个基因构成的一个有效信息段称为基因组.
 \item 适应度(Fitness)函数: 适应度函数是一种用来对种群中各个个体的环境适应性进行度量的函数. 其函数值是遗传算法实现优胜劣汰的主要依据
 \item 遗传操作(Genetic Operator): 遗传操作是指作用于种群而产生新的种群的操作. 标准的遗传操作包括以下3种基本形式:
-\item 选择(Selection)
-\item 交叉(Crosssover)
-\item 变异(Mutation)
+\begin{itemize}
+    \item 选择(Selection)
+    \item 交叉(Crosssover)
+    \item 变异(Mutation)
+\end{itemize}
 \end{itemize}
 
 遗传算法主要由染色体编码、初始种群设定、适应度函数设定、遗传操作设计等几大部分所组成, 其算法主要内容和基本步骤可描述如下:
@@ -1830,7 +1830,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 %定义流程图的具体形状
 \node (ABC0) at (-1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{1,0,1}{生成初始种群并编码}};   % PQR0
 \node (nCz)[draw, process,align=center,below=0.5cm of ABC0,yshift=0cm] {计算个体适应值并评价};                                                %R1
-\node (nCzleft0)[align=center,right=4cm of nCz,yshift=1.05cm] {\textcolor[rgb]{0,0,1}{}};                                                      %R1
+\node (nCzleft0)[align=center,right=4cm of nCz,yshift=0.75cm] {\textcolor[rgb]{0,0,1}{}};                                                      %R1
 \draw[thick,thick,->](ABC0)--(nCz);
 \node (AB0)[draw, decision,align=center,below=0.5cm of nCz,yshift=0cm,xshift=0.0cm] {满足终止条件吗?};                  %20
 \draw[thick,thick,->](nCz)--(AB0);
@@ -1840,6 +1840,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \draw[thick,thick,->](Choose)--(Cross);
 \node (Mutation)[draw, process,align=center,below=0.5cm of Cross,yshift=0cm] {\textcolor[rgb]{0,0,1}{变异}};
 \draw[thick,thick,->](Cross)--(Mutation);
+
 \draw[thick,->](Mutation)-|(nCzleft0.center)-|(nCz.north);
 \node (nil0)[draw, process,align=center,right=3cm of Choose] {\textcolor[rgb]{1,0,1}{中止}};
 \draw[thick,->](AB0)node[left,xshift=3.2cm,yshift=-0.2cm] {$N$}-| (nil0);                                              %30
@@ -1860,7 +1861,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \begin{example}
 假设变量$x\in [5,10]$, 要求的计算精度为$10^{-5}$, 则需要将[5, 10]至少分为600000个等长小区间, 每个小区间用一个二进制串表示. 于是, 串长至少等于20, 原因是:
 \begin{align*}
-  524288=2^{19}<600000<2^{20}=1048576
+  524288=2^{19}<600000<2^{20}=1048576,
 \end{align*}
 这样, 对应于区间$[5,10]$内满足精度要求的每个值$x$, 都可用一个20位编码的二进制串$<b_{19},b_{18},\cdots,b_0>$来表示.
 \end{example}
@@ -1884,7 +1885,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \end{align}
 其中, ⊕表示模2加法. 而从一个格雷串到二进制串的变换为:
 \begin{align}
-  b_{i}=\sum_{j=1}^{i} a_{i}(\bmod 2)
+  b_{i}=\sum_{j=1}^{i} a_{i}(\bmod 2).
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -1931,15 +1932,15 @@ f(x)=
 \end{array}
 \right.
 \end{align}
-其中, $f_{\max}(x)$是原始适应函数$f(x)$的一个上界. 如果$f_{\max}(x)$未知, 则可用当前代或到目前为止各演化代中的$f(x)$的最大值来代替. 可见,  $f_{\max}(x)$是会随着进化代数的增加而不断变化的.
+其中, $f_{\max}(x)$是原始适应函数$f(x)$的一个上界. 如果$f_{\max}(x)$未知, 则可用当前代或到目前为止各演化代中的$f(x)$的最大值来代替. 可见, $f_{\max}(x)$是会随着进化代数的增加而不断变化的.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{极大化问题}
 对极大化问题, 其标准适应度函数可定义为
 \begin{align}
   f(x)=\left\{
   \begin{array}{ll}
-  f(x)-f_{\min }(x) &f(x)>f_{\min}(x)\\
- 0 & f(x)\leq f_{\min}(x)
+  f(x)-f_{\min }(x), &f(x)>f_{\min}(x)\\
+ 0, & f(x)\leq f_{\min}(x)
   \end{array}
   \right.
 \end{align}
@@ -1998,7 +1999,7 @@ f(x)=
 \end{itemize}
     轮盘赌选择算法的基本思想是: 根据每个个体的选择概率$P(x_i)$将一个圆盘分成$N$个扇区, 其中第$i$个扇区的中心角为:
 \begin{align}
-  2 \pi \frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f_{i}\left(x_{j}\right)}=2 \pi p\left(x_{i}\right).
+    2 \pi \frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f_{i}\left(x_{j}\right)}=2 \pi p\left(x_{i}\right).
 \end{align}
 并再设立一个固定指针. 当进行选择时, 可以假想转动圆盘, 若圆盘静止时指针指向第$i$个扇区, 则选择个体$i$.
 从统计角度看, 个体的适应度值越大, 其对应的扇区的面积越大, 被选中的可能性也越大. 这种方法有点类似于发放奖品使用的轮盘, 并带有某种赌博的意思, 因此亦被称为\textbf{轮盘赌选择}.
@@ -2045,16 +2046,16 @@ f(x)=
 
 随机设定第$i,j$位为两个交叉点(其中$i<j<n$), 两点交叉是将$X$中的$x_{i+1}$到$x_j$部分与$Y$中的$y_{i+1}$到$y_j$部分进行交换, 交叉后生成的两个新的个体是:
 \begin{align}
-  X'&= x_1\, x_2 \cdots x_i\, y_{i+1} \cdots y_j\, x_{j+1} \cdots x_n\\
-  Y'&= y_1\, y_2  \cdots y_i\, x_{i+1} \cdots x_j\, y_{j+1} \cdots y_n
+    X'&= x_1\, x_2 \cdots x_i\, y_{i+1} \cdots y_j\, x_{j+1} \cdots x_n\\
+    Y'&= y_1\, y_2  \cdots y_i\, x_{i+1} \cdots x_j\, y_{j+1} \cdots y_n
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有两个父代的个体串$A= 0\, 0\,  1\,  1\,  0\,  1$和B=$1\,  1\,  0\,  0\,  1\,  0$, 若随机交叉点为3和5, 则交叉后的两个新的个体是:
 \begin{align}
-  A'&= 0 0 1 0 1 1\\
-  B'&= 1 1 0 1 0 0
+     A'&= 0 0 1 0 1 1\\
+    B'&= 1 1 0 1 0 0
 \end{align}
 \end{example}
 
@@ -2080,8 +2081,8 @@ f(x)=
 \begin{example}
 设有两个父代的个体串$A= 0\, 0\, 1\, 1\, 0\, 1$和$B= 1\, 1\, 0\, 0\, 1\, 0$, 若随机交叉点为1、3和5, 则交叉后的两个新的个体是:
 \begin{align}
-   &A'= 0\, 1\, 0\, 1\, 0\, 0\\
-   &B'= 1\, 0\, 1\, 0\, 1\, 1
+    &A'= 0\, 1\, 0\, 1\, 0\, 0\\
+    &B'= 1\, 0\, 1\, 0\, 1\, 1
 \end{align}
 \end{example}
 
@@ -2633,17 +2634,8 @@ Handwritten+Digits}}\\
 \label{TT2-ELM170610:Sec5-3-1}
 \end{sidewaystable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\href{https://ww2.mathworks.cn/matlabcentral/fileexchange/67463-autonomous-data-partitioning-algorithm?s_tid=prof_contriblnk}{ADP}
-
-The package contains:
-
-1. The recently introduced autonomous data partitioning algorithm;
-
-2. A demo for offline data partitioning;
-
-3. A demo for online data partitioning;
-
-4. A demo for creating a hybrid between the offline and online versions
+\href{https://ww2.mathworks.cn/matlabcentral/fileexchange/67463-autonomous-data-partitioning-algorithm?s_tid=prof_contriblnk}{autonomous data partitioning algorithm (ADP)}
+宏包包括: 1) 最近发表的ADP算法; 2) 离线数据划分演示; 3) 在线数据划分演示; 4) 离线和在线版本算法的混合示例.
 
 Reference: X. Gu, P. Angelov and J. Principe, “A Method for Autonomous Data Partitioning,” Information Sciences, 2018, DOI:10.1016/j.ins.2018.05.030.
 
@@ -2681,12 +2673,12 @@ Local density \cite{Angelov2016-7844219} is a measure within EDA framework ident
 \end{align}
 where $d(\bm x_k, \bm x_l)$ is the distance between data samples $\bm x_k$ and $\bm x_l$; the coefficient 2 is used in the denominator for normalization (because each distance is counted twice in the numerator).
 
-For the case of Euclidean distance, the calculation of $\sum^K_{l=1} d^2(\bm x_k,\bm  x_l)=\sum^K_{l=1}\|\bm x_k-\bm  x_l\|^2$ and $\sum^K_{j=1}\sum^K_{l=1} d^2(\bm x_j,\bm  x_l)=\sum^K_{j=1}\sum^K_{l=1}\|\bm x_j-\bm  x_l\|^2 $ can be simplified by using the mean of $\{\bm x\}_K$, $\bm \mu_K$ and the average scalar product, $X_K$ as \cite{Angelov2016-7844219,Angelov2017Empirical}:
+For the case of Euclidean distance, the calculation of $\sum^K_{l=1} d^2(\bm x_k,\bm  x_l)=\sum^K_{l=1}\|\bm x_k-\bm  x_l\|^2$ and $\sum^K_{j=1}\sum^K_{l=1} d^2(\bm x_j,\bm  x_l)=\sum^K_{j=1}\sum^K_{l=1}\|\bm x_j-\bm  x_l\|^2 $ can be simplified by using the mean of $\{\bm x\}_K$, $\bm \mu_K$ and the average scalar product, $X_K$ 定义为 \cite{Angelov2016-7844219,Angelov2017Empirical}:
 \begin{align}
   &\sum^K_{l=1}\|\bm x_k-\bm  x_l\|^2=K(\|\bm x_K-\bm \mu_K\|^2+X_K-\|\bm \mu_K\|^2)\label{EDAlocaldensity18072402}\\
   &\sum^K_{j=1}\sum^K_{l=1}\|\bm x_j-\bm  x_l\|^2 =2K^2(X_K-\|\bm \mu_K\|^2)\label{EDAlocaldensity18072403}
 \end{align}
-$\bm \mu_K$ and $X_K$ can be updated recursively as \cite{Angelov2012Autonomous}:
+$\bm \mu_K$ 和 $X_K$ 分别按如下更新律\cite{Angelov2012Autonomous}更新:
 \begin{align}
   &\bm \mu_k=\frac {k-1} k \bm \mu_{k-1}+\frac {1} k \bm  x_k, \bm \mu_1=\bm x_1, k=1,2,\cdots, K\label{EDAlocaldensity18072404}\\
   &X_k=\frac {k-1} k X_{k-1}+\frac {1} k \|\bm x_k\|^2, X_1=\|\bm  x_1\|^2, k=1,2,\cdots, K\label{EDAlocaldensity18072405}
@@ -2709,13 +2701,13 @@ It is clear that it behaves locally as a Cauchy function, but has multiple local
 
 4. The autonomous data partitioning algorithm
 
-In this section, we will describe the proposed ADP algorithm for further refining the local modes of the data set/stream. The local modes are defined as the local maxima of the global data density and are constructed directly from samples. These local modes play a key role in partitioning the data space into shape-free data clouds \cite{Angelov2012Autonomous,Angelov2014Outside} by aggregating data samples around them and forming naturally a Voronoi tessellation \cite{OkabeBoots2000-5677}. We will present two independent algorithms for the two versions, i) offline and ii) evolving.
+In this section, we will describe the proposed ADP algorithm for further refining the local modes of the data set/stream. The local modes are defined as the local maxima of the global data density and are constructed directly from samples. These local modes play a key role in partitioning the data space into shape-free data clouds \cite{Angelov2012Autonomous,Angelov2014Outside} by aggregating data samples around them and forming naturally a Voronoi tessellation \cite{OkabeBoots2000-5677}. We will present two independent algorithms for the two versions, i) 离线方式; ii) 进化方式.
 
 4.1. Offline ADP algorithm
 
 The offline ADP algorithm works with the global density, $D^G$ of the observed data samples. It is based on the ranks of the data samples in terms of their global densities and mutual distributions. Its main procedure is described as follows:
 
-Stage 1: \textbf{Rank order the samples with regards to the distance to the global mode}
+步骤1: \textbf{Rank order the samples with regards to the distance to the global mode}
 
 We start by organizing the unique data samples $\{\bm u\}_K$ into an indexing list, denoted by $\{\bm u^*\}_K$ based on their mutual distances and values of the global density, $D^G$.
 Firstly, the global densities of the unique data samples, $D^G_K(\bm u_i) (i = 1, 2, \cdots, L_K)$ are calculated using \eqref{EDAlocaldensity18072407}. The unique data sample with the highest global density is then selected as the first element of the indexing list $\{\bm u^*\}_{L_K}$:
@@ -2745,11 +2737,11 @@ shows the ranked global density.
   \label{DGlocalMaxima3D0726}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Stage 2: \textbf{Detecting local maxima (local modes)}
+步骤 2: \textbf{Detecting local maxima (local modes)}
 
 Based on the list $\{\bm u^*\}_{L_K}$ and the ranked global density $\{D^G_K(\bm u^*)\}$, we can identify all the data samples with the local maxima of $D^G$ directly as follows:
 \begin{align}\label{EDAlocaldensity18072410}
-\textup{IF}\, \textup{sgn} D^G_K(\bm u^{*j})- &D^G_K(\bm u^{*j+1}) = 1\,  \textup{AND}\, \textup{sgn} D^G_K(\bm u^{*j-1}) - D^G_K(\bm u^{*j}) =-1 \notag\\
+\textup{IF}\,\, \textup{sgn} D^G_K(\bm u^{*j})- &D^G_K(\bm u^{*j+1}) = 1\,  \textup{AND}\, \textup{sgn} D^G_K(\bm u^{*j-1}) - D^G_K(\bm u^{*j}) =-1 \notag\\
                                              &\textup{THEN}\, \bm u^{*j}\,\textup{is a local maximum of}\, D^G
 \end{align}
 where
@@ -2765,7 +2757,7 @@ where
 \end{align*}
 is the sign function; we denote the collection of data samples with the local maxima of $D^G$ as $\{u^{**}\}_{L_K^*}= {u^{** j}|j = 1, 2, \cdots, L_K^*} (L_K^* < L_K)$. The local maxima (peaks) identified from the wine dataset \cite{AeberhardWinedata1992} are marked by red circles in Fig. 2(b). The locations of the local maxima in the data space are depicted in Fig. \ref{DGlocalMaxima3D0726}.
 
-Stage 3: \textbf{Forming data clouds}
+步骤 3: \textbf{Forming data clouds}
 
 The local peaks identified from the indexing list, namely, $\{u^{**}\}L_K^*$, are then used to attract the data samples $\{\bm x\}_K$ that are closer to them using a min operator:
 \begin{align}\label{EDAlocaldensity18072411}
@@ -2776,47 +2768,47 @@ By assigning all the data samples to the nearest local maxima, a number of Voron
 
 After the data clouds are formed, the actual centre (mean) $\mu_j$ and the standard deviation $\sigma_j ( j = 1, 2, \cdots, L_K^*)$ per data cloud and the support, $S^j$, namely, the number of data samples within the data cloud can be calculated easily. Note that, all this procedure is post factum, i.e. it is determined bottom up from the data without a prior assumption, except the selection of the metric.
 
-Stage 4: \textbf{Filtering local modes}
+步骤 4: \textbf{Filtering local modes}
 
 The data clouds formed in the previous stage may contain some less representative ones; therefore, in this stage, we filter the initial Voronoi tessellations and combine them into larger, more meaningful data clouds.
 The global densities at the data clouds centres $\{\bm\mu\}_{L_K^*}$ are firstly calculated as follows $( j = 1, 2, \cdots, L_K^*)$:
 \begin{align}\label{EDAlocaldensity18072412}
- D^G_K(\bm\mu^j ) = \frac{S^j}{1 +\frac{\|\bm\mu^j-\bm\mu_K\|^2}{X_K-\|\bm \mu_K\|^2} }
+ D^G_K(\bm\mu^j ) = \frac{S^j}{1 +\frac{\|\bm\mu^j-\bm\mu_K\|^2}{X_K-\|\bm \mu_K\|^2} },
 \end{align}
 where $S^j$ is the support of the data cloud.
 
 In order to identify the centres with the local maxima of the global density, we introduce the following three objectively derived quantifiers of the data pattern:
 \begin{align}
-&\eta_K^c = 2\sum^{L^*_K-1}_{ p=1}\sum^{L^*_K}_{q=p+1} \|\bm \mu^p - \bm \mu^q\|  /L^*_K({L^*_K-1})\label{EDAlocaldensity18072413}\\
-&\gamma_K^c =\frac{\sum\limits_{\bm x\neq \bm y, \|\bm x-\bm y\|\leq \eta_K^c,\bm x,\bm y\in \{\bm\mu\}_{L_K^*}}\|\bm x-\bm y\|}{M_\eta}\label{EDAlocaldensity18072414}\\
-&\lambda_K^c =\frac{\sum\limits_{\bm x\neq \bm y, \|\bm x-\bm y\|\leq \gamma_K^c,\bm x,\bm y\in \{\bm\mu\}_{L_K^*}}\|\bm x-\bm y\|}{M_\gamma}\label{EDAlocaldensity18072415}
+&\eta_K^c = 2\sum^{L^*_K-1}_{ p=1}\sum^{L^*_K}_{q=p+1} \|\bm \mu^p - \bm \mu^q\|  /L^*_K({L^*_K-1}),\label{EDAlocaldensity18072413}\\
+&\gamma_K^c =\frac{\sum\limits_{\bm x\neq \bm y, \|\bm x-\bm y\|\leq \eta_K^c,\bm x,\bm y\in \{\bm\mu\}_{L_K^*}}\|\bm x-\bm y\|}{M_\eta},\label{EDAlocaldensity18072414}\\
+&\lambda_K^c =\frac{\sum\limits_{\bm x\neq \bm y, \|\bm x-\bm y\|\leq \gamma_K^c,\bm x,\bm y\in \{\bm\mu\}_{L_K^*}}\|\bm x-\bm y\|}{M_\gamma},\label{EDAlocaldensity18072415}
 \end{align}
 $\eta_K^c$ is the average Euclidean distance between any pair of existing local modes. $\gamma_K^c$ is the average Euclidean distance between any pair of existing local modes within a distance less than $\eta_K^c$, and $M_\eta$ in \eqref{EDAlocaldensity18072413} is the number of such local mode pairs. $\lambda_K^c$ is the average Euclidean distance between any pair of existing local modes within a distance less than $\gamma_K^c$, $M_\gamma$ in \eqref{EDAlocaldensity18072415} is the number of such local mode pairs.
 
 Note that $\eta_K^c, \gamma_K^c$ and $\lambda_K^c$ are not problem- specific and are parameter-free. The relationship between $\eta_K^c, \gamma_K^c$ and $\lambda_K^c$ is depicted in Fig. 3 using the wine dataset \cite{AeberhardWinedata1992} again, where one can see that $\lambda_K^c$ is a smaller value compared with $\eta_K^c$ and $\gamma_K^c$ which are obtained as the average distance of two very close data cloud centres.
 The quantifier $\lambda_K^c$ can be viewed as the estimation of the distances between the strongly connected data clouds condensing the local information from the whole dataset. Moreover, instead of relying on a fixed threshold, which may frequently fail, $\eta_K^c, \gamma_K^c$ and $\lambda_K^c$ are derived from the dataset objectively and conforming with the concept of a mode. Experience has shown that they provide meaningful tessellations, regardless of the distribution of the data.
 
-Each centre $\bm\mu^j( j = 1, 2, \cdots, L_K^*)$ is compared with the centres of neighbouring data clouds in terms of the global density:
+Each centre $\bm\mu^j(j = 1, 2, \cdots, L_K^*)$ is compared with the centres of neighbouring data clouds in terms of the global density:
 \begin{align}\label{EDAlocaldensity18072416}
-\textup{IF}\,  D^G_K(\bm u^{j})=\max \left\{ \left\{D^G_K(\bm \mu)\right\}_n^j,D^G_K(\bm \mu^j)\right\}\, \textup{THEN}\, \bm u^{j}\,\textup{is a local maximum}
+\textup{IF}\,  D^G_K(\bm u^{j})=\max \left\{ \left\{D^G_K(\bm \mu)\right\}_n^j,D^G_K(\bm \mu^j)\right\}\, \textup{THEN}\, \bm u^{j}\,\textup{is a local maximum},
 \end{align}
 where $\left\{ D^G(\bm u^{*j}) \right\}_n^j$ is the collection of global densities of the neighbouring centres, which satisfy the following condition:
 \begin{align}\label{EDAlocaldensity18072417}
-\textup{IF}\,  \left(\|\bm \mu^i-\bm \mu^j\|\leq \frac{\lambda_K^c}{2}\right)\, \textup{THEN}\, \bm u^{i}\,\textup{is neighbouring }\bm u^{j}
+\textup{IF}\,  \left(\|\bm \mu^i-\bm \mu^j\|\leq \frac{\lambda_K^c}{2}\right)\, \textup{THEN}\, \bm u^{i}\,\textup{is neighbouring }\bm u^{j}.
 \end{align}
 The criterion of neighbouring range is defined in this way because two centres with the distance smaller than $\gamma_K^c$ can be considered to be potentially relevant in the sense of spatial distance; $\lambda_K^c$ is the average distance between the centres of any two potentially relevant data clouds. Therefore, when the condition (16) is satisfied, both $\bm \mu^i$ and $\bm \mu^j$ are highly influencing each other and, the data samples within the two corresponding data clouds are strongly connected. Therefore, the two data clouds are considered as neighbours. This criterion also guarantees that only small-size (less important) data clouds that
 significantly overlap with large-size (more important) ones will be removed during the filtering operation.
 
 After the filtering operation (stage 4), the data cloud centres with local maximum global densities denoted by
-$\{\bm \mu^{*}\}_{L_K^{**}}={\bm \mu^{*j}| j = 1, 2, \cdots, L_K^{**} , L_K^{**} \leq L_K^{*}}$ are obtained. Then, $\{\bm \mu^*\}L_K^{**}$ are used as local modes for forming data clouds in stage 3 and are filtered in stage 4.
+$\{\bm \mu^{*}\}_{L_K^{**}}={\bm \mu^{*j}| j = 1, 2, \cdots, L_K^{**} , L_K^{**} \leq L_K^{*}}$ are obtained. Then, $\{\bm \mu^*\}L_K^{**}$ are used as local modes for forming data clouds in stage 3 and are filtered in 步骤 4.
 
-Stages 3 and 4 are repeated until all the distances between the existing local modes exceed $\frac{\lambda_K^c} 2$. Finally, we obtain the remaining centres with the local maxima of $D^G$, denoted by $\{\bm\mu^o\}$, and use them as the local modes to form data clouds
+步骤 3 and 4 are repeated until all the distances between the existing local modes exceed $\frac{\lambda_K^c} 2$. Finally, we obtain the remaining centres with the local maxima of $D^G$, denoted by $\{\bm\mu^o\}$, and use them as the local modes to form data clouds
 using \eqref{EDAlocaldensity18072410}.
 
 After the data clouds are formed, the corresponding centres, standard deviations, supports, members and other parameters of the formed data clouds can be extracted post factum. The final partitioning result of the wine dataset \cite{AeberhardWinedata1992} is depicted in Fig. 4, where the dots in different colours stand for data samples from different data clouds, the black asterisks stand for
 the centres of the data clouds.
 
-4.2. Evolving ADP algorithm
+4.2. 进化 ADP算法
 
 The proposed evolving ADP algorithm works with the local density, D of the streaming data. This algorithm is able to start “from scratch”, i.e. with a single sample. In addition, a hybrid between the evolving and the offline versions is also possible.
 
