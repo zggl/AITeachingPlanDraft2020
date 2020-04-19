@@ -1706,7 +1706,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \node (Bn)[draw, process,align=center,below=0.75cm of AB0,yshift=0cm,xshift=1.5cm] {$\neg \mathbf{B}(\mathbf{n})$};         %30
 \draw[thick,-](AB0)--(Bn)node[left,yshift=0.5cm,xshift=-0.6cm] {$\{m/x,n/y\}$};
 \node (Bk)[draw, process,align=center,below=0.75cm of AMn,yshift=0cm] {$B(k)$};                                             %31
-\draw[thick,-](AMn)--(Bk);
+\draw[thick,-](AMn)--(Bn);
 
 \node (nil0)[draw, process,align=center,below=0.75cm of Bn,yshift=0cm,xshift=1cm] {\textup{Nil}};                           %40
 \draw[thick,-](Bn)-- (nil0)node[left,yshift=0.6cm,xshift=-0.55cm] {$\{n/k\}$};
@@ -1853,7 +1853,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \section{归结演绎推理的归结策略}
 归结演绎推理实际上就是从子句集中不断寻找可进行归结的子句对, 并通过对这些子句对的归结, 最终得出一个空子句的过程. 由于事先并不知道哪些子句对可进行归结, 更不知道通过对哪些子句对的归结能尽快得到空子句, 因此就需要对子句集中的所有子句逐对进行比较, 直到得出空子句为止. 这种盲目的全面进行归结的方法, 不仅会产生许多无用的归结式, 更严重的是会产生组合爆炸问题. 因此, 需要研究有效的归结策略来解决这些问题.
 
-目前, 常用的归结策略可分为两大类, 一类是删除策略, 另一类是限制策略.
+目前, 常用的归结策略可分为两大类, 删除策略和限制策略.
 \begin{itemize}
     \item 删除策略是通过删除某些无用的子句来缩小归结范围;
     \item 限制策略是通过对参加归结的子句进行某些限制, 来减少归结的盲目性, 以尽快得到空子句.
