@@ -934,13 +934,13 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \begin{proof}
 首先定义谓词
 
-\quad   (1) Prog($x$)   \,\,\,\,    $x$是需要编程序的课.
+\quad   (1) Prog($x$)   \qquad\quad\quad    $x$是需要编程序的课.
 
 \quad   (2) Like($x, y$)\,\,\,    $x$喜欢$y$.
 
 \quad   (3) Lang($x$)   \,\,\,\,    $x$是一门程序设计语言课
 
-把例\ref{C3examp0355}的已知事实及待求解问题用谓词公式表示如下:
+把例 \ref{C3examp0355} 的已知事实及待求解问题用谓词公式表示如下:
 
 \quad   (1) Prog($x$) $\rightarrow$ Like(Wang , $x$)
 
@@ -972,7 +972,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 在人工智能中, 几乎所有的问题都可以转化为一个定理证明问题. 定理证明的实质, 就是要对前提$P$和结论$Q$, 证明$P\rightarrow Q$永真.
 
-由\ref{AI32C3Sec3.2}节可知, 要证明$P\rightarrow Q$永真, 就是要证明$P\rightarrow Q$在任何一个非空的个体域上都是永真的. 这将是非常困难的, 甚至是不可实现的.
+由 \ref{AI32C3Sec3.2} 节可知, 要证明$P\rightarrow Q$永真, 就是要证明$P\rightarrow Q$在任何一个非空的个体域上都是永真的. 这将是非常困难的, 甚至是不可实现的.
 为此, 人们进行了大量的探索, 后来发现可以采用反证法的思想, 即把关于永真性的证明转化为关于不可满足性的证明.
 即要证明$P\rightarrow Q$永真, 只要能够证明$P\wedge \neg Q$是不可满足的就可以了(原因是$\neg (P\rightarrow Q) \Leftrightarrow \neg (\neg  P\vee Q) \Leftrightarrow  P\wedge \neg Q$.
 这方面最有成效的工作就是\textbf{鲁宾逊归结原理}. 它使定理证明的机械化成为现实.
@@ -988,7 +988,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 
 %%%%%%%------------------------------------------
 \begin{example}
-  $P(x)$、$Q(x)$、$\neg  P(x)$、 $\neg  Q(x)$等都是文字.
+  $P(x)$、$Q(x)$、$\neg  P(x)$和 $\neg Q(x)$等都是文字.
 \end{example}
 
 %%%%%%%------------------------------------------
@@ -997,7 +997,7 @@ $t_i/x_i$表示用$t_i$替换$x_i$. 并且要求$t_i$与$x_i$不能相同, $x_i$
 \end{mydef}
 
 \begin{example}
-  $P(x)\vee Q(x)$, $P(x, f(x))\vee Q(x,g(x))$都是子句.
+  $P(x)\vee Q(x)$和$P(x, f(x))\vee Q(x,g(x))$都是子句.
 \end{example}
 
 %%%%%%%------------------------------------------
@@ -1851,7 +1851,7 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \end{figure}
 %%%%%%%-----------------------------------------------
 \section{归结演绎推理的归结策略}
-归结演绎推理实际上就是从子句集中不断寻找可进行归结的子句对, 并通过对这些子句对的归结, 最终得出一个空子句的过程. 由于事先并不知道哪些子句对可进行归结, 更不知道通过对哪些子句对的归结能尽快得到空子句, 因此就需要对子句集中的所有子句逐对进行比较, 直到得出空子句为止. 这种盲目的全面进行归结的方法, 不仅会产生许多无用的归结式, 更严重的是会产生组合爆炸问题. 因此, 需要研究有效的归结策略来解决这些问题.
+    归结演绎推理实际上就是从子句集中不断寻找可进行归结的子句对, 并通过对这些子句对的归结, 最终得出一个空子句的过程. 由于事先并不知道哪些子句对可进行归结, 更不知道通过对哪些子句对的归结能尽快得到空子句, 因此就需要对子句集中的所有子句逐对进行比较, 直到得出空子句为止. 这种盲目的全面进行归结的方法, 不仅会产生许多无用的归结式, 更严重的是会产生组合爆炸问题. 因此, 需要研究有效的归结策略来解决这些问题.
 
 目前, 常用的归结策略可分为两大类, 删除策略和限制策略.
 \begin{itemize}
@@ -2292,22 +2292,18 @@ C_{12}=( {C_1\sigma }-\{L_1\sigma\})\cup  ({C_2\sigma }-\{L_2\sigma \})
 \quad \textup{At}(zhang, 302).
 \end{flushleft}
 \end{center}
-把目标的否定用谓词公式表示如下:
-$$\neg (\exists  v)\textup{At}(\textup{li}, v).$$
+把目标的否定用谓词公式表示为: $\neg (\exists  v)\textup{At}(\textup{li}, v)$.
 
 把上述公式化为子句集:
 \begin{center}
-\begin{flushleft}
-\{\textup{C(zhang, li)}, $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$, \textup{At}(zhang, 302)\}.
-\end{flushleft}
+    \{\textup{C(zhang, li)}, $\neg C(x, y)\vee \neg \textup{At}(x, u)\vee \textup{At}(y, u)$, \textup{At}(zhang, 302)\}.
 \end{center}
 
 把目标的否定化成子句式, 并用重言式
  $$\neg \textup{At(li,v)} \vee \textup{At(li,v)}.$$
 代替之.
 \end{result}
-
-把此重言式加入前提子句集中, 得到一个新的子句集, 对这个新的子句集, 应用归结原理求出其证明树. 其求解过程如图\ref{AI32fig20200425}所示.
+把此重言式加入前提子句集中, 得到一个新的子句集, 对这个新的子句集, 应用归结原理求出其证明树. 其求解过程如图 \ref{AI32fig20200425} 所示.
 %%%%%%%-----------------------------------------------
 \begin{figure}[H]
 \centering
@@ -2349,7 +2345,7 @@ $$\neg (\exists  v)\textup{At}(\textup{li}, v).$$
 
 把事实表达式化为非蕴含形式的与/或形的主要步骤如下:
 
-(1) 利用连接词化归律“$P\rightarrow Q\Leftrightarrow \neg P\vee Q$”, 消去蕴含符号. 事实上, 在事实表达式中很少含蕴含符号“$\rightarrow$”, 因为蕴含式课表示成规则.
+(1) 利用连接词化归律“$P\rightarrow Q\Leftrightarrow \neg P\vee Q$”, 消去蕴含符号. 事实上, 在事实表达式中很少含蕴含符号“$\rightarrow$”, 因为蕴含式可表示成规则.
 
 (2) 利用狄$\cdot$摩根定律及量词转换律, 把否定“$\neg$”移到紧靠谓词的位置, 直到每个否定符号的辖域最多只含一个谓词为止.
 
