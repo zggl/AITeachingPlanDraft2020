@@ -322,42 +322,42 @@
 \contentsline {subparagraph}{搜索算法}{261}{subparagraph*.272}% 
 \contentsline {subsubsection}{\numberline {4.2.2.2}深度优先搜索}{262}{subsubsection.4.2.2.2}% 
 \contentsline {paragraph}{深度优先搜索}{262}{paragraph*.275}% 
-\contentsline {subparagraph}{基本思想}{263}{subparagraph*.276}% 
+\contentsline {subparagraph}{基本思想}{262}{subparagraph*.276}% 
 \contentsline {subparagraph}{算法描述}{263}{subparagraph*.277}% 
-\contentsline {subsection}{\numberline {4.2.3}代价树搜索}{264}{subsection.4.2.3}% 
-\contentsline {paragraph}{代价树的广度优先搜索}{264}{paragraph*.279}% 
+\contentsline {subsection}{\numberline {4.2.3}代价树搜索}{263}{subsection.4.2.3}% 
+\contentsline {paragraph}{代价树的广度优先搜索}{263}{paragraph*.279}% 
 \contentsline {subparagraph}{代价树的广度优先搜索算法}{264}{subparagraph*.280}% 
 \contentsline {subparagraph}{代价树的深度优先搜索算法}{265}{subparagraph*.282}% 
 \contentsline {section}{\numberline {4.3}搜索策略}{265}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}状态空间的启发式搜索}{265}{subsection.4.3.1}% 
 \contentsline {subsubsection}{\numberline {4.3.1.1}启发性信息和估价函数}{265}{subsubsection.4.3.1.1}% 
 \contentsline {paragraph}{启发性信息的概念}{265}{paragraph*.283}% 
-\contentsline {paragraph}{启发性信息的种类}{266}{paragraph*.284}% 
-\contentsline {paragraph}{启发性信息的作用}{266}{paragraph*.285}% 
+\contentsline {paragraph}{启发性信息的种类}{265}{paragraph*.284}% 
+\contentsline {paragraph}{启发性信息的作用}{265}{paragraph*.285}% 
 \contentsline {paragraph}{启发性信息和估价函数}{266}{paragraph*.286}% 
-\contentsline {subsection}{\numberline {4.3.2}A算法}{267}{subsection.4.3.2}% 
-\contentsline {paragraph}{类型}{267}{paragraph*.288}% 
-\contentsline {subsection}{\numberline {4.3.3}A$^*$算法}{269}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}A*算法的可纳性}{270}{subsection.4.3.4}% 
-\contentsline {subparagraph}{$A^*$算法可纳性的证明}{270}{subparagraph*.291}% 
-\contentsline {paragraph}{$A^*$算法的最优性}{273}{paragraph*.292}% 
-\contentsline {subsection}{\numberline {4.3.5}$A^*$算法应用举例}{276}{subsection.4.3.5}% 
-\contentsline {subsection}{\numberline {4.3.6}算法应用举例}{277}{subsection.4.3.6}% 
-\contentsline {subsubsection}{\numberline {4.3.6.1}$A^*$算法应用举例}{277}{subsubsection.4.3.6.1}% 
-\contentsline {paragraph}{与/或树的一般搜索}{278}{paragraph*.294}% 
-\contentsline {paragraph}{与/或树的广度优先}{279}{paragraph*.296}% 
-\contentsline {subparagraph}{与/或树的广度优先搜索算法}{279}{subparagraph*.297}% 
-\contentsline {subparagraph}{搜索过程}{279}{subparagraph*.298}% 
-\contentsline {paragraph}{与/或树的深度优先搜索}{280}{paragraph*.300}% 
-\contentsline {subparagraph}{搜索过程}{281}{subparagraph*.301}% 
-\contentsline {section}{\numberline {4.4}与/或树的启发式搜索}{281}{section.4.4}% 
-\contentsline {paragraph}{解树的代价与希望树}{282}{paragraph*.303}% 
-\contentsline {paragraph}{希望树}{283}{paragraph*.305}% 
-\contentsline {section}{\numberline {4.5}博弈树的启发式搜索}{286}{section.4.5}% 
-\contentsline {subsection}{\numberline {4.5.1}极大极小过程}{287}{subsection.4.5.1}% 
-\contentsline {subsection}{\numberline {4.5.2}$\alpha $-$\beta $剪枝}{290}{subsection.4.5.2}% 
-\contentsline {paragraph}{剪枝方法}{290}{paragraph*.314}% 
-\contentsline {section}{\numberline {4.6}作业}{291}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.3.2}A算法}{266}{subsection.4.3.2}% 
+\contentsline {paragraph}{类型}{266}{paragraph*.288}% 
+\contentsline {subsection}{\numberline {4.3.3}A$^*$算法}{268}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}A*算法的可纳性}{269}{subsection.4.3.4}% 
+\contentsline {subparagraph}{$A^*$算法可纳性的证明}{269}{subparagraph*.291}% 
+\contentsline {paragraph}{$A^*$算法的最优性}{272}{paragraph*.292}% 
+\contentsline {subsection}{\numberline {4.3.5}$A^*$算法应用举例}{275}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}算法应用举例}{276}{subsection.4.3.6}% 
+\contentsline {subsubsection}{\numberline {4.3.6.1}$A^*$算法应用举例}{276}{subsubsection.4.3.6.1}% 
+\contentsline {paragraph}{与/或树的一般搜索}{277}{paragraph*.294}% 
+\contentsline {paragraph}{与/或树的广度优先}{278}{paragraph*.296}% 
+\contentsline {subparagraph}{与/或树的广度优先搜索算法}{278}{subparagraph*.297}% 
+\contentsline {subparagraph}{搜索过程}{278}{subparagraph*.298}% 
+\contentsline {paragraph}{与/或树的深度优先搜索}{279}{paragraph*.300}% 
+\contentsline {subparagraph}{搜索过程}{280}{subparagraph*.301}% 
+\contentsline {section}{\numberline {4.4}与/或树的启发式搜索}{280}{section.4.4}% 
+\contentsline {paragraph}{解树的代价与希望树}{281}{paragraph*.303}% 
+\contentsline {paragraph}{希望树}{282}{paragraph*.305}% 
+\contentsline {section}{\numberline {4.5}博弈树的启发式搜索}{285}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}极大极小过程}{286}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}$\alpha $-$\beta $剪枝}{289}{subsection.4.5.2}% 
+\contentsline {paragraph}{剪枝方法}{289}{paragraph*.314}% 
+\contentsline {section}{\numberline {4.6}作业}{290}{section.4.6}% 
 \contentsline {chapter}{\numberline {第五章\hspace {.3em}}计算智能}{293}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}概述}{294}{section.5.1}% 
 \contentsline {subsection}{\numberline {5.1.1}什么是计算智能}{294}{subsection.5.1.1}% 
