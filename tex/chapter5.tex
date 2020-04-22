@@ -1024,7 +1024,7 @@ or equivalently
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TROP-ELM算法}\index{TROP-ELM}
 \textbf{TROP-ELM}: 基于LARS和Tikhonov正则化的双正则化ELM\cite{MichevanHeeswijk2011-30641}, 2011.
-图\ref{TROPEMLmodel20161021fig2}显示了建议的正则化OP-ELM（TROP-ELM）。
+图\ref{TROPEMLmodel20161021fig2}显示了建议的正则化OP-ELM（TROP-ELM）.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.7]{TROPEMLmodel20161021.PNG}
@@ -1041,21 +1041,6 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 \end{align}
 从公式可以看出, 每个观测值都是用其他$n-1$观测值“预测”的, 残差最终被平方和相加. 算法通过矩阵运算, 有效地实现了该公式.
 
-\textbf{Algorithm 1.}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{algorithm}
-%\caption{Allen's PRESS algorithm.}
-%\label{AllenPRESS161018Algorithm1}
-%\begin{algorithmic}[1] %
-%\STATE Compute the utility matrix $\bm C= (\bm X^T X)^{-1}$
-%\STATE And $\bm P = \bm X\bm C$;
-%\STATE Compute the pseudo-inverse $\bm w = \bm C\bm X^T\bm y$;
-%\STATE  Compute the denominator of the PRESS $D = \bm 1-\diag(\bm P\bm X^T)$;
-%\STATE And finally the PRESS error $e = \frac{y-\bm X \bmw} {\bm D} $;
-%\STATE Reduced to a $\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$
-% \end{algorithmic}
-%\end{algorithm}
-
 1: 计算矩阵的逆$\bm C= (\bm X^T X)^{-1}$
 
 2: 计算$\bm P = \bm X\bm C$;
@@ -1071,7 +1056,6 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 这种方法的主要缺点在于在计算中使用伪逆（在\textbf{Moore–Penrose sense}中）,如果数据集$\bm X$不是全秩,则可能导致数值不稳定性.不幸的是,现实世界中的数据集经常出现这种情况.下面的方法对原始的计算提出了两个改进:正则化和快速矩阵计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Tikhonov正则化的PRESS (TR-PRESS)}
-%for numerical reasons. In this very same paper is proposed a generalization of Allen's PRESS, as the \textbf{generalized cross-validation} (GCV) method, which is technically superior to the original \textbf{PRESS}, for it can handle cases were the data is extremely badly defined—for example if all $X$ entries are 0 except the diagonal ones.
 在\cite{golub1979 generalized}中, Golub等人注意到: 使用奇异值分解（SVD）方法计算PRESS的统计结果比传统的伪逆方法更好.
 在同一篇论文中,我们提出了Allen's PRESS的一个推广, 即广义交叉验证（GCV）方法, 它在技术上优于原始的方法,因为它可以处理数据定义非常糟糕的情况, 例如, 如果除对角线项外,所有的$X$项都是0.
 
@@ -1083,22 +1067,6 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 这是公式（18）的正规化结果.
 符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘.
 在算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{algorithm}
-%\caption{Tikhonov-regularized PRESS.}
-%\label{Tikhonov-regularizedPRESS161018Algorithm2}
-%\begin{algorithmic}[1] %
-%\STATE Decompose $\bm X$ by SVD: $\bm X = \bm U\bm S\bm V^T$;
-%\STATE Compute the products (used later): $A = \bm X\bm V$ and $B = \bm U^T\bm y$;
-%\STATE repeat
-%\STATE Using the SVD of $\bm X$, compute the $\bm C$ matrix by:
-%\STATE Compute the $\bm P$ matrix by: $\bm P = \bm C\bm B$;
-%\STATE Compute $\bm D$ by: $\bm D = \bm 1-\diag(\bm C\bm U^T)$;
-%\STATE Evaluate $e = \frac{y-\bm P} {\bm D}$ and the actual  MSE by $\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
-%\STATE \textbf{until} convergence on $\lambda$ is achieved
-%\STATE Keep the best $\textup{MSE}^{\textup{TR-PRESS}}$ and the $\lambda$ value associated.
-% \end{algorithmic}
-%\end{algorithm}
 
 用SVD分解$\bm X$: $\bm X = \bm U\bm S\bm V^T$;
 
@@ -1117,21 +1085,20 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 直到$\lambda$收敛.
 
 关联$\textup{MSE}^{\textup{TR-PRESS}}$ 和$\lambda$ 的最优值.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{Algorithm \ref{Tikhonov-regularizedPRESS161018Algorithm2}}. \textbf{Tikhonov-regularized PRESS}. In practice, the REPEAT part of this algorithm (convergence for l) is solved by a \textbf{Nelder–Mead approach} \index{Nelder–Mead approach} \cite{Nelder1965A}, a.k.a. downhill simplex.
 
-%Globally, the algorithm uses the SVD of $\bm X$ to avoid computational issues, and introduces the Tikhonov regularization parameter in the calculation of the pseudo-inverse by the SVD. This specific implementation happens to run very quickly, thanks to the pre-calculation of utility matrices ($\bm A, \bm B$ and $\bm C$) before the optimization of $\lambda$.
-在全局上,该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数.由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A、\bm B$和$\bm C$）,所以此特定实现碰巧运行得非常快.
-%In practice, the optimization of $\lambda$ in this algorithm is performed by a \textbf{Nelder–Mead minimization approach}\index{Nelder–Mead minimization approach} \cite{Nelder1965A}, which happens to converge very quickly on this problem (fminsearch function in Matlab). Through the use of this modified version of PRESS, the OP-ELM has an $L_2$ penalty on the regression weights (regression between the hidden and output layer), for which the neurons have already been ranked using an $L_1$ penalty. Fig. \ref{TROPEMLmodel20161021fig2} is a modified version of Fig. \ref{OPELM20161021fig2} illustrating the \textbf{TROP-ELM} approach.
-在实际应用中,该算法中$\lambda$的优化是通过一种{textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(在Matlab中是fminsearch函数).通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序.图 \ref{TROPEMLmodel20161021fig2}是图的修改版本. 图\ref{OPELM20161021fig2}说明了\textbf{TROP-ELM}方法.
+全局来说, 该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数. 由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A、\bm B$和$\bm C$）, 所以此特定实现碰巧运行得非常快.
+在实际应用中,该算法中$\lambda$的优化是通过一种\textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(在Matlab中是fminsearch函数).
+通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序. 图 \ref{TROPEMLmodel20161021fig2}是图的修改版本. 图\ref{OPELM20161021fig2}说明了\textbf{TROP-ELM}方法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
 现在我们使用新的学习范式来训练RVFL网络.
-%Given a set of additional privileged information $\{\widetilde {\bm x}_i \in \mathbb R^d; i = 1,\cdots,N\}$ in the training process, the training data becomes $\{(\bm x_i,\widetilde {\bm x}_i; y_i)|\bm x_i \in \mathbb R^n, {\bm x}_i\in \mathbb R^d; y_i\in \mathbb R^m; i =1,\cdots,N\}$. In this new training set, $\bm x_i \in X$ is the original feature and in general the privileged feature $\bm x_i \in \widetilde X$ belongs to the privileged feature space $\widetilde X$ that is different from the original feature space $X$.
-在这个新的训练集中,$\bm x_i\in X$是原始功能,一般来说,特权功能$\bm x_i\in \widetilde x$属于特权功能空间$\widetilde x$, 它不同于原始功能空间$x$。
+在这个新的训练集中, $\bm x_i\in X$是原始功能, 一般来说, 特权功能$\bm x_i\in \widetilde x$属于特权功能空间$\widetilde x$, 它不同于原始功能空间$x$.
 
-%Giryes et. al. [42] give a possible theoretical explanation for this open problem. To provide this explanation, first of all, Giryes et. al. reveal the essence of training in learning algorithms. Generally speaking,the angles of samples between different classes are larger than that of samples within the same class [43]. Therefore, the role of training in learning algorithms is that ’the angles between points from different classes are penalized more than the angles between the points in the same class’ [42]. Moreover,in this big data era, due to the highly complicated model architecture, it is quick difficult to tune all parameters in leaning process, which needs extremely high computational cost. To tackle this problem, randomization is an ideal choice for some learning algorithms, leading to cheaper computational cost. A great random initialization allows the learning algorithm to be a universal one before training. Now we revisit the RVFL. The RVFL uses the hybrid strategy to train the entire network. In the RVFL, the random initial parameters between the input layer and the enhancement nodes handle well input samples having distinguishable angles, and the turned output weights further deal with the remaining data.
-RVFL的模型结构如此简单,为什么RVFL能很好地完成大多数任务? Giryes等人.[42]对这个开放问题给出一个可能的理论解释.为了提供这个解释,首先,Giryes等人.揭示学习算法训练的本质.一般来说,不同类别之间的样本角度大于同一类别内的样本角度[43].因此,训练在学习算法中的作用是“不同类别的点之间的角度比同一类别的点之间的角度受到的惩罚更大”[42].而且,在这个大数据时代,由于模型结构高度复杂,学习过程中很难对所有参数进行快速调整,这就需要极高的计算成本.为了解决这个问题,随机化是一些学习算法的理想选择,从而降低了计算成本.一个伟大的随机初始化允许学习算法是一个通用的训练前.现在我们再次访问RVFL.RVFL使用混合策略来训练整个网络.在RVFL中,输入层和增强节点之间的随机初始参数处理具有可分辨角度的良好输入样本,旋转输出权重进一步处理剩余数据.
+RVFL的模型结构如此简单, 为什么RVFL能很好地完成大多数任务? Giryes等人[42]. 对这个开放问题给出一个可能的理论解释. 为了提供这个解释, 首先, Giryes等人.揭示学习算法训练的本质.
+一般来说,不同类别之间的样本角度大于同一类别内的样本角度[43]. 因此, 训练在学习算法中的作用是“不同类别的点之间的角度比同一类别的点之间的角度受到的惩罚更大”[42].
+而且, 在这个大数据时代, 由于模型结构高度复杂, 学习过程中很难对所有参数进行快速调整, 这就需要极高的计算成本.
+为了解决这个问题, 随机化是一些学习算法的理想选择, 从而降低了计算成本. 一个伟大的随机初始化允许学习算法是一个通用的训练前.
+现在我们再次访问RVFL. RVFL使用混合策略来训练整个网络. 在RVFL中, 输入层和增强节点之间的随机初始参数处理具有可分辨角度的良好输入样本, 旋转输出权重进一步处理剩余数据.
 RVFL网络是一种经典的单层前向神经网络,其结构如图\ref{RVFLNN181102Sys}所示. RVFL随机初始化输入层和增强节点之间的所有权重和偏差, 然后这些参数在训练阶段不需要调整.
 图\ref{RVFLNN181102Sys}中红色实线代表的输出权重可以通过Moore-Penrose伪逆(\cite{paopillips1995-6471,IgelnikPao1995-6470})或岭回归(引用{Bishop2012-6469})来计算.
 此外, 输入层和输出层之间的直接连接是防止RVFL网络过度拟合的一种有效而简单的正则化技术.
@@ -1146,33 +1113,29 @@ RVFL网络是一种经典的单层前向神经网络,其结构如图\ref{RVFLNN1
 
 RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习算法, 并且(19)中的输出函数可以直接应用于所有三种情况.
 \begin{enumerate}
-  \item Binary Classification: The predicted label of the test sample is determined by
-  %二元分类:测试样品的预测标签由
+  \item 二元分类:测试样品的预测标签由
 \begin{align}
   \hat y = \textup{sign}(f_{test}(z))
 \end{align}
-  \item %Multiclass Classification: We adopt the one-vs.-all (OvA) strategy to determine the predicted label in the multiclass classification. Let $f_{test}^k (z)$ be the output function of the k-th output nodes. The predicted label of the test sample is determined by
-      多类分类:我们采用一对多(OvA)策略来确定多类分类中的预测标签.设$f{test}^k（z）$为第k个输出节点的输出函数.测试样品的预期标签由
+  \item 多类分类:我们采用一对多(OvA)策略来确定多类分类中的预测标签.设$f{test}^k（z）$为第k个输出节点的输出函数. 测试样品的预期标签由
 \begin{align}
   \hat y = \arg \max_{ k \in 1,\cdots,m} f_{test}^k (z)
 \end{align}
-  \item  %Regression: The predicted value is equal to the output function $f_{test}(z)$ of the RVFL+
-  回归:预测值等于RVFL的输出函数$f——{{test}}（z）$
+  \item  回归:预测值等于RVFL的输出函数$f——{{test}}（z）$
 \begin{align}
-  \hat y = f_{test}(z)
+    \hat y = f_{test}(z)
 \end{align}
 \end{enumerate}
 
-按照\cite{VAPNIK2009544}中的SVM+公式，我们可以将RVFL+写成
+按照\cite{VAPNIK2009544}中的SVM+公式, 我们可以将RVFL+写成
 \begin{align}
 &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2 \|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))\notag\\
 &s.t.\,\, \bm h(\tilde x_i){\bm w} = \bm y_i - \zeta_i (\tilde {\bm w}; {\tilde h}({\tilde {\bm x}}_i)), \forall \leq i \leq  N.\label{RVFL20181102eq8}
 \end{align}
-%Likewise to $\bm h(\bm x_i)$, ${\tilde {\bm h}}({\tilde {\bm x}}_i)$ is also an enhanced layer output vector corresponding to the privileged feature ${\tilde {\bm x}}_i$, which can be calculated in the same fashion. $\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))$ is the correcting function (or slack function) in the privileged feature space, and $\tilde {\bm w}$ is an output weight vector for the correcting function.
-其中$\gamma$是正则化系数. 与$\bm h（\bm x_i）$类似, ${\tilde{\bm h}}（{\tilde{\bm x_r}}i）$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量,可以用相同的方式计算.
-$\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空间中的更正函数（或可宽延函数）,而$\tilde{\bm w}$是更正函数的输出权重向量.
+其中$\gamma$是正则化系数. 与$\bm h（\bm x_i）$类似, ${\tilde{\bm h}}（{\tilde{\bm x_r}}i）$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量, 可以用相同的方式计算.
+$\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空间中的更正函数（或可宽延函数）, 而$\tilde{\bm w}$是更正函数的输出权重向量.
 \begin{align}\label{RVFL20181102eq9}
-\zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}.
+    \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}.
 \end{align}
 
 将\eqref{RVFL20181102eq9}代入\eqref{RVFL20181102eq8}, 得到RVFL+表达形式.
@@ -1194,7 +1157,7 @@ $\zeta_i（\tilde{\bm w},{\tilde h}（\tilde{\bm x}_i））$是特权功能空�
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \tilde{\bm w}} = 0 \Rightarrow  \tilde{\bm w} = \frac 1  \gamma  (\tilde{\bm  H}^T  \bm \lambda - \tilde{\bm  H}^T C \bm 1), \label{RVFL20181102eq13}\\
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \bm \lambda_i} = 0 \Rightarrow  \bm h(\bm x_i)\bm w - \bm y_i + \tilde {\bm h}({\bm x}_i) \tilde{\bm w} = 0, 1 \leq  i \leq  N.\label{RVFL20181102eq14}
 \end{align}
-其中$\bm 1\in\mathbb R^{N\times m}$是单位矩阵。$\tilde{\bm H}$也是来自增强节点的连接输出矩阵, 它对应于RVFL的特性.
+其中$\bm 1\in\mathbb R^{N\times m}$是单位矩阵. $\tilde{\bm H}$也是来自增强节点的连接输出矩阵, 它对应于RVFL的特性.
 将\eqref{RVFL20181102eq12}和\eqref{RVFL20181102eq13}代入\eqref{RVFL20181102eq14}, 得到
 \begin{align}
   \bm H \bm H^T  \bm \lambda + \frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  (\bm \lambda -C \bm 1) = \bm Y. \label{RVFL20181102eq15}
@@ -1413,11 +1376,13 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展: 1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .  2) 为了和增强节点的运算相容, TT2-RVFL的线性部分需要 复制权重向量一次, 权重矩阵 $\bm\Omega$等于 $[\bm \omega\, \bm \omega]$, 其中 $\bm \omega$为权重列向量. 3) 对于输出$\bm Y$, 和以前的输出向量 $\bm y$不同, TT2-RVFL需要重复该向量一次, 以便和张量运算相容.
+  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展: 
+  1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .  
+  2) 为了和增强节点的运算相容, TT2-RVFL的线性部分需要 复制权重向量一次, 权重矩阵 $\bm\Omega$等于 $[\bm \omega\, \bm \omega]$, 其中 $\bm \omega$为权重列向量.
+  3) 对于输出$\bm Y$, 和以前的输出向量 $\bm y$不同, TT2-RVFL需要重复该向量一次, 以便和张量运算相容.
 \end{remark}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{algorithm} [!ht]
+%\begin{algorithm}[!ht]
 %\caption{偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}}
 %\label{T2RVFL3:alg1}
 %\begin{algorithmic}[1] %
@@ -1429,7 +1394,6 @@ TT2-RVFL 的输出可用下式表示
 %\STATE 输出: 通过$\mathcal A^+ = \mathcal V *_N\mathcal S^+ *_N \mathcal U^*$计算张量$\mathcal A$的 M-P逆.
 %\end{algorithmic}
 %\end{algorithm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL中的张量逆} \label{Trapezoidsection5-1}
 张量方程 $\mathcal A *_N \mathcal X = \mathcal Y$的张量运算被用于求解 TT2-RVFL网络的权重向量,  该运算非常适合计算TT2-RVFL增强节点部分的权重向量.
@@ -1438,9 +1402,11 @@ TT2-RVFL 的输出可用下式表示
 \begin{remark}
 方程$\mathcal A *_N \mathcal X = \mathcal Y$的解也是如下张量方程的解
 \begin{align}
-  \mathcal A^T *_N\mathcal  A *_N \mathcal X = \mathcal A^T *_N \mathcal Y,
+    \mathcal A^T *_N\mathcal  A *_N \mathcal X = \mathcal A^T *_N \mathcal Y,
 \end{align}
-其中张量$\mathcal A \in \mathbb R^{I_1\times \cdots\times I_N\times J_1\times \cdots\times J_N} $, $\mathcal X \in \mathbb R^{J_1\times \cdots\times J_N\times K_1\times \cdots\times K_M} $且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M} $, 不论方程是否相容, 都可以应用算法 \ref{T2RVFL3:alg1} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2018NCAA-5838}.
+其中张量$\mathcal A \in \mathbb R^{I_1\times \cdots\times I_N\times J_1\times \cdots\times J_N} $, $\mathcal X \in \mathbb R^{J_1\times \cdots\times J_N\times K_1\times \cdots\times K_M} $
+且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M}$, 
+不论方程是否相容, 都可以应用算法 \ref{T2RVFL3:alg1} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2018NCAA-5838}.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{求解TT2-RVFL的张量逆算法} {Tensor inverse algorithms for solving the TT2-RVFL} \label{Trapezoidsection5-2}
@@ -3225,7 +3191,7 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 
 %%%%%%---------------------------------
 \begin{think}
-  试解释强化学习模型及与其他机器学习方法的异同。
+  试解释强化学习模型及与其他机器学习方法的异同.
 \end{think}
 %%%%%%---------------------------------
 \begin{think}
@@ -3233,12 +3199,12 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 \end{think}
 %%%%%%---------------------------------
 \begin{think}
-  说明遗传算法的构成要素,给出遗传算法流程图。
+  说明遗传算法的构成要素,给出遗传算法流程图.
 \end{think}
 
 %%%%%%---------------------------------
 \begin{think}
-  简述蚁群算法的原理,用蚁群算法求解旅行商问题。
+  简述蚁群算法的原理,用蚁群算法求解旅行商问题.
 \end{think}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
