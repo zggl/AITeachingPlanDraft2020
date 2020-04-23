@@ -940,6 +940,14 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
     \end{array}\right.
 \end{align}
 由该连接权值所构成的连接矩阵是一个零对角的对称矩阵. 在 Hopfidld网络中, 虽然神经元自身无连接, 但由于每个神经元都与其他神经元相连, 即每个神经元的输出都将通过突触连接权值传递给别的神经元, 同时每个神经元又都接受其他神经元传来的信息, 这样对每个神经元来说, 其输出经过其他神经元后又有可能反馈给自己, 因此Hopfidld网络是一种反馈神经网络.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{神经网络的泛逼近性——可视化证明}
+Neural Networks: The Universality Theorem, V 1.0.0 (655 KB) 作者： Mayank Jhamtani-Visual Proof of Universal Approximation Theorem for Neural Networks.
+
+Neural Networks\_The Universality Theorem
+
+The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis. Michael Nielson gave a visual proof in his freely available online book \href{http://neuralnetworksanddeeplearning.com/chap4.html}{Nueral Nets and Deep Learning}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1376,8 +1384,8 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展: 
-  1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .  
+  和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展:
+  1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .
   2) 为了和增强节点的运算相容, TT2-RVFL的线性部分需要 复制权重向量一次, 权重矩阵 $\bm\Omega$等于 $[\bm \omega\, \bm \omega]$, 其中 $\bm \omega$为权重列向量.
   3) 对于输出$\bm Y$, 和以前的输出向量 $\bm y$不同, TT2-RVFL需要重复该向量一次, 以便和张量运算相容.
 \end{remark}
@@ -1405,7 +1413,7 @@ TT2-RVFL 的输出可用下式表示
     \mathcal A^T *_N\mathcal  A *_N \mathcal X = \mathcal A^T *_N \mathcal Y,
 \end{align}
 其中张量$\mathcal A \in \mathbb R^{I_1\times \cdots\times I_N\times J_1\times \cdots\times J_N} $, $\mathcal X \in \mathbb R^{J_1\times \cdots\times J_N\times K_1\times \cdots\times K_M} $
-且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M}$, 
+且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M}$,
 不论方程是否相容, 都可以应用算法 \ref{T2RVFL3:alg1} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2018NCAA-5838}.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3154,9 +3162,9 @@ F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\
 \end{align*}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{FNN}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{DFNN}
+%\subsection{FNN}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{DFNN}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{神经模糊系统和模糊神经系统}
 

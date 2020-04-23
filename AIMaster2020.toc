@@ -378,20 +378,21 @@
 \contentsline {subsection}{\numberline {5.3.2}反向传播(BP)模型}{305}{subsection.5.3.2}% 
 \contentsline {subsection}{\numberline {5.3.3}反馈网络(Hopfield)模型}{306}{subsection.5.3.3}% 
 \contentsline {paragraph}{离散Hopfield网络的结构}{306}{paragraph*.335}% 
+\contentsline {subsection}{\numberline {5.3.4}神经网络的泛逼近性——可视化证明}{307}{subsection.5.3.4}% 
 \contentsline {section}{\numberline {5.4}其它神经学习算法}{307}{section.5.4}% 
 \contentsline {subsubsection}{\numberline {5.4.0.1}Tikhonov 正则化}{308}{subsubsection.5.4.0.1}% 
 \contentsline {subsection}{\numberline {5.4.1}TROP-ELM算法}{310}{subsection.5.4.1}% 
 \contentsline {subsection}{\numberline {5.4.2}Allen's PRESS(prediction sum of squares)}{310}{subsection.5.4.2}% 
-\contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PRESS (TR-PRESS)}{310}{subsubsection.5.4.2.1}% 
-\contentsline {subsection}{\numberline {5.4.3}区间二型RVFL}{311}{subsection.5.4.3}% 
-\contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{314}{subsubsection.5.4.3.1}% 
+\contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PRESS (TR-PRESS)}{311}{subsubsection.5.4.2.1}% 
+\contentsline {subsection}{\numberline {5.4.3}区间二型RVFL}{312}{subsection.5.4.3}% 
+\contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{315}{subsubsection.5.4.3.1}% 
 \contentsline {subsubsection}{\numberline {5.4.3.2}TT2-RVFL}{316}{subsubsection.5.4.3.2}% 
-\contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{318}{subsubsection.5.4.3.3}% 
+\contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{319}{subsubsection.5.4.3.3}% 
 \contentsline {subsubsection}{\numberline {5.4.3.4}求解TT2-RVFL的张量逆算法}{319}{subsubsection.5.4.3.4}% 
 \contentsline {subsubsection}{\numberline {5.4.3.5}仿真实验}{320}{subsubsection.5.4.3.5}% 
 \contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{320}{subsubsection.5.4.3.6}% 
 \contentsline {subsubsection}{\numberline {5.4.3.7}非线性系统参数识别}{321}{subsubsection.5.4.3.7}% 
-\contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{322}{subsubsection.5.4.3.8}% 
+\contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{323}{subsubsection.5.4.3.8}% 
 \contentsline {section}{\numberline {5.5}进化计算}{324}{section.5.5}% 
 \contentsline {subsection}{\numberline {5.5.1}进化计算的产生与发展}{326}{subsection.5.5.1}% 
 \contentsline {subsection}{\numberline {5.5.2}进化计算的基本结构}{327}{subsection.5.5.2}% 
@@ -414,8 +415,6 @@
 \contentsline {subsection}{\numberline {5.10.2}模糊关系及其运算}{362}{subsection.5.10.2}% 
 \contentsline {paragraph}{模糊关系的定义}{362}{paragraph*.376}% 
 \contentsline {subsection}{\numberline {5.10.3}模糊关系的合成}{364}{subsection.5.10.3}% 
-\contentsline {subsection}{\numberline {5.10.4}FNN}{365}{subsection.5.10.4}% 
-\contentsline {subsection}{\numberline {5.10.5}DFNN}{365}{subsection.5.10.5}% 
 \contentsline {section}{\numberline {5.11}神经模糊系统和模糊神经系统}{365}{section.5.11}% 
 \contentsline {section}{\numberline {5.12}作 业}{365}{section.5.12}% 
 \contentsline {chapter}{\numberline {第六章\hspace {.3em}}不确定性推理}{373}{chapter.6}% 
