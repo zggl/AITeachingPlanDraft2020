@@ -405,7 +405,8 @@
 \contentsline {subsection}{\numberline {5.8.2}模糊关系及其运算}{351}{subsection.5.8.2}% 
 \contentsline {paragraph}{模糊关系的定义}{351}{paragraph*.370}% 
 \contentsline {subsection}{\numberline {5.8.3}模糊关系的合成}{353}{subsection.5.8.3}% 
-\contentsline {section}{\numberline {5.9}作 业}{354}{section.5.9}% 
+\contentsline {section}{\numberline {5.9}参考书}{354}{section.5.9}% 
+\contentsline {section}{\numberline {5.10}作 业}{354}{section.5.10}% 
 \contentsline {chapter}{\numberline {第六章\hspace {.3em}}不确定性推理}{359}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}不确定性推理的含义}{360}{section.6.1}% 
 \contentsline {paragraph}{什么是不确定性推理}{360}{paragraph*.372}% 
