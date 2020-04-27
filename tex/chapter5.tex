@@ -14,7 +14,7 @@
 \includegraphics[width=0.74\textwidth]{CI2019121801.jpg}
 \label{CI2019121801}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+教案二维码下载地址: \qrcode[height=1in]{https://github.com/zggl/AITeachingPlanDraft2020/blob/master/AIMaster2020.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{概述}
 本章主要讨论神经计算、进化计算和模糊计算问题.
@@ -323,7 +323,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \begin{align}
     W=\left(
   \begin{array}{lll}
-  {w_{11}} & {w_{12}} & {\cdots w_{1 {m}}} \\ 
+  {w_{11}} & {w_{12}} & {\cdots w_{1 {m}}} \\
   {w_{21}} & {w_{22}} & {\cdots w_{2 {m}}} \\
   {\vdots} & {\vdots} & {\vdots} \\ {w_{{nl}}} & {w_{{n} 2}} & \cdots w_{{nm}}.
   \end{array}
@@ -963,7 +963,7 @@ The original proof for this principle was given by George Cybenko in 1989, and i
 提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱找到}.
 如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量（添加的噪声变量没有在图上显示）时,拟合会变得松散和扩散.
 实际上, ELM的并没为这种情况设计. 本文的OP-ELM提出了一种三个步骤的方法来解决这个问题 , 简言之, 为了解决含噪声的问题, 需要给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
-首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于多输出情况, 根据它们在输出值大小对它们进行排序. 
+首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于多输出情况, 根据它们在输出值大小对它们进行排序.
 然后, 用一个漏掉一个的准则来确定在最终的OP-ELM模型结构中需要保留多少个被分类的神经元.
 这里将不对\textbf{LARS algorithm}做详细的叙述, 其实现来自Lasso方法, 对于OP-ELM, 它提供了对隐藏神经元的排序方法,
 这是由于OP-ELM算法设计总的神经元和输出之间的关系是线性的.
