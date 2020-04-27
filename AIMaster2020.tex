@@ -4,18 +4,12 @@
 %======================================================================
 % 双面打印
 \documentclass{ClassFile/qbook}
-\addbibresource{bib/qbook.bib}  % 导入参考文献数据库
+\addbibresource{bib/qbook.bib,bib/AI32}  % 导入参考文献数据库
 %\usepackage{wrapfig}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \graphicspath{{figures/},{gif2pnffolder/}}
-\usepackage{pgfplots}
-\usepackage{rotating}% 宏包提供了 \begin{sidewaystable} \end{sidewaystable}环境.表格就会产生旋转，若是想让页面横置，需要Landscape环境
-\usepackage{svg}
-\usepackage{svg-extract}
-\svgsetup{clean=true}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\makeindex
+%\makeindex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \pagestyle{empty}
@@ -119,9 +113,23 @@ east);
 %\include{tex/chapter10}
 \backmatter	
 %======================================================================
-% 打印参考文献
-\printbibliography[heading=bibintoc]
-\makeatletter
-\makeatother
-%\printindex
+%参考文献
+\phantomsection
+\cleardoublepage
+\addcontentsline{toc}{section}{参~考~文~献}
+\addtolength{\itemsep}{-1.5ex}
+
+%% 索引
+\phantomsection
+\cleardoublepage
+
+\addcontentsline{toc}{section}{索~引}
+\printindex
+
+%% 附录
+\phantomsection
+\cleardoublepage
+
+\addcontentsline{toc}{section}{附~录}
+%\include{body/AppendixA}       % 附录A
 \end{document} 

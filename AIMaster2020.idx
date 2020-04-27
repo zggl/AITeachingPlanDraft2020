@@ -14,12 +14,13 @@
 \indexentry{Reinforcement Learning|hyperpage}{245}
 \indexentry{Q-Learning Algorithm Used for Average Reward|hyperpage}{246}
 \indexentry{SSP Grounding|hyperpage}{246}
+\indexentry{边代价|hyperpage}{272}
 \indexentry{可解节点|hyperpage}{277}
 \indexentry{希望树|hyperpage}{279}
-\indexentry{MRSR|hyperpage}{307}
-\indexentry{Tikhonov Regularization|hyperpage}{308}
-\indexentry{lowpass operators|hyperpage}{309}
-\indexentry{TROP-ELM|hyperpage}{310}
-\indexentry{FCN-8|hyperpage}{451}
-\indexentry{FCN-8|hyperpage}{451}
-\indexentry{VGGNet|hyperpage}{453}
+\indexentry{MRSR|hyperpage}{305}
+\indexentry{Tikhonov Regularization|hyperpage}{306}
+\indexentry{lowpass operators|hyperpage}{307}
+\indexentry{TROP-ELM|hyperpage}{308}
+\indexentry{FCN-8|hyperpage}{449}
+\indexentry{FCN-8|hyperpage}{449}
+\indexentry{VGGNet|hyperpage}{451}

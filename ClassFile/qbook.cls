@@ -46,11 +46,20 @@
 \RequirePackage[labelformat=empty]{caption}
 \RequirePackage[list=off]{bicaption}
 \RequirePackage{subcaption}
-\RequirePackage[backend=biber, hyperref=auto,maxnames=4]{biblatex}
+\RequirePackage[style=numeric, hyperref=auto,maxnames=4]{biblatex}
 \RequirePackage{xcolor}
 \RequirePackage{listings}
 \RequirePackage[unicode, xetex, bookmarksnumbered, colorlinks, urlcolor=blue, linkcolor=purple, citecolor=red, plainpages=false, pdfstartview=FitH]{hyperref}
 \RequirePackage{bookmark}
+
+\usepackage{pgfplots}
+\usepackage{rotating}% 宏包提供了 \begin{sidewaystable} \end{sidewaystable}环境. 表格就会产生旋转，若是想让页面横置，需要Landscape环境
+\usepackage{svg}
+\usepackage{svg-extract}
+\svgsetup{clean=true}
+
+\usepackage{makeidx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bookmarksetup{
 	open,	
 	numbered
