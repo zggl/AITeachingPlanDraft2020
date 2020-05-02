@@ -390,7 +390,7 @@
 \contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{318}{subsubsection.5.4.3.3}% 
 \contentsline {subsubsection}{\numberline {5.4.3.4}求解TT2-RVFL的张量逆算法}{319}{subsubsection.5.4.3.4}% 
 \contentsline {subsubsection}{\numberline {5.4.3.5}仿真实验}{320}{subsubsection.5.4.3.5}% 
-\contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{321}{subsubsection.5.4.3.6}% 
+\contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{320}{subsubsection.5.4.3.6}% 
 \contentsline {subsubsection}{\numberline {5.4.3.7}非线性系统参数识别}{322}{subsubsection.5.4.3.7}% 
 \contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{323}{subsubsection.5.4.3.8}% 
 \contentsline {section}{\numberline {5.5}进化计算}{325}{section.5.5}% 
@@ -407,7 +407,7 @@
 \contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{351}{subsection.5.7.5}% 
 \contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{352}{subsection.5.7.6}% 
 \contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{353}{subsection.5.7.7}% 
-\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{356}{subsection.5.7.8}% 
+\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{355}{subsection.5.7.8}% 
 \contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{356}{subsection.5.7.9}% 
 \contentsline {subsubsection}{\numberline {5.7.9.1}经典测试函数}{356}{subsubsection.5.7.9.1}% 
 \contentsline {subsection}{\numberline {5.7.10}测试函数结果}{357}{subsection.5.7.10}% 
