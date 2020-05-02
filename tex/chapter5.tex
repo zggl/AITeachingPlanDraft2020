@@ -421,7 +421,7 @@ W=\left(
 
 使用感知器的主要目的是为了对外部输入进行分类. 罗森勃拉特已经证明, 如果外部输入是线性可分的(指存在一个超平面可以将它们分开), 则单层感知器一定能够把它划分为两类. 其判别超平面由如下判别式确定:
 \begin{align}
-  \sum_{i=1}^{n} w_{i j} x_{i}-\theta_{j}=0,\,j=1,2, \ldots, m.
+    \sum_{i=1}^{n} w_{i j} x_{i}-\theta_{j}=0,\,j=1,2, \ldots, m.
 \end{align}
 
 下面讨论用单个感知器实现逻辑运算的问题. 事实上, 单层感知器可以很好地实现“与”、“或”、“非”运算, 但却不能解决“异或”问题.
@@ -494,7 +494,7 @@ $x_1$&$x_2$&$x_1\wedge x_2$	&$w_1\times x_1+ w_2 x_2-\theta=0$  &-\\
 \label{AI_table2019112900011}
 \end{table}
 
-可以证明此表有解, 例如取$w_1=1$, $w_2=1$, $\theta=1.5$, 其分类结果如图\ref{AI32fig201912012607}所示,
+可以证明此表有解, 例如取$w_1=1$, $w_2=1$, $\theta=1.5$, 其分类结果如图 \ref{AI32fig201912012607} 所示,
 其中, 输出为1的用实心圆, 输出为0的用空心圆. 后面约定同此处.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -542,7 +542,7 @@ $x_1$	&$x_2$	&$x_1$ {\footnotesize XOR} $x_2$	&$w_1\times x_1+ w_2\times x_2-\th
 \end{center}
 \label{AI_table2019112902}
 \end{table}
-表\ref{AI_table2019112902}无解, 即无法找到满足条件的$w_1,w_2$和$\theta$, 如图\ref{Tu9120100511}所示. 因为异或问题是一个非线性可分问题, 需要用多层感知器来解决.
+表\ref{AI_table2019112902} 无解, 即无法找到满足条件的$w_1,w_2$和$\theta$, 如图 \ref{Tu9120100511} 所示. 因为异或问题是一个非线性可分问题, 需要用多层感知器来解决.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[H]
 %\centering
@@ -704,19 +704,19 @@ $x_1$	&$x_2$	&$x_1$ {\footnotesize XOR} $x_2$	&$w_1\times x_1+ w_2\times x_2-\th
 \end{example}
 在图\ref{Tu9120100514}中, 隐层神经元$x_{11}$所确定的直线方程为
 \begin{align}
-    1 \times  x_{1}+1 \times  x_{2}-0.5=0
+    1 \times  x_{1}+1 \times  x_{2}-0.5=0,
 \end{align}
 它可以识别一个半平面. 隐层神经元$x_{12}$所确定的直线方程为
 \begin{align}
-    1 \times  x_{1}+1 \times  x_{2}-1.5=0
+    1 \times  x_{1}+1 \times  x_{2}-1.5=0,
 \end{align}
 它也可以识别一个半平面.
 
 输出层神经元所确定的直线方程为
 \begin{align}
-  1 \times  x_{11}+1 \times  x_{12}-1.5=0
+    1 \times  x_{11}+1 \times  x_{12}-1.5=0,
 \end{align}
-   它相当于对隐层神经元$x_{11}$和$x_{12}$的输出作“逻辑与”运算, 因此可识别由隐层已识别的两个半平面的交集所构成的一个凸多边形, 如图 \ref{Tu9120100515} 所示.
+它相当于对隐层神经元$x_{11}$和$x_{12}$的输出作“逻辑与”运算, 因此可识别由隐层已识别的两个半平面的交集所构成的一个凸多边形, 如图 \ref{Tu9120100515} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[H]
 %\centering
@@ -965,21 +965,21 @@ The original proof for this principle was given by George Cybenko in 1989, and i
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-最优剪枝极值学习机（OP-ELM）如图 \ref{OPELM20161021fig2}所示, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤.
+最优剪枝极值学习机(OP-ELM)如图 \ref{OPELM20161021fig2} 所示, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤.
 提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱下载}.
 如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量(添加的噪声变量没有在图上显示)时,拟合会变得松散和扩散(ELM的并针对这种情况进行专门的设计).
 OP-ELM提出了一种三步骤解决问题的方法, 简言之, 为了解决含噪声的问题, 给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
-首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 
+首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498});
 实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于这类多输出情况, 根据它们输出值的大小, 对它们进行排序.
 然后, 用LOO的准则来确定在最终的OP-ELM模型结构中需要保留的神经元.
 其实现来自Lasso方法, 这里将不对\textbf{LARS algorithm}做详细的叙述.
 由于OP-ELM算法设计中的神经元和输出之间的关系是线性的, OP-ELM对隐藏神经元的排序方法提供了支持.
 
-LOO优化参数方法通常是一种代价高昂的方法, 它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值.
-在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于PRESS-LOO误差的计算细节见后). 
+LOO优化参数方法通常是一种代价高昂的方法, 它需要在整个数据集(只除去一个样本)上训练模型, 并在此样本上对数据集的所有样本重复求值.
+在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于PRESS-LOO误差的计算细节见后).
 通过使用一个LARS方法(这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使得OP-ELM在计算上仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”的ELM.
 同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合组合形式)惩罚项.
-同时, 由于在PRESS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量（通过LOO criteria索引LOO criteria）显示出潜在的不稳定性(数值).
+同时, 由于在PRESS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量(通过LOO criteria索引LOO criteria)显示出潜在的不稳定性(数值).
 解决方案是在压力公式的计算中使用正则化.
 
 下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
@@ -1021,23 +1021,23 @@ Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用�
     {\hat {x}}=(\bm A^{T}\bm A+\Gamma ^{T}\Gamma )^{-1}\bm A^{T}\bm {b}.
 \end{align}
 
-正则化的效果可以通过调整矩阵$\Gamma$的尺度，使之变化. 对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
+正则化的效果可以通过调整矩阵$\Gamma$的尺度，使之变化. 对于$\Gamma=0$, 如果存在$(A^TA)^{-1}$, 则问题退化为未正则化的最小二乘解.
 除了线性回归之外, $L_2$正则化还用于许多上下文中, 例如使用logistic回归或支持向量机分类\cite{Fan2008LIBLINEAR}以及矩阵因式分解\cite{Guan2012Online}.
 \begin{remark}
 Tikhonov正则化是在许多不同的上下文中独立发明的. 从Andrey Tikhonov和David L. Phillips的工作中, 它在积分方程中的应用广为人知.
-有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E.Hoerl和Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov（Kriging）滤波器}.
-在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}.\index{岭回归}  
+有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E. Hoerl和 Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov(Kriging)滤波器}.
+在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}.\index{岭回归}
 \end{remark}
 
 对于$\bm x$的一般多元正态分布和数据误差,可以应用变量转换来减少上述情况. 同样地, 可以寻找$\bm x$以最小化
 \begin{align}
     \|\bm A\bm x-\bm b\|_{P}^{2}+\|\bm x-\bm x_{0}\|_{Q}^{2}\,
 \end{align}
-其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$（与Mahalanobis距离比较）.
+其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$(与Mahalanobis距离比较).
 
 \begin{remark}
 贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵.
-然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$（例如\textbf{Cholesky 分解}）的因子分解给出, 并将其视为一个\textbf{whitening 滤波器}.  
+然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$(例如\textbf{Cholesky 分解})的因子分解给出, 并将其视为一个\textbf{whitening 滤波器}.
 \end{remark}
 
 这个广义问题有一个最优解$x^{*}$, 可以用公式显式地求解
@@ -1051,19 +1051,19 @@ or equivalently
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TROP-ELM算法}\index{TROP-ELM}
 \textbf{TROP-ELM}: 基于LARS和Tikhonov正则化的双正则化ELM\cite{MichevanHeeswijk2011-30641}, 2011.
-图 \ref{TROPEMLmodel20161021fig2} 显示了建议的正则化OP-ELM（TROP-ELM）.
+图 \ref{TROPEMLmodel20161021fig2} 显示了建议的正则化OP-ELM(TROP-ELM).
 \begin{figure}[H]
     \begin{center}
     \includegraphics[scale=0.7]{TROPEMLmodel20161021.PNG}
     \end{center}
-    \caption{The proposed regularized OP-ELM (TROP-ELM) as a modification of Fig. \ref{OPELM20161021fig2}.}
+    \caption{图 \ref{OPELM20161021fig2}的改进: TROP-ELM.}
     \label{TROPEMLmodel20161021fig2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Allen's PRESS(prediction sum of squares)}
 OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. 原始的PRESS公式可以表示为
-\begin{align}
-  \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X)^{-1}\bm x^T y  }
+\begin{align}\label{AIC5eqn519}
+  \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X)^{-1}\bm x^T y}
        {1-\bm x_i(\bm X^T \bm X)^{-1}\bm x_i^T}\right)^2,
 \end{align}
 从公式可以看出, 每个观测值都是用其他$n-1$观测值“预测”的, 残差最终被平方和相加. 算法通过矩阵运算, 有效地实现了该公式.
@@ -1078,9 +1078,9 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 
 5: 计算PRESS的误差$e = \frac{y-\bm X \bm w} {\bm D} $;
 
-6: 优化误差$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$
+6: 优化误差$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
 
-这种方法的主要缺点在于在计算中使用伪逆（在\textbf{Moore–Penrose sense}中）, 如果数据集$\bm X$不是全秩,则可能导致数值不稳定性. 不幸的是, 现实世界中的数据集经常出现这种情况. 下面的方法对原始的计算提出了两个改进: 正则化和快速矩阵计算.
+这种方法的主要缺点在于在计算中使用伪逆(在\textbf{Moore–Penrose sense}中), 如果数据集$\bm X$不是全秩,则可能导致数值不稳定性. 不幸的是, 现实世界中的数据集经常出现这种情况. 下面的方法对原始的计算提出了两个改进: 正则化和快速矩阵计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Tikhonov正则化的PRESS (TR-PRESS)}
 Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法计算PRESS的统计结果比传统的伪逆方法更好.
@@ -1089,9 +1089,9 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法�
 实际上, 从我们的实验来看, 虽然GCV具有无可替代的优越性, 和原始的PRESS和Tikhonov正则化的PRESS相比, 它会导致计算时间陡增. 算法1以矩阵形式给出了用于确定$\textup{MSE}^{\textup{TR-PRESS}}$的计算步骤
 \begin{align}
     \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x^T y  }
-       {1-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x_i^T}\right)^2
+       {1-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x_i^T}\right)^2,
 \end{align}
-这是公式（18）的正规化结果. 符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘. 算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
+这是公式 \eqref{AIC5eqn519} 的正规化结果. 符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘. 算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
 
 用SVD分解$\bm X$: $\bm X = \bm U\bm S\bm V^T$;
 
@@ -1111,11 +1111,11 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法�
 
 关联$\textup{MSE}^{\textup{TR-PRESS}}$ 和$\lambda$ 的最优值.
 
-全局来说, 该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数. 
-由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A$, $\bm B$和$\bm C$）, 所以此特定实现碰巧运行得非常快.
+全局来说, 该算法使用$\bm X$的奇异值分解来避免计算问题,并在奇异值分解计算伪逆时引入Tikhonov正则化参数.
+由于在优化$\lambda$之前预先计算了效用矩阵($\bm A$, $\bm B$和$\bm C$), 所以此特定实现碰巧运行得非常快.
 在实际应用中,该算法中$\lambda$的优化是通过一种\textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(Matlab中的fminsearch函数).
 通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序.
-图 \ref{TROPEMLmodel20161021fig2} 是图的修改版本. 图 \ref{OPELM20161021fig2} 说明了\textbf{TROP-ELM}方法.
+图 \ref{TROPEMLmodel20161021fig2} 是图的修改版本. 图 \ref{OPELM20161021fig2} 给出了\textbf{OP-ELM}方法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
 现在我们使用新的学习范式来训练RVFL网络.
@@ -1135,7 +1135,7 @@ RVFL网络是一种经典的单层前向神经网络, 其结构如图 \ref{RVFLN
 \begin{figure}[tb]
 \centering
   \includegraphics[width=0.85\textwidth]{RVFL20181102Sys.PNG}
-  \caption{The architecture of the TROP-ELM.}
+  \caption{TROP-ELM的网络结构.}
   \label{RVFLNN181102Sys}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1144,9 +1144,9 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
 \begin{enumerate}
     \item 二元分类:测试样品的预测标签由
 \begin{align}
-    \hat y = \textup{sign}(f_{\textup{test}}(z))
+    \hat y = \textup{sign}(f_{\textup{test}}(z)).
 \end{align}
-    \item 多类分类:我们采用一对多(O vs. A)策略来确定多类分类中的预测标签. 设$f{\textup{test}}^k（z）$为第$k$个输出节点的输出函数. 测试样品的预期标签由
+    \item 多类分类:我们采用一对多(O vs. A)策略来确定多类分类中的预测标签. 设$f{\textup{test}}^k(z)$为第$k$个输出节点的输出函数. 测试样品的预期标签由
 \begin{align}
     \hat y = \arg \max_{ k \in 1,\cdots,m} f_{\textup{test}}^k (z).
 \end{align}
@@ -1161,7 +1161,7 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
     &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2 \|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))\notag\\
     &s.t.\,\, \bm h(\tilde x_i){\bm w} = \bm y_i - \zeta_i (\tilde {\bm w}; {\tilde h}({\tilde {\bm x}}_i)), \forall \leq i \leq  N.\label{RVFL20181102eq8}
 \end{align}
-其中$\gamma$是正则化系数. 与$\bm h（\bm x_i）$类似, ${\tilde{\bm h}}（{\tilde{\bm x_r}}i）$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量, 可以用相同的方式计算.
+其中$\gamma$是正则化系数. 与$\bm h(\bm x_i)$类似, ${\tilde{\bm h}}({\tilde{\bm x_r}}i)$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量, 可以用相同的方式计算.
 $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的更正函数(或可宽延函数), 而$\tilde{\bm w}$是更正函数的输出权重向量.
 \begin{align}\label{RVFL20181102eq9}
     \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)) = {\tilde h}({\tilde {\bm x}}_i){\bm w}.
@@ -1169,18 +1169,18 @@ $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的�
 
 将 \eqref{RVFL20181102eq9} 代入 \eqref{RVFL20181102eq8}, 得到RVFL+表达形式.
 \begin{align}
-    &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}\notag\\
+    &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w},\notag\\
     &s.t.\,\,\bm h(\tilde x_i){\bm w} =\bm y_i - {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}, \forall \leq i \leq  N.\label{RVFL20181102eq10}
 \end{align}
 从 \eqref{RVFL20181102eq10}, 我们注意到RVFL+最小化了$w$和$\tilde w$上的目标函数. 因此, 训练阶段RVFL+的分离超平面不仅取决于原始特征, 还取决于优先考虑的信息.
 此外, 与SVM+的原始模型相比 \cite{VAPNIK2009544}, RVFL+的修正函数是正的或负的.
-换句话说, RVFL+不考虑约束组$\zeta_i(\tilde{\bm h}, b, \phi({\bm x}_i))\geq 0（i=1, \cdots, N）$.
+换句话说, RVFL+不考虑约束组$\zeta_i(\tilde{\bm h}, b, \phi({\bm x}_i))\geq 0(i=1, \cdots, N)$.
 对于二值分类, RVFL+中的约束数目至少比SVM+少N个, 这使得RVFL+的优化约束要比SVM+的小得多.
 此外, 为了解决 \eqref{RVFL20181102eq10} 中的优化问题, 构造如下的Lagrangian函数$\mathscr L(\bm w, \tilde{\bm w}, \bm\lambda)$.
 \begin{align}
     \min\limits_{\bm w, \tilde{\bm w},\bm \lambda} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}-\sum_{i=1}^N  \bm \lambda_i(\bm h(\tilde {\bm x}_i){\bm w} -\bm y_i +{\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}),
 \end{align}
-其中$\bm\lambda=[\bm\lambda_1, \cdots, \bm\lambda_N]^T$是拉格朗日乘子. 为了找到解, 我们使用KKT条件来计算Lagrangian函数$\mathscr L（\bm w, \tilde{\bm w},\bm\lambda）$关于变量$\bm w,\tilde{\bm w}$和$\bm\lambda$的鞍点.
+其中$\bm\lambda=[\bm\lambda_1, \cdots, \bm\lambda_N]^T$是拉格朗日乘子. 为了找到解, 我们使用KKT条件来计算Lagrangian函数$\mathscr L(\bm w, \tilde{\bm w},\bm\lambda)$关于变量$\bm w,\tilde{\bm w}$和$\bm\lambda$的鞍点.
 \begin{align}
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \bm w}= 0 \Rightarrow  \bm w = \bm  H^T \bm \lambda, \label{RVFL20181102eq12}\\
  &\frac {\partial \mathscr L (\bm w, \tilde{\bm w},\bm \lambda)}{\partial \tilde{\bm w}} = 0 \Rightarrow  \tilde{\bm w} = \frac 1  \gamma  (\tilde{\bm  H}^T  \bm \lambda - \tilde{\bm  H}^T C \bm 1), \label{RVFL20181102eq13}\\
@@ -1209,7 +1209,7 @@ RVFL+ 输出函数定义为
 \begin{align}
     f(x) =\bm  h (\bm x)\bm w =\bm h(\bm  x)\bm H^ T \left(\bm H \bm H^T  +\frac 1 \gamma\tilde{\bm H} \tilde{\bm H}^T  +\frac{\bm  I} C \right)^{-1}\left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right).
 \end{align}
-此外,在测试阶段,当使用测试数据$\bm z$而不是训练数据$\bm x$时, 我们可以直接获得输出函数$f_{test}（\bm z）=\bm h（\bm z）-\bm w$.
+此外,在测试阶段,当使用测试数据$\bm z$而不是训练数据$\bm x$时, 我们可以直接获得输出函数$f_{test}(\bm z)=\bm h(\bm z)-\bm w$.
 \subsubsection{区间二型模糊集}
 本节将随机向量函数链接网络(RVFL) 推广到了张量结构,  增强节点使用了区间二型模糊集来扩展非线性激活函数, 主要目的是用二型模糊集来捕捉输入输出关系中蕴含的高阶信息.
 提出了两种随机向量函数链接网络, 一种是区间二型随机向量函数链接网络, 另一种是基于张量的二型随机向量函数链接网络.
@@ -1219,7 +1219,7 @@ RVFL+ 输出函数定义为
 此外, 权重向量由一个平衡因子综合得到, 它是RVFL网络结果和张量方程结果的加权平均.
 最后, 分别在三个非线性测试函数、非线性系统识别问题和四个回归问题上验证了给出的算法.
 
-高斯区间二型模糊集有两种定义形式,  不确定均值或者是不确定方差. 本节使用的区间二型模糊集上隶属和下隶属的均值相同.  图 \ref{TFLN:fig1-2}  给出了均值相同、方差不同的区间二型模糊集. 隶属函数按如下的方式定义
+高斯区间二型模糊集有两种定义形式,  不确定均值或者是不确定方差. 本节使用的区间二型模糊集上隶属和下隶属的均值相同. 图 \ref{TFLN:fig1-2} 给出了均值相同、方差不同的区间二型模糊集. 隶属函数按如下的方式定义
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure} [!htp]
     \begin{center}
@@ -1318,9 +1318,9 @@ RVFL常使用 Radbas ($y = \exp(-s^2)$), Sinc ($y = \textup{sinc} (s)$), Sigmoid
   &\bar{g} _{i} (x_i)=\exp(-k_1 s^2),\label{IT2TSKNM_g1} \\
   &\underline{g} _{i} (x_i)=\exp(-k_2 s^2),\label{IT2TSKNM_g2}
 \end{align}
-其中 $s=x_i-m_{i} , k_1=\frac{1} {\bar{\sigma} ^2_{i} } $, $k_2=\frac{1} {\underline{\sigma} ^2_{i} } \, (i=1,2,\cdots, L)$.
+其中 $s=x_i-m_{i}, k_1=\frac{1} {\bar{\sigma} ^2_{i} } $, $k_2=\frac{1} {\underline{\sigma} ^2_{i} } \, (i=1,2,\cdots, L)$.
 
-对于测试集$\{D_t\} _{t=1} ^{N} $, 其中 $D_t=(\bm x_t,y_t)$, $\bm x_t=(x_{t1} ,x_{t2} ,\cdots,x_{tN} )\in \mathbb R^{N} $, $y_t\in \mathbb R$ 且$\bm y=[y_1,\cdots, y_N]^T$. 下隶属函数矩阵 $\underline\Phi\in \mathbb R^{N\times 2\times L \times 1} $可用下式构建
+对于测试集$\{D_t\} _{t=1} ^{N} $, 其中 $D_t=(\bm x_t,y_t)$, $\bm x_t=(x_{t1} ,x_{t2} ,\cdots,x_{tN} )\in \mathbb R^{N} $, $y_t\in \mathbb R$ 且$\bm y=[y_1,\cdots, y_N]^T$. 下隶属函数矩阵 $\underline\Phi\in \mathbb R^{N\times 2\times L \times 1}$可用下式构建
 \begin{align*}
 \begin{array} {cc}
  \underline\Phi_{:,:,1,1}  =\begin{bmatrix}
@@ -1426,7 +1426,16 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL中的张量逆} \label{Trapezoidsection5-1}
 张量方程 $\mathcal A *_N \mathcal X = \mathcal Y$的张量运算被用于求解 TT2-RVFL网络的权重向量,  该运算非常适合计算TT2-RVFL增强节点部分的权重向量.
-求解方程使用的偶数阶张量的 Moore-Penrose (M-P)逆在算法 \ref{T2RVFL3:alg1} 中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
+求解方程使用的偶数阶张量的 Moore-Penrose (M-P)逆算法 \ref{NCAATTELML} 中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure} [!htp]
+    \begin{center}
+        \includegraphics[width =0.76\linewidth]{NCAATTELML.PNG}
+    \end{center}
+    \caption{张量的Moore-Penrose逆算法\cite{HuangZhao2018NCAA-5838}}
+    \label{NCAATTELML}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
     方程$\mathcal A *_N \mathcal X = \mathcal Y$的解也是如下张量方程的解
@@ -1435,7 +1444,7 @@ TT2-RVFL 的输出可用下式表示
 \end{align}
 其中张量$\mathcal A \in \mathbb R^{I_1\times \cdots\times I_N\times J_1\times \cdots\times J_N} $, $\mathcal X \in \mathbb R^{J_1\times \cdots\times J_N\times K_1\times \cdots\times K_M} $
 且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M}$,
-不论方程是否相容, 都可以应用算法 \ref{T2RVFL3:alg1} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2018NCAA-5838}.
+不论方程是否相容, 都可以应用算法 \ref{NCAATTELML} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2018NCAA-5838}.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{求解TT2-RVFL的张量逆算法} \label{Trapezoidsection5-2}
@@ -1619,6 +1628,11 @@ TT2-RVFL的结果要好于 IT2-RVFL的结果, 训练误差和测试误差都要�
 训练误差均值的Frobenius 范数 是1.87e-01, 测试误差均值的Frobenius 范数 是3.94e-01,  结果显示,  TT2-RVFL能够得到满意的精度.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{回归问题}
+测试使用了四个回归数据集 (Auto-Mpg, Bank, Diabetes 和  Triazines).
+Auto-MPG 数据集有392 个样本, 每一个样本有 8 个属性.   Bank数据集有8192个样本, 每一个样本有 8 个属性.
+Diabetes 数据集有768个样本, 每一个样本有4个属性.  Triazines 数据集有186个样本, 每一个样本有5个属性.
+对于Auto-MPG 和 Bank, 使用了mapminmax 方法来计算映射到区间 $[-1,1]$ 的数据.
+而对于Diabetes和Triazines, 则直接使用原来的数据样本.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
 \caption{数据集 Auto-Mpg, Bank, Diabetes 和 Triazines上的训练和测试误差}
@@ -1662,11 +1676,6 @@ TT2-RVFL的结果要好于 IT2-RVFL的结果, 训练误差和测试误差都要�
 \label{TT2-RVFL181116:Sec4-1}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-测试使用了四个回归数据集 (Auto-Mpg, Bank, Diabetes 和  Triazines).
-Auto-MPG 数据集有392 个样本, 每一个样本有 8 个属性.   Bank数据集有8192个样本, 每一个样本有 8 个属性.
-Diabetes 数据集有768个样本, 每一个样本有4个属性.  Triazines 数据集有186个样本, 每一个样本有5个属性.
-对于Auto-MPG 和 Bank, 使用了mapminmax 方法来计算映射到区间 $[-1,1]$ 的数据.
-而对于Diabetes和Triazines, 则直接使用原来的数据样本.
 对于IT2-RVFL和 TT2-RVFL, 平衡参数设置为 $C=2^{10}$, $\gamma =1$.
 RVFL的代码可以从Matlab的File Exchange下载,  ELM 和RELM 的代码可以从\href{https://www.ntu.edu.sg/home/egbhuang/elm_random_hidden_nodes.html}{主页下载}.
 表 \ref{TT2-RVFL181116:Sec4-1} 给出了ELM、RELM、RVFL、IT2-RVFL和TT2-RVFL算法的训练误差和测试误差.
@@ -1842,7 +1851,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 %定义流程图的具体形状
 \node (ABC0) at (-1,0) [draw, process,minimum width=\smbwd, minimum height=0.5cm,xshift=-1cm] {\textcolor[rgb]{1,0,1}{生成初始种群并编码}};   % PQR0
 \node (nCz)[draw, process,align=center,below=0.5cm of ABC0,yshift=0cm] {计算个体适应值并评价};                                                %R1
-\node (nCzleft0)[align=center,right=4cm of nCz,yshift=0.75cm] {\textcolor[rgb]{0,0,1}{}};                                                      %R1
+\node (nCzleft0)[align=center,right=4cm of nCz,yshift=0.75cm] {\textcolor[rgb]{0,0,1}{}};                                                 %R1
 \draw[thick,thick,->](ABC0)--(nCz);
 \node (AB0)[draw, decision,align=center,below=0.5cm of nCz,yshift=0cm,xshift=0.0cm] {满足终止条件吗?};                  %20
 \draw[thick,thick,->](nCz)--(AB0);
@@ -2157,7 +2166,7 @@ f(x)=
 \begin{example}
     设选中的个体向量$D=20\,  12 \, 16 \, 19\,  21\,  30$, 若随机产生的两个变异位置分别时2和4, 则变异后的新的个体向量是:
 \begin{align}
-  D'= 20\,  19\,  16\,  12 \, 21 \, 30
+    D'= 20\,  19\,  16\,  12 \, 21 \, 30
 \end{align}
 \end{example}
 
@@ -2190,9 +2199,9 @@ f(x)=
 
 要计算个体的适应度, 首先应该定义适应度函数. 由于本例是求$f(x)$的最大值, 因此可直接用$f(x)$来作为适应度函数. 即:
 \begin{align}
-  f(s)=f(x)
+    f(s)=f(x)
 \end{align}
-其中的二进制串$s$对应着变量$x$的值. 根据此函数, 初始种群中各个个体的适应值及其所占比例如表\ref{AI_table2019112802}所示.
+其中的二进制串$s$对应着变量$x$的值. 根据此函数, 初始种群中各个个体的适应值及其所占比例如表 \ref{AI_table2019112802} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[H]
 \caption{初始种群情况表}
@@ -2230,12 +2239,12 @@ $S_{04}$&	10010&	18&	324&	27.41&	100&	1\\
 \end{center}
 \label{AI_table2019112803}
 \end{table}
-其中, 染色体11001在种群中出现了2次, 而原染色体01000则因适应值太小而被淘汰
+其中, 染色体11001在种群中出现了2次, 而原染色体01000则因适应值太小而被淘汰.
 
 (5) 交叉
 
 假设交叉概率$\pi$为50\%, 则种群中只有1/2的染色体参与交叉.
-若规定种群中的染色体按顺序两两配对交叉, 且有$S_{01}$与$S_{02}$交叉, $S_{03}$与$S_{04}$不交叉, 则交叉情况如表\ref{AI_table2019112804}所示.
+若规定种群中的染色体按顺序两两配对交叉, 且有$S_{01}$与$S_{02}$交叉, $S_{03}$与$S_{04}$不交叉, 则交叉情况如表 \ref{AI_table2019112804} 所示.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
@@ -2288,8 +2297,7 @@ $S_{04}$	&11001&	S03&	N	&11001	&625\\
 \end{center}
 \end{table}
 
-然后, 对第1代种群重复上述(4)-(6)的操作
-
+然后, 对第1代种群重复上述(4)-(6)的操作.
 对第1代种群, 同样重复上述(4)-(6)的操作. 其选择情况如表\ref{AI_table2019112807}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
@@ -2361,7 +2369,6 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
 可以看出, 第3位基因均为0, 已经不可能通过交配达到最优解. 这种过早陷入局部最优解的现象称为早熟. 为解决这一问题, 需要采用变异操作.
 
 对第1代种群, 其变异情况如表 \ref{AI_table2019112809} 所示.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
 \caption{第1代种群的变异情况表}
@@ -2370,10 +2377,10 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
   \hline
 编号&	个体串(染色体)	&是否变异&	变异位	&子代&	适应值\\
   \hline
-$S_{11}$&	10010&	N&		&10010&	324\\
-$S_{12}$&	11001&	N&		&11001&	625\\
-$S_{13}$&	11001&	N&		&11001&	625\\
-$S_{14}$&	11010&	Y&	    &11110&	900\\
+$S_{11}$&	10010&	N&	-	&10010&	324\\
+$S_{12}$&	11001&	N&	-	&11001&	625\\
+$S_{13}$&	11001&	N&-		&11001&	625\\
+$S_{14}$&	11010&	Y&-	    &11110&	900\\
 \hline
 \end{tabular}
 \end{center}
@@ -2395,8 +2402,7 @@ $S_{24}$=11110\\
 \end{center}
 \end{table}
 接着, 再对第2代种群同样重复上述(4)-(6)的操作:
-
-对第2代种群, 同样重复上述(4)-(6)的操作. 其选择情况如表\ref{AI_table2019112810}所示.
+对第2代种群, 同样重复上述(4)-(6)的操作. 其选择情况如表 \ref{AI_table2019112810} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
 \caption{第2代种群的选择情况表}
@@ -2414,8 +2420,7 @@ $S_{24}$ &11110 &30	&900	&31.84&	100&1\\
 \end{center}
 \label{AI_table2019112810}
 \end{table}
-
-对第2代种群, 其交叉情况如表\ref{AI_table2019112810}所示.
+对于第2代种群, 其交叉情况如表\ref{AI_table2019112810}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
 \caption{第2代种群的选择情况表}
@@ -2451,15 +2456,15 @@ $S_{24}$=11110\\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-神经进化首先需要初始化一组上述基因组, 然后将它们应用于具体的问题环境中, 然后根据神经网络解决应用问题的能力为每个基因组分配一个适应度分数.
+    神经进化首先需要初始化一组上述基因组, 然后将它们应用于具体的问题环境中, 然后根据神经网络解决应用问题的能力为每个基因组分配一个适应度分数.
 \begin{newexam}
-  适应度分数可以是图像识别任务中实现的准确度以及机械臂移动实际轨迹和预期轨迹的差别等等.
+    适应度分数可以是图像识别任务中实现的准确度以及机械臂移动实际轨迹和预期轨迹的差别等等.
 \end{newexam}
 
 一旦初始种群被创建, 优化循环开始, 种群不断地变异、重组、评估和经历自然选择.
-如果这些步骤是迭代进行的, 而整个种群一次只进行一个步骤, 那么所进行的就是代际神经进化（generational neuroevolution）.
+如果这些步骤是迭代进行的, 而整个种群一次只进行一个步骤, 那么所进行的就是代际神经进化(generational neuroevolution).
 
-竞争性共同进化（competitive coevolution）则意味着神经进化算法的设计允许异步性, 并且优化循环在每个基因组的基础上执行. 在代际神经进化和竞争性共同进化两种情况下, 其优化过程都是不间断的进行引入创新、评估创新、然后对创新进行分类, 直到产生一个最佳实用性神经网络.
+竞争性共同进化(competitive coevolution)则意味着神经进化算法的设计允许异步性, 并且优化循环在每个基因组的基础上执行. 在代际神经进化和竞争性共同进化两种情况下, 其优化过程都是不间断的进行引入创新、评估创新、然后对创新进行分类, 直到产生一个最佳实用性神经网络.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -2472,10 +2477,10 @@ $S_{24}$=11110\\
 \begin{remark}
 神经进化过程也是一个“黑盒”, 虽然它自己的进化过程需要参数, 但却不为生成的神经网络规定任何特定超参数, 而是根据实际问题的解决设计神经网络. 这便为神经网络的权重、超参数等的选择提供了范围, 此范围也称为搜索空间. 虽然“黑盒”性提供了非常广泛的搜索空间, 但是为了提高遍历搜索空间的速度, 明智的做法是限制搜索空间的粒度. 通过限制基因组编码的复杂性, 将基因组映射到搜索空间的粒度的能力也被称为遗传编码. 综上所述, 为了使搜索空间具有适当的粒度, 根据实际问题的要求, 设计遗传编码和相应的神经进化算法非常重要. 先来回顾一下遗传编码的概念.
 
-有效的神经网络是能够进行有效的变异和重组人工神经网络的前提. 拥有强大表示能力的神经网络不用分析高度复杂的数据结构就能够快速的处理紧凑的遗传密码（compact genetic codes）.
-换句话说, 神经进化算法只在遗传编码上操作, 而不是在机器学习框架中复杂的数据结构上操作. 当然, 基因编码允许这两种表示之间存在映射关系. 基因组的这些有效的遗传表示被称为基因型（genotypes）, 而相应映射的神经网络被称为显型（phenotypes）, 这些术语来自遗传进化学. 这里将所有显型都限制为神经网络.
+有效的神经网络是能够进行有效的变异和重组人工神经网络的前提. 拥有强大表示能力的神经网络不用分析高度复杂的数据结构就能够快速的处理紧凑的遗传密码(compact genetic codes).
+换句话说, 神经进化算法只在遗传编码上操作, 而不是在机器学习框架中复杂的数据结构上操作. 当然, 基因编码允许这两种表示之间存在映射关系. 基因组的这些有效的遗传表示被称为基因型(genotypes), 而相应映射的神经网络被称为显型(phenotypes), 这些术语来自遗传进化学. 这里将所有显型都限制为神经网络.
 
-基因编码一般可分为两个子类：直接编码和间接编码. 虽然还有第三类发展性编码, 但这种编码我们先忽略不计, 毕竟这两年也没啥进展. 直接编码表示神经网络的各个方面, 它们在遗传表示中显式编码（如图 \ref{IndirectGencode2020020401} 所示）. 直接编码直接在基因型中编码每个连接及其相应的权重, 但通过排除神经网络中的偏差和激活函数的可能性来限制搜索空间.
+基因编码一般可分为两个子类：直接编码和间接编码. 虽然还有第三类发展性编码, 但这种编码我们先忽略不计, 毕竟这两年也没啥进展. 直接编码表示神经网络的各个方面, 它们在遗传表示中显式编码(如图 \ref{IndirectGencode2020020401} 所示). 直接编码直接在基因型中编码每个连接及其相应的权重, 但通过排除神经网络中的偏差和激活函数的可能性来限制搜索空间.
 这种直接编码可以表示任意的前馈和递归拓扑, 也能够产生最优的拓扑. 但“拓扑”太灵活的话, 粒度的搜索空间就会变得非常庞大. 因此需要设计良好的神经进化算法才能快速遍历该搜索空间.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -2520,10 +2525,10 @@ $S_{24}$=11110\\
 设计重组方法的核心在于“无损融合”, 即不丢失任何基因特性的情况下融合.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-    在神经进化算法之前, NEAT算法（通过增强拓扑的进化神经网络, Evolving NN through Augmenting Topologies）利用直接编码在进行修改网络的拓扑结构, 包括新增节点和删除节点等操作时会产生交叉损失.
+    在神经进化算法之前, NEAT算法(通过增强拓扑的进化神经网络, Evolving NN through Augmenting Topologies)利用直接编码在进行修改网络的拓扑结构, 包括新增节点和删除节点等操作时会产生交叉损失.
 \end{example}
 
-如图 \ref{Crossovers2020020402} 竞合公约问题（ competing-conventions problem）所示. 随后, NEAT算法提出了一种“历史标记”的方法, 该方法为每个突变提供了唯一的标识符, 从而最终实现了基因组的无损重组, 使其为神经进化算法提供了基准.
+如图 \ref{Crossovers2020020402} 竞合公约问题( competing-conventions problem)所示. 随后, NEAT算法提出了一种“历史标记”的方法, 该方法为每个突变提供了唯一的标识符, 从而最终实现了基因组的无损重组, 使其为神经进化算法提供了基准.
 \end{remark}
 
 在总体优化循环中, 基于问题评估基因组似乎是最简单的. 但这一步骤确是非常重要, 不仅是能够指出潜在的改进和进步. 评估方法从根本上说是一个过程, 即将基因组映射到由其遗传编码规定的神经网络, 并将其应用于问题环境, 然后根据神经网络的表现计算适应值. 一些神经进化算法的评估过程还包括将神经网络加权训练的附加步骤, 虽然这种方法非常明智, 但只有当实际环境能够清晰反映基本信息才有用. 在整个评估过程中, 尽管确定适应度的方式完全取决于实际问题的具体情况, 但可以进行合理的修改.
@@ -2538,7 +2543,7 @@ $S_{24}$=11110\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{PSO}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{QBFA}
+\section{量子细菌觅食算法}
 本节将提出的自适应细菌觅食算法应用到了多维函数优化问题和实际优化问题求解. 尽管BFA存在许多自适应策略, 而这些方案大多基于经验得到而不是解析推导. 受此启发, 本节给出了基于改进自适应趋药阶段步长方案 的量子细菌觅食算法. 首先, 建立了关于细菌在最优值附近的行为动力学微分方程, 基于迭代次数的趋药阶段步长通过求解微分方程得到. 此外, 还给出了基于迭代次数指标和个体适应值的自适应趋药阶段步长计算方案. 提出的自适应策略能够使细菌个体在寻优初期具有大步长. 在寻优探测结束阶段, 细菌个体的步长将会一直下降直到细菌个体结束生命周期. SDA 算法在趋药阶段结束启动. 直行阶段不再存在与QBFA算法中, 这一阶段的角色由SDA螺旋算法替代. 通过对不同的策略予以组合, 提出了 QBFA 的四种变种算法.
 提出的算法经由八个基本测试函和七个  CEC05 测试函数 (包括偏移类型的测试函数)进行数验证, 并和其他两种自适应细菌觅食算法比较. 基于实验结果, 对算法进行了 Welch t-检验和非参数 Friedman 检验以检验算法的差异性是否显著.
 在此基础上, 该算法还被用来建立区间二型模糊逻辑系统并用于解决优化火电厂脱硝效率问题.
@@ -2615,7 +2620,7 @@ BFA 算法包括趋药阶段、直行阶段、蠕行阶段和再生及淘汰驱�
 \beta_{in}\\
 \end{array}\right],\label{rotationgate}
 \end{align}
-其中 $[\alpha_{in},\beta_{in}]^T$ 代表当前 Q-比特位置, $U(\Delta\theta_{in})$ 代表量子旋转们, $\Delta\theta_{in}$ 是旋转角度, 并且 $[\alpha_{in}^{'}, \beta_{in}^{'}]^T$ 是新的 Q-比特 位置 which is obtained by rotation gate operation. 本文的  $\Delta\theta_{in}$ 由 第$i$个细菌个体的当前位置 和 种群当前最优个体的位置决定. 种群 的 初始 Q-比特位置具有如下形式:
+其中 $[\alpha_{in},\beta_{in}]^T$ 代表当前 Q-比特位置, $U(\Delta\theta_{in})$ 代表量子旋转们, $\Delta\theta_{in}$ 是旋转角度, 并且 $[\alpha_{in}^{'}, \beta_{in}^{'}]^T$ 是新的 Q-比特 位置 which is obtained by rotation gate operation. 本文的  $\Delta\theta_{in}$ 由 第$i$个细菌个体的当前位置 和 种群当前最优个体的位置决定. 种群的初始 Q-比特位置具有如下形式:
 \begin{equation}
     P_{Q}(t)=\{P_{Q_1}(t), P_{Q_2}(t),\cdots,P_{Q_{Nb}}(t)\}^T,\label{PQt}
 \end{equation}
@@ -2647,7 +2652,7 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 其中 $\otimes$为 两个向量的阿达马积, LB 和 UB分表为相应决策变量的下界和上界 . 上述表示方式能够保证结果寻优的可能性和种群的多样性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{量子BFA算法}
-接下俩介绍 QBFA 算法的流程(2012).
+接下来介绍 QBFA 算法的流程(2012).
 
 [步骤 0] 初始化参数 $N$, $N_b$, $\theta_{i\cdot}$, $N_c$, $N_s$, $N_{re}$, $N_{ed}$, $P_{ed}$, 和 $C_{QBFA}$.
 表 \ref{Para_QBFASys20150225} 列出了上述符号的具体含义.
@@ -2656,17 +2661,17 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 
 [步骤 2] 淘汰-再生阶段循环: 对每一个 $l=1$,$\cdots$, $N_{ed}$.
 
-[步骤 3] 再生阶段循环: 对每一个 $k=1,\cdots,N_{re}.$
+[步骤 3] 再生阶段循环: 对每一个 $k=1,\cdots,N_{re}$.
 
-[步骤 4] 趣药阶段循环:  对每一个 $j=1,\cdots,N_{c}.$
+[步骤 4] 趣药阶段循环:  对每一个 $j=1,\cdots,N_{c}$.
 
-\quad\quad (a) For 第$i$个细菌 (初始值$i=1$), 根据当前位置, 由量子门的顺时针或逆时针方向旋转更新 Q-比特编码的个体 .
+\quad\quad (a) \textcolor[rgb]{0,0,1}{For} 第$i$个细菌 (初始值$i=1$), 根据当前位置, 由量子门的顺时针或逆时针方向旋转更新 Q-比特编码的个体 .
 
 \quad\quad (b) 计算适应值 $J(i,j,k,l)$, 保存当期最优解 $J_{last}$.
 
 \quad\quad (c) 计算趣药阶段步长 $C_{QBFA}$ 并按如下方式生成新的种群个体位置
 \begin{align}
-  \theta^i(j+1,k,l)=&\theta^i(j,k,l)+C_{QBFA} \times(\theta^b(j,k,l)-\theta^i(j,k,l)),
+    \theta^i(j+1,k,l)=&\theta^i(j,k,l)+C_{QBFA} \times(\theta^b(j,k,l)-\theta^i(j,k,l)),
 \end{align}
 其中 $\theta^i(j,k,l)$ 表示第$i$个细菌在$j$趋药阶段第 $k$个再生阶段及第 $l$个淘汰驱散阶段 的位置, $\theta^b(j,k,l)$ 表示种群在当前找到的问题全局最优值.
 
@@ -2681,7 +2686,7 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 \end{align}
 令 $m=m+1$, 并且转到步骤 ii).
 
-\quad\quad \quad iii) Else, if $J_{last}<J_{best}$, 更新 $J_{best}$ 和 $P_{best}$, 其中 $J_{best}$ 表示种群 个体在当前找到的最优适应值, $P_{best}$ 表示在当前最优适应值下的位置.
+\quad\quad \quad iii)\,\, \textcolor[rgb]{0,0,1}{Else, if} $J_{last}<J_{best}$, 更新 $J_{best}$ 和 $P_{best}$, 其中 $J_{best}$ 表示种群 个体在当前找到的最优适应值, $P_{best}$ 表示在当前最优适应值下的位置.
 
 \quad\quad (e) 若 $i<N_b$, 令 $i=i+1$, 并且转到步骤 (a).
 
@@ -2697,7 +2702,7 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 
 [步骤 8] 淘汰驱散阶段: 以概率 $P_{ed}$淘汰并且驱散每一个种群中的个体 $i=1,2,\cdots, N_b$. 也即, 若一个细菌个体被淘汰, 使用量子操作直接在优化区域内产生一个新位置给新个体实. 若 $l<N_{ed}$, 令 $l=l+1$ 并且 算法将会转到步骤 2, 否则算法结束.
 
-对于QBFA算法, 趋药性阶段步长大小采用了 Dasgupta et al. (2009) 的方法
+对于QBFA算法, 趋药性阶段步长大小采用了 Dasgupta et al. (2009) 的方法:
 \begin{align}
     C_{QBFA}=\frac{|J(i,j,k,l)|}{|J(i,j,k,l)|+\lambda},
 \end{align}
@@ -2712,7 +2717,7 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 \hline
 Vars &  Explanation\\
 \hline
-$N$&  问题的搜索空间维度\\
+$N$&    问题的搜索空间维度\\
 $N_b$&  种群中细菌的总数\\
 $\theta_{i\cdot}$&  细菌个体在生命周期内趋向最优解过程中的旋转角度\\
 $N_{c}$&  趋药阶段数\\
@@ -2728,12 +2733,14 @@ $C_{QBFA}$&   QBFA算法在趋药阶段的步长\\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{迭代自适应步长设计}
-收到趋药阶段的自适应步长应该在初始阶段较大而在结束阶段较小这一规律的启示. 本节给出一个自适应步长的统一设计框架. 首先, 引入了基于迭代次数的自适应趋药阶段自适应步长函数. 对于函数 $c: X=[1, +\infty) \rightarrow (0,1)$, 其中 $X$ 表所有迭代次数值所在区间. 自适应趋药阶段自适应步长定义如下
+收到趋药阶段的自适应步长应该在初始阶段较大而在结束阶段较小这一规律的启示. 本节给出一个自适应步长的统一设计框架. 
+首先, 引入了基于迭代次数的自适应趋药阶段自适应步长函数. 对于函数 $c: X=[1, +\infty) \rightarrow (0,1)$, 其中 $X$ 表所有迭代次数值所在区间. 
+自适应趋药阶段自适应步长定义如下
 \begin{align}\label{CIAQBFA1}
     C_{IAQBFA}=\frac {c_{\min}}{c(x)},
 \end{align}
 其中 $c_{\min}$ 算法中 最小步长. 令 $\lim_{x\rightarrow +\infty}c(x)=1$,
-    对于同一 $x$, $\Delta c$ 与 $\Delta x$ 成比例. 显然, 当$c\approx 1$时, $\Delta c$ 应该变小. 新加入一个阶次参数 $\alpha$来调整$(1-c)$, 由此得到 $(1-c)^\alpha$. 则有下面的微分方程:
+对于同一 $x$, $\Delta c$ 与 $\Delta x$ 成比例. 显然, 当$c\approx 1$时, $\Delta c$ 应该变小. 新加入一个阶次参数 $\alpha$来调整$(1-c)$, 由此得到 $(1-c)^\alpha$. 则有下面的微分方程:
 \begin{eqnarray}
     \Delta c = k_1\, (1-c)^\alpha\,\Delta x/ x,\,\alpha \in \mathbb R^+,
 \end{eqnarray}
@@ -2769,7 +2776,7 @@ c(x)=
   \end{array}
   \right.
 \end{align}
-其中变量 $x$ 是迭代次数 $Iter=i\times j\times k \times l$. 注意到 $c(x)$ 是关于$x$的非线性递增函数, $c(1)=c_{min}$ 并且 $\lim_{x\rightarrow+\infty}c(x)=1$. 此时的趋药阶段步长 $C_{IAQBFA}$ 由(\ref{CIAQBFA1})定义, 它是关于$x$的 非线性递减函数, 当 $x=1$, $C_{IAQBFA}=1$,且 $\lim_{x\rightarrow+\infty}C_{IAQBFA}=c_{min}$. 这即趋药阶段步长在开始迭代阶段 是 1,  当迭代次数增加, 趋药阶段步长逐渐逼近 $c_{\min}$. 算法中的趋药阶段步长为
+其中变量 $x$ 是迭代次数 $Iter=i\times j\times k \times l$. 注意到 $c(x)$ 是关于$x$的非线性递增函数, $c(1)=c_{min}$ 并且 $\lim_{x\rightarrow+\infty}c(x)=1$. 此时的趋药阶段步长 $C_{IAQBFA}$ 由\eqref{CIAQBFA1}定义, 它是关于$x$的 非线性递减函数, 当 $x=1$, $C_{IAQBFA}=1$,且 $\lim_{x\rightarrow+\infty}C_{IAQBFA}=c_{min}$. 这即趋药阶段步长在开始迭代阶段 是 1,  当迭代次数增加, 趋药阶段步长逐渐逼近 $c_{\min}$. 算法中的趋药阶段步长为
 \begin{align}\label{IAQBFA0}
     C_{IAQBFA}=\frac{c_{\min}}{1-\frac{1-c_{min}}{x^{k_{1}}}},
 \end{align}
@@ -2777,7 +2784,7 @@ c(x)=
 \begin{align}\label{IAQBFA}
     C_{IAQBFA}=\frac{c_{\min}}{1- \left[(1-c_{\min})^{{1-\alpha}}-k_1(1-\alpha)\ln x \right]^{\frac 1 {1-\alpha}}}.
 \end{align}
-图 \ref{AdaptQBFA:fig1} 给出了自适应趋药阶段步长函数 $C_{IAQBFA}$, 其中 $\alpha=2$, $c_{\min}=6\textup{E-}3$, $k_1=1\textup{E-}2$, 且 趋药阶段步长公式为 (\ref{AdapchemCI}). 从图中能够看出, 曲线的形状较为类似且两种自适应步长在迭代初始阶段的下降速度快于后期, 而(\ref{IAQBFA})式的自适应步长在迭代初期的下降速度快于式 (\ref{AdapchemCI}) 的速度, 后期正好相反.
+图 \ref{AdaptQBFA:fig1} 给出了自适应趋药阶段步长函数 $C_{IAQBFA}$, 其中 $\alpha=2$, $c_{\min}=6\textup{E-}3$, $k_1=1\textup{E-}2$, 且 趋药阶段步长公式为 \eqref{AdapchemCI}. 从图中能够看出, 曲线的形状较为类似且两种自适应步长在迭代初始阶段的下降速度快于后期, 而 \eqref{IAQBFA} 式的自适应步长在迭代初期的下降速度快于式 \eqref{AdapchemCI} 的速度, 后期正好相反.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{适应值自适应步长设计}
 文 (Dasgupta et al. 2009)的分析揭示出 将趣药阶段的适应值作为一个因素加以考虑, 以细菌的适应值定义的自适应步长函数表现好于固定步长情形. 当细菌靠近最优解, 趣药阶段的自适应步长函数应该较小. 基于式(\ref{IAQBFA0}) 和(\ref{IAQBFA})定义的趣药阶段自适应步长, 引入了基于适应值的趣药阶段自适应步长函数. 趣药阶段的自适应步长函数定义如下
@@ -2796,19 +2803,19 @@ C_{FAQBFA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!tbp]
 \begin{center}
- \includegraphics[width=0.6\textwidth]{AdaptQBFA.pdf}
- \caption{迭代次数下的趋药阶段步长}
- \label{AdaptQBFA:fig1}
+    \includegraphics[width=0.6\textwidth]{AdaptQBFA.pdf}
+    \caption{迭代次数下的趋药阶段步长}
+    \label{AdaptQBFA:fig1}
     \vspace{0.5em}\centering
 \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[tb]
-\begin{center}
- \includegraphics[height=0.75\textwidth]{AQBFA_SDAFlowChart}
-  \caption{AQBFA流程图}
-  \label{fig:FlowchartAQBFA}
-\end{center}
+    \begin{center}
+     \includegraphics[height=0.75\textwidth]{AQBFA_SDAFlowChart}
+      \caption{AQBFA流程图}
+      \label{fig:FlowchartAQBFA}
+    \end{center}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2885,7 +2892,7 @@ Shifted Rotated  Rastrigin&  $f_{14}(x)=(1+0.1\times rand[-1,1])\sum_{i=1}^N x_i
 \end{align}
 其中 $r=\sqrt{\alpha_1^2+\beta_1^2}$, 并且 $\theta=\arctan(\beta_1/\alpha_1)$. 应保证条件 $\beta_1\neq 0$ 和 $r < 1$成立, 其中条件 $\beta_1\neq 0$ 保证解在$x_1 - x_2$平面的螺旋旋转路径上, 并且条件 $r < 1$ 能够保证由 (\ref{SDAEquation120150221}) 生成的序列从任一点收敛到圆点. 对任意$r$ 和$\theta$, 在搜索阶段的后期, 所有的候选搜索点将会聚集在螺旋轨道上.
 
-对于 $n$-维优化问题和任给初始点 $\bm x=[x_1 ,x_2,\cdots, x_n]$, 其中 $n$ 设定为偶数, $\bm x$ 写成 $ 2\times n/2$ 以便 \eqref{SDAEquation120150221}运算, 运算后得到向量形式的结果. SDA 模型描述如下
+对于 $n$-维优化问题和任给初始点 $\bm x=[x_1 ,x_2,\cdots, x_n]$, 其中 $n$ 设定为偶数, $\bm x$ 写成 $ 2\times n/2$ 以便 \eqref{SDAEquation120150221} 运算, 运算后得到向量形式的结果. SDA 模型描述如下
 \begin{align}
     \bm x^{s+1}=A_{spiral}\bm x^s-(A_{spiral}-I_n)\bm x^*,
 \end{align}
@@ -2900,7 +2907,7 @@ SDA 以其强大的寻优能力得到广泛的应用. 对于搜索空间, 所要
 \begin{center}
 \caption{比较用CEC05基准测试函数参数($\bm o=o_1 \cdot I+o_2\cdot \textup{rand}(1,n)$)}
     \vspace{0.5em}\centering
-\begin{tabularx}{0.8\textwidth}{p{5.0cm} p{0.75cm}p{0.75cm}p{0.75cm}p{2.9cm}}
+\begin{tabularx}{0.9\textwidth}{p{6.0cm} p{1.05cm}p{0.75cm}p{1.05cm}p{4.2cm}}
 \hline
 Name &  $o_1$&  $o_2$&   $f_{bias}$& Range of search\\
 \hline
@@ -2924,22 +2931,22 @@ Shifted Rotated  Rastrigin&  -&  -&  -330 &  $x\in [-5,5]^N$\\
 \subsubsection{经典测试函数}
 为了测试五种算法的性能, 本节挑选了两类测试函数集, 基本测试函数集和  CEC05 测试函数集.基本测试函数集 (Yao et al. 1999) 和  CEC05 基本测试函数集 (Suganthan et al. 2005) 具体内容见表 \ref{tab:test2} 和表 \ref{Tab:CEC05}. 这两类测试函数及被广泛用于进化计算领域算法的适应值精度和收敛速度 (Chen et al. 2014; Xu 并且 Chen 2014; Nasir et al. 2015).
 
-对于表\ref{tab:test2}, 第一个函数是 Sphere 函数 ($f_1$), 它是一个可微可分单峰函数. 二次函数 ($f_2$) 和 Rosenbrock 函数 ($f_3$) 是可微不可分单峰函数. 二次函数 ($f_4$) 是一个不连续可分带一个随机项的单峰函数. Rastrigin 函数 ($f_5$) 和 Ackley 函数 ($f_6$) 是可微多峰函数, 其中 $f_5$ 有许多局部极值, 而 $f_6$ 有许多局部极小值和一个较小的全局最值区域 . Griewank 函数 ($f_7$) 是一个可微不可分多峰函数. 对于这七个测试函数, $f_1$ 易于求解而 $f_7$ 难于找到全局最值点, 多峰函数较之单峰函数更难找到最值点. 在本节的验中, 使用30, 45 和 60 维的测试函数. 这些关于函数路 $f_1-f_7$的定义域和全局最值点 $f_{min}$ 也列于表中, t函数$f_1-f_7$ 的最值点全为0.
+对于表\ref{tab:test2}, 第一个函数是 Sphere 函数 ($f_1$), 它是一个可微可分单峰函数. 二次函数 ($f_2$) 和 Rosenbrock 函数 ($f_3$) 是可微不可分单峰函数. 二次函数 ($f_4$) 是一个不连续可分带一个随机项的单峰函数. Rastrigin 函数 ($f_5$) 和 Ackley 函数 ($f_6$) 是可微多峰函数, 其中 $f_5$ 有许多局部极值, 而 $f_6$ 有许多局部极小值和一个较小的全局最值区域 . Griewank 函数 ($f_7$) 是一个可微不可分多峰函数. 对于这七个测试函数, $f_1$ 易于求解而 $f_7$ 难于找到全局最值点, 多峰函数较之单峰函数更难找到最值点. 在本节的验中, 使用30, 45和 60维的测试函数. 这些关于函数路 $f_1-f_7$的定义域和全局最值点 $f_{min}$ 也列于表中, $t$函数$f_1-f_7$ 的最值点全为0.
 
-CEC05 测试函数集$f_8$-$f_{14}$ 见表 \ref{Tab:CEC05}, 这些函数带有偏移和旋转, 其中的 $f_8$-$f_{10}$, $f_{13}$ 是偏移类型而 $f_{11}$, $f_{12}$, $f_{14}$ 是对经典测试函数做了偏移和旋转操作. 函数$f_8$-$f_{12}$ 是多峰函数, $f_{13}$ 和 $f_{14}$ 是单峰函数. 这类测试函数比基本测试函数更难于求解 . 表 \ref{Tab:CEC05}给出的参数 $M$ 是一个给定条件数的正交矩阵, $\bm o$ 记偏移全局极值, $\bm o$的值和偏移 $f_{bias}$ 列于表 \ref{Tab:CEC05ofbias}. 旋转问题由偏移变量 $(x-\bm o)$ 左乘矩阵 $M$得到.
+CEC05 测试函数集$f_8$-$f_{14}$ 见表 \ref{Tab:CEC05}, 这些函数带有偏移和旋转, 其中的 $f_8$-$f_{10}$, $f_{13}$ 是偏移类型而 $f_{11}$, $f_{12}$, $f_{14}$ 是对经典测试函数做了偏移和旋转操作. 函数$f_8$-$f_{12}$ 是多峰函数, $f_{13}$ 和 $f_{14}$ 是单峰函数. 这类测试函数比基本测试函数更难于求解. 表 \ref{Tab:CEC05} 给出的参数 $M$ 是一个给定条件数的正交矩阵, $\bm o$ 记偏移全局极值, $\bm o$的值和偏移 $f_{bias}$ 列于表 \ref{Tab:CEC05ofbias}. 旋转问题由偏移变量 $(x-\bm o)$ 左乘矩阵 $M$得到.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{测试函数结果}
-五种算法均针对给定维数独立运行 30 次 . 最优适应值的均值和标准差(Std) 有计算结果平均得到. 双边 t-检验 用于比较 IAQBFA、 FAQBFA 和其它算法显著性差异. Because of the required conditions for the safe usage of parametric tests may not be guaranteed in tests, 实验使用了 Garc\'{\i}a et al. (2009) 提出的非参数统计技术, 分别用了Wilcoxon 符号秩检验和 Friedman 检验. 上述三种检验方法的参数显著性水平 $\alpha=0.05$.
+五种算法均针对给定维数独立运行 30 次 . 最优适应值的均值和标准差(Std) 有计算结果平均得到. 双边 t-检验 用于比较 IAQBFA、 FAQBFA 和其它算法显著性差异. 实验使用了 Garc\'{\i}a et al. (2009) 提出的非参数统计技术, 分别用了Wilcoxon 符号秩检验和 Friedman 检验. 上述三种检验方法的参数显著性水平 $\alpha=0.05$.
 
-对于七个测试函数, 五种 算法的30 次结果的均值, 标准差和 t-检验值列于表 \ref{TableDifBFA}. 对于均值, 五种算法针对各种维度情况作了排序. 五种算法的均值和标准差的最优值使用粗体标出. 从表 \ref{TableDifBFA}中可以看出, 算法 FAQBFA 在函数 $f_1$, $f_2$, $f_3$, $f_5$上有最好均值, 且在 $f_7$ 测试函数的三个维度问题中都是最好, 算法 QBFA 在$f_4$上最好均值, 且在  $f_6$ 测试函数的三个维度问题中都是最好. 算法 FAQBFA, IAQBFA 和 QBFA 表现好于 IBFA 和 FIBFA. 表中数据还显示: 除了 QBFA 在 60-维$f_6$ 函数的测试结果, 有最优均值的算法也有最优标准差. 对于60-维函数 $f_6$, IAQBFA 得到了最好的标准差. 对于表 \ref{TableDifBFA}, t-值表示 算法的t-检验值和IAQBFA 和 FAQBFA 最优值比较结果, 表 \ref{TableDifBFA}还给出了对应的 95\% 置信区间和 $p$ 值. $p$ 值能够提供统计检验是否显著的信息. 从表 \ref{TableDifBFA}可以看出, FAQBFA 的均值小于IAQBFA的均值. 对于双边 t-检验, FAQBFA和IAQBFA 的最优值和其余四种算法做了比较, 算法 FAQBFA和其余四种算法与 IAQBFA 做了 t-检验. 对于 65样本的 95\% 置信水平及 p-值列于表 \ref{TableDifBFA} 中, 其中的60 结果显示出 FAQBFA 相较其余四种算法有显著不同.
+对于七个测试函数, 五种 算法的30 次结果的均值, 标准差和 t-检验值列于表 \ref{TableDifBFA}. 对于均值, 五种算法针对各种维度情况作了排序. 五种算法的均值和标准差的最优值使用粗体标出. 从表 \ref{TableDifBFA} 中可以看出, 算法 FAQBFA 在函数 $f_1$, $f_2$, $f_3$, $f_5$上有最好均值, 且在 $f_7$ 测试函数的三个维度问题中都是最好, 算法 QBFA 在$f_4$上最好均值, 且在  $f_6$ 测试函数的三个维度问题中都是最好. 算法 FAQBFA, IAQBFA 和 QBFA 表现好于 IBFA 和 FIBFA. 表中数据还显示: 除了 QBFA 在 60-维$f_6$ 函数的测试结果, 有最优均值的算法也有最优标准差. 对于60-维函数 $f_6$, IAQBFA 得到了最好的标准差. 对于表 \ref{TableDifBFA}, t-值表示 算法的t-检验值和IAQBFA 和 FAQBFA 最优值比较结果, 表 \ref{TableDifBFA} 还给出了对应的 95\% 置信区间和 $p$ 值. $p$ 值能够提供统计检验是否显著的信息. 从表 \ref{TableDifBFA} 可以看出, FAQBFA 的均值小于IAQBFA的均值. 对于双边 t-检验, FAQBFA和IAQBFA 的最优值和其余四种算法做了比较, 算法 FAQBFA和其余四种算法与 IAQBFA 做了 t-检验. 对于 65样本的 95\% 置信水平及 p-值列于表 \ref{TableDifBFA} 中, 其中的60 结果显示出 FAQBFA 相较其余四种算法有显著不同.
 
-五种算法的适应度值也做了非参数 Wilcoxon 符号秩检验和 Friedman 检验, 两种检验的显著性水平 $\alpha=0.05$. 类似于 t-检验, Wilcoxon 符号秩检验用于检验五种算法是否存在显著差异. 表 \ref{TableDifBFA} 给出了 Wilcoxon 符号秩检验的结果, 算法 IAQBFA和 FAQBFA和其他算法分别做了比较. 表 \ref{TableDifBFA} 的 $p$ 值均小于 0.05. 这意味着 FAQBFA和其他四中算法有显著性的差异; IAQBFA 和其他四中算法有显著性的差异. 基于表 \ref{TableDifBFA}数据的Friedman 检验结果见表 \ref{Friedman_test}. 值得一提的是,由黑体字代表的排名靠前的算法是 FAQBFA, 升序排名结果为 QBFA, IAQBFA, FIBFA 和 IBFA. 总而言之, 对于七个基本测试函数, FAQBFA 是精度最好的算法. 这也说明与适应值和迭代次数有关的自适应机制 \eqref{FAQBFA} 很有效.
+五种算法的适应度值也做了非参数 Wilcoxon 符号秩检验和 Friedman 检验, 两种检验的显著性水平 $\alpha=0.05$. 类似于 t-检验, Wilcoxon 符号秩检验用于检验五种算法是否存在显著差异. 表 \ref{TableDifBFA} 给出了 Wilcoxon 符号秩检验的结果, 算法 IAQBFA和 FAQBFA和其他算法分别做了比较. 表 \ref{TableDifBFA} 的 $p$ 值均小于 0.05. 这意味着 FAQBFA和其他四中算法有显著性的差异; IAQBFA 和其他四中算法有显著性的差异. 基于表 \ref{TableDifBFA} 数据的Friedman 检验结果见表 \ref{Friedman_test}. 值得一提的是,由黑体字代表的排名靠前的算法是 FAQBFA, 升序排名结果为 QBFA, IAQBFA, FIBFA 和 IBFA. 总而言之, 对于七个基本测试函数, FAQBFA 是精度最好的算法. 这也说明与适应值和迭代次数有关的自适应机制 \eqref{FAQBFA} 很有效.
 
-下只针对 30-维 CEC05 测试函数集进行试验. 表 \ref{tab:CEC05results}列出了五种算法 30次结果的均值和方差. 就适应值精度而言, IAQBFA 在 一个函数中的$f_8-f_{11}$和 $f_{14}$ 上达到最优, FAQBFA 在$f_{12}$上达到最优. 显然IAQBFA 算法 在 CEC05 测试函数集上好于基本测试函数集. 对七个 CEC05 测试函数集的非参数 Wilcoxon 符号秩检验和 Friedman 检验结果见表 \ref{tab:CEC05results}. Wilcoxon 符号秩检验和 Friedman检验见表 \ref{TableDifBFA}和表 \ref{Friedman_test} 中括号数据. 表 \ref{TableDifBFA} 给出的 $p$ 值小于 0.05. FAQBFA 和其他四种算法有显著区别, IAQBFA 和其他四种算法的有显著区别. 对于表\ref{Friedman_test}, IAQBFA 排序最低, 其他依次为 QBFA, FAQBFA, FIBFA 和 IBFA. 显然, 对于测试函数集, 就适应值函数而言, IAQBFA 是最好的算法, 算法 FAQBFA 在CEC05的表现不如基本测试函数集. 部分缘于 CEC05 测试函数的全局最优点不再是0, 基于自适应步长 \eqref{IAQBFA}和迭代次数的算法优于单独使用一种策略的算法.
+下只针对 30-维 CEC05 测试函数集进行试验. 表 \ref{tab:CEC05results} 列出了五种算法 30次结果的均值和方差. 就适应值精度而言, IAQBFA 在 一个函数中的$f_8-f_{11}$和 $f_{14}$ 上达到最优, FAQBFA 在$f_{12}$上达到最优. 显然IAQBFA 算法 在 CEC05 测试函数集上好于基本测试函数集. 对七个 CEC05 测试函数集的非参数 Wilcoxon 符号秩检验和 Friedman 检验结果见表 \ref{tab:CEC05results}. Wilcoxon 符号秩检验和 Friedman检验见表 \ref{TableDifBFA} 和表 \ref{Friedman_test} 中括号数据. 表 \ref{TableDifBFA} 给出的 $p$ 值小于 0.05. FAQBFA 和其他四种算法有显著区别, IAQBFA 和其他四种算法的有显著区别. 对于表 \ref{Friedman_test}, IAQBFA 排序最低, 其他依次为 QBFA, FAQBFA, FIBFA 和 IBFA. 显然, 对于测试函数集, 就适应值函数而言, IAQBFA 是最好的算法, 算法 FAQBFA 在CEC05的表现不如基本测试函数集. 部分缘于 CEC05 测试函数的全局最优点不再是0, 基于自适应步长 \eqref{IAQBFA} 和迭代次数的算法优于单独使用一种策略的算法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onecolumn
 \vspace{0.5em}
-\begin{longtable}[!tb]{p{0.3cm}p{1.2cm}p{0.3cm}p{2.05cm}p{2.05cm}p{0.5cm}p{1.2cm}p{3.5cm}p{1.1cm}}
+\begin{longtable}[!tb]{p{0.3cm}p{1.2cm}p{0.3cm}p{2.45cm}p{2.45cm}p{0.5cm}p{1.2cm}p{4.5cm}p{1.5cm}}
 \caption{$f_1-f_{7}$ 函数在不同维度下平均运行30次下均值和标准差\label{TableDifBFA}}
 \vspace{0.5em}\\
         \hline
@@ -2958,7 +2965,7 @@ CEC05 测试函数集$f_8$-$f_{14}$ 见表 \ref{Tab:CEC05}, 这些函数带有�
 $f_{1}$ &IBFA &30 &3.5413e-4 &6.6200e-5&5 &29.300 &(3.2941e-4, 3.7885e-4) & $<0.05$ \\
              & &45 &3.7595e-4 &7.0705e-5 &5 &29.123 &(3.4955e-4, 4.0235e-4) &$<0.05$  \\
              & &60 &3.7358e-4 &6.9194e-5 & 5&29.572 &(3.4774e-4, 3.9942e-4) &$<0.05$ \\
- &FIBFA &30 &8.9029e-5 &1.6503e-6& 4 &295.480 &(8.8413e-5, 8.9645e-5) &$<0.05$  \\
+ &FIBFA &30 &8.9029e-5 &1.6503e-6& 4 &295.480 &(8.8413e-5, 8.9645e-5) &$<0.05$  \\6
              & &45 &8.9102e-5 &5.3927e-7 &4 &9049.05 &(8.9082e-5, 8.9122e-5) &$<0.05$  \\
              & &60 &8.9099e-5 &5.3997e-7 &4 &9036.61 &(8.9065e-5, 8.9105e-5) &$<0.05$  \\
  &QBFA &30 & 2.3175e-7 &3.7625e-7 &2  &3.373 &(9.1234e-8, 3.7223e-7) &$<0.05$\\
@@ -3070,7 +3077,7 @@ $f_{7}$ &IBFA &30 &2.4732e-5 &4.0951e-6& 5&33.078 &(2.3202e-5, 2.6261e-5) &$<0.0
 \end{longtable}
 %\end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table*}[!htb]
+\begin{table}[!htb]
 \begin{center}
 \caption{表\ref{TableDifBFA} 并且表 \ref{tab:CEC05results}的Wilcoxon秩检验结果(基于表\ref{tab:CEC05results}的结果列于括号内)}
 \vspace{0.5em}\centering
@@ -3089,14 +3096,13 @@ IAQBFA vs. FAQBFA &507 (11)     &123 (199)   &$<0.05$ ($<0.05$)  &YES (YES)\\
 \end{tabularx}
 \label{Friedman_test}
 \end{center}
-\end{table*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[tb]
 \begin{center}
-\caption{基于表\ref{TableDifBFA}并且表 \ref{tab:CEC05results}的Friedman检验结果(基于表 \ref{tab:CEC05results}的结果列于括号内)}
+\caption{基于表 \ref{TableDifBFA} 并且表  \ref{tab:CEC05results} 的Friedman检验结果(基于表 \ref{tab:CEC05results} 的结果列于括号内)}
 \vspace{0.5em}\centering
-\begin{tabularx}{0.8\textwidth}{p{2.cm}p{2.5cm}p{2.5cm}p{2.5cm}}
+\begin{tabularx}{0.62\textwidth}{p{2.cm}p{2.5cm}p{2.5cm}p{2.5cm}}
 \hline
 算法    & 均值(排序) &$\chi^2$   &$p$ 值\\
 \midrule
@@ -3123,7 +3129,7 @@ FAQBFA& $\bm{1.69}$ (2.46 ) \\
 %\includegraphics[width=0.4\columnwidth]{AlgoCompareFitness9}
 %\includegraphics[width=0.4\columnwidth]{AlgoCompareFitness10}
 %\includegraphics[width=0.5\columnwidth]{AlgoCompareFitness11}
-%  \bicaption[DifBFA：fig4-3]{}{$f_1-f_7$ 测试函数在算法 IBFA, FIBFA, QBFA, IAQBFA 和FAQBFA下的收敛速度}{Fig.$\!$}{Comparison of convergence plots of $f_1-f_7$ for IBFA, FIBFA, QBFA, IAQBFA and FAQBFA}
+%  \bicaption[DifBFA：fig4-3]{}{$f_1-f_7$ 测试函数在算法 IBFA, FIBFA, QBFA, IAQBFA 和FAQBFA下的收敛速度}{Fig$.\!$}{Comparison of convergence plots of $f_1-f_7$ for IBFA, FIBFA, QBFA, IAQBFA and FAQBFA}
 %\end{center}
 %\label{fig4}
 %\end{figure*}
@@ -3558,7 +3564,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 设$U$是给定论域,   是把任意$u\in U$映射为$[0, 1]$上某个实值的函数, 即
 \begin{align}
     U&\rightarrow [0, 1]\\
-    u&\rightarrow \mu_F(u)
+    u&\rightarrow \mu_F(u),
 \end{align}
 则称 $ \mu_F(x)$为定义在$U$上的一个隶属函数, 由   (对所有    )所构成的集合$F$称为$U$上的一个模糊集, 称为$u$对$F$的隶属度.
 \end{mydef}
@@ -3572,14 +3578,14 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{模糊集及其运算}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
+\begin{example}\label{AIC5Fuzzyexam551}
     设论域$U=\{20, 30, 40, 50, 60\}$给出的是年龄, 请确定一个刻画模糊概念“年轻”的模糊集$F$.
 \end{example}
 
 解: 由于模糊集是用其隶属函数来刻画的, 因此需要先求出描述模糊概念“青年”的隶属函数. 假设对论域$U$中的元素, 其隶属函数值分别为:
 \begin{align}
     \begin{array}{l}
-        {\mu_{F}(20)=1, \mu_{F}(30)=0.8, \mu_{F}(40)=0.4} \\ {\mu_{F}(50)=0.1, \mu_{F}(60)=0}
+        {\mu_{F}(20)=1, \mu_{F}(30)=0.8, \mu_{F}(40)=0.4} \\ {\mu_{F}(50)=0.1, \mu_{F}(60)=0},
     \end{array}
 \end{align}
 则可得到刻画模糊概念“年轻”的模糊集
@@ -3609,19 +3615,19 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
         F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\right), u_{2}\right), \cdots,\left(\mu_{F}\left(u_{n}\right), u_{n}\right)\right\}.
     \end{array}
 \end{align}
-在这种表示方法中, 当某个$u_i$对$F$的隶属度=0时, 可省略不写.
+在这种表示方法中, 当某个$u_i$对$F$的隶属度等于$0$时, 可省略不写.
 \begin{example}
-前面例5.15的模糊集$F$可表示为:
-\begin{align}
-    F=1 / 20+0.8 / 30+0.6 / 40+0.2 / 50.
-\end{align}
+    前面例 \ref{AIC5Fuzzyexam551} 的模糊集$F$可表示为:
+    \begin{align}
+        F=1 / 20+0.8 / 30+0.6 / 40+0.2 / 50.
+    \end{align}
     有时, 模糊集也可写成如下两种形式:
-\begin{align}
-    \begin{array}{l}
-        F=\left\{\mu_{F}\left(u_{1}\right) / u_{1}, \mu_{F}\left(u_{2}\right) / u_{2}, \cdots, \mu_{F}\left(u_{n}\right) / u_{n}\right\},\\
-        F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\right), u_{2}\right), \cdots,\left(\mu_{F}\left(u_{n}\right), u_{n}\right)\right\},
-    \end{array}
-\end{align}
+    \begin{align}
+        \begin{array}{l}
+            F=\left\{\mu_{F}\left(u_{1}\right) / u_{1}, \mu_{F}\left(u_{2}\right) / u_{2}, \cdots, \mu_{F}\left(u_{n}\right) / u_{n}\right\},\\
+            F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\right), u_{2}\right), \cdots,\left(\mu_{F}\left(u_{n}\right), u_{n}\right)\right\},
+        \end{array}
+    \end{align}
 其中, 前一种称为单点形式, 后一种称为序偶形式.
 \end{example}
 
@@ -3661,7 +3667,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊集包含}{1}
-设$F,G$分别是$U$上的两个模糊集, 对任意$u\in U$, 都有$\mu_{F}(u)\leq \mu_{G}(u)$ 成立, 则称$F$等于$G$, 记为$F\subseteq G$.
+    设$F,G$分别是$U$上的两个模糊集, 对任意$u\in U$, 都有$\mu_{F}(u)\leq \mu_{G}(u)$ 成立, 则称$F$等于$G$, 记为$F\subseteq G$.
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊集并集交集}{1}
@@ -3703,7 +3709,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \paragraph{模糊关系的定义}
 设$V$与$W$是两个普通集合, $V$与$W$的笛卡尔乘积为
  \begin{align}
-   \mathbf{V} \times \mathbf{W}=\{(\mathbf{v}, \mathbf{w}) | v \in V, w \in W\}.
+        \mathbf{V} \times \mathbf{W}=\{(\mathbf{v}, \mathbf{w}) | v \in V, w \in W\}.
  \end{align}
 所谓从$V$到$W$的关系$R$, 是指$V\times W$上的一个子集, 即
  \begin{align}
@@ -3711,7 +3717,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
  \end{align}
 记为
  \begin{align}
-    V \stackrel{R}{\longrightarrow} W.
+        V \stackrel{R}{\longrightarrow} W.
  \end{align}
 对于$V\times W$中的元素$(v,w)$, 若$(v,w)\in\mathbb R$, 则称$v$与$w$有关系$R$;
 若$(v,w)\notin\mathbb R$, 则称$v$与$w$没有关系.
@@ -3721,7 +3727,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 设$V=\{1\textup{班}, 2\textup{班},3\textup{班}\}$, $W=\{\textup{男队},\textup{女队}\}$
 则$V\times W$中有6个元素, 即
  \begin{align}
-   V\times W =\{(1\textup{班}, \textup{男队}), (2\textup{班}, \textup{男队}), (3\textup{班}, \textup{男队}), (1\textup{班}, \textup{女队}), (2\textup{班}, \textup{女队}), (3\textup{班}, \textup{女队})\}
+        V\times W =\{(1\textup{班}, \textup{男队}), (2\textup{班}, \textup{男队}), (3\textup{班}, \textup{男队}), (1\textup{班}, \textup{女队}), (2\textup{班}, \textup{女队}), (3\textup{班}, \textup{女队})\}
  \end{align}
  \end{example}
 其中, 每个元素是一代表队. 假设要进行一种双方对垒的循环赛, 则每一个赛局都是$V\times W$中的一个子集, 它构成了$V\times W$上的一个关系.
@@ -3738,7 +3744,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊关系}{1}
-在$\prod_{i=1}^n U_i$上的一个$n$元模糊关系$R$是指以$\prod_{i=1}^n U_i$上为论域的一个模糊集, 记为
+    在$\prod_{i=1}^n U_i$上的一个$n$元模糊关系$R$是指以$\prod_{i=1}^n U_i$上为论域的一个模糊集, 记为
 \begin{align}
     R=\int_{U_1\times U_2\times\cdots\times U_n} \mu_{R}\left(u_{1}, u_{2}, \cdots, u_{n}\right) /\left(u_{1}, u_{2}, \cdots, u_{n}\right)
 \end{align}
@@ -3783,7 +3789,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \end{align*}
 则$R_1$与$R_2$的合成是
 \begin{align}
-  R=R_{1} \circ R_{2}=\left[\begin{array}{ll}{0.5} & {0.5} \\ {0.7} & {0.8}\end{array}\right].
+    R=R_{1} \circ R_{2}=\left[\begin{array}{ll}{0.5} & {0.5} \\ {0.7} & {0.8}\end{array}\right].
 \end{align}
 其方法是把$R_1$的第$i$行元素分别与$R_2$的第$j$列的对应元素相比较, 两个数中取最小者, 然后再在所得的一组最小数中取最大的一个, 并以此数作为$R_1\circ R_2$的元素$R(i,j)$.
 \end{example}
@@ -3820,7 +3826,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{参考书}
 
-1. 神经网络的综合基础, 第二版,  国际知名大学原版教材——信息科学学科与电气工程学科系列, Simon Haykin(S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著的著作有50多本), 2001, 清华大学出版社/培生教育出版集团, 1-836. 
+1. 神经网络的综合基础, 第二版,  国际知名大学原版教材——信息科学学科与电气工程学科系列, Simon Haykin(S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著的著作有50多本), 2001, 清华大学出版社/培生教育出版集团, 1-836.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{作      业}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3847,7 +3853,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 
 %%%%%%---------------------------------
 \begin{think}
-  描述支持向量机的基本思想, 给出伪代码.
+    描述支持向量机的基本思想, 给出伪代码.
 \end{think}
 
 %%%%%%---------------------------------
@@ -3883,24 +3889,26 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{enumerate}
 \item 试将感知机学习算法用C语言编成程序, 并做下述的 $n$维随机矢量$\mbox{X}=[x_{1} ,x_{2} ,\cdots ,x_{n} ]^{T}$的二值分类的模拟实验：
 	\begin{enumerate}
-	\item 用程序产生M个均值为0, 方差为1的正态随机矢量（取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots ,M$；每个$x_{i} (k)$为服从$N(0,1)$分布的随机变量）. 要求产生三组矢量（分别取M$=$10,20,30）, 分别用每组矢量训练一个感知机模型. 对于每个训练矢量 $\mbox{X}(k)$, 给定其理想输出为 $d(k)=
+	\item 用程序产生M个均值为0, 方差为1的正态随机矢量(取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots ,M$; 每个$x_{i} (k)$为服从$N(0,1)$分布的随机变量). 要求产生三组矢量(分别取M$=$10,20,30), 分别用每组矢量训练一个感知机模型. 对于每个训练矢量 $\mbox{X}(k)$, 给定其理想输出为
+$d(k)=
 \left\{
 \begin{array}{*{20}c}
- {1\;,\;x_{2} (k)\ge 0} \hfill \\
- {0\;,\;x_{2} (k)<0} \hfill \\
+ 1\;,\;x_{2}(k)\ge 0 \\
+ 0\;,\;x_{2}(k)<0  \\
 \end{array}
-\right.$ . 在每组训练收敛后, 再产生30个新矢量, 用来检验所得到的感知机的分类性能. 对每一组结果要给出收敛时所用的迭代次数$K_{0}$, 收敛时的权矢量值$\mbox{W}(K_{0})$, 和检验时所达到的正确分类率$R$.
-	\item 取维数$n=5$, 做与（1）相同的模拟实验（ 仍产生$M=10,20,30$的三组正态随机矢量, 给出相应的结果. 在本题中, 对于每个5维训练矢量$\mbox{X}(k)$, 其理想输出$d(k)$为 $d(k)=
+\right.$
+在每组训练收敛后, 再产生30个新矢量, 用来检验所得到的感知机的分类性能. 对每一组结果要给出收敛时所用的迭代次数$K_{0}$, 收敛时的权矢量值$\mbox{W}(K_{0})$, 和检验时所达到的正确分类率$R$.
+	\item 取维数$n=5$, 做与(1)相同的模拟实验( 仍产生$M=10,20,30$的三组正态随机矢量, 给出相应的结果. 在本题中, 对于每个5维训练矢量$\mbox{X}(k)$, 其理想输出$d(k)$为 $d(k)=
 \left\{
 \begin{array}{*{20}c}
  1\;,\;\;x_{3}(k)\ge 0\\
  0\;,\;\;x_{3}(k)<0\\
 \end{array} \right.$.
 	\end{enumerate}
-\item[\textbullet] \textbf{提示 }: 产生正态随机数 $X\tilde N(0,1)$的方法：
+\item[\textbullet] \textbf{提示 }: 产生正态随机数 $X\tilde N(0,1)$的方法: 
 	\begin{enumerate}
 	\item 先产生在$(0, 1)$区间均匀分布的两个随机数 $U_{1}$ 和 $U_{2}$;
-	\item 令 $X_{1} =(-2\ln U_{1} )^{1/2}\sin (2\pi \,U_{2} )$, $X_{2} =(-2\ln U_{1} )^{1/2}\cos (2\pi \,U_{2} )$.
+	\item 令 $X_{1} =(-2\ln U_{1} )^{1/2}\sin (2\pi \,U_{2} )$, $X_{2} =(-2\ln U_{1} )^{1/2}\cos (2\pi \,U_{2})$.
 	\end{enumerate}
 \end{enumerate}
 则$X_{1} $ 和 $X_{2} $ 均为服从$N(0,1)$分布的正态随机数.
@@ -3909,13 +3917,13 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{custom}[explorecolor]{探索}
 \begin{enumerate}
-\item 在BP学习算法中, 若各单元均取为 Sigmoid函数, 则网络输出值必处于（0,1）之间. 为使输出值不限于（0,1）之间, 可选输出单元为线性函数（即$\phi(s)=s$）, 其它单元仍取为 Sigmoid函数. 试导出此时的BP学习算法公式.
+\item 在BP学习算法中, 若各单元均取为 Sigmoid函数, 则网络输出值必处于(0,1)之间. 为使输出值不限于(0,1)之间, 可选输出单元为线性函数(即$\phi(s)=s$), 其它单元仍取为 Sigmoid函数. 试导出此时的BP学习算法公式.
 	\begin{enumerate}
-	\item （1）已知用一个2层的NN可实现逻辑XOR运算. 试构造一个实现XOR运算的NN, 给出模型结构和各个 $w_{ji} $ 和 $\theta_{j} $ 值. （注: 在该NN中, 输入X $= \quad [x_{1} ,\;x_{2} ]^{T}$中各$x_{i} $取值为$+$1或-1, 各单元的非线性函数取为符号函数, 即$\phi(s)=Sgn(s)$）.
+	\item (1) 已知用一个2层的NN可实现逻辑XOR运算. 试构造一个实现XOR运算的NN, 给出模型结构和各个 $w_{ji} $ 和 $\theta_{j} $ 值. (注: 在该NN中, 输入X $= \quad [x_{1} ,\;x_{2} ]^{T}$中各$x_{i} $取值为$+$1或-1, 各单元的非线性函数取为符号函数, 即$\phi(s)=Sgn(s)$).
 	\end{enumerate}
 \end{enumerate}
-（2）奇偶检验问题可视为XOR问题的推广（由2输入到$n$输入的推广）: 若$n$个输入中有奇数个1, 则输出为1；若$n$个输入中有偶数个1, 则输出为0. 一个2层的NN可实现奇偶检验运算. 试构造一个实现这种运算的NN, 给出模型结构和各个
-$w_{ji} $ 和 $\theta_{j}$ 值. (注: 在该NN中, n为任意整数, 输入$X=[x_{1} , x_{2} ,\cdots, x_{n} ]^{T}$中各$x_{i}$取值为1或0, 各单元的非线性函数取为单位阶跃函数, 即$\phi (s)=U(s)$).
+(2) 奇偶检验问题可视为XOR问题的推广(由2输入到$n$输入的推广): 若$n$个输入中有奇数个1, 则输出为1；若$n$个输入中有偶数个1, 则输出为0. 一个2层的NN可实现奇偶检验运算. 试构造一个实现这种运算的NN, 给出模型结构和各个
+$w_{ji} $ 和 $\theta_{j}$ 值. (注: 在该NN中, $n$为任意整数, 输入$X=[x_{1} , x_{2} ,\cdots, x_{n} ]^{T}$中各$x_{i}$取值为1或0, 各单元的非线性函数取为单位阶跃函数, 即$\phi(s)=U(s)$).
 \end{custom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3927,7 +3935,7 @@ $w_{ji} $ 和 $\theta_{j}$ 值. (注: 在该NN中, n为任意整数, 输入$X=[x
 \item[\textbullet] \textbf{注： }要求: 列表给出训练收敛后的NN权值和所用的迭代次数;
 \item 给出训练收敛后的训练误差和检验误差, 及用训练集和检验集做输入时所得到的正确输出率；
 	\begin{enumerate}
-	   \item 给出NN的学习曲线（即$E(W(k))$随迭代次数k的变化曲线, 该结果应是用计算程序计算和打印出来的曲线, 要是用手画出的曲线）.
+	   \item 给出NN的学习曲线(即$E(W(k))$随迭代次数k的变化曲线, 该结果应是用计算程序计算和打印出来的曲线, 要是用手画出的曲线).
 	\end{enumerate}
 \end{enumerate}
 \end{custom}
@@ -3948,9 +3956,8 @@ R_{2}&=\left[\begin{array}{cc}{0.2} & {0.8} \\ {0.6} & {0.4} \\ {0.9} & {0.1}\en
     1. 实验目的
 
     理解和掌握博弈树的启发式搜索过程, 能够用某种程序语言建立一个简单的博弈系统.
-    2. 实验环境
-
-在微型计算机上, 任选一种编程语言.
+    
+    2. 实验环境: 微机上的编程语言(任选).
 
     3. 实验要求
 
