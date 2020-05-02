@@ -82,7 +82,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \section{浅层神经计算}
 神经计算(也叫浅层神经网络)是计算智能的重要基础和核心, 浅层神经网络是相对于深度等网络的一种对以前网络的叫法, 也是计算智能乃至智能科学技术的一个重要研究领域.
 
-神经网络是受生物神经元启发而构建的计算系统. 神经网络由许多独立的单元组成, 每个单元接收来自上一层单元的输入, 并将输出发送到下个单元(「单元」不一定是单独的物理存在; 
+神经网络是受生物神经元启发而构建的计算系统. 神经网络由许多独立的单元组成, 每个单元接收来自上一层单元的输入, 并将输出发送到下个单元(「单元」不一定是单独的物理存在;
 它们可以被认为是计算机程序的不同组成部分). 单元的输出通常通过取输入的加权和, 然后再通过某种简单的非线性处理来进行转型, 神经网络的关键特性是基于经验修改单元间的相关权重.
 
 \textcolor[rgb]{0,0,1}{常见误解---StuartRussell}
@@ -142,8 +142,8 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 
 \ding{173} 人脑神经系统的分布功能
 
-人脑神经系统的记忆和处理功能是有机的结合在一起的, 每个神经元既具有存储功能, 同时又具有处理能力. 从结构上看, 人脑神经系统又是一种分布式系统统. 
-人们通过对脑损坏病人所做的神经生理学研究, 没有发现大脑中的哪一部分可以决定其余所有各部分的活动, 也没有发现在大脑中存在有用于驱动和管理整个智能处理过程的任何中央控制部分. 
+人脑神经系统的记忆和处理功能是有机的结合在一起的, 每个神经元既具有存储功能, 同时又具有处理能力. 从结构上看, 人脑神经系统又是一种分布式系统统.
+人们通过对脑损坏病人所做的神经生理学研究, 没有发现大脑中的哪一部分可以决定其余所有各部分的活动, 也没有发现在大脑中存在有用于驱动和管理整个智能处理过程的任何中央控制部分.
 即, 人类大脑的各个部分是协同工作、相互影响的. 在大脑中, 不仅知识的存储是分散的, 而且其控制和决策也是分散的.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{人工神经网络的互连结构}
@@ -941,7 +941,7 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-离散Hopfield网络是在非线性动力学的基础上由若干基本神经元构成的一种单层全互连网络, 其任意神经元之间均有连接, 并且是一种对称连接结构. 
+离散Hopfield网络是在非线性动力学的基础上由若干基本神经元构成的一种单层全互连网络, 其任意神经元之间均有连接, 并且是一种对称连接结构.
 
 \begin{example}
 一个典型的离散 Hopfidld网络结构如图\ref{AI32fig201912022608}所示. 离散Hopfield网络模型是一个离散时间系统, 每个神经元只有0和1(或-1和1)两种状态, 任意神经元$i$和$j$之间的连接权值为$w_{ij}$. 由于神经元之间为对称连接, 且神经元自身无连接, 因此有
@@ -951,7 +951,7 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
   {w_{j i}}, & i \neq j \\
     {0}, &  i=j
     \end{array}\right.
-\end{align}  
+\end{align}
 \end{example}
 由该连接权值所构成的连接矩阵是一个零对角的对称矩阵. 在 Hopfidld网络中, 虽然神经元自身无连接, 但由于每个神经元都与其他神经元相连, 即每个神经元的输出都将通过突触连接权值传递给别的神经元, 同时每个神经元又都接受其他神经元传来的信息, 这样对每个神经元来说, 其输出经过其他神经元映射后又有可能反馈给自己, 因此Hopfield网络是一种反馈神经网络.
 
@@ -965,23 +965,25 @@ The original proof for this principle was given by George Cybenko in 1989, and i
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-最优剪枝极值学习机（OP-ELM）如图 \ref{OPELM20161021fig2}, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤.
-提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱找到}.
-如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量（添加的噪声变量没有在图上显示）时,拟合会变得松散和扩散.
-实际上, ELM的并没为这种情况设计. 本文的OP-ELM提出了一种三个步骤的方法来解决这个问题 , 简言之, 为了解决含噪声的问题, 需要给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
-首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于多输出情况, 根据它们在输出值大小对它们进行排序.
-然后, 用一个漏掉一个的准则来确定在最终的OP-ELM模型结构中需要保留多少个被分类的神经元.
-这里将不对\textbf{LARS algorithm}做详细的叙述, 其实现来自Lasso方法, 对于OP-ELM, 它提供了对隐藏神经元的排序方法,
-这是由于OP-ELM算法设计总的神经元和输出之间的关系是线性的.
+最优剪枝极值学习机（OP-ELM）如图 \ref{OPELM20161021fig2}所示, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤.
+提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱下载}.
+如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量(添加的噪声变量没有在图上显示)时,拟合会变得松散和扩散(ELM的并针对这种情况进行专门的设计).
+OP-ELM提出了一种三步骤解决问题的方法, 简言之, 为了解决含噪声的问题, 给ELM加一个含修剪策略的封装器, 之后增加了两个步骤.
+首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498}); 
+实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于这类多输出情况, 根据它们输出值的大小, 对它们进行排序.
+然后, 用LOO的准则来确定在最终的OP-ELM模型结构中需要保留的神经元.
+其实现来自Lasso方法, 这里将不对\textbf{LARS algorithm}做详细的叙述.
+由于OP-ELM算法设计中的神经元和输出之间的关系是线性的, OP-ELM对隐藏神经元的排序方法提供了支持.
 
-为了优化参数,(LOO)方法通常是一种代价高昂的方法, 因为它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值.
-在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于压LOO误差的计算细节见第4节). 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$,使得OP-ELM在计算上仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”ELM.
-通过使用一个{LARS}方法,这里是对回归问题的$L_1$约束.
-同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
-同时,由于在压力公式中执行的矩阵运算的性质(这些计算见第4节),决定保留的神经元的最终数量（通过{LOO criteria}索引{LOO criteria}）显示出潜在的不稳定性（数值）.
-本文提出的解决方案是在压力公式的计算中使用正则化.
+LOO优化参数方法通常是一种代价高昂的方法, 它需要在整个数据集（只除去一个样本）上训练模型, 并在此样本上对数据集的所有样本重复求值.
+在OP-ELM结构中, 隐藏层和输出层的结点是线性关系, LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于PRESS-LOO误差的计算细节见后). 
+通过使用一个LARS方法(这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使得OP-ELM在计算上仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”的ELM.
+同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合组合形式)惩罚项.
+同时, 由于在PRESS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量（通过LOO criteria索引LOO criteria）显示出潜在的不稳定性(数值).
+解决方案是在压力公式的计算中使用正则化.
+
 下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
-第4节中提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
+提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
 \begin{figure}[t]
     \begin{center}
     \includegraphics[scale=0.7]{OPELM20161021.PNG}
@@ -992,16 +994,16 @@ The original proof for this principle was given by George Cybenko in 1989, and i
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Tikhonov 正则化}\index{Tikhonov Regularization}
 Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用的正则化方法之一.
-在统计学上, 这种方法被称为岭回归, 在有多个独立发现的情况下, 它也被称为\textbf{Tikhonov–Miller 方法}、\textbf{Phillips–Twomey 方法}, 约束线性反演方法和线性正则化索引方法.
+在统计学上, 这种方法被称为岭回归, 有多个独立发现的版本, 它也被称为\textbf{Tikhonov–Miller 方法}、\textbf{Phillips–Twomey 方法}, 约束线性反演方法和线性正则化索引方法. \index{岭回归}
 它与针对非线性回归最小二乘问题的Levenberg-Marquardt算法有关.
 假设对于已知的矩阵$\bm A$和向量$\bm b$, 我们希望找到向量$\bm{x}$, 使得下式成立
 \begin{align}
-   \bm A\bm {x} =\bm {b}.
+    \bm A\bm {x} =\bm {b}.
 \end{align}
 
-上述问题的标准解方法是最小二乘线性回归. 然而, 如果没有$\bm x$满足等式,或者有多个$\displaystyle x$满足等式, 则解决方案不是唯一的, 该问题称为不适定问题.
-在这种情况下,普通最小二乘估计会导致方程组的超定(过拟合),或者更常见的是欠定(欠拟合).
-大多数现实世界的现象都具有向前方向的低通滤波器的效果,其中$A$将$\bm{x}$映射到$\bm{b}$.
+上述问题的标准解方法是最小二乘线性回归. 然而, 如果没有$\bm x$满足等式, 或者有多个$\displaystyle x$满足等式, 则解决方案不是唯一的, 该问题称为不适定问题.
+在这种情况下,普通最小二乘估计会导致方程组的超定(过拟合), 或者更常见的是欠定(欠拟合).
+大多数现实世界的现象都具有向前方向的低通滤波器的效果, 其中$A$将$\bm{x}$映射到$\bm{b}$.
 因此, 在求解逆问题时,逆映射用作高通滤波器, 具有放大噪声的不良倾向(特征值/奇异值在逆映射中最大, 而在正向映射中最小).
 此外, 普通的最小二乘法隐式地将重构版本$\bm{x}$的每个元素(在$A$的空空间中)置空, 而不允许将模型用作$\bm{x}$的前置.
 最小二乘法寻求最小化残差平方和, 其紧凑格式可写为
@@ -1010,31 +1012,35 @@ Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用�
 \end{align}
 其中$\left\|\cdot\right\|$是欧几里德范数. 为了得到具有期望性质的特定解, 对于适定的Tikhonov矩阵$\Gamma$, 可在最小化问题中包括正则化项：
 \begin{align}
-    \|\bm A\bm {x} -\bm {b} \|^{2}+\|\Gamma \bm {x} \|^{2}.
+    \|\bm A\bm {x} -\bm {b} \|^{2}+\|\Gamma \bm {x} \|^{2},
 \end{align}
-
 许多情况下, 该矩阵被选为恒等矩阵$(\Gamma=\alpha I)$, 优先选择具有较小范数的解; 这是熟知的$L_2$正则化方法 \cite{Ng2004-32636}.
-在其他情况下, 则可以使用\textbf{低通滤波算子}\index{lowpass operators}(例如,差分运算符或\textbf{加权傅里叶算子})来强制平滑.
+在其他情况下, 则可以使用\textbf{低通滤波算子}\index{lowpass operators}(例如, 差分运算符或\textbf{加权傅里叶算子})来强制平滑.
 这种正则化改进了问题的解, 从而使直接求得数值解成为可能. 由$\hat{x}$表示的显式解由以下公式给出：
 \begin{align}
     {\hat {x}}=(\bm A^{T}\bm A+\Gamma ^{T}\Gamma )^{-1}\bm A^{T}\bm {b}.
 \end{align}
 
-正则化的效果可以通过矩阵$\Gamma$的尺度变化. 对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
+正则化的效果可以通过调整矩阵$\Gamma$的尺度，使之变化. 对于$\Gamma=0$, 如果存在$（A^TA）^{-1}$, 则问题退化为未正则化的最小二乘解.
 除了线性回归之外, $L_2$正则化还用于许多上下文中, 例如使用logistic回归或支持向量机分类\cite{Fan2008LIBLINEAR}以及矩阵因式分解\cite{Guan2012Online}.
+\begin{remark}
 Tikhonov正则化是在许多不同的上下文中独立发明的. 从Andrey Tikhonov和David L. Phillips的工作中, 它在积分方程中的应用广为人知.
 有些作者使用术语“Tikhonov-Phillips正则化”. Arthur E.Hoerl和Manus Foster 采用统计方法, 阐述了有限维情况, 并将此方法解释为一个\textbf{Wiener-Kolmogorov（Kriging）滤波器}.
-在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}\index{岭回归}
+在Hoerl之后, 它在统计文献中被称为岭回归. \textbf{Generalized Tikhonov regularization}.\index{岭回归}  
+\end{remark}
 
 对于$\bm x$的一般多元正态分布和数据误差,可以应用变量转换来减少上述情况. 同样地, 可以寻找$\bm x$以最小化
 \begin{align}
     \|\bm A\bm x-\bm b\|_{P}^{2}+\|\bm x-\bm x_{0}\|_{Q}^{2}\,
 \end{align}
 其中, 我们使用$\left\|\bm x\right\|{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$（与Mahalanobis距离比较）.
-贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵.
-然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$（例如，\textbf{Cholesky 分解}）的因子分解给出, 并将其视为一个\textbf{whitening 滤波器}.
 
-这个广义问题有一个最优解$x^{}$, 可以用公式显式地求解
+\begin{remark}
+贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵.
+然后, 将Tikhonov矩阵作为矩阵$\displaystyle\bm Q=\Gamma^{T}\Gamma$（例如\textbf{Cholesky 分解}）的因子分解给出, 并将其视为一个\textbf{whitening 滤波器}.  
+\end{remark}
+
+这个广义问题有一个最优解$x^{*}$, 可以用公式显式地求解
 \begin{align}
     \bm x^{*}=(\bm A^{T}\bm P\bm A+\bm Q)^{-1}(\bm A^{T}\bm P\bm b+\bm Q\bm x_{0}).
 \end{align}
@@ -1045,7 +1051,7 @@ or equivalently
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TROP-ELM算法}\index{TROP-ELM}
 \textbf{TROP-ELM}: 基于LARS和Tikhonov正则化的双正则化ELM\cite{MichevanHeeswijk2011-30641}, 2011.
-图\ref{TROPEMLmodel20161021fig2}显示了建议的正则化OP-ELM（TROP-ELM）.
+图 \ref{TROPEMLmodel20161021fig2} 显示了建议的正则化OP-ELM（TROP-ELM）.
 \begin{figure}[H]
     \begin{center}
     \includegraphics[scale=0.7]{TROPEMLmodel20161021.PNG}
@@ -1085,9 +1091,7 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法�
     \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x^T y  }
        {1-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x_i^T}\right)^2
 \end{align}
-这是公式（18）的正规化结果.
-符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘.
-在算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
+这是公式（18）的正规化结果. 符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘. 算法2的步骤4中使用它, 因为它比标准矩阵乘积快.
 
 用SVD分解$\bm X$: $\bm X = \bm U\bm S\bm V^T$;
 
@@ -1107,10 +1111,11 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法�
 
 关联$\textup{MSE}^{\textup{TR-PRESS}}$ 和$\lambda$ 的最优值.
 
-全局来说, 该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数. 由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A、\bm B$和$\bm C$）, 所以此特定实现碰巧运行得非常快.
+全局来说, 该算法使用$\bm X$的SVD来避免计算问题,并在SVD计算伪逆时引入Tikhonov正则化参数. 
+由于在优化$\lambda$之前预先计算了效用矩阵（$\bm A$, $\bm B$和$\bm C$）, 所以此特定实现碰巧运行得非常快.
 在实际应用中,该算法中$\lambda$的优化是通过一种\textbf{Nelder–Mead最小化方法}来实现的,这种方法恰好在这个问题上收敛得非常快(Matlab中的fminsearch函数).
 通过使用这个修改版的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重,神经元已经使用$L_1$的惩罚进行了排序.
-图 \ref{TROPEMLmodel20161021fig2}是图的修改版本. 图 \ref{OPELM20161021fig2} 说明了\textbf{TROP-ELM}方法.
+图 \ref{TROPEMLmodel20161021fig2} 是图的修改版本. 图 \ref{OPELM20161021fig2} 说明了\textbf{TROP-ELM}方法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
 现在我们使用新的学习范式来训练RVFL网络.
@@ -1124,13 +1129,13 @@ Giryes等人[42]. 对这个开放问题给出一个可能的理论解释.
 为了解决这个问题, 随机化是一些学习算法的理想选择, 从而降低了计算成本. 训练前的算法需要随机初始化.
 现在我们再次访问RVFL. RVFL使用混合策略来训练整个网络. 在RVFL中, 输入层和增强节点之间的随机初始参数处理具有可分辨角度的良好输入样本, 旋转输出权重进一步处理剩余数据.
 RVFL网络是一种经典的单层前向神经网络, 其结构如图 \ref{RVFLNN181102Sys} 所示. RVFL随机初始化输入层和增强节点之间的所有权重和偏差, 然后这些参数在训练阶段不需要调整.
-图 \ref{RVFLNN181102Sys} 中红色实线代表的输出权重可以通过Moore-Penrose伪逆(\cite{paopillips1995-6471,IgelnikPao1995-6470})或岭回归(引用{Bishop2012-6469})来计算.
+图 \ref{RVFLNN181102Sys} 中红色实线代表的输出权重可以通过Moore-Penrose伪逆(\cite{paopillips1995-6471,IgelnikPao1995-6470})或岭回归(\cite{Bishop2012-6469})来计算.
 此外, 输入层和输出层之间的直接连接是防止RVFL网络过度拟合的一种有效而简单的正则化技术.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[tb]
 \centering
   \includegraphics[width=0.85\textwidth]{RVFL20181102Sys.PNG}
-  \caption{The architecture of the RVFL network.}
+  \caption{The architecture of the TROP-ELM.}
   \label{RVFLNN181102Sys}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1139,13 +1144,13 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
 \begin{enumerate}
     \item 二元分类:测试样品的预测标签由
 \begin{align}
-  \hat y = \textup{sign}(f_{test}(z))
+    \hat y = \textup{sign}(f_{\textup{test}}(z))
 \end{align}
-    \item 多类分类:我们采用一对多(OvA)策略来确定多类分类中的预测标签.设$f{test}^k（z）$为第k个输出节点的输出函数. 测试样品的预期标签由
+    \item 多类分类:我们采用一对多(O vs. A)策略来确定多类分类中的预测标签. 设$f{\textup{test}}^k（z）$为第$k$个输出节点的输出函数. 测试样品的预期标签由
 \begin{align}
-  \hat y = \arg \max_{ k \in 1,\cdots,m} f_{test}^k (z).
+    \hat y = \arg \max_{ k \in 1,\cdots,m} f_{\textup{test}}^k (z).
 \end{align}
-  \item  回归:预测值等于RVFL的输出函数$f——{{test}}（z）$
+  \item  回归:预测值等于RVFL的输出函数$f_{\textup{test}}(z)$
 \begin{align}
     \hat y = f_{test}(z).
 \end{align}
@@ -1169,9 +1174,9 @@ $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的�
 \end{align}
 从 \eqref{RVFL20181102eq10}, 我们注意到RVFL+最小化了$w$和$\tilde w$上的目标函数. 因此, 训练阶段RVFL+的分离超平面不仅取决于原始特征, 还取决于优先考虑的信息.
 此外, 与SVM+的原始模型相比 \cite{VAPNIK2009544}, RVFL+的修正函数是正的或负的.
-换句话说, RVFL+不考虑约束组$\zeta_i（\tilde{\bm h}, b, \phi（{\bm x}i））\geq 0（i=1, \cdots, N）$.
+换句话说, RVFL+不考虑约束组$\zeta_i(\tilde{\bm h}, b, \phi({\bm x}_i))\geq 0（i=1, \cdots, N）$.
 对于二值分类, RVFL+中的约束数目至少比SVM+少N个, 这使得RVFL+的优化约束要比SVM+的小得多.
-此外, 为了解决 \eqref{RVFL20181102eq10} 中的优化问题, 构造如下的Lagrangian函数$\mathscr L（\bm w, \tilde{\bm w}, \bm\lambda）$
+此外, 为了解决 \eqref{RVFL20181102eq10} 中的优化问题, 构造如下的Lagrangian函数$\mathscr L(\bm w, \tilde{\bm w}, \bm\lambda)$.
 \begin{align}
     \min\limits_{\bm w, \tilde{\bm w},\bm \lambda} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}-\sum_{i=1}^N  \bm \lambda_i(\bm h(\tilde {\bm x}_i){\bm w} -\bm y_i +{\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}),
 \end{align}
@@ -1191,7 +1196,7 @@ $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的�
 \begin{align}
     \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )\bm \lambda  = \bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T.  \label{RVFL20181102eq16}
 \end{align}
-再由 \eqref{RVFL20181102eq12} 和 \eqref{RVFL20181102eq16}, 得到RVFL+As的最后闭式解
+再由 \eqref{RVFL20181102eq12} 和 \eqref{RVFL20181102eq16}, 得到RVFL+的最后闭式解
 \begin{align}
     \bm  w =\bm H^T \left(\bm H \bm H^T  + \frac 1 \gamma \tilde{\bm H} \tilde{\bm H}^T \right )^{-1} \left(\bm Y - \frac {C \bm 1} {\gamma}\tilde{\bm H} \tilde{\bm H}^T \right ). \label{RVFL20181102eq17}
 \end{align}
@@ -1307,7 +1312,7 @@ TT2-RVFL 的输出模型如图 \ref{TensorRVFL20180927-2}:
 对于TT2-RVFL, $\bm Y$, $\mathcal X$ 和$\Omega$需要特别考虑, 以便和后件形成的张量方程相容. 下一节将介绍由三个变量组成的张量结构.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL} {TT2-RVFL}
-RVFL常使用 Radbas ($y = \exp(-s^2)$), Sine ($y = \textup{sine} (s)$), Sigmoid ($y = \frac 1 {1+e^{-s} } $)和Tribas($y = \max(1 - |s|, 0)$)这几类激活函数,其中 $s$ 和 $y$分别表示输入和输出变量.
+RVFL常使用 Radbas ($y = \exp(-s^2)$), Sinc ($y = \textup{sinc} (s)$), Sigmoid ($y = \frac 1 {1+e^{-s} } $)和Tribas($y = \max(1 - |s|, 0)$)这几类激活函数, 其中 $s$ 和 $y$分别表示输入和输出变量.
 对于TT2-RVFL, 增强节点使用了区间二型模糊集. RVFL的 Radbas激活函数被 推广成区间二型模糊集, 扩展后的 RVFL 使用了区间二型模糊集, 扩展后的激活函数简记为 IT2Radbas, 它是 \eqref{IT2TSKNM_mu1} 和 \eqref{IT2TSKNM_mu2} 的变种,  记为$\tilde g_i(\cdot)$, 可以用下面的式子表示为
  \begin{align}
   &\bar{g} _{i} (x_i)=\exp(-k_1 s^2),\label{IT2TSKNM_g1} \\
@@ -1371,10 +1376,10 @@ RVFL常使用 Radbas ($y = \exp(-s^2)$), Sine ($y = \textup{sine} (s)$), Sigmoid
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-当 \eqref{TensorRVFLEq09} 被用于解模糊化, 只用区间二型模糊集拓展随机向量函数链接网络, 也即,  只是扩展了原网络的增强节点为区间二型模糊集,  这种类型的网络记为IT2-RVFL.
+当式 \eqref{TensorRVFLEq09} 被用于解模糊化, 只用区间二型模糊集拓展随机向量函数链接网络, 也即,  只是扩展了原网络的增强节点为区间二型模糊集,  这种类型的网络记为IT2-RVFL.
 \end{remark}
 
-最后得到的 4阶张量$\Upphi \in \mathbb R^{N\times 2\times L \times 2} $ 是由前面提到的张量$\underline\Phi_{:,:,:,1} $和$\bar \Phi_{:,:,:,2} $构建出来的.
+最后得到的 4阶张量$\Upphi \in \mathbb R^{N\times 2\times L \times 2}$ 是由前面提到的张量$\underline\Phi_{:,:,:,1} $和$\bar \Phi_{:,:,:,2} $构建出来的.
 接下来, 张量$\Upphi$用$\mathcal A$来记,  这是由于经典的张量方程中经常使用$\mathcal A$表示张量方程的系数.
 
 基于张量的乘积运算, 得到的增强节点的权重矩阵 维数是$L \times 2$, 将TT2-RVFL的增强节点部分的权重矩阵记为
@@ -1389,7 +1394,7 @@ RVFL常使用 Radbas ($y = \exp(-s^2)$), Sine ($y = \textup{sine} (s)$), Sigmoid
 \end{align}
 TT2-RVFL 的输出可用下式表示
 \begin{align}
-  \bm Y=\alpha\mathcal A *_N \mathcal X+(1-\alpha)\bm H \bm \Omega, 0\leq \alpha\leq 1,\label{TensorRVFLEq08}
+    \bm Y=\alpha\mathcal A *_N \mathcal X+(1-\alpha)\bm H \bm \Omega, 0\leq \alpha\leq 1,\label{TensorRVFLEq08}
 \end{align}
 其中 $\alpha$是TT2-RVFL的平衡因子, $\mathcal A$是区间二型模糊激活函数的映射结果, $\mathcal X$是权重矩阵, $\bm Y=[\bm y\, \bm y]$, 从输入到增强节点的权重向量$\bm {a} _{i} \,(i=1,2,\cdots, L)$是随机生成的,
 使得 $\underline\Phi$, $\bar\Phi$不饱和; $\bm\Omega=[\bm \omega\, \bm \omega]$是待求的输入权重矩阵, $\bm H$ 是由输入样本构建的输入矩阵.
@@ -1424,7 +1429,7 @@ TT2-RVFL 的输出可用下式表示
 求解方程使用的偶数阶张量的 Moore-Penrose (M-P)逆在算法 \ref{T2RVFL3:alg1} 中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-方程$\mathcal A *_N \mathcal X = \mathcal Y$的解也是如下张量方程的解
+    方程$\mathcal A *_N \mathcal X = \mathcal Y$的解也是如下张量方程的解
 \begin{align}
     \mathcal A^T *_N\mathcal  A *_N \mathcal X = \mathcal A^T *_N \mathcal Y,
 \end{align}
@@ -1678,8 +1683,6 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
     神经进化是人工智能和机器学习领域的一个分支, 是一种机器学习技术, 它能够改进人工神经网络, 并且试图通过进化算法去寻找最优神经网络.
     具体而言, 就像大自然通过突变、交叉或移除一些潜在的遗传密码来提高大脑的功能一样, 人工神经网络通过进化算法能够产生越来越好的拓扑、权重和超参数.
 \end{mydef}
- 简单的说就是将进化的思想使用到神经网络参数优化的更迭中. 它使用基于群体的优化方法能够不断提高群体中每个神经网络的质量, 从而根据其要解决的问题生成越来越好的神经网络.
- 该种群中的每个个体的存储方式并不是复杂的神经网络, 而是存储为基因组. 基因组是一种简化的遗传表示, 可以映射到神经网络.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1687,6 +1690,8 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \caption{神经进化演化过程}
 \label{NetEvolving2020020401}
 \end{figure}
+简单的说就是将进化的思想使用到神经网络参数优化的更迭中. 它使用基于群体的优化方法能够不断提高群体中每个神经网络的质量, 从而根据其要解决的问题生成越来越好的神经网络.
+该种群中的每个个体的存储方式并不是复杂的神经网络, 而是存储为基因组. 基因组是一种简化的遗传表示, 可以映射到神经网络.
 
 进化计算主要包括一下四个分支:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1743,7 +1748,6 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
         进化是指在生物延续生存过程中, 逐渐适应其生存环境, 使得其品质不断得到改良的这种生命现象.
     \end{mydef}
     遗传和变异是生物进化的两种基本现象, 优胜劣汰、适者生存是生物进化的基本规律.
-
     达尔文的自然选择学说认为: 在生物进化中, 一种基因有可能发生变异而产生出另一种新的生物基因. 这种新基因将依据其与生存环境的适应性而决定其增殖能力. 一般情况下, 适应性强的基因会不断增多, 而适应性差的基因则会逐渐减少. 通过这种自然选择, 物种将逐渐向适应于生存环境的方向进化, 甚至会演变成为另一个新的物种, 而那些不适应于环境的物种将会逐渐被淘汰.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{进化计算的产生与发展}
@@ -2471,14 +2475,14 @@ $S_{24}$=11110\\
 有效的神经网络是能够进行有效的变异和重组人工神经网络的前提. 拥有强大表示能力的神经网络不用分析高度复杂的数据结构就能够快速的处理紧凑的遗传密码（compact genetic codes）.
 换句话说, 神经进化算法只在遗传编码上操作, 而不是在机器学习框架中复杂的数据结构上操作. 当然, 基因编码允许这两种表示之间存在映射关系. 基因组的这些有效的遗传表示被称为基因型（genotypes）, 而相应映射的神经网络被称为显型（phenotypes）, 这些术语来自遗传进化学. 这里将所有显型都限制为神经网络.
 
-基因编码一般可分为两个子类：直接编码和间接编码. 虽然还有第三类发展性编码, 但这种编码我们先忽略不计, 毕竟这两年也没啥进展. 直接编码表示神经网络的各个方面, 它们在遗传表示中显式编码（如图\ref{IndirectGencode2020020401}所示）. 直接编码直接在基因型中编码每个连接及其相应的权重, 但通过排除神经网络中的偏差和激活函数的可能性来限制搜索空间.
+基因编码一般可分为两个子类：直接编码和间接编码. 虽然还有第三类发展性编码, 但这种编码我们先忽略不计, 毕竟这两年也没啥进展. 直接编码表示神经网络的各个方面, 它们在遗传表示中显式编码（如图 \ref{IndirectGencode2020020401} 所示）. 直接编码直接在基因型中编码每个连接及其相应的权重, 但通过排除神经网络中的偏差和激活函数的可能性来限制搜索空间.
 这种直接编码可以表示任意的前馈和递归拓扑, 也能够产生最优的拓扑. 但“拓扑”太灵活的话, 粒度的搜索空间就会变得非常庞大. 因此需要设计良好的神经进化算法才能快速遍历该搜索空间.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.75\textwidth]{IndirectGencode2020020401.png}
-\caption{间接遗传编码}
-\label{IndirectGencode2020020401}
+    \centering
+    \includegraphics[width=0.75\textwidth]{IndirectGencode2020020401.png}
+    \caption{间接遗传编码}
+    \label{IndirectGencode2020020401}
 \end{figure}
 
 间接编码的功能是规定那些无法直接“翻译”成人工神经网络的自定义编码. 也就是说为了将基因型映射到神经网络, 需要一个由间接编码规定单独的“翻译”能力. 如果间接编码设计得当, 那么即使神经网络非常复杂, 也可以通过搜索空间实现有意义且快速的遍历.
@@ -2519,7 +2523,7 @@ $S_{24}$=11110\\
     在神经进化算法之前, NEAT算法（通过增强拓扑的进化神经网络, Evolving NN through Augmenting Topologies）利用直接编码在进行修改网络的拓扑结构, 包括新增节点和删除节点等操作时会产生交叉损失.
 \end{example}
 
-如图\ref{Crossovers2020020402}竞合公约问题（ competing-conventions problem）所示. 随后, NEAT算法提出了一种“历史标记”的方法, 该方法为每个突变提供了唯一的标识符, 从而最终实现了基因组的无损重组, 使其为神经进化算法提供了基准.
+如图 \ref{Crossovers2020020402} 竞合公约问题（ competing-conventions problem）所示. 随后, NEAT算法提出了一种“历史标记”的方法, 该方法为每个突变提供了唯一的标识符, 从而最终实现了基因组的无损重组, 使其为神经进化算法提供了基准.
 \end{remark}
 
 在总体优化循环中, 基于问题评估基因组似乎是最简单的. 但这一步骤确是非常重要, 不仅是能够指出潜在的改进和进步. 评估方法从根本上说是一个过程, 即将基因组映射到由其遗传编码规定的神经网络, 并将其应用于问题环境, 然后根据神经网络的表现计算适应值. 一些神经进化算法的评估过程还包括将神经网络加权训练的附加步骤, 虽然这种方法非常明智, 但只有当实际环境能够清晰反映基本信息才有用. 在整个评估过程中, 尽管确定适应度的方式完全取决于实际问题的具体情况, 但可以进行合理的修改.
@@ -2643,7 +2647,7 @@ P_{Q_i}(t)=\left [\begin{array}{cccc}\label{init_Qindividual}
 其中 $\otimes$为 两个向量的阿达马积, LB 和 UB分表为相应决策变量的下界和上界 . 上述表示方式能够保证结果寻优的可能性和种群的多样性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{量子BFA算法}
-接下俩介绍 QBFA 算法的流程(黄和赵2012).
+接下俩介绍 QBFA 算法的流程(2012).
 
 [步骤 0] 初始化参数 $N$, $N_b$, $\theta_{i\cdot}$, $N_c$, $N_s$, $N_{re}$, $N_{ed}$, $P_{ed}$, 和 $C_{QBFA}$.
 表 \ref{Para_QBFASys20150225} 列出了上述符号的具体含义.
@@ -2776,7 +2780,7 @@ c(x)=
 图 \ref{AdaptQBFA:fig1} 给出了自适应趋药阶段步长函数 $C_{IAQBFA}$, 其中 $\alpha=2$, $c_{\min}=6\textup{E-}3$, $k_1=1\textup{E-}2$, 且 趋药阶段步长公式为 (\ref{AdapchemCI}). 从图中能够看出, 曲线的形状较为类似且两种自适应步长在迭代初始阶段的下降速度快于后期, 而(\ref{IAQBFA})式的自适应步长在迭代初期的下降速度快于式 (\ref{AdapchemCI}) 的速度, 后期正好相反.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{适应值自适应步长设计}
-文 (Dasgupta et al. 2009)的分析揭示出 将趣药阶段的适应值作为一个因素加以考虑, 以细菌的适应值定义的自适应步长函数表现好于固定步长情形. 当细菌靠近最优解, 趣药阶段的自适应步长函数应该较小. 本节, 基于式(\ref{IAQBFA0}) 和(\ref{IAQBFA})定义的趣药阶段自适应步长, 引入了基于适应值的趣药阶段自适应步长函数. 趣药阶段的自适应步长函数定义如下
+文 (Dasgupta et al. 2009)的分析揭示出 将趣药阶段的适应值作为一个因素加以考虑, 以细菌的适应值定义的自适应步长函数表现好于固定步长情形. 当细菌靠近最优解, 趣药阶段的自适应步长函数应该较小. 基于式(\ref{IAQBFA0}) 和(\ref{IAQBFA})定义的趣药阶段自适应步长, 引入了基于适应值的趣药阶段自适应步长函数. 趣药阶段的自适应步长函数定义如下
 \begin{align}\label{FAQBFA}
 C_{FAQBFA}
  =
@@ -3563,7 +3567,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{remark}
 \ding{172} 模糊集$F$完全是由隶属函数$\mu_{F}$来刻画的, 把$U$中的每一个元素$u$都映射为$[0, 1]$上的一个值$\mu_F(x)$ .
 
-\ding{173} $\mu_F(u)$的值表示$u$隶属于$F$的程度, 其值越大, 表示$u$隶属于$F$的程度越高. 当$\mu_F(u)$仅取0和1时, 模糊集$F$便退化为一个普通集合.
+\ding{173} \,$\mu_F(u)$的值表示$u$隶属于$F$的程度, 其值越大, 表示$u$隶属于$F$的程度越高. 当$\mu_F(u)$仅取0和1时, 模糊集$F$便退化为一个普通集合.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{模糊集及其运算}
@@ -3816,9 +3820,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{参考书}
 
-1. 神经网络的综合基础, 第二版,  国际知名大学原版教材——信息科学学科与电气工程学科系列, Simon Haykin, 2001, 清华大学出版社/培生教育出版集团, 1-836.
-
-S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著的著作有50多本.
+1. 神经网络的综合基础, 第二版,  国际知名大学原版教材——信息科学学科与电气工程学科系列, Simon Haykin(S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著的著作有50多本), 2001, 清华大学出版社/培生教育出版集团, 1-836. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{作      业}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3850,20 +3852,20 @@ S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著�
 
 %%%%%%---------------------------------
 \begin{think}
-  试解释强化学习模型及与其他机器学习方法的异同.
+    试解释强化学习模型及与其他机器学习方法的异同.
 \end{think}
 %%%%%%---------------------------------
 \begin{think}
-  什么是Q学习?它的基本原理是什么?
+    什么是Q学习?它的基本原理是什么?
 \end{think}
 %%%%%%---------------------------------
 \begin{think}
-  说明遗传算法的构成要素,给出遗传算法流程图.
+    说明遗传算法的构成要素,给出遗传算法流程图.
 \end{think}
 
 %%%%%%---------------------------------
 \begin{think}
-  简述蚁群算法的原理,用蚁群算法求解旅行商问题.
+    简述蚁群算法的原理,用蚁群算法求解旅行商问题.
 \end{think}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -3901,7 +3903,7 @@ S. Haykin 是一位物理、数学、信号处理和通信的科学家, 编著�
 	\item 令 $X_{1} =(-2\ln U_{1} )^{1/2}\sin (2\pi \,U_{2} )$, $X_{2} =(-2\ln U_{1} )^{1/2}\cos (2\pi \,U_{2} )$.
 	\end{enumerate}
 \end{enumerate}
-则$X_{1} $ 和 $X_{2} $ 均为服从$ N(0,1)$分布的正态随机数.
+则$X_{1} $ 和 $X_{2} $ 均为服从$N(0,1)$分布的正态随机数.
 \end{custom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3925,7 +3927,7 @@ $w_{ji} $ 和 $\theta_{j}$ 值. (注: 在该NN中, n为任意整数, 输入$X=[x
 \item[\textbullet] \textbf{注： }要求: 列表给出训练收敛后的NN权值和所用的迭代次数;
 \item 给出训练收敛后的训练误差和检验误差, 及用训练集和检验集做输入时所得到的正确输出率；
 	\begin{enumerate}
-	\item 给出NN的学习曲线（即$E(W(k))$随迭代次数k的变化曲线, 该结果应是用计算程序计算和打印出来的曲线, 要是用手画出的曲线）.
+	   \item 给出NN的学习曲线（即$E(W(k))$随迭代次数k的变化曲线, 该结果应是用计算程序计算和打印出来的曲线, 要是用手画出的曲线）.
 	\end{enumerate}
 \end{enumerate}
 \end{custom}
@@ -3935,11 +3937,8 @@ $w_{ji} $ 和 $\theta_{j}$ 值. (注: 在该NN中, n为任意整数, 输入$X=[x
 设有如下两个模糊关系:
 \begin{align*}
 R_{1}&=\left[
-\begin{array}{ccc}{0.3} & {0.7} & {0.2} \\ {1} & {0} & {0.4} \\ {0} & {0.5} & {1}\end{array}
-\right]\\
-R_{2}&=\left[
-\begin{array}{cc}{0.2} & {0.8} \\ {0.6} & {0.4} \\ {0.9} & {0.1}
-\end{array}\right]
+\begin{array}{ccc}{0.3} & {0.7} & {0.2} \\ {1} & {0} & {0.4} \\ {0} & {0.5} & {1}\end{array}\right]\\
+R_{2}&=\left[\begin{array}{cc}{0.2} & {0.8} \\ {0.6} & {0.4} \\ {0.9} & {0.1}\end{array}\right]
 \end{align*}请写出$R_1$与$R_2$的合成$R_1\circ R_2$.
 \end{custom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
