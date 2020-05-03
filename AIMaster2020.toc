@@ -505,6 +505,7 @@
 \contentsline {subsubsection}{\numberline {7.9.1.3}卷积神经网络的层结构}{462}{subsubsection.7.9.1.3}% 
 \contentsline {subsubsection}{\numberline {7.9.1.4}激活函数和层范数}{463}{subsubsection.7.9.1.4}% 
 \contentsline {subsection}{\numberline {7.9.2}CNN的应用}{477}{subsection.7.9.2}% 
+\contentsline {subsubsection}{\numberline {7.9.2.1}CNN解释器在线交互可视化工具}{477}{subsubsection.7.9.2.1}% 
 \contentsline {subsection}{\numberline {7.9.3}卷积编译码网络学习语义图形实现水稻自动除草}{478}{subsection.7.9.3}% 
 \contentsline {subsection}{\numberline {7.9.4}图卷积神经网络}{481}{subsection.7.9.4}% 
 \contentsline {subsection}{\numberline {7.9.5}循环神经网络(Recurrent Neural Networks, RNN)}{486}{subsection.7.9.5}% 
