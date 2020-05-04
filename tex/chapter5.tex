@@ -760,7 +760,7 @@ $x_1$	&$x_2$	&$x_1$ {\footnotesize XOR} $x_2$	&$w_1\times x_1+ w_2\times x_2-\th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{反向传播(BP)模型}
-误差反向传播(Error Back Propagation)网络, 通常简称为BP(Back Propagation)网络, 是由美国加州大学的鲁梅尔哈特和麦克莱兰在研究并行分布式信息处理所使用的方法, 探索人类认知微结构的过程中, 于1985年提出的一种网络模型.
+误差反向传播 (Error Back Propagation) 网络, 通常简称为BP (Back Propagation) 网络, 是由美国加州大学的鲁梅尔哈特和麦克莱兰在研究并行分布式信息处理所使用的方法, 探索人类认知微结构的过程中, 于1985年提出的一种网络模型.
 BP网络的网络拓扑结构是多层前向网络, 如图 \ref{Tu9120100516} 所示.
 \begin{remark}
     在BP网络中, 同层节点之间不存在相互连接, 层与层之间多采用全互连方式, 且各层的连接权值可调. BP网络实现了明斯基的多层网络的设想, 是当今神经网络模型中使用最广泛的一种.
@@ -1078,11 +1078,11 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 
 6: 优化误差$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
 
-这种方法的主要缺点在于在计算中使用伪逆(在\textbf{Moore–Penrose sense}中), 如果数据集$\bm X$不是全秩,则可能导致数值不稳定性. 不幸的是, 现实世界中的数据集经常出现这种情况. 下面的方法对原始的计算提出了两个改进: 正则化和快速矩阵计算.
+这种方法的主要缺点在于在计算中使用伪逆(在\textbf{Moore–Penrose}中), 如果数据集$\bm X$不是全秩,则可能导致数值不稳定性. 不幸的是, 现实世界中的数据集经常出现这种情况. 下面的方法对原始的计算提出了两个改进: 正则化和快速矩阵计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Tikhonov正则化的PRESS (TR-PRESS)}
 Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(VD)方法计算PRESS的统计结果比传统的伪逆方法更好.
-在同一篇论文中,我们提出了Allen's PRESS的一个推广, 即广义交叉验证(GCV)方法, 它在技术上优于原始的方法,因为它可以处理数据定义非常糟糕的情况, 如果除对角线项外,所有的$X$项都是0.
+在同一篇论文中, 给出了提出了Allen's PRESS的一个推广, 即广义交叉验证(GCV)方法, 它在技术上优于原始的方法, 因为它可以处理数据定义非常糟糕的情况, 如果除对角线项外,所有的$X$项都是0.
 
 实际上, 从我们的实验来看, 虽然GCV具有无可替代的优越性, 和原始的PRESS和Tikhonov正则化的PRESS相比, 它会导致计算时间陡增. 算法1以矩阵形式给出了用于确定$\textup{MSE}^{\textup{TR-PRESS}}$的计算步骤
 \begin{align}
@@ -1156,7 +1156,7 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
 
 按照 \cite{VAPNIK2009544} 中的SVM+公式, 我们可以将RVFL+写成
 \begin{align}
-    &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2 \|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i))\notag\\
+    &\min\limits_{{\bm w},\tilde {\bm w}} \frac 1 2 \|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N \zeta_i (\tilde {\bm w}, {\tilde h}({\tilde {\bm x}}_i)),\notag\\
     &s.t.\,\, \bm h(\tilde x_i){\bm w} = \bm y_i - \zeta_i (\tilde {\bm w}; {\tilde h}({\tilde {\bm x}}_i)), \forall \leq i \leq  N.\label{RVFL20181102eq8}
 \end{align}
 其中$\gamma$是正则化系数. 与$\bm h(\bm x_i)$类似, ${\tilde{\bm h}}({\tilde{\bm x_r}}i)$也是与特权功能${\tilde{\bm x}}i$相对应的增强层输出向量, 可以用相同的方式计算.
@@ -2026,7 +2026,7 @@ f(x)=
 
 \item 轮盘赌选择: 轮盘赌选择法又被称为转盘赌选择法或轮盘选择法. 在这种方法中, 个体被选中的概率取决于该个体的相对适应度. 而相对适应度的定义为:
 \begin{align}
-  P\left(x_{i}\right)=\frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f\left(x_{j}\right)}
+  P\left(x_{i}\right)=\frac{f\left(x_{i}\right)}{\sum_{j=1}^{N} f\left(x_{j}\right)},
 \end{align}
 其中, $P(x_i)$是个体$x_i$的相对适应度, 即个体$x_i$被选中的概率; $f(x_i)$是个体$x_i$的原始适应度; 是种群的累加适应度.
 \end{itemize}
