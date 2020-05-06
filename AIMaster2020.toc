@@ -400,15 +400,15 @@
 \contentsline {paragraph}{极小化问题}{332}{paragraph*.348}% 
 \contentsline {paragraph}{极大化问题}{332}{paragraph*.349}% 
 \contentsline {section}{\numberline {5.7}量子细菌觅食算法}{346}{section.5.7}% 
-\contentsline {subsection}{\numberline {5.7.1}自适应步长模型——BFA 模型}{347}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.1}自适应步长模型——BFA 模型}{346}{subsection.5.7.1}% 
 \contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{347}{subsection.5.7.2}% 
-\contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{348}{subsection.5.7.3}% 
+\contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{347}{subsection.5.7.3}% 
 \contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{349}{subsection.5.7.4}% 
-\contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{351}{subsection.5.7.5}% 
+\contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{350}{subsection.5.7.5}% 
 \contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{352}{subsection.5.7.6}% 
 \contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{353}{subsection.5.7.7}% 
 \contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{355}{subsection.5.7.8}% 
-\contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{356}{subsection.5.7.9}% 
+\contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{355}{subsection.5.7.9}% 
 \contentsline {subsubsection}{\numberline {5.7.9.1}经典测试函数}{356}{subsubsection.5.7.9.1}% 
 \contentsline {subsection}{\numberline {5.7.10}测试函数结果}{357}{subsection.5.7.10}% 
 \contentsline {section}{\numberline {5.8}模糊计算}{363}{section.5.8}% 

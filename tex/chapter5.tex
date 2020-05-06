@@ -277,7 +277,7 @@ $\bullet$ 第二, 计算智能是一种以模型(计算模型、数学模型)为
 \node[below](axisx) at (5.3,-6) {$x$};
 \node[left,xshift=0.4cm,yshift=0.2cm](axisy) at (2.05,-2.5) {$f(\theta)$};
 \end{tikzpicture}
-\caption{MP神经元模型}
+\caption{激活函数}
 \label{AI32fig2604}
 \end{center}
 \end{figure}
@@ -2224,8 +2224,8 @@ f(x)=
 其中的二进制串$s$对应着变量$x$的值. 根据此函数, 初始种群中各个个体的适应值及其所占比例如表 \ref{AI_table2019112802} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[H]
-\vspace{-0.4cm}
 \caption{初始种群情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2238,7 +2238,7 @@ $S_{04}$&	10010&	18&	324&	27.41&	100&	1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112802}
+\label{AI_table2019112802}\vspace{-0.4cm} 
 \end{table}
 可以看出, 在4个个体中$S_{03}$的适应值最大, 是当前最佳个体.
 
@@ -2247,8 +2247,8 @@ $S_{04}$&	10010&	18&	324&	27.41&	100&	1\\
 假设采用轮盘赌方式选择个体, 且依次生成的4个随机数(相当于轮盘上指针所指的数)为0.85、0.32、0.12和0.46, 经选择后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{初始种群情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
 \hline
@@ -2259,7 +2259,7 @@ $S_{04}$&	10010&	18&	324&	27.41&	100&	1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112803}
+\label{AI_table2019112803}\vspace{-0.4cm} 
 \end{table}
 其中, 染色体11001在种群中出现了2次, 而原染色体01000则因适应值太小而被淘汰.
 
@@ -2270,8 +2270,8 @@ $S_{04}$&	10010&	18&	324&	27.41&	100&	1\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{初始种群的交叉情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2283,14 +2283,14 @@ $S_{04}$	&11001&	S03&	N	&11001	&625\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112804}
+\label{AI_table2019112804}\vspace{-0.4cm} 
 \end{table}
 
 可见, 经交叉后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{种群情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
 \hline
@@ -2300,7 +2300,7 @@ $S_{04}$	&11001&	S03&	N	&11001	&625\\
     $S_{04}$=11001\\
 \hline
 \end{tabular}
-\end{center}
+\end{center}\vspace{-0.4cm} 
 \end{table}
 
  (6) 变异
@@ -2308,8 +2308,8 @@ $S_{04}$	&11001&	S03&	N	&11001	&625\\
 变异概率$P_m$一般都很小, 假设本次循环中没有发生变异, 则变异前的种群即为进化后所得到的第1代种群. 即:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{种群情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
 \hline
@@ -2319,15 +2319,15 @@ $S_{04}$	&11001&	S03&	N	&11001	&625\\
     $S_{14}$=11001\\
 \hline
 \end{tabular}
-\end{center}
+\end{center}\vspace{-0.4cm} 
 \end{table}
 
 然后, 对第1代种群重复上述(4)-(6)的操作.
 对第1代种群, 同样重复上述(4)-(6)的操作. 其选择情况如表\ref{AI_table2019112807}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{第1代种群的选择情况表}
+\vspace{-0.6cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2340,14 +2340,14 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112807}
+\label{AI_table2019112807}\vspace{-0.4cm} 
 \end{table}
 其中若假设按轮盘赌选择时依次生成的4个随机数为0.14、0.51、0.24和0.82, 经选择后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
-    \caption{种群情况表}
-    \begin{center}
+\caption{种群情况表}
+\vspace{-0.6cm}   
+\begin{center}
     \begin{tabular} {lccccccccc}
     \hline
     S11=10001\\
@@ -2356,16 +2356,16 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
         $S_{14}$=11001\\
     \hline
     \end{tabular}
-    \end{center}
+    \end{center}\vspace{-0.4cm} 
 \end{table}
 可以看出, 染色体11010被选择了2次, 而原染色体01101则因适应值太小而被淘汰.
 
 对第1代种群, 其交叉情况如表 \ref{AI_table2019112808} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
-    \caption{第1代种群的交叉情况表}
-    \begin{center}
+\caption{第1代种群的交叉情况表}
+\vspace{-0.4cm}    
+\begin{center}
     \begin{tabular} {lccccccccc}
       \hline
     编号	&个体串(染色体)&	交叉对象&	交叉位&	子代&	适应值\\
@@ -2377,13 +2377,13 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
     \hline
     \end{tabular}
     \end{center}
-    \label{AI_table2019112808}
+    \label{AI_table2019112808}\vspace{-0.4cm} 
 \end{table}
 可见, 经杂交后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
-    \caption{种群情况表}
+\caption{种群情况表}
+    \vspace{-0.4cm}
     \begin{center}
     \begin{tabular} {lccccccccc}
     \hline
@@ -2393,7 +2393,7 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
     $S_{14}$=11010\\
     \hline
     \end{tabular}
-    \end{center}
+    \end{center}\vspace{-0.4cm} 
 \end{table}
 可以看出, 第3位基因均为0, 已经不可能通过交配达到最优解. 这种过早陷入局部最优解的现象称为早熟. 为解决这一问题, 需要采用变异操作.
 
@@ -2401,6 +2401,7 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
 \caption{第1代种群的变异情况表}
+\vspace{-0.4cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2413,13 +2414,13 @@ $S_{14}$&	11010&	Y&-	    &11110&	900\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112809}
+\label{AI_table2019112809}\vspace{-0.4cm} 
 \end{table}
 它是通过对$S_{14}$的第3位的变异来实现的. 变异后所得到的第2代种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{种群情况表}
+\vspace{-0.4cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
 \hline
@@ -2429,14 +2430,14 @@ $S_{23}$=11001\\
 $S_{24}$=11110\\
 \hline
 \end{tabular}
-\end{center}
+\end{center}\vspace{-0.4cm} 
 \end{table}
 接着, 再对第2代种群同样重复上述(4)-(6)的操作:
 对第2代种群, 同样重复上述(4)-(6)的操作. 其选择情况如表 \ref{AI_table2019112810} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{第2代种群的选择情况表}
+\vspace{-0.4cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2449,13 +2450,13 @@ $S_{24}$ &11110 &30	&900	&31.84&	100&1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112810}
+\label{AI_table2019112810}\vspace{-0.4cm} 
 \end{table}
 对于第2代种群, 其交叉情况如表\ref{AI_table2019112810}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{第2代种群的选择情况表}
+\vspace{-0.4cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
   \hline
@@ -2468,14 +2469,14 @@ $S_{24}$&	11110&	   & S23	&4	&11111&	961\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112810}
+\label{AI_table2019112810}\vspace{-0.4cm} 
 \end{table}
 这时, 函数的最大值已经出现, 其对应的染色体为11111, 经解码后可知问题的最优解是在点$x=31$处. 求解过程结束.
 其中若假设按轮盘赌选择时依次生成的4个随机数为0.42、0.15、0.59和0.91, 经选择后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [H]
-\vspace{-0.4cm}
 \caption{种群情况表}
+\vspace{-0.4cm}
 \begin{center}
 \begin{tabular} {lccccccccc}
 \hline
@@ -2485,7 +2486,7 @@ $S_{23}$=11001\\
 $S_{24}$=11110\\
 \hline
 \end{tabular}
-\end{center}
+\end{center}\vspace{-0.4cm} 
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
@@ -2503,7 +2504,7 @@ $S_{24}$=11110\\
 \centering
 \includegraphics[width=0.85\textwidth]{GenerationElvovlilng2020020401.png}
 \caption{典型的代际神经进化过程图解}
-\label{GenerationElvovlilng2020020401}
+\label{GenerationElvovlilng2020020401}\vspace{-0.4cm} 
 \end{figure}
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
