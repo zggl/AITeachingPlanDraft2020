@@ -2153,7 +2153,7 @@ f(x)=
   &A'= 20\,\, 16\,\,  19\,\,  12\,\,  21\,\,  30\\
   &B'= 36\,\,  25\,\,  38\,\,  32\,\,  18\,\,  26
 \end{align}
-
+\vspace{-0.3cm}
 \end{example}
 
  (3) 变异操作
@@ -2182,6 +2182,7 @@ f(x)=
 \begin{align}
     C'= 20\,  12 \, 16 \, 19\,  21\,  30
 \end{align}
+\vspace{-0.3cm}
 \end{example}
 
 (II) 基于次序的变异
@@ -2194,6 +2195,7 @@ f(x)=
 \begin{align}
     D'= 20\,  19\,  16\,  12 \, 21 \, 30
 \end{align}
+\vspace{-0.3cm}
 \end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2346,7 +2348,8 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112807}\vspace{-0.4cm}
+\label{AI_table2019112807}
+\vspace{-0.4cm}
 \end{table}
 其中若假设按轮盘赌选择时依次生成的4个随机数为0.14、0.51、0.24和0.82, 经选择后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2362,7 +2365,8 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
         $S_{14}$=11001\\
     \hline
     \end{tabular}
-    \end{center}\vspace{-0.4cm}
+    \end{center}
+    \vspace{-0.4cm}
 \end{table}
 可以看出, 染色体11010被选择了2次, 而原染色体01101则因适应值太小而被淘汰.
 
@@ -2383,7 +2387,8 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
     \hline
     \end{tabular}
     \end{center}
-    \label{AI_table2019112808}\vspace{-0.4cm}
+    \label{AI_table2019112808}
+    \vspace{-0.4cm}
 \end{table}
 可见, 经杂交后得到的新的种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2399,7 +2404,8 @@ $S_{14}$	&11001	&25	&625	&35.53	&100	&1\\
     $S_{14}$=11010\\
     \hline
     \end{tabular}
-    \end{center}\vspace{-0.4cm}
+    \end{center}
+    \vspace{-0.4cm}
 \end{table}
 可以看出, 第3位基因均为0, 已经不可能通过交配达到最优解. 这种过早陷入局部最优解的现象称为早熟. 为解决这一问题, 需要采用变异操作.
 
@@ -2420,7 +2426,8 @@ $S_{14}$&	11010&	Y&-	    &11110&	900\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112809}\vspace{-0.4cm}
+\label{AI_table2019112809}
+\vspace{-0.4cm}
 \end{table}
 它是通过对$S_{14}$的第3位的变异来实现的. 变异后所得到的第2代种群为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2456,7 +2463,8 @@ $S_{24}$ &11110 &30	&900	&31.84&	100&1\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112810}\vspace{-0.4cm}
+\label{AI_table2019112810}
+\vspace{-0.4cm}
 \end{table}
 对于第2代种群, 其交叉情况如表\ref{AI_table2019112810}所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2475,7 +2483,8 @@ $S_{24}$&	11110&	   & S23	&4	&11111&	961\\
 \hline
 \end{tabular}
 \end{center}
-\label{AI_table2019112810}\vspace{-0.4cm}
+\label{AI_table2019112810}
+\vspace{-0.4cm}
 \end{table}
 这时, 函数的最大值已经出现, 其对应的染色体为11111, 经解码后可知问题的最优解是在点$x=31$处. 求解过程结束.
 其中若假设按轮盘赌选择时依次生成的4个随机数为0.42、0.15、0.59和0.91, 经选择后得到的新的种群为:
@@ -2492,7 +2501,8 @@ $S_{23}$=11001\\
 $S_{24}$=11110\\
 \hline
 \end{tabular}
-\end{center}\vspace{-0.4cm}
+\end{center}
+\vspace{-0.4cm}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
@@ -2510,7 +2520,8 @@ $S_{24}$=11110\\
 \centering
 \includegraphics[width=0.85\textwidth]{GenerationElvovlilng2020020401.png}
 \caption{典型的代际神经进化过程图解}
-\label{GenerationElvovlilng2020020401}\vspace{-0.4cm}
+\label{GenerationElvovlilng2020020401}
+\vspace{-0.4cm}
 \end{figure}
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2589,8 +2600,7 @@ $S_{24}$=11110\\
 在此基础上, 该算法还被用来建立区间二型模糊逻辑系统并用于解决优化火电厂脱硝效率问题.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{自适应步长模型——BFA 模型}\label{TPMsec1}
-
-BFA 算法包括趋药阶段、直行阶段、蠕行阶段和再生及淘汰驱散四个阶段 . 在一趋药阶段迭代过程中次, 第$i$个细菌从第 $j$次到  $j+1$次运动的方式能够有下面的公式描述
+    BFA 算法包括趋药阶段、直行阶段、蠕行阶段和再生及淘汰驱散四个阶段 . 在一趋药阶段迭代过程中次, 第$i$个细菌从第 $j$次到  $j+1$次运动的方式能够有下面的公式描述
 \begin{align}\label{AdapchemCI}
     \theta^{i}(j+1,k,l)=\theta^{i}(j,k,l)+C(i)\frac{\Delta(i)}{\sqrt{\Delta^{T}(i)\Delta(i)}},
 \end{align}
@@ -3178,7 +3188,7 @@ FAQBFA& $\bm{1.69}$ (2.46 ) \\
 \begin{table*}[htb]
 \caption{在CEC05基准测试函数上30算法结果}
 \vspace{0.5em}\centering
-\begin{tabularx}{0.95\textwidth}{p{1cm}p{1cm}p{1.6cm}p{1.5cm}p{1.75cm}p{1.75cm}p{1.5cm}}
+\begin{tabularx}{0.9\textwidth}{p{1cm}p{1cm}p{1.6cm}p{1.5cm}p{1.75cm}p{2.15cm}p{1.5cm}}
 \hline
 函数&  &  IBFA &  FIBFA&  QBFA&  IAQBFA &FAQBFA\\
 \midrule
@@ -3603,8 +3613,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{mydef}{模糊集}{1}
 设$U$是给定论域,   是把任意$u\in U$映射为$[0, 1]$上某个实值的函数, 即
 \begin{align}
-    U&\rightarrow [0, 1]\\
-    u&\rightarrow \mu_F(u),
+    U\rightarrow [0, 1], u\rightarrow \mu_F(u),
 \end{align}
 则称 $ \mu_F(x)$为定义在$U$上的一个隶属函数, 由   (对所有    )所构成的集合$F$称为$U$上的一个模糊集, 称为$u$对$F$的隶属度.
 \end{mydef}
@@ -3632,7 +3641,8 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{align}
     F=\{ 1, 0.8, 0.4, 0.1, 0\}.
 \end{align}
-说明其含义.
+
+\textbf{模糊集的含义}:
 
 (1) 离散且为有限论域的表示方法
 
@@ -3680,8 +3690,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 扎德以年龄为论域, 取$U=[0, 100]$, 给出了“年轻”与“年老”这两的模糊概念的隶属函数
 \begin{align}
 \begin{array}{ll}
-{\mu_{\textup{老}}=\frac{(l)}
-{* \xi}(u)=\left\{\begin{array}{ll}{0,} & { 0 \leq u \leq 50} \\
+{\mu_{\textup{老}}(u)=\left\{\begin{array}{ll}{0,} & { 0 \leq u \leq 50} \\
 {\left[1+\left(\frac{5}{u-50}\right)^{2}\right]^{-1},} & {50<u \leq 100}\end{array}\right.} \\
  {\mu_{\textup{年轻}}(u)=\left\{\begin{array}{ll}{1,} & {0 \leq u \leq 25} \\
  {\left[1+\left(\frac{u-25}{5}\right)^{2}\right]^{-1},} & { 25<4 \leq 100}\end{array}\right.}
@@ -3731,16 +3740,17 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设$U=\{1,2,3\}$, $F$和$G$分别是$U$上的两个模糊集, 即
- \begin{align}
+ \begin{align*}
      F&=\{\textup{小}\}=1/1+0.6/2+0.1/3,\\
      G&=\{\textup{大}\}=0.1/1+0.6/2+1/3.
- \end{align}
+ \end{align*}
 则
- \begin{align}
+ \begin{align*}
  F\cup G&=(1\vee 0.1)/1+(0.6\vee 0.6)/2+(0.1\vee  1)=1/1+0.6/1+1/1,\\
  F\wedge G&=(1\wedge 0.1)/1+(0.6\wedge 0.6)/2+(0.1\wedge 1)=0.1/1+0.6/1+0.1/1,\\
  F&=(1-1)/1+(1-0.6)/2+(1-0.1)=0.4/2+0.9/3.
- \end{align}
+ \end{align*}
+  \vspace{-0.3cm}
 \end{example}
 从这个例子可以看出, 两个模糊集之间的运算实际上就是逐点对隶属函数作相应的运算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3764,17 +3774,18 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-设$V=\{1\textup{班}, 2\textup{班}, 3\textup{班}\}$, $W=\{\textup{男队},\textup{女队}\}$
+设$V=\{1\textup{班}, 2\textup{班}, 3\textup{班}\}$, $W=\{\textup{男队},\textup{女队}\}$,
 则$V\times W$中有6个元素, 即
  \begin{align}
-        V\times W =\{(1\textup{班}, \textup{男队}), (2\textup{班}, \textup{男队}), (3\textup{班}, \textup{男队}), (1\textup{班}, \textup{女队}), (2\textup{班}, \textup{女队}), (3\textup{班}, \textup{女队})\}
+    V\times W =\{(1\textup{班}, \textup{男队}), (2\textup{班}, \textup{男队}), (3\textup{班}, \textup{男队}), (1\textup{班}, \textup{女队}), (2\textup{班}, \textup{女队}), (3\textup{班}, \textup{女队})\},
+    \vspace{-0.3cm}
  \end{align}
- \end{example}
+\end{example}
 其中, 每个元素是一代表队. 假设要进行一种双方对垒的循环赛, 则每一个赛局都是$V\times W$中的一个子集, 它构成了$V\times W$上的一个关系.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊集}{1}
-设$F_i$是$U_i(i=1,2,\cdots,n)$上的模糊集, 则称
+设$F_i$是$U_i\,(i=1,2,\cdots,n)$上的模糊集, 则称
  \begin{align}
    F_{1} \times F_{2} \times \cdots \times F_{n}=
     \int_{u_{1} \times u_{2} \times \cdots \times u_{n}}\left(\mu_{F_{2}}(u_{1}) \wedge \mu_{F_{2}}\left(u_{2}\right)
@@ -3824,8 +3835,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{example}
 设有以下两个模糊关系
 \begin{align*}
-  R_{1}&=\left[\begin{array}{ccc}{0.4} & {0.5} & {0.6} \\ {0.8} & {0.3} & {0.7}\end{array}\right],\\
-  R_{2}&=\left[\begin{array}{cc}{0.7} & {0.9} \\ {0.2} & {0.8} \\ {0.5} & {0.3}\end{array}\right].
+    R_{1}=\left[\begin{array}{ccc}{0.4} & {0.5} & {0.6} \\ {0.8} & {0.3} & {0.7}\end{array}\right], R_{2}=\left[\begin{array}{cc}{0.7} & {0.9} \\ {0.2} & {0.8} \\ {0.5} & {0.3}\end{array}\right].
 \end{align*}
 则$R_1$与$R_2$的合成是
 \begin{align}
@@ -3856,6 +3866,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
             &\qquad  (1\wedge 0)\vee (0.6\wedge 0.5)\vee (0.2\wedge 1), (1\wedge 0)\vee (0.6\wedge 0)\vee (0.2\wedge 0.5)\}\\
             & =\{1, 0.6, 0.5, 0.2\}.
 \end{align*}
+\vspace{-0.3cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{FNN}
