@@ -362,35 +362,35 @@
 \contentsline {subsubsection}{\numberline {5.2.1.1}生物神经元的结构}{295}{subsubsection.5.2.1.1}% 
 \contentsline {paragraph}{生物神经元的功能}{295}{paragraph*.308}% 
 \contentsline {paragraph}{人脑神经系统的联结机制}{296}{paragraph*.309}% 
-\contentsline {subsection}{\numberline {5.2.2}人工神经网络的互连结构}{296}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.2}人工神经网络的互连结构}{297}{subsection.5.2.2}% 
 \contentsline {paragraph}{人工神经元的结构}{297}{paragraph*.310}% 
 \contentsline {paragraph}{生物神经元的结构}{297}{paragraph*.311}% 
 \contentsline {paragraph}{常用的人工神经元模型}{297}{paragraph*.313}% 
-\contentsline {paragraph}{前馈网络}{298}{paragraph*.315}% 
+\contentsline {paragraph}{前馈网络}{299}{paragraph*.315}% 
 \contentsline {paragraph}{多层前馈网络}{299}{paragraph*.317}% 
-\contentsline {paragraph}{多层前馈网络结构}{299}{paragraph*.318}% 
+\contentsline {paragraph}{多层前馈网络的结构}{299}{paragraph*.318}% 
 \contentsline {paragraph}{反馈网络}{299}{paragraph*.319}% 
 \contentsline {paragraph}{反馈网络和前向网络不同}{300}{paragraph*.321}% 
 \contentsline {section}{\numberline {5.3}人工神经网络的典型模型}{300}{section.5.3}% 
 \contentsline {subsection}{\numberline {5.3.1}感知机(Perceptron)模型}{300}{subsection.5.3.1}% 
 \contentsline {paragraph}{单层感知器}{300}{paragraph*.322}% 
-\contentsline {paragraph}{多层感知器}{303}{paragraph*.328}% 
+\contentsline {paragraph}{多层感知器}{304}{paragraph*.328}% 
 \contentsline {subsection}{\numberline {5.3.2}反向传播(BP)模型}{305}{subsection.5.3.2}% 
 \contentsline {subsection}{\numberline {5.3.3}反馈网络(Hopfield)模型}{306}{subsection.5.3.3}% 
-\contentsline {paragraph}{离散Hopfield网络的结构}{306}{paragraph*.333}% 
+\contentsline {paragraph}{离散Hopfield网络的结构}{307}{paragraph*.333}% 
 \contentsline {subsection}{\numberline {5.3.4}神经网络的泛逼近性——可视化证明}{307}{subsection.5.3.4}% 
-\contentsline {section}{\numberline {5.4}其它神经学习算法}{307}{section.5.4}% 
+\contentsline {section}{\numberline {5.4}其它神经学习算法}{308}{section.5.4}% 
 \contentsline {subsubsection}{\numberline {5.4.0.1}Tikhonov 正则化}{308}{subsubsection.5.4.0.1}% 
 \contentsline {subsection}{\numberline {5.4.1}TROP-ELM算法}{310}{subsection.5.4.1}% 
-\contentsline {subsection}{\numberline {5.4.2}Allen's PRESS(prediction sum of squares)}{310}{subsection.5.4.2}% 
+\contentsline {subsection}{\numberline {5.4.2}Allen's PRESS(prediction sum of squares)}{311}{subsection.5.4.2}% 
 \contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PRESS (TR-PRESS)}{311}{subsubsection.5.4.2.1}% 
 \contentsline {subsection}{\numberline {5.4.3}区间二型RVFL}{312}{subsection.5.4.3}% 
-\contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{314}{subsubsection.5.4.3.1}% 
-\contentsline {subsubsection}{\numberline {5.4.3.2}TT2-RVFL}{316}{subsubsection.5.4.3.2}% 
-\contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{318}{subsubsection.5.4.3.3}% 
-\contentsline {subsubsection}{\numberline {5.4.3.4}求解TT2-RVFL的张量逆算法}{319}{subsubsection.5.4.3.4}% 
-\contentsline {subsubsection}{\numberline {5.4.3.5}仿真实验}{320}{subsubsection.5.4.3.5}% 
-\contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{320}{subsubsection.5.4.3.6}% 
+\contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{315}{subsubsection.5.4.3.1}% 
+\contentsline {subsubsection}{\numberline {5.4.3.2}TT2-RVFL}{317}{subsubsection.5.4.3.2}% 
+\contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{319}{subsubsection.5.4.3.3}% 
+\contentsline {subsubsection}{\numberline {5.4.3.4}求解TT2-RVFL的张量逆算法}{320}{subsubsection.5.4.3.4}% 
+\contentsline {subsubsection}{\numberline {5.4.3.5}仿真实验}{321}{subsubsection.5.4.3.5}% 
+\contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{321}{subsubsection.5.4.3.6}% 
 \contentsline {subsubsection}{\numberline {5.4.3.7}非线性系统参数识别}{322}{subsubsection.5.4.3.7}% 
 \contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{323}{subsubsection.5.4.3.8}% 
 \contentsline {section}{\numberline {5.5}进化计算}{325}{section.5.5}% 
@@ -495,10 +495,10 @@
 \contentsline {subsection}{\numberline {7.7.7}BP网络学习}{444}{subsection.7.7.7}% 
 \contentsline {subsection}{\numberline {7.7.8}Hopfield网络学习}{445}{subsection.7.7.8}% 
 \contentsline {section}{\numberline {7.8}深度神经网络——DNN}{447}{section.7.8}% 
-\contentsline {subsection}{\numberline {7.8.1}高速公路网络（Highway network）}{449}{subsection.7.8.1}% 
-\contentsline {subsection}{\numberline {7.8.2}残差网络}{450}{subsection.7.8.2}% 
+\contentsline {subsection}{\numberline {7.8.1}高速公路网络（Highway network）}{450}{subsection.7.8.1}% 
+\contentsline {subsection}{\numberline {7.8.2}残差网络}{451}{subsection.7.8.2}% 
 \contentsline {section}{\numberline {7.9}卷积神经网络 (Convolutional Neural Networks, CNN)}{452}{section.7.9}% 
-\contentsline {paragraph}{CNN应用场景——计算机视觉问题}{455}{paragraph*.444}% 
+\contentsline {paragraph}{CNN应用场景——计算机视觉问题}{455}{paragraph*.445}% 
 \contentsline {subsection}{\numberline {7.9.1}卷积神经网络结构}{457}{subsection.7.9.1}% 
 \contentsline {subsubsection}{\numberline {7.9.1.1}卷积}{457}{subsubsection.7.9.1.1}% 
 \contentsline {subsubsection}{\numberline {7.9.1.2}反卷积(后卷积, 转置卷积)}{461}{subsubsection.7.9.1.2}% 
@@ -516,48 +516,48 @@
 \contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{499}{section.7.11}% 
 \contentsline {section}{\numberline {7.12}作业}{500}{section.7.12}% 
 \contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{501}{chapter.8}% 
-\contentsline {paragraph}{Transformer 架构}{502}{paragraph*.504}% 
+\contentsline {paragraph}{Transformer 架构}{502}{paragraph*.505}% 
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{503}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}词法分析}{504}{section.8.2}% 
 \contentsline {section}{\numberline {8.3}句法分析}{504}{section.8.3}% 
 \contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{505}{subsection.8.3.1}% 
-\contentsline {paragraph}{句子结构的表示}{505}{paragraph*.507}% 
-\contentsline {paragraph}{上下文无关文法}{505}{paragraph*.509}% 
-\contentsline {paragraph}{变换文法}{506}{paragraph*.511}% 
-\contentsline {paragraph}{自顶向下与自底向上分析}{507}{paragraph*.514}% 
-\contentsline {paragraph}{自顶向下与自底向上分析}{508}{paragraph*.515}% 
+\contentsline {paragraph}{句子结构的表示}{505}{paragraph*.508}% 
+\contentsline {paragraph}{上下文无关文法}{505}{paragraph*.510}% 
+\contentsline {paragraph}{变换文法}{506}{paragraph*.512}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{507}{paragraph*.515}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{508}{paragraph*.516}% 
 \contentsline {section}{\numberline {8.4}句义分析}{509}{section.8.4}% 
 \contentsline {subsection}{\numberline {8.4.1}语义文法}{509}{subsection.8.4.1}% 
 \contentsline {subsection}{\numberline {8.4.2}格文法}{510}{subsection.8.4.2}% 
-\contentsline {paragraph}{格和格框架}{510}{paragraph*.517}% 
+\contentsline {paragraph}{格和格框架}{510}{paragraph*.518}% 
 \contentsline {subsection}{\numberline {8.4.3}长程记忆模型——Compressive Transformer（压缩Transformer）}{511}{subsection.8.4.3}% 
-\contentsline {paragraph}{压缩Transformer}{512}{paragraph*.519}% 
+\contentsline {paragraph}{压缩Transformer}{512}{paragraph*.520}% 
 \contentsline {section}{\numberline {8.5}作 业 }{512}{section.8.5}% 
 \contentsline {chapter}{\numberline {第九章\hspace {.3em}}分布智能}{515}{chapter.9}% 
 \contentsline {section}{\numberline {9.1}分布智能}{516}{section.9.1}% 
 \contentsline {subsection}{\numberline {9.1.1}分布智能}{516}{subsection.9.1.1}% 
 \contentsline {subsubsection}{\numberline {9.1.1.1}分布智能概述}{516}{subsubsection.9.1.1.1}% 
-\contentsline {subparagraph}{分布式问题求解}{516}{subparagraph*.521}% 
-\contentsline {subparagraph}{多Agent系统}{516}{subparagraph*.522}% 
+\contentsline {subparagraph}{分布式问题求解}{516}{subparagraph*.522}% 
+\contentsline {subparagraph}{多Agent系统}{516}{subparagraph*.523}% 
 \contentsline {subsection}{\numberline {9.1.2}Agent的结构}{516}{subsection.9.1.2}% 
-\contentsline {subparagraph}{Agent的基本结构}{516}{subparagraph*.523}% 
-\contentsline {subparagraph}{反应Agent}{516}{subparagraph*.524}% 
-\contentsline {subparagraph}{慎思Agent}{517}{subparagraph*.526}% 
-\contentsline {subparagraph}{BDI的概念}{517}{subparagraph*.528}% 
+\contentsline {subparagraph}{Agent的基本结构}{516}{subparagraph*.524}% 
+\contentsline {subparagraph}{反应Agent}{516}{subparagraph*.525}% 
+\contentsline {subparagraph}{慎思Agent}{517}{subparagraph*.527}% 
+\contentsline {subparagraph}{BDI的概念}{517}{subparagraph*.529}% 
 \contentsline {subsection}{\numberline {9.1.3}Agent通信}{518}{subsection.9.1.3}% 
 \contentsline {subsubsection}{\numberline {9.1.3.1}Agent通信的基本问题}{518}{subsubsection.9.1.3.1}% 
-\contentsline {paragraph}{通信语言KQML}{518}{paragraph*.529}% 
-\contentsline {subparagraph}{KQML语言的结构}{518}{subparagraph*.530}% 
-\contentsline {subparagraph}{KQML消息}{519}{subparagraph*.531}% 
-\contentsline {subparagraph}{KQML保留的行为原语参数}{519}{subparagraph*.532}% 
-\contentsline {subparagraph}{KQML保留的行为原语}{520}{subparagraph*.533}% 
-\contentsline {subparagraph}{KQML通信服务器}{521}{subparagraph*.534}% 
+\contentsline {paragraph}{通信语言KQML}{518}{paragraph*.530}% 
+\contentsline {subparagraph}{KQML语言的结构}{518}{subparagraph*.531}% 
+\contentsline {subparagraph}{KQML消息}{519}{subparagraph*.532}% 
+\contentsline {subparagraph}{KQML保留的行为原语参数}{519}{subparagraph*.533}% 
+\contentsline {subparagraph}{KQML保留的行为原语}{520}{subparagraph*.534}% 
+\contentsline {subparagraph}{KQML通信服务器}{521}{subparagraph*.535}% 
 \contentsline {subsection}{\numberline {9.1.4}多Agent合作}{521}{subsection.9.1.4}% 
 \contentsline {subsection}{\numberline {9.1.5}Agent的协商}{523}{subsection.9.1.5}% 
-\contentsline {subparagraph}{协商协议}{523}{subparagraph*.536}% 
-\contentsline {subparagraph}{协商策略}{523}{subparagraph*.537}% 
-\contentsline {subparagraph}{协商处理}{523}{subparagraph*.538}% 
-\contentsline {subparagraph}{多Agent应用示例}{524}{subparagraph*.539}% 
+\contentsline {subparagraph}{协商协议}{523}{subparagraph*.537}% 
+\contentsline {subparagraph}{协商策略}{523}{subparagraph*.538}% 
+\contentsline {subparagraph}{协商处理}{523}{subparagraph*.539}% 
+\contentsline {subparagraph}{多Agent应用示例}{524}{subparagraph*.540}% 
 \contentsline {subsection}{\numberline {9.1.6}移动Agent}{524}{subsection.9.1.6}% 
 \contentsline {section}{\numberline {9.2}作 业}{524}{section.9.2}% 
 \contentsline {chapter}{\numberline {第十章\hspace {.3em}}先进专家系统}{525}{chapter.10}% 
@@ -566,17 +566,17 @@
 \contentsline {subsection}{\numberline {10.1.2}专家系统的基本结构}{526}{subsection.10.1.2}% 
 \contentsline {subsection}{\numberline {10.1.3}基于规则和基于框架的专家系统}{527}{subsection.10.1.3}% 
 \contentsline {subsection}{\numberline {10.1.4}模糊专家系统和神经网络专家系统}{528}{subsection.10.1.4}% 
-\contentsline {subparagraph}{模糊专家系统}{528}{subparagraph*.543}% 
-\contentsline {subparagraph}{神经网络专家系统}{528}{subparagraph*.545}% 
+\contentsline {subparagraph}{模糊专家系统}{528}{subparagraph*.544}% 
+\contentsline {subparagraph}{神经网络专家系统}{528}{subparagraph*.546}% 
 \contentsline {subsection}{\numberline {10.1.5}基于Web的专家系统}{528}{subsection.10.1.5}% 
 \contentsline {subsection}{\numberline {10.1.6}分布式专家系统和协同式专家系统}{529}{subsection.10.1.6}% 
-\contentsline {subparagraph}{分布式专家系统}{529}{subparagraph*.546}% 
-\contentsline {subparagraph}{协同式专家系统}{529}{subparagraph*.547}% 
+\contentsline {subparagraph}{分布式专家系统}{529}{subparagraph*.547}% 
+\contentsline {subparagraph}{协同式专家系统}{529}{subparagraph*.548}% 
 \contentsline {section}{\numberline {10.2}专家系统的开发}{529}{section.10.2}% 
-\contentsline {paragraph}{开发步骤}{529}{paragraph*.548}% 
-\contentsline {paragraph}{知识获取}{529}{paragraph*.549}% 
-\contentsline {paragraph}{输入知识}{529}{paragraph*.550}% 
-\contentsline {paragraph}{开发工具与环境}{529}{paragraph*.551}% 
+\contentsline {paragraph}{开发步骤}{529}{paragraph*.549}% 
+\contentsline {paragraph}{知识获取}{529}{paragraph*.550}% 
+\contentsline {paragraph}{输入知识}{529}{paragraph*.551}% 
+\contentsline {paragraph}{开发工具与环境}{529}{paragraph*.552}% 
 \contentsline {section}{\numberline {10.3}作 业}{530}{section.10.3}% 
 \contentsline {chapter}{\numberline {第十一章\hspace {.3em}}计算机视觉CV}{531}{chapter.11}% 
 \contentsline {section}{\numberline {11.1}深度学习 VS 传统计算机视觉}{532}{section.11.1}% 
@@ -584,5 +584,5 @@
 \contentsline {subsection}{\numberline {11.1.2}传统 CV 技术的优势}{534}{subsection.11.1.2}% 
 \contentsline {section}{\numberline {11.2}几何深度学习}{536}{section.11.2}% 
 \contentsline {section}{\numberline {11.3}作 业 }{543}{section.11.3}% 
-\contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{545}{section*.558}% 
-\contentsline {section}{索\nobreakspace {}引}{545}{section*.559}% 
+\contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{545}{section*.559}% 
+\contentsline {section}{索\nobreakspace {}引}{545}{section*.560}% 
