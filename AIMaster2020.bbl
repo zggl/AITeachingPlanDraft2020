@@ -1,0 +1,2030 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Adhikari-2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=80d7cb499999e0aa94a6ba688aab865f}{%
+           family={Adhikari},
+           familyi={A\bibinitperiod},
+           given={Shyam\bibnamedelima Prasad},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d68ff0d1d670fe72695ee94be45e00c7}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Heechan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3086111e9ca1272754f2a895439136bc}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyongsuk},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \strng{fullhash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \strng{bibnamehash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \strng{authorbibnamehash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \strng{authornamehash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \strng{authorfullhash}{bdb50f2413f2de9d6ba4a240a8677b76}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Weeds in agricultural farms are aggressive growers which compete for nutrition and other resources with the crop and reduce production. The increasing use of chemicals to control them has inadvertent consequences to the human health and the environment. In this work, a novel neural network training method combining semantic graphics for data annotation and an advanced encoder–decoder network for (a) automatic crop line detection and (b) weed (wild millet) detection in paddy fields is proposed. The detected crop lines act as a guiding line for an autonomous weeding robot for inter-row weeding, whereas the detection of weeds enables autonomous intra-row weeding. The proposed data annotation method, semantic graphics, is intuitive, and the desired targets can be annotated easily with minimal labor. Also, the proposed “extended skip network” is an improved deep convolutional encoder–decoder neural network for efficient learning of semantic graphics. Quantitative evaluations of the proposed method demonstrated an increment of 6.29% and 6.14% in mean intersection over union (mIoU), over the baseline network on the task of paddy line detection and wild millet detection, respectively. The proposed method also leads to a 3.56% increment in mIoU and a significantly higher recall compared to a popular bounding box-based object detection approach on the task of wild–millet detection.}
+      \field{issn}{1664-462X}
+      \field{journaltitle}{Frontiers in Plant Science}
+      \field{title}{Learning Semantic Graphics Using Convolutional Encoder–Decoder Network for Autonomous Weeding in Paddy}
+      \field{volume}{10}
+      \field{year}{2019}
+      \field{pages}{1404}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fpls.2019.01404
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/article/10.3389/fpls.2019.01404
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/article/10.3389/fpls.2019.01404
+      \endverb
+    \endentry
+    \entry{BouraouiKR2019}{article}{}
+      \name{author}{12}{}{%
+        {{hash=f74eaa6ada31b5a6f963ca5f122f05f0}{%
+           family={Bouraoui},
+           familyi={B\bibinitperiod},
+           given={Zied},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=11d29f1bb83027292f0d132f2b71f1d8}{%
+           family={Cornuéjols},
+           familyi={C\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f1969058f3e4228a11083d3fbbc9467}{%
+           family={Denœux},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f623365a6b6ef2fbd07d98b5b0d4da7e}{%
+           family={Destercke},
+           familyi={D\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0b9fac725102ee602ca938500ffa91d0}{%
+           family={Dubois},
+           familyi={D\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod}}}%
+        {{hash=72a2232531331a7c81f84eaba203c4be}{%
+           family={Guillaume},
+           familyi={G\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f70023f5ae71cc9e0f49c1fe07f3a4ce}{%
+           family={Marques-Silva},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1e200a35b6f0d98840448ae13e09ba3}{%
+           family={Mengin},
+           familyi={M\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d31fd9cbce5741b2093db604bc32454}{%
+           family={Prade},
+           familyi={P\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b66c934ea85e43f75cae6e977ceaca03}{%
+           family={Schockaert},
+           familyi={S\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=35547f10524f9a5a83f04c276aa6d236}{%
+           family={Serrurier},
+           familyi={S\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=016501fbb0adab8bb471a49120c2c9ce}{%
+           family={Vrain},
+           familyi={V\bibinitperiod},
+           given={Christel},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{56f43d5833484c207b6cdd85d4b7e5b6}
+      \strng{fullhash}{a0f3c34147443f6ee03abb199ce7b303}
+      \strng{bibnamehash}{56f43d5833484c207b6cdd85d4b7e5b6}
+      \strng{authorbibnamehash}{56f43d5833484c207b6cdd85d4b7e5b6}
+      \strng{authornamehash}{56f43d5833484c207b6cdd85d4b7e5b6}
+      \strng{authorfullhash}{a0f3c34147443f6ee03abb199ce7b303}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a tentative and original survey of meeting points between Knowledge Representation and Reasoning (KRR) and Machine Learning (ML), two areas which have been developing quite separately in the last three decades. Some common concerns are identified and discussed such as the types of used representation, the roles of knowledge and data, the lack or the excess of information, or the need for explanations and causal understanding. Then some methodologies combining reasoning and learning are reviewed (such as inductive logic programming, neuro-symbolic reasoning, formal concept analysis, rule-based representations and ML, uncertainty in ML, or case-based reasoning and analogical reasoning), before discussing examples of synergies between KRR and ML (including topics such as belief functions on regression, EM algorithm versus revision, the semantic description of vector representations, the combination of deep learning with high level inference, knowledge graph completion, declarative frameworks for data mining, or preferences and recommendation). This paper is the first step of a work in progress aiming at a better mutual understanding of research in KRR and ML, and how they could cooperate.}
+      \field{title}{From Shallow to Deep Interactions Between Knowledge Representation, Reasoning and Machine Learning (Kay R. Amel group)}
+      \field{year}{2019}
+    \endentry
+    \entry{BradCarlile2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a06c31604461c1dc83c844678444a61a}{%
+           family={Carlile},
+           familyi={C\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod}}}%
+        {{hash=661cb9b699e547c0462d40203e86f067}{%
+           family={Delamarter},
+           familyi={D\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=99079b92f14bfac5d7659588a48f80ed}{%
+           family={Kinney},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f9f95e07f40e7e3e3a7c9cb0391d04c3}{%
+           family={Marti},
+           familyi={M\bibinitperiod},
+           given={Akiko},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40afd07f506d50e9fd7e10e8583ac28b}{%
+           family={Whitney},
+           familyi={W\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd4da533d4443805e67b7e77def59e53}
+      \strng{fullhash}{e8ad1669d313ef1d72e3780f29cfb06b}
+      \strng{bibnamehash}{fd4da533d4443805e67b7e77def59e53}
+      \strng{authorbibnamehash}{fd4da533d4443805e67b7e77def59e53}
+      \strng{authornamehash}{fd4da533d4443805e67b7e77def59e53}
+      \strng{authorfullhash}{e8ad1669d313ef1d72e3780f29cfb06b}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Improving Deep Learning by Inverse Square Root Linear Units (ISRLUs)}
+      \field{volume}{abs/1710.09967}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1710.09967
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1710.09967
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1710.09967
+      \endverb
+    \endentry
+    \entry{Cortes1995Support}{article}{}
+      \name{author}{2}{}{%
+        {{hash=17acda211a651e90e228f1776ee07818}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={Corinna},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{%
+           family={Vapnik},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{fullhash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{bibnamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authorbibnamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authornamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authorfullhash}{4c67d5268f413e83454c8adc14ab43c3}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{number}{3}
+      \field{title}{Support-Vector Networks}
+      \field{volume}{20}
+      \field{year}{1995}
+      \field{pages}{273\bibrangedash 297}
+      \range{pages}{25}
+    \endentry
+    \entry{DabneyKurth-Nelson2020-9599}{article}{}
+      \name{author}{7}{}{%
+        {{hash=d5a44cbf0d05e4c50b512bb0c1368d2f}{%
+           family={Dabney},
+           familyi={D\bibinitperiod},
+           given={Will},
+           giveni={W\bibinitperiod}}}%
+        {{hash=453a4a5c997a99c3039bd19bf495c1cb}{%
+           family={Kurth-Nelson},
+           familyi={K\bibinithyphendelim N\bibinitperiod},
+           given={Zeb},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c64b2e42b7366c1357291fd7e1272af1}{%
+           family={Uchida},
+           familyi={U\bibinitperiod},
+           given={Naoshige},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6b62eeb0de1afa930eb228e72337e680}{%
+           family={Starkweather},
+           familyi={S\bibinitperiod},
+           given={Clara\bibnamedelima Kwon},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b160026950ebb1e2286dfb40c15482f5}{%
+           family={Hassabis},
+           familyi={H\bibinitperiod},
+           given={Demis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d8fa91764a27bf97b87fdcac885745d}{%
+           family={Munos},
+           familyi={M\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ac5fb35edeb23736953b00e66bef926}{%
+           family={Botvinick},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2bf62517cb27cbf43791ffb6570b7e6}
+      \strng{fullhash}{d5d0cb430a442b26890a3bcde58e640c}
+      \strng{bibnamehash}{f2bf62517cb27cbf43791ffb6570b7e6}
+      \strng{authorbibnamehash}{f2bf62517cb27cbf43791ffb6570b7e6}
+      \strng{authornamehash}{f2bf62517cb27cbf43791ffb6570b7e6}
+      \strng{authorfullhash}{d5d0cb430a442b26890a3bcde58e640c}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Since its introduction, the reward prediction error theory of dopamine has explained a wealth of empirical phenomena, providing a unifying framework for understanding the representation of reward and value in the brain1–3. According to the now canonical theory, reward predictions are represented as a single scalar quantity, which supports learning about the expectation, or mean, of stochastic outcomes. Here we propose an account of dopamine-based reinforcement learning inspired by recent artificial intelligence research on distributional reinforcement learning4–6. We hypothesized that the brain represents possible future rewards not as a single mean, but instead as a probability distribution, effectively representing multiple future outcomes simultaneously and in parallel. This idea implies a set of empirical predictions, which we tested using single-unit recordings from mouse ventral tegmental area. Our findings provide strong evidence for a neural realization of distributional reinforcement learning.}
+      \field{journaltitle}{Nature}
+      \field{number}{7792}
+      \field{title}{A distributional code for value in dopamine-based reinforcement learning}
+      \field{volume}{577}
+      \field{year}{2020}
+      \field{pages}{671\bibrangedash 675}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41586-019-1924-6
+      \endverb
+    \endentry
+    \entry{MADavid1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2fc5670ddcbb0dc4101992d5a852808b}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \strng{fullhash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \strng{bibnamehash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \strng{authorbibnamehash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \strng{authornamehash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \strng{authorfullhash}{2fc5670ddcbb0dc4101992d5a852808b}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technometrics}
+      \field{title}{The relationship between variable selection and data augmentation and a method for prediction}
+      \field{volume}{16}
+      \field{year}{1972}
+      \field{pages}{125\bibrangedash 127}
+      \range{pages}{3}
+    \endentry
+    \entry{Fan2008LIBLINEAR}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cc311e8310b869adf0b0eeb9e2be74ae}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Rong\bibnamedelima En},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7240095584b11ca33a22a12b02500e79}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Kai\bibnamedelima Wei},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2c8ef4ae60ab2e95fc732266ac98756a}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Cho\bibnamedelima Jui},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=152d178f4928de332f1105e47da8a0e9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiang\bibnamedelima Rui},
+           giveni={X\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9fc6d7477ef48360d25d57217170df00}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Chih\bibnamedelima Jen},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4345cf435818d0cd65d63f855b527710}
+      \strng{fullhash}{627786f768405053d244dd6f1df14cb8}
+      \strng{bibnamehash}{4345cf435818d0cd65d63f855b527710}
+      \strng{authorbibnamehash}{4345cf435818d0cd65d63f855b527710}
+      \strng{authornamehash}{4345cf435818d0cd65d63f855b527710}
+      \strng{authorfullhash}{627786f768405053d244dd6f1df14cb8}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{9}
+      \field{title}{{LIBLINEAR}: A Library for Large Linear Classification}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{pages}{1871\bibrangedash 1874}
+      \range{pages}{4}
+    \endentry
+    \entry{DEAPJMLR2012}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cb726dd65ed70d42db90a71456f3ccfc}{%
+           family={Fortin},
+           familyi={F\bibinitperiod},
+           given={Félix-Antoine},
+           giveni={F\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=2a8d7a79b78f89e860083e3622125296}{%
+           family={{De Rainville}},
+           familyi={D\bibinitperiod},
+           given={François-Michel},
+           giveni={F\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=3ec3b044bed6d19168fae25d72ae8fd2}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Marc-André},
+           giveni={M\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=4db4c30a39950c04076d8822a71150b3}{%
+           family={Parizeau},
+           familyi={P\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6cf428558c3d4908897307fde7e4f5f4}{%
+           family={Gagné},
+           familyi={G\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d86837c4e4b0d62a789893eba4aad52}
+      \strng{fullhash}{cd6bca8bf461ea2109725101ea33b021}
+      \strng{bibnamehash}{2d86837c4e4b0d62a789893eba4aad52}
+      \strng{authorbibnamehash}{2d86837c4e4b0d62a789893eba4aad52}
+      \strng{authornamehash}{2d86837c4e4b0d62a789893eba4aad52}
+      \strng{authorfullhash}{cd6bca8bf461ea2109725101ea33b021}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{{DEAP}: Evolutionary Algorithms Made Easy}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{pages}{2171\bibrangedash 2175}
+      \range{pages}{5}
+    \endentry
+    \entry{Ghifary2015}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7b6a54d417817d5135f649f58e23f5a1}{%
+           family={{Ghifary}},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cc80b933a515f905fccc1d07cf27c800}{%
+           family={{Kleijn}},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=922b74338e14a4c81b03a7487c18522b}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12b0221b10a12a7ec174e7d8b65db214}{%
+           family={{Balduzzi}},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \strng{fullhash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \strng{bibnamehash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \strng{authorbibnamehash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \strng{authornamehash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \strng{authorfullhash}{e1eecf47f617bb179fa49d96d8fdb472}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of domain generalization is to take knowledge acquired from a number of related domains, where training data is available, and to then successfully apply it to previously unseen domains. We propose a new feature learning algorithm, Multi-Task Autoencoder (MTAE), that provides good generalization performance for cross-domain object recognition. The algorithm extends the standard denoising autoencoder framework by substituting artificially induced corruption with naturally occurring inter-domain variability in the appearance of objects. Instead of reconstructing images from noisy versions, MTAE learns to transform the original image into analogs in multiple related domains. It thereby learns features that are robust to variations across domains. The learnt features are then used as inputs to a classifier. We evaluated the performance of the algorithm on benchmark image recognition datasets, where the task is to learn features from multiple datasets and to then predict the image label from unseen datasets. We found that (denoising) MTAE outperforms alternative autoencoder-based models as well as the current state-of-the-art algorithms for domain generalization.}
+      \field{booktitle}{2015 IEEE International Conference on Computer Vision (ICCV)}
+      \field{issn}{2380-7504}
+      \field{title}{Domain Generalization for Object Recognition with Multi-task Autoencoders}
+      \field{year}{2015}
+      \field{pages}{2551\bibrangedash 2559}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICCV.2015.293
+      \endverb
+      \keyw{image denoising;learning (artificial intelligence);object recognition;domain generalization;multitask autoencoder;feature learning algorithm;cross-domain object recognition;standard denoising autoencoder;MTAE;image recognition;Training;Object recognition;Noise reduction;Feature extraction;Standards;Robustness;Image reconstruction}
+    \endentry
+    \entry{Giryes2016-7439822}{article}{}
+      \name{author}{3}{}{%
+        {{hash=18266ec667dde3ab1f48b4fc4f1cea77}{%
+           family={{Giryes}},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=90e64c2b91b2898d01336b2eba4594aa}{%
+           family={{Sapiro}},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fe18b6fb1d762fa56fc74c8141776796}{%
+           family={{Bronstein}},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \strng{fullhash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \strng{bibnamehash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \strng{authorbibnamehash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \strng{authornamehash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \strng{authorfullhash}{7950b46cdfb09062c0f2526f0c2674b9}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{number}{13}
+      \field{title}{Deep Neural Networks with Random Gaussian Weights: A Universal Classification Strategy?}
+      \field{volume}{64}
+      \field{year}{2016}
+      \field{pages}{3444\bibrangedash 3457}
+      \range{pages}{14}
+    \endentry
+    \entry{glorot2011}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0b3943c3bfdbb5867b3760f7c7d488c2}{%
+           family={Glorot},
+           familyi={G\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f1733e10bf044cbd7be63e10e5689d78}{%
+           family={Bordes},
+           familyi={B\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{fullhash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{bibnamehash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{authorbibnamehash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{authornamehash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \strng{authorfullhash}{59e7b11c8612bb9c193b9bfa91e1c729}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the fourteenth international conference on artificial intelligence and statistics}
+      \field{title}{Deep sparse rectifier neural networks}
+      \field{year}{2011}
+      \field{pages}{315\bibrangedash 323}
+      \range{pages}{9}
+    \endentry
+    \entry{Goldenshluger2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1a668bff7f6939afeaade811d16fb932}{%
+           family={Goldenshluger},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=afd78c9597f7360e5837d53bb4b1a8f1}{%
+           family={Zeevi},
+           familyi={Z\bibinitperiod},
+           given={Assaf.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec97c39183cc76573666ea5624f3f727}
+      \strng{fullhash}{ec97c39183cc76573666ea5624f3f727}
+      \strng{bibnamehash}{ec97c39183cc76573666ea5624f3f727}
+      \strng{authorbibnamehash}{ec97c39183cc76573666ea5624f3f727}
+      \strng{authornamehash}{ec97c39183cc76573666ea5624f3f727}
+      \strng{authorfullhash}{ec97c39183cc76573666ea5624f3f727}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Statist.}
+      \field{title}{The Hough transform estimator}
+      \field{volume}{32}
+      \field{year}{2004}
+      \field{pages}{1908\bibrangedash 1932}
+      \range{pages}{25}
+    \endentry
+    \entry{GoodfellowGAN2014}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={Pouget-Abadie},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={Warde-Farley},
+           familyi={W\bibinithyphendelim F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0e938942bbf81a94778864386549068d}{%
+           family={SherjilOzair},
+           familyi={S\bibinitperiod},
+           given={Aaron\bibnamedelima Courville},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{4fb507383f42a72a21dae774d3ba133c}
+      \strng{bibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{4fb507383f42a72a21dae774d3ba133c}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{In Advances in Neural Information Processing Systems}
+      \field{title}{Generative adversarial nets}
+      \field{pages}{2014}
+      \range{pages}{1}
+    \endentry
+    \entry{NIPS2019-9365}{incollection}{}
+      \name{author}{5}{}{%
+        {{hash=ca9828905600331c1237e1321a4809af}{%
+           family={Grønlund},
+           familyi={G\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9eb4d5855601950d128d8096425b2f38}{%
+           family={Kamma},
+           familyi={K\bibinitperiod},
+           given={Lior},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2689e4356a669cb4ca9985ace2b0f302}{%
+           family={Green\bibnamedelima Larsen},
+           familyi={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Kasper},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2255f3f685d52f0eb676f406eaea40b4}{%
+           family={Mathiasen},
+           familyi={M\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dfa4aec70746cf9d279cb95a127118c9}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Jelani},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=1444141e07dd9549dbb4b8530fe4ec15}{%
+           family={Wallach},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6c15b92d4ebdbfae091f6548dc7543ae}{%
+           family={Larochelle},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=02854da982edf66ffa27f4fc1c738779}{%
+           family={Beygelzimer},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d09836e3ea5c71d2c9e7d1c56ab7ffdd}{%
+           family={d'Alché-Buc},
+           familyi={d\bibinithyphendelim B\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f81d803635cc159bfc9d9145ebd34a14}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{8c1e510b778dd669db0102b6cec1d890}
+      \strng{fullhash}{ff756aa5b0b6315e8aafd2c7f093f3c0}
+      \strng{bibnamehash}{8c1e510b778dd669db0102b6cec1d890}
+      \strng{authorbibnamehash}{8c1e510b778dd669db0102b6cec1d890}
+      \strng{authornamehash}{8c1e510b778dd669db0102b6cec1d890}
+      \strng{authorfullhash}{ff756aa5b0b6315e8aafd2c7f093f3c0}
+      \strng{editorbibnamehash}{d8a1689cbb7ff26be8b55bdda56fab83}
+      \strng{editornamehash}{d8a1689cbb7ff26be8b55bdda56fab83}
+      \strng{editorfullhash}{1fe7b3f8b138b9bcec056a9c1ca77fef}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 32}
+      \field{title}{Margin-Based Generalization Lower Bounds for Boosted Classifiers}
+      \field{year}{2019}
+      \field{pages}{11963\bibrangedash 11972}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/9365-margin-based-generalization-lower-bounds-for-boosted-classifiers.pdf
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/9365-margin-based-generalization-lower-bounds-for-boosted-classifiers.pdf
+      \endverb
+    \endentry
+    \entry{Guan2012Online}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ac537b225529e941159a6615d757d667}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Naiyang},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f15b34a2bc944a9f055fd6e2e3a7c460}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Dacheng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6adce7767df11011537cbf38d5e121d0}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Zhigang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1ce4eb84b8441cb4f47e328910e194f7}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{244df991c4f782719ac5fcff0f192ca4}
+      \strng{fullhash}{244df991c4f782719ac5fcff0f192ca4}
+      \strng{bibnamehash}{244df991c4f782719ac5fcff0f192ca4}
+      \strng{authorbibnamehash}{244df991c4f782719ac5fcff0f192ca4}
+      \strng{authornamehash}{244df991c4f782719ac5fcff0f192ca4}
+      \strng{authorfullhash}{244df991c4f782719ac5fcff0f192ca4}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks \& Learning Systems}
+      \field{number}{7}
+      \field{title}{Online Nonnegative Matrix Factorization With Robust Stochastic Approximation}
+      \field{volume}{23}
+      \field{year}{2012}
+      \field{pages}{1087\bibrangedash 1099}
+      \range{pages}{13}
+    \endentry
+    \entry{ha2018worldmodels}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=4467056eb9d0a44c1ec21bbb4d6152c5}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={J{ü}rgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{fullhash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{bibnamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authorbibnamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authornamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authorfullhash}{ac33097a207e3840f68fa6e4bd34710c}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Recurrent World Models Facilitate Policy Evolution}
+      \field{year}{2018}
+      \field{pages}{2451\bibrangedash 2463}
+      \range{pages}{13}
+    \endentry
+    \entry{Han2018PNAS}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c91614832ab372d1b1395054e98d3c71}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jie\bibnamedelima Qun},
+           giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=31ce46557e2d08499e8b06d041f40bf2}{%
+           family={Jentzen},
+           familyi={J\bibinitperiod},
+           given={Arnulf},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ad9b5a5233ad3fde6760b628545ddbc5}{%
+           family={Weinan},
+           familyi={W\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Academy of Sciences}%
+      }
+      \strng{namehash}{bf4dfb248c64a425ef14248c2082ab92}
+      \strng{fullhash}{bf4dfb248c64a425ef14248c2082ab92}
+      \strng{bibnamehash}{bf4dfb248c64a425ef14248c2082ab92}
+      \strng{authorbibnamehash}{bf4dfb248c64a425ef14248c2082ab92}
+      \strng{authornamehash}{bf4dfb248c64a425ef14248c2082ab92}
+      \strng{authorfullhash}{bf4dfb248c64a425ef14248c2082ab92}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Partial differential equations (PDEs) are among the most ubiquitous tools used in modeling problems in nature. However, solving high-dimensional PDEs has been notoriously difficult due to the {“}curse of dimensionality.{”} This paper introduces a practical algorithm for solving nonlinear PDEs in very high (hundreds and potentially thousands of) dimensions. Numerical results suggest that the proposed algorithm is quite effective for a wide variety of problems, in terms of both accuracy and speed. We believe that this opens up a host of possibilities in economics, finance, operational research, and physics, by considering all participating agents, assets, resources, or particles together at the same time, instead of making ad hoc assumptions on their interrelationships.Developing algorithms for solving high-dimensional partial differential equations (PDEs) has been an exceedingly difficult task for a long time, due to the notoriously difficult problem known as the {“}curse of dimensionality.{”} This paper introduces a deep learning-based approach that can handle general high-dimensional parabolic PDEs. To this end, the PDEs are reformulated using backward stochastic differential equations and the gradient of the unknown solution is approximated by neural networks, very much in the spirit of deep reinforcement learning with the gradient acting as the policy function. Numerical results on examples including the nonlinear Black{–}Scholes equation, the Hamilton{–}Jacobi{–}Bellman equation, and the Allen{–}Cahn equation suggest that the proposed algorithm is quite effective in high dimensions, in terms of both accuracy and cost. This opens up possibilities in economics, finance, operational research, and physics, by considering all participating agents, assets, resources, or particles together at the same time, instead of making ad hoc assumptions on their interrelationships.}
+      \field{issn}{0027-8424}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{34}
+      \field{title}{Solving high-dimensional partial differential equations using deep learning}
+      \field{volume}{115}
+      \field{year}{2018}
+      \field{pages}{8505\bibrangedash 8510}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1073/pnas.1718942115
+      \endverb
+      \verb{eprint}
+      \verb https://www.pnas.org/content/115/34/8505.full.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/content/115/34/8505
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/content/115/34/8505
+      \endverb
+    \endentry
+    \entry{HeCVPR2016-9590}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=65862d45e231b0e30a375caf05dcbd78}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=30ff3ef4a89e0c6777f480da5386b053}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=501eafc23d19c914309ed7a5d6c07c8b}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d21a4c5b1b7b1da5165b2f8f62e700c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \strng{fullhash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \strng{bibnamehash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \strng{authorbibnamehash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \strng{authornamehash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \strng{authorfullhash}{fd56efe18c9c03cbe940a52e2c9415a9}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.}
+      \field{booktitle}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{series}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2016}
+      \field{pages}{770\bibrangedash 778}
+      \range{pages}{9}
+      \keyw{image classification; learning (artificial intelligence); neural nets; object detection; COCO segmentation; ImageNet localization; ILSVRC & COCO 2015 competitions; deep residual nets; COCO object detection dataset; visual recognition tasks; CIFAR-10; ILSVRC 2015 classification task; ImageNet test set; VGG nets; residual nets; ImageNet dataset; residual function learning; deeper neural network training; image recognition; deep residual learning; Training; Degradation; Complexity theory; Image recognition; Neural networks; Visualization; Image segmentation}
+    \endentry
+    \entry{hendrycks2016gelu}{article}{}
+      \name{author}{2}{}{%
+        {{hash=86d0b4ecd6b6066d49e7aecde6e5e630}{%
+           family={Hendrycks},
+           familyi={H\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6bc70be3492f0800ecee6926d290244f}{%
+           family={Gimpel},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \strng{fullhash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \strng{bibnamehash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \strng{authorbibnamehash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \strng{authornamehash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \strng{authorfullhash}{7d47b8f6df5cfe597280f14a9ffb6143}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1606.08415}
+      \field{title}{Gaussian Error Linear Units (GELUs)}
+      \field{year}{2016}
+    \endentry
+    \entry{Hinton2006-9587}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9c5f7dcfa6f8cfad7a98e00d2c3b338d}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=e6701fc7aa9cd445d296353e35936e3a}{%
+           family={Salakhutdinov},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \strng{fullhash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \strng{bibnamehash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \strng{authorbibnamehash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \strng{authornamehash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \strng{authorfullhash}{15de7bae4c3c4fef246a3299810a2dd5}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors. Gradient descent can be used for fine-tuning the weights in such “autoencoder” networks, but this works well only if the initial weights are close to a good solution. We describe an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data.}
+      \field{journaltitle}{Science}
+      \field{number}{5786}
+      \field{title}{Reducing the Dimensionality of Data with Neural Networks}
+      \field{volume}{313}
+      \field{year}{2006}
+      \field{pages}{504}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1126/science.1127647
+      \endverb
+    \endentry
+    \entry{HochreiterNC1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{bibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.}
+      \field{journaltitle}{Neural Computation}
+      \field{number}{8}
+      \field{title}{Long Short-Term Memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1162/neco.1997.9.8.1735
+      \endverb
+    \endentry
+    \entry{HuangZhao2019-9577}{article}{}
+      \name{author}{3}{}{%
+        {{hash=54588ac56d7a969e825a376886d81b75}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Sharina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=52cc35e0251ffc7ee566a2672a1ce242}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Guoliang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4eb022d312c2cc874773c6135382d780}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Minghao},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{907e4f02bb99159495af2a3bde4d79e9}
+      \strng{fullhash}{907e4f02bb99159495af2a3bde4d79e9}
+      \strng{bibnamehash}{907e4f02bb99159495af2a3bde4d79e9}
+      \strng{authorbibnamehash}{907e4f02bb99159495af2a3bde4d79e9}
+      \strng{authornamehash}{907e4f02bb99159495af2a3bde4d79e9}
+      \strng{authorfullhash}{907e4f02bb99159495af2a3bde4d79e9}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A tensor-based extreme learning machine is proposed, which is referred to as tensor-based type-2 extreme learning machine (TT2-ELM). In contrast to the work on ELM, regularized ELM (RELM), weighted regularized ELM (WRELM) and least squares support vector machine (LS-SVM), which are the most often used learning algorithm in regression problems, TT2-ELM adopts the tensor structure to construct the ELM for type-2 fuzzy sets, Moore–Penrose inverse of tensor is used to obtain the tensor regression result. No further type-reduction method is needed to obtain the coincide type-1 fuzzy sets, and type-2 fuzzy structure can be seamlessly incorporated into the ELM scheme. Experimental results are carried out on two Sinc functions, a nonlinear system identification problem and four real-world regression problems, results show that TT2-ELM performs at competitive level of generalized performance as the ELM, RELM, WRELM and LS-SVM on the small-and moderate-scale data sets.}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{number}{9}
+      \field{title}{Tensor extreme learning design via generalized Moore–Penrose inverse and triangular type-2 fuzzy sets}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{5641\bibrangedash 5651}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00521-018-3385-5
+      \endverb
+    \endentry
+    \entry{Zhang2015}{inproceddings}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{title}{In Proceedings of the IEEE international conference on computer vision}
+      \field{year}{2015}
+      \field{pages}{1026\bibrangedash 1034}
+      \range{pages}{9}
+    \endentry
+    \entry{Glorot2015}{inproceddings}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{title}{In Proceedings of the thirteenth international conference on artificial intelligence and statistics}
+      \field{year}{2015}
+      \field{pages}{249\bibrangedash 256}
+      \range{pages}{8}
+    \endentry
+    \entry{LiorWolf2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=35fc90de32faa3ca53fde722db088722}{%
+           family={Lior\bibnamedelima Wolf},
+           familyi={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Amnon\bibnamedelima Shashua},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{35fc90de32faa3ca53fde722db088722}
+      \strng{fullhash}{35fc90de32faa3ca53fde722db088722}
+      \strng{bibnamehash}{35fc90de32faa3ca53fde722db088722}
+      \strng{authorbibnamehash}{35fc90de32faa3ca53fde722db088722}
+      \strng{authornamehash}{35fc90de32faa3ca53fde722db088722}
+      \strng{authorfullhash}{35fc90de32faa3ca53fde722db088722}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{4}
+      \field{title}{Learning over Sets using Kernel Principal Angles}
+      \field{year}{2003}
+      \field{pages}{913\bibrangedash 931}
+      \range{pages}{19}
+    \endentry
+    \entry{Long2015-9593}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=9081ecf20b1404015811f2fcea41c50c}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=351b7664e69a7f6d612c01ca79b2564f}{%
+           family={Shelhamer},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ce2ead80f9cebfce73702f062ab9f1d0}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \strng{fullhash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \strng{bibnamehash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \strng{authorbibnamehash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \strng{authornamehash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \strng{authorfullhash}{53ae3fc1bcae11b4e78ee6051c48724f}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic segmentation. Our key insight is to build “fully convolutional” networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet [20], the VGG net [31], and GoogLeNet [32]) into fully convolutional networks and transfer their learned representations by fine-tuning [3] to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional network achieves state-of-the-art segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU on 2012), NYUDv2, and SIFT Flow, while inference takes less than one fifth of a second for a typical image.}
+      \field{booktitle}{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{series}{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{Fully convolutional networks for semantic segmentation}
+      \field{year}{2015}
+      \field{pages}{3431\bibrangedash 3440}
+      \range{pages}{10}
+      \keyw{image classification; image segmentation; inference mechanisms; learning (artificial intelligence); fully convolutional networks; semantic segmentation; visual models; pixels-to-pixels; inference; learning; contemporary classification networks; PASCAL VOC; NYUDv2; SIFT flow; Semantics; Training; Convolution; Image segmentation; Computer architecture; Deconvolution; Adaptation models}
+    \endentry
+    \entry{Long2015CVPR}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
+           family={Shelhamer},
+           familyi={S\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{fullhash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{bibnamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authorbibnamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authornamehash}{4f969c1eddab717aa873b0a90831c45a}
+      \strng{authorfullhash}{4f969c1eddab717aa873b0a90831c45a}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Fully convolutional networks for semantic segmentation}
+      \field{pages}{2015}
+      \range{pages}{1}
+    \endentry
+    \entry{Miche2008OP}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=2c6013d4b1ebb01bca94936afdd8456f}{%
+           family={Miche},
+           familyi={M\bibinitperiod},
+           given={Yoan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7cf8a4d76bb1bb1d5c7b781b022c9a44}{%
+           family={Sorjamaa},
+           familyi={S\bibinitperiod},
+           given={Antti},
+           giveni={A\bibinitperiod}}}%
+        {{hash=775fd550bdab2fd74a32d4ba239f8499}{%
+           family={Lendasse},
+           familyi={L\bibinitperiod},
+           given={Amaury},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{529c245349c1a360fdcd362dd4672f7c}
+      \strng{fullhash}{529c245349c1a360fdcd362dd4672f7c}
+      \strng{bibnamehash}{529c245349c1a360fdcd362dd4672f7c}
+      \strng{authorbibnamehash}{529c245349c1a360fdcd362dd4672f7c}
+      \strng{authornamehash}{529c245349c1a360fdcd362dd4672f7c}
+      \strng{authorfullhash}{529c245349c1a360fdcd362dd4672f7c}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Artificial Neural Networks}
+      \field{title}{{OP-ELM}: Theory, Experiments and a Toolbox}
+      \field{year}{2008}
+      \field{pages}{145\bibrangedash 154}
+      \range{pages}{10}
+    \endentry
+    \entry{Miche2008A}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=2c6013d4b1ebb01bca94936afdd8456f}{%
+           family={Miche},
+           familyi={M\bibinitperiod},
+           given={Yoan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e112e32a3370610a1df560365ddeff0a}{%
+           family={Bas},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d7194e5254fc9433118927b6b1a94949}{%
+           family={Jutten},
+           familyi={J\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e6507473a69b05f7a7a72b3e870df7bb}{%
+           family={Simula},
+           familyi={S\bibinitperiod},
+           given={Olli},
+           giveni={O\bibinitperiod}}}%
+        {{hash=775fd550bdab2fd74a32d4ba239f8499}{%
+           family={Lendasse},
+           familyi={L\bibinitperiod},
+           given={Amaury},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6123333968894268996862f168bd3b7e}
+      \strng{fullhash}{fd6638673734108f77ff1fe14aa63d58}
+      \strng{bibnamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authorbibnamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authornamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authorfullhash}{fd6638673734108f77ff1fe14aa63d58}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Esann 2008, European Symposium on Artificial Neural Networks, Bruges, Belgium, April 23-25, 2008, Proceedings}
+      \field{title}{A Methodology for Building Regression Models using Extreme Learning Machine: {OP-ELM}}
+      \field{year}{2008}
+      \field{pages}{23\bibrangedash 25}
+      \range{pages}{3}
+    \endentry
+    \entry{MichevanHeeswijk2011-30641}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2c6013d4b1ebb01bca94936afdd8456f}{%
+           family={Miche},
+           familyi={M\bibinitperiod},
+           given={Yoan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5dfeaea80c12166431aee0aa93f7d6cd}{%
+           family={Heeswijk},
+           familyi={H\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=e112e32a3370610a1df560365ddeff0a}{%
+           family={Bas},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e6507473a69b05f7a7a72b3e870df7bb}{%
+           family={Simula},
+           familyi={S\bibinitperiod},
+           given={Olli},
+           giveni={O\bibinitperiod}}}%
+        {{hash=775fd550bdab2fd74a32d4ba239f8499}{%
+           family={Lendasse},
+           familyi={L\bibinitperiod},
+           given={Amaury},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6123333968894268996862f168bd3b7e}
+      \strng{fullhash}{a1484bd66afec3d13aca34ef2639981e}
+      \strng{bibnamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authorbibnamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authornamehash}{6123333968894268996862f168bd3b7e}
+      \strng{authorfullhash}{a1484bd66afec3d13aca34ef2639981e}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper an improvement of the optimally pruned extreme learning machine (OP-ELM) in the form of a L2 regularization penalty applied within the OP-ELM is proposed. The OP-ELM originally proposes a wrapper methodology around the extreme learning machine (ELM) meant to reduce the sensitivity of the ELM to irrelevant variables and obtain more parsimonious models thanks to neuron pruning. The proposed modification of the OP-ELM uses a cascade of two regularization penalties: first a L1 penalty to rank the neurons of the hidden layer, followed by a L2 penalty on the regression weights (regression between hidden layer and output layer) for numerical stability and efficient pruning of the neurons. The new methodology is tested against state of the art methods such as support vector machines or Gaussian processes and the original ELM and OP-ELM, on 11 different data sets; it systematically outperforms the OP-ELM (average of 27% better mean square error) and provides more reliable results – in terms of standard deviation of the results – while remaining always less than one order of magnitude slower than the OP-ELM.}
+      \field{journaltitle}{Neurocomputing}
+      \field{number}{16}
+      \field{title}{{TROP-ELM}: A double-regularized {ELM} using {LARS} and {Tikhonov} regularization}
+      \field{volume}{74}
+      \field{year}{2011}
+      \field{pages}{2413\bibrangedash 2421}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.neucom.2010.12.042
+      \endverb
+      \keyw{ELM; Regularization; Ridge regression; Tikhonov regularization; LARS; OP-ELM}
+    \endentry
+    \entry{Miche2010OP}{article}{}
+      \name{author}{5}{}{%
+        {{hash=66622bd0aa3506dad89eb7e3bcff4096}{%
+           family={Miche},
+           familyi={M\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=034d622f705a53c7aadb152905edd24b}{%
+           family={Sorjamaa},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cfdcd39db5b0b78219a6634a9b425dc9}{%
+           family={Bas},
+           familyi={B\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ee6620a5d839788a38cc86ee9c299500}{%
+           family={Jutten},
+           familyi={J\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d82a7ef37e8c5846d84291cdb0924174}{%
+           family={Lendasse},
+           familyi={L\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e616faf51a4bd021b57c24a569d4bc5c}
+      \strng{fullhash}{263ce645097dcb70e286b6e2751e9c24}
+      \strng{bibnamehash}{e616faf51a4bd021b57c24a569d4bc5c}
+      \strng{authorbibnamehash}{e616faf51a4bd021b57c24a569d4bc5c}
+      \strng{authornamehash}{e616faf51a4bd021b57c24a569d4bc5c}
+      \strng{authorfullhash}{263ce645097dcb70e286b6e2751e9c24}
+      \field{extraname}{3}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{1}
+      \field{title}{{OP-ELM}: optimally pruned extreme learning machine.}
+      \field{volume}{21}
+      \field{year}{2010}
+      \field{pages}{158\bibrangedash 62}
+      \range{pages}{5}
+    \endentry
+    \entry{Ng2004-32636}{article}{}
+      \name{author}{1}{}{%
+        {{hash=49e889356ff39df159461bc2895c7e16}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima Y.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{49e889356ff39df159461bc2895c7e16}
+      \strng{fullhash}{49e889356ff39df159461bc2895c7e16}
+      \strng{bibnamehash}{49e889356ff39df159461bc2895c7e16}
+      \strng{authorbibnamehash}{49e889356ff39df159461bc2895c7e16}
+      \strng{authornamehash}{49e889356ff39df159461bc2895c7e16}
+      \strng{authorfullhash}{49e889356ff39df159461bc2895c7e16}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Icml}
+      \field{number}{5}
+      \field{title}{Feature selection, $L_1$ vs. $L_2$ regularization, and rotational invariance}
+      \field{volume}{19}
+      \field{year}{2004}
+      \field{pages}{379\bibrangedash 387}
+      \range{pages}{9}
+    \endentry
+    \entry{MahonyCVC2019}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=060509aaf0210fc09ea9b795c36a8af3}{%
+           family={O'Mahony},
+           familyi={O\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3610783d90e6f33dd2825fba18530c85}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f6c6043c7f099e12414c35f022c46dfd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Anderson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e1f762bc2171cfad70c98da2ce1542e9}{%
+           family={Harapanahalli},
+           familyi={H\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5a6e28bd056a6763762a59aa4b27ba1}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Gustavo\bibnamedelima Velasco},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=b3797f2c968cc507cbbe92ca103399e7}{%
+           family={Krpalkova},
+           familyi={K\bibinitperiod},
+           given={Lenka},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2c218dde295b64e98278c09e600dfdb0}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2016abe7bd371587d0d74f7864ae1ef9}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7195f9989a901e2a02c5ca45804cf1b9}{%
+           family={Arai},
+           familyi={A\bibinitperiod},
+           given={Kohei},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4c6ff158d3a3072b3ddf6f7d90780a78}{%
+           family={Kapoor},
+           familyi={K\bibinitperiod},
+           given={Supriya},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{39303cc16ac7e5e78c0dc5c5f6d21708}
+      \strng{fullhash}{7e23650b5905a05cd7e1745801112d87}
+      \strng{bibnamehash}{39303cc16ac7e5e78c0dc5c5f6d21708}
+      \strng{authorbibnamehash}{39303cc16ac7e5e78c0dc5c5f6d21708}
+      \strng{authornamehash}{39303cc16ac7e5e78c0dc5c5f6d21708}
+      \strng{authorfullhash}{7e23650b5905a05cd7e1745801112d87}
+      \strng{editorbibnamehash}{47417fb0f059134143a5ef79cd2425e5}
+      \strng{editornamehash}{47417fb0f059134143a5ef79cd2425e5}
+      \strng{editorfullhash}{47417fb0f059134143a5ef79cd2425e5}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep Learning has pushed the limits of what was possible in the domain of Digital Image Processing. However, that is not to say that the traditional computer vision techniques which had been undergoing progressive development in years prior to the rise of DL have become obsolete. This paper will analyse the benefits and drawbacks of each approach. The aim of this paper is to promote a discussion on whether knowledge of classical computer vision techniques should be maintained. The paper will also explore how the two sides of computer vision can be combined. Several recent hybrid methodologies are reviewed which have demonstrated the ability to improve computer vision performance and to tackle problems not suited to Deep Learning. For example, combining traditional computer vision techniques with Deep Learning has been popular in emerging domains such as Panoramic Vision and 3D vision for which Deep Learning models have not yet been fully optimised.}
+      \field{booktitle}{Advances in Computer Vision}
+      \field{isbn}{978-3-030-17795-9}
+      \field{title}{Deep Learning vs. Traditional Computer Vision}
+      \field{year}{2020}
+      \field{pages}{128\bibrangedash 144}
+      \range{pages}{17}
+    \endentry
+    \entry{raecompressive2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=8dcdeb16ef3c68cf8396226668804fe0}{%
+           family={Rae},
+           familyi={R\bibinitperiod},
+           given={Jack\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4b3acabda3fd87e1abd111ed903b2d51}{%
+           family={Potapenko},
+           familyi={P\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=947cb1fd7d960a26fc8caeaa0737db52}{%
+           family={Jayakumar},
+           familyi={J\bibinitperiod},
+           given={Siddhant\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1947a8ad779b49767f659c94bdc2bd20}{%
+           family={Hillier},
+           familyi={H\bibinitperiod},
+           given={Chloe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2a321a868e44d49baf52b5e2d816fb71}{%
+           family={Lillicrap},
+           familyi={L\bibinitperiod},
+           given={Timothy\bibnamedelima P},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{af1a57cd747585812979b8511d325e39}
+      \strng{fullhash}{630cc048aaff13b2909cec14fe280000}
+      \strng{bibnamehash}{af1a57cd747585812979b8511d325e39}
+      \strng{authorbibnamehash}{af1a57cd747585812979b8511d325e39}
+      \strng{authornamehash}{af1a57cd747585812979b8511d325e39}
+      \strng{authorfullhash}{630cc048aaff13b2909cec14fe280000}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Compressive Transformers for Long-Range Sequence Modelling}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1911.05507
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1911.05507
+      \endverb
+    \endentry
+    \entry{Raissi2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=95a17c39168b9e6b8812f207b4e036c1}{%
+           family={Raissi},
+           familyi={R\bibinitperiod},
+           given={Maziar},
+           giveni={M\bibinitperiod}}}%
+        {{hash=197d71332633e07aa578718628fdc405}{%
+           family={Perdikaris},
+           familyi={P\bibinitperiod},
+           given={Paris},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bfaf154b1f300f885a75adce4c6b773e}{%
+           family={Karniadakis},
+           familyi={K\bibinitperiod},
+           given={George\bibnamedelima Em},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{767366a7d0fdde767496da8385111e76}
+      \strng{fullhash}{767366a7d0fdde767496da8385111e76}
+      \strng{bibnamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authorbibnamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authornamehash}{767366a7d0fdde767496da8385111e76}
+      \strng{authorfullhash}{767366a7d0fdde767496da8385111e76}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work leverages recent advances in probabilistic machine learning to discover governing equations expressed by parametric linear operators. Such equations involve, but are not limited to, ordinary and partial differential, integro-differential, and fractional order operators. Here, Gaussian process priors are modified according to the particular form of such operators and are employed to infer parameters of the linear equations from scarce and possibly noisy observations. Such observations may come from experiments or “black-box” computer simulations, as demonstrated in several synthetic examples and a realistic application in functional genomics.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{Machine learning of linear differential equations using Gaussian processes}
+      \field{volume}{348}
+      \field{year}{2017}
+      \field{pages}{683\bibrangedash 693}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jcp.2017.07.050
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999117305582
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999117305582
+      \endverb
+      \keyw{Probabilistic machine learning,Inverse problems,Fractional differential equations,Uncertainty quantification,Functional genomics}
+    \endentry
+    \entry{Ramachandran2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=cdb1fe5f3635c7d9333b418ef3a2c79b}{%
+           family={Ramachandran},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=847e1f68da65b83a800887186b06bed4}{%
+           family={Zoph},
+           familyi={Z\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bc4e66397f700c1cd162b9d995c614e3}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Q.\bibnamedelimi V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \strng{fullhash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \strng{bibnamehash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \strng{authorbibnamehash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \strng{authornamehash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \strng{authorfullhash}{23d9a5ffeedc294faea08cf49bb385fe}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. Int'l Conf. on Learning Representations (Workshop track)}
+      \field{title}{Searching for activation functions}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
+    \entry{Saunders1998}{inproceddings}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICML}
+      \field{title}{Ridge regression learning algorithm in dual variables}
+      \field{year}{1998}
+      \field{pages}{515\bibrangedash 521}
+      \range{pages}{7}
+    \endentry
+    \entry{Rosten2006}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=712f75fa3873cef1c7e0971ca95a0237}{%
+           family={Rosten},
+           familyi={R\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7935612af661bcaae62a430e70094064}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=4b50e741a7dba42c324c39c81ef815a9}{%
+           family={Leonardis},
+           familyi={L\bibinitperiod},
+           given={Ale{š}},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a3e36d7b360de7388d78599c2446ac34}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+        {{hash=da62ba43b7f8467cb2aee3e08a6d5234}{%
+           family={Pinz},
+           familyi={P\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{fullhash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{bibnamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authorbibnamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authornamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authorfullhash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{editorbibnamehash}{603ac7b48b49d698b9933adf4625f33c}
+      \strng{editornamehash}{603ac7b48b49d698b9933adf4625f33c}
+      \strng{editorfullhash}{603ac7b48b49d698b9933adf4625f33c}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Where feature points are used in real-time frame-rate applications, a high-speed feature detector is necessary. Feature detectors such as SIFT (DoG), Harris and SUSAN are good methods which yield high quality features, however they are too computationally intensive for use in real-time applications of any complexity. Here we show that machine learning can be used to derive a feature detector which can fully process live PAL video using less than 7{\%} of the available processing time. By comparison neither the Harris detector (120{\%}) nor the detection stage of SIFT (300{\%}) can operate at full frame rate.}
+      \field{booktitle}{Computer Vision -- ECCV 2006}
+      \field{isbn}{978-3-540-33833-8}
+      \field{title}{Machine Learning for High-Speed Corner Detection}
+      \field{year}{2006}
+      \field{pages}{430\bibrangedash 443}
+      \range{pages}{14}
+    \endentry
+    \entry{RumelhartHinton1986-9415}{article}{}
+      \name{author}{3}{}{%
+        {{hash=55cd5380bb5b15032a6d5a2015f56e3f}{%
+           family={Rumelhart},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6cbc29ad7fd57ffdb9ed4728418fd988}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{fullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{bibnamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authorbibnamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authornamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \strng{authorfullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6088}
+      \field{title}{Learning representations by back-propagating errors}
+      \field{volume}{323}
+      \field{year}{1986}
+      \field{pages}{533\bibrangedash 536}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/323533a0
+      \endverb
+    \endentry
+    \entry{SimiläTikka2005-32497}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=f90d695b5a563c6098f74aa4886e7742}{%
+           family={Similä},
+           familyi={S\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=96506209c6bdde52dd43f63d46a82ca5}{%
+           family={Tikka},
+           familyi={T\bibinitperiod},
+           given={Jarkko},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{66a2ade9f9bfccc534674a05257ec56c}
+      \strng{fullhash}{66a2ade9f9bfccc534674a05257ec56c}
+      \strng{bibnamehash}{66a2ade9f9bfccc534674a05257ec56c}
+      \strng{authorbibnamehash}{66a2ade9f9bfccc534674a05257ec56c}
+      \strng{authornamehash}{66a2ade9f9bfccc534674a05257ec56c}
+      \strng{authorfullhash}{66a2ade9f9bfccc534674a05257ec56c}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{parse regression is the problem of selecting a parsimonious subset of all available regressors for an efficient prediction of a target variable. We consider a general setting in which both the target and regressors may be multivariate. The regressors are selected by a forward selection procedure that extends the Least Angle Regression algorithm. Instead of the common practice of estimating each target variable individually, our proposed method chooses sequentially those regressors that allow, on average, the best predictions of all the target variables. We illustrate the procedure by an experiment with artificial data. The method is also applied to the task of selecting relevant pixels from images in multidimensional scaling of handwritten digits.}
+      \field{booktitle}{Lecture Notes in Computer Science}
+      \field{isbn}{978-3-540-28756-8}
+      \field{title}{Multiresponse Sparse Regression with Application to Multidimensional Scaling}
+      \field{volume}{3697}
+      \field{year}{2005}
+      \field{pages}{97\bibrangedash 102}
+      \range{pages}{6}
+    \endentry
+    \entry{Sirignano2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63a950b98d85daffb2acb228fc44a30b}{%
+           family={Sirignano},
+           familyi={S\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b3f57aca002dd1e7484cf81299998414}{%
+           family={Spiliopoulos},
+           familyi={S\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb5add8979e6ca053be0b10341d44fe1}
+      \strng{fullhash}{fb5add8979e6ca053be0b10341d44fe1}
+      \strng{bibnamehash}{fb5add8979e6ca053be0b10341d44fe1}
+      \strng{authorbibnamehash}{fb5add8979e6ca053be0b10341d44fe1}
+      \strng{authornamehash}{fb5add8979e6ca053be0b10341d44fe1}
+      \strng{authorfullhash}{fb5add8979e6ca053be0b10341d44fe1}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{High-dimensional PDEs have been a longstanding computational challenge. We propose to solve high-dimensional PDEs by approximating the solution with a deep neural network which is trained to satisfy the differential operator, initial condition, and boundary conditions. Our algorithm is meshfree, which is key since meshes become infeasible in higher dimensions. Instead of forming a mesh, the neural network is trained on batches of randomly sampled time and space points. The algorithm is tested on a class of high-dimensional free boundary PDEs, which we are able to accurately solve in up to 200 dimensions. The algorithm is also tested on a high-dimensional Hamilton–Jacobi–Bellman PDE and Burgers' equation. The deep learning algorithm approximates the general solution to the Burgers' equation for a continuum of different boundary conditions and physical conditions (which can be viewed as a high-dimensional space). We call the algorithm a “Deep Galerkin Method (DGM)” since it is similar in spirit to Galerkin methods, with the solution approximated by a neural network instead of a linear combination of basis functions. In addition, we prove a theorem regarding the approximation power of neural networks for a class of quasilinear parabolic PDEs.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{{DGM}: A deep learning algorithm for solving partial differential equations}
+      \field{volume}{375}
+      \field{year}{2018}
+      \field{pages}{1339\bibrangedash 1364}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jcp.2018.08.029
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999118305527
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999118305527
+      \endverb
+      \keyw{Partial differential equations,Machine learning,Deep learning,High-dimensional partial differential equations}
+    \endentry
+    \entry{NIPS2015-5850}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=fa6324abda8d5ed86b338a9a3e9d074e}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Rupesh\bibnamedelima K},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c7690d8de5e14a38203ad5706d6dd4eb}{%
+           family={Greff},
+           familyi={G\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=c294bbcb0687bdb5113cc4c4cd6ebad3}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a624c7c9a34692d04f3bb4c41ee3e68e}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={N.\bibnamedelimi D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=dc777b608117794a5ff6308cfbba8945}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0ef91066dee98e654f9aebd57da00647}{%
+           family={Sugiyama},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{fullhash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{bibnamehash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{authorbibnamehash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{authornamehash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{authorfullhash}{72dfa5daea71a1de8df4cc1ed19c2180}
+      \strng{editorbibnamehash}{f981a0b37ac43bd0fc3784cbcce306be}
+      \strng{editornamehash}{f981a0b37ac43bd0fc3784cbcce306be}
+      \strng{editorfullhash}{57ee9f364dd6ae123ec0c4a21028ba65}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 28}
+      \field{title}{Training Very Deep Networks}
+      \field{year}{2015}
+      \field{pages}{2377\bibrangedash 2385}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/5850-training-very-deep-networks.pdf
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/5850-training-very-deep-networks.pdf
+      \endverb
+    \endentry
+    \entry{WANG2018144}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4e570310fdff72e5a3d618c556248e80}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinjiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=838a5a2f5d31a7dd7b83ec9506c62aca}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Yulin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d9a140e1b3e213165e9603a17ba5227d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Laibin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=00b0c099a74253beaee9273b2751e8d5}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Robert\bibnamedelima X.},
+           giveni={R\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=3271b23c4a538e42d1bf78cd034967f6}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dazhong},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{08bf7ee558550a1783c8485b5092fc3f}
+      \strng{fullhash}{a00262ccf3d95783462023c1ef5da4ec}
+      \strng{bibnamehash}{08bf7ee558550a1783c8485b5092fc3f}
+      \strng{authorbibnamehash}{08bf7ee558550a1783c8485b5092fc3f}
+      \strng{authornamehash}{08bf7ee558550a1783c8485b5092fc3f}
+      \strng{authorfullhash}{a00262ccf3d95783462023c1ef5da4ec}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Smart manufacturing refers to using advanced data analytics to complement physical science for improving system performance and decision making. With the widespread deployment of sensors and Internet of Things, there is an increasing need of handling big manufacturing data characterized by high volume, high velocity, and high variety. Deep learning provides advanced analytics tools for processing and analysing big manufacturing data. This paper presents a comprehensive survey of commonly used deep learning algorithms and discusses their applications toward making manufacturing “smart”. The evolvement of deep learning technologies and their advantages over traditional machine learning are firstly discussed. Subsequently, computational methods based on deep learning are presented specially aim to improve system performance in manufacturing. Several representative deep learning models are comparably discussed. Finally, emerging topics of research on deep learning are highlighted, and future trends and challenges associated with deep learning for smart manufacturing are summarized.}
+      \field{issn}{0278-6125}
+      \field{journaltitle}{Journal of Manufacturing Systems}
+      \field{note}{Special Issue on Smart Manufacturing}
+      \field{title}{Deep learning for smart manufacturing: Methods and applications}
+      \field{volume}{48}
+      \field{year}{2018}
+      \field{pages}{144\bibrangedash 156}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmsy.2018.01.003
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0278612518300037
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0278612518300037
+      \endverb
+      \keyw{Smart manufacturing,Deep learning,Computational intelligence,Data analytics}
+    \endentry
+    \entry{Zhang2020-8638559}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6987c26bf5f9b6e119893b5d925c7b8c}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=16afd9391f364b3271b8cebd5c90d52f}{%
+           family={{Zhou}},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \strng{fullhash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \strng{bibnamehash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \strng{authorbibnamehash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \strng{authornamehash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \strng{authorfullhash}{a94c5678dd1edc21ba32aff7382f67b1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{number}{6}
+      \field{title}{Optimal Margin Distribution Machine}
+      \field{volume}{32}
+      \field{year}{2020}
+      \field{pages}{1143\bibrangedash 1156}
+      \range{pages}{14}
+    \endentry
+    \entry{Zhang2017}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1f26f664835ac6c347db22001b657f1a}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=db8970ea7897cb700d533df376ddde33}{%
+           family={{David}},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3094d60c4feaff4ab1411520529c8d64}{%
+           family={{Gong}},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d5fabdb3579be65198629e19fbb1103}
+      \strng{fullhash}{1d5fabdb3579be65198629e19fbb1103}
+      \strng{bibnamehash}{1d5fabdb3579be65198629e19fbb1103}
+      \strng{authorbibnamehash}{1d5fabdb3579be65198629e19fbb1103}
+      \strng{authornamehash}{1d5fabdb3579be65198629e19fbb1103}
+      \strng{authorfullhash}{1d5fabdb3579be65198629e19fbb1103}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the last half decade, convolutional neural networks (CNNs) have triumphed over semantic segmentation, which is a core task of various emerging industrial applications such as autonomous driving and medical imaging. However, to train CNNs requires a huge amount of data, which is difficult to collect and laborious to annotate. Recent advances in computer graphics make it possible to train CNN models on photo-realistic synthetic data with computer-generated annotations. Despite this, the domain mismatch between the real images and the synthetic data significantly decreases the models' performance. Hence we propose a curriculum-style learning approach to minimize the domain gap in semantic segmentation. The curriculum domain adaptation solves easy tasks first in order to infer some necessary properties about the target domain; in particular, the first task is to learn global label distributions over images and local distributions over landmark superpixels. These are easy to estimate because images of urban traffic scenes have strong idiosyncrasies (e.g., the size and spatial relations of buildings, streets, cars, etc.). We then train the segmentation network in such a way that the network predictions in the target domain follow those inferred properties. In experiments, our method significantly outperforms the baselines as well as the only known existing approach to the same problem.}
+      \field{booktitle}{2017 IEEE International Conference on Computer Vision (ICCV)}
+      \field{issn}{2380-7504}
+      \field{title}{Curriculum Domain Adaptation for Semantic Segmentation of Urban Scenes}
+      \field{year}{2017}
+      \field{pages}{2039\bibrangedash 2049}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ICCV.2017.223
+      \endverb
+      \keyw{computer graphics;convolution;image classification;image segmentation;learning (artificial intelligence);neural nets;traffic engineering computing;curriculum domain adaptation;semantic segmentation;urban scenes;convolutional neural networks;CNNs;computer graphics;CNN models;urban traffic scenes;segmentation network;computer-generated annotations;curriculum-style learning;Image segmentation;Semantics;Training;Adaptation models;Computer vision;Buildings}
+    \endentry
+    \entry{Zhou978-3-319-11656-3-1}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=69b2ac982b578eacb22a991b3024e410}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhi\bibnamedelima Hua},
+           giveni={Z\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=9b9d5bbcc5b452599a69897887b0b626}{%
+           family={El\bibnamedelima Gayar},
+           familyi={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Neamat},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3e680f73e719a14e933cd7335948b156}{%
+           family={Schwenker},
+           familyi={S\bibinitperiod},
+           given={Friedhelm},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1e951129a1c3b0571ac896b016d6ac28}{%
+           family={Suen},
+           familyi={S\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{fullhash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{bibnamehash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{authorbibnamehash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{authornamehash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{authorfullhash}{69b2ac982b578eacb22a991b3024e410}
+      \strng{editorbibnamehash}{c96d0a1f4ef2f530b7f58e43ec70daa1}
+      \strng{editornamehash}{c96d0a1f4ef2f530b7f58e43ec70daa1}
+      \strng{editorfullhash}{c96d0a1f4ef2f530b7f58e43ec70daa1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Support vector machines (SVMs) and Boosting are possibly the two most popular learning approaches during the past two decades. It is well known that the margin is a fundamental issue of SVMs, whereas recently the margin theory for Boosting has been defended, establishing a connection between these two mainstream approaches. The recent theoretical results disclosed that the margin distribution rather than a single margin is really crucial for the generalization performance, and suggested to optimize the margin distribution by maximizing the margin mean and minimizing the margin variance simultaneously. Inspired by this recognition, we advocate the large margin distribution learning, a promising research direction that has exhibited superiority in algorithm designs to traditional large margin learning.}
+      \field{booktitle}{Artificial Neural Networks in Pattern Recognition}
+      \field{isbn}{978-3-319-11656-3}
+      \field{title}{Large Margin Distribution Learning}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+    \endentry
+    \entry{ZhuPark20178237506}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6c72831a314bee50d394cb3af13fb87b}{%
+           family={{Zhu}},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8f7f68e9a8dd12dcd846aa7313060dbe}{%
+           family={{Park}},
+           familyi={P\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fac4f102e2cd5eff8aa7c73c21509cab}{%
+           family={{Isola}},
+           familyi={I\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=594b6331b2be8930dc794ac51c6de883}{%
+           family={{Efros}},
+           familyi={E\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d24545b1059c333e102d4093125d6e3d}
+      \strng{fullhash}{d24545b1059c333e102d4093125d6e3d}
+      \strng{bibnamehash}{d24545b1059c333e102d4093125d6e3d}
+      \strng{authorbibnamehash}{d24545b1059c333e102d4093125d6e3d}
+      \strng{authornamehash}{d24545b1059c333e102d4093125d6e3d}
+      \strng{authorfullhash}{d24545b1059c333e102d4093125d6e3d}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. However, for many tasks, paired training data will not be available. We present an approach for learning to translate an image from a source domain X to a target domain Y in the absence of paired examples. Our goal is to learn a mapping G : X → Y such that the distribution of images from G(X) is indistinguishable from the distribution Y using an adversarial loss. Because this mapping is highly under-constrained, we couple it with an inverse mapping F : Y → X and introduce a cycle consistency loss to push F(G(X)) ≈ X (and vice versa). Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc. Quantitative comparisons against several prior methods demonstrate the superiority of our approach.}
+      \field{booktitle}{2017 IEEE International Conference on Computer Vision (ICCV)}
+      \field{issn}{2380-7504}
+      \field{title}{Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks}
+      \field{year}{2017}
+      \field{pages}{2242\bibrangedash 2251}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICCV.2017.244
+      \endverb
+      \keyw{computer vision;learning (artificial intelligence);cycle consistency loss;unpaired image-to-image translation;inverse mapping;image pair alignment;cycle-consistent adversarial networks;vision problem;graphics problem;learning;image distribution;adversarial loss;object transfiguration;collection style transfer;photo enhancement;Training;Painting;Training data;Semantics;Extraterrestrial measurements;Graphics}
+    \endentry
+  \enddatalist
+  \missing{Bishop2012-6469}
+  \missing{Godfrey2019-9846}
+  \missing{HuangZhao2018NCAA-5838}
+  \missing{IgelnikPao1995-6470}
+  \missing{PiramanayagamSaber2018-9591}
+  \missing{Rong2009-4804697}
+  \missing{RunklerCoupland2018-6356}
+  \missing{VAPNIK2009544}
+  \missing{Yutao2011}
+  \missing{golub1979 generalized}
+  \missing{gosavi2004reinforcement}
+  \missing{paopillips1995-6471}
+  \missing{sutton1998reinforcement}
+  \missing{watkins1992q}
+  \missing{江欢 2009全蕴涵三I算法}
+\endrefsection
+\endinput
+
