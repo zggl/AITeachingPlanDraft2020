@@ -1,0 +1,588 @@
+\let \CTEX@spaceChar \relax 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\contentsline {chapter}{前\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}言}{i}{chapter*.1}% 
+\contentsline {paragraph}{在线课程}{i}{paragraph*.5}% 
+\contentsline {chapter}{概\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}览}{xv}{chapter*.7}% 
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}人工智能概述}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}AI的定义及其研究目标}{2}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}AI的定义及其研究目标}{2}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}何谓智能(自然智能)}{2}{subsection.1.1.2}% 
+\contentsline {paragraph}{动物在做决定时如何利用环境}{5}{paragraph*.12}% 
+\contentsline {paragraph}{动物在做决定时如何利用环境}{6}{paragraph*.14}% 
+\contentsline {paragraph}{分布强化学习的AI研究}{8}{paragraph*.15}% 
+\contentsline {subsection}{\numberline {1.1.3}认识智能的几种理论}{9}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}智能的层次结构}{10}{subsection.1.1.4}% 
+\contentsline {subsection}{\numberline {1.1.5}智能包含的能力}{10}{subsection.1.1.5}% 
+\contentsline {subsection}{\numberline {1.1.6}何谓人工智能?}{11}{subsection.1.1.6}% 
+\contentsline {subsection}{\numberline {1.1.7}人工智能的近远期目标}{13}{subsection.1.1.7}% 
+\contentsline {subsection}{\numberline {1.1.8}人工智能对计算机科学的影响}{13}{subsection.1.1.8}% 
+\contentsline {subsection}{\numberline {1.1.9}计算机科学与技术、软件工程、物联网、大数据专业的区别}{16}{subsection.1.1.9}% 
+\contentsline {subsection}{\numberline {1.1.10}2020年十大科技趋势预测——百度研究院}{17}{subsection.1.1.10}% 
+\contentsline {subsection}{\numberline {1.1.11}美国人工智能计划：2020年度报告}{20}{subsection.1.1.11}% 
+\contentsline {section}{\numberline {1.2}AI的产生与发展}{21}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}AI的产生与发展-孕育期(1956年以前)}{22}{subsection.1.2.1}% 
+\contentsline {paragraph}{AI的产生与发展-孕育期(远古——1946年以前)}{22}{paragraph*.20}% 
+\contentsline {paragraph}{AI的产生与发展-孕育期(1956年以前)}{22}{paragraph*.21}% 
+\contentsline {subsection}{\numberline {1.2.2}AI的产生与发展-形成期(1956--1970年)}{22}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.3}AI的产生与发展-知识应用期(1971--80年代末)}{24}{subsection.1.2.3}% 
+\contentsline {subparagraph}{失败的预言}{24}{subparagraph*.22}% 
+\contentsline {subparagraph}{挫折和教训}{24}{subparagraph*.23}% 
+\contentsline {subsection}{\numberline {1.2.4}AI的发展-知识深化期(1990-2000年代末)}{25}{subsection.1.2.4}% 
+\contentsline {subsection}{\numberline {1.2.5}数据智能——发展期(2000-2009年末)}{26}{subsection.1.2.5}% 
+\contentsline {subsection}{\numberline {1.2.6}数据智能——爆发期(2010-现在)}{27}{subsection.1.2.6}% 
+\contentsline {subsection}{\numberline {1.2.7}AI的产生与发展-从学派分立到综合(20世纪80年代到本世纪初)}{31}{subsection.1.2.7}% 
+\contentsline {subsubsection}{\numberline {1.2.7.1}人工智能的进化}{32}{subsubsection.1.2.7.1}% 
+\contentsline {paragraph}{AI的产生与发展-智能科学技术的兴起(本世纪初以来)}{32}{paragraph*.25}% 
+\contentsline {subsection}{\numberline {1.2.8}AI成功的标志: IBM的“深蓝”和“小深”}{32}{subsection.1.2.8}% 
+\contentsline {subsection}{\numberline {1.2.9}编程语言}{33}{subsection.1.2.9}% 
+\contentsline {section}{\numberline {1.3}AI研究的基本内容}{43}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}AI 的 学 科 位 置}{44}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}人工智能学科（F06）代码}{45}{subsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.3.3}与脑科学和认知科学的交叉研究-脑科学}{45}{subsection.1.3.3}% 
+\contentsline {subsection}{\numberline {1.3.4}智能模拟的方法和技术研究}{47}{subsection.1.3.4}% 
+\contentsline {section}{\numberline {1.4}AI研究中的不同学派——不同学派}{47}{section.1.4}% 
+\contentsline {paragraph}{不同学派的理论之争}{48}{paragraph*.45}% 
+\contentsline {section}{\numberline {1.5}人工智能近期发展分析}{49}{section.1.5}% 
+\contentsline {subsection}{\numberline {1.5.1}人工智能发展方向}{50}{subsection.1.5.1}% 
+\contentsline {subsubsection}{\numberline {1.5.1.1}人工智能应用前景}{50}{subsubsection.1.5.1.1}% 
+\contentsline {subsubsection}{\numberline {1.5.1.2}人工智能近期发展方向}{50}{subsubsection.1.5.1.2}% 
+\contentsline {paragraph}{多学科交叉研究}{51}{paragraph*.47}% 
+\contentsline {paragraph}{集成智能研究}{51}{paragraph*.48}% 
+\contentsline {paragraph}{多学派融合研究}{52}{paragraph*.50}% 
+\contentsline {paragraph}{智能网格}{52}{paragraph*.51}% 
+\contentsline {paragraph}{智能机器人研究}{52}{paragraph*.52}% 
+\contentsline {paragraph}{智能应用和智能产业}{52}{paragraph*.53}% 
+\contentsline {subsection}{\numberline {1.5.2}人工智能发展八大新趋势}{52}{subsection.1.5.2}% 
+\contentsline {subsection}{\numberline {1.5.3}达摩院2020十大科技趋势}{56}{subsection.1.5.3}% 
+\contentsline {section}{\numberline {1.6}AI的相关应用领域}{58}{section.1.6}% 
+\contentsline {subsection}{\numberline {1.6.1}机器思维}{59}{subsection.1.6.1}% 
+\contentsline {subsubsection}{\numberline {1.6.1.1}推理和搜索}{59}{subsubsection.1.6.1.1}% 
+\contentsline {paragraph}{推理}{59}{paragraph*.59}% 
+\contentsline {paragraph}{搜索}{59}{paragraph*.60}% 
+\contentsline {paragraph}{规划}{60}{paragraph*.61}% 
+\contentsline {subparagraph}{规划的概念}{60}{subparagraph*.62}% 
+\contentsline {subparagraph}{规划的特点}{60}{subparagraph*.63}% 
+\contentsline {subparagraph}{规划系统的例子}{60}{subparagraph*.64}% 
+\contentsline {subsection}{\numberline {1.6.2}机器感知}{60}{subsection.1.6.2}% 
+\contentsline {subsubsection}{\numberline {1.6.2.1}机器视觉}{61}{subsubsection.1.6.2.1}% 
+\contentsline {subparagraph}{模式识别的一般过程}{62}{subparagraph*.66}% 
+\contentsline {subsection}{\numberline {1.6.3}机器行为}{62}{subsection.1.6.3}% 
+\contentsline {subsection}{\numberline {1.6.4}计算智能}{63}{subsection.1.6.4}% 
+\contentsline {subsubsection}{\numberline {1.6.4.1}神经计算}{64}{subsubsection.1.6.4.1}% 
+\contentsline {subsubsection}{\numberline {1.6.4.2}进化计算}{64}{subsubsection.1.6.4.2}% 
+\contentsline {subsubsection}{\numberline {1.6.4.3}模糊计算}{65}{subsubsection.1.6.4.3}% 
+\contentsline {subsection}{\numberline {1.6.5}机器学习}{65}{subsection.1.6.5}% 
+\contentsline {subsubsection}{\numberline {1.6.5.1}符号学习}{65}{subsubsection.1.6.5.1}% 
+\contentsline {subsubsection}{\numberline {1.6.5.2}神经学习}{66}{subsubsection.1.6.5.2}% 
+\contentsline {subsubsection}{\numberline {1.6.5.3}数据挖掘和知识发现}{67}{subsubsection.1.6.5.3}% 
+\contentsline {subparagraph}{与传统数据库技术的区别}{67}{subparagraph*.67}% 
+\contentsline {subparagraph}{发展}{67}{subparagraph*.68}% 
+\contentsline {subsection}{\numberline {1.6.6}分布智能}{67}{subsection.1.6.6}% 
+\contentsline {subsection}{\numberline {1.6.7}智能系统}{68}{subsection.1.6.7}% 
+\contentsline {subsubsection}{\numberline {1.6.7.1}专家系统}{68}{subsubsection.1.6.7.1}% 
+\contentsline {subsubsection}{\numberline {1.6.7.2}智能决策支持系统}{68}{subsubsection.1.6.7.2}% 
+\contentsline {subsection}{\numberline {1.6.8}人工心理与人工情感}{69}{subsection.1.6.8}% 
+\contentsline {paragraph}{\textbf {智能、情感和心理}}{69}{paragraph*.71}% 
+\contentsline {paragraph}{\textbf {人工智能、人工情感和人工心理}}{69}{paragraph*.72}% 
+\contentsline {subsection}{\numberline {1.6.9}人工生命 }{70}{subsection.1.6.9}% 
+\contentsline {subsection}{\numberline {1.6.10}自动推理}{70}{subsection.1.6.10}% 
+\contentsline {subsection}{\numberline {1.6.11}图神经网络——Open Graph Benchmark}{73}{subsection.1.6.11}% 
+\contentsline {subsection}{\numberline {1.6.12}工业4.0}{73}{subsection.1.6.12}% 
+\contentsline {subsubsection}{\numberline {1.6.12.1}物联网技术与工业4.0}{73}{subsubsection.1.6.12.1}% 
+\contentsline {subsubsection}{\numberline {1.6.12.2}大数据与工业4.0}{74}{subsubsection.1.6.12.2}% 
+\contentsline {subsubsection}{\numberline {1.6.12.3}机器学习下的VUCA战略}{75}{subsubsection.1.6.12.3}% 
+\contentsline {subsubsection}{\numberline {1.6.12.4}基于算法的工业智能平台}{76}{subsubsection.1.6.12.4}% 
+\contentsline {section}{\numberline {1.7}人工智能的典型应用 }{77}{section.1.7}% 
+\contentsline {subsection}{\numberline {1.7.1}\textbf {博弈}}{77}{subsection.1.7.1}% 
+\contentsline {subsection}{\numberline {1.7.2}深度学习求解高维偏微分方程}{77}{subsection.1.7.2}% 
+\contentsline {subsection}{\numberline {1.7.3}自动定理证明}{80}{subsection.1.7.3}% 
+\contentsline {subsection}{\numberline {1.7.4}\textbf {国家安全领域}}{82}{subsection.1.7.4}% 
+\contentsline {subsection}{\numberline {1.7.5}\textbf {机器人}}{83}{subsection.1.7.5}% 
+\contentsline {subsection}{\numberline {1.7.6}\textbf {机械臂}}{85}{subsection.1.7.6}% 
+\contentsline {subsection}{\numberline {1.7.7}闲鱼垃圾评论过滤系统}{85}{subsection.1.7.7}% 
+\contentsline {subsection}{\numberline {1.7.8}PCB产业}{87}{subsection.1.7.8}% 
+\contentsline {subsection}{\numberline {1.7.9}百度飞桨: 开源开放的产业级深度学习平台}{89}{subsection.1.7.9}% 
+\contentsline {subsection}{\numberline {1.7.10}百度飞桨: 开源开放的产业级深度学习平台}{90}{subsection.1.7.10}% 
+\contentsline {subsection}{\numberline {1.7.11}计算机视觉的语义分割}{91}{subsection.1.7.11}% 
+\contentsline {paragraph}{智能决策}{93}{paragraph*.87}% 
+\contentsline {subsection}{\numberline {1.7.12}威胁检测和预防}{93}{subsection.1.7.12}% 
+\contentsline {paragraph}{智能网络}{95}{paragraph*.88}% 
+\contentsline {paragraph}{微盟删库危机事件}{96}{paragraph*.89}% 
+\contentsline {subsection}{\numberline {1.7.13}人工智能案例}{96}{subsection.1.7.13}% 
+\contentsline {section}{\numberline {1.8}人工智能的学习平台}{106}{section.1.8}% 
+\contentsline {subsection}{\numberline {1.8.1}Tensorflow}{106}{subsection.1.8.1}% 
+\contentsline {paragraph}{TensorFlow Quantum——量子机器学习模型}{111}{paragraph*.103}% 
+\contentsline {paragraph}{MLIR}{112}{paragraph*.104}% 
+\contentsline {subsection}{\numberline {1.8.2}Kubeflow}{113}{subsection.1.8.2}% 
+\contentsline {subsection}{\numberline {1.8.3}自动机器学习(AutoML)框架}{113}{subsection.1.8.3}% 
+\contentsline {subsection}{\numberline {1.8.4}Angel——腾讯机器学习平台}{116}{subsection.1.8.4}% 
+\contentsline {subsection}{\numberline {1.8.5}Metaflow}{117}{subsection.1.8.5}% 
+\contentsline {subsection}{\numberline {1.8.6}华为MindSpore框架}{118}{subsection.1.8.6}% 
+\contentsline {subsection}{\numberline {1.8.7}CNTK}{118}{subsection.1.8.7}% 
+\contentsline {subsection}{\numberline {1.8.8}伯克利官方 AI开源框架 Ray}{122}{subsection.1.8.8}% 
+\contentsline {subsection}{\numberline {1.8.9}DEAP}{122}{subsection.1.8.9}% 
+\contentsline {subsection}{\numberline {1.8.10}AI的学习资源网站}{123}{subsection.1.8.10}% 
+\contentsline {section}{\numberline {1.9}我国智能科学技术教育体系}{125}{section.1.9}% 
+\contentsline {section}{\numberline {1.10}智能科学与技术研究生专业建设-建议名称}{125}{section.1.10}% 
+\contentsline {paragraph}{智能科学与技术本科专业的现状}{126}{paragraph*.114}% 
+\contentsline {section}{\numberline {1.11}人工智能伦理}{126}{section.1.11}% 
+\contentsline {subsection}{\numberline {1.11.1}亚马逊智能助手Alexa劝人自杀}{126}{subsection.1.11.1}% 
+\contentsline {section}{\numberline {1.12}作业}{127}{section.1.12}% 
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}知识表示方法}{129}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}知识与知识表示}{131}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}知识}{131}{subsection.2.1.1}% 
+\contentsline {subsubsection}{\numberline {2.1.1.1}知识的概念}{131}{subsubsection.2.1.1.1}% 
+\contentsline {paragraph}{代表性的知识定义}{131}{paragraph*.116}% 
+\contentsline {subparagraph}{数据、信息和知识及其相互关系}{131}{subparagraph*.117}% 
+\contentsline {paragraph}{知识类型的划分 }{131}{paragraph*.118}% 
+\contentsline {subsection}{\numberline {2.1.2}知识表示的概念}{133}{subsection.2.1.2}% 
+\contentsline {paragraph}{知识表示的观点及方法}{133}{paragraph*.119}% 
+\contentsline {section}{\numberline {2.2}一阶谓词逻辑表示法}{134}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}一阶谓词逻辑表示的逻辑学基础——命题与真值}{134}{subsection.2.2.1}% 
+\contentsline {paragraph}{论域和谓词}{134}{paragraph*.120}% 
+\contentsline {paragraph}{连词}{135}{paragraph*.121}% 
+\contentsline {paragraph}{自由变元与约束变元}{137}{paragraph*.123}% 
+\contentsline {paragraph}{谓词逻辑表示方法}{138}{paragraph*.124}% 
+\contentsline {paragraph}{谓词逻辑表示的应用}{138}{paragraph*.125}% 
+\contentsline {subsection}{\numberline {2.2.2}谓词逻辑表示的特征}{142}{subsection.2.2.2}% 
+\contentsline {paragraph}{谓词逻辑表示的主要优点}{142}{paragraph*.130}% 
+\contentsline {paragraph}{主要缺点}{143}{paragraph*.131}% 
+\contentsline {subsection}{\numberline {2.2.3}知识表示——产生式表示法}{144}{subsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.3.1}事实的表示}{144}{subsubsection.2.2.3.1}% 
+\contentsline {subsection}{\numberline {2.2.4}规则的表示}{145}{subsection.2.2.4}% 
+\contentsline {subparagraph}{产生式的基本形式}{145}{subparagraph*.132}% 
+\contentsline {subparagraph}{产生式的含义}{145}{subparagraph*.133}% 
+\contentsline {subparagraph}{产生式规则的例子}{145}{subparagraph*.134}% 
+\contentsline {paragraph}{产生式与蕴涵式、条件语句的区别}{145}{paragraph*.135}% 
+\contentsline {subsection}{\numberline {2.2.5}产生式系统的基本结构——系统结构及说明}{146}{subsection.2.2.5}% 
+\contentsline {paragraph}{综合数据库DB(Data Base)}{146}{paragraph*.136}% 
+\contentsline {paragraph}{控制系统(Control system)}{147}{paragraph*.138}% 
+\contentsline {subparagraph}{控制系统}{147}{subparagraph*.139}% 
+\contentsline {subparagraph}{控制系统的主要任务}{147}{subparagraph*.140}% 
+\contentsline {subsection}{\numberline {2.2.6}产生式系统的过程——基本过程}{149}{subsection.2.2.6}% 
+\contentsline {paragraph}{按推理方向}{150}{paragraph*.142}% 
+\contentsline {paragraph}{按规则库的性质及结构}{150}{paragraph*.143}% 
+\contentsline {subparagraph}{可恢复的产生式系统}{152}{subparagraph*.144}% 
+\contentsline {subsection}{\numberline {2.2.7}产生式系统的特点}{152}{subsection.2.2.7}% 
+\contentsline {paragraph}{主要优点}{152}{paragraph*.146}% 
+\contentsline {paragraph}{主要缺点}{152}{paragraph*.147}% 
+\contentsline {section}{\numberline {2.3}语义网络表示法}{153}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}语义网络}{153}{subsection.2.3.1}% 
+\contentsline {subsubsection}{\numberline {2.3.1.1}语义网络}{153}{subsubsection.2.3.1.1}% 
+\contentsline {paragraph}{基本网元}{153}{paragraph*.148}% 
+\contentsline {subparagraph}{语义网络的简单例子}{154}{subparagraph*.150}% 
+\contentsline {paragraph}{事实的表示}{154}{paragraph*.152}% 
+\contentsline {paragraph}{规则的表示}{154}{paragraph*.154}% 
+\contentsline {paragraph}{基本的语义关系}{154}{paragraph*.155}% 
+\contentsline {subparagraph}{1) 实例关系: ISA}{154}{subparagraph*.156}% 
+\contentsline {subparagraph}{2) 分类关系: AKO}{155}{subparagraph*.158}% 
+\contentsline {subparagraph}{3) 成员关系: A-Member-of}{155}{subparagraph*.160}% 
+\contentsline {subparagraph}{4) 属性关系}{155}{subparagraph*.162}% 
+\contentsline {subparagraph}{5) 聚类关系}{156}{subparagraph*.165}% 
+\contentsline {subparagraph}{6) 时间关系}{156}{subparagraph*.168}% 
+\contentsline {subparagraph}{7) 位置关系}{157}{subparagraph*.170}% 
+\contentsline {subparagraph}{8) 相近关系}{157}{subparagraph*.172}% 
+\contentsline {subsection}{\numberline {2.3.2}表示一元关系}{157}{subsection.2.3.2}% 
+\contentsline {paragraph}{一元关系}{157}{paragraph*.174}% 
+\contentsline {paragraph}{一元关系的描述}{158}{paragraph*.175}% 
+\contentsline {subsection}{\numberline {2.3.3}二元关系表示}{158}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}表示多元关系}{160}{subsection.2.3.4}% 
+\contentsline {paragraph}{动作结点的表示}{161}{paragraph*.182}% 
+\contentsline {paragraph}{语义关系的否定表示}{162}{paragraph*.185}% 
+\contentsline {paragraph}{蕴含的表示}{162}{paragraph*.188}% 
+\contentsline {subsection}{\numberline {2.3.5}存在和全称量词的表示}{163}{subsection.2.3.5}% 
+\contentsline {subsection}{\numberline {2.3.6}语义网络的推理过程}{164}{subsection.2.3.6}% 
+\contentsline {subsection}{\numberline {2.3.7}继承}{165}{subsection.2.3.7}% 
+\contentsline {paragraph}{继承的一般过程}{165}{paragraph*.193}% 
+\contentsline {subsection}{\numberline {2.3.8}匹配}{165}{subsection.2.3.8}% 
+\contentsline {subsection}{\numberline {2.3.9}语义网络表示法的优缺点:}{166}{subsection.2.3.9}% 
+\contentsline {section}{\numberline {2.4}框架表示法}{167}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}框架理论}{167}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}框架结构和框架表示}{167}{subsection.2.4.2}% 
+\contentsline {paragraph}{框架的基本结构}{168}{paragraph*.195}% 
+\contentsline {paragraph}{学生框架}{168}{paragraph*.196}% 
+\contentsline {paragraph}{硕士生框架}{169}{paragraph*.197}% 
+\contentsline {paragraph}{框架的继承技术}{169}{paragraph*.198}% 
+\contentsline {paragraph}{实例框架}{170}{paragraph*.199}% 
+\contentsline {paragraph}{框架系统的基本结构}{171}{paragraph*.200}% 
+\contentsline {subparagraph}{1) 框架之间的纵向联系}{171}{subparagraph*.201}% 
+\contentsline {subparagraph}{2) 框架之间的横向联系}{171}{subparagraph*.202}% 
+\contentsline {paragraph}{框架问题求解的基本过程}{171}{paragraph*.204}% 
+\contentsline {paragraph}{特性继承过程}{172}{paragraph*.205}% 
+\contentsline {paragraph}{If-Needed与If-Added过程的区别}{172}{paragraph*.206}% 
+\contentsline {paragraph}{匹配和填槽}{172}{paragraph*.207}% 
+\contentsline {subsection}{\numberline {2.4.3}框架表示法的优缺点}{173}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}面向对象的知识表示(知识+方法)}{174}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}过程表示法}{174}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}过程表示的主要优缺点}{176}{subsection.2.6.1}% 
+\contentsline {section}{\numberline {2.7}模糊认知图}{176}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}模糊认知图的参数训练}{177}{subsection.2.7.1}% 
+\contentsline {section}{\numberline {2.8}小结}{178}{section.2.8}% 
+\contentsline {section}{\numberline {2.9}作业}{178}{section.2.9}% 
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}知识推理方法}{181}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}什么是推理}{182}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}推理所用的事实}{182}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}按推理的逻辑基础分类}{182}{subsection.3.1.2}% 
+\contentsline {paragraph}{演绎推理}{182}{paragraph*.210}% 
+\contentsline {subsubsection}{\numberline {3.1.2.1}归纳推理}{183}{subsubsection.3.1.2.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2.2}演绎推理与归纳推理的区别}{184}{subsubsection.3.1.2.2}% 
+\contentsline {subsection}{\numberline {3.1.3}推理的控制策略及分类}{186}{subsection.3.1.3}% 
+\contentsline {subsubsection}{\numberline {3.1.3.1}推理的控制策略}{186}{subsubsection.3.1.3.1}% 
+\contentsline {paragraph}{控制策略的分类}{186}{paragraph*.211}% 
+\contentsline {subsection}{\numberline {3.1.4}正向推理}{186}{subsection.3.1.4}% 
+\contentsline {subsubsection}{\numberline {3.1.4.1}正向推理的算法描述}{186}{subsubsection.3.1.4.1}% 
+\contentsline {paragraph}{正向推理的主要优点}{188}{paragraph*.213}% 
+\contentsline {paragraph}{正向推理的主要缺点}{188}{paragraph*.214}% 
+\contentsline {subsubsection}{\numberline {3.1.4.2}逆向推理}{188}{subsubsection.3.1.4.2}% 
+\contentsline {subparagraph}{算法描述}{188}{subparagraph*.215}% 
+\contentsline {paragraph}{优缺点}{190}{paragraph*.217}% 
+\contentsline {subsection}{\numberline {3.1.5}混合推理的概念}{190}{subsection.3.1.5}% 
+\contentsline {subsubsection}{\numberline {3.1.5.1}混合推理的方法}{190}{subsubsection.3.1.5.1}% 
+\contentsline {section}{\numberline {3.2}逻辑学与人工智能}{191}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}人工智能学科的诞生}{191}{subsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.1.1}经典数理逻辑的主要理论成果}{191}{subsubsection.3.2.1.1}% 
+\contentsline {subsection}{\numberline {3.2.2}逻辑学的发展}{192}{subsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.2.1}逻辑学的分类}{192}{subsubsection.3.2.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2.2}泛逻辑的基本原理}{192}{subsubsection.3.2.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}逻辑学在人工智能学科的研究方面的应用}{192}{subsection.3.2.3}% 
+\contentsline {subsubsection}{\numberline {3.2.3.1}经典逻辑的应用}{192}{subsubsection.3.2.3.1}% 
+\contentsline {subsubsection}{\numberline {3.2.3.2}非经典逻辑的应用}{193}{subsubsection.3.2.3.2}% 
+\contentsline {subsection}{\numberline {3.2.4}人工智能———当代逻辑发展的动力}{193}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}人工智能的产生与发展和逻辑学的发展}{194}{subsection.3.2.5}% 
+\contentsline {section}{\numberline {3.3}推理的逻辑基础}{194}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}谓词公式}{194}{subsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.1.1}命题公式的解释}{194}{subsubsection.3.3.1.1}% 
+\contentsline {paragraph}{谓词公式的解释}{194}{paragraph*.218}% 
+\contentsline {subsection}{\numberline {3.3.2}谓词公式的永真性和可满足性}{196}{subsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.2.1}谓词公式的等价}{197}{subsubsection.3.3.2.1}% 
+\contentsline {subsection}{\numberline {3.3.3}谓词公式的范式}{198}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}置换与合一}{199}{subsection.3.3.4}% 
+\contentsline {section}{\numberline {3.4}自然演绎推理}{202}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}归结演绎推理}{203}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}子句集及其化简}{203}{subsection.3.5.1}% 
+\contentsline {paragraph}{子句集及其化简}{207}{paragraph*.224}% 
+\contentsline {subsection}{\numberline {3.5.2}鲁滨逊归结原理}{209}{subsection.3.5.2}% 
+\contentsline {subparagraph}{鲁滨逊归结原理基本思想}{210}{subparagraph*.225}% 
+\contentsline {subsubsection}{\numberline {3.5.2.1}命题逻辑的归结}{210}{subsubsection.3.5.2.1}% 
+\contentsline {subsubsection}{\numberline {3.5.2.2}命题逻辑的归结反演}{213}{subsubsection.3.5.2.2}% 
+\contentsline {subsubsection}{\numberline {3.5.2.3}谓词逻辑的归结}{214}{subsubsection.3.5.2.3}% 
+\contentsline {subparagraph}{谓词逻辑的归结原理}{214}{subparagraph*.228}% 
+\contentsline {subsubsection}{\numberline {3.5.2.4}谓词逻辑的归结反演}{217}{subsubsection.3.5.2.4}% 
+\contentsline {section}{\numberline {3.6}归结演绎推理的归结策略}{221}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}广度优先策略}{221}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}支持集策略}{222}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.3}删除策略}{223}{subsection.3.6.3}% 
+\contentsline {subsubsection}{\numberline {3.6.3.1}纯文字删除法}{224}{subsubsection.3.6.3.1}% 
+\contentsline {subsubsection}{\numberline {3.6.3.2}重言式删除法}{224}{subsubsection.3.6.3.2}% 
+\contentsline {paragraph}{包孕删除法}{224}{paragraph*.234}% 
+\contentsline {subsubsection}{\numberline {3.6.3.3}单文字子句策略}{225}{subsubsection.3.6.3.3}% 
+\contentsline {subsubsection}{\numberline {3.6.3.4}线形输入策略}{225}{subsubsection.3.6.3.4}% 
+\contentsline {subsubsection}{\numberline {3.6.3.5}祖先过滤策略}{226}{subsubsection.3.6.3.5}% 
+\contentsline {subsection}{\numberline {3.6.4}用归结反演求取问题的答案}{227}{subsection.3.6.4}% 
+\contentsline {section}{\numberline {3.7}基于规则的演绎推理}{229}{section.3.7}% 
+\contentsline {subsection}{\numberline {3.7.1}规则正向演绎推理}{229}{subsection.3.7.1}% 
+\contentsline {paragraph}{事实表达式的与/或形变换}{230}{paragraph*.239}% 
+\contentsline {paragraph}{事实表达式的与/或形变换}{230}{paragraph*.240}% 
+\contentsline {paragraph}{规则的与/或形变换}{232}{paragraph*.242}% 
+\contentsline {paragraph}{目标公式的表示形式}{233}{paragraph*.243}% 
+\contentsline {paragraph}{规则正向演绎系统}{233}{paragraph*.244}% 
+\contentsline {subparagraph}{命题逻辑的规则演绎过程}{234}{subparagraph*.245}% 
+\contentsline {subparagraph}{谓词逻辑情况}{235}{subparagraph*.248}% 
+\contentsline {subsection}{\numberline {3.7.2}规则逆向演绎推理}{236}{subsection.3.7.2}% 
+\contentsline {section}{\numberline {3.8}知识图谱(knowledge graph)的一阶归纳推理}{237}{section.3.8}% 
+\contentsline {subsection}{\numberline {3.8.1}基于符号逻辑的推理——本体推理}{237}{subsection.3.8.1}% 
+\contentsline {subsection}{\numberline {3.8.2}基于图结构和统计规则挖掘的推理}{238}{subsection.3.8.2}% 
+\contentsline {subsection}{\numberline {3.8.3}知识图谱推理(路径排序算法)}{238}{subsection.3.8.3}% 
+\contentsline {subsection}{\numberline {3.8.4}基于路径排序学习方法有PRA和Path ranking Algorithm}{238}{subsection.3.8.4}% 
+\contentsline {subsection}{\numberline {3.8.5}斯坦福的七步法知识图谱构建步骤}{238}{subsection.3.8.5}% 
+\contentsline {subsection}{\numberline {3.8.6}因果推理(辛普森悖论、D-分离和do算子)}{241}{subsection.3.8.6}% 
+\contentsline {section}{\numberline {3.9}模糊逻辑$^*$}{241}{section.3.9}% 
+\contentsline {section}{\numberline {3.10}多值逻辑}{244}{section.3.10}% 
+\contentsline {section}{\numberline {3.11}Luckasiewicz逻辑}{244}{section.3.11}% 
+\contentsline {section}{\numberline {3.12}三I算法的逻辑基础}{244}{section.3.12}% 
+\contentsline {section}{\numberline {3.13}强化学习}{244}{section.3.13}% 
+\contentsline {section}{\numberline {3.14}作业}{246}{section.3.14}% 
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}产生式系统的搜索策略}{249}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}搜索的基本概念}{250}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}搜索的含义}{250}{subsection.4.1.1}% 
+\contentsline {section}{\numberline {4.2}搜索的类型}{250}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}状态空间法}{250}{subsection.4.2.1}% 
+\contentsline {paragraph}{状态空间表示方法}{250}{paragraph*.256}% 
+\contentsline {paragraph}{状态空间问题求解}{251}{paragraph*.257}% 
+\contentsline {subsection}{\numberline {4.2.2}问题归约法}{255}{subsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}问题的分解与等价变换}{255}{subsubsection.4.2.2.1}% 
+\contentsline {subparagraph}{问题的分解}{255}{subparagraph*.262}% 
+\contentsline {subparagraph}{等价变换}{255}{subparagraph*.263}% 
+\contentsline {section}{\numberline {4.3}状态空间的盲目搜索}{258}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}一般图搜索过程}{258}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}广度优先和深度优先搜索}{260}{subsection.4.3.2}% 
+\contentsline {subsubsection}{\numberline {4.3.2.1}广度优先搜索}{260}{subsubsection.4.3.2.1}% 
+\contentsline {subparagraph}{基本思想}{260}{subparagraph*.270}% 
+\contentsline {subparagraph}{搜索算法}{260}{subparagraph*.271}% 
+\contentsline {subsubsection}{\numberline {4.3.2.2}深度优先搜索}{262}{subsubsection.4.3.2.2}% 
+\contentsline {subparagraph}{基本思想}{262}{subparagraph*.274}% 
+\contentsline {subparagraph}{算法描述}{262}{subparagraph*.275}% 
+\contentsline {subsection}{\numberline {4.3.3}代价树搜索}{263}{subsection.4.3.3}% 
+\contentsline {subsubsection}{\numberline {4.3.3.1}代价树的广度优先搜索}{263}{subsubsection.4.3.3.1}% 
+\contentsline {subsubsection}{\numberline {4.3.3.2}代价树的广度优先搜索算法}{263}{subsubsection.4.3.3.2}% 
+\contentsline {subsubsection}{\numberline {4.3.3.3}代价树的深度优先搜索算法}{264}{subsubsection.4.3.3.3}% 
+\contentsline {section}{\numberline {4.4}搜索策略}{264}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}状态空间的启发式搜索}{265}{subsection.4.4.1}% 
+\contentsline {paragraph}{启发性信息的种类}{265}{paragraph*.278}% 
+\contentsline {paragraph}{启发性信息的作用}{265}{paragraph*.279}% 
+\contentsline {paragraph}{启发性信息和估价函数}{265}{paragraph*.280}% 
+\contentsline {subsection}{\numberline {4.4.2}A算法}{266}{subsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.2.1}全局择优搜索$A$算法}{266}{subsubsection.4.4.2.1}% 
+\contentsline {subsection}{\numberline {4.4.3}$A^*$算法}{268}{subsection.4.4.3}% 
+\contentsline {subsection}{\numberline {4.4.4}A*算法的可采纳性}{268}{subsection.4.4.4}% 
+\contentsline {subparagraph}{$A^*$算法可纳性的证明}{268}{subparagraph*.283}% 
+\contentsline {subsection}{\numberline {4.4.5}$A^*$算法的最优性}{271}{subsection.4.4.5}% 
+\contentsline {subsection}{\numberline {4.4.6}$A^*$算法应用举例}{274}{subsection.4.4.6}% 
+\contentsline {subsection}{\numberline {4.4.7}算法应用举例}{275}{subsection.4.4.7}% 
+\contentsline {paragraph}{与/或树的一般搜索}{276}{paragraph*.286}% 
+\contentsline {subsubsection}{\numberline {4.4.7.1}与/或树的广度优先}{276}{subsubsection.4.4.7.1}% 
+\contentsline {subparagraph}{与/或树的广度优先搜索算法}{276}{subparagraph*.287}% 
+\contentsline {subparagraph}{例4.38搜索过程}{277}{subparagraph*.288}% 
+\contentsline {subsubsection}{\numberline {4.4.7.2}与/或树的深度优先搜索}{278}{subsubsection.4.4.7.2}% 
+\contentsline {subparagraph}{深度优先搜索过程}{279}{subparagraph*.290}% 
+\contentsline {section}{\numberline {4.5}与/或树的启发式搜索}{279}{section.4.5}% 
+\contentsline {paragraph}{解树的代价与希望树}{279}{paragraph*.292}% 
+\contentsline {section}{\numberline {4.6}博弈树的启发式搜索}{283}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}极大极小过程}{285}{subsection.4.6.1}% 
+\contentsline {subsection}{\numberline {4.6.2}alpha-beta剪枝}{286}{subsection.4.6.2}% 
+\contentsline {paragraph}{剪枝方法}{286}{paragraph*.302}% 
+\contentsline {section}{\numberline {4.7}作业}{288}{section.4.7}% 
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}计算智能}{291}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}概述}{292}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}什么是计算智能}{292}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}计算智能与人工智能的关系}{293}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}计算智能的产生与发展}{294}{subsection.5.1.3}% 
+\contentsline {section}{\numberline {5.2}浅层神经计算}{294}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}神经计算基础}{295}{subsection.5.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.1.1}生物神经元的结构}{295}{subsubsection.5.2.1.1}% 
+\contentsline {paragraph}{生物神经元的功能}{295}{paragraph*.308}% 
+\contentsline {paragraph}{人脑神经系统的联结机制}{296}{paragraph*.309}% 
+\contentsline {subsection}{\numberline {5.2.2}人工神经网络的互连结构}{297}{subsection.5.2.2}% 
+\contentsline {paragraph}{人工神经元的结构}{297}{paragraph*.310}% 
+\contentsline {paragraph}{生物神经元的结构}{297}{paragraph*.311}% 
+\contentsline {paragraph}{常用的人工神经元模型}{297}{paragraph*.313}% 
+\contentsline {paragraph}{前馈网络}{299}{paragraph*.315}% 
+\contentsline {paragraph}{多层前馈网络}{299}{paragraph*.317}% 
+\contentsline {paragraph}{多层前馈网络的结构}{299}{paragraph*.318}% 
+\contentsline {paragraph}{反馈网络}{299}{paragraph*.319}% 
+\contentsline {paragraph}{反馈网络和前向网络不同}{300}{paragraph*.321}% 
+\contentsline {section}{\numberline {5.3}人工神经网络的典型模型}{300}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}感知机(Perceptron)模型}{300}{subsection.5.3.1}% 
+\contentsline {paragraph}{单层感知器}{300}{paragraph*.322}% 
+\contentsline {paragraph}{多层感知器}{304}{paragraph*.328}% 
+\contentsline {subsection}{\numberline {5.3.2}反向传播(BP)模型}{305}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}反馈网络(Hopfield)模型}{306}{subsection.5.3.3}% 
+\contentsline {paragraph}{离散Hopfield网络的结构}{307}{paragraph*.333}% 
+\contentsline {subsection}{\numberline {5.3.4}神经网络的泛逼近性——可视化证明}{307}{subsection.5.3.4}% 
+\contentsline {section}{\numberline {5.4}其它神经学习算法}{308}{section.5.4}% 
+\contentsline {subsubsection}{\numberline {5.4.0.1}Tikhonov 正则化}{308}{subsubsection.5.4.0.1}% 
+\contentsline {subsection}{\numberline {5.4.1}TROP-ELM算法}{310}{subsection.5.4.1}% 
+\contentsline {subsection}{\numberline {5.4.2}Allen's PRESS(prediction sum of squares)}{311}{subsection.5.4.2}% 
+\contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PRESS (TR-PRESS)}{311}{subsubsection.5.4.2.1}% 
+\contentsline {subsection}{\numberline {5.4.3}区间二型RVFL}{312}{subsection.5.4.3}% 
+\contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{315}{subsubsection.5.4.3.1}% 
+\contentsline {subsubsection}{\numberline {5.4.3.2}TT2-RVFL}{317}{subsubsection.5.4.3.2}% 
+\contentsline {subsubsection}{\numberline {5.4.3.3}TT2-RVFL中的张量逆}{319}{subsubsection.5.4.3.3}% 
+\contentsline {subsubsection}{\numberline {5.4.3.4}求解TT2-RVFL的张量逆算法}{320}{subsubsection.5.4.3.4}% 
+\contentsline {subsubsection}{\numberline {5.4.3.5}仿真实验}{321}{subsubsection.5.4.3.5}% 
+\contentsline {subsubsection}{\numberline {5.4.3.6}非线性函数}{321}{subsubsection.5.4.3.6}% 
+\contentsline {subsubsection}{\numberline {5.4.3.7}非线性系统参数识别}{322}{subsubsection.5.4.3.7}% 
+\contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{323}{subsubsection.5.4.3.8}% 
+\contentsline {section}{\numberline {5.5}进化计算}{325}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}进化计算的产生与发展}{327}{subsection.5.5.1}% 
+\contentsline {subsection}{\numberline {5.5.2}进化计算的基本结构}{328}{subsection.5.5.2}% 
+\contentsline {section}{\numberline {5.6}遗传编码}{330}{section.5.6}% 
+\contentsline {paragraph}{极小化问题}{332}{paragraph*.348}% 
+\contentsline {paragraph}{极大化问题}{332}{paragraph*.349}% 
+\contentsline {section}{\numberline {5.7}量子细菌觅食算法}{346}{section.5.7}% 
+\contentsline {subsection}{\numberline {5.7.1}自适应步长模型——BFA 模型}{346}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{347}{subsection.5.7.2}% 
+\contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{347}{subsection.5.7.3}% 
+\contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{349}{subsection.5.7.4}% 
+\contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{350}{subsection.5.7.5}% 
+\contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{352}{subsection.5.7.6}% 
+\contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{353}{subsection.5.7.7}% 
+\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{355}{subsection.5.7.8}% 
+\contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{355}{subsection.5.7.9}% 
+\contentsline {subsubsection}{\numberline {5.7.9.1}经典测试函数}{356}{subsubsection.5.7.9.1}% 
+\contentsline {subsection}{\numberline {5.7.10}测试函数结果}{357}{subsection.5.7.10}% 
+\contentsline {section}{\numberline {5.8}模糊计算}{363}{section.5.8}% 
+\contentsline {subsection}{\numberline {5.8.1}模糊集及其运算}{365}{subsection.5.8.1}% 
+\contentsline {subsection}{\numberline {5.8.2}模糊关系及其运算}{368}{subsection.5.8.2}% 
+\contentsline {paragraph}{模糊关系的定义}{368}{paragraph*.379}% 
+\contentsline {subsection}{\numberline {5.8.3}模糊关系的合成}{369}{subsection.5.8.3}% 
+\contentsline {section}{\numberline {5.9}参考书}{370}{section.5.9}% 
+\contentsline {section}{\numberline {5.10}作 业}{371}{section.5.10}% 
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}不确定性推理}{377}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}不确定性推理的含义}{378}{section.6.1}% 
+\contentsline {paragraph}{什么是不确定性推理}{378}{paragraph*.381}% 
+\contentsline {paragraph}{为什么要采用不确定性推理}{378}{paragraph*.382}% 
+\contentsline {section}{\numberline {6.2}不确定性推理的基本问题 }{378}{section.6.2}% 
+\contentsline {paragraph}{不确定性的表示}{378}{paragraph*.383}% 
+\contentsline {section}{\numberline {6.3}不确定性推理的概率论基础}{379}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}可信度的概念}{382}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}CF模型}{382}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.3}可信度的定义与性质}{383}{subsection.6.3.3}% 
+\contentsline {paragraph}{可信度的定义}{383}{paragraph*.385}% 
+\contentsline {subparagraph}{MB和MD的关系}{383}{subparagraph*.386}% 
+\contentsline {subparagraph}{可信度的性质}{384}{subparagraph*.387}% 
+\contentsline {section}{\numberline {6.4}证据理论}{385}{section.6.4}% 
+\contentsline {subsection}{\numberline {6.4.1}证据不确定性的表示}{385}{subsection.6.4.1}% 
+\contentsline {paragraph}{不确定性的表示}{385}{paragraph*.388}% 
+\contentsline {paragraph}{不确定性的含义}{385}{paragraph*.389}% 
+\contentsline {paragraph}{ 否定证据不确定性的计算}{385}{paragraph*.390}% 
+\contentsline {paragraph}{组合证据不确定性的计算}{385}{paragraph*.391}% 
+\contentsline {subsection}{\numberline {6.4.2}不确定性的更新}{386}{subsection.6.4.2}% 
+\contentsline {subsection}{\numberline {6.4.3}结论不确定性的合成}{386}{subsection.6.4.3}% 
+\contentsline {section}{\numberline {6.5}主观Bayes方法}{388}{section.6.5}% 
+\contentsline {section}{\numberline {6.6}证据理论}{389}{section.6.6}% 
+\contentsline {section}{\numberline {6.7}DS理论的形式描述}{389}{section.6.7}% 
+\contentsline {subsection}{\numberline {6.7.1}证据理论的推理模型}{395}{subsection.6.7.1}% 
+\contentsline {section}{\numberline {6.8}模糊推理}{404}{section.6.8}% 
+\contentsline {paragraph}{模糊谓词}{404}{paragraph*.393}% 
+\contentsline {paragraph}{模糊量词}{404}{paragraph*.394}% 
+\contentsline {paragraph}{模糊修饰语}{405}{paragraph*.395}% 
+\contentsline {subsection}{\numberline {6.8.1}模糊概念的匹配}{406}{subsection.6.8.1}% 
+\contentsline {subsection}{\numberline {6.8.2}模糊推理}{407}{subsection.6.8.2}% 
+\contentsline {paragraph}{模糊关系的构造}{407}{paragraph*.396}% 
+\contentsline {subparagraph}{\textbf {模糊关系$R_m$}}{407}{subparagraph*.397}% 
+\contentsline {subparagraph}{模糊关系$R_c$}{408}{subparagraph*.398}% 
+\contentsline {subparagraph}{模糊关系$R_g$}{408}{subparagraph*.399}% 
+\contentsline {subparagraph}{模糊假言推理}{409}{subparagraph*.400}% 
+\contentsline {subsubsection}{\numberline {6.8.2.1}模糊假言推理举例}{409}{subsubsection.6.8.2.1}% 
+\contentsline {paragraph}{模糊推理的基本方法}{409}{paragraph*.401}% 
+\contentsline {subparagraph}{模糊拒取式推理}{410}{subparagraph*.402}% 
+\contentsline {subparagraph}{模糊假言三段论推理}{411}{subparagraph*.403}% 
+\contentsline {section}{\numberline {6.9}高阶模糊推理}{412}{section.6.9}% 
+\contentsline {section}{\numberline {6.10}作业}{412}{section.6.10}% 
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}机器学习}{415}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}机器学习}{416}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}机器学习概述}{416}{subsection.7.1.1}% 
+\contentsline {subsubsection}{\numberline {7.1.1.1}机器学习概述}{416}{subsubsection.7.1.1.1}% 
+\contentsline {paragraph}{机器学习的常见误解}{416}{paragraph*.405}% 
+\contentsline {paragraph}{代表性观点}{416}{paragraph*.406}% 
+\contentsline {paragraph}{机器学习的主要方法}{417}{paragraph*.407}% 
+\contentsline {subparagraph}{一般性解释}{418}{subparagraph*.410}% 
+\contentsline {subparagraph}{一般性解释}{418}{subparagraph*.411}% 
+\contentsline {subparagraph}{神经元模型研究}{419}{subparagraph*.412}% 
+\contentsline {paragraph}{学习系统}{419}{paragraph*.413}% 
+\contentsline {section}{\numberline {7.2}AdaBoost}{420}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}机器学习的主要策略}{423}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}netZooPy库}{424}{section.7.4}% 
+\contentsline {section}{\numberline {7.5}记忆学习}{425}{section.7.5}% 
+\contentsline {section}{\numberline {7.6}机械式学习的学习模型}{426}{section.7.6}% 
+\contentsline {subsection}{\numberline {7.6.1}归纳学习}{426}{subsection.7.6.1}% 
+\contentsline {subsection}{\numberline {7.6.2}示例学习的类型}{426}{subsection.7.6.2}% 
+\contentsline {paragraph}{示例学习的典型方式}{426}{paragraph*.419}% 
+\contentsline {section}{\numberline {7.7}示例学习的解释方法}{427}{section.7.7}% 
+\contentsline {subsection}{\numberline {7.7.1}ID3算法}{430}{subsection.7.7.1}% 
+\contentsline {paragraph}{ID3算法的数学基础}{430}{paragraph*.422}% 
+\contentsline {subparagraph}{信息熵}{430}{subparagraph*.423}% 
+\contentsline {subparagraph}{条件熵}{430}{subparagraph*.424}% 
+\contentsline {paragraph}{ID3算法及举例}{431}{paragraph*.425}% 
+\contentsline {subsection}{\numberline {7.7.2}解释学习的空间描述}{434}{subsection.7.7.2}% 
+\contentsline {subsection}{\numberline {7.7.3}解释学习的模型}{434}{subsection.7.7.3}% 
+\contentsline {subsection}{\numberline {7.7.4}解释学习的基本原理}{435}{subsection.7.7.4}% 
+\contentsline {paragraph}{解释泛化学习方法-1}{435}{paragraph*.431}% 
+\contentsline {paragraph}{解释泛化学习方法-2}{436}{paragraph*.432}% 
+\contentsline {subsection}{\numberline {7.7.5}浅层神经学习的心理学基础}{438}{subsection.7.7.5}% 
+\contentsline {subsection}{\numberline {7.7.6}感知器学习}{439}{subsection.7.7.6}% 
+\contentsline {subsection}{\numberline {7.7.7}BP网络学习}{444}{subsection.7.7.7}% 
+\contentsline {subsection}{\numberline {7.7.8}Hopfield网络学习}{445}{subsection.7.7.8}% 
+\contentsline {section}{\numberline {7.8}深度神经网络——DNN}{447}{section.7.8}% 
+\contentsline {subsection}{\numberline {7.8.1}高速公路网络（Highway network）}{449}{subsection.7.8.1}% 
+\contentsline {subsection}{\numberline {7.8.2}残差网络}{450}{subsection.7.8.2}% 
+\contentsline {section}{\numberline {7.9}卷积神经网络 (Convolutional Neural Networks, CNN)}{452}{section.7.9}% 
+\contentsline {paragraph}{CNN应用场景——计算机视觉问题}{455}{paragraph*.445}% 
+\contentsline {subsection}{\numberline {7.9.1}卷积神经网络结构}{457}{subsection.7.9.1}% 
+\contentsline {subsubsection}{\numberline {7.9.1.1}卷积}{457}{subsubsection.7.9.1.1}% 
+\contentsline {subsubsection}{\numberline {7.9.1.2}反卷积(后卷积, 转置卷积)}{460}{subsubsection.7.9.1.2}% 
+\contentsline {subsubsection}{\numberline {7.9.1.3}卷积神经网络的层结构}{462}{subsubsection.7.9.1.3}% 
+\contentsline {subsubsection}{\numberline {7.9.1.4}激活函数和层范数}{463}{subsubsection.7.9.1.4}% 
+\contentsline {subsection}{\numberline {7.9.2}CNN的应用}{476}{subsection.7.9.2}% 
+\contentsline {subsubsection}{\numberline {7.9.2.1}CNN解释器在线交互可视化工具}{476}{subsubsection.7.9.2.1}% 
+\contentsline {subsection}{\numberline {7.9.3}卷积编译码网络学习语义图形实现水稻自动除草}{477}{subsection.7.9.3}% 
+\contentsline {subsection}{\numberline {7.9.4}图卷积神经网络}{480}{subsection.7.9.4}% 
+\contentsline {subsection}{\numberline {7.9.5}循环神经网络(Recurrent Neural Networks, RNN)}{485}{subsection.7.9.5}% 
+\contentsline {subsection}{\numberline {7.9.6}深度神经网络轻量化}{494}{subsection.7.9.6}% 
+\contentsline {subsection}{\numberline {7.9.7}防止CNN的过拟合——diffGrad}{496}{subsection.7.9.7}% 
+\contentsline {subsection}{\numberline {7.9.8}无限宽度DNN}{496}{subsection.7.9.8}% 
+\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{497}{section.7.10}% 
+\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{497}{section.7.11}% 
+\contentsline {section}{\numberline {7.12}作业}{498}{section.7.12}% 
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{501}{chapter.8}% 
+\contentsline {paragraph}{Transformer 架构}{502}{paragraph*.505}% 
+\contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{503}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}词法分析}{504}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}句法分析}{504}{section.8.3}% 
+\contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{505}{subsection.8.3.1}% 
+\contentsline {paragraph}{句子结构的表示}{505}{paragraph*.508}% 
+\contentsline {paragraph}{上下文无关文法}{505}{paragraph*.510}% 
+\contentsline {paragraph}{变换文法}{506}{paragraph*.512}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{507}{paragraph*.515}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{508}{paragraph*.516}% 
+\contentsline {section}{\numberline {8.4}句义分析}{509}{section.8.4}% 
+\contentsline {subsection}{\numberline {8.4.1}语义文法}{509}{subsection.8.4.1}% 
+\contentsline {subsection}{\numberline {8.4.2}格文法}{510}{subsection.8.4.2}% 
+\contentsline {paragraph}{格和格框架}{510}{paragraph*.518}% 
+\contentsline {subsection}{\numberline {8.4.3}长程记忆模型——Compressive Transformer（压缩Transformer）}{511}{subsection.8.4.3}% 
+\contentsline {paragraph}{压缩Transformer}{512}{paragraph*.520}% 
+\contentsline {section}{\numberline {8.5}作 业 }{512}{section.8.5}% 
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}分布智能}{515}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}分布智能}{516}{section.9.1}% 
+\contentsline {subsection}{\numberline {9.1.1}分布智能}{516}{subsection.9.1.1}% 
+\contentsline {subsubsection}{\numberline {9.1.1.1}分布智能概述}{516}{subsubsection.9.1.1.1}% 
+\contentsline {subparagraph}{分布式问题求解}{516}{subparagraph*.522}% 
+\contentsline {subparagraph}{多Agent系统}{516}{subparagraph*.523}% 
+\contentsline {subsection}{\numberline {9.1.2}Agent的结构}{516}{subsection.9.1.2}% 
+\contentsline {subparagraph}{Agent的基本结构}{516}{subparagraph*.524}% 
+\contentsline {subparagraph}{反应Agent}{516}{subparagraph*.525}% 
+\contentsline {subparagraph}{慎思Agent}{517}{subparagraph*.527}% 
+\contentsline {subparagraph}{BDI的概念}{517}{subparagraph*.529}% 
+\contentsline {subsection}{\numberline {9.1.3}Agent通信}{518}{subsection.9.1.3}% 
+\contentsline {subsubsection}{\numberline {9.1.3.1}Agent通信的基本问题}{518}{subsubsection.9.1.3.1}% 
+\contentsline {paragraph}{通信语言KQML}{518}{paragraph*.530}% 
+\contentsline {subparagraph}{KQML语言的结构}{518}{subparagraph*.531}% 
+\contentsline {subparagraph}{KQML消息}{519}{subparagraph*.532}% 
+\contentsline {subparagraph}{KQML保留的行为原语参数}{519}{subparagraph*.533}% 
+\contentsline {subparagraph}{KQML保留的行为原语}{520}{subparagraph*.534}% 
+\contentsline {subparagraph}{KQML通信服务器}{521}{subparagraph*.535}% 
+\contentsline {subsection}{\numberline {9.1.4}多Agent合作}{521}{subsection.9.1.4}% 
+\contentsline {subsection}{\numberline {9.1.5}Agent的协商}{523}{subsection.9.1.5}% 
+\contentsline {subparagraph}{协商协议}{523}{subparagraph*.537}% 
+\contentsline {subparagraph}{协商策略}{523}{subparagraph*.538}% 
+\contentsline {subparagraph}{协商处理}{523}{subparagraph*.539}% 
+\contentsline {subparagraph}{多Agent应用示例}{524}{subparagraph*.540}% 
+\contentsline {subsection}{\numberline {9.1.6}移动Agent}{524}{subsection.9.1.6}% 
+\contentsline {section}{\numberline {9.2}作 业}{524}{section.9.2}% 
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}先进专家系统}{525}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}专家系统}{526}{section.10.1}% 
+\contentsline {subsection}{\numberline {10.1.1}专家系统概述}{526}{subsection.10.1.1}% 
+\contentsline {subsection}{\numberline {10.1.2}专家系统的基本结构}{526}{subsection.10.1.2}% 
+\contentsline {subsection}{\numberline {10.1.3}基于规则和基于框架的专家系统}{527}{subsection.10.1.3}% 
+\contentsline {subsection}{\numberline {10.1.4}模糊专家系统和神经网络专家系统}{528}{subsection.10.1.4}% 
+\contentsline {subparagraph}{模糊专家系统}{528}{subparagraph*.544}% 
+\contentsline {subparagraph}{神经网络专家系统}{528}{subparagraph*.546}% 
+\contentsline {subsection}{\numberline {10.1.5}基于Web的专家系统}{528}{subsection.10.1.5}% 
+\contentsline {subsection}{\numberline {10.1.6}分布式专家系统和协同式专家系统}{529}{subsection.10.1.6}% 
+\contentsline {subparagraph}{分布式专家系统}{529}{subparagraph*.547}% 
+\contentsline {subparagraph}{协同式专家系统}{529}{subparagraph*.548}% 
+\contentsline {section}{\numberline {10.2}专家系统的开发}{529}{section.10.2}% 
+\contentsline {paragraph}{开发步骤}{529}{paragraph*.549}% 
+\contentsline {paragraph}{知识获取}{529}{paragraph*.550}% 
+\contentsline {paragraph}{输入知识}{529}{paragraph*.551}% 
+\contentsline {paragraph}{开发工具与环境}{529}{paragraph*.552}% 
+\contentsline {section}{\numberline {10.3}作 业}{530}{section.10.3}% 
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}计算机视觉CV}{531}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}深度学习 VS 传统计算机视觉}{532}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}深度学习的优势}{532}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}传统 CV 技术的优势}{534}{subsection.11.1.2}% 
+\contentsline {section}{\numberline {11.2}几何深度学习}{536}{section.11.2}% 
+\contentsline {section}{\numberline {11.3}作 业 }{543}{section.11.3}% 
+\contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{545}{section*.559}% 
+\contentsline {section}{索\nobreakspace {}引}{545}{section*.560}% 
