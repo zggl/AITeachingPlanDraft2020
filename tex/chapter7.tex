@@ -591,11 +591,13 @@ ID3算法的学习过程:
     $x_2$: 专业类别　$x_2=1$ 电信类, $x_2=2$ 机电类
     $x_3$: 学习基础　$x_3=1$ 修过AI, $x_3=2$ 未修AI
 \end{Verbatim}
+\vspace{-0.4cm}
 \end{example}
 
 表\ref{AItable20122435}给出了一个关于选课决策的训练例子集$S$. 在该表中, 训练例子集$S$的大小为. ID3算法是依据这些训练例子, 以$S$为根节点, 按照信息熵下降最大的原则来构造决策树的.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table} [!tb]
+\vspace{-0.2cm}
 \caption{关于选课决策的训练例子集}
 \vspace{-0.2cm}
 \begin{center}
@@ -829,6 +831,7 @@ H(S_1)&= - P_{s1}(y_1)\log_2 P_{s1}(y_1) - P_{s_1}(y_2)\log_2 P_{s1}(y_2 )- P_{s
 \begin{center}
   $\neg $Fragile(y)$\rightarrow$Safe-to-stack($x, y$)
 \end{center}
+\vspace{-0.4cm}
 \end{example}
 
 如果$y$不是易碎的, 则$x$可以安全地放到$y$的上面
@@ -1301,6 +1304,7 @@ $C=(c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点�
     \includegraphics[width=\textwidth]{20170105154423858.png}
     \caption{Highway网络的迭代误差}
     \label{20170105154423858}
+    \vspace{-0.4cm}
 \end{figure}
 当网络很深的时候, 使用了Highway的网络更容易收敛.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1314,6 +1318,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
     \includegraphics[width=0.6\textwidth]{ResidualNND2020202002.PNG}
     \caption{残差学习网络的结构}
     \label{ResidualNND2020202002}
+    \vspace{-0.4cm}
 \end{figure}
 网络要学习的是$H(x)$, 那么由于图中$\textup{identity} x$之间跨过了2层, 那么其实相当于拟合的是$F(x)=H(x)-x$, 这就是残差概念的来源, 这是论文里的说法.
 作者提出的结构打破了传统的神经网络$n-1$层的输出只能给$n$层作为输入的惯例, 使某一层的输出可以直接跨过几层作为后面某一层的输入.
@@ -1326,6 +1331,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
     \includegraphics[width=0.86\textwidth]{DRL2020020301.PNG}
     \caption{CIFAR-10上20层和56层训练误差(左)和测试(右), ImageNet也呈现类似现象}
     \label{DRL2020020301}
+    \vspace{-0.4cm}
 \end{figure}
 
 在构造这个网络的时候, 如果20层的网络可以取得非常好的结果, 在构造56层网络的时候前20层从20层网络中拷贝过来, 后面的36层只做inentity map至少效果不会差于20层的网络.
@@ -1371,6 +1377,7 @@ François Chollet, Keras作者、谷歌大脑高级研究员 François Chollet�
     \includegraphics[width=0.86\textwidth]{DNN1912181.png}
     \caption{DNN的各种结构(2)}
     \label{DNN191218121500011}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1378,6 +1385,7 @@ François Chollet, Keras作者、谷歌大脑高级研究员 François Chollet�
     \includegraphics[width=0.76\textwidth]{lstm20191229085814.png}
     \caption{LSTM结构}
     \label{lstm20191229085814}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局部连接, 权重共享和下采样极大降低了模型的参数数量, 以提高一般BP网络的训练性能.
@@ -1414,6 +1422,7 @@ CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局
 \includegraphics[width=0.76\textwidth]{DNNUlabelSet.JPG}
 \caption{大规模带标签的免费数据集}
 \label{DNNUlabelSet201912250001}
+\vspace{-0.4cm}
 \end{figure}
 \item 增大的计算能力: 高性能 GPU加快了深度学习所需的海量数据的训练速度, 训练时间从几星期减少到几小时.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1423,7 +1432,7 @@ CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局
 \caption{算力的规模}
 \label{GPUCloud201912250002}
 \end{figure}
-\item 由专家构建的预先训练好的模型可以重新训练 AlexNet之类的模型, 使用名为迁移学习的技术执行新识别任务. 
+\item 由专家构建的预先训练好的模型可以重新训练 AlexNet之类的模型, 使用名为迁移学习的技术执行新识别任务.
 虽然使用了 130万张高分辨率图像训练 AlexNet来识别 1000个不同的对象, 但可以使用较小的数据集实现精确的迁移学习.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1489,6 +1498,7 @@ y[0,0]=& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
       =&-13.
 \end{aligned}$$
 通过滑动卷积核, 就可以得到整张图片的卷积结果(图\ref{TUCon2020020302}的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样甚至变小.
+\vspace{-0.4cm}
 \end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1501,6 +1511,7 @@ y[0,0]=& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
 \caption{卷积核对图像逐像素点运算}
 \label{CNN20161021131748099}
 \end{figure}
+\vspace{-0.4cm}
 \end{example}
 
 图\ref{TUCon2020020302}经过same卷积计算后图像大小不变. 图\ref{CNN20161021131748099}卷积计算后图像大小不变. 图\ref{20161021135241205}经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
@@ -1557,6 +1568,7 @@ FCN作者和后来的研究人员都对最终$1\times 1$的结果使用反卷积
 \caption{大小为$2\times 2$图像的反卷积过程}
 \label{20170715175257862}
 \end{figure}
+\vspace{-0.4cm}
 \end{example}
 这种反卷积的使用使得图像可以变大, FCN作者使用的方法是这里所说反卷积的一种变体, 这样就可以获得相应的像素值, 图像可以实现首尾相连地分割. 图像的反卷积见图 \ref{Dconop0203}的\href{https://github.com/vdumoulin/conv_arithmetic}{full卷积原理}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1822,6 +1834,7 @@ and $i_t$, $f_t, g_t, o_t$ are the input, forget, cell, and output gates, respec
 \includegraphics[width=0.76\textwidth]{CNNStructure1225001.JPG}
 \caption{卷积神经网络}
 \label{CNNStructure1225001}
+\vspace{-0.4cm}
 \end{figure}
 
 \textbf{分类层}在特征检测之后, CNN 的架构转移到分类. 倒数第二层是全连接层 (FCL), 输出$K$维度的向量, 其中$K$是网络能够预测的类数量. 此向量包含任何图像的每个类进行分类的概率. CNN 架构的最后一层使用 softmax 函数提供分类输出.
@@ -1833,6 +1846,7 @@ and $i_t$, $f_t, g_t, o_t$ are the input, forget, cell, and output gates, respec
 \includegraphics[width=0.76\textwidth]{CNNStructure1225002.JPG}
 \caption{卷积神经网络}
 \label{CNNStructure1225002}
+\vspace{-0.4cm}
 \end{figure}
 
 深度学习是机器学习的子类型. 使用机器学习, 您手动提取图像的相关特征. 使用深度学习, 您将原始图像直接馈送给深度神经网络, 该网络自动学习特征.
@@ -1843,6 +1857,7 @@ and $i_t$, $f_t, g_t, o_t$ are the input, forget, cell, and output gates, respec
 \includegraphics[width=0.6\textwidth]{AlexNetdemo002.JPG}
 \caption{AlexNet的识别对象}
 \label{AlexNetdemo002}
+\vspace{-0.4cm}
 \end{figure}
 刚接触深度学习, 快速而轻松的入门方法是使用现有网络, 比如 2012 年首次发布的AlexNet, 已成为研究团体中众所周知的模型. 用一百多万张图像训练好的 CNN.  AlexNet 最常用于
 图像分类. 它可将图像划分为 1000 个不同的类别, 包括键盘、鼠标、铅笔和其他办公设备, 以及各个品种的狗、猫、马和其他动物.
@@ -1852,6 +1867,7 @@ and $i_t$, $f_t, g_t, o_t$ are the input, forget, cell, and output gates, respec
 \includegraphics[width=0.76\textwidth]{CNNMLCompare001.JPG}
 \caption{机器学习和深度学习}
 \label{CNNMLCompare001}
+\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -1909,6 +1925,7 @@ title(char(label)); % 显示标签
 \caption{Fusion of features after layer three of a CNN. The features from two streams are passed through max pooling, convoluta on, batch normalization and relu layers. The two
 outputs are then concatenated and form the input for the fourth layer \cite{PiramanayagamSaber2018-9591}}
 \label{CNN10-01429-ag}
+\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1916,6 +1933,7 @@ outputs are then concatenated and form the input for the fourth layer \cite{Pira
 \includegraphics[width=0.86\textwidth]{CNN-W640.jpg}
 \caption{Fusion of features after layer three of a CNN. The features from two streams are passed through max pooling, convolution, batch normalization and ReLU layers. The two outputs are then concatenated and form the input for the fourth layer \cite{PiramanayagamSaber2018-9591}.}
 \label{CNN-W640}
+\vspace{-0.4cm}
 \end{figure}
 
 Berkeley团队提出 Fully Convolutional Networks（FCN）方法用于图像语义分割, 将图像级别的分类扩展到像素级别的分类（图\ref{FCN20170811112941027}）, 获得 CVPR2015 的 最佳论文奖\cite{Long2015-9593}.
@@ -1932,6 +1950,7 @@ $\bullet$ FCN结合不同深度层结果的跳级(skip)结构. 同时确保鲁�
 \includegraphics[width=0.76\textwidth]{FCN20170811112941027.png}
 \caption{完全CNN结构 (FCN-8)\cite{}}\index{FCN-8}
 \label{FCN20170811112941027}
+\vspace{-0.4cm}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1939,14 +1958,14 @@ $\bullet$ FCN结合不同深度层结果的跳级(skip)结构. 同时确保鲁�
 \centering
 \includegraphics[width=0.86\textwidth]{FCN-8W640.jpg}
 \caption{完全CNN结构 (FCN-8)\cite{PiramanayagamSaber2018-9591}}\index{FCN-8}
-\label{FCN-8W640}
+\label{FCN-8W640}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.86\textwidth]{fcn8.pdf}
 \caption{FCN-8}
-\label{CNNfcn80203}
+\label{CNNfcn80203}\vspace{-0.4cm}
 \end{figure}
 通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图(feature map)映射成一个固定长度的特征向量. 以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务, 因为它们最后都期望得到整个输入图像的一个数值描述(概率), 比如AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率(softmax归一化). FCN对图像进行像素级的分类, 从而解决了语义级别的图像分割(语义分割)问题. 与经典的CNN在卷积层之后使用全连接层得到固定长度的特征向量进行分类(全联接层＋softmax输出)不同, FCN可以接受任意尺寸的输入图像, 采用反卷积层对最后一个卷积层的特征映射进行上采样, 使它恢复到输入图像相同的尺寸, 从而可以对每个像素都产生了一个预测, 同时保留了原始输入图像中的空间信息, 最后在上采样的特征图上进行逐像素分类.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1954,21 +1973,21 @@ $\bullet$ FCN结合不同深度层结果的跳级(skip)结构. 同时确保鲁�
 \centering
 \includegraphics[width=0.86\textwidth]{fcn32.pdf}
 \caption{FCN-32}
-\label{CNNfcn320203}
+\label{CNNfcn320203}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{Unetushape.pdf}
 \caption{Unet ushape}
-\label{CNNUnetushape0203}
+\label{CNNUnetushape0203}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.86\textwidth]{Unet.pdf}
 \caption{Unet}
-\label{CNNUnet0203}
+\label{CNNUnet0203}\vspace{-0.4cm}
 \end{figure}
 VGGNet是牛津大学计算机视觉组（Visual Geometry Group）和Google DeepMind公司的研究员一起研发的深度卷积神经网络\ref{CNNvgg16020301}.\index{VGGNet}
 VGGNet探索了卷积神经网络的深度与其性能之间的关系, 通过反复堆叠$3\times 3$的小型卷积核和$2\times 2$的最大池化层,
@@ -1979,21 +1998,21 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=\textwidth]{vgg16.pdf}
 \caption{vgg-16}
-\label{CNNvgg16020301}
+\label{CNNvgg16020301}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{CNNvgg16LayerPara.png}
 \caption{vgg-16各层的参数、内存}
-\label{CNNvgg16LayerPara020302}
+\label{CNNvgg16LayerPara020302}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.4\textwidth]{SoftmaxLoss.pdf}
 \caption{Softmax Loss}
-\label{CNNSoftmaxLoss0203}
+\label{CNNSoftmaxLoss0203}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%-------------------------------------------------------------------------------
 \subsection{CNN的应用}
@@ -2008,28 +2027,28 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.6\textwidth]{CNNAPP201912150002.PNG}
 \caption{图像分类( AlexNet在ILSVRC-2012测试图像上预测的top-5标签)}
-\label{CNNAPP201912150002}
+\label{CNNAPP201912150002}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{CNNAPP201912150003.PNG}
 \caption{目标检测( Faster R-CNN在COCO数据集的检测结果)}
-\label{CNNAPP201912150003}
+\label{CNNAPP201912150003}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.76\textwidth]{CNNAPP201912150004.PNG}
 \caption{图像分割( SegNet模型分割结果)}
-\label{CNNAPP201912150004}
+\label{CNNAPP201912150004}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.76\textwidth]{CNNAPP201912150005.PNG}
 \caption{人脸识别( DeepFace模型)}
-\label{CNNAPP201912150005}
+\label{CNNAPP201912150005}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{卷积编译码网络学习语义图形实现水稻自动除草}
@@ -2039,7 +2058,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.76\textwidth]{CCNshuidao20191216181023.jpg}
 \caption{训练深度神经网络的方法使用语义图形来学习作物行的概念}
-\label{CCNshuidao20191216181023}
+\label{CCNshuidao20191216181023}\vspace{-0.4cm}
 \end{figure}
 杂草是农场侵略者, 与作物争夺营养及其他资源, 造成作物产量降低. 化学品的大量使用能够控制杂草, 但会对人类健康和环境造成意想不到的后果.
 思路就是找到一种新型神经网络训练方法, 该方法将语义图形用于数据注释并结合高级编译码网络, 实现稻田中自动作物行和杂草检测.
@@ -2057,7 +2076,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.76\textwidth]{CCNshuidao20191216181108.jpg}
 \caption{稻田数据集上使用拟议的扩展跳过网络学习语义线的定性结果}
-\label{CCNshuidao20191216181108}
+\label{CCNshuidao20191216181108}\vspace{-0.4cm}
 \end{figure}
 
 在稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果.
@@ -2066,7 +2085,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.76\textwidth]{CCNshuidao20191216181137.jpg}
 \caption{稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果}
-\label{CCNshuidao20191216181137}
+\label{CCNshuidao20191216181137}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{图卷积神经网络}
@@ -2078,7 +2097,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.76\textwidth]{GNNGAS20191216202234.jpg}
 \caption{GCN-based Anti-Spam System(GAS) 的垃圾评论过滤系统}
-\label{GNNGAS20191216202234}
+\label{GNNGAS20191216202234}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 图卷积的核心思想是希望利用近邻节点的信息进行聚合而生成当前节点的新表征, 这样的节点表示可以进一步用于下游任务. 如果我们直接从核心表达式出发, 跳过推导过程, 其实能更容易地理解. 如下所示为两层图卷积网络之间的传播方法, 它看起来只不过比常规的神经网络多了 $\tilde D$ 与$\tilde A$这几项.
@@ -2092,7 +2111,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \centering
 \includegraphics[width=0.76\textwidth]{GNNGAS20191216202340.jpg}
 \caption{图卷积网络的输入输出结构}
-\label{GNNGAS20191216202340}
+\label{GNNGAS20191216202340}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2102,11 +2121,11 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 从图\ref{GNNGAS20191216202359}我们可以看到, 闲鱼 Graph 有商品 $I$ 和用户 $U$ 这两种节点, 它们的边为评论 $E$. 如上, $e2$,$e4$ 和 $e5$ 都是垃圾评论, 它们都来自于同一用户. 利用图来判断垃圾评论, 能利用更多的额外信息, 准确率也会比纯文本好得多.
 现在回到图卷积, 一般图卷积的层级可以分为聚合(aggregation)与结合(combination)两大操作. 其中 AGG 会聚合邻近节点的嵌入向量, 例如最大池化或基于注意力权重的加权和等. COMBINE 操作会结合自身的嵌入向量与前面聚合的嵌入向量, 很多 GCN 方法将 COMBINE 操作放到了 AGG 里面.  在阿里的 GAS 中, 研究者使用拼接的方式将信息聚合到边上. 比如说如果 GAS 需要将信息聚合到不同的边(即评论)上, 那么比较核心的表达式可以写为:
 \begin{align}
-  h_{e}^{l}=\sigma\left(W_{E}^{l} \cdot A G G_{E}^{l}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right)\right),
+    h_{e}^{l}=\sigma\left(W_{E}^{l} \cdot A G G_{E}^{l}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right)\right),
 \end{align}
 其中
 \begin{align*}
-  A G G_{E}^{l}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right)=\operatorname{concat}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right),
+    A G G_{E}^{l}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right)=\operatorname{concat}\left(h_{e}^{l-1}, h_{U(e)}^{l-1}, h_{I(e)}^{l-1}\right),
 \end{align*}
 其中$ h^l$ 表示第 l 层边的隐藏向量, 它需要聚合 l-1 层自身的特征向量以及与它相连的两个节点向量, 聚合的方法是拼接三个向量.
 $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函数.
@@ -2116,7 +2135,7 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 \centering
 \includegraphics[width=0.74\textwidth]{GNNGAS20191216202359.jpg}
 \caption{图卷积异构网络---闲鱼 Graph}
-\label{GNNGAS20191216202359}
+\label{GNNGAS20191216202359}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 当然上面只是展示了边的聚合案例, 其它节点的 AGG 操作和 COMBINE 运算在原论文中都有详细的介绍.  此外, 如果从异构图卷积网络的输入与输出来考虑,
@@ -2134,7 +2153,7 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 \centering
 \includegraphics[width=0.7\textwidth]{GNNGAS20191216202416.jpg}
 \caption{基于闲鱼 Graph 构建的 同构Comment Graph}
-\label{GNNGAS20191216202416}
+\label{GNNGAS20191216202416}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 简单而言, Comment Graph 的构建主要分为四个步骤: 移除所有重复的评论; 通过词嵌入模型为评论生成嵌入向量; 利用 KNN Graph 算法获得相似的评论对;
@@ -2151,7 +2170,7 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 \centering
 \includegraphics[width=0.76\textwidth]{RNN201912150001.PNG}
 \caption{RNN网络结构按时间展开}
-\label{RNN201912150001}
+\label{RNN201912150001}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2159,7 +2178,7 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 \centering
 \includegraphics[width=0.76\textwidth]{RNNImage191229001.png}
 \caption{RNN网络结构}
-\label{RNNImage191229001}
+\label{RNNImage191229001}\vspace{-0.4cm}
 \end{figure}
 
 RNN主要用于序列分类
@@ -2175,15 +2194,15 @@ RNN主要用于序列分类
 
 考虑一个场景, 在该场景中, 我们需要计算时间步$L$处的网络损失. 假定损失是由于在时间步$S_1$对隐藏表示的错误计算而产生的. $S$处的错误是由于向量$W$的参数不正确造成的. 此信息必须反向传播到$W$, 以便向量可以校正其参数.
 \begin{align}
-a_{j}&=U x_{j}+W s_{j-1}+b\\
-s_{j}&=\sigma\left(a_{j}\right)
+    a_{j}&=U x_{j}+W s_{j-1}+b\\
+    s_{j}&=\sigma\left(a_{j}\right)
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.76\textwidth]{RNNImage191229002.png}
 \caption{RNN权重作用示意图}
-\label{RNNImage191229002}
+\label{RNNImage191229002}\vspace{-0.4cm}
 \end{figure}
 
 为了将信息传播回向量$W$, 我们需要用到链式法则的概念. 简而言之, 链式法则归结为特定时间步的所有隐藏表示的偏导数的乘积.
@@ -2206,7 +2225,7 @@ s_{j}&=\sigma\left(a_{j}\right)
 \centering
 \includegraphics[width=0.76\textwidth]{RNNImage191229003.png}
 \caption{RNN权重作用示意图}
-\label{RNNImage191229003}
+\label{RNNImage191229003}\vspace{-0.4cm}
 \end{figure}
 评论始于负面情绪, 后来变成正面. 过程如下:
 
@@ -2231,14 +2250,14 @@ $\bullet$ RNN或LSTM中的写
 \centering
 \includegraphics[width=0.7\textwidth]{RNNImage191229004.png}
 \caption{RNN节点计算}
-\label{RNNImage191229004}
+\label{RNNImage191229004}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{RNNImage191229005.png}
 \caption{平面RNN节点计算}
-\label{RNNImage191229005}
+\label{RNNImage191229005}\vspace{-0.4cm}
 \end{figure}
 
 $\bullet$ RNN或LSTM中的选择性写
@@ -2250,7 +2269,7 @@ $\bullet$ RNN或LSTM中的选择性写
 \centering
 \includegraphics[width=0.86\textwidth]{RNNImage191229006.png}
 \caption{RNN节点计算}
-\label{RNNImage191229006}
+\label{RNNImage191229006}\vspace{-0.4cm}
 \end{figure}
 我们进行“选择性写”的方式是, 将$s_{t-1}$的每个元素乘以一个介于0到1之间的值, 以计算出一个新的向量$h_{t-1}$. 我们将使用这个新向量来计算隐藏表示$s_t$.
 就像我们使用基于梯度下降优化的参数学习来学习其他参数(例如$U$和$W$)一样, 我们将从数据中学习$o_{t-1}$的数学方程式如下:
@@ -2275,7 +2294,7 @@ $t$从先前状态$h_{t-1}$和当前输入$x_t$捕获所有信息.
 \centering
 \includegraphics[width=0.86\textwidth]{RNNImage191229007.png}
 \caption{RNN节点计算}
-\label{RNNImage191229007}
+\label{RNNImage191229007}\vspace{-0.4cm}
 \end{figure}
 就像我们的输出门一样, 在这里, 我们将$t$的每个元素乘以一个新的向量$i_t$, 该向量的值在0–1之间. 由于向量$i_t$正在控制从当前输入中流入的信息, 因此称为输入门.
 
@@ -2310,7 +2329,7 @@ $\bullet$ RNN或LSTM中的选择性遗忘
 \centering
 \includegraphics[width=0.76\textwidth]{RNNImage191229008.png}
 \caption{RNN节点计算}
-\label{RNNImage191229008}
+\label{RNNImage191229008}\vspace{-0.4cm}
 \end{figure}
 
 遗忘门$f(t)$的数学方程式如下:
@@ -2330,7 +2349,7 @@ $\bullet$ RNN或LSTM中的选择性遗忘
 \centering
 \includegraphics[width=0.76\textwidth]{RNN20191229185940.JPG}
 \caption{RNN节点计算}
-\label{RNN20191229185940}
+\label{RNN20191229185940}\vspace{-0.4cm}
 \end{figure}
 完整的方程如下所示:
 \begin{align}
@@ -2370,7 +2389,7 @@ i_{t} &=\sigma\left(W_{i} s_{t-1}+U_{i} x_{t}+b_{i}\right) & & s_{t}=\left(1-i_{
 \centering
 \includegraphics[width=0.76\textwidth]{RNN201912150002.PNG}
 \caption{长短期记忆( Long Short-Term Memory,  LSTM)}
-\label{RNN201912150002}
+\label{RNN201912150002}\vspace{-0.4cm}
 \end{figure}
 LSTM 改变了循环体A的网络结构, 引入“门”的概念, 让信息有选择地影响循环神经网络中每个时刻的状态.
 长短期记忆 LSTM (Long Short-Term Memory,  LSTM)可以解决梯度消失问题和长期依赖问题.
@@ -2380,21 +2399,21 @@ LSTM 改变了循环体A的网络结构, 引入“门”的概念, 让信息有�
 \centering
 \includegraphics[width=0.76\textwidth]{RNNAPP2019121500003.PNG}
 \caption{机器翻译}
-\label{RNNAPP2019121500003}
+\label{RNNAPP2019121500003}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.76\textwidth]{RNNAPP2019121500004.PNG}
 \caption{生成图像描述}
-\label{RNNAPP2019121500005}
+\label{RNNAPP2019121500005}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.76\textwidth]{RNNAPP2019121500005.PNG}
 \caption{语音识别}
-\label{RNNAPP2019121500005}
+\label{RNNAPP2019121500005}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{深度神经网络轻量化}
@@ -2421,7 +2440,7 @@ LSTM 改变了循环体A的网络结构, 引入“门”的概念, 让信息有�
 \centering
 \includegraphics[width=\textwidth]{RNNAPP2019121500006.PNG}
 \caption{深度神经网络应用的轻量化}
-\label{RNNAPP2019121500006}
+\label{RNNAPP2019121500006}\vspace{-0.4cm}
 \end{figure}
 
 网络模型结构改进:
@@ -2441,14 +2460,14 @@ ShuffleNet
 \centering
 \includegraphics[width=\textwidth]{RNNAPP2019121500007.PNG}
 \caption{网络模型参数压缩}
-\label{RNNAPP2019121500007}
+\label{RNNAPP2019121500007}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
 \caption{通道重排和ShuffleNet单元}
-\label{RNNAPP2019121500008}
+\label{RNNAPP2019121500008}\vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{防止CNN的过拟合——diffGrad}
@@ -2508,13 +2527,13 @@ Uber研究员Jeff Clune已经表示明年会加入Open AI . 他还是新兴领�
 \section{作业}
 %%%%%%---------------------------------
 \begin{think}
-假设$w_1(0)=0.2, w_2(0)=0.4, \theta(0)=0.3, \eta=0.4$, 请用单层感知器完成逻辑或运算的学习过程.
+    假设$w_1(0)=0.2, w_2(0)=0.4, \theta(0)=0.3, \eta=0.4$, 请用单层感知器完成逻辑或运算的学习过程.
 \end{think}
 
 \begin{think}
-学习无监督的方式快速训练生成型循环神经网络(Recurrent World Models Facilitate Policy Evolution, David Ha(谷歌AI)和Jürgen Schmidhuber) \cite{ha2018worldmodels}.
+    学习无监督的方式快速训练生成型循环神经网络(Recurrent World Models Facilitate Policy Evolution, David Ha(谷歌AI)和Jürgen Schmidhuber) \cite{ha2018worldmodels}.
 \end{think}
 
 \begin{think}
-  运行如下位置的演示代码：\href{https://colab.research.google.com/drive/16a3G7Hh8Pv1X1PhZAUBEnZEkXThzDeHJ#scrollTo=D_a2USyd4giE}{Convolutional Neural Network}
+    运行如下位置的演示代码：\href{https://colab.research.google.com/drive/16a3G7Hh8Pv1X1PhZAUBEnZEkXThzDeHJ#scrollTo=D_a2USyd4giE}{Convolutional Neural Network}
 \end{think}
