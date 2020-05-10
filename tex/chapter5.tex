@@ -14,7 +14,8 @@
 \includegraphics[width=0.74\textwidth]{CI2019121801.jpg}
 \label{CI2019121801}
 \end{figure}
-教案二维码下载地址: \qrcode[height=1in]{https://github.com/zggl/AITeachingPlanDraft2020/blob/master/AIMaster2020.pdf}
+教案二维码下载地址: \qrcode[height=1in]{https://github.com/zggl/AITeachingPlanDraft2020/blob/master/AIMaster2020.pdf},
+第五章幻灯片 \qrcode[height=1in]{https://github.com/zggl/AITeachingPlanDraft2020/blob/master/5-\%E4\%BA\%BA\%E5\%B7\%A5\%E6\%99\%BA\%E8\%83\%BD\%E7\%AC\%AC\%E4\%BA\%94\%E7\%AB\%A0\%E7\%AC\%AC\%E4\%B8\%80\%E6\%AC\%A1\%20\%E8\%AE\%A1\%E7\%AE\%97\%E6\%99\%BA\%E8\%83\%BD.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{概述}
 本章主要讨论神经计算、进化计算和模糊计算问题.
@@ -1129,7 +1130,7 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(SVD)方法�
 RVFL的模型结构如此简单, 为什么RVFL能很好地完成大多数任务?
 
 Giryes等人 \cite{Giryes2016-7439822} 对这个开放问题给出一个可能的理论解释.
-一般来说, 不同类别之间的样本角度大于同一类别内的样本角度 \cite{LiorWolf2003}. 
+一般来说, 不同类别之间的样本角度大于同一类别内的样本角度 \cite{LiorWolf2003}.
 因此, 训练在学习算法中的作用是“不同类别的点之间的角度比同一类别的点之间的角度受到的惩罚更大” \cite{Giryes2016-7439822}.
 而且, 在这个大数据时代, 由于模型结构高度复杂, 学习过程中很难对所有参数进行快速调整, 这就需要极高的计算成本.
 为了解决这个问题, 随机化是一些学习算法的理想选择, 从而降低了计算成本. 训练前的算法需要随机初始化  \cite{Glorot2015, Zhang2015}.
@@ -1189,7 +1190,7 @@ $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的�
 \begin{align}
     \min\limits_{\bm w, \tilde{\bm w},\bm \lambda} \frac 1 2\|{\bm w}\|_2^ 2 + \frac \gamma 2 \|\tilde {\bm w}\|_2^ 2 + C\sum_{i=1}^N  {\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}-\sum_{i=1}^N  \bm \lambda_i(\bm h(\tilde {\bm x}_i){\bm w} -\bm y_i +{\tilde {\bm h}}({\bm x}_i)\tilde {\bm w}),
 \end{align}
-其中$\bm\lambda=[\bm\lambda_1, \cdots, \bm\lambda_N]^T$是拉格朗日乘子. 
+其中$\bm\lambda=[\bm\lambda_1, \cdots, \bm\lambda_N]^T$是拉格朗日乘子.
 
 为了找到最小二乘解, 我们使用KKT条件来计算Lagrangian函数$\mathscr L(\bm w, \tilde{\bm w},\bm\lambda)$关于变量$\bm w,\tilde{\bm w}$和$\bm\lambda$的鞍点.
 \begin{align}
@@ -1326,7 +1327,7 @@ TT2-RVFL 的输出模型如图 \ref{TensorRVFL20180927-2}:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL} {TT2-RVFL}
 RVFL常使用 Radbas ($y = \exp(-s^2)$), Sinc ($y = \textup{sinc} (s)$), Sigmoid ($y = \frac 1 {1+e^{-s} } $)和Tribas($y = \max(1 - |s|, 0)$)这几类激活函数, 其中 $s$ 和 $y$分别表示输入和输出变量.
-对于TT2-RVFL, 增强节点使用了区间二型模糊集. RVFL的 Radbas激活函数被 推广成区间二型模糊集, 扩展后的 RVFL 使用了区间二型模糊集, 扩展后的激活函数简记为 IT2Radbas, 它是 \eqref{IT2TSKNM_mu1} 和 \eqref{IT2TSKNM_mu2} 的变种, 
+对于TT2-RVFL, 增强节点使用了区间二型模糊集. RVFL的 Radbas激活函数被 推广成区间二型模糊集, 扩展后的 RVFL 使用了区间二型模糊集, 扩展后的激活函数简记为 IT2Radbas, 它是 \eqref{IT2TSKNM_mu1} 和 \eqref{IT2TSKNM_mu2} 的变种,
 记为$\tilde g_i(\cdot)$, 可以用下面的式子表示为
  \begin{align}
   &\bar{g} _{i} (x_i)=\exp(-k_1 s^2),\label{IT2TSKNM_g1} \\
@@ -1441,7 +1442,7 @@ TT2-RVFL 的输出可用下式表示
 %\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%table 1
 \begin{table} [!ht]
-\caption{算法1: 偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}} 
+\caption{算法1: 偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}}
 \label{T2RVFL3:alg1}
 \vspace{-0.5cm}
 \begin{center}
