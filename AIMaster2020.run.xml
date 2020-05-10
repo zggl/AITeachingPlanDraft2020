@@ -80,7 +80,7 @@
       <file>AIMaster2020.bcf</file>
     </requires>
     <requires type="editable">
-      <file>bib/qbook.bib,bib/AI32</file>
+      <file>bib/qbook.bib</file>
     </requires>
   </external>
 </requests>

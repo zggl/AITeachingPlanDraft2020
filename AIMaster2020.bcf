@@ -1992,7 +1992,7 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">bib/qbook.bib,bib/AI32</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/qbook.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">DabneyKurth-Nelson2020-9599</bcf:citekey>

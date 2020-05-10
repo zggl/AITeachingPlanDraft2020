@@ -144,18 +144,19 @@
 \begin{align}
   P(\textup{正面向上})=0.5.
 \end{align}
+\vspace{-0.4cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{统计概率的性质}{1}
-(1)对任一事件$A$, 有$ 0\leq P(A)\leq 1$.
+(1) 对任一事件$A$, 有$ 0\leq P(A)\leq 1$.
 
-    (2)必然事件$D$的概率$P(D)=1$, 不可能事件Φ的概率$P(\emptyset)=0$.
+(2)必然事件$D$的概率$P(D)=1$, 不可能事件Φ的概率$P(\emptyset)=0$.
 
-    (3)对任一事件A, 有$P(\neg A)=1-P(A)$.
+(3)对任一事件A, 有$P(\neg A)=1-P(A)$.
 
-    (4)设事件$A_1, A_2 ,\cdots , A_k (k\leq n)$是两两互不相容的事件, 即有 $A_i\cap A_j=Φ (i\neq j)$, 则
+(4)设事件$A_1, A_2 ,\cdots , A_k (k\leq n)$是两两互不相容的事件, 即有 $A_i\cap A_j=Φ (i\neq j)$, 则
 
-    (5)设$A, B$是两个事件, 则$P(A\cup B)=P(A)+P(B)-P(A\cap B)$.
+(5)设$A, B$是两个事件, 则$P(A\cup B)=P(A)+P(B)-P(A\cap B)$.
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{条件概率}{1}
@@ -445,6 +446,7 @@ CF(H,E)+CF(\neg H,E)
      $r_4$: IF  E4  AND  ( E5  OR  E6)  THEN  E1(0.8).
 \end{Verbatim}
 已知: $CF(E_2)=0.8, CF(E_3)=0.6, CF(E_4)=0.5, CF(E_5)=0.6, CF(E_6)=0.8$, 求$CF(H)=?$
+\vspace{-0.2cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
@@ -604,6 +606,7 @@ $\Omega$的幂集可包括如下子集:
 \item $B= $\{红, 黄\}时, 有$m(B)=0.2$, 它表示对命题“$x$或者是红色, 或者是黄色”的精确信任度为0.2, 却不知道该把这0.2分给\{红\}还是分给\{黄\}.
 \item $C=\Omega =$\{红, 黄, 白\}时, 有$m(\Omega )=0.2$, 表示不知道该对这0.2如何分配, 但知道它不属于{红}, 就一定属于\{黄\}或\{白\} .
 \end{itemize}
+\vspace{-0.2cm}
 \end{example}
 
 (2) 概率分配函数不是概率
@@ -613,6 +616,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{align}
   m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
 \end{align}
+\vspace{-0.4cm}
 \end{example}
 因此$m$不是概率测度, 因为概率$P$要求: $P(\{\textup{红}\})+P(\textup{黄})+P(\textup{白})=1$.
 
@@ -638,6 +642,7 @@ $\Omega$的幂集可包括如下子集:
 \text {\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
 \end{array}
 \end{align}
+\vspace{-0.2cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -648,6 +653,7 @@ $\Omega$的幂集可包括如下子集:
                               &\quad   +(\{\textup{红, 白}\})+(\{\textup{黄, 白}\})+(\{\textup{红, 黄, 白}\})\notag\\
                               &=0+0.3+0+0.1+0.2+0.2+0+0.2=1.
 \end{align}
+\vspace{-0.4cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{似然函数}{1}
@@ -753,6 +759,7 @@ P_l(A) \geq \operatorname{Bel}(A).&
   &m_1(\{\textup{红}\}, \{\textup{黄}\},\{\textup{红, 黄}\})=(0, 0.4, 0.5, 0.1)\\
   &m_2(\{\textup{红}\},\{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.6, 0.2, 0.2).
 \end{align}
+\vspace{-0.4cm}
 \end{example}
 \begin{remark}
   可采用德普斯特提出的求正交和的方法来组合这些函数.
@@ -855,6 +862,7 @@ A \subset \Omega, &|A|>>1\textup{或者}|A|=0\Rightarrow m(A)=0.
 \operatorname{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
 \end{array}
 \end{align}
+\vspace{-0.2cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{其似然函数}{1}
@@ -1032,6 +1040,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\operatorname{Bel}(A)] \\
   0\end{array}
   \right..
 \end{align}
+\vspace{-0.2cm}
 \end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1239,6 +1248,7 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
 \begin{center}
   (Age(Chang qing) is young) is likely.
 \end{center}
+\vspace{-0.4cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{模糊修饰语}
@@ -1283,6 +1293,7 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
    \mu_{\textup{非常真}}(u)=u^{2}, u \in[0,1];&\quad \mu_{\textup{非常假}}((u)=(1-u)^{2}, u \in[0,1];\\
    \mu_{\textup{有些真}}(u)=u^{\frac{1}{2}}, u \in[0,1];&\quad \mu_{\textup{有些假}}(u)=(1-u)^{\frac{1}{2}}, u \in[0,1].
 \end{align*}
+\vspace{-0.3cm}
 \end{example}
 
 在扎德的推理模型中, 产生式规则的表示形式是
@@ -1296,30 +1307,30 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
 
 \textbf{离散论域}: 设$U={u_1, u_2, \cdots, u_n}$是一个离散有限论域, $F$和$G$分别是论域$U$上的两个模糊概念的模糊集, 则$F$和$G$的海明距离定义为
 \begin{align}
-  d(F, G)=\frac{1}{n} \times \sum_{i=1}^{n}\left|\mu_{F}\left(u_{i}\right)-\mu_{G}\left(u_{i}\right)\right|.
+    d(F, G)=\frac{1}{n} \times \sum_{i=1}^{n}\left|\mu_{F}\left(u_{i}\right)-\mu_{G}\left(u_{i}\right)\right|.
 \end{align}
 
 \textbf{连续论域}: 如果论域$U$是实数域上的某个闭区间$[a, b]$, 则海明距离为
 \begin{align}
-  d(F, G)=\frac{1}{b-a} \int_{a}^{b}\left|\mu_{F}(u)-\mu_{G}(u)\right| d(u).
+    d(F, G)=\frac{1}{b-a} \int_{a}^{b}\left|\mu_{F}(u)-\mu_{G}(u)\right| d(u).
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设论域$U=\{-10, 0, 10, 20, 30\}$表示温度, 模糊集
 \begin{align}
-  F&= 0.8/-10+0.5/0+0.1/10;\\
-  G&=0.9/-10+0.6/0+0.2/10.
+    F&= 0.8/-10+0.5/0+0.1/10;\\
+    G&=0.9/-10+0.6/0+0.2/10.
 \end{align}
 分别表示“冷”和“比较冷”, 则
 \begin{align}
-  d(F,G)=0.2\times (|0.8-0.9|+|0.5-0.6|+|0.1-0.2|)=0.2\times 0.3=0.06,
+    d(F,G)=0.2\times (|0.8-0.9|+|0.5-0.6|+|0.1-0.2|)=0.2\times 0.3=0.06,
 \end{align}
 即$F$和$G$的海明距离为0.06.
 \end{example}
 
 设$F$和$G$分别是论域 $U={u_1, u_2, \cdots, u_n}$上的两个模糊概念的模糊集, 则它们的贴近度定义为
 \begin{align}
-  (F, G)=\frac 1 2( F\cdot G+(1-F\odot G)),
+    (F, G)=\frac 1 2( F\cdot G+(1-F\odot G)),
 \end{align}
 其中:
 \begin{align}
@@ -1359,13 +1370,14 @@ $R_m$是由扎德提出的一种构造模糊关系的方法.设$F$和$G$分别�
 \begin{example}\label{AIFuzzyexamp612}
  设$U=V=\{1,2,3\}$, $F$和$G$分别是$U$和$V$上的两个模糊集, 且$F=1/1+0.6/2+0.1/3,G=0.1/1+0.6/2+1/3$, 求$U\times V$上的 $R_m$
 \begin{align*}
-  R_{m}=\int_{U \times V}\left(\mu_{F}(u) \wedge \mu_{G}(v)\right) \vee\left(1-\mu_{F}(u)\right) /(u, v).
+    R_{m}=\int_{U \times V}\left(\mu_{F}(u) \wedge \mu_{G}(v)\right) \vee\left(1-\mu_{F}(u)\right) /(u, v).
 \end{align*}
+\vspace{-0.3cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
 \begin{align*}
-  R_{m}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.4} & {0.6} & {0.6} \\ {0.9} & {0.9} & {0.9}\end{array}\right].
+    R_{m}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.4} & {0.6} & {0.6} \\ {0.9} & {0.9} & {0.9}\end{array}\right].
 \end{align*}
 如: $R_m(2, 3) =(0.6\wedge 1)\vee (1-0.6)=0.6\vee 0.4=0.6$.
 \end{result}
@@ -1381,12 +1393,13 @@ $R_c$是由玛达尼(Mamdani)提出的一种构造模糊关系的方法.
 \begin{example}
 对例\ref{AIFuzzyexamp612}所给出的模糊集
 \begin{align*}
-  F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
+    F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
 \end{align*}
 其$R_c$为
 \begin{align*}
-  R_{c}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {0.6} & {0.6} \\ {0.1} & {0.1} & {0.1}\end{array}\right],
+    R_{c}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {0.6} & {0.6} \\ {0.1} & {0.1} & {0.1}\end{array}\right],
 \end{align*}
+\vspace{-0.2cm}
 \end{example}
 如$R_{c}(3,2)=\mu_{F}\left(u_{3}\right) \wedge \mu_{G}\left(v_{2}\right)=0.1 \wedge 0.6=0.1$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1395,7 +1408,7 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 
 设$F$和$G$分别是论域$U$和$V$上的两个模糊集, 则$R_g$定义为
 \begin{align*}
-  R_{g}=\int_{U \times V}\left(\mu_{F}(u) \rightarrow \mu_{G}(v)\right) /(u, v),
+    R_{g}=\int_{U \times V}\left(\mu_{F}(u) \rightarrow \mu_{G}(v)\right) /(u, v),
 \end{align*}
 其中
 \begin{align*}
@@ -1415,8 +1428,9 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \end{align*}
 其$R_g$为
 \begin{align*}
-  R_{g}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
+    R_{g}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
 \end{align*}
+\vspace{-0.3cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subparagraph{模糊假言推理}
@@ -1466,7 +1480,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \subparagraph{模糊拒取式推理}
 设$F$和$G$分别是$U$和$V$上的两个模糊集, 且有知识
 \begin{align*}
-  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G
+    \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G
 \end{align*}
 
 若有$V$上的一个模糊集$G'$, 且$G$可以和$G'$匹配, 则可以推出$x\,\,\textup{is} \,\,  F'$, 且$F'$是$U$上的一个模糊集.这种推理模式称为\textbf{模糊拒取式推理}, 其表示形式为:
@@ -1482,7 +1496,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \end{align*}
 也表示在$F$与$G$之间存在着确定的因果关系, 设此因果关系为$R$, 则有
 \begin{align*}
-  F'=R\circ G',
+    F'=R\circ G',
 \end{align*}
 其中的模糊关系$R$, 可以是$R_m$、$R_c$或$R_g$中的任何一种.
 
@@ -1522,7 +1536,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \end{align*}
 则可推出:
 \begin{align*}
-   \textup{IF}\,\,   x \,\, is \,\, F \,\,\textup{THEN}\,\,   z\,\,  \textup{is} \,\,H.
+    \textup{IF}\,\,   x \,\, is \,\, F \,\,\textup{THEN}\,\,   z\,\,  \textup{is} \,\,H.
 \end{align*}
 
  这种推理模式称为\textbf{模糊假言三段论推理}. 它可表示为:
@@ -1535,7 +1549,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 
 在模糊假言三段论推理模式下, 模糊知识
 \begin{align*}
-   r_1:  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\,G,
+    r_1:  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\,G,
 \end{align*}
 表示在$F$与$G$之间存在着确定的因果关系, 设此因果关系为$R_1$.
 
@@ -1547,11 +1561,11 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 
 　若模糊假言三段论成立, 则模糊结论
 \begin{align*}
-  r_3:  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   z\,\,  \textup{is} \,\, H
+    r_3:  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   z\,\,  \textup{is} \,\, H
 \end{align*}
 的模糊关系$R_3$可由$R_1$与$R_2$的合成得到. 即
 \begin{align*}
-  R_3=R_1\circ R_2.
+    R_3=R_1\circ R_2.
 \end{align*}
 这里的关系$R_1$、$R_2$和$R_3$都可以是前面所讨论过的$R_m$、$R_c$、$R_g$中的任何一种.
 
@@ -1561,19 +1575,19 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
-先求$E\times F$上的关系$R_1$
+    先求$E\times F$上的关系$R_1$
 \begin{align*}
-  R_{1}=\left[\begin{array}{ccc}{0.8} & {0.5} & {0.1} \\ {1} & {0.5} & {0.1} \\ {1} & {1} & {0.1}\end{array}\right].
+    R_{1}=\left[\begin{array}{ccc}{0.8} & {0.5} & {0.1} \\ {1} & {0.5} & {0.1} \\ {1} & {1} & {0.1}\end{array}\right].
 \end{align*}
 
 再求$E\times G$上的关系$R_2$
 \begin{align*}
-  R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {1} \\ {0.2} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
+    R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {1} \\ {0.2} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
 \end{align*}
 
 最后求$E\times F\times G$上的关系$R$
 \begin{align*}
-  R=R_{1} \circ R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {0.8} \\ {0.2} & {0.6} & {1} \\ {0.2} & {1} & {1}\end{array}\right].
+    R=R_{1} \circ R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {0.8} \\ {0.2} & {0.6} & {1} \\ {0.2} & {1} & {1}\end{array}\right].
 \end{align*}
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1596,12 +1610,12 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 $$\textup{IF} \,  x  \, \textup{is} \,  \textup{少}\,   \textup{THEN} \,  y  \, \textup{is}\,  \textup{多}$$
 其中, “少”与“多”分别是$U$与$V$上的模糊集, 设
 \begin{align}
-  \textup{少}&=0.9/1+0.7/2+0.4/3\\
-  \textup{多}&=0.3/3+0.7/4+0.9/5
+    \textup{少}&=0.9/1+0.7/2+0.4/3\\
+    \textup{多}&=0.3/3+0.7/4+0.9/5
 \end{align}
 已知事实为
 \begin{align}
-  x\,\,  \textup{is}\,\,  \textup{较少}
+    x\,\,  \textup{is}\,\,  \textup{较少}
 \end{align}
 “较少”的模糊集为
 \begin{align}

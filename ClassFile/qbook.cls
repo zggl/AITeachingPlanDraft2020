@@ -662,4 +662,8 @@
 \usepackage{ClassFile/extarrows}
 \usepackage{chemarrow}
 \usepackage[saturated]{tikzpeople}
+
+\graphicspath{{figures/},{gif2pnffolder/}}
+\usepackage{qrcode}
+\usepackage{tabularx}
 \endinput

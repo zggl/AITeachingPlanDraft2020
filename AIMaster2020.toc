@@ -459,7 +459,7 @@
 \contentsline {subparagraph}{模糊拒取式推理}{410}{subparagraph*.402}% 
 \contentsline {subparagraph}{模糊假言三段论推理}{411}{subparagraph*.403}% 
 \contentsline {section}{\numberline {6.9}高阶模糊推理}{412}{section.6.9}% 
-\contentsline {section}{\numberline {6.10}作业}{413}{section.6.10}% 
+\contentsline {section}{\numberline {6.10}作业}{412}{section.6.10}% 
 \contentsline {chapter}{\numberline {第七章\hspace {.3em}}机器学习}{415}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}机器学习}{416}{section.7.1}% 
 \contentsline {subsection}{\numberline {7.1.1}机器学习概述}{416}{subsection.7.1.1}% 
