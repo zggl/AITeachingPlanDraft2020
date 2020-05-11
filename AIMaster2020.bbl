@@ -47,7 +47,7 @@
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Weeds in agricultural farms are aggressive growers which compete for nutrition and other resources with the crop and reduce production. The increasing use of chemicals to control them has inadvertent consequences to the human health and the environment. In this work, a novel neural network training method combining semantic graphics for data annotation and an advanced encoder–decoder network for (a) automatic crop line detection and (b) weed (wild millet) detection in paddy fields is proposed. The detected crop lines act as a guiding line for an autonomous weeding robot for inter-row weeding, whereas the detection of weeds enables autonomous intra-row weeding. The proposed data annotation method, semantic graphics, is intuitive, and the desired targets can be annotated easily with minimal labor. Also, the proposed “extended skip network” is an improved deep convolutional encoder–decoder neural network for efficient learning of semantic graphics. Quantitative evaluations of the proposed method demonstrated an increment of 6.29% and 6.14% in mean intersection over union (mIoU), over the baseline network on the task of paddy line detection and wild millet detection, respectively. The proposed method also leads to a 3.56% increment in mIoU and a significantly higher recall compared to a popular bounding box-based object detection approach on the task of wild–millet detection.}
+      \field{abstract}{Weeds in agricultural farms are aggressive growers which compete for nutrition and other resources with the crop and reduce production. The increasing use of chemicals to control them has inadvertent consequences to the human health and the environment. In this work, a novel neural network training method combining semantic graphics for data annotation and an advanced encoder–decoder network for (a) automatic crop line detection and (b) weed (wild millet) detection in paddy fields is proposed. The detected crop lines act as a guiding line for an autonomous weeding robot for inter-row weeding, whereas the detection of weeds enables autonomous intra-row weeding. The proposed data annotation method, semantic graphics, is intuitive, and the desired targets can be annotated easily with minimal labor. Also, the proposed “extended skip network” is an improved deep convolutional encoder–decoder neural network for efficient learning of semantic graphics. Quantitative evaluations of the proposed method demonstrated an increment of 6.29\% and 6.14\% in mean intersection over union (mIoU), over the baseline network on the task of paddy line detection and wild millet detection, respectively. The proposed method also leads to a 3.56\% increment in mIoU and a significantly higher recall compared to a popular bounding box-based object detection approach on the task of wild–millet detection.}
       \field{issn}{1664-462X}
       \field{journaltitle}{Frontiers in Plant Science}
       \field{title}{Learning Semantic Graphics Using Convolutional Encoder–Decoder Network for Autonomous Weeding in Paddy}
@@ -64,6 +64,31 @@
       \verb{url}
       \verb https://www.frontiersin.org/article/10.3389/fpls.2019.01404
       \endverb
+    \endentry
+    \entry{Bishop2012-6469}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9dfd0135a5e80aa6d81cea2c10fb7f73}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {springer}%
+      }
+      \strng{namehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{fullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{bibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorbibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authornamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorfullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pattern recognition and machine learning}
+      \field{volume}{60}
+      \field{year}{2006}
     \endentry
     \entry{BouraouiKR2019}{article}{}
       \name{author}{12}{}{%
@@ -445,7 +470,7 @@
       \verb{doi}
       \verb 10.1109/ICCV.2015.293
       \endverb
-      \keyw{image denoising;learning (artificial intelligence);object recognition;domain generalization;multitask autoencoder;feature learning algorithm;cross-domain object recognition;standard denoising autoencoder;MTAE;image recognition;Training;Object recognition;Noise reduction;Feature extraction;Standards;Robustness;Image reconstruction}
+      \keyw{image denoising;learning (artificial intelligence);object recognition;domain generalization;multitask autoencoder;feature learning algorithm; cross-domain object recognition;standard denoising autoencoder;MTAE;image recognition;Training;Object recognition;Noise reduction;Feature extraction;Standards;Robustness;Image reconstruction}
     \endentry
     \entry{Giryes2016-7439822}{article}{}
       \name{author}{3}{}{%
@@ -517,6 +542,33 @@
       \field{pages}{315\bibrangedash 323}
       \range{pages}{9}
     \endentry
+    \entry{Godfrey2019-9846}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=6c06c92f17b138ba1efc920f645ef4ac}{%
+           family={Godfrey},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \strng{fullhash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \strng{bibnamehash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \strng{authorbibnamehash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \strng{authornamehash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \strng{authorfullhash}{6c06c92f17b138ba1efc920f645ef4ac}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Parametric activation functions, such as PReLU and PELU, are a relatively new subdomain of neural network nonlinearities. In this paper, we present a comparison of these methods across several topologies. We find that parameterizing activation functions in neural networks do not tend to overfit and tend to converge more quickly than non-parametric activations. This is especially important in environments where time and resources are limited, such as in embedded and mobile systems. We also introduce the Bendable Linear Unit (BLU), which synthesizes many useful properties of other activations, including PReLU, ELU, and SELU. Our experiments indicate that parametric activations that can approximate the identity function can autonomously learn to make residual connections in deep networks. BLU outperforms other activations on the CIFAR -10 task when using a topology without explicit residual connections. BLU also achieves the highest predictive accuracy of compared activations on the CIFAR -100 task when training with a time limit.}
+      \field{booktitle}{2019 IEEE International Conference on Systems, Man and Cybernetics (SMC)}
+      \field{series}{2019 IEEE International Conference on Systems, Man and Cybernetics (SMC)}
+      \field{title}{An Evaluation of Parametric Activation Functions for Deep Learning}
+      \field{year}{2019}
+      \field{pages}{3006\bibrangedash 3011}
+      \range{pages}{6}
+      \keyw{learning (artificial intelligence); neural nets; parametric activation functions; deep learning; PReLU; neural network nonlinearities; nonparametric activations; BLU; identity function; deep networks; PELU; bendable linear unit; SELU; CIFAR-10 task; Training; Task analysis; Neural networks; Network topology; Topology; Standards; Deep learning}
+    \endentry
     \entry{Goldenshluger2004}{article}{}
       \name{author}{2}{}{%
         {{hash=1a668bff7f6939afeaade811d16fb932}{%
@@ -546,6 +598,47 @@
       \field{year}{2004}
       \field{pages}{1908\bibrangedash 1932}
       \range{pages}{25}
+    \endentry
+    \entry{GolubHeath1979-10292}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8b856da92ad549d323acc679ecf7f474}{%
+           family={Golub},
+           familyi={G\bibinitperiod},
+           given={Gene\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7e66b282ce21803f71b42eb9828dc1da}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={Heath},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7ad38a672b78017205d584f05bef555e}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Wahba},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \strng{fullhash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \strng{bibnamehash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \strng{authorbibnamehash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \strng{authornamehash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \strng{authorfullhash}{d613d007e9432b249ec1a5c3ae215ad5}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider the ridge estimate (?) for ? in the model unknown, (?) = (X T X + n?I)?1 X T y. We study the method of generalized cross-validation (GCV) for choosing a good value for ? from the data. The estimate is the minimizer of V(?) given by where A(?) = X(X T X + n?I)?1 X T . This estimate is a rotation-invariant version of Allen's PRESS, or ordinary cross-validation. This estimate behaves like a risk improvement estimator, but does not require an estimate of σ2, so can be used when n ? p is small, or even if p ≥ 2 n in certain cases. The GCV method can also be used in subset selection and singular value truncation methods for regression, and even to choose from among mixtures of these methods.}
+      \field{journaltitle}{Technometrics}
+      \field{note}{doi: 10.1080/00401706.1979.10489751 doi: 10.1080/00401706.1979.10489751}
+      \field{number}{2}
+      \field{title}{Generalized Cross-Validation as a Method for Choosing a Good Ridge Parameter}
+      \field{volume}{21}
+      \field{year}{1979}
+      \field{pages}{215\bibrangedash 223}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/00401706.1979.10489751
+      \endverb
     \endentry
     \entry{GoodfellowGAN2014}{inproceedings}{}
       \name{author}{7}{}{%
@@ -599,6 +692,35 @@
       \field{title}{Generative adversarial nets}
       \field{pages}{2014}
       \range{pages}{1}
+    \endentry
+    \entry{gosavi2004reinforcement}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed1c86658ef06d4d5c4b7a401e513ace}{%
+           family={Gosavi},
+           familyi={G\bibinitperiod},
+           given={Abhijit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \strng{fullhash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \strng{bibnamehash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \strng{authorbibnamehash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \strng{authornamehash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \strng{authorfullhash}{ed1c86658ef06d4d5c4b7a401e513ace}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{3}
+      \field{title}{Reinforcement learning for long-run average cost}
+      \field{volume}{155}
+      \field{year}{2004}
+      \field{pages}{654\bibrangedash 674}
+      \range{pages}{21}
     \endentry
     \entry{NIPS2019-9365}{incollection}{}
       \name{author}{5}{}{%
@@ -847,14 +969,14 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.}
+      \field{abstract}{Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57\% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28\% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC \& COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.}
       \field{booktitle}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{series}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Deep Residual Learning for Image Recognition}
       \field{year}{2016}
       \field{pages}{770\bibrangedash 778}
       \range{pages}{9}
-      \keyw{image classification; learning (artificial intelligence); neural nets; object detection; COCO segmentation; ImageNet localization; ILSVRC & COCO 2015 competitions; deep residual nets; COCO object detection dataset; visual recognition tasks; CIFAR-10; ILSVRC 2015 classification task; ImageNet test set; VGG nets; residual nets; ImageNet dataset; residual function learning; deeper neural network training; image recognition; deep residual learning; Training; Degradation; Complexity theory; Image recognition; Neural networks; Visualization; Image segmentation}
+      \keyw{image classification; learning (artificial intelligence); neural nets; object detection; COCO segmentation; ImageNet localization; ILSVRC \& COCO 2015 competitions; deep residual nets; COCO object detection dataset; visual recognition tasks; CIFAR-10; ILSVRC 2015 classification task; ImageNet test set; VGG nets; residual nets; ImageNet dataset; residual function learning; deeper neural network training; image recognition; deep residual learning; Training; Degradation; Complexity theory; Image recognition; Neural networks; Visualization; Image segmentation}
     \endentry
     \entry{hendrycks2016gelu}{article}{}
       \name{author}{2}{}{%
@@ -941,7 +1063,7 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.}
+      \field{abstract}{Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is 0.1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.}
       \field{journaltitle}{Neural Computation}
       \field{number}{8}
       \field{title}{Long Short-Term Memory}
@@ -992,6 +1114,37 @@
       \verb{doi}
       \verb 10.1007/s00521-018-3385-5
       \endverb
+    \endentry
+    \entry{IgelnikPao1995-6470}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c0f741b81920b2d3963f0527957f698a}{%
+           family={Igelnik},
+           familyi={I\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8e2834df20115f3b8738ed5b3e697bd}{%
+           family={Pao},
+           familyi={P\bibinitperiod},
+           given={Yoh-Han},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{fullhash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{bibnamehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{authorbibnamehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{authornamehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{authorfullhash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{6}
+      \field{title}{Stochastic choice of basis functions in adaptive function approximation and the functional-link net}
+      \field{volume}{6}
+      \field{year}{1995}
+      \field{pages}{1320\bibrangedash 1329}
+      \range{pages}{10}
     \endentry
     \entry{Zhang2015}{inproceddings}{}
       \field{sortinit}{I}
@@ -1064,7 +1217,7 @@
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic segmentation. Our key insight is to build “fully convolutional” networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet [20], the VGG net [31], and GoogLeNet [32]) into fully convolutional networks and transfer their learned representations by fine-tuning [3] to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional network achieves state-of-the-art segmentation of PASCAL VOC (20% relative improvement to 62.2% mean IU on 2012), NYUDv2, and SIFT Flow, while inference takes less than one fifth of a second for a typical image.}
+      \field{abstract}{Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, exceed the state-of-the-art in semantic segmentation. Our key insight is to build “fully convolutional” networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks (AlexNet [20], the VGG net [31], and GoogLeNet [32]) into fully convolutional networks and transfer their learned representations by fine-tuning [3] to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional network achieves state-of-the-art segmentation of PASCAL VOC (20\% relative improvement to 62.2\% mean IU on 2012), NYUDv2, and SIFT Flow, while inference takes less than one fifth of a second for a typical image.}
       \field{booktitle}{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{series}{2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
       \field{title}{Fully convolutional networks for semantic segmentation}
@@ -1227,7 +1380,7 @@
       \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{In this paper an improvement of the optimally pruned extreme learning machine (OP-ELM) in the form of a L2 regularization penalty applied within the OP-ELM is proposed. The OP-ELM originally proposes a wrapper methodology around the extreme learning machine (ELM) meant to reduce the sensitivity of the ELM to irrelevant variables and obtain more parsimonious models thanks to neuron pruning. The proposed modification of the OP-ELM uses a cascade of two regularization penalties: first a L1 penalty to rank the neurons of the hidden layer, followed by a L2 penalty on the regression weights (regression between hidden layer and output layer) for numerical stability and efficient pruning of the neurons. The new methodology is tested against state of the art methods such as support vector machines or Gaussian processes and the original ELM and OP-ELM, on 11 different data sets; it systematically outperforms the OP-ELM (average of 27% better mean square error) and provides more reliable results – in terms of standard deviation of the results – while remaining always less than one order of magnitude slower than the OP-ELM.}
+      \field{abstract}{In this paper an improvement of the optimally pruned extreme learning machine (OP-ELM) in the form of a L2 regularization penalty applied within the OP-ELM is proposed. The OP-ELM originally proposes a wrapper methodology around the extreme learning machine (ELM) meant to reduce the sensitivity of the ELM to irrelevant variables and obtain more parsimonious models thanks to neuron pruning. The proposed modification of the OP-ELM uses a cascade of two regularization penalties: first a L1 penalty to rank the neurons of the hidden layer, followed by a L2 penalty on the regression weights (regression between hidden layer and output layer) for numerical stability and efficient pruning of the neurons. The new methodology is tested against state of the art methods such as support vector machines or Gaussian processes and the original ELM and OP-ELM, on 11 different data sets; it systematically outperforms the OP-ELM (average of 27\% better mean square error) and provides more reliable results – in terms of standard deviation of the results – while remaining always less than one order of magnitude slower than the OP-ELM.}
       \field{journaltitle}{Neurocomputing}
       \field{number}{16}
       \field{title}{{TROP-ELM}: A double-regularized {ELM} using {LARS} and {Tikhonov} regularization}
@@ -1394,6 +1547,80 @@
       \field{year}{2020}
       \field{pages}{128\bibrangedash 144}
       \range{pages}{17}
+    \endentry
+    \entry{paopillips1995-6471}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d24cf1ff0ad463ef48a5331c7ef2d25b}{%
+           family={Pao},
+           familyi={P\bibinitperiod},
+           given={Yoh\bibnamedelima Han},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=193f9452975d4feee4b57cf4c78bae01}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Stephen\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c817085499b57c16439e2e3af0428d0}
+      \strng{fullhash}{6c817085499b57c16439e2e3af0428d0}
+      \strng{bibnamehash}{6c817085499b57c16439e2e3af0428d0}
+      \strng{authorbibnamehash}{6c817085499b57c16439e2e3af0428d0}
+      \strng{authornamehash}{6c817085499b57c16439e2e3af0428d0}
+      \strng{authorfullhash}{6c817085499b57c16439e2e3af0428d0}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurocomputing}
+      \field{number}{2}
+      \field{title}{The functional link net and learning optimal control}
+      \field{volume}{9}
+      \field{year}{1995}
+      \field{pages}{149\bibrangedash 164}
+      \range{pages}{16}
+    \endentry
+    \entry{PiramanayagamSaber2018-9591}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4c91280673390bc1595b9763e95077dc}{%
+           family={Piramanayagam},
+           familyi={P\bibinitperiod},
+           given={Sankaranarayanan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=209f7cb22d4187a3edff6168a3ca171b}{%
+           family={Saber},
+           familyi={S\bibinitperiod},
+           given={Eli},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2e2a4380d520ec8da1ca769b099ccfdb}{%
+           family={Schwartzkopf},
+           familyi={S\bibinitperiod},
+           given={Wade},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fe91120f1e31cf2731a67a46d4b244f8}{%
+           family={Koehler},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi Frederick},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b12466d05bea70eac50bdf419e646af1}
+      \strng{fullhash}{b12466d05bea70eac50bdf419e646af1}
+      \strng{bibnamehash}{b12466d05bea70eac50bdf419e646af1}
+      \strng{authorbibnamehash}{b12466d05bea70eac50bdf419e646af1}
+      \strng{authornamehash}{b12466d05bea70eac50bdf419e646af1}
+      \strng{authorfullhash}{b12466d05bea70eac50bdf419e646af1}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a convolutional neural network (CNN)-based method to efficiently combine information from multisensor remotely sensed images for pixel-wise semantic classification. The CNN features obtained from multiple spectral bands are fused at the initial layers of deep neural networks as opposed to final layers. The early fusion architecture has fewer parameters and thereby reduces the computational time and GPU memory during training and inference. We also propose a composite fusion architecture that fuses features throughout the network. The methods were validated on four different datasets: ISPRS Potsdam, Vaihingen, IEEE Zeebruges and Sentinel-1, Sentinel-2 dataset. For the Sentinel-1,-2 datasets, we obtain the ground truth labels for three classes from OpenStreetMap. Results on all the images show early fusion, specifically after layer three of the network, achieves results similar to or better than a decision level fusion mechanism. The performance of the proposed architecture is also on par with the state-of-the-art results.}
+      \field{journaltitle}{Remote Sensing — Open Access Journal}
+      \field{month}{2018}
+      \field{title}{Supervised Classification of Multisensor Remotely Sensed Images Using a Deep Learning Framework}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \keyw{image classification; deep learning; multisensor data; sentinel data}
     \endentry
     \entry{raecompressive2019}{article}{}
       \name{author}{5}{}{%
@@ -1633,6 +1860,48 @@
       \verb 10.1038/323533a0
       \endverb
     \endentry
+    \entry{RunklerCoupland2018-6356}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=7b50dfa113f01c6579c0d7887473a99f}{%
+           family={Runkler},
+           familyi={R\bibinitperiod},
+           given={Thomas\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=49aaadf71e8ef9fd56ff2f37a956b889}{%
+           family={Coupland},
+           familyi={C\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d7a7d22c1e7edb48af461abbe73f0f7}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=531c7be3c2524682e36a7baa8d7ab92f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a17b1ebaea6d28233fba1fbd50472408}
+      \strng{fullhash}{a17b1ebaea6d28233fba1fbd50472408}
+      \strng{bibnamehash}{a17b1ebaea6d28233fba1fbd50472408}
+      \strng{authorbibnamehash}{a17b1ebaea6d28233fba1fbd50472408}
+      \strng{authornamehash}{a17b1ebaea6d28233fba1fbd50472408}
+      \strng{authorfullhash}{a17b1ebaea6d28233fba1fbd50472408}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Frontiers in Computational Intelligence}
+      \field{title}{Interval Type–2 Defuzzification Using Uncertainty Weights}
+      \field{year}{2018}
+      \field{pages}{47\bibrangedash 59}
+      \range{pages}{13}
+    \endentry
     \entry{SimiläTikka2005-32497}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=f90d695b5a563c6098f74aa4886e7742}{%
@@ -1783,6 +2052,81 @@
       \verb http://papers.nips.cc/paper/5850-training-very-deep-networks.pdf
       \endverb
     \endentry
+    \entry{sutton1998reinforcement}{book}{}
+      \name{author}{2}{}{%
+        {{hash=eb920e5277d3d5fd0903f3cd41e11871}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=32a0a208f8bcf56a13b0a8e618aa806a}{%
+           family={Barto},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Univ Press}%
+      }
+      \strng{namehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{bibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorbibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authornamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{1}
+      \field{title}{Reinforcement learning: An introduction}
+      \field{volume}{1}
+      \field{year}{1998}
+    \endentry
+    \entry{VAPNIK2009544}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{%
+           family={Vapnik},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d2686633f22ccb74cd4e374c9e291c0c}{%
+           family={Vashist},
+           familyi={V\bibinitperiod},
+           given={Akshay},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea2573635231a153d31bb61eabb33929}
+      \strng{fullhash}{ea2573635231a153d31bb61eabb33929}
+      \strng{bibnamehash}{ea2573635231a153d31bb61eabb33929}
+      \strng{authorbibnamehash}{ea2573635231a153d31bb61eabb33929}
+      \strng{authornamehash}{ea2573635231a153d31bb61eabb33929}
+      \strng{authorfullhash}{ea2573635231a153d31bb61eabb33929}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the Afterword to the second edition of the book “Estimation of Dependences Based on Empirical Data” by V. Vapnik, an advanced learning paradigm called Learning Using Hidden Information (LUHI) was introduced. This Afterword also suggested an extension of the SVM method (the so called SVMγ+ method) to implement algorithms which address the LUHI paradigm (Vapnik, 1982–2006, Sections 2.4.2 and 2.5.3 of the Afterword). See also (Vapnik et al., 2008, Vapnik et al., 2009) for further development of the algorithms. In contrast to the existing machine learning paradigm where a teacher does not play an important role, the advanced learning paradigm considers some elements of human teaching. In the new paradigm along with examples, a teacher can provide students with hidden information that exists in explanations, comments, comparisons, and so on. This paper discusses details of the new paradigm11In this article we changed the terminology. We will call this paradigm Learning Using Privileged Information (LUPI) (instead of LUHI) since the word privilege better reflects the core idea of the new paradigm. and corresponding algorithms, introduces some new algorithms, considers several specific forms of privileged information, demonstrates superiority of the new learning paradigm over the classical learning paradigm when solving practical problems, and discusses general questions related to the new ideas.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{note}{Advances in Neural Networks Research: IJCNN2009}
+      \field{number}{5}
+      \field{title}{A new learning paradigm: Learning using privileged information}
+      \field{volume}{22}
+      \field{year}{2009}
+      \field{pages}{544\bibrangedash 557}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neunet.2009.06.042
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0893608009001130
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0893608009001130
+      \endverb
+      \keyw{Machine learning,SVM,SVM+,Hidden information,Privileged information,Learning with teacher,Oracle SVM}
+    \endentry
     \entry{WANG2018144}{article}{}
       \name{author}{5}{}{%
         {{hash=4e570310fdff72e5a3d618c556248e80}{%
@@ -1840,6 +2184,40 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0278612518300037
       \endverb
       \keyw{Smart manufacturing,Deep learning,Computational intelligence,Data analytics}
+    \endentry
+    \entry{watkins1992q}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6522b6087fe013d303faca6da91596ca}{%
+           family={Watkins},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima JCH},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ef0afbe0b4e15059c963e026fe213c34}{%
+           family={Dayan},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{fullhash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{bibnamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authorbibnamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authornamehash}{1f776b9a46cb729efd9599e3af8beeef}
+      \strng{authorfullhash}{1f776b9a46cb729efd9599e3af8beeef}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine learning}
+      \field{number}{3-4}
+      \field{title}{Q-learning}
+      \field{volume}{8}
+      \field{year}{1992}
+      \field{pages}{279\bibrangedash 292}
+      \range{pages}{14}
     \endentry
     \entry{Zhang2020-8638559}{article}{}
       \name{author}{2}{}{%
@@ -2007,24 +2385,72 @@
       \verb{doi}
       \verb 10.1109/ICCV.2017.244
       \endverb
-      \keyw{computer vision;learning (artificial intelligence);cycle consistency loss;unpaired image-to-image translation;inverse mapping;image pair alignment;cycle-consistent adversarial networks;vision problem;graphics problem;learning;image distribution;adversarial loss;object transfiguration;collection style transfer;photo enhancement;Training;Painting;Training data;Semantics;Extraterrestrial measurements;Graphics}
+      \keyw{computer vision;learning (artificial intelligence);cycle consistency loss;unpaired image-to-image translation;inverse mapping;image pair alignment; cycle-consistent adversarial networks;vision problem;graphics problem;learning;image distribution;adversarial loss;object transfiguration;collection style transfer; photo enhancement;Training;Painting;Training data;Semantics;Extraterrestrial measurements;Graphics}
+    \endentry
+    \entry{Yutao2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fac58937009a6d70d09b0cd39808bf8c}{%
+           family={余涛},
+           familyi={余\bibinitperiod}}}%
+        {{hash=529a0fbcbdb15fbe960e81d02928f6d1}{%
+           family={于文俊},
+           familyi={于\bibinitperiod}}}%
+        {{hash=7bc01b3235a1ab73a2e7b0f4f6af835e}{%
+           family={李章文},
+           familyi={李\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{publisher}{1}{%
+        {万方数据资源系统}%
+      }
+      \strng{namehash}{4bdcdc4585c69d61176044311eac474e}
+      \strng{fullhash}{4bdcdc4585c69d61176044311eac474e}
+      \strng{bibnamehash}{4bdcdc4585c69d61176044311eac474e}
+      \strng{authorbibnamehash}{4bdcdc4585c69d61176044311eac474e}
+      \strng{authornamehash}{4bdcdc4585c69d61176044311eac474e}
+      \strng{authorfullhash}{4bdcdc4585c69d61176044311eac474e}
+      \field{sortinit}{余}
+      \field{sortinithash}{0249d9642c1908f262dd67b97da08b37}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{控制理论与应用}
+      \field{number}{11}
+      \field{title}{基于 {Q} 学习算法的变论域模糊控制新算法}
+      \field{volume}{28}
+      \field{year}{2011}
+      \field{pages}{1645\bibrangedash 1650}
+      \range{pages}{6}
+    \endentry
+    \entry{JH20093I}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ed9b74b11063daaf832aefe54d8e08e9}{%
+           family={江欢},
+           familyi={江\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {西南大学}%
+      }
+      \list{location}{1}{%
+        {重庆}%
+      }
+      \strng{namehash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \strng{fullhash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \strng{bibnamehash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \strng{authorbibnamehash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \strng{authornamehash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \strng{authorfullhash}{ed9b74b11063daaf832aefe54d8e08e9}
+      \field{sortinit}{江}
+      \field{sortinithash}{fa3bac14135b2176eb069ec00d97f42c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{模糊推理中CRI算法与全蕴涵三Ⅰ算法的等价性研究}
+      \field{type}{硕士论文}
+      \field{year}{2009}
     \endentry
   \enddatalist
-  \missing{Bishop2012-6469}
-  \missing{Godfrey2019-9846}
-  \missing{HuangZhao2018NCAA-5838}
-  \missing{IgelnikPao1995-6470}
-  \missing{PiramanayagamSaber2018-9591}
   \missing{Rong2009-4804697}
-  \missing{RunklerCoupland2018-6356}
-  \missing{VAPNIK2009544}
-  \missing{Yutao2011}
-  \missing{golub1979 generalized}
-  \missing{gosavi2004reinforcement}
-  \missing{paopillips1995-6471}
-  \missing{sutton1998reinforcement}
-  \missing{watkins1992q}
-  \missing{江欢 2009全蕴涵三I算法}
 \endrefsection
 \endinput
 

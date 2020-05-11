@@ -382,8 +382,8 @@
 \contentsline {section}{\numberline {5.4}其它神经学习算法}{308}{section.5.4}% 
 \contentsline {subsubsection}{\numberline {5.4.0.1}Tikhonov 正则化}{308}{subsubsection.5.4.0.1}% 
 \contentsline {subsection}{\numberline {5.4.1}TROP-ELM算法}{310}{subsection.5.4.1}% 
-\contentsline {subsection}{\numberline {5.4.2}Allen's PRESS(prediction sum of squares)}{311}{subsection.5.4.2}% 
-\contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PRESS (TR-PRESS)}{311}{subsubsection.5.4.2.1}% 
+\contentsline {subsection}{\numberline {5.4.2}Allen's PreSS(prediction sum of squares)}{311}{subsection.5.4.2}% 
+\contentsline {subsubsection}{\numberline {5.4.2.1}Tikhonov正则化的PreSS (TR-PreSS)}{311}{subsubsection.5.4.2.1}% 
 \contentsline {subsection}{\numberline {5.4.3}区间二型RVFL}{312}{subsection.5.4.3}% 
 \contentsline {subsubsection}{\numberline {5.4.3.1}区间二型模糊集}{315}{subsubsection.5.4.3.1}% 
 \contentsline {subsubsection}{\numberline {5.4.3.2}TT2-RVFL}{317}{subsubsection.5.4.3.2}% 
@@ -427,7 +427,8 @@
 \contentsline {section}{\numberline {6.3}不确定性推理的概率论基础}{379}{section.6.3}% 
 \contentsline {subsection}{\numberline {6.3.1}可信度的概念}{382}{subsection.6.3.1}% 
 \contentsline {subsection}{\numberline {6.3.2}CF模型}{382}{subsection.6.3.2}% 
-\contentsline {subsection}{\numberline {6.3.3}可信度的定义与性质}{383}{subsection.6.3.3}% 
+\contentsline {subsection}{\numberline {6.3.3}知识不确定性的表示形式}{382}{subsection.6.3.3}% 
+\contentsline {subsection}{\numberline {6.3.4}可信度的定义与性质}{383}{subsection.6.3.4}% 
 \contentsline {paragraph}{可信度的定义}{383}{paragraph*.385}% 
 \contentsline {subparagraph}{MB和MD的关系}{383}{subparagraph*.386}% 
 \contentsline {subparagraph}{可信度的性质}{384}{subparagraph*.387}% 
@@ -495,7 +496,7 @@
 \contentsline {subsection}{\numberline {7.7.7}BP网络学习}{444}{subsection.7.7.7}% 
 \contentsline {subsection}{\numberline {7.7.8}Hopfield网络学习}{445}{subsection.7.7.8}% 
 \contentsline {section}{\numberline {7.8}深度神经网络——DNN}{447}{section.7.8}% 
-\contentsline {subsection}{\numberline {7.8.1}高速公路网络（Highway network）}{449}{subsection.7.8.1}% 
+\contentsline {subsection}{\numberline {7.8.1}高速公路网络（Highway network) }{449}{subsection.7.8.1}% 
 \contentsline {subsection}{\numberline {7.8.2}残差网络}{450}{subsection.7.8.2}% 
 \contentsline {section}{\numberline {7.9}卷积神经网络 (Convolutional Neural Networks, CNN)}{452}{section.7.9}% 
 \contentsline {paragraph}{CNN应用场景——计算机视觉问题}{455}{paragraph*.445}% 
@@ -511,10 +512,10 @@
 \contentsline {subsection}{\numberline {7.9.5}循环神经网络(Recurrent Neural Networks, RNN)}{485}{subsection.7.9.5}% 
 \contentsline {subsection}{\numberline {7.9.6}深度神经网络轻量化}{494}{subsection.7.9.6}% 
 \contentsline {subsection}{\numberline {7.9.7}防止CNN的过拟合——diffGrad}{496}{subsection.7.9.7}% 
-\contentsline {subsection}{\numberline {7.9.8}无限宽度DNN}{496}{subsection.7.9.8}% 
+\contentsline {subsection}{\numberline {7.9.8}无限宽度DNN}{497}{subsection.7.9.8}% 
 \contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{497}{section.7.10}% 
-\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{497}{section.7.11}% 
-\contentsline {section}{\numberline {7.12}作业}{498}{section.7.12}% 
+\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{498}{section.7.11}% 
+\contentsline {section}{\numberline {7.12}作业}{499}{section.7.12}% 
 \contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{501}{chapter.8}% 
 \contentsline {paragraph}{Transformer 架构}{502}{paragraph*.505}% 
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{503}{section.8.1}% 
@@ -585,4 +586,3 @@
 \contentsline {section}{\numberline {11.2}几何深度学习}{536}{section.11.2}% 
 \contentsline {section}{\numberline {11.3}作 业 }{543}{section.11.3}% 
 \contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{545}{section*.559}% 
-\contentsline {section}{索\nobreakspace {}引}{545}{section*.560}% 

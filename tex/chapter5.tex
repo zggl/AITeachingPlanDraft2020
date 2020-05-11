@@ -949,7 +949,9 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 离散Hopfield网络是在非线性动力学的基础上, 由若干基本神经元构成的一种单层全互连网络, 其任意神经元之间均有连接, 并且是一种对称连接结构.
 
 \begin{example}
-一个典型的离散 Hopfidld网络结构如图 \ref{AI32fig201912022608}所示. 离散Hopfield网络模型是一个离散时间系统, 每个神经元只有0和1 (或-1和1) 两种状态, 任意神经元$i$和$j$之间的连接权值为$w_{ij}$. 由于神经元之间为对称连接, 且神经元自身无连接, 因此有
+一个典型的离散 Hopfidld网络结构如图 \ref{AI32fig201912022608}所示. 
+离散Hopfield网络模型是一个离散时间系统, 每个神经元只有0和1 (或-1和1) 两种状态, 任意神经元$i$和$j$之间的连接权值为$w_{ij}$. 
+由于神经元之间为对称连接, 且神经元自身无连接, 因此有
 \begin{align}
   w_{i j}=\left\{
   \begin{array}{ll}
@@ -964,15 +966,13 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 \subsection{神经网络的泛逼近性——可视化证明}
 Neural Networks: The Universality Theorem, V 1.0.0 (655 KB) 作者： Mayank Jhamtani-Visual Proof of Universal Approximation Theorem for Neural Networks.
 
-Neural Networks\_The Universality Theorem
-
-The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis. Michael Nielson gave a visual proof in his freely available online book \href{http://neuralnetworksanddeeplearning.com/chap4.html}{Nueral Nets and Deep Learning}.
+《Neural Networks\_The Universality Theorem》. The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis. 
+Michael Nielson gave a visual proof in his freely available online book \href{http://neuralnetworksanddeeplearning.com/chap4.html}{Nueral Nets and Deep Learning}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-最优剪枝极值学习机(OP-ELM)如图 \ref{OPELM20161021fig2} 所示, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤.
-提出了 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱下载}.
-如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量(添加的噪声变量没有在图上显示)时, 拟合会变得松散和扩散(ELM的并没有针对这种情况进行专门的设计).
+最优剪枝极值学习机(OP-ELM)如图 \ref{OPELM20161021fig2} 所示, 图 \ref{OPELM20161021fig2} 显示了OP-ELM的三个步骤 (\href{http://www.cis.hut.fi/projects/eiml/research/download}{OP-ELM工具箱下载链接}).
+如\cite{Miche2008OP, Miche2008A, Miche2010OP}中的描述, 对于OP-ELM， 当给网络添加一个纯随机噪声变量 (添加的噪声变量没有在图上显示) 时, 拟合会变得松散和扩散(ELM的并没有针对这种情况进行专门的设计).
 针对这一问题, OP-ELM提出了一种三步骤解决方法, 简言之, 为了解决含噪声的问题, 给ELM添加一个含修剪策略的封装器, 之后再增加两个步骤.
 首先是通过最小角度回归对神经元进行排序(LARS{efronhaste2004-32498});
 实际上, 实现了LARS算法的MRSR算法\cite{SimiläTikka2005-32497}也适用于这类多输出情况, 根据输出值的大小对节点进行排序.
@@ -980,11 +980,13 @@ The original proof for this principle was given by George Cybenko in 1989, and i
 由于OP-ELM算法设计中的神经元和输出之间的关系是线性的, OP-ELM对隐藏神经元的排序方法提供了支持.
 
 LOO优化参数方法通常是一种代价高昂的方法, 它需要在整个数据集(只除去一个样本)上训练模型, 并对数据集的所有样本重复求值.
-在OP-ELM结构中, 隐藏层和输出层的结点是线性关系. LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和(PRESS)给出(关于PRESS-LOO误差的计算细节见后).
-通过使用LARS方法 (这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使OP-ELM计算仍然有效, 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”的ELM.
+在OP-ELM结构中, 隐藏层和输出层的结点是线性关系. 
+LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和 (PreSS) 给出 (关于PreSS-LOO误差的计算细节见后).
+通过使用LARS方法 (这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使OP-ELM计算仍然有效, 
+并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”的ELM.
 同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合组合形式) 构造惩罚项.
-同时, 由于在PRESS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量(通过LOO 准则索引)显示出潜在的数值不稳定性.
-解决方案是在PRESS公式的计算中使用正则化.
+同时, 由于在PreSS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量 (通过LOO 准则索引) 显示出潜在的数值不稳定性.
+解决方案是在PreSS公式的计算中使用正则化.
 
 下面将回顾用于执行正则化的最著名算法, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合形式)惩罚项.
 提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
@@ -1062,10 +1064,10 @@ Tikhonov正则化是在许多不同的工作中独立发现的. 在Andrey Tikhon
     \label{TROPEMLmodel20161021fig2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Allen's PRESS(prediction sum of squares)}
-OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. 原始的PRESS公式可以表示为
+\subsection{Allen's PreSS(prediction sum of squares)}
+OP-ELM中使用的原始PreSS公式是由Allen在 \cite{MADavid1972} 中提出. 原始的PreSS公式可以表示为
 \begin{align}\label{AIC5eqn519}
-  \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X)^{-1}\bm x^T y}
+  \textup{MSE}^{\textup{TR-PreSS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X)^{-1}\bm x^T y}
        {1-\bm x_i(\bm X^T \bm X)^{-1}\bm x_i^T}\right)^2,
 \end{align}
 从公式可以看出, 每个观测值都是用其他$n-1$观测值“预测”的, 残差最终被平方和相加. 算法通过矩阵运算, 有效地实现了该算法.
@@ -1080,22 +1082,22 @@ OP-ELM中使用的原始PRESS公式是由Allen在\cite{MADavid1972}中提出. �
 
 4: 计算PRES的分子$D = \bm 1-\textup{diag}(\bm P\bm X^T)$;
 
-5: 计算PRESS的误差$e = \frac{y-\bm X \bm w} {\bm D} $;
+5: 计算PreSS的误差$e = \frac{y-\bm X \bm w} {\bm D} $;
 
-6: 优化误差$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
+6: 优化误差$\textup{MSE}^{\textup{TR-PreSS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
 
 这种方法的主要缺点在于在计算中使用伪逆(在\textbf{Moore–Penrose}中), 如果数据集$\bm X$不是全秩, 则可能导致数值不稳定性. 不幸的是, 现实世界中的数据集经常出现这种情况. 下面的方法对原始的计算提出了两个改进方式: 正则化和快速矩阵计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Tikhonov正则化的PRESS (TR-PRESS)}
-Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(SVD)方法计算PRESS的统计结果比传统的伪逆方法更好.
-在同一篇论文中, 给出了提出了Allen's PRESS的一个推广, 即广义交叉验证(GCV)方法, 它在技术上优于原始的方法, 因为它可以处理数据定义非常糟糕的情况, 如果除对角线项外,所有的项都是0.
+\subsubsection{Tikhonov正则化的PreSS (TR-PreSS)}
+Golub等人\cite{GolubHeath1979-10292} 指出: 使用奇异值分解 (SVD) 方法计算PreSS的统计结果比传统的伪逆方法更好.
+在同一篇论文中, 给出了提出了Allen's PreSS的一个推广, 即广义交叉验证 (GCV) 方法, 它在技术上优于原始的方法, 因为它可以处理数据定义非常糟糕的情况, 如果除对角线项外,所有的项都是0.
 
-实际上, 从我们的实验来看, 虽然GCV具有无可替代的优越性, 和原始的PRESS和Tikhonov正则化的PRESS相比, 它会导致计算时间陡增. 算法1以矩阵形式给出了用于确定$\textup{MSE}^{\textup{TR-PRESS}}$的计算步骤
+实际上, 从我们的实验来看, 虽然GCV具有无可替代的优越性, 和原始的PreSS和Tikhonov正则化的PreSS相比, 它会导致计算时间陡增. 算法1以矩阵形式给出了用于确定$\textup{MSE}^{\textup{TR-PreSS}}$的计算步骤
 \begin{align}
-    \textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x^T y  }
+    \textup{MSE}^{\textup{TR-PreSS}}=\frac 1 n \sum_{i=1}^n \left( \frac{y_i-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x^T y  }
        {1-\bm x_i(\bm X^T \bm X+\lambda \bm I)^{-1}\bm x_i^T}\right)^2,
 \end{align}
-这是公式 \eqref{AIC5eqn519} 的正规化结果. 符号$A\circ B$表示矩阵$\bm A$和$\bm B$(Schur积)逐元素相乘. 算法2在步骤4中使用它, 因为它比标准矩阵乘积快.
+这是公式 \eqref{AIC5eqn519} 的正规化结果. 符号$A\circ B$表示矩阵$\bm A$和$\bm B$ (Schur积) 逐元素相乘. 算法2在步骤4中使用它, 因为它比标准矩阵乘积快.
 
 \textbf{算法2}
 
@@ -1111,16 +1113,16 @@ Golub等人\cite{golub1979 generalized}指出: 使用奇异值分解(SVD)方法�
 
 \quad 3) 计算 $\bm D$: $\bm D = \bm 1-\textup{diag}(\bm C\bm U^T)$;
 
-\quad 4) 计算 $e = \frac{y-\bm P} {\bm D}$和$\textup{MSE}^{\textup{TR-PRESS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
+\quad 4) 计算 $e = \frac{y-\bm P} {\bm D}$和$\textup{MSE}^{\textup{TR-PreSS}}=\frac 1 n \sum_{i=1}^n \epsilon_i^2$.
 
 \quad 5) 直到$\lambda$收敛.
 
-\quad 6) 关联$\textup{MSE}^{\textup{TR-PRESS}}$ 和$\lambda$ 的最优值.
+\quad 6) 关联$\textup{MSE}^{\textup{TR-PreSS}}$ 和$\lambda$ 的最优值.
 
 全局来说, 该算法使用$\bm X$的奇异值分解来避免计算问题,并在奇异值分解计算伪逆时引入Tikhonov正则化参数.
 由于在优化$\lambda$之前预先计算了效用矩阵($\bm A$, $\bm B$和$\bm C$), 所以此实现碰巧运行得非常快.
 在实际应用中,该算法中$\lambda$的优化是通过一种\textbf{Nelder–Mead最小化方法}来实现的, 这种方法恰好在这个问题上收敛得非常快(Matlab中的fminsearch函数).
-通过使用这个修改后的PRESS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重, 神经元已经使用$L_1$的惩罚进行了排序.
+通过使用这个修改后的PreSS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重, 神经元已经使用$L_1$的惩罚进行了排序.
 图 \ref{TROPEMLmodel20161021fig2} 是图 \ref{OPELM20161021fig2} 的修改版本 (图 \ref{OPELM20161021fig2} 是\textbf{OP-ELM}方法).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
@@ -1154,7 +1156,7 @@ RVFL+是一种用于所有二元、多类别分类和回归问题的统一学习
 \begin{align}
     \hat y = \textup{sign}(f_{\textup{test}}(z)).
 \end{align}
-    \item 多类分类: 我们采用一对多(O vs. A)策略来确定多类分类中的预测标签. 设$f{\textup{test}}^k(z)$为第$k$个输出节点的输出函数. 测试样品的预期标签由
+    \item 多类分类: 我们采用一对多(One vs. All)策略来确定多类分类中的预测标签. 设$f{\textup{test}}^k(z)$为第$k$个输出节点的输出函数. 测试样品的预期标签由
 \begin{align}
     \hat y = \arg \max_{ k \in 1,\cdots,m} f_{\textup{test}}^k (z).
 \end{align}
@@ -1183,7 +1185,7 @@ $\zeta_i(\tilde{\bm w},{\tilde h}(\tilde{\bm x}_i))$是特权功能空间中的�
     \label{RVFL20181102eq10}
 \end{align}
 从 \eqref{RVFL20181102eq10}, 我们注意到RVFL+最小化了$w$和$\tilde w$上的目标函数. 因此, 训练阶段RVFL+的分离超平面不仅取决于原始特征, 还取决于优先考虑的信息.
-此外, SMM \cite{Cortes1995Support} 与SVM+的原始模型相比 \cite{VAPNIK2009544}, RVFL+的修正函数是正的或负的.
+此外, SVM \cite{Cortes1995Support}与SVM+的模型相比, RVFL+的修正函数是正的或负的.
 换句话说, RVFL+不考虑约束组$\zeta_i(\tilde{\bm h}, b, \phi({\bm x}_i))\geq 0\,(i=1, \cdots, N)$.
 对于二值分类, RVFL+中的约束数目至少比SVM+少N个, 这使得RVFL+的优化约束要比SVM+的小得多.
 此外, 为了解决 \eqref{RVFL20181102eq10} 中的优化问题, 构造如下的Lagrangian函数$\mathscr L(\bm w, \tilde{\bm w}, \bm\lambda)$.
@@ -1323,9 +1325,9 @@ TT2-RVFL 的输出模型如图 \ref{TensorRVFL20180927-2}:
 \end{align}
 其中 $\mathcal A *_N \mathcal X$ 为增强节点的张量乘积, $\bm H \bm \Omega$ 为线性部分的输出 , $\mathcal X$ 为增强节点部分的权重矩阵;
 类似于RVFL, $\bm H$ 是输入数据矩阵, 单列输出的数据需要复制一次, 以便与张量和矩阵的运算结果相容, $\Omega$是线性部分的权矩阵, 且$\mathcal A$是一个张量, 它是由 叠加区间二型模糊集的映射结果得到的张量.
-对于TT2-RVFL, $\bm Y$, $\mathcal X$ 和$\Omega$需要特别考虑, 以便和后件形成的张量方程相容. 下一节将介绍由三个变量组成的张量结构.
+对于TT2-RVFL, $\bm Y$, $\mathcal X$ 和$\Omega$需要特别对待, 以便和后件形成的张量方程相容. 下一节将介绍由三个变量组成的张量结构.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{TT2-RVFL} {TT2-RVFL}
+\subsubsection{TT2-RVFL}{TT2-RVFL}
 RVFL常使用 Radbas ($y = \exp(-s^2)$), Sinc ($y = \textup{sinc} (s)$), Sigmoid ($y = \frac 1 {1+e^{-s} } $)和Tribas($y = \max(1 - |s|, 0)$)这几类激活函数, 其中 $s$ 和 $y$分别表示输入和输出变量.
 对于TT2-RVFL, 增强节点使用了区间二型模糊集. RVFL的 Radbas激活函数被 推广成区间二型模糊集, 扩展后的 RVFL 使用了区间二型模糊集, 扩展后的激活函数简记为 IT2Radbas, 它是 \eqref{IT2TSKNM_mu1} 和 \eqref{IT2TSKNM_mu2} 的变种,
 记为$\tilde g_i(\cdot)$, 可以用下面的式子表示为
@@ -1420,7 +1422,6 @@ TT2-RVFL 的输出可用下式表示
     当不适用直接连接方式, TT2-RVFL 将会退化为张量型极限学习机 \cite{HuangZhao2019-9577}. 当同时使用RVFL和张量结构时,  TT2-RVFL是这两种结构的混合结果.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
   和RVFL相比, 基于张量的二型 RVFL模型 \eqref{TensorRVFLEq08} 做了三方面的扩展:
   1) 增强节点使用区间二型模糊激活函数来得到非线性映射结果, 增强节点部分由张量和张量乘法表示, 且使用了张量方程的求解算法 .
@@ -1429,7 +1430,7 @@ TT2-RVFL 的输出可用下式表示
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{algorithm}[!ht]
-%\caption{偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}}
+%\caption{偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2019-9577}}
 %\label{T2RVFL3:alg1}
 %\begin{algorithmic}[1] %
 %\REQUIRE 输入: 张量$\mathcal A$, $I_{1 \cdots N} $ 和指标 $J_{1 \cdots N} $.
@@ -1442,7 +1443,7 @@ TT2-RVFL 的输出可用下式表示
 %\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%table 1
 \begin{table} [!ht]
-\caption{算法1: 偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2018NCAA-5838}}
+\caption{算法1: 偶数阶张量$\mathcal A$的M-P逆 \cite{HuangZhao2019-9577}}
 \label{T2RVFL3:alg1}
 \vspace{-0.5cm}
 \begin{center}
@@ -1479,7 +1480,7 @@ TT2-RVFL 的输出可用下式表示
 \end{align}
 其中张量$\mathcal A \in \mathbb R^{I_1\times \cdots\times I_N\times J_1\times \cdots\times J_N} $, $\mathcal X \in \mathbb R^{J_1\times \cdots\times J_N\times K_1\times \cdots\times K_M} $
 且 $\mathcal Y \in \mathbb R^{I_1\times \cdots\times I_N\times K_1\times \cdots\times K_M}$,
-不论方程是否相容, 都可以应用算法 \ref{NCAATTELML} 来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2019-9577}.
+不论方程是否相容, 都可以应用表\ref{T2RVFL3:alg1} 的算法来求解方程 $\mathcal  A *_N \mathcal X = \mathcal Y$ \cite{HuangZhao2019-9577}.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{求解TT2-RVFL的张量逆算法} \label{Trapezoidsection5-2}
@@ -1656,10 +1657,10 @@ TT2-RVFL的结果要好于 IT2-RVFL的结果, 训练误差和测试误差都要�
 \subsubsection{非线性系统参数识别}
 对于如下的非线性系统 \cite{Rong2009-4804697}
 \begin{align} \label{TT2FS:Nonlinearsys18}
-     y_p(k) =\frac{ y_p(k - 1)y_p(k - 2)(y_p(k - 1) + 2.5)} {1 + (y_p(k - 1))^2 + (y_p(k - 2))^2}  + u(k - 1).
+     y_p(k) =\frac{ y_p(k - 1)y_p(k - 2)(y_p(k - 1) + 2.5)} {1 + (y_p(k - 1))^2 + (y_p(k - 2))^2} + u(k - 1).
 \end{align}
 系统的平衡态为 (0,0),  输入 $u(k) \in \{-2, 2\}$, 操作区间规定为 $[-2, 2]$. 均匀分布的随机变量从$\{-2, 2\}$ 中产生, 测试使用的输入 $u(k) = \sin(2\pi k/25)$.
-通过选取$[y_p(k - 1), y_p(k - 2), u(k - 1)]$作为输入变量,  $y_p(k)$作为输出变量. 系统可以写为
+通过选取$[y_p(k - 1), y_p(k - 2), u(k - 1)]$作为输入变量, $y_p(k)$作为输出变量. 系统可以写为
 \begin{align}
     \hat y _p(k) = \hat f(y_p(k - 1), y_p(k - 2), u(k - 1)).
 \end{align}
@@ -1718,7 +1719,7 @@ Diabetes 数据集有768个样本, 每一个样本有4个属性. Triazines 数�
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-   利用表 \ref{TT2-RVFL181116:Sec4-1}的四个数据集和神经网络工具线或者神经网络APP, 编写一个表 \ref{TT2-RVFL181116:Sec4-1}的实现代码, 并对结果进行分析比较.
+   利用表 \ref{TT2-RVFL181116:Sec4-1} 的四个数据集和神经网络工具线或者神经网络APP, 编写一个表 \ref{TT2-RVFL181116:Sec4-1} 的实现代码, 并对结果进行分析比较.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 对于IT2-RVFL和 TT2-RVFL, 平衡参数设置为 $C=2^{10}$, $\gamma =1$.

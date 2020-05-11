@@ -1,31 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
-[1] Config.pm:307> INFO - Logfile is 'AIMaster2020.blg'
-[38] biber-MSWIN32:315> INFO - === 
+[0] Config.pm:307> INFO - Logfile is 'AIMaster2020.blg'
+[37] biber-MSWIN32:315> INFO - === 
 [67] Biber.pm:371> INFO - Reading 'AIMaster2020.bcf'
-[186] Biber.pm:889> INFO - Found 62 citekeys in bib section 0
-[203] Biber.pm:4093> INFO - Processing section 0
-[219] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
-[229] bibtex.pm:1523> INFO - LaTeX decoding ...
-[397] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
-[767] Utils.pm:193> WARN - I didn't find a database entry for '江欢 2009全蕴涵三I算法' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'Yutao2011' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'watkins1992q' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'sutton1998reinforcement' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'gosavi2004reinforcement' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'golub1979 generalized' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'paopillips1995-6471' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'IgelnikPao1995-6470' (section 0)
-[768] Utils.pm:193> WARN - I didn't find a database entry for 'Bishop2012-6469' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'VAPNIK2009544' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'RunklerCoupland2018-6356' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'HuangZhao2018NCAA-5838' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'Godfrey2019-9846' (section 0)
-[769] Utils.pm:193> WARN - I didn't find a database entry for 'PiramanayagamSaber2018-9591' (section 0)
-[835] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[835] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[835] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[835] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[912] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
-[941] bbl.pm:739> INFO - Output to AIMaster2020.bbl
-[941] Biber.pm:110> INFO - WARNINGS: 15
+[184] Biber.pm:889> INFO - Found 61 citekeys in bib section 0
+[200] Biber.pm:4093> INFO - Processing section 0
+[216] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
+[226] bibtex.pm:1523> INFO - LaTeX decoding ...
+[419] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
+[937] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
+[1014] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1014] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1014] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1014] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[1095] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
+[1127] bbl.pm:739> INFO - Output to AIMaster2020.bbl
+[1127] Biber.pm:110> INFO - WARNINGS: 1

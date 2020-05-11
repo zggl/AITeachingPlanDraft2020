@@ -15,7 +15,7 @@
 \end{figure}
 教案二维码下载地址: \qrcode[height=1in]{https://github.com/zggl/AITeachingPlanDraft2020/blob/master/AIMaster2020.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-2020年1月, NLP的抱抱脸（hugging face)团队发布了新资源！帮助NLP过程中词语切分（tokenization）更快的库\href{https://github.com/huggingface/tokenizers}{Tokenizers}.
+2020年1月, NLP的抱抱脸（hugging face)团队发布了新资源！帮助NLP过程中词语切分 (tokenization) 更快的库 \href{https://github.com/huggingface/tokenizers}{Tokenizers}.
 只要20秒就能编码1GB文本，适用Rust、Python和Node.js，已经在GitHub上获得了800多星.
 
 在NLP模型训练中，词语标记和切分往往是一个瓶颈. Tokenizer能够训练新的词汇，并且进行标记.
@@ -27,14 +27,15 @@
 github的资源页面上提供了在Python上使用Tokenizers的示例，进行简单的设置就可以使用, 目前可用于三种语言Python、JS、Rust.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{Transformer 架构}
-广泛用于自然语言处理中，并且在许多任务中实现了 sota(「state-of-the-art」, 用于描述机器学习中取得某个任务上当前最优效果的模型). 为了获得这些结果，研究者不得不开始训练更大的 Transformer 模型。在最大的配置中，参数数量已经超过了 0.5B/层，层数多达 64。
+广泛用于自然语言处理中，并且在许多任务中实现了 sota(「state-of-the-art」, 用于描述机器学习中取得某个任务上当前最优效果的模型). 
+为了获得这些结果，研究者不得不开始训练更大的 Transformer 模型。在最大的配置中，参数数量已经超过了 0.5B/层，层数多达 64。
 
 诸如此类的大型 Transformer 模型频频出现，到底是客观上必须要求如此多的资源，还是仅仅是因为处理效率不够高？
 
 如果说每层的内存占用只有这么一些的话，部署 Transformer 会比实际中更容易，但是事情并不是这样的。以上的估计只包括了每层的内存占用情况和输入的激活损失，并没有考虑 Transformer 上的内存占用问题：
 
 
-由于激活需要被存储并用于反向传播，有着 N 层的模型的大小比单层大了 N 倍；
+由于激活需要被存储并用于反向传播，有着 $N$ 层的模型的大小比单层大了 $N$ 倍；
 
 由于中间的全连接层的深度 d\_ff 通常远大于注意力激活层的深度 d\_model，因此需要占用很大的内存；
 
@@ -48,7 +49,7 @@ github的资源页面上提供了在Python上使用Tokenizers的示例，进行�
 
 基于局部敏感哈希（locality-sensitive hashing，LSH）的近似注意力计算，让注意力层的$ O(L^2)$因子替代$ O(L)$因子，实现在长序列上的操作。
 
-$\bullet$\href{https://openreview.net/pdf?id=rkgNKkHtvB}{Pytorch implementation of Reformer}. It has been validated with a toy auto-regressive task.
+$\bullet$ \href{https://openreview.net/pdf?id=rkgNKkHtvB}{Pytorch implementation of Reformer}. It has been validated with a toy auto-regressive task.
 
 Install (如图\ref{PycharmPytorchReformer})
 
@@ -62,7 +63,7 @@ Install (如图\ref{PycharmPytorchReformer})
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{语言及其理解的基本概念}
-自然语言是音义结合的词汇和语法体系. 词汇是语言的基本单位, 它在语法的支配下可构成有意义和可理解的句子, 句子再按一定的形式构成篇章等. 其结构如图\ref{AI32fig3001}所示:
+自然语言是音义结合的词汇和语法体系. 词汇是语言的基本单位, 它在语法的支配下可构成有意义和可理解的句子, 句子再按一定的形式构成篇章等. 其结构如图 \ref{AI32fig3001}所示:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering

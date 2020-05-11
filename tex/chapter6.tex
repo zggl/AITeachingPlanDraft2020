@@ -102,7 +102,10 @@
   在掷币试验中, 若用$d_1$表示硬币的正面向上, 用$d_2$表示硬币的反面向上, 则该试验的样本空间为: $D=\{d_1, d_2\}$.
 \end{example}
 
-概念:由样本点构成的集合称为随机事件.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mydef}{样本空间}{1}
+    由样本点构成的集合称为样本空间. 样本空间的子集是随机事件.
+\end{mydef}
 
 \begin{example}
   在掷币试验中, 若用$A$表示硬币正面向上这一事件, 则有$A=\{d_1\}$.
@@ -144,25 +147,25 @@
 \begin{align}
   P(\textup{正面向上})=0.5.
 \end{align}
-\vspace{-0.4cm}
+\vspace{-0.5cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{统计概率的性质}{1}
 (1) 对任一事件$A$, 有$ 0\leq P(A)\leq 1$.
 
-(2)必然事件$D$的概率$P(D)=1$, 不可能事件Φ的概率$P(\emptyset)=0$.
+(2) 必然事件$D$的概率$P(D)=1$, 不可能事件Φ的概率$P(\emptyset)=0$.
+ 
+(3) 对任一事件A, 有$P(\neg A)=1-P(A)$.
 
-(3)对任一事件A, 有$P(\neg A)=1-P(A)$.
+(4) 设事件$A_1, A_2 ,\cdots , A_k,\, (k\leq n)$是两两互不相容的事件, 即有 $A_i\cap A_j=\phi(i\neq j)$, 则
 
-(4)设事件$A_1, A_2 ,\cdots , A_k (k\leq n)$是两两互不相容的事件, 即有 $A_i\cap A_j=Φ (i\neq j)$, 则
-
-(5)设$A, B$是两个事件, 则$P(A\cup B)=P(A)+P(B)-P(A\cap B)$.
+(5) 设$A, B$是两个事件, 则$P(A\cup B)=P(A)+P(B)-P(A\cap B)$.
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{条件概率}{1}
 设$A$与$B$是两个随机事件, $P(B)>0$, 则称:
 \begin{align}
-  P(A|B)=P(A\cap B)/P(B)
+    P(A|B)=P(A\cap B)/P(B)
 \end{align}
 为在事件$B$发生的条件下事件$A$的条件概率 .
 \end{mydef}
@@ -174,16 +177,14 @@
 
 \begin{result}
 由于事件$B$已经发生, 因此以下事件\{取到红桃$A$; 取到红桃2; 取到红桃3; $\cdots$; 取到红桃$K$\}中必有一个出现.
-
 而对事件$A$, 在事件$B$发生的前提下, 只有以下事件\{取到红桃$J$; 取到红桃$Q$; 取到红桃$K$中的一个\}发生时事件$A$才能发生.
-
 因此, 在事件$B$发生的条件下事件$A$发生的概率是3/13.
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mythm}{全概率公式}{1}
 设事件$A_1,A_2,\cdots,A_n$满足:
 
-    (1)任意两个事件都互不相容, 即当$i\neq j$时, 有$A_i\cap A_j=\emptyset, (i=1,2,\cdots ,n_j=1,2,\cdots ,n)$;
+    (1)任意两个事件都互不相容, 即当$i\neq j$时, 有$A_i\cap A_j=\emptyset,\, (i=1,2,\cdots ,n_j=1,2,\cdots ,n)$;
 
     (2) $P(A_i)>0 (i=1, 2, \cdots, n)$;
 
@@ -204,18 +205,20 @@ P\left(A_{i} | B\right)=\frac{P\left(A_{i}\right) \times P\left(B / A_{i}\right)
 
 如果把全概率公式代入Bayes公式, 则有:
 \begin{align}
-  P\left(A_{i} | B\right)=\frac{P(A) \times P\left(B | A_{i}\right)}{P(B)}, i=1,2, \cdots, n,
+    P\left(A_{i} | B\right)=\frac{P(A) \times P\left(B | A_{i}\right)}{P(B)},\, i=1,2, \cdots, n,
 \end{align}
 即
 \begin{align}
-  P\left(A_{i} | B\right) \times P(B)=P\left(B_{i} | A\right) \times P\left(A_{i}\right), i=1,2, \ldots, n.
+    P\left(A_{i} | B\right) \times P(B)=P\left(B_{i} | A\right) \times P\left(A_{i}\right),\, i=1,2, \ldots, n.
 \end{align}
 这是Bayes公式的另一种形式.
 
-Bayes定理给出了用逆概率$P(B|A_i)$求原概率$P(A_i|B)$的方法.
+\begin{remark}
+    Bayes定理给出了用逆概率$P(B|A_i)$求原概率$P(A_i|B)$的方法.
+\end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{可信度的概念}
-可信度是指人们根据以往经验对某个事物或现象为真的程度的一个判断, 或者说是人们对某个事物或现象为真的相信程度.
+    可信度是指人们根据以往经验对某个事物或现象为真的程度的一个判断, 或者说是人们对某个事物或现象为真的相信程度.
 \begin{example}
   沈强昨天没来上课, 理由是头疼. 就此理由, 只有以下两种可能: 一是真的头疼了, 理由为真; 二是没有头疼, 理由为假. 但就听话人而言, 因不能确切知道, 就只能某种程度上相信, 即可信度.
 \end{example}
@@ -223,23 +226,16 @@ Bayes定理给出了用逆概率$P(B|A_i)$求原概率$P(A_i|B)$的方法.
 可信度具有一定的主观性, 较难把握.但对某一特定领域, 让该领域专家给出可信度还是可行的.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CF模型}
-
-1. 知识不确定性的表示
-
-表示形式:
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{知识不确定性的表示形式}
 在C-F模型中, 知识是用产生式规则表示的, 其一般形式为:
 \begin{center}
-  IF\,\,   E\,\,    THEN\,\,  H\,\, (CF($H, E$)),
+    IF\,\,   E\,\,    THEN\,\,  H\,\, (CF($H, E$)),
 \end{center}
 其中, $E$是知识的前提条件; $H$是知识的结论; CF($H, E$)是知识的可信度.
+
 \begin{remark}
-(1) $E$可以是单一条件, 也可以是复合条件.
-    \begin{example}
-        \begin{center}
-          $E$=($E_1$  OR  $E_2$)  AND  $E_3$  AND  $E_4$.
-        \end{center}
-    \end{example}
+(1) $E$可以是单一条件, 也可以是复合条件. 比如$E$=($E_1$  OR  $E_2$)\,\,  AND\,\,  $E_3$\,\,  AND\,\,  $E_4$.
 
 (2) $H$可以是单一结论, 也可以是多个结论.
 
@@ -248,22 +244,29 @@ Bayes定理给出了用逆概率$P(B|A_i)$求原概率$P(A_i|B)$的方法.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-\begin{center}
-      IF   发烧    AND  流鼻涕   THEN   感冒   (0.8),
-\end{center}
-表示当某人确实有“发烧”及“流鼻涕”症状时, 则有80\%的把握是患了感冒.
+    当某人确实有“发烧”及“流鼻涕”症状时, 则有80\%的把握是患了感冒. 可表示为
+\begin{align*}
+      \textup{IF   发烧    AND  流鼻涕   THEN   感冒   (0.8),}
+\end{align*}
+\vspace{-0.55cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{可信度的定义与性质}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{可信度的定义}
 在$CF$模型中, 把$CF(H, E)$定义为
-          $$CF(H, E)=MB(H, E)-MD(H, E),$$
+\begin{align*}
+    CF(H, E)=MB(H, E)-MD(H, E),
+\end{align*}
 式中$MB$称为信任增长度, $MB(H, E)$定义为
 \begin{align}
-  MB(H, E)=\left\{\begin{array}{ll}{1,} & \textup{若} P(H)=1 \\
-  {\frac{\max \{P(H | E), P(H)\}-P(H)}{1-P(H)},} & \textup{否则}
-  \end{array}\right.,
+  MB(H, E)=
+  \left\{
+  \begin{array}{ll}
+                    1,                           & \textup{若} P(H)=1\\
+    \frac{\max \{P(H | E), P(H)\}-P(H)}{1-P(H)}, & \textup{否则}
+  \end{array}
+  \right.,
 \end{align}
 $MD$称为不信任增长度, $MB(H, E)$定义为
 \begin{align}
@@ -290,9 +293,7 @@ $MD$称为不信任增长度, $MB(H, E)$定义为
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subparagraph{可信度的性质}
 \begin{itemize}
-\item 互斥性
-
-对同一证据, 它不可能既增加对$H$的信任程度, 又同时增加对$H$的不信任程度, 这说明$MB$与$MD$是互斥的.即有如下互斥性:
+\item 互斥性: 对同一证据, 它不可能既增加对$H$的信任程度, 又同时增加对$H$的不信任程度, 这说明$MB$与$MD$是互斥的.即有如下互斥性:
 
    $\bullet$当$MB(H, E)>0时, MD(H, E)=0$;
 
@@ -317,7 +318,7 @@ M D(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(
 &=\frac{P(H | E)-P(H)}{1-P(H)}=MB(H, E). \textup{信任增长度}
 \end{align}
 
-再根据CF的定义和MB、MD的互斥性有
+再根据CF的定义、MB和MD的互斥性有
 \begin{align*}
 CF(H,E)+CF(\neg H,E)
               &=(MB(H,E)-MD(H,E))+(MB(\neg H,E)-MD(\neg H,E))\\
@@ -341,7 +342,7 @@ CF(H,E)+CF(\neg H,E)
 \end{align*}
 因此, 如果发现专家给出的知识有如下情况
 \begin{align*}
-  CF(H_1, E)=0.7,  CF(H_2, E)=0.4,
+    CF(H_1, E)=0.7,  CF(H_2, E)=0.4,
 \end{align*}
 则因$0.7+0.4=1.1>1$为非法, 应进行调整或规范化.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -359,53 +360,49 @@ CF(H,E)+CF(\neg H,E)
 对$E$, 其可信度$CF(E)$的含义如下:
 \begin{center}
 \begin{itemize}
-\item $CF(E)=1$, 证据$E$肯定它为真;
-\item $CF(E)=-1$, 证据$E$肯定它为假;
-\item $CF(E)=0$, 对证据$E$一无所知;
-\item $0<CF(E)<1$, 证据$E$以CF(E)程度为真;
-\item $-1<CF(E)<0$, 证据$E$以CF(E)程度为假.
+    \item $CF(E)=1$, 证据$E$肯定它为真;
+    \item $CF(E)=-1$, 证据$E$肯定它为假;
+    \item $CF(E)=0$, 对证据$E$一无所知;
+    \item $0<CF(E)<1$, 证据$E$以CF(E)程度为真;
+    \item $-1<CF(E)<0$, 证据$E$以CF(E)程度为假.
 \end{itemize}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{ 否定证据不确定性的计算}
 \begin{align}
-  CF(\neg E)=-CF(E).
+    CF(\neg E)=-CF(E).
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{组合证据不确定性的计算}
 对证据的组合形式可分为“合取”与“析取”两种基本情况.
 \begin{itemize}
-\item 合取
-
-    当组合证据是多个单一证据的组合时, 即 $E=E_1\,\,  AND\,\,    E_2\,\,    AND \,\,   \cdots\,\,     AND \,\,   E_n$时, 若已知$CF(E_1), CF(E_2), \cdots , CF(E_n)$, 则
+\item 合取: 当组合证据是多个单一证据的组合时, 即 $E=E_1\,\,  AND\,\,    E_2\,\,    AND \,\,   \cdots\,\,     AND \,\,   E_n$时, 若已知$CF(E_1), CF(E_2), \cdots , CF(E_n)$, 则
 \begin{align}
   CF(E)=\min\{CF(E_1), CF(E_2), \cdots  ,CF(E_n)\}.
 \end{align}
-\item 析取
-
-　当组合证据是多个单一证据的析取时, 即$E=E_1\,\,  \textup{OR}\,\,  E_2 \,\, \textup{OR}\,\,  \cdots \,\,  \textup{OR}\,\, E_n$时, 若已知$CF(E_1), CF(E_2), \cdots , CF(E_n)$, 则
+\item 析取: 当组合证据是多个单一证据的析取时, 即$E=E_1\,\,  \textup{OR}\,\,  E_2 \,\, \textup{OR}\,\,  \cdots \,\,  \textup{OR}\,\, E_n$时, 若已知$CF(E_1), CF(E_2), \cdots , CF(E_n)$, 则
 \begin{align}
-  CF(E)=\max\{CF(E_1), CF(E_2), \cdots  ,CF(E_n)\}.
+    CF(E)=\max\{CF(E_1), CF(E_2), \cdots  ,CF(E_n)\}.
 \end{align}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{不确定性的更新}
- CF模型中的不确定性推理实际上是从不确定的初始证据出发, 不断运用相关的不确性知识, 逐步推出最终结论和该结论可信度的过程.而每一次运用不确定性知识, 都需要由证据的不确定性和知识的不确定性去计算结论的不确定性.
+CF模型中的不确定性推理实际上是从不确定的初始证据出发, 不断运用相关的不确性知识, 逐步推出最终结论和该结论可信度的过程. 而每一次运用不确定性知识, 都需要由证据的不确定性和知识的不确定性去计算结论的不确定性.
 
 不确定性的更新公式
 \begin{align}
-  CF(H)=CF(H, E)\times \max\{0, CF(E)\}.
+    CF(H)=CF(H, E)\times \max\{0, CF(E)\}.
 \end{align}
     若$CF(E)<0$, 则
 \begin{align}
-  CF(H)=0,
+    CF(H)=0,
 \end{align}
 即该模型没考虑$E$为假对$H$的影响.
 
 若$CF(E)=1$, 则
 \begin{align}
-  CF(H)=CF(H,E),
+    CF(H)=CF(H,E),
 \end{align}
 即规则强度$CF(H,E)$实际上是在$E$为真时, $H$的可信度.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -462,15 +459,15 @@ CF(H,E)+CF(\neg H,E)
 \end{result}
 由$r_1$得到:
 \begin{align*}
-CF_1(H)&=CF(H, E_1)\times \max\{0,  CF(E_1)\}=0.9\times \max\{0,  0.4\} = 0.36.
+    CF_1(H)&=CF(H, E_1)\times \max\{0,  CF(E_1)\}=0.9\times \max\{0,  0.4\} = 0.36.
 \end{align*}
     由$r_2$得到:
 \begin{align*}
-CF_2(H)&=CF(H, E_2)\times \max\{0,  CF(E_2)\}=0.6\times \max\{0,  0.8\} = 0.48.
+    CF_2(H)&=CF(H, E_2)\times \max\{0,  CF(E_2)\}=0.6\times \max\{0,  0.8\} = 0.48.
 \end{align*}
 由$r_3$得到:
 \begin{align*}
-CF_3(H)&=CF(H, E_3)\times \max\{0,  CF(E_3)\}=-0.5\times \max\{0,  0.6\} = -0.3.
+    CF_3(H)&=CF(H, E_3)\times \max\{0,  CF(E_3)\}=-0.5\times \max\{0,  0.6\} = -0.3.
 \end{align*}
 
 根据结论不精确性的合成算法, $CF_1(H)$和$CF_2(H)$同号, 有:
@@ -486,8 +483,8 @@ $CF_{12}(H)$和$CF_3(H)$异号, 有:
 \begin{align}
   \begin{aligned}
   C F_{1,2,3}(H) &=\frac{C F_{1,2}(H)+C F_{3}(H)}{1-\min \left\{\left\langle C F_{1,2}(H)|,| C F_{3}(H)\right|\right\}} \\
-  &=\frac{0.67-0.3}{1-\min\{0.67,0.3\}}=\frac{0.37}{0.7} \\
-  &=0.53.
+                 &=\frac{0.67-0.3}{1-\min\{0.67,0.3\}}=\frac{0.37}{0.7} \\
+                 &=0.53.
   \end{aligned}
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -499,11 +496,11 @@ $CF_{12}(H)$和$CF_3(H)$异号, 有:
 其中, (LS, LN)用来表示该知识的知识强度, LS(充分性度量)和LN(必要性度量)的表示形式分别为:
 \begin{align}
 \begin{aligned}
-LS &=\frac{P(E | H)}{P(E | \neg H)}; \\
-LN &=\frac{P(\neg E | H)}{P(\neg E | \neg H)}=\frac{1-P(E | H)}{1-P(E | \neg H)}.
+    LS &=\frac{P(E | H)}{P(E | \neg H)}; \\
+    LN &=\frac{P(\neg E | H)}{P(\neg E | \neg H)}=\frac{1-P(E | H)}{1-P(E | \neg H)}.
 \end{aligned}
 \end{align}
-下面进一步讨论LS和LN的含义.由本章第\ref{AI32C6Sec6.2}节的Bayes公式可知:
+下面进一步讨论LS和LN的含义.由本章第 \ref{AI32C6Sec6.2} 节的Bayes公式可知:
 \begin{align}\label{AI32C6eq6.2}
   \begin{aligned}
   P(H | E) &=\frac{P(E | H) \times P(H)}{P(E)} \\ P(\neg H | E) &=\frac{P(E | \neg H) \times P(\neg H)}{P(E)}.
@@ -518,7 +515,7 @@ LN &=\frac{P(\neg E | H)}{P(\neg E | \neg H)}=\frac{1-P(E | H)}{1-P(E | \neg H)}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{几率函数}{1}
 \begin{align}
-  O(X)=\frac{P(X)}{1-P(X)} P(X)=\frac{P(X)}{P(\neg X)}.
+    O(X)=\frac{P(X)}{1-P(X)} P(X)=\frac{P(X)}{P(\neg X)}.
 \end{align}
 \end{mydef}
 
@@ -531,11 +528,11 @@ P(X)=1,&\,O(X)=+\infty.
 
 把\eqref{AI32C6eq6.2}式代入\eqref{AI32C6eq6.1}式有:
 \begin{align}
-  O(H | E)=\frac{P(E | H)}{P(E | \neg H)} \times O(H).
+    O(H | E)=\frac{P(E | H)}{P(E | \neg H)} \times O(H).
 \end{align}
 再把LS代入此式, 可得:
 \begin{align}
-  Q(H | E)=LS \times QH.
+    Q(H | E)=LS \times QH.
 \end{align}
 
 同理可得到关于LN的公式:
@@ -614,7 +611,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{example}
 在例6.5中, $m$符合概率分配函数的定义, 但
 \begin{align}
-  m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
+    m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
 \end{align}
 \vspace{-0.4cm}
 \end{example}
@@ -624,7 +621,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{mydef}{信任函数}{1}
 信任函数$Bel: 2^{\Omega}\rightarrow [0,1]$为
 \begin{align}
-  \operatorname{Bel}(A)=\sum_{B \subseteq A} m(B),
+    \textup{Bel}(A)=\sum_{B \subseteq A} m(B),
 \end{align}
 其中, $2^\Omega$是$\Omega$的幂集. $Bel$又称为下限函数, $Bel(A)$表示对$A$的总的信任度.
 \end{mydef}
@@ -680,18 +677,18 @@ $\Omega$的幂集可包括如下子集:
 \begin{example}
 再如:
 \begin{align}
-  P_l(\{\textup{黄, 白}\})=1-Bel(\neg \{\textup{黄, 白}\})=1-Bel(\{\textup{红}\})=1-0.3=0.7,
+    P_l(\{\textup{黄, 白}\})=1-Bel(\neg \{\textup{黄, 白}\})=1-Bel(\{\textup{红}\})=1-0.3=0.7,
 \end{align}
 这里的0.7的含义与上面分析类似.
 \end{example}
 
 似然函数的另外一种计算办法:
 \begin{align}
-\sum_{\{\textup{红}\}\cap B =\emptyset} m(B) = 0.3+0.2+0.2+0.2=0.9.
+    \sum_{\{\textup{红}\}\cap B =\emptyset} m(B) = 0.3+0.2+0.2+0.2=0.9.
 \end{align}
 由于
 \begin{align}
-  \sum_{\{\textup{黄, 白}\}\cap B =\emptyset} m(B)=0+0.1+0+0.2+0.2+0.2=0.7.
+    \sum_{\{\textup{黄, 白}\}\cap B =\emptyset} m(B)=0+0.1+0+0.2+0.2+0.2=0.7.
 \end{align}
 可见, $P_l(\{\textup{红}\}), P_l(\{\textup{黄, 白}\})$亦可分别用下式计算:
 \begin{align}
@@ -712,11 +709,11 @@ $\Omega$的幂集可包括如下子集:
 \begin{proof}
 \begin{align}
 \begin{aligned}
-\operatorname{Bel}(A)+\operatorname{Bel}(\neg A)
+\textup{Bel}(A)+\textup{Bel}(\neg A)
 &=\sum_{B \in A} m(B)+\sum_{c_{E-A}} m(C) \leq \sum_{E \subseteq \Omega} m(E)=1.\\
-P_l(A)-\operatorname{Bel}(A) &=1-\operatorname{Bel}(\neg A)-\operatorname{Bel}(A)\\
-&=1-(\operatorname{Bel}(\neg A)+\operatorname{Bel}(A)) \geq 0. \\
-P_l(A) \geq \operatorname{Bel}(A).&
+P_l(A)-\textup{Bel}(A) &=1-\textup{Bel}(\neg A)-\textup{Bel}(A)\\
+&=1-(\textup{Bel}(\neg A)+\textup{Bel}(A)) \geq 0. \\
+P_l(A) \geq \textup{Bel}(A).&
 \end{aligned}
 \end{align}
 由于$\textup{Bel}(A)$和$P_l(A)$分别表示$A$为真的信任度和$A$为非假的信任度, 因此, 可分别称$\textup{Bel}(A)$和$P_l(A)$为对$A$信任程度的下限和上限, 记为: $A[\textup{Bel}(A), P_l(A)]$
@@ -725,14 +722,14 @@ P_l(A) \geq \operatorname{Bel}(A).&
 \begin{example}
 在前面的例子中
 \begin{align}
-  \textup{Bel}(\{\textup{红}\})=0.3, P_l(\{\textup{红}\})=0.9,
+    \textup{Bel}(\{\textup{红}\})=0.3, P_l(\{\textup{红}\})=0.9,
 \end{align}
 即:  $\{\textup{红}\}=[0.3, 0.9]$. 它表示对\{\textup{红}\}的精确信任度为0.3, 不可驳斥部分为0.9, 肯定不是\{红\}的为0.1.
 \end{example}
 
 同理可以求得
 \begin{itemize}
-\item \{黄\}[0, 0.4] \quad                      \{白\}[0.1,  0.5]
+\item \{黄\}[0, 0.4]         \quad         \{白\}[0.1,  0.5]
 \item \{红, 黄\}[0.5,  0.9]  \quad         \{红, 白\}[0.6,  1]
 \item \{黄, 白\}[0.1,  0.7]  \quad         \{红, 黄, 白\}[1, 1]
 \item \{\}[0,  0]
@@ -752,7 +749,7 @@ P_l(A) \geq \operatorname{Bel}(A).&
 \begin{example}
 对
 \begin{align}
-  \Omega=\{\textup{红, 黄}\}.
+    \Omega=\{\textup{红, 黄}\}.
 \end{align}
 假设从不同知识源得到的两个概率分配函数分别为:
 \begin{align}
@@ -775,7 +772,7 @@ P_l(A) \geq \operatorname{Bel}(A).&
 \end{align}
 其中:
 \begin{align}
-  K=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y)=\sum_{x \cap y \neq \Phi} m_{1}(x) \times m_{2}(y).
+    K=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y)=\sum_{x \cap y \neq \Phi} m_{1}(x) \times m_{2}(y).
 \end{align}
 如果$K\neq 0$, 则正交和也是一个概率分配函数; 如果$K=0$, 则不存在正交和$m$, 称$m_1$与$m_2$矛盾.
 \end{mydef}
@@ -795,17 +792,18 @@ P_l(A) \geq \operatorname{Bel}(A).&
 \begin{align}
 \begin{aligned}
 K &=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y) \\
-&=1-\left(m_{1}(\{a\}) \times m_{2}(\{b\})+m_{1}(\{b\}) \times m_{2}(\{a\})\right) \\
-&=1-(0.3 \times 0.3+0.5 \times 0.6)=0.61.
+    &=1-\left(m_{1}(\{a\}) \times m_{2}(\{b\})+m_{1}(\{b\}) \times m_{2}(\{a\})\right) \\
+    &=1-(0.3 \times 0.3+0.5 \times 0.6)=0.61.
 \end{aligned}
 \end{align}
 
 再求$m(\{a\}, \{b\}, \{a, b\})$, 由于
 \begin{align}
-\begin{aligned} m(\{a\})
-&=\frac{1}{0.61} \times \sum_{x \cap y=\{a\}} m_{1}(x) \times m_{2}(y) \\
-&=\frac{1}{0.61} \times\left(m_{1}(\{a\}) \times m_{2}(\{a\})+m_{1}(\{a\}) \times m_{2}(\{a, b\})+m_{1}(\{a, b\}) \times m_{2}(\{a\})\right) \\
-&=\frac{1}{0.61} \times(0.3 \times 0.6+0.3 \times 0.1+0.2 \times 0.6)=0.54.
+\begin{aligned} 
+m(\{a\})
+    &=\frac{1}{0.61} \times \sum_{x \cap y=\{a\}} m_{1}(x) \times m_{2}(y) \\
+    &=\frac{1}{0.61} \times\left(m_{1}(\{a\}) \times m_{2}(\{a\})+m_{1}(\{a\}) \times m_{2}(\{a, b\})+m_{1}(\{a, b\}) \times m_{2}(\{a\})\right) \\
+    &=\frac{1}{0.61} \times(0.3 \times 0.6+0.3 \times 0.1+0.2 \times 0.6)=0.54.
 \end{aligned}
 \end{align}
 同理可求得
@@ -815,7 +813,7 @@ K &=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y) \\
 \end{align}
 故有
 \begin{align}
-  m(\emptyset, \{a\}, \{b\}, \{a, b\})=\{0, 0.54, 0.43, 0.03\}.
+    m(\emptyset, \{a\}, \{b\}, \{a, b\})=\{0, 0.54, 0.43, 0.03\}.
 \end{align}
 \end{result}
 对于多个概率分配函数的组合, 方法类似.
@@ -858,8 +856,8 @@ A \subset \Omega, &|A|>>1\textup{或者}|A|=0\Rightarrow m(A)=0.
 对任何命题$A\subset \Omega$, 其信任函数为
 \begin{align}
 \begin{array}{l}
-\operatorname{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \\
-\operatorname{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
+\textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \\
+\textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
 \end{array}
 \end{align}
 \vspace{-0.2cm}
@@ -878,7 +876,7 @@ P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \end{mydef}
 可以看出, 对任意命题$A\subset \Omega$和$B\subset \Omega$均有:
 \begin{align}
-  P_l(A)-\textup{Bel}(A)=P_l(B)-\textup{Bel}(B)= m(\Omega),
+    P_l(A)-\textup{Bel}(A)=P_l(B)-\textup{Bel}(B)= m(\Omega),
 \end{align}
 它表示对$A$(或$B$)不知道的程度.
 
@@ -895,11 +893,11 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align}
      &m(\Omega)=1-[m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})]=1-(0.6+0.2+0.1)=0.1;\\
      &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
-     &P_l(\{\textup{红, 黄}\})=m(\Omega)+Bel(\{\textup{红, 黄}\})=0.1+0.8=0.9.
+     &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})=0.1+0.8=0.9.
 \end{align}
 或
 \begin{align}
-  P_l(\{\textup{红, 黄}\})=1-\textup{Bel}(\neg \{\textup{红, 黄}\})=1-\textup{Bel}(\{\textup{白}\})=1-0.1=0.9.
+    P_l(\{\textup{红, 黄}\})=1-\textup{Bel}(\neg \{\textup{红, 黄}\})=1-\textup{Bel}(\{\textup{白}\})=1-0.1=0.9.
 \end{align}
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -913,7 +911,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align}
-  m(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
+    m(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align}
 $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \end{example}
@@ -926,25 +924,25 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \end{align*}
 或
 \begin{align*}
-  P_l(\{\textup{红, 黄}\})=1-\textup{Bel}(\neg \{\textup{红, 黄}\})=1-\textup{Bel}(\{\textup{白}\})=1-0.1=0.9.
+    P_l(\{\textup{红, 黄}\})=1-\textup{Bel}(\neg \{\textup{红, 黄}\})=1-\textup{Bel}(\{\textup{白}\})=1-0.1=0.9.
 \end{align*}
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{概率分配函数的正交和}{1}
 设$m_1$和$m_2$是$2^\Omega$上的基本概率分配函数, 它们的正交和定义为
 \begin{align}
- m\left(\left\{s_{i}\right\}\right)=K^{-1} \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right],
+    m\left(\left\{s_{i}\right\}\right)=K^{-1} \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right],
 \end{align}
 其中,
 \begin{align}
-  K=m_{1}(\Omega) \times m_{2}(\Omega)+\sum_{i=1}^{n}\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
+    K=m_{1}(\Omega) \times m_{2}(\Omega)+\sum_{i=1}^{n}\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
 \end{align}
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{类概率函数}{1}
 设$\Omega$为有限域, 对任何命题$A\subset \Omega$, 命题$A$的类概率函数为
 \begin{align}
-  f(A)=\operatorname{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\operatorname{Bel}(A)],
+    f(A)=\textup{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)],
 \end{align}
 其中, $|A|$和$|\Omega|$分别是$A$及$\Omega$中元素的个数.
 \end{mydef}
@@ -953,7 +951,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 
 \text{(1)} $\sum_{i=1}^{n} f\left(\left\{s_{i}\right\}\right)=1$.
 \begin{align}
-\because f\left(\left\{s_{i}\right\}\right) &=\operatorname{Bel}\left(\left\{s_{i}\right\}\right)+\frac{\left|\left\{s_{i}\right\}\right|}{|\Omega|} \times\left[P_l\left(\left\{s_{i}\right\}\right)-\operatorname{Bel}\left(\left\{s_{i}\right\}\right)\right] \notag\\
+\because f\left(\left\{s_{i}\right\}\right) &=\textup{Bel}\left(\left\{s_{i}\right\}\right)+\frac{\left|\left\{s_{i}\right\}\right|}{|\Omega|} \times\left[P_l\left(\left\{s_{i}\right\}\right)-\textup{Bel}\left(\left\{s_{i}\right\}\right)\right] \notag\\
   &=m\left(\left\{s_{i}\right\}\right)+\frac{1}{n} \times m(\Omega) \quad i=1,2, \ldots, n \\
 \therefore \sum_{i=1}^{n} f\left(\left\{s_{i}\right\}\right)
     &=\sum_{i=1}^{n}\left[m\left(s_{i}\right)+\frac{1}{n} \times m(\Omega)\right]
@@ -964,8 +962,8 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align}
 \begin{array}{l}
 {\because P_l(A)-P_l(B)=m(\Omega), \quad \frac{|A|}{|\Omega|} \geq 0} \\
-{\therefore \operatorname{Bel}(A) \leq f(A)}. \\
- {\quad \because \frac{|A|}{|\Omega|} \leq 1, \text { BP } f(A) \leq \operatorname{Bel}(A)+\operatorname{P}_l(A)-\operatorname{Bel}(A)} \\
+{\therefore \textup{Bel}(A) \leq f(A)}. \\
+ {\quad \because \frac{|A|}{|\Omega|} \leq 1, \text { BP } f(A) \leq \textup{Bel}(A)+\textup{P}_l(A)-\textup{Bel}(A)} \\
   \therefore f(A) \leq P_l(A).
   \end{array}
 \end{align}
@@ -973,14 +971,14 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 (3) 对任何$A \subseteq \Omega$, 有$f(\neg A)=1-f(A)$.
 
 \begin{align}
-\because f(\neg A)&=Bel(\neg A)+\frac{|\mathcal{A}|}{|P_l(\neg A)-\operatorname{Bel}(\neg A)} \\
-\operatorname{Bel}(\neg A)&=\sum_{s \in-A \atop s \in A |} m\left(\left\{s_{i}\right\}\right)\notag\\
+\because f(\neg A)&=\textup{Bel}(\neg A)+\frac{|\mathcal{A}|}{|P_l(\neg A)-\textup{Bel}(\neg A)}.\\
+\textup{Bel}(\neg A)&=\sum_{s \in-A \atop s \in A |} m\left(\left\{s_{i}\right\}\right)\notag\\
                           &=1-\sum_{s_{i} \in A \atop s_{i} d} m\left(\left\{s_{i}\right\}\right)-m(\Omega)=1-\textup{Bel}(A)-m(\Omega).\\
- |\neg A|&=|\Omega|-|A|\\
-&P_l(\neg A)-\textup{Bel}(\neg A)=m(\Omega)\\
-\therefore f(\neg A) &=1-\operatorname{Bel}(A)-m(\Omega)+\frac{|\Omega|-|A|}{|\Omega|} \times m(\Omega) \notag\\
-                     &=1-\operatorname{Bel}(A)-m(\Omega)+m(\Omega)-\frac{|A|}{|\Omega|} \times m(\Omega) \notag\\
-                      &=1-\left[\operatorname{Bel}(A)+\frac{|A|}{|\Omega|} \times m(\Omega)\right]=1-f(A).
+            |\neg A|&=|\Omega|-|A|.\\
+         P_l(\neg A)&-\textup{Bel}(\neg A)=m(\Omega).\\
+\therefore f(\neg A) &=1-\textup{Bel}(A)-m(\Omega)+\frac{|\Omega|-|A|}{|\Omega|} \times m(\Omega) \notag\\
+                     &=1-\textup{Bel}(A)-m(\Omega)+m(\Omega)-\frac{|A|}{|\Omega|} \times m(\Omega) \notag\\
+                     &=1-\left[\textup{Bel}(A)+\frac{|A|}{|\Omega|} \times m(\Omega)\right]=1-f(A).
 \end{align}
 %%%--------------------------------------------
 \begin{myprop}
@@ -994,7 +992,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align}
-  m(\emptyset,\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
+    m(\emptyset,\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align}
 若$A=\{\textup{红, 黄}\}$, 求$f(A)$的值.
 \end{example}
@@ -1002,9 +1000,9 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{result}
 \begin{align}
 \begin{aligned}
-f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\operatorname{Bel}(A)] \\
-    &=m(\{\textup{红}\})+m(\{\textup{黄}\})+\frac{2}{3} \times ( 1-\operatorname{Bel}(\neg A)-0.8) \\
-    &=0.6+0.2+\frac{2}{3} \times (1-\operatorname{Bel}(\neg A)-0.6)\\
+f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
+    &=m(\{\textup{红}\})+m(\{\textup{黄}\})+\frac{2}{3} \times ( 1-\textup{Bel}(\neg A)-0.8) \\
+    &=0.6+0.2+\frac{2}{3} \times (1-\textup{Bel}(\neg A)-0.6)\\
     &=0.6+0.2+\frac{2}{3} \times 0.1=0.87.
 \end{aligned}
 \end{align}
@@ -1012,21 +1010,19 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\operatorname{Bel}(A)] \\
 
 表示形式:
 \begin{align}
-  \textup{IF}\,\,   E\,\,   \textup{THEN} \,\,   H={h_1, h_2, \cdots, h_n}; \,\, CF=\{c_1, c_2, \cdots, c_n\},
+    \textup{IF}\,\,   E\,\,   \textup{THEN} \,\,   H={h_1, h_2, \cdots, h_n}; \,\, CF=\{c_1, c_2, \cdots, c_n\},
 \end{align}
 其中:
      $E$为前提条件, 它既可以是简单条件, 也可以是用合取或析取词连接起来的复合条件;
-
-     $H$是结论, 它用样本空间中的子集表示,  $h_1, h_2, \cdots, h_n$是该子集中的元素;
-
+     $H$是结论, 它用样本空间中的子集表示, $h_1, h_2, \cdots, h_n$是该子集中的元素;
      $CF$是可信度因子, 用集合形式表示.该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
 
  并且$c_i$应满足如下条件:
 \begin{align}
  \begin{array}{ll}
-   1)\, c_{i} \geq 0 & i=1,2, \cdots, n \\
-   2)\, \sum_{i=1}^{n} c_{i} \leq 1.&
- \end{array}
+   1)\, c_{i} \geq 0 \\
+   2)\, \sum_{i=1}^{n} c_i\leq 1.
+ \end{array}, i=1, 2, \cdots, n. 
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1055,74 +1051,73 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\operatorname{Bel}(A)] \\
 
 当组合证据是多个证据的合取时:
 \begin{align}
-  E=E_1\,\,  \textup{AND}\,\,  E_2 \,\, \textup{AND} \cdots  \textup{AND} \,\,  E_n,
-\end{align}
-则
-\begin{align}
-  \textup{CER}(E)=\min\{\textup{CER}(E_1), \textup{CER}(E_2), \cdots,\textup{CER}(E_n)\}.
+    E=E_1\,\, \textup{AND}\,\, E_2 \,\, \textup{AND} \cdots\,\, \textup{AND} \,\,  E_n,\, \textup{则}\,\,\textup{CER}(E)=\min\{\textup{CER}(E_1),\, \textup{CER}(E_2), \cdots,\,\textup{CER}(E_n)\}.
 \end{align}
     当组合证据是多个证据的析取时:
 \begin{align}
-  E=E_1\,\, \textup{OR} \,\, E_2 \,\,  \textup{OR}\,\,\cdots \,\, \textup{OR}\,\,  E_n,
+    E=E_1\,\, \textup{OR} \,\, E_2 \,\,  \textup{OR}\,\,\cdots \,\, \textup{OR}\,\,  E_n,
 \end{align}
 则
 \begin{align}
-  \textup{CER}(E)=\max\{\textup{CER}(E_1), \textup{CER}(E_2),\cdots, \textup{CER}(E_n)\}.
+    \textup{CER}(E)=\max\{\textup{CER}(E_1),\,\textup{CER}(E_2),\,\cdots,\, \textup{CER}(E_n)\}.
 \end{align}
 
-设有知识 $\textup{IF}\,\,   E \,\, \textup{THEN} \,\, H=\{h_1, h_2, \cdots , h_n\}, \,\, CF=\{c_1, c_2, \cdots, c_n\}$, 则求结论$H$的确定性$\textup{CER}(H)$的方法如下:
+设有知识 $\textup{IF}\,\, E \,\, \textup{THEN} \,\, H=\{h_1, h_2, \cdots , h_n\}, \,\, CF=\{c_1, c_2, \cdots, c_n\}$, 则求结论$H$的确定性$\textup{CER}(H)$的方法如下:
 
-(1)求$H$的概率分配函数
+(1) 求$H$的概率分配函数
 \begin{align}
-\begin{array}{l}
-m\left(\left\{h_{1}\right\},\left\{h_{2}\right\}, \ldots,\left\{h_{3}\right\}\right)
-=\left( \textup{CER}(E) \times c_{1}, \textup{CER}(E) \times c_{2}, \cdots, \textup{CER}(E) \times c_{n}\right).\\
-{m(\Omega)=1-\sum_{i=1}^{n} CRE(E) \times c_{i}}.
-\end{array}
+    \begin{array}{ll}
+        &m\left(\left\{h_{1}\right\},\left\{h_{2}\right\}, \ldots,\left\{h_{3}\right\} \right)=\left( \textup{CER}(E) \times c_{1},\, \textup{CER}(E) \times c_{2},\, \cdots,\, \textup{CER}(E) \times c_{n}\right).\\
+        &m(\Omega)=1-\sum_{i=1}^{n} \,\textup{CRE}(E) \times c_{i}.
+    \end{array}
 \end{align}
  如果有两条或多条知识支持同一结论$H$, 例:
 \begin{align}
-  &\textup{IF \,\,  E \,\,  THEN}   \,\, H={h_1, h_2, \cdots , h_n} \,\,  CF={c_{11}, c_{12}, \cdots , c_{1n}};\\
-  &\textup{IF \,\,  E  \,\, THEN}  \,\,  H={h_1, h_2, \cdots , h_n} \,\,  CF={c_{21}, c_{22}, \cdots , c_{2n}}.
+    &\textup{IF \,\,  E \,\,  THEN}   \,\, H={h_1, h_2, \cdots , h_n};\,\,  CF={c_{11}, c_{12}, \cdots , c_{1n}};\\
+    &\textup{IF \,\,  E \,\,  THEN}  \,\,  H={h_1, h_2, \cdots , h_n};\,\,  CF={c_{21}, c_{22}, \cdots , c_{2n}}.
 \end{align}
 则按正交和求$\textup{CER}(H)$, 即先求出:
 \begin{align}
-  &m_1=m({h_1},{h_2},\cdots,{h_n});\\
-  &m_2=m({h_1},{h_2},\cdots,{h_n}).
+    &m_1=m({h_1},{h_2},\cdots,{h_n});\\
+    &m_2=m({h_1},{h_2},\cdots,{h_n}).
 \end{align}
 然后再用公式$m=m_{1} \oplus m_{2}$求$m_1$和$m_2$的正交和, 最后求得$H$的$m$.
 
-(2)求$\textup{Bel}(H)$、$P_l(H)$及$f(H)$
+(2) 求$\textup{Bel}(H)$、$P_l(H)$及$f(H)$.
 \begin{align}
-\begin{array}{l}
- \operatorname{Bel}(H)=\sum_{i=1}^{n} m\left(\left\{h_{i}\right\}\right) \\
-\operatorname{P_l}(H)=1-\operatorname{Bel}(\neg H)\\
-f(H)=\operatorname{Bel}(H)+\frac{|H|}{| \Omega} \times[P_l(H)-\operatorname{Bel}(H)]=\operatorname{Bel}(H)+\frac{|H|}{|\Omega|} \times m(\Omega).
-\end{array}
+    \textup{Bel}(H)=\sum_{i=1}^{n} m(h_i).
 \end{align}
 
-(3) 求$H$的确定性$\textup{CER}(H)$.
+\begin{align}
+    P_l(H)=1-\textup{Bel}(\neg H).
+\end{align}
+
+\begin{align}
+    f(H)=\textup{Bel}(H)+\frac{|H|}{|\Omega|} \times [P_l(H)-\textup{Bel}(H)] = \textup{Bel}(H)+\frac{|H|}{|\Omega|} \times m(\Omega).
+\end{align}
+
+(3) 求$H$的确定性$\textup{CER}(H)$. 
 
 按公式$\textup{CER}(H)=MD(H/E') \times f(H)$计算结论$H$确定性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有如下规则:
 \begin{itemize}
-\item $r_1$:  IF  E1  AND  E2  THEN  A={a1, a2}  CF=\{0.3,  0.5\};
-\item $r_2$:  IF  E3  AND  (E4  OR  E5)  THEN  B={b1}  CF=\{0.7\};
-\item $r_3$:  IF  A  THEN  H=\{h1, h2, h3\}  CF=\{0.1, 0.5, 0.3\};
-\item $r_4$:  IF  B  THEN  H=\{h1, h2, h3\}  CF=\{0.4, 0.2, 0.1\}.
+\item $r_1$:  IF\,\,  E1\,\,  AND\,\,  E2\,\,  THEN\,\,  A={a1, a2}\,\,  CF=\{0.3,  0.5\};
+\item $r_2$:  IF\,\,  E3\,\,  AND\,\,  (E4  OR  E5)\,\,  THEN\,\,  B={b1}  CF=\{0.7\};
+\item $r_3$:  IF\,\,  A\,\,  THEN\,\,  H=\{h1, h2, h3\}\,\,  CF=\{0.1, 0.5, 0.3\};
+\item $r_4$:  IF\,\,  B\,\,  THEN\,\,  H=\{h1, h2, h3\}\,\,  CF=\{0.4, 0.2, 0.1\}.
 \end{itemize}
 
 已知用户对初始证据给出的确定性为:
 \begin{center}
-\textup{CER}($E_1$)=0.8,\textup{CER}($E_2$)=0.6,\textup{CER}($E_3$)=0.9,\textup{CER}($E_4$)=0.5,\textup{CER}($E_5$)=0.7.
+\textup{CER}($E_1$)=0.8,\,\textup{CER}($E_2$)=0.6,\,\textup{CER}($E_3$)=0.9,\,\textup{CER}($E_4$)=0.5,\,\textup{CER}($E_5$)=0.7.
 \end{center}
 并假Ω定中的元素个数$∣\Omega∣=10$, 求: $\textup{CER}(H)=?$
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
-由给定知识形成的推理网络\ref{AI32fig2808}为:
+由给定知识形成的推理网络 \ref{AI32fig2808} 为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1135,7 +1130,7 @@ f(H)=\operatorname{Bel}(H)+\frac{|H|}{| \Omega} \times[P_l(H)-\operatorname{Bel}
 
 (1) 求$\textup{CER}(A)$
 \begin{align*}
-∵ \textup{CER}(E_1\,\,  AND\,\,  E_2)&=\min\{\textup{CER}(E_1), \textup{CER}(E_2)\}=\min\{0.8,  0.6\}=0.6.\\
+∵ \textup{CER}(E_1\,\, AND\,\,  E_2)&=\min\{\textup{CER}(E_1), \textup{CER}(E_2)\}=\min\{0.8,  0.6\}=0.6.\\
    m({a_1}, {a_2})&=\{0.6\times 0.3, 0.6\times 0.5\}=\{0.18, 0.3\}.\\
    \textup{Bel}(A)&=m({a_1})+m({a_2})=0.18+0.3=0.48.\\
    P_l(A)&=1-\textup{Bel}(\neg A)=1-0=1.\\
@@ -1145,7 +1140,7 @@ f(H)=\operatorname{Bel}(H)+\frac{|H|}{| \Omega} \times[P_l(H)-\operatorname{Bel}
 
 (2) 求\textup{CER}(B)
 \begin{align*}
-∵ \textup{CER}(E_3 \,\, AND\,\,  (E_4\,\,  OR\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4), \textup{CER}(E_5)\}\}\\
+∵ \textup{CER}(E_3 \,\, AND\,\,  (E_4\,\,  OR\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4),\, \textup{CER}(E_5)\}\}\\
                            &=\min\{0.9, \max\{0.5, 0.7\}\}=\min\{0.9, 0.7\}=0.7. \\
  m({b_1})&=0.7\times 0.7=0.49.\\
    \textup{Bel}(B)&=m({b_1})=0.49.\\
@@ -1166,7 +1161,7 @@ f(H)=\operatorname{Bel}(H)+\frac{|H|}{| \Omega} \times[P_l(H)-\operatorname{Bel}
 再由$r_4$可得
 \begin{align*}
   m_2({h_1}, {h_2}, {h_3})&={\textup{CER}(B)\times 0.4, \textup{CER}(B)\times 0.2, \textup{CER}(B)\times 0.1}\\
-        &=\{0.541\times 0.4, 0.541\times 0.2, 0.541\times 0.1\}=\{0.216, 0.108, 0.054\}\\
+        &=\{0.541\times 0.4, 0.541\times 0.2, 0.541\times 0.1\}=\{0.216, 0.108, 0.054\}.\\
   m_2(\Omega) &=1-[m_2({h_1})+m_2({h_2})+m_2({h_3})]\\
               &=1-[0.216+0.108+0.054]=0.622.
 \end{align*}
@@ -1199,14 +1194,10 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 再根据$m$可得
 \begin{align*}
 \textup{Bel}(H)&=m({h_1})+m({h_2})+m({h_3})=0.178+0.309+0.168=0.655.\\
-P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
-\end{align*}
-\begin{align*}
-  \begin{aligned}
-  f(H) &=\operatorname{Bel}(H)+\frac{|H|}{|\Omega|} \times[P_l(H)-\operatorname{Bel}(H)]=0.655+\frac{3}{10} \times[1-0.6555] \\
+  P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.\\
+  f(H) &=\textup{Bel}(H)+\frac{|H|}{|\Omega|} \times[P_l(H)-\textup{Bel}(H)]=0.655+\frac{3}{10} \times[1-0.6555] \\
        &=0.759.\\
   \textup{CER}(H)&=MD(H/E')\times f(H)=0.759.
-  \end{aligned}
 \end{align*}
 
 \textbf{优点}: 能处理由“不知道”所引起的非精确性; 并且由于辨别框(样本空间)的子集可以是多个元素的集合, 这样更有利于领域专家在不同层次上进行知识表示.
@@ -1224,7 +1215,7 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
 \paragraph{模糊谓词}
 设$x\in U$, $F$为模糊谓词, 即$U$中的一个模糊关系, 则模糊命题可表示为
  \begin{align}
-   x\,\,  \textup{is} \,\, F,
+        x\,\,  \textup{is} \,\, F,
  \end{align}
 其中的模糊谓词$F$可以是大、小、年轻、年老、冷、暖、长、短等.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1239,14 +1230,14 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
 
 设$\lambda$为模糊概率, π为模糊可能性, $\tau$为模糊真值, 则对命题还可以附加概率限定、可能性限定和真值限定:
 \begin{align}
-  (x\,\,  \textup{is}\,\,   F) \,\,  \textup{is}\,\,   \lambda     (x\,\,   \textup{is}\,\,   F) \,\,  \textup{is} \,\, \prod     \,\,   (x \,\,  \textup{is}\,\,   F) \,\,  \textup{is} \,\,  \tau,
+    (x\,\,  \textup{is}\,\,   F) \,\,  \textup{is}\,\,   \lambda     (x\,\,   \textup{is}\,\,   F) \,\,  \textup{is} \,\, \prod     \,\,   (x \,\,  \textup{is}\,\,   F) \,\,  \textup{is} \,\,  \tau,
 \end{align}
 其中, $\lambda$可以是“或许”、“必须”等; π可以是“非常可能”、“很不可能”等; τ可以是“非常真”、“有些假”等.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 “常青很可能是年轻的”可表示为
 \begin{center}
-  (Age(Chang qing) is young) is likely.
+    (Age(Chang qing) is young) is likely.
 \end{center}
 \vspace{-0.4cm}
 \end{example}
@@ -1258,12 +1249,12 @@ P_l(H)&=m(\Omega)+Bel(H)=0.345+0.655=1.
 
 \ding{172} 求补   表示否定, 如“不”、“非”等, 其隶属函数的表示为
 \begin{align*}
-  \mu_{\neg F}(u)=1-\mu_{F}(u), u \in[0,1].
+    \mu_{\neg F}(u)=1-\mu_{F}(u), u \in[0,1].
 \end{align*}
 
 \ding{173} 集中  表示“很”、“非常”等, 其效果是减少隶属函数的值:
 \begin{align*}
- \mu_{\textup{非常}F}(u)=\mu_{F}^{2}(u), u \in[0,1].
+    \mu_{\textup{非常}F}(u)=\mu_{F}^{2}(u), u \in[0,1].
 \end{align*}
 
 \ding{174} 扩张  表示“有些”、“稍微”等, 其效果是增加隶属函数的值:
@@ -1368,7 +1359,7 @@ $R_m$是由扎德提出的一种构造模糊关系的方法.设$F$和$G$分别�
 其中, $\times$号表示模糊集的笛卡尔乘积.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}\label{AIFuzzyexamp612}
- 设$U=V=\{1,2,3\}$, $F$和$G$分别是$U$和$V$上的两个模糊集, 且$F=1/1+0.6/2+0.1/3,G=0.1/1+0.6/2+1/3$, 求$U\times V$上的 $R_m$
+ 设$U=V=\{1,2,3\}$, $F$和$G$分别是$U$和$V$上的两个模糊集, 且$F=1/1+0.6/2+0.1/3,G=0.1/1+0.6/2+1/3$, 求$U\times V$上的 $R_m$.
 \begin{align*}
     R_{m}=\int_{U \times V}\left(\mu_{F}(u) \wedge \mu_{G}(v)\right) \vee\left(1-\mu_{F}(u)\right) /(u, v).
 \end{align*}
@@ -1391,7 +1382,7 @@ $R_c$是由玛达尼(Mamdani)提出的一种构造模糊关系的方法.
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-对例\ref{AIFuzzyexamp612}所给出的模糊集
+对例 \ref{AIFuzzyexamp612} 所给出的模糊集
 \begin{align*}
     F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
 \end{align*}
@@ -1422,9 +1413,9 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-对例\ref{AIFuzzyexamp612}所给出的模糊集
+对例 \ref{AIFuzzyexamp612} 所给出的模糊集
 \begin{align*}
-  F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
+    F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
 \end{align*}
 其$R_g$为
 \begin{align*}
@@ -1460,7 +1451,7 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \paragraph{模糊推理的基本方法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-  对例4.19所给出的$F$、$G$, 以及所求出的$R_m$, 设有已知事实: $\{x\, \textup{is}\, \textup{较小}\}$, 并设“较小”的模糊集为: 较小=1/1+0.7/2+0.2/3, 求在此已知事实下的模糊结论.
+  对例4.19所给出的$F$、$G$, 以及所求出的$R_m$, 设有已知事实: $\{x\,\, \textup{is}\,\, \textup{较小}\}$, 并设“较小”的模糊集为: 较小=1/1+0.7/2+0.2/3, 求在此已知事实下的模糊结论.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
