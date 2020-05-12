@@ -473,31 +473,32 @@
 \contentsline {paragraph}{学习系统}{419}{paragraph*.412}% 
 \contentsline {section}{\numberline {7.2}AdaBoost}{420}{section.7.2}% 
 \contentsline {section}{\numberline {7.3}机器学习的主要策略}{423}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}netZooPy库}{424}{section.7.4}% 
-\contentsline {section}{\numberline {7.5}记忆学习}{425}{section.7.5}% 
-\contentsline {section}{\numberline {7.6}机械式学习的学习模型}{426}{section.7.6}% 
-\contentsline {subsection}{\numberline {7.6.1}归纳学习}{426}{subsection.7.6.1}% 
-\contentsline {subsection}{\numberline {7.6.2}示例学习的类型}{426}{subsection.7.6.2}% 
-\contentsline {paragraph}{示例学习的典型方式}{426}{paragraph*.418}% 
-\contentsline {section}{\numberline {7.7}示例学习的解释方法}{427}{section.7.7}% 
-\contentsline {subsection}{\numberline {7.7.1}ID3算法}{430}{subsection.7.7.1}% 
-\contentsline {paragraph}{ID3算法的数学基础}{430}{paragraph*.421}% 
-\contentsline {subparagraph}{信息熵}{430}{subparagraph*.422}% 
-\contentsline {subparagraph}{条件熵}{430}{subparagraph*.423}% 
-\contentsline {paragraph}{ID3算法及举例}{431}{paragraph*.424}% 
-\contentsline {subsection}{\numberline {7.7.2}解释学习的空间描述}{434}{subsection.7.7.2}% 
-\contentsline {subsection}{\numberline {7.7.3}解释学习的模型}{434}{subsection.7.7.3}% 
-\contentsline {subsection}{\numberline {7.7.4}解释学习的基本原理}{435}{subsection.7.7.4}% 
-\contentsline {paragraph}{解释泛化学习方法-1}{435}{paragraph*.430}% 
-\contentsline {paragraph}{解释泛化学习方法-2}{436}{paragraph*.431}% 
-\contentsline {subsection}{\numberline {7.7.5}浅层神经学习的心理学基础}{438}{subsection.7.7.5}% 
-\contentsline {subsection}{\numberline {7.7.6}感知器学习}{439}{subsection.7.7.6}% 
-\contentsline {subsection}{\numberline {7.7.7}BP网络学习}{444}{subsection.7.7.7}% 
-\contentsline {subsection}{\numberline {7.7.8}Hopfield网络学习}{445}{subsection.7.7.8}% 
-\contentsline {section}{\numberline {7.8}深度神经网络——DNN}{447}{section.7.8}% 
+\contentsline {section}{\numberline {7.4}记忆学习}{423}{section.7.4}% 
+\contentsline {section}{\numberline {7.5}机械式学习的学习模型}{424}{section.7.5}% 
+\contentsline {subsection}{\numberline {7.5.1}归纳学习}{424}{subsection.7.5.1}% 
+\contentsline {subsection}{\numberline {7.5.2}示例学习的类型}{424}{subsection.7.5.2}% 
+\contentsline {paragraph}{示例学习的典型方式}{425}{paragraph*.416}% 
+\contentsline {section}{\numberline {7.6}示例学习的解释方法}{425}{section.7.6}% 
+\contentsline {subsection}{\numberline {7.6.1}ID3算法}{428}{subsection.7.6.1}% 
+\contentsline {paragraph}{ID3算法的数学基础}{428}{paragraph*.419}% 
+\contentsline {subparagraph}{信息熵}{428}{subparagraph*.420}% 
+\contentsline {subparagraph}{条件熵}{429}{subparagraph*.421}% 
+\contentsline {paragraph}{ID3算法及举例}{429}{paragraph*.422}% 
+\contentsline {subsection}{\numberline {7.6.2}解释学习的空间描述}{432}{subsection.7.6.2}% 
+\contentsline {subsection}{\numberline {7.6.3}解释学习的模型}{433}{subsection.7.6.3}% 
+\contentsline {subsection}{\numberline {7.6.4}解释学习的基本原理}{433}{subsection.7.6.4}% 
+\contentsline {paragraph}{解释泛化学习方法-1}{433}{paragraph*.428}% 
+\contentsline {paragraph}{解释泛化学习方法-2}{434}{paragraph*.429}% 
+\contentsline {subsection}{\numberline {7.6.5}浅层神经学习的心理学基础}{437}{subsection.7.6.5}% 
+\contentsline {subsection}{\numberline {7.6.6}感知器学习}{438}{subsection.7.6.6}% 
+\contentsline {subsection}{\numberline {7.6.7}BP网络学习}{443}{subsection.7.6.7}% 
+\contentsline {subsection}{\numberline {7.6.8}Hopfield网络学习}{443}{subsection.7.6.8}% 
+\contentsline {section}{\numberline {7.7}深度神经网络——DNN}{445}{section.7.7}% 
+\contentsline {subsection}{\numberline {7.7.1}自动机器学习 (AutoML)}{448}{subsection.7.7.1}% 
+\contentsline {section}{\numberline {7.8}netZooPy库}{449}{section.7.8}% 
 \contentsline {subsection}{\numberline {7.8.1}高速公路网络 (Highway network) }{450}{subsection.7.8.1}% 
 \contentsline {subsection}{\numberline {7.8.2}残差网络}{451}{subsection.7.8.2}% 
-\contentsline {section}{\numberline {7.9}卷积神经网络 (Convolutional Neural Networks, CNN)}{452}{section.7.9}% 
+\contentsline {section}{\numberline {7.9}卷积神经网络 (Convolutional Neural Networks, CNN)}{453}{section.7.9}% 
 \contentsline {subsection}{\numberline {7.9.1}CNN应用场景——计算机视觉问题}{455}{subsection.7.9.1}% 
 \contentsline {subsection}{\numberline {7.9.2}卷积神经网络结构}{457}{subsection.7.9.2}% 
 \contentsline {subsubsection}{\numberline {7.9.2.1}卷积}{457}{subsubsection.7.9.2.1}% 
@@ -506,82 +507,73 @@
 \contentsline {subsubsection}{\numberline {7.9.2.4}激活函数和层范数}{463}{subsubsection.7.9.2.4}% 
 \contentsline {subsection}{\numberline {7.9.3}CNN的应用}{476}{subsection.7.9.3}% 
 \contentsline {subsubsection}{\numberline {7.9.3.1}CNN解释器在线交互可视化工具}{476}{subsubsection.7.9.3.1}% 
-\contentsline {subsection}{\numberline {7.9.4}卷积编译码网络学习语义图形实现水稻自动除草}{477}{subsection.7.9.4}% 
-\contentsline {subsection}{\numberline {7.9.5}图卷积神经网络}{479}{subsection.7.9.5}% 
-\contentsline {subsection}{\numberline {7.9.6}循环神经网络 (Recurrent Neural Networks, RNN)}{483}{subsection.7.9.6}% 
-\contentsline {subsection}{\numberline {7.9.7}深度神经网络轻量化}{493}{subsection.7.9.7}% 
-\contentsline {subsection}{\numberline {7.9.8}防止CNN的过拟合——diffGrad}{495}{subsection.7.9.8}% 
-\contentsline {subsection}{\numberline {7.9.9}无限宽度DNN}{495}{subsection.7.9.9}% 
-\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{496}{section.7.10}% 
-\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{496}{section.7.11}% 
-\contentsline {section}{\numberline {7.12}作业}{497}{section.7.12}% 
-\contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{499}{chapter.8}% 
-\contentsline {paragraph}{Transformer 架构}{500}{paragraph*.502}% 
-\contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{501}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}词法分析}{502}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}句法分析}{502}{section.8.3}% 
-\contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{503}{subsection.8.3.1}% 
-\contentsline {paragraph}{句子结构的表示}{503}{paragraph*.505}% 
-\contentsline {paragraph}{上下文无关文法}{503}{paragraph*.507}% 
-\contentsline {paragraph}{变换文法}{504}{paragraph*.509}% 
-\contentsline {paragraph}{自顶向下与自底向上分析}{505}{paragraph*.512}% 
-\contentsline {paragraph}{自顶向下与自底向上分析}{506}{paragraph*.513}% 
-\contentsline {section}{\numberline {8.4}句义分析}{507}{section.8.4}% 
-\contentsline {subsection}{\numberline {8.4.1}语义文法}{507}{subsection.8.4.1}% 
-\contentsline {subsection}{\numberline {8.4.2}格文法}{508}{subsection.8.4.2}% 
-\contentsline {paragraph}{格和格框架}{508}{paragraph*.515}% 
-\contentsline {subsection}{\numberline {8.4.3}长程记忆模型——Compressive Transformer（压缩Transformer）}{509}{subsection.8.4.3}% 
-\contentsline {paragraph}{压缩Transformer}{510}{paragraph*.517}% 
-\contentsline {section}{\numberline {8.5}作 业 }{510}{section.8.5}% 
-\contentsline {chapter}{\numberline {第九章\hspace {.3em}}分布智能}{513}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}分布智能}{514}{section.9.1}% 
-\contentsline {subsection}{\numberline {9.1.1}分布智能}{514}{subsection.9.1.1}% 
-\contentsline {subsubsection}{\numberline {9.1.1.1}分布智能概述}{514}{subsubsection.9.1.1.1}% 
-\contentsline {subparagraph}{分布式问题求解}{514}{subparagraph*.519}% 
-\contentsline {subparagraph}{多Agent系统}{514}{subparagraph*.520}% 
-\contentsline {subsection}{\numberline {9.1.2}Agent的结构}{514}{subsection.9.1.2}% 
-\contentsline {subparagraph}{Agent的基本结构}{514}{subparagraph*.521}% 
-\contentsline {subparagraph}{反应Agent}{514}{subparagraph*.522}% 
-\contentsline {subparagraph}{慎思Agent}{515}{subparagraph*.524}% 
-\contentsline {subparagraph}{BDI的概念}{515}{subparagraph*.526}% 
-\contentsline {subsection}{\numberline {9.1.3}Agent通信}{516}{subsection.9.1.3}% 
-\contentsline {subsubsection}{\numberline {9.1.3.1}Agent通信的基本问题}{516}{subsubsection.9.1.3.1}% 
-\contentsline {paragraph}{通信语言KQML}{516}{paragraph*.527}% 
-\contentsline {subparagraph}{KQML语言的结构}{516}{subparagraph*.528}% 
-\contentsline {subparagraph}{KQML消息}{517}{subparagraph*.529}% 
-\contentsline {subparagraph}{KQML保留的行为原语参数}{517}{subparagraph*.530}% 
-\contentsline {subparagraph}{KQML保留的行为原语}{518}{subparagraph*.531}% 
-\contentsline {subparagraph}{KQML通信服务器}{519}{subparagraph*.532}% 
-\contentsline {subsection}{\numberline {9.1.4}多Agent合作}{519}{subsection.9.1.4}% 
-\contentsline {subsection}{\numberline {9.1.5}Agent的协商}{521}{subsection.9.1.5}% 
-\contentsline {subparagraph}{协商协议}{521}{subparagraph*.534}% 
-\contentsline {subparagraph}{协商策略}{521}{subparagraph*.535}% 
-\contentsline {subparagraph}{协商处理}{521}{subparagraph*.536}% 
-\contentsline {subparagraph}{多Agent应用示例}{522}{subparagraph*.537}% 
-\contentsline {subsection}{\numberline {9.1.6}移动Agent}{522}{subsection.9.1.6}% 
-\contentsline {section}{\numberline {9.2}作 业}{522}{section.9.2}% 
-\contentsline {chapter}{\numberline {第十章\hspace {.3em}}先进专家系统}{523}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}专家系统}{524}{section.10.1}% 
-\contentsline {subsection}{\numberline {10.1.1}专家系统概述}{524}{subsection.10.1.1}% 
-\contentsline {subsection}{\numberline {10.1.2}专家系统的基本结构}{524}{subsection.10.1.2}% 
-\contentsline {subsection}{\numberline {10.1.3}基于规则和基于框架的专家系统}{525}{subsection.10.1.3}% 
-\contentsline {subsection}{\numberline {10.1.4}模糊专家系统和神经网络专家系统}{526}{subsection.10.1.4}% 
-\contentsline {subparagraph}{模糊专家系统}{526}{subparagraph*.541}% 
-\contentsline {subparagraph}{神经网络专家系统}{526}{subparagraph*.543}% 
-\contentsline {subsection}{\numberline {10.1.5}基于Web的专家系统}{526}{subsection.10.1.5}% 
-\contentsline {subsection}{\numberline {10.1.6}分布式专家系统和协同式专家系统}{527}{subsection.10.1.6}% 
-\contentsline {subparagraph}{分布式专家系统}{527}{subparagraph*.544}% 
-\contentsline {subparagraph}{协同式专家系统}{527}{subparagraph*.545}% 
-\contentsline {section}{\numberline {10.2}专家系统的开发}{527}{section.10.2}% 
-\contentsline {paragraph}{开发步骤}{527}{paragraph*.546}% 
-\contentsline {paragraph}{知识获取}{527}{paragraph*.547}% 
-\contentsline {paragraph}{输入知识}{527}{paragraph*.548}% 
-\contentsline {paragraph}{开发工具与环境}{527}{paragraph*.549}% 
-\contentsline {section}{\numberline {10.3}作 业}{528}{section.10.3}% 
-\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}计算机视觉CV}{529}{chapter.11}% 
-\contentsline {section}{\numberline {11.1}深度学习 VS 传统计算机视觉}{530}{section.11.1}% 
-\contentsline {subsection}{\numberline {11.1.1}深度学习的优势}{530}{subsection.11.1.1}% 
-\contentsline {subsection}{\numberline {11.1.2}传统 CV 技术的优势}{532}{subsection.11.1.2}% 
-\contentsline {section}{\numberline {11.2}几何深度学习}{534}{section.11.2}% 
-\contentsline {section}{\numberline {11.3}作 业 }{541}{section.11.3}% 
-\contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{543}{section*.556}% 
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{479}{chapter.8}% 
+\contentsline {paragraph}{Transformer 架构}{480}{paragraph*.478}% 
+\contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{481}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}词法分析}{482}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}句法分析}{482}{section.8.3}% 
+\contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{483}{subsection.8.3.1}% 
+\contentsline {paragraph}{句子结构的表示}{483}{paragraph*.481}% 
+\contentsline {paragraph}{上下文无关文法}{483}{paragraph*.483}% 
+\contentsline {paragraph}{变换文法}{484}{paragraph*.485}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{485}{paragraph*.488}% 
+\contentsline {paragraph}{自顶向下与自底向上分析}{486}{paragraph*.489}% 
+\contentsline {section}{\numberline {8.4}句义分析}{487}{section.8.4}% 
+\contentsline {subsection}{\numberline {8.4.1}语义文法}{487}{subsection.8.4.1}% 
+\contentsline {subsection}{\numberline {8.4.2}格文法}{488}{subsection.8.4.2}% 
+\contentsline {paragraph}{格和格框架}{488}{paragraph*.491}% 
+\contentsline {subsection}{\numberline {8.4.3}长程记忆模型——Compressive Transformer（压缩Transformer）}{489}{subsection.8.4.3}% 
+\contentsline {paragraph}{压缩Transformer}{490}{paragraph*.493}% 
+\contentsline {section}{\numberline {8.5}作 业 }{490}{section.8.5}% 
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}分布智能}{493}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}分布智能}{494}{section.9.1}% 
+\contentsline {subsection}{\numberline {9.1.1}分布智能}{494}{subsection.9.1.1}% 
+\contentsline {subsubsection}{\numberline {9.1.1.1}分布智能概述}{494}{subsubsection.9.1.1.1}% 
+\contentsline {subparagraph}{分布式问题求解}{494}{subparagraph*.495}% 
+\contentsline {subparagraph}{多Agent系统}{494}{subparagraph*.496}% 
+\contentsline {subsection}{\numberline {9.1.2}Agent的结构}{494}{subsection.9.1.2}% 
+\contentsline {subparagraph}{Agent的基本结构}{494}{subparagraph*.497}% 
+\contentsline {subparagraph}{反应Agent}{494}{subparagraph*.498}% 
+\contentsline {subparagraph}{慎思Agent}{495}{subparagraph*.500}% 
+\contentsline {subparagraph}{BDI的概念}{495}{subparagraph*.502}% 
+\contentsline {subsection}{\numberline {9.1.3}Agent通信}{496}{subsection.9.1.3}% 
+\contentsline {subsubsection}{\numberline {9.1.3.1}Agent通信的基本问题}{496}{subsubsection.9.1.3.1}% 
+\contentsline {paragraph}{通信语言KQML}{496}{paragraph*.503}% 
+\contentsline {subparagraph}{KQML语言的结构}{496}{subparagraph*.504}% 
+\contentsline {subparagraph}{KQML消息}{497}{subparagraph*.505}% 
+\contentsline {subparagraph}{KQML保留的行为原语参数}{497}{subparagraph*.506}% 
+\contentsline {subparagraph}{KQML保留的行为原语}{498}{subparagraph*.507}% 
+\contentsline {subparagraph}{KQML通信服务器}{499}{subparagraph*.508}% 
+\contentsline {subsection}{\numberline {9.1.4}多Agent合作}{499}{subsection.9.1.4}% 
+\contentsline {subsection}{\numberline {9.1.5}Agent的协商}{501}{subsection.9.1.5}% 
+\contentsline {subparagraph}{协商协议}{501}{subparagraph*.510}% 
+\contentsline {subparagraph}{协商策略}{501}{subparagraph*.511}% 
+\contentsline {subparagraph}{协商处理}{501}{subparagraph*.512}% 
+\contentsline {subparagraph}{多Agent应用示例}{502}{subparagraph*.513}% 
+\contentsline {subsection}{\numberline {9.1.6}移动Agent}{502}{subsection.9.1.6}% 
+\contentsline {section}{\numberline {9.2}作 业}{502}{section.9.2}% 
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}先进专家系统}{503}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}专家系统}{504}{section.10.1}% 
+\contentsline {subsection}{\numberline {10.1.1}专家系统概述}{504}{subsection.10.1.1}% 
+\contentsline {subsection}{\numberline {10.1.2}专家系统的基本结构}{504}{subsection.10.1.2}% 
+\contentsline {subsection}{\numberline {10.1.3}基于规则和基于框架的专家系统}{505}{subsection.10.1.3}% 
+\contentsline {subsection}{\numberline {10.1.4}模糊专家系统和神经网络专家系统}{506}{subsection.10.1.4}% 
+\contentsline {subparagraph}{模糊专家系统}{506}{subparagraph*.517}% 
+\contentsline {subparagraph}{神经网络专家系统}{506}{subparagraph*.519}% 
+\contentsline {subsection}{\numberline {10.1.5}基于Web的专家系统}{506}{subsection.10.1.5}% 
+\contentsline {subsection}{\numberline {10.1.6}分布式专家系统和协同式专家系统}{507}{subsection.10.1.6}% 
+\contentsline {subparagraph}{分布式专家系统}{507}{subparagraph*.520}% 
+\contentsline {subparagraph}{协同式专家系统}{507}{subparagraph*.521}% 
+\contentsline {section}{\numberline {10.2}专家系统的开发}{507}{section.10.2}% 
+\contentsline {paragraph}{开发步骤}{507}{paragraph*.522}% 
+\contentsline {paragraph}{知识获取}{507}{paragraph*.523}% 
+\contentsline {paragraph}{输入知识}{507}{paragraph*.524}% 
+\contentsline {paragraph}{开发工具与环境}{507}{paragraph*.525}% 
+\contentsline {section}{\numberline {10.3}作 业}{508}{section.10.3}% 
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}计算机视觉CV}{509}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}深度学习 VS 传统计算机视觉}{510}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}深度学习的优势}{510}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}传统 CV 技术的优势}{512}{subsection.11.1.2}% 
+\contentsline {section}{\numberline {11.2}几何深度学习}{514}{section.11.2}% 
+\contentsline {section}{\numberline {11.3}作 业 }{521}{section.11.3}% 
+\contentsline {section}{参\nobreakspace {}考\nobreakspace {}文\nobreakspace {}献}{523}{section*.532}% 
