@@ -1,0 +1,62 @@
+20160429
+1. Implemented optimizers: SGD, Adagrad, RMSProp, Adam.
+2. LSTM implemented.
+20160501
+1. Q-network implemented.
+20160505
+1. Intermediate network parameters are saved by modifying the TrainScript.
+20160509
+1. Updated LSTM training. 
+2. Experiments are now separated in different folders. A RunAll.m script is provided to run all experiments at once.
+20160511
+1.Simplified implementation of loss functions.
+20160517
+1.A small fix in the tanh function.
+2.A small fix in the train_lstm function to make it compatible with older matlab release.
+20160528
+1. Pretrained ImageNet models are supported.
+2. Local response normalization added.
+3. Batch normalization added.
+20160604
+1. A small fix in the RNN training procedure.
+20160606
+1. A small fix in the RNN training procedure to make it compatible with older matlab Matlab versions.
+2. A severe bug in the convolutional layer introduced in the 20160528 version is fixed.
+20160609
+1. Convolutions using CUDNN is supported.
+20160610
+1. A small fix in the LSTM loss.
+20160624
+1. A small fix in the LSTM bp process.
+2. A small fix in the bnorm function.
+20160707
+1. A fix in the tanh_ln implementation.
+2. A fix in the LSTM inplementation.
+20160920
+1. Dropout layer added.
+20161010
+1. RNN network with skip links added in the RNN folder.
+2. Gated Recurrent Unit added in the RNN folder.
+20170217
+1. CUDNN is better supported by using Neural Network Toolbox from Mathworks. (conv_layer, maxpool)
+20170219
+1. CUDNN is enabled in the linear layer computation (MLP network).
+20170224
+1. CUDNN is enabled in lrn. 
+20170328
+1. Thanks to the help from Mathworks (J.H. Wang) we have used the implicit expansion feature (introduced in Matlab R2016b) to replace bsxfun in LightNet. 
+20170411
+1. 1d convolution layer added.
+ 20170801
+1. SGD2, a second-order training method is introduced.
+2. RMSnorm, the normalization technique for second-order training, is introduced.
+3. ModU activation function is added.
+4. CNN is now trained with SGD2.
+5. A new experiment is added to show SGD2's tolerance to bad initialization.
+ 20170811
+1. An example on policy network/policy gradient is added.
+ 20170822
+1. Adam,RMSProp,Adagrad have been modified to support second-order training, examples are scheduled later.
+ 20170924
+1. Support for Matlab 2017b
+2. A simple example of training a Quasi-RNN is added to LightNet.

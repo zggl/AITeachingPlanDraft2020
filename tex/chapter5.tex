@@ -949,8 +949,8 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 离散Hopfield网络是在非线性动力学的基础上, 由若干基本神经元构成的一种单层全互连网络, 其任意神经元之间均有连接, 并且是一种对称连接结构.
 
 \begin{example}
-一个典型的离散 Hopfidld网络结构如图 \ref{AI32fig201912022608}所示. 
-离散Hopfield网络模型是一个离散时间系统, 每个神经元只有0和1 (或-1和1) 两种状态, 任意神经元$i$和$j$之间的连接权值为$w_{ij}$. 
+一个典型的离散 Hopfidld网络结构如图 \ref{AI32fig201912022608}所示.
+离散Hopfield网络模型是一个离散时间系统, 每个神经元只有0和1 (或-1和1) 两种状态, 任意神经元$i$和$j$之间的连接权值为$w_{ij}$.
 由于神经元之间为对称连接, 且神经元自身无连接, 因此有
 \begin{align}
   w_{i j}=\left\{
@@ -966,7 +966,7 @@ Hopfield网络是由美国加州工学院物理学家霍普菲尔特1982年提�
 \subsection{神经网络的泛逼近性——可视化证明}
 Neural Networks: The Universality Theorem, V 1.0.0 (655 KB) 作者： Mayank Jhamtani-Visual Proof of Universal Approximation Theorem for Neural Networks.
 
-《Neural Networks\_The Universality Theorem》. The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis. 
+《Neural Networks\_The Universality Theorem》. The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis.
 Michael Nielson gave a visual proof in his freely available online book \href{http://neuralnetworksanddeeplearning.com/chap4.html}{Nueral Nets and Deep Learning}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
@@ -980,9 +980,9 @@ Michael Nielson gave a visual proof in his freely available online book \href{ht
 由于OP-ELM算法设计中的神经元和输出之间的关系是线性的, OP-ELM对隐藏神经元的排序方法提供了支持.
 
 LOO优化参数方法通常是一种代价高昂的方法, 它需要在整个数据集(只除去一个样本)上训练模型, 并对数据集的所有样本重复求值.
-在OP-ELM结构中, 隐藏层和输出层的结点是线性关系. 
+在OP-ELM结构中, 隐藏层和输出层的结点是线性关系.
 LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和 (PreSS) 给出 (关于PreSS-LOO误差的计算细节见后).
-通过使用LARS方法 (这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使OP-ELM计算仍然有效, 
+通过使用LARS方法 (这里是对回归问题的$L_1$约束), 这种闭合形式允许快速计算均方误差, 从而计算输出权重$\bm b$, 使OP-ELM计算仍然有效,
 并且比原始ELM对不相关/相关变量的鲁棒性更强, 因此, OP-ELM可以被看作是一个“正则化”的ELM.
 同时, 回归问题使用 $L_1$ 和$L_2$ (也包括$L_1$ 和 $L_2$的联合组合形式) 构造惩罚项.
 同时, 由于在PreSS公式中执行的矩阵运算的性质(这些计算见第4节), 决定保留的神经元的最终数量 (通过LOO 准则索引) 显示出潜在的数值不稳定性.
@@ -1145,7 +1145,7 @@ RVFL网络是一种经典的单层前向神经网络, 其结构如图 \ref{RVFLN
 \begin{figure}[tb]
 \centering
   \includegraphics[width=0.85\textwidth]{RVFL20181102Sys.PNG}
-  \caption{TROP-ELM的网络结构.}
+  \caption{RVFL的网络结构.}
   \label{RVFLNN181102Sys}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1746,7 +1746,7 @@ IT2-RVFL 在Triazines 的训练误差最小, 而RVFL的测试误差则总体较�
 \label{NetEvolving2020020401}
 \end{figure}
 简单的说就是将进化的思想使用到神经网络参数优化的更迭中.
-它使用基于群体的优化方法能够不断提高群体中每个神经网络的质量, 从而根据其要解决的问题生成越来越好的神经网络.
+它使用基于群体的优化方法, 能够不断提高群体中每个神经网络的质量, 从而根据其要解决的问题生成越来越好的神经网络.
 该种群中的每个个体的存储方式并不是复杂的神经网络, 而是存储为基因组. 基因组是一种简化的遗传表示, 可以映射到神经网络.
 
 进化计算主要包括一下四个分支:
@@ -2180,8 +2180,8 @@ f(x)=
 
 以部分离散交叉为例, 假设两个父代个体的$n$维实向量分别是 $X=x_1x_2\cdots x_i\cdots x_k\cdots x_n$和$Y=y_1 y_2\cdots y_i \cdots y_k \cdots y_n$, 若随机选择对第$k$个分量以后的所有分量进行交换, 则生成的两个新的个体向量是:
 \begin{align}
-  &X'= x_1 x_2 \cdots x_k y_{k+1} \cdots y_n\\
-  &Y'= y_1 y_2 \cdots y_k x_{k+1} \cdots x_n.
+  &X'= x_1 x_2 \cdots x_k\,\, y_{k+1} \cdots y_n\\
+  &Y'= y_1 y_2 \cdots y_k\,\, x_{k+1} \cdots x_n.
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3224,7 +3224,7 @@ $f_{7}$ &IBFA &30 &2.4732e-5 &4.0951e-6& 5&33.078 &(2.3202e-5, 2.6261e-5) &$<0.0
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!htb]
 \begin{center}
-\caption{表\ref{TableDifBFA} 并且表 \ref{tab:CEC05results}的Wilcoxon秩检验结果(基于表\ref{tab:CEC05results}的结果列于括号内)}
+\caption{表 \ref{TableDifBFA} 并且表 \ref{tab:CEC05results} 的Wilcoxon秩检验结果(基于表 \ref{tab:CEC05results} 的结果列于括号内)}
 \vspace{0.5em}\centering
 \begin{tabularx}{\textwidth}{p{3.9cm}p{1.8cm}p{1.8cm}p{2.8cm}p{3.9cm}}
 \hline

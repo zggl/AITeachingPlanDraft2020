@@ -1,17 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'AIMaster2020.blg'
-[37] biber-MSWIN32:315> INFO - === 
-[67] Biber.pm:371> INFO - Reading 'AIMaster2020.bcf'
-[184] Biber.pm:889> INFO - Found 61 citekeys in bib section 0
-[200] Biber.pm:4093> INFO - Processing section 0
-[216] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
-[226] bibtex.pm:1523> INFO - LaTeX decoding ...
-[419] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
-[937] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
-[1014] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1014] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1014] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1014] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[1095] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
-[1127] bbl.pm:739> INFO - Output to AIMaster2020.bbl
-[1127] Biber.pm:110> INFO - WARNINGS: 1
+[39] biber-MSWIN32:315> INFO - === 
+[72] Biber.pm:371> INFO - Reading 'AIMaster2020.bcf'
+[195] Biber.pm:889> INFO - Found 65 citekeys in bib section 0
+[212] Biber.pm:4093> INFO - Processing section 0
+[229] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
+[239] bibtex.pm:1523> INFO - LaTeX decoding ...
+[438] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
+[842] Utils.pm:193> WARN - Entry 'BasiratPeterandRoth2019' (bib/qbook.bib): Invalid format 'May 9-10' of date field 'date' - ignoring
+[927] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
+[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1015] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1015] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[1100] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
+[1135] bbl.pm:739> INFO - Output to AIMaster2020.bbl
+[1136] Biber.pm:110> INFO - WARNINGS: 2

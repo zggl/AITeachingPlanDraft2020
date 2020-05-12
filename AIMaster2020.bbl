@@ -65,6 +65,37 @@
       \verb https://www.frontiersin.org/article/10.3389/fpls.2019.01404
       \endverb
     \endentry
+    \entry{BasiratPeterandRoth2019}{inprodeeding}{}
+      \name{author}{2}{}{%
+        {{hash=b2caab000c3808446079fff4adc71937}{%
+           family={BasiratPeter},
+           familyi={B\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4bd5850fd4d376027f680248577a930a}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi RothPeter\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Steyr, Austria}%
+      }
+      \strng{namehash}{319e9576785da6ca7246effc5dec8309}
+      \strng{fullhash}{319e9576785da6ca7246effc5dec8309}
+      \strng{bibnamehash}{319e9576785da6ca7246effc5dec8309}
+      \strng{authorbibnamehash}{319e9576785da6ca7246effc5dec8309}
+      \strng{authornamehash}{319e9576785da6ca7246effc5dec8309}
+      \strng{authorfullhash}{319e9576785da6ca7246effc5dec8309}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the ARW \& OAGM Workshop 2019}
+      \field{title}{The Quest for the Golden Activation Function}
+      \field{year}{2019}
+      \warn{\item Entry 'BasiratPeterandRoth2019' (bib/qbook.bib): Invalid format 'May 9-10' of date field 'date' - ignoring}
+    \endentry
     \entry{Bishop2012-6469}{book}{}
       \name{author}{1}{}{%
         {{hash=9dfd0135a5e80aa6d81cea2c10fb7f73}{%
@@ -166,6 +197,32 @@
       \field{abstract}{This paper proposes a tentative and original survey of meeting points between Knowledge Representation and Reasoning (KRR) and Machine Learning (ML), two areas which have been developing quite separately in the last three decades. Some common concerns are identified and discussed such as the types of used representation, the roles of knowledge and data, the lack or the excess of information, or the need for explanations and causal understanding. Then some methodologies combining reasoning and learning are reviewed (such as inductive logic programming, neuro-symbolic reasoning, formal concept analysis, rule-based representations and ML, uncertainty in ML, or case-based reasoning and analogical reasoning), before discussing examples of synergies between KRR and ML (including topics such as belief functions on regression, EM algorithm versus revision, the semantic description of vector representations, the combination of deep learning with high level inference, knowledge graph completion, declarative frameworks for data mining, or preferences and recommendation). This paper is the first step of a work in progress aiming at a better mutual understanding of research in KRR and ML, and how they could cooperate.}
       \field{title}{From Shallow to Deep Interactions Between Knowledge Representation, Reasoning and Machine Learning (Kay R. Amel group)}
       \field{year}{2019}
+    \endentry
+    \entry{Breiman1999}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c4de625aef3b09e83edf76c200750fc6}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{fullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{bibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorbibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authornamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorfullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{7}
+      \field{journaltitle}{Neural Computation}
+      \field{title}{Prediction games and arcing classifiers}
+      \field{volume}{11}
+      \field{year}{1999}
+      \field{pages}{1493\bibrangedash 1517.}
+      \range{pages}{-1}
     \endentry
     \entry{BradCarlile2017}{article}{}
       \name{author}{5}{}{%
@@ -426,6 +483,44 @@
       \field{year}{2012}
       \field{pages}{2171\bibrangedash 2175}
       \range{pages}{5}
+    \endentry
+    \entry{ZhouDBLP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=054b420c0df050e7b7e60aeaf6c1b99c}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6b1a37e820a730061851a81dcca2d154}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhi{-}Hua},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \strng{fullhash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \strng{bibnamehash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \strng{authorbibnamehash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \strng{authornamehash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \strng{authorfullhash}{47aae7f01ddafb3b93dfa9716cc465e6}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{The kth, Median and Average Margin Bounds for AdaBoost}
+      \field{volume}{abs/1009.3613}
+      \field{year}{2010}
+      \verb{eprint}
+      \verb 1009.3613
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1009.3613
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1009.3613
+      \endverb
     \endentry
     \entry{Ghifary2015}{inproceedings}{}
       \name{author}{4}{}{%
@@ -1901,6 +1996,54 @@
       \field{year}{2018}
       \field{pages}{47\bibrangedash 59}
       \range{pages}{13}
+    \endentry
+    \entry{Schapire1998}{article}{}
+      \name{author}{4}{}{%
+        {{hash=08900c47ecc2f4dbcb934ad47bb6db9b}{%
+           family={{Schapire}},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9dae54fc70ef3090ef42046937183be2}{%
+           family={{Freund}},
+           familyi={F\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b8fd5618f4e1de62f22a3b78fbc3d5c5}{%
+           family={{Bartlett}},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=94d0309c8aab7c058e550b60c05572de}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={Wee\bibnamedelima Sun},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics (IMS), Beachwood, OH/Bethesda, MD}%
+      }
+      \strng{namehash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \strng{fullhash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \strng{bibnamehash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \strng{authorbibnamehash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \strng{authornamehash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \strng{authorfullhash}{d0455b1b7ec7a7ded84886a365e9d1d9}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0090-5364; 2168-8966/e}
+      \field{journaltitle}{{Ann. Stat.}}
+      \field{number}{5}
+      \field{title}{{Boosting the margin: a new explanation for the effectiveness of voting methods.}}
+      \field{volume}{26}
+      \field{year}{1998}
+      \field{pages}{1651\bibrangedash 1686}
+      \range{pages}{36}
     \endentry
     \entry{SimiläTikka2005-32497}{inproceedings}{}
       \name{author}{2}{}{%
