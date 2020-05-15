@@ -89,7 +89,7 @@
     \label{AI32fig2618}
 \end{figure}
 %%%------------------------------------------------
-\section{不确定性推理的概率论基础}
+\section{不确定性推理的概率论基础}\label{AI32C6Sec6.3}
 在概率论中, 把试验中每一个可能出现的结果称为试验的一个样本点, 由全体样本点构成的集合称为样本空间.
 通常用$D$表示样本空间, $d$表示样本点.
 
@@ -189,10 +189,10 @@
 该公式称为全概率公式, 它提供了一种计算$P(B)$的方法.
 \end{mythm}
 %%%%-------------------------------------------------
-\begin{mythm}{Bayes定理}{1}
+\begin{mythm}{Bayes定理}{Bayesthm6.2}
 设事件$A_1,A_2,\cdots,A_n$满足定理6.1规定的条件, 则对任何事件$B$有下式成立:
 \begin{align}
-P\left(A_{i} | B\right)=\frac{P\left(A_{i}\right) \times P\left(B / A_{i}\right)}{\sum_{j=1}^{n} P\left(A_{j}\right) \times P\left(B / A_{j}\right)},\, i=1,2, \cdots, n.
+    P\left(A_{i} | B\right)=\frac{P\left(A_{i}\right) \times P\left(B / A_{i}\right)}{\sum_{j=1}^{n} P\left(A_{j}\right) \times P\left(B / A_{j}\right)},\, i=1,2, \cdots, n.
 \end{align}
 该定理称为\textbf{Bayes定理}, 上式称为Bayes公式. 其中$P(A_i)$是事件$A_i$的先验概率, $P(B|A_i)$是在事件$A_i$发生条件下事件$B$的条件概率; $P(A_i|B)$是在事件$B$发生条件下事件$A_i$的条件概率.
 \end{mythm}
@@ -239,7 +239,7 @@ P\left(A_{i} | B\right)=\frac{P\left(A_{i}\right) \times P\left(B / A_{i}\right)
 
 (2) $H$可以是单一结论, 也可以是多个结论.
 
-(3) CF是知识的静态强度, CF($H, E$)的取值为$[-1, 1]$, 表示当$E$为真时, 证据对$H$的支持程度, 其值越大, 支持程度越大.
+(3) \textup{CF}是知识的静态强度, $\textup{CF}(H, E$)的取值为$[-1, 1]$, 表示当$E$为真时, 证据对$H$的支持程度, 其值越大, 支持程度越大.
 \end{remark}
 
 %%%%-------------------------------------------------
@@ -253,77 +253,83 @@ P\left(A_{i} | B\right)=\frac{P\left(A_{i}\right) \times P\left(B / A_{i}\right)
 %%%------------------------------------------------
 \subsection{可信度的定义与性质}
 \begin{mydef}{可信度定义}{1}
-在$CF$模型中, 把$CF(H, E)$定义为
+在$\textup{CF}$模型中, 把$\textup{CF}(H, E)$定义为
 \begin{align*}
-    CF(H, E)=MB(H, E)-MD(H, E),
+    \textup{CF}(H, E)=\textup{MB}(H, E)-MD(H, E),
 \end{align*}
-式中$MB$称为信任增长度, $MB(H, E)$定义为
+式中$\textup{MB}$称为信任增长度, $\textup{MB}(H, E)$定义为
 \begin{align}
-  MB(H, E)=
+  \textup{MB}(H, E)=
   \left\{
   \begin{array}{ll}
                     1,                           & \textup{若} P(H)=1\\
-    \frac{\max \{P(H | E), P(H)\}-P(H)}{1-P(H)}, & \textup{否则}
+    \frac{\max \{P(H | E), P(H)\}-P(H)}{1-P(H)}, & \textup{其他}
   \end{array}
   \right.,
 \end{align}
-$MD$称为不信任增长度, $MB(H, E)$定义为
+$\textup{MD}$称为不信任增长度, $\textup{MB}(H, E)$定义为
 \begin{align}
-    MD(H, E)=\left\{\begin{array}{ll}{1,} &  \textup{若} P(H)=0 \\
-  {\frac{\min \{P(H | E), P(E)\}-P(H)}{-P(H)},} &\textup{否则}\end{array}\right.
+    \textup{MD}(H, E)=\left\{
+    \begin{array}{ll}
+       1,                                           &  \textup{若} P(H)=0 \\
+       \frac{\min \{P(H | E), P(E)\}-P(H)}{-P(H)}, &\textup{其他}
+  \end{array}
+  \right.
 \end{align}
 \end{mydef}
 %%%%-------------------------------------------------
-\subparagraph{MB和MD的关系}
+\subparagraph{\textup{MB}和\textup{MD}的关系}
 
 \begin{center}
-    \ding{172} 当$MB(H, E)>0$时, 有$P(H|E)>P(H)$, 即$E$的出现增加了$H$的概率;
+    \ding{172} 当$\textup{MB}(H, E)>0$时, 有$P(H|E)>P(H)$, 即$E$的出现增加了$H$的概率;
 
-    \ding{173} 当$MD(H, E)>0$时, 有$P(H|E)<P(H)$, 即$E$的出现降低了$H$的概率.
+    \ding{173} 当$\textup{MD}(H, E)>0$时, 有$P(H|E)<P(H)$, 即$E$的出现降低了$H$的概率.
 \end{center}
 
-根据前面对$CF(H, E)$可信度 、$MB(H, E)$信任增长度、$MD(H, E)$不信增长度的定义, 可得到$CF(H, E)$的计算公式:
+根据前面对$\textup{CF}(H, E)$可信度 、$\textup{MB}(H, E)$信任增长度、$\textup{MD}(H, E)$不信增长度的定义, 可得到$\textup{CF}(H, E)$的计算公式:
 \begin{align}
-  C F(H, E)=\left\{\begin{array}{ll}
-  {M B(H, E)-0=\frac{P(H | E)-P(H)}{1-P(H)}}, & \textup{若}P(H|E)>P(H) \\
+  \textup{CF}(H, E)=
+  \left\{
+  \begin{array}{ll}
+  {\textup{MB}(H, E)-0=\frac{P(H | E)-P(H)}{1-P(H)}}, & \textup{若}P(H|E)>P(H) \\
   {0}, & \textup{若} P(H | E)=P(H) \\
-  {0-M D(H, E)=-\frac{P(H)-P(H | E)}{P(H)}}, & \textup{若} P(H|E)<P(H)
-  \end{array}\right.
+  {0-\textup{MD}(H, E)=-\frac{P(H)-P(H | E)}{P(H)}}, & \textup{若} P(H|E)<P(H)
+  \end{array}
+  \right.
 \end{align}
-分别给出$CF(H,E)>0,\, CF(H,E)=0,\, CF(H,E)>0$的解释.
+分别给出$\textup{CF}(H,E)>0,\, \textup{CF}(H,E)=0,\, \textup{CF}(H,E)>0$的解释.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tcolorbox}[title=可信度的性质1——互斥性]
-对同一证据, 它不可能既增加对$H$的信任程度, 又同时增加对$H$的不信任程度, 这说明$MB$与$MD$是互斥的.即有如下互斥性:
+对同一证据, 它不可能既增加对$H$的信任程度, 又同时增加对$H$的不信任程度, 这说明$\textup{MB}$与$\textup{MD}$是互斥的.即有如下互斥性:
 
-   $\bullet$当$MB(H, E)>0时, MD(H, E)=0$;
+   $\bullet$ 当$\textup{MB}(H, E)>0时, \textup{MD}(H, E)=0$;
 
-   $\bullet$当$MD(H, E)>0时, MB(H, E)=0$.
+   $\bullet$ 当$\textup{MD}(H, E)>0时, \textup{MD}(H, E)=0$.
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=典型值域值]
 
-当$CF(H,E)=1$时, 有$P(H/E)=1$, 它说明由于$E$所对应证据的出现使$H$为真.此时, $MB(H, E)=1, MD(H, E)=0$.
+当$\textup{CF}(H,E)=1$时, 有$P(H/E)=1$, 它说明由于$E$所对应证据的出现使$H$为真. 此时, $\textup{MB}(H, E)=1, \textup{MD}(H, E)=0$.
 
-当$CF(H,E)= -1$时, 有$P(H/E)=0$, 说明由于$E$所对应证据的出现使$H$为假.此时, $MB(H, E)=0, MD(H,E)=1$.
+当$\textup{CF}(H,E)= -1$时, 有$P(H/E)=0$, 说明由于$E$所对应证据的出现使$H$为假. 此时, $\textup{MB}(H, E)=0, \textup{MD}(H,E)=1$.
 
-当$CF(H,E)= 0$时, 有$MB(H, E)=0$、$MD(H,E)=0$. 前者说明$E$所对应证据的出现不证实$H$; 后者说明$E$所对应证据的出现不否认$H$.
-
+当$\textup{CF}(H,E)= 0$时, 有$\textup{MB}(H, E)=0$, $\textup{MD}(H,E)=0$. 前者说明$E$所对应证据的出现不证实$H$; 后者说明$E$所对应证据的出现不否认$H$.
 典型值对$H$的信任增长度等于对非$H$的不信任增长度.
 \end{tcolorbox}
 
-根据$MB$、$MD$的定义及概率的性质有:
+根据$\textup{MB}$和$\textup{MD}$的定义及概率的性质有:
 \begin{align}
 M D(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(1-P(H))}{-(1-P(H))}\notag \\
 &=\frac{-P(H | E)+P(H)}{-(1-P(H))}=\frac{-(P(H | E)-P(H))}{-(1-P(H))}\notag\\
-&=\frac{P(H | E)-P(H)}{1-P(H)}=MB(H, E). \hfill \textup{信任增长度}
+&=\frac{P(H | E)-P(H)}{1-P(H)}=MB(H, E). \qquad \textup{信任增长度}
 \end{align}
 
-再根据CF的定义、MB和MD的互斥性有
+再根据\textup{CF}的定义、\textup{MB}和\textup{MD}的互斥性有
 \begin{align*}
-CF(H,E)+CF(\neg H,E)
-              &=(MB(H,E)-MD(H,E))+(MB(\neg H,E)-MD(\neg H,E))\\
-              &=(MB(H,E)-0)+(0-MD(\neg H,E)),\textup{(由互斥性)}\\
-              &=MB(H,E)-MD(\neg H,E)=0.
+\textup{CF}(H,E)+\textup{CF}(\neg H,E)
+              &=(\textup{MB}(H,E)-\textup{MD}(H,E))+(\textup{MB}(\neg H,E)-\textup{MD}(\neg H,E))\\
+              &=(\textup{MB}(H,E)-0)+(0-\textup{MD}(\neg H,E)),\qquad \textup{(由互斥性)}\\
+              &=\textup{MB}(H,E)-\textup{MD}(\neg H,E)=0.
 \end{align*}
 它说明
 
@@ -338,11 +344,11 @@ CF(H,E)+CF(\neg H,E)
 
 (5)对同一前提$E$, 若支持若干个不同的结论$H_i\,(i=1,2,\cdots,n)$, 则
 \begin{align*}
-  \sum_{i=1}^{n} C F\left(H_{i}, E\right) \leq 1,
+  \sum_{i=1}^{n} \textup{CF}\left(H_{i}, E\right) \leq 1,
 \end{align*}
 因此, 如果发现专家给出的知识有如下情况
 \begin{align*}
-    CF(H_1, E)=0.7,  CF(H_2, E)=0.4,
+    \textup{CF}(H_1, E)=0.7,\,  \textup{CF}(H_2, E)=0.4,
 \end{align*}
 则因$0.7+0.4=1.1>1$为非法, 应进行调整或规范化.
 %%%------------------------------------------------
@@ -350,40 +356,40 @@ CF(H,E)+CF(\neg H,E)
 \subsection{证据不确定性的表示}
 %%%%--------------------------------------
 \paragraph{不确定性的表示}
-证据的不确定性也是用可信度来表示的, 其取值范围也为$[-1,1]$.　
+    证据的不确定性也是用可信度来表示的, 其取值范围也为$[-1,1]$.　
 \begin{itemize}
-\item 若$E$为初始证据, 其值由用户给出.
-\item 若$E$为中间结论, 其值可通过计算得到.
+    \item 若$E$为初始证据, 其值由用户给出.
+    \item 若$E$为中间结论, 其值可通过计算得到.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{不确定性的含义}
-对$E$, 其可信度$CF(E)$的含义如下:
+对$E$, 其可信度$\textup{CF}(E)$的含义如下:
 \begin{center}
 \begin{itemize}
-    \item $CF(E)=1$, 证据$E$肯定它为真;
-    \item $CF(E)=-1$, 证据$E$肯定它为假;
-    \item $CF(E)=0$, 对证据$E$一无所知;
-    \item $0<CF(E)<1$, 证据$E$以CF(E)程度为真;
-    \item $-1<CF(E)<0$, 证据$E$以CF(E)程度为假.
+    \item $\textup{CF}(E)=1$, 证据$E$肯定它为真;
+    \item $\textup{CF}(E)=-1$, 证据$E$肯定它为假;
+    \item $\textup{CF}(E)=0$, 对证据$E$一无所知;
+    \item $0<\textup{CF}(E)<1$, 证据$E$以$\textup{CF}(E)$程度为真;
+    \item $-1<\textup{CF}(E)<0$, 证据$E$以$\textup{CF}(E)$程度为假.
 \end{itemize}
 \end{center}
 %%%%-------------------------------------------------
 \paragraph{否定证据不确定性的计算}
 \begin{align}
-    CF(\neg E)=-CF(E).
+    \textup{CF}(\neg E)=-\textup{CF}(E).
 \end{align}
 %%%%-------------------------------------------------
 \paragraph{组合证据不确定性的计算}
 对证据的组合形式可分为“合取”与“析取”两种基本情况.
 \begin{itemize}
-\item 合取: 当组合证据是多个单一证据的组合时, 即 $E=E_1\,\,  AND\,\,    E_2\,\,    AND \,\,   \cdots\,\,     AND \,\,   E_n$时, 若已知$CF(E_1), CF(E_2), \cdots , CF(E_n)$, 则
-\begin{align}
-  \textup{CF}(E)=\min\{\textup{CF}(E_1), \textup{CF}(E_2), \cdots  ,\textup{CF}(E_n)\}.
-\end{align}
-\item 析取: 当组合证据是多个单一证据的析取时, 即$E=E_1\,\,  \textup{OR}\,\,  E_2 \,\, \textup{OR}\,\,  \cdots \,\,  \textup{OR}\,\, E_n$时, 若已知$\textup{CF}(E_1), \textup{CF}(E_2), \cdots , \textup{CF}(E_n)$, 则
-\begin{align}
-    \textup{CF}(E)=\max\{\textup{CF}(E_1), \textup{CF}(E_2), \cdots  ,\textup{CF}(E_n)\}.
-\end{align}
+    \item 合取: 当组合证据是多个单一证据的组合时, 即 $E=E_1\,\,  AND\,\,    E_2\,\,    AND \,\,   \cdots\,\,     AND \,\,   E_n$时, 若已知$\textup{CF}(E_1),\, \textup{CF}(E_2),\, \cdots,\, \textup{CF}(E_n)$, 则
+    \begin{align}
+        \textup{CF}(E)=\min\{\textup{CF}(E_1),\, \textup{CF}(E_2),\, \cdots ,\,\textup{CF}(E_n)\}.
+    \end{align}
+    \item 析取: 当组合证据是多个单一证据的析取时, 即$E=E_1\,\,  \textup{OR}\,\,  E_2 \,\, \textup{OR}\,\,  \cdots \,\,  \textup{OR}\,\, E_n$时, 若已知$\textup{CF}(E_1), \textup{CF}(E_2), \cdots , \textup{CF}(E_n)$, 则
+    \begin{align}
+        \textup{CF}(E)=\max\{\textup{CF}(E_1),\, \textup{CF}(E_2),\, \cdots ,\,\textup{CF}(E_n)\}.
+    \end{align}
 \end{itemize}
 
 %%%------------------------------------------------
@@ -417,19 +423,19 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
 
 (1) 分别对每条知识求出其$\textup{CF}(H)$. 即
 \begin{align*}
-  &CF_1(H)=\textup{CF}(H, E_1) \times\max\{0, \textup{CF}(E_1)\};\\
-  &CF_2(H)=\textup{CF}(H, E_2)\times\max\{0, \textup{CF}(E_2)\}.
+  &\textup{CF}_1(H)=\textup{CF}(H, E_1) \times\max\{0, \textup{CF}(E_1)\};\\
+  &\textup{CF}_2(H)=\textup{CF}(H, E_2)\times\max\{0, \textup{CF}(E_2)\}.
 \end{align*}
 
 (2) 用如下公式求$E_1$与$E_2$对$H$的综合可信度
 \begin{align}
  \textup{CF}(H)=\left\{
  \begin{array}{llr}
-  {C F_{1}(H)+C F_{2}(H)-C F_{1}(H) \times C F_{2}(H)},  & \textup{若} CF_{1}(H) \geq 0 \\
-                                                            & {\textup{且} C F_{2}(H) \geq 0} \\
-  {C F_{1}(H)+C F_{2}(H)+C H_{1}(H) \times CF_{2}(H)}, & \textup{若} CF_{1}(H)<0 \\
-   {C F_{1}(H)+C F_{2}(H)},                            & \textup{若} \textup{CF}(H)< 0\\
-    \frac{C F_{1}(H)+C F_{2}(H)}{1-\min \left\{C F_{1}(H),\left|CF_{2}(H)\right|\right\}}, &\textup{且} CF_{2}(H) \vec{F}
+  {\textup{CF}_{1}(H)+\textup{CF}_{2}(H)-C F_{1}(H) \times \textup{CF}_{2}(H)},  & \textup{若} \textup{CF}_{1}(H) \geq 0 \\
+                                                            & {\textup{且} \textup{CF}_{2}(H) \geq 0} \\
+  {\textup{CF}_{1}(H)+\textup{CF}_{2}(H)+C H_{1}(H) \times \textup{CF}_{2}(H)}, & \textup{若} \textup{CF}_{1}(H)<0 \\
+   {\textup{CF}_{1}(H)+\textup{CF}_{2}(H)},                            & \textup{若} \textup{CF}(H)< 0\\
+    \frac{\textup{CF}_{1}(H)+\textup{CF}_{2}(H)}{1-\min \left\{\textup{CF}_{1}(H),\left|\textup{CF}_{2}(H)\right|\right\}}, &\textup{且} \textup{CF}_{2}(H) \vec{F}
     \end{array}
   \right..
 \end{align}
@@ -442,7 +448,7 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
      $r_3$: IF  E3  THEN  H(-0.5);
      $r_4$: IF  E4  AND  ( E5  OR  E6)  THEN  E1(0.8).
 \end{Verbatim}
-已知: $\textup{CF}(E_2)=0.8, \textup{CF}(E_3)=0.6, \textup{CF}(E_4)=0.5, \textup{CF}(E_5)=0.6, \textup{CF}(E_6)=0.8$, 求$\textup{CF}(H)=?$
+已知: $\textup{CF}(E_2)=0.8,\, \textup{CF}(E_3)=0.6,\, \textup{CF}(E_4)=0.5,\, \textup{CF}(E_5)=0.6,\, \textup{CF}(E_6)=0.8$, 求$\textup{CF}(H)=?$
 \vspace{-0.2cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -459,158 +465,157 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
 \end{result}
 由$r_1$得到:
 \begin{align*}
-    CF_1(H)&=\textup{CF}(H, E_1)\times \max\{0,  \textup{CF}(E_1)\}=0.9\times \max\{0,  0.4\} = 0.36.
+    \textup{CF}_1(H)&=\textup{CF}(H, E_1)\times \max\{0,  \textup{CF}(E_1)\}=0.9\times \max\{0,  0.4\} = 0.36.
 \end{align*}
     由$r_2$得到:
 \begin{align*}
-    CF_2(H)&=\textup{CF}(H, E_2)\times \max\{0,  \textup{CF}(E_2)\}=0.6\times \max\{0,  0.8\} = 0.48.
+    \textup{CF}_2(H)&=\textup{CF}(H, E_2)\times \max\{0,  \textup{CF}(E_2)\}=0.6\times \max\{0,  0.8\} = 0.48.
 \end{align*}
 由$r_3$得到:
 \begin{align*}
-    CF_3(H)&=\textup{CF}(H, E_3)\times \max\{0,  \textup{CF}(E_3)\}=-0.5\times \max\{0,  0.6\} = -0.3.
+    \textup{CF}_3(H)&=\textup{CF}(H, E_3)\times \max\{0,  \textup{CF}(E_3)\}=-0.5\times \max\{0,  0.6\} = -0.3.
 \end{align*}
 
-根据结论不精确性的合成算法, $CF_1(H)$和$CF_2(H)$同号, 有:
+根据结论不精确性的合成算法, $\textup{CF}_1(H)$和$\textup{CF}_2(H)$同号, 有:
 \begin{align}
   \begin{aligned}
-  C F_{1,2}(H) &=C F_{1}(H)+C F_{2}(H)-C F_{1}(H) \times C F_{2}(H) \\
+  \textup{CF}_{1,2}(H) &=\textup{CF}_{1}(H)+\textup{CF}_{2}(H)-\textup{CF}_{1}(H) \times \textup{CF}_{2}(H) \\
   &=0.36+0.48-0.36 \times 0.48 \\
   &=0.84-0.17=0.67.
   \end{aligned}
 \end{align}
 
-$CF_{12}(H)$和$CF_3(H)$异号, 有:
+$\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
 \begin{align}
   \begin{aligned}
-  C F_{1,2,3}(H) &=\frac{C F_{1,2}(H)+C F_{3}(H)}{1-\min \left\{\left\langle C F_{1,2}(H)|,| C F_{3}(H)\right|\right\}} \\
+  \textup{CF}_{1,2,3}(H) &=\frac{\textup{CF}_{1,2}(H)+\textup{CF}_{3}(H)}{1-\min \left\{\left\langle \textup{CF}_{1,2}(H)|,| \textup{CF}_{3}(H)\right|\right\}} \\
                  &=\frac{0.67-0.3}{1-\min\{0.67,0.3\}}=\frac{0.37}{0.7} \\
                  &=0.53.
   \end{aligned}
 \end{align}
 %%%------------------------------------------------
-\section{主观Bayes方法}
+\section{主观Bayes方法}\index{主观Bayes方法}
 在主观Bayes方法中, 知识是用产生式表示的, 其形式为:
 \begin{align}
-   \textup{IF} \,\, E\,\,  \textup{THEN}\,\,  \textup{(LS, LN)} \,\,  H,
+   \textup{IF} \,\, E\,\,  \textup{THEN}\,\,  \textup{(LS, LN)}\, H(P(H)),
 \end{align}
-其中, (LS, LN) 用来表示该知识的知识强度, LS (充分性度量) 和LN (必要性度量) 的表示形式分别为:
+其中, \textup{(LS, LN)} 用来表示该知识的知识强度, \textup{LS} (充分性度量) 和 \textup{LN} (必要性度量) 的表示形式分别为:
 \begin{align}
 \begin{aligned}
-    LS =\frac{P(E | H)}{P(E | \neg H)}; LN =\frac{P(\neg E | H)}{P(\neg E | \neg H)}=\frac{1-P(E | H)}{1-P(E | \neg H)}.
+    \textup{LS} =\frac{P(E | H)}{P(E | \neg H)}; LN =\frac{P(\neg E | H)}{P(\neg E | \neg H)}=\frac{1-P(E | H)}{1-P(E | \neg H)}.
 \end{aligned}
 \end{align}
-下面进一步讨论LS和LN的含义. 由本章第 \ref{AI32C6Sec6.2} 节的 Bayes 公式可知:
-\begin{align}\label{AI32C6eq6.2}
-  \begin{aligned}
-        P(H | E) &=\frac{P(E | H) \times P(H)}{P(E)}.\\
-        P(\neg H | E) &=\frac{P(E | \neg H) \times P(\neg H)}{P(E)}.
-  \end{aligned}
+\begin{remark}
+   \textup{LS}表示$E$对$H$的支持程度, $\textup{LS}\in [0,+infty)$. \textup{LN}表示$\neg E$对$H$的支持程度, $\textup{LS}\in [0,+infty)$.
+\end{remark}
+下面进一步讨论LS和LN的含义. 由本章第 \ref{AI32C6Sec6.3} 节的 Bayes 公式可知:
+\begin{align}\label{AI32C6eq6.27}
+    P(H | E) =\frac{P(E | H) \times P(H)}{P(E)},  P(\neg H | E) &=\frac{P(E | \neg H) \times P(\neg H)}{P(E)}.
 \end{align}
 
 两式相除得:
-\begin{align}
+\begin{align}\label{AI32C6eq6.28}
     \frac{P(H | E)}{P(\neg H | E)}=\frac{P(E | H)}{P(E | \neg H)} \times \frac{P(H)}{P(\neg H)}.
 \end{align}
-为讨论方便, 下面引入几率函数的概念
+为讨论方便, 下面引入\textbf{几率函数}的概念
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{几率函数}{1}
-\begin{align}
-    O(X)=\frac{P(X)}{1-P(X)} P(X)=\frac{P(X)}{P(\neg X)}.
+\begin{align}\label{AI32C6eq6.30}
+    O(X)=\frac{P(X)}{1-P(X)}, P(x)=\frac{O(X)}{1+O(\neg X)}.
 \end{align}
 \end{mydef}
 
 可见, $X$的几率等于$X$出现的概率与$X$不出现的概率之比, $P(X)$与$O(X)$的变化一致, 且有:
-\begin{align}\label{AI32C6eq6.1}
+\begin{align}
     P(X)=0,&\,O(X)=0;\\
     P(X)=1,&\,O(X)=+\infty.
 \end{align}
-即把取值为$[0,1]$的$P(X)$放大为取值为$[0,+\infty]$的$O(X)$
+即把取值为$[0,1]$的$P(X)$放大为取值为$[0,+\infty]$的$O(X)$.
 
-把 \eqref{AI32C6eq6.2} 式代入 \eqref{AI32C6eq6.1} 式有:
+把 \eqref{AI32C6eq6.28} 式代入 \eqref{AI32C6eq6.30} 式有:
 \begin{align}
     O(H | E)=\frac{P(E | H)}{P(E | \neg H)} \times O(H).
 \end{align}
 再把LS代入此式, 可得:
 \begin{align}
-    Q(H | E)=LS \times Q H.
+    O(H | E)=\textup{LS} \times O(H).
 \end{align}
 
 同理可得到关于LN的公式:
 \begin{align}
-&\frac{P(H|\neg E)}{P(\neg H|\neg E)}=\frac{P(E | H)}{P(\neg E |\neg H)} \times \frac{P(H)}{P(-H)}.\label{AI32C6eq6.36} \\
-&Q(H| \neg E)=L N \times Q(H).
-\label{AI32C6eq6.37}
+    &\frac{P(H|\neg E)}{P(\neg H|\neg E)}=\frac{P(E | H)}{P(\neg E |\neg H)} \times \frac{P(H)}{P(-H)}.\label{AI32C6eq6.36} \\
+    &O(H| \neg E)=\textup{LN} \times O(H). \label{AI32C6eq6.37}
 \end{align}
 式 \eqref{AI32C6eq6.36} 和 \eqref{AI32C6eq6.37} 就是修改的Bayes公式.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{证据理论}
-证据理论是由德普斯特 (A. P. Dempster) 首先提出, 并由沙佛 (G. Shafer) 进一步发展起来的用于处理不确定性的一种理论, 也称DS (Dempster-Shafer) 理论.
+证据理论是由德普斯特 (A. P. Dempster) 首先提出, 并由沙佛 (G. Shafer) 进一步发展起来的用于处理不确定性的一种理论, 也称 DS (Dempster-Shafer) 理论.
 它将概率论中的单点赋值扩展为集合赋值, 可以处理由“不知道”所引起的不确定性, 比主观 Bayes 方法有着更大的灵活性.
 %%%------------------------------------------------
 \section{DS理论的形式描述}
-在DS理论中, 可以分别用信任函数、似然函数及类概率函数来描述知识的精确信任度、不可驳斥信任度及估计信任度.
+    在DS理论中, 可以分别用信任函数、似然函数及类概率函数来描述知识的精确信任度、不可驳斥信任度及估计信任度.
 DS理论处理的是集合上的不确定性问题, 为此需要先建立命题与集合之间的一一对应关系, 以把命题的不确定性问题转化为集合的不确定性问题.
 
 设$\Omega$为样本空间, 且$\Omega$Ω中的每个元素都相互独立, 则由Ω的所有子集构成的幂集记为$2^\Omega$.
-当$\Omega$中的元素个数为N时, 则其幂集$2^{\Omega}$的元素个数为$2^N$, 且其中的每一个元素都对应于一个关于$x$取值情况的命题.
+当$\Omega$中的元素个数为$N$时, 则其幂集$2^{\Omega}$的元素个数为$2^N$, 且其中的每一个元素都对应于一个关于$x$取值情况的命题.
 %%%%-------------------------------------------------
 \begin{example}
-  设$\Omega=\{\textup{红,黄,白}\}$, 求$\Omega$的幂集$2^{\Omega}$.
+    设$\Omega=\{\textup{红,黄,白}\}$, 求$\Omega$的幂集$2^{\Omega}$.
 \end{example}
 %%%%-------------------------------------------------
 \begin{result}
 $\Omega$的幂集可包括如下子集:
 \begin{align}
-  &A_0=\emptyset,             A_1=\{\textup{红}\},         A_2=\{\textup{黄}\},         A_3=\{\textup{白}\},\notag\\
-  &A_4=\{\textup{红,黄}\},       A_5=\{\textup{红,白}\},     A_6=\{\textup{黄,白}\},     A_7=\{\textup{红,黄,白}\}\notag
+    &A_0=\emptyset,               A_1=\{\textup{红}\},        A_2=\{\textup{黄}\},        A_3=\{\textup{白}\},\notag\\
+    &A_4=\{\textup{红,黄}\},       A_5=\{\textup{红,白}\},     A_6=\{\textup{黄,白}\},     A_7=\{\textup{红,黄,白}\}\notag
 \end{align}
-其中, $\emptyset$表示空集, 空集也可表示为$\{\}$.上述子集的个数正好是$2^3 =8$.
+其中, $\emptyset$表示空集, 空集也可表示为$\{\}$. 上述子集的个数正好是$2^3 =8$.
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设函数$m: 2^{\Omega}\rightarrow [0,1]$, 且满足
 \begin{align}
   \begin{array}{l}
-  m(\Phi)=0; \\
-  \sum_{A \subseteq \Omega} m(A)=1.
+    m(\Phi)=0; \\
+    \sum_{A \subseteq \Omega} m(A)=1.
   \end{array}
 \end{align}
-则称$m$是$2^{\Omega}$上的概率分配函数, $m(A)$称为$A$的基本概率数.
+则称$m$是$2^{\Omega}$上的概率分配函数, $m(A)$称为$A$的基本概率数. \index{基本概率数}
 \end{example}
 
 %%%%-------------------------------------------------
-\begin{example}
+\begin{example}\label{AIC6exam6.17}
 若定义$2^{\Omega}$上的一个基本函数$m$:
-\begin{align}\label{AIC6exam6.17}
+\begin{align}
   m(\{\emptyset,\textup{红}\},& \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄}\}, \{\textup{红, 白}\}, \{\textup{黄, 白}\}, \{\textup{红, 黄, 白}\})\notag\\
-              &=(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2).
+                              &=(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2).
 \end{align}
-其中, $(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2)$分别是幂集$2^{\Omega}$中各个子集的基本概率数.
+其中, $(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2)$ 分别是幂集$2^{\Omega}$中各个子集的基本概率数.
 显然$m$满足概率分配函数的定义.
 \end{example}
 %%%------------------------------------------------
 \begin{remark}\textbf{概率分配函数的说明}
 概率分配函数的作用是把$\Omega$的任一子集映射为$[0,1]$上的一个数$m(A)$.
 \begin{itemize}
-\item 当$A \subset \Omega $, 且$A$由单个元素组成时, 则$m(A)$表示对$A$的精确信任度;
-\item 当$A \subset \Omega $、$A\neq \Omega $, 且$A$由多个元素组成时, $m(A)$也表示对A的精确信任度, 但却不知道这部分信任度该分给$A$中哪些元素;
-\item 当$A \subseteq\Omega $时, 则$m(A)$也表示不知道该如何分配的部分.
+    \item 当$A \subset \Omega $, 且$A$由单个元素组成时, 则$m(A)$表示对$A$的精确信任度;
+    \item 当$A \subset \Omega $、$A\neq \Omega $, 且$A$由多个元素组成时, $m(A)$也表示对A的精确信任度, 但却不知道这部分信任度该分给$A$中哪些元素;
+    \item 当$A \subseteq\Omega $时, 则$m(A)$也表示不知道该如何分配的部分.
 \end{itemize}
 \end{remark}
 %%%%-------------------------------------------------
 \begin{example}
 对上例所给出的有限集$\Omega$及基本函数$m$, 针对如下情形
 \begin{itemize}
-\item 当$A=$\{红\}时, 有$m(A)=0.3$, 它表示对命题“$x$是红色”的精确信任度为0.3.
-\item 当$B= $\{红, 黄\}时, 有$m(B)=0.2$, 它表示对命题“$x$或者是红色, 或者是黄色”的精确信任度为0.2, 却不知道该把这0.2分给\{红\}还是分给\{黄\}.
-\item 当$C=\Omega =$\{红, 黄, 白\}时, 有$m(\Omega )=0.2$, 表示不知道该对这0.2如何分配, 但知道它不属于{红}, 就一定属于\{黄\}或\{白\} .
+    \item 当$A=$\{红\}时, 有$m(A)=0.3$, 它表示对命题“$x$是红色”的精确信任度为0.3.
+    \item 当$B= $\{红, 黄\}时, 有$m(B)=0.2$, 它表示对命题“$x$或者是红色, 或者是黄色”的精确信任度为0.2, 却不知道该把这0.2分给\{红\}还是分给\{黄\}.
+    \item 当$C=\Omega =$\{红, 黄, 白\}时, 有$m(\Omega )=0.2$, 表示不知道该对这0.2如何分配, 但知道它不属于{红}, 就一定属于\{黄\}或\{白\} .
 \end{itemize}
 \vspace{-0.2cm}
 \end{example}
 
 (2) 概率分配函数不是概率
 %%%%-------------------------------------------------%
-\begin{example}
+\begin{example}\label{AIC6exam6.25}
 在例 \ref{AIC6exam6.17} 中, $m$符合概率分配函数的定义, 但
 \begin{align*}
     m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
@@ -621,7 +626,7 @@ $\Omega$的幂集可包括如下子集:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{信任函数}{1}
-信任函数$\textup{Bel}: 2^{\Omega}\rightarrow [0,1]$为
+    信任函数$\textup{Bel}: 2^{\Omega}\rightarrow [0,1]$为
 \begin{align*}
     \textup{Bel}(A)=\sum_{B \subseteq A} m(B),
 \end{align*}
@@ -629,10 +634,10 @@ $\Omega$的幂集可包括如下子集:
 \end{mydef}
 %%%%-------------------------------------------------
 \begin{example}
-对例6.5有
+对例 \ref{AIC6exam6.25} 有
 \begin{align*}
-  &\textup{Bel}(\{\textup{红}\})=0.3;\\
-  &\textup{Bel}(\{\textup{红, 白}\})=m(\{\textup{红}\}) +m(\{\textup{白}\})+ m(\{\textup{红, 白}\})=0.3+0.1+0.2=0.6.
+    &\textup{Bel}(\{\textup{红}\})=0.3;\\
+    &\textup{Bel}(\{\textup{红, 白}\})=m(\{\textup{红}\}) +m(\{\textup{白}\})+ m(\{\textup{红, 白}\})=0.3+0.1+0.2=0.6.
 \end{align*}
 根据定义还可以得到:
 \begin{align*}
@@ -645,7 +650,7 @@ $\Omega$的幂集可包括如下子集:
 \end{example}
 %%%%-------------------------------------------------
 \begin{example}
-对例 \ref{AIC6exam6.17}有
+对例 \ref{AIC6exam6.17} 有
 \begin{align*}
   \textup{Bel}(\emptyset ) &= m(\emptyset )=0.\\
 　  \textup{Bel}(\{\textup{红, 黄, 白}\})&=m(\emptyset)+m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})+m(\{\textup{红, 黄}\})\notag\\
@@ -658,7 +663,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{mydef}{似然函数}{1}
 似然函数$P_l: 2^\Omega\rightarrow [0, 1]$为
 \begin{align}
-    P_l(A)=1-\textup{Bel}(\neg A), A\subseteq \Omega,
+    P_l(A)=1-\textup{Bel}(\neg A),\, A\subseteq \Omega,
 \end{align}
 其中, $\neg A=\Omega-A$.
 \end{mydef}
@@ -667,7 +672,7 @@ $\Omega$的幂集可包括如下子集:
 似然函数又称为\textbf{不可驳斥函数}或\textbf{上限函数}.由于$Bel(\neg A)$表示对$\neg A$的信任度, 即$A$为假的信任度, 因此, $P_l(A)$表示对$A$为非假的信任度.
 %%%%-------------------------------------------------
 \begin{example}
-以例 \ref{AIC6exam6.17}为例:
+以例 \ref{AIC6exam6.17} 为例:
 \begin{align*}
     P_l(\{\textup{红}\})&=1-\textup{Bel}(\neg \{\textup{红}\})\notag\\
                      &=1-\textup{Bel}(\{\textup{黄, 白}\})\notag\\
@@ -731,20 +736,20 @@ $\Omega$的幂集可包括如下子集:
 
 同理可以求得
 \begin{itemize}
-\item \{黄\}[0, 0.4]         \quad         \{白\}[0.1,  0.5]
-\item \{红, 黄\}[0.5,  0.9]  \quad         \{红, 白\}[0.6,  1]
-\item \{黄, 白\}[0.1,  0.7]  \quad         \{红, 黄, 白\}[1, 1]
-\item \{\}[0,  0]
+    \item \{黄\}[0, 0.4],         \quad         \{白\}[0.1,  0.5]
+    \item \{红, 黄\}[0.5,  0.9],  \quad         \{红, 白\}[0.6,  1]
+    \item \{黄, 白\}[0.1,  0.7],  \quad         \{红, 黄, 白\}[1, 1]
+    \item \{\},[0,  0]
 \end{itemize}
 
 一些典型值的含义: $A[0,1]$: 说明对$A$一无所知.
 其中, $\textup{Bel}(A)=0$, 说明对$A$无信任;
 再由$P_l(A)=1-\textup{Bel}(\neg A)=1$, 可知$\textup{Bel}(\neg A)=0$, 说明对$\neg A$也没有信任.
 \begin{itemize}
-\item $A[0, 0]$: 说明A为假. 即$\textup{Bel}(A)=0, \textup{Bel}(\neg A)=1$.
-\item $A[1, 1]$: 说明A为真. 即$\textup{Bel}(A)=1, \textup{Bel}(\neg A)=0$.
-\item $A[0.6,1]$: 说明对A部分信任. 即$\textup{Bel}(A)=0.6, \textup{Bel}(\neg A)=0$.
-\item $A[0, 0.4]$: 说明对﹁A部分信任. 即$\textup{Bel}(A)=0, \textup{Bel}(\neg A)=0.6$.
+\item $A[0, 0]$: 说明A为假. 即$\textup{Bel}(A)=0,\, \textup{Bel}(\neg A)=1$.
+\item $A[1, 1]$: 说明A为真. 即$\textup{Bel}(A)=1,\, \textup{Bel}(\neg A)=0$.
+\item $A[0.6,1]$: 说明对A部分信任. 即$\textup{Bel}(A)=0.6,\, \textup{Bel}(\neg A)=0$.
+\item $A[0, 0.4]$: 说明对﹁A部分信任. 即$\textup{Bel}(A)=0,\, \textup{Bel}(\neg A)=0.6$.
 \item $A[0.3, 0.9]$: 说明对$A$和$\neg A$都有部分信任.其中, \textup{Bel}(A)=0.3, 说明对$A$为真有0.3的信任度;
         $\textup{Bel}(\neg  A)=1-0.9=0.1$, 说明对A为假有0.1的信任度;
 因此, $A[0.3, 0.9]$表示对$A$为真的信任度比$A$为假的信任度稍高一些.
@@ -759,8 +764,8 @@ $\Omega$的幂集可包括如下子集:
 \end{align*}
 假设从不同知识源得到的两个概率分配函数分别为:
 \begin{align*}
-  &m_1(\{\textup{红}\}, \{\textup{黄}\},\{\textup{红, 黄}\})=(0, 0.4, 0.5, 0.1)\\
-  &m_2(\{\textup{红}\},\{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.6, 0.2, 0.2).
+    &m_1(\{\textup{红}\}, \{\textup{黄}\},\{\textup{红, 黄}\})=(0, 0.4, 0.5, 0.1)\\
+    &m_2(\{\textup{红}\},\{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.6, 0.2, 0.2).
 \end{align*}
 \vspace{-0.4cm}
 \end{example}
@@ -787,8 +792,8 @@ $\Omega$的幂集可包括如下子集:
 \begin{example}
 设$\Omega=\{a,b\}$, 且从不同知识源得到的概率分配函数分别为
 \begin{align*}
-  &m_1(\emptyset, \{a\}, \{b\}, \{a, b\})=(0, 0.3, 0.5, 0.2);\\
-  &m_2(\emptyset, \{a\}, \{b\}, \{a, b\})=(0, 0.6, 0.3, 0.1).
+    &m_1(\emptyset, \{a\}, \{b\}, \{a, b\})=(0, 0.3, 0.5, 0.2);\\
+    &m_2(\emptyset, \{a\}, \{b\}, \{a, b\})=(0, 0.6, 0.3, 0.1).
 \end{align*}
 求正交和$m=m_1\oplus m_2$.
 \end{example}
@@ -837,7 +842,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
     \text { (2) } \sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right) \leq 1; \\
     \text { (3) } m(\Omega)=1-\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right).
 \end{array}
-A \subset \Omega, &|A|>>1\textup{或者}|A|=0\Rightarrow m(A)=0.
+    A \subset \Omega,\, &|A|>>1\,\textup{或者}\,|A|=0\Rightarrow m(A)=0.
 \end{align}
 其中$|A|$表示命题$A$所对应的集合中的元素个数.
 
@@ -850,7 +855,7 @@ A \subset \Omega, &|A|>>1\textup{或者}|A|=0\Rightarrow m(A)=0.
 \qquad\ding{174}  全集$\Omega$的概率分配数按(3)计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-设$\Omega=\{\textup{红, 黄, 白}\}$, 有如下概率分配函数
+    设$\Omega=\{\textup{红, 黄, 白}\}$, 有如下概率分配函数
 \begin{align*}
     m(\emptyset, \{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\},\{ \textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align*}
@@ -860,15 +865,15 @@ A \subset \Omega, &|A|>>1\textup{或者}|A|=0\Rightarrow m(A)=0.
 \begin{example}
 对任何命题$A\subset \Omega$, 其信任函数为
 \begin{align*}
-\begin{array}{l}
-\textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \\
-\textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
-\end{array}
+    \begin{array}{l}
+    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \\
+    \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
+    \end{array}
 \end{align*}
 \vspace{-0.2cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mydef}{其似然函数}{1}
+\begin{mydef}{似然函数}{1}
 对任何命题$A\subset \Omega$, 其似然函数为
 \begin{align}
 \begin{aligned}
@@ -889,7 +894,7 @@ P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align*}
-  m( \{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1)
+    m( \{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align*}
 $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -898,7 +903,8 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align*}
      &m(\Omega)=1-[m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})]=1-(0.6+0.2+0.1)=0.1;\\
      &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
-     &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})=0.1+0.8=0.9.
+     &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})
+     =0.1+0.8=0.9.
 \end{align*}
 或
 \begin{align*}
@@ -918,14 +924,14 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align}
     m(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align}
-$A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
+$A=\{\textup{红, 黄}\}$, 求$m(\Omega),\, \textup{Bel}(A)$和$P_l(A)$的值.
 \end{example}
 %%%%%%-------------------------------------
 \begin{result}
 \begin{align*}
-  &m(\Omega)=1-[m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})]=1-(0.6+0.2+0.1)=0.1;\\
-  &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
-  &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})=0.1+0.8=0.9.
+    &m(\Omega)=1-[m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})]=1-(0.6+0.2+0.1)=0.1;\\
+    &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
+    &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})=0.1+0.8=0.9.
 \end{align*}
 或
 \begin{align*}
@@ -986,7 +992,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
                      &=1-\left[\textup{Bel}(A)+\frac{|A|}{|\Omega|} \times m(\Omega)\right]=1-f(A).
 \end{align*}
 %%%--------------------------------------------
-\begin{myprop}{myprop6.1}
+\begin{myprop}{类概率函数的性质}{myprop6.1}
 (1) $f(\emptyset)=0$;
 
 (2) $f(\Omega)=1$;
@@ -1015,12 +1021,12 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 
 表示形式:
 \begin{align}
-    \textup{IF}\,\,   E\,\,   \textup{THEN} \,\,   H={h_1, h_2, \cdots, h_n}; \,\, CF=\{c_1, c_2, \cdots, c_n\},
+    \textup{IF}\,\,   E\,\,   \textup{THEN} \,\,   H={h_1, h_2, \cdots, h_n}; \,\, \textup{CF}=\{c_1, c_2, \cdots, c_n\},
 \end{align}
 其中:
      $E$为前提条件, 它既可以是简单条件, 也可以是用合取或析取词连接起来的复合条件;
      $H$是结论, 它用样本空间中的子集表示, $h_1, h_2, \cdots, h_n$是该子集中的元素;
-     $CF$是可信度因子, 用集合形式表示.该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
+     $\textup{CF}$是可信度因子, 用集合形式表示.该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
 
  并且$c_i$应满足如下条件:
 \begin{align}
@@ -1048,7 +1054,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{mydef}{条件部分命题$A$的确定性}{1}
 条件部分命题$A$的确定性为
 \begin{align}
-  \textup{CER}(A)=\textup{MD}(A/E')\times f(A),
+    \textup{CER}(A)=\textup{MD}(A/E')\times f(A),
 \end{align}
 其中$f(A)$为类概率函数.
 \end{mydef}
@@ -1072,7 +1078,8 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 (1) 求$H$的概率分配函数
 \begin{align}
     \begin{array}{ll}
-        &m\left(\left\{h_{1}\right\},\left\{h_{2}\right\}, \ldots,\left\{h_{3}\right\} \right)=\left( \textup{CER}(E) \times c_{1},\, \textup{CER}(E) \times c_{2},\, \cdots,\, \textup{CER}(E) \times c_{n}\right).\\
+        &m\left(\left\{h_{1}\right\},\left\{h_{2}\right\}, \ldots,\left\{h_{3}\right\} \right)
+           =\left( \textup{CER}(E) \times c_{1},\, \textup{CER}(E) \times c_{2},\, \cdots,\, \textup{CER}(E) \times c_{n}\right).\\
         &m(\Omega)=1-\sum_{i=1}^{n} \,\textup{CRE}(E) \times c_{i}.
     \end{array}
 \end{align}
@@ -1081,8 +1088,8 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{example}
  如果有两条或多条知识支持同一结论$H$, 即
  \begin{align}
-    &\textup{IF \,\,  E \,\,  THEN}   \,\, H={h_1, h_2, \cdots , h_n};\,\,  CF={c_{11}, c_{12}, \cdots , c_{1n}};\\
-    &\textup{IF \,\,  E \,\,  THEN}  \,\,  H={h_1, h_2, \cdots , h_n};\,\,  CF={c_{21}, c_{22}, \cdots , c_{2n}}.
+    &\textup{IF \,\,  E \,\,  THEN}   \,\, H={h_1, h_2, \cdots , h_n};\,\,  \textup{CF}=\{c_{11}, c_{12}, \cdots , c_{1n}\};\\
+    &\textup{IF \,\,  E \,\,  THEN}  \,\,  H={h_1, h_2, \cdots , h_n};\,\,  \textup{CF}=\{c_{21}, c_{22}, \cdots , c_{2n}\}.
 \end{align}
 则按正交和求$\textup{CER}(H)$, 即先求出:
 \begin{align*}
@@ -1103,22 +1110,20 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
     f(H)=\textup{Bel}(H)+\frac{|H|}{|\Omega|} \times [P_l(H)-\textup{Bel}(H)] = \textup{Bel}(H)+\frac{|H|}{|\Omega|} \times m(\Omega).
 \end{align*}
 
-(3) 求$H$的确定性$\textup{CER}(H)$.
-
-按公式$\textup{CER}(H)=MD(H/E') \times f(H)$计算结论$H$确定性.
+(3) 求$H$的确定性$\textup{CER}(H)$. 按公式$\textup{CER}(H)=MD(H/E') \times f(H)$计算结论$H$确定性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有如下规则:
 \begin{itemize}
-\item $r_1$:  IF\,\,  E1\,\,  AND\,\,  E2\,\,  THEN\,\,  A={a1, a2}\,\,  CF=\{0.3,  0.5\};
-\item $r_2$:  IF\,\,  E3\,\,  AND\,\,  (E4  OR  E5)\,\,  THEN\,\,  B={b1}  CF=\{0.7\};
-\item $r_3$:  IF\,\,  A\,\,  THEN\,\,  H=\{h1, h2, h3\}\,\,  CF=\{0.1, 0.5, 0.3\};
-\item $r_4$:  IF\,\,  B\,\,  THEN\,\,  H=\{h1, h2, h3\}\,\,  CF=\{0.4, 0.2, 0.1\}.
+\item $r_1$:  IF\,\,  $E_1$\,\,  AND\,\,  $E_2$\,\,  THEN\,\,  A={a1, a2}\,\,  \textup{CF}=\{0.3,  0.5\};
+\item $r_2$:  IF\,\,  $E_3$\,\,  AND\,\,  (E4  OR  E5)\,\,  THEN\,\,  B={b1}  \textup{CF}=\{0.7\};
+\item $r_3$:  IF\,\,  A\,\,  THEN\,\,  H=$\{h_1, h_2, h_3\}$\,\,  \textup{CF}=\{0.1, 0.5, 0.3\};
+\item $r_4$:  IF\,\,  B\,\,  THEN\,\,  H=$\{h_1, h_2, h_3\}$\,\,  \textup{CF}=\{0.4, 0.2, 0.1\}.
 \end{itemize}
 
 已知用户对初始证据给出的确定性为:
 \begin{center}
-\textup{CER}($E_1$)=0.8,\,\textup{CER}($E_2$)=0.6,\,\textup{CER}($E_3$)=0.9,\,\textup{CER}($E_4$)=0.5,\,\textup{CER}($E_5$)=0.7.
+    \textup{CER}($E_1$)=0.8,\,\textup{CER}($E_2$)=0.6,\,\textup{CER}($E_3$)=0.9,\,\textup{CER}($E_4$)=0.5,\,\textup{CER}($E_5$)=0.7.
 \end{center}
 并假Ω定中的元素个数$∣\Omega∣=10$, 求: $\textup{CER}(H)=?$
 \end{example}
@@ -1137,33 +1142,33 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 
 (1) 求$\textup{CER}(A)$
 \begin{align*}
-∵ \textup{CER}(E_1\,\, AND\,\,  E_2)&=\min\{\textup{CER}(E_1), \textup{CER}(E_2)\}=\min\{0.8,  0.6\}=0.6.\\
+ \textup{CER}(E_1\,\, AND\,\,  E_2)&=\min\{\textup{CER}(E_1), \textup{CER}(E_2)\}=\min\{0.8,  0.6\}=0.6.\\
    m({a_1}, {a_2})&=\{0.6\times 0.3, 0.6\times 0.5\}=\{0.18, 0.3\}.\\
    \textup{Bel}(A)&=m({a_1})+m({a_2})=0.18+0.3=0.48.\\
    P_l(A)&=1-\textup{Bel}(\neg A)=1-0=1.\\
    f(A)&=\textup{Bel}(A)+|A|/|\Omega| [P_l(A)-\textup{Bel}(A)]=0.48+2/10\times [1-0.48] =0.584.\\
- ∴  \textup{CER}(A)&=MD(A/E')\times f(A)=0.584.
+  \textup{CER}(A)&=MD(A/E')\times f(A)=0.584.
 \end{align*}
 
 (2) 求\textup{CER}(B)
 \begin{align*}
-∵ \textup{CER}(E_3 \,\, AND\,\,  (E_4\,\,  OR\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4),\, \textup{CER}(E_5)\}\}\\
+ \textup{CER}(E_3 \,\, AND\,\,  (E_4\,\,  OR\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4),\, \textup{CER}(E_5)\}\}\\
                            &=\min\{0.9, \max\{0.5, 0.7\}\}=\min\{0.9, 0.7\}=0.7. \\
  m({b_1})&=0.7\times 0.7=0.49.\\
    \textup{Bel}(B)&=m({b_1})=0.49.\\
    P_l(B)&=1-Bel(\neg B)=1-0=1.\\
    F(B)&=\textup{Bel}(B)+|B|/|\Omega|[P_l(B)-\textup{Bel}(B)]\\
        &=0.49+1/10[1-0.49]=0.541.\\
-  ∴ \textup{CER}(B)&=MD(B/E')\times f(B)=0.541.
+ \textup{CER}(B)&=MD(B/E')\times f(B)=0.541.
 \end{align*}
 
 (3) 求$\textup{CER}(H)$, 由$r_3$可得
 \begin{align*}
-  m_1({h_1}, {h_2}, {h_3})&=\{\textup{CER}(A)\times 0.1, \textup{CER}(A)\times 0.5, \textup{CER}(A)\times 0.3\}\\
+    m_1({h_1}, {h_2}, {h_3})&=\{\textup{CER}(A)\times 0.1, \textup{CER}(A)\times 0.5, \textup{CER}(A)\times 0.3\}\\
                       &=\{0.584\times 0.1, 0.584\times 0.5, 0.584\times 0.3\}=\{0.058, 0.292, 0.175\}.
 \end{align*}
 \begin{align*}
-  m_1(\Omega)=1-[m_1({h_1})+m_1({h_2})+m_1({h_3})] =1-(0.058+0.292+0.175)=0.475.
+    m_1(\Omega)=1-[m_1({h_1})+m_1({h_2})+m_1({h_3})] =1-(0.058+0.292+0.175)=0.475.
 \end{align*}
 再由$r_4$可得
 \begin{align*}
@@ -1185,7 +1190,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{align*}
 m\left(h_{1}\right) &=\frac{1}{K} \times\left[m_{1}\left(\left\{h_{1}\right\}\right) \times m_{2}\left(\left\{h_{1}\right\}\right)+m_{1}
        \left(\left\{h_{1}\right\}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(\left\{h_{1}\right\}\right)\right] \\
-&=\frac{1}{0.855} \times[0.058 \times 0.216+0.058 \times 0.622+0.475 \times 0.216].
+                    &=\frac{1}{0.855} \times[0.058 \times 0.216+0.058 \times 0.622+0.475 \times 0.216].
 \end{align*}
 同理可得:
 \begin{align*}
@@ -1195,7 +1200,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 &=0.168.
 \end{align*}
 \begin{align*}
-  m(\Omega )=1-[m({h_1})+m({h_2})+m{(h_3)}]=1-(0.178+0.309+0.168)=0.345.
+    m(\Omega )=1-[m({h_1})+m({h_2})+m{(h_3)}]=1-(0.178+0.309+0.168)=0.345.
 \end{align*}
 
 再根据$m$可得
@@ -1204,7 +1209,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
   P_l(H)&=m(\Omega)+\textup{Bel}(H)=0.345+0.655=1.\\
   f(H) &=\textup{Bel}(H)+\frac{|H|}{|\Omega|} \times[P_l(H)-\textup{Bel}(H)]=0.655+\frac{3}{10} \times[1-0.6555] \\
        &=0.759.\\
-  \textup{CER}(H)&=MD(H/E')\times f(H)=0.759.
+  \textup{CER}(H)&=\textup{MD}(H|E')\times f(H)=0.759.
 \end{align*}
 
 \begin{tcolorbox}[title=\textbf{优点}]
@@ -1222,7 +1227,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 变量“年龄”在普通集合中为数字变量$u=[0, 150]$, 而在模糊集和中可使用语言变量, 该语言变量的取值可以是年轻、很年轻、不很年轻、老、很老、不很老等. 这些值可看作是论域$U=[0, 150]$上模糊集的集合名.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{模糊谓词}
+\subsection{模糊谓词}
 设$x\in U$, $F$为模糊谓词, 即$U$中的一个模糊关系, 则模糊命题可表示为
  \begin{align}
         x\,\,  \textup{is} \,\, F,
@@ -1236,13 +1241,14 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 \item 很少有成绩好的学生特别贪玩.
 \end{itemize}
 
-模糊概率、模糊可能性和模糊真值
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{模糊概率、模糊可能性和模糊真值}
 
-设$\lambda$为模糊概率, π为模糊可能性, $\tau$为模糊真值, 则对命题还可以附加概率限定、可能性限定和真值限定:
+设$\lambda$为模糊概率, $\prod$为模糊可能性, $\tau$为模糊真值, 则对命题还可以附加概率限定、可能性限定和真值限定:
 \begin{align}
     (x\,\,  \textup{is}\,\,   F) \,\,  \textup{is}\,\,   \lambda     (x\,\,   \textup{is}\,\,   F) \,\,  \textup{is} \,\, \prod     \,\,   (x \,\,  \textup{is}\,\,   F) \,\,  \textup{is} \,\,  \tau,
 \end{align}
-其中, $\lambda$可以是“或许”、“必须”等; π可以是“非常可能”、“很不可能”等; τ可以是“非常真”、“有些假”等.
+其中, $\lambda$可以是“或许”、“必须”等; $\prod$可以是“非常可能”、“很不可能”等; $\tau$可以是“非常真”、“有些假”等.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 “常青很可能是年轻的”可表示为
@@ -1269,7 +1275,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 
 \ding{174} 扩张  表示“有些”、“稍微”等, 其效果是增加隶属函数的值:
 \begin{align*}
-    \mu_{\textup{有些}F}(u)=\mu_{F}^{\frac{1}{2}}(u), u \in[0,1].
+    \mu_{\textup{有些}F}(u)=\mu_{F}^{\frac{1}{2}}(u),\, u \in[0,1].
 \end{align*}
 
 \ding{175} 加强对比  表示“明确”、“确定”等, 其效果是增加0.5以上隶属函数的值, 减少0.5以下隶属函数的值:
@@ -1320,8 +1326,8 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 \begin{example}
 设论域$U=\{-10, 0, 10, 20, 30\}$表示温度, 模糊集
 \begin{align*}
-    F&= 0.8/-10+0.5/0+0.1/10;\\
-    G&=0.9/-10+0.6/0+0.2/10.
+    F&= 0.8/(-10)+0.5/0+0.1/10;\\
+    G&=0.9/(-10)+0.6/0+0.2/10.
 \end{align*}
 分别表示“冷”和“比较冷”, 则
 \begin{align*}
@@ -1369,7 +1375,7 @@ $R_m$是由扎德提出的一种构造模糊关系的方法.设$F$和$G$分别�
 \end{align}
 其中, $\times$号表示模糊集的笛卡尔乘积.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}\label{AIFuzzyexamp612}
+\begin{example}\label{AIFuzzyexamp654}
  设$U=V=\{1,2,3\}$, $F$和$G$分别是$U$和$V$上的两个模糊集, 且$F=1/1+0.6/2+0.1/3,G=0.1/1+0.6/2+1/3$, 求$U\times V$上的 $R_m$.
 \begin{align*}
     R_{m}=\int_{U \times V}\left(\mu_{F}(u) \wedge \mu_{G}(v)\right) \vee\left(1-\mu_{F}(u)\right) /(u, v).
@@ -1393,13 +1399,14 @@ $R_c$是由玛达尼(Mamdani)提出的一种构造模糊关系的方法.
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-对例 \ref{AIFuzzyexamp612} 所给出的模糊集
+对例 \ref{AIFuzzyexamp654} 所给出的模糊集
 \begin{align*}
-    F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
+    F=1/1+0.6/2+0.1/3,\, G=0.1/1+0.6/2+1/3,
 \end{align*}
 其$R_c$为
 \begin{align*}
-    R_{c}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {0.6} & {0.6} \\ {0.1} & {0.1} & {0.1}\end{array}\right],
+    R_{c}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\
+    {0.1} & {0.6} & {0.6} \\ {0.1} & {0.1} & {0.1}\end{array}\right],
 \end{align*}
 \vspace{-0.2cm}
 \end{example}
@@ -1424,13 +1431,14 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-对例 \ref{AIFuzzyexamp612} 所给出的模糊集
+对例 \ref{AIFuzzyexamp654} 所给出的模糊集
 \begin{align*}
     F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
 \end{align*}
 其$R_g$为
 \begin{align*}
-    R_{g}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\ {0.1} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
+    R_{g}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\
+    {0.1} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
 \end{align*}
 \vspace{-0.3cm}
 \end{example}
@@ -1462,11 +1470,11 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \paragraph{模糊推理的基本方法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-  对例4.19所给出的$F$、$G$, 以及所求出的$R_m$, 设有已知事实: $\{x\,\, \textup{is}\,\, \textup{较小}\}$, 并设“较小”的模糊集为: 较小=1/1+0.7/2+0.2/3, 求在此已知事实下的模糊结论.
+  对例 \ref{AIFuzzyexamp654} 所给出的$F$、$G$, 以及所求出的$R_m$, 设有已知事实: $\{x\,\, \textup{is}\,\, \textup{较小}\}$, 并设“较小”的模糊集为: 较小=1/1+0.7/2+0.2/3, 求在此已知事实下的模糊结论.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
-本例的模糊关系$R_m$已在例6.12中求出, 设已知模糊事实“较小”为$F'$, $F'$与$R_m$的合成即为所求结论$G'$.
+本例的模糊关系$R_m$已在例 \ref{AIFuzzyexamp654} 中求出, 设已知模糊事实“较小”为$F'$, $F'$与$R_m$的合成即为所求结论$G'$.
 \begin{align*}
 G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \left[
@@ -1482,7 +1490,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \subparagraph{模糊拒取式推理}
 设$F$和$G$分别是$U$和$V$上的两个模糊集, 且有知识
 \begin{align*}
-    \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G
+    \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G.
 \end{align*}
 
 若有$V$上的一个模糊集$G'$, 且$G$可以和$G'$匹配, 则可以推出$x\,\,\textup{is} \,\,  F'$, 且$F'$是$U$上的一个模糊集.这种推理模式称为\textbf{模糊拒取式推理}, 其表示形式为:
@@ -1494,7 +1502,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \end{align*}
 在这种推理模式下, 模糊知识
 \begin{align*}
-  \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G;
+    \textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\, G;
 \end{align*}
 也表示在$F$与$G$之间存在着确定的因果关系, 设此因果关系为$R$, 则有
 \begin{align*}
@@ -1546,7 +1554,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
    &\textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   y\,\,  \textup{is} \,\,G\\
    &\textup{IF}\,\,   y \,\, is \,\, G \,\, \textup{THEN}\,\,   z\,\,  \textup{is} \,\,H\\
    &------------\\
-   &\textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   z\,\,  \textup{is} \,\,H\\
+   &\textup{IF}\,\,   x \,\, is \,\, F \,\, \textup{THEN}\,\,   z\,\,  \textup{is} \,\,H.
 \end{align*}
 
 在模糊假言三段论推理模式下, 模糊知识
@@ -1579,22 +1587,54 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \begin{result}
     先求$E\times F$上的关系$R_1$
 \begin{align*}
-    R_{1}=\left[\begin{array}{ccc}{0.8} & {0.5} & {0.1} \\ {1} & {0.5} & {0.1} \\ {1} & {1} & {0.1}\end{array}\right].
+    R_{1}=\left[
+    \begin{array}{ccc}
+     {0.8} & {0.5} & {0.1} \\
+     {1} & {0.5} & {0.1} \\
+     {1} & {1} & {0.1}
+    \end{array}
+    \right].
 \end{align*}
 
 再求$E\times G$上的关系$R_2$
 \begin{align*}
-    R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {1} \\ {0.2} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
+    R_{2}=\left[
+    \begin{array}{ccc}
+        {0.2} & {0.6} & {1} \\ {0.2} & {1} & {1} \\ {1} & {1} & {1}
+    \end{array}\right].
 \end{align*}
 
 最后求$E\times F\times G$上的关系$R$
 \begin{align*}
-    R=R_{1} \circ R_{2}=\left[\begin{array}{ccc}{0.2} & {0.6} & {0.8} \\ {0.2} & {0.6} & {1} \\ {0.2} & {1} & {1}\end{array}\right].
+    R=R_{1} \circ R_{2}=\left[
+    \begin{array}{ccc}
+        {0.2} & {0.6} & {0.8} \\ {0.2} & {0.6} & {1} \\ {0.2} & {1} & {1}
+    \end{array}\right].
 \end{align*}
 \end{result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{高阶模糊推理}
+%\section{高阶模糊推理}
 \section{作业}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{think}
+    设$ U=V=\{1, 2, 3, 4, 5\}$且有如下推理规则:
+$$\textup{IF} \,  x  \, \textup{is} \,  \textup{少}\,   \textup{THEN} \,  y  \, \textup{is}\,  \textup{多}$$
+其中, “少”与“多”分别是$U$与$V$上的模糊集, 设
+\begin{align*}
+    \textup{少}&=0.9/1+0.7/2+0.4/3.\\
+    \textup{多}&=0.3/3+0.7/4+0.9/5.
+\end{align*}
+已知事实为
+\begin{align*}
+    x\,\,  \textup{is}\,\, \textup{较少}.
+\end{align*}
+“较少”的模糊集为
+\begin{align*}
+    \textup{较少}=0.8/1+0.5/2+0.2/3.
+\end{align*}
+请用模糊关系$R_m$求出模糊结论.
+\end{think}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{think}
  设有如下一组推理规则:
@@ -1602,27 +1642,8 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
     r1:  IF  E1  THEN  E2 (0.6)
     r2:  IF  E2  AND  E3  THEN  E4 (0.7)
     r3:  IF  E4  THEN  H (0.8)
-    r4:  IF  E5  THEN  H (0.9)
+    r4:  IF  E5  THEN  H (0.9),
 \end{Verbatim}
 且已知$\textup{CF}(E1)=0.5$,  $\textup{CF}(E2)=0.6$,  $\textup{CF}(E3)=0.7$.求$\textup{CF}(H)=?$
 \end{think}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{think}
-    设$ U=V=\{1, 2, 3, 4, 5\}$且有如下推理规则:
-$$\textup{IF} \,  x  \, \textup{is} \,  \textup{少}\,   \textup{THEN} \,  y  \, \textup{is}\,  \textup{多}$$
-其中, “少”与“多”分别是$U$与$V$上的模糊集, 设
-\begin{align}
-    \textup{少}&=0.9/1+0.7/2+0.4/3.\\
-    \textup{多}&=0.3/3+0.7/4+0.9/5.
-\end{align}
-已知事实为
-\begin{align}
-    x\,\,  \textup{is}\,\,  \textup{较少}.
-\end{align}
-“较少”的模糊集为
-\begin{align}
-    \textup{较少}=0.8/1+0.5/2+0.2/3.
-\end{align}
-请用模糊关系$R_m$求出模糊结论.
-\end{think}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

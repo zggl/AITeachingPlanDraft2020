@@ -430,7 +430,7 @@
 \contentsline {subsection}{\numberline {6.3.2}CF模型}{380}{subsection.6.3.2}% 
 \contentsline {subsection}{\numberline {6.3.3}知识不确定性的表示形式}{380}{subsection.6.3.3}% 
 \contentsline {subsection}{\numberline {6.3.4}可信度的定义与性质}{381}{subsection.6.3.4}% 
-\contentsline {subparagraph}{MB和MD的关系}{381}{subparagraph*.385}% 
+\contentsline {subparagraph}{\textup {MB}和\textup {MD}的关系}{381}{subparagraph*.385}% 
 \contentsline {section}{\numberline {6.4}证据理论}{383}{section.6.4}% 
 \contentsline {subsection}{\numberline {6.4.1}证据不确定性的表示}{383}{subsection.6.4.1}% 
 \contentsline {paragraph}{不确定性的表示}{383}{paragraph*.386}% 
@@ -444,22 +444,22 @@
 \contentsline {section}{\numberline {6.7}DS理论的形式描述}{387}{section.6.7}% 
 \contentsline {subsection}{\numberline {6.7.1}证据理论的推理模型}{393}{subsection.6.7.1}% 
 \contentsline {section}{\numberline {6.8}模糊推理}{403}{section.6.8}% 
-\contentsline {paragraph}{模糊谓词}{403}{paragraph*.391}% 
-\contentsline {paragraph}{模糊量词}{403}{paragraph*.392}% 
+\contentsline {subsection}{\numberline {6.8.1}模糊谓词}{403}{subsection.6.8.1}% 
+\contentsline {paragraph}{模糊量词}{403}{paragraph*.391}% 
+\contentsline {paragraph}{模糊概率、模糊可能性和模糊真值}{403}{paragraph*.392}% 
 \contentsline {paragraph}{模糊修饰语}{403}{paragraph*.393}% 
-\contentsline {subsection}{\numberline {6.8.1}模糊概念的匹配}{404}{subsection.6.8.1}% 
-\contentsline {subsection}{\numberline {6.8.2}模糊推理}{405}{subsection.6.8.2}% 
+\contentsline {subsection}{\numberline {6.8.2}模糊概念的匹配}{404}{subsection.6.8.2}% 
+\contentsline {subsection}{\numberline {6.8.3}模糊推理}{406}{subsection.6.8.3}% 
 \contentsline {paragraph}{模糊关系的构造}{406}{paragraph*.394}% 
 \contentsline {subparagraph}{\textbf {模糊关系$R_m$}}{406}{subparagraph*.395}% 
 \contentsline {subparagraph}{模糊关系$R_c$}{406}{subparagraph*.396}% 
 \contentsline {subparagraph}{模糊关系$R_g$}{407}{subparagraph*.397}% 
 \contentsline {subparagraph}{模糊假言推理}{407}{subparagraph*.398}% 
-\contentsline {subsubsection}{\numberline {6.8.2.1}模糊假言推理举例}{407}{subsubsection.6.8.2.1}% 
+\contentsline {subsubsection}{\numberline {6.8.3.1}模糊假言推理举例}{407}{subsubsection.6.8.3.1}% 
 \contentsline {paragraph}{模糊推理的基本方法}{408}{paragraph*.399}% 
 \contentsline {subparagraph}{模糊拒取式推理}{408}{subparagraph*.400}% 
 \contentsline {subparagraph}{模糊假言三段论推理}{409}{subparagraph*.401}% 
-\contentsline {section}{\numberline {6.9}高阶模糊推理}{411}{section.6.9}% 
-\contentsline {section}{\numberline {6.10}作业}{411}{section.6.10}% 
+\contentsline {section}{\numberline {6.9}作业}{411}{section.6.9}% 
 \contentsline {chapter}{\numberline {第七章\hspace {.3em}}机器学习}{413}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}机器学习}{414}{section.7.1}% 
 \contentsline {subsection}{\numberline {7.1.1}机器学习概述}{414}{subsection.7.1.1}% 
