@@ -1350,7 +1350,7 @@ $F (x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 
     \label{ResidualNND2020202002}
     \vspace{-0.4cm}
 \end{figure}
-网络要学习的是$H (x)$, 那么由于图中$\textup{identity} x$之间跨过了2层, 那么其实相当于拟合的是$F (x)=H (x)-x$, 这就是残差概念的来源, 这是论文里的说法.
+网络要学习的是$H(x)$, 那么由于图中$\textup{identity} x$之间跨过了2层, 那么其实相当于拟合的是$F (x)=H (x)-x$, 这就是残差概念的来源, 这是论文里的说法.
 作者提出的结构打破了传统的神经网络$n-1$层的输出只能给$n$层作为输入的惯例, 使某一层的输出可以直接跨过几层作为后面某一层的输入.
 图 \ref{DRL2020020301} 就是其构造深度残差网络的构思来源图, 一个是56层的网络一个是20层的网络, 从原理上来说其实56层网络的解空间是包括了20层网络的解空间的, 换而言之也就是说, 56层网络取得的性能应该大于等于20层网络的性能的.
 但是从训练的迭代过程来看, 56层的网络无论从训练误差来看还是测试误差来看, 误差都大于20层的网络 (这也说明了为什么这不是过拟合现象, 因为56层网络本身的训练误差都没有降下去).
@@ -1547,7 +1547,8 @@ y[0,0]=& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
 \end{example}
 
 图\ref{TUCon2020020302}经过same卷积计算后图像大小不变.
-图\ref{CNN20161021131748099}卷积计算后图像大小不变. 图\ref{20161021135241205}经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
+图\ref{CNN20161021131748099}卷积计算后图像大小不变. 
+图\ref{20161021135241205}经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1703,15 +1704,15 @@ Swish activation 函数 \cite{Ramachandran2018}
 \href{https://arxiv.org/pdf/1808.00783.pdf}{Exponential Linear Sigmoid SquasHing} \cite{BasiratPeterandRoth2019}.
 
 分段激活函数综合使用了Swish和Sigmoid激活函数, 正部 ELU 使用了Swish, 且在它的负部使用了Sigmoid激活函数.
-对于Swish, Sigmoid改善了信息的流动性, Linear能够避免梯度消失, 这也是设计\href{https://workshops.aapr.at/wp-content/uploads/2019/05/ARW-OAGM19_41.pdf}{ELiSH}的初衷.
+对于Swish, Sigmoid改善了信息的流动性, Linear能够避免梯度消失, 这也是设计 \href{https://workshops.aapr.at/wp-content/uploads/2019/05/ARW-OAGM19_41.pdf}{ELiSH}的初衷.
 \begin{align}
     y (x)=\left\{\begin{array}{ll}
         x /\left (1+e^{-x}\right), & x \geq 0 \\
         \left (e^{x}-1\right) /\left (1+e^{-x}\right), & x<0
     \end{array}\right..
 \end{align}
-
-HardELiSH的负部是HardSigmoid和ELU的乘积, 正部使用了HardSigmoid 和Linear的乘积:
+ 
+HardELiSH的负部是HardSigmoid和ELU的乘积, 正部使用了 HardSigmoid 和 Linear 的乘积:
 \begin{align}
     y (x)=\left\{
     \begin{array}{ll}
@@ -1990,7 +1991,8 @@ $\bullet$ FCN结合不同深度层结果的跳级 (skip)结构. 同时确保鲁�
     \centering
     \includegraphics[width=0.76\textwidth]{FCN-8W640.jpg}
     \caption{完全CNN结构 (FCN-8) \cite{PiramanayagamSaber2018-9591}}\index{FCN-8}
-    \label{FCN-8W640}\vspace{-0.4cm}
+    \label{FCN-8W640}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -2098,7 +2100,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{卷积编译码网络学习语义图形实现水稻自动除草}
-该方法将语义图形用于数据注释并结合高级编译码网络, 实现 \href{https://doi.org/10.3389/fpls.2019.01404}{稻田中自动作物行和杂草检测} (\cite{Adhikari-2019}, 2019.10), 介绍如下:
+该方法将语义图形用于数据注释并结合高级编译码网络, 实现 \href{https://doi.org/10.3389/fpls.2019.01404}{稻田中自动作物行和杂草检测} (\cite{Adhikari-2019}, 2019.10), 主要内容如下:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -2152,7 +2154,8 @@ GAS 的整体流程是 如图 \ref{GNNGAS20191216202234}, 模型会从左侧图�
 \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-图卷积的核心思想是希望利用近邻节点的信息进行聚合而生成当前节点的新表征, 这样的节点表示可以进一步用于下游任务. 如果我们直接从核心表达式出发, 跳过推导过程, 其实能更容易地理解. 如下所示为两层图卷积网络之间的传播方法, 它看起来只不过比常规的神经网络多了 $\tilde D$ 与$\tilde A$这几项.
+图卷积的核心思想是希望利用近邻节点的信息进行聚合而生成当前节点的新表征, 这样的节点表示可以进一步用于下游任务. 
+如果我们直接从核心表达式出发, 跳过推导过程, 其实能更容易地理解. 如下所示为两层图卷积网络之间的传播方法, 它看起来只不过比常规的神经网络多了 $\tilde D$ 与$\tilde A$这几项.
 \begin{align}
     H^{ (l+1)}=\sigma\left (\tilde{D}^{-\frac{1}{2}} \tilde{A} \tilde{D}^{-\frac{1}{2}} H^{ (l)} W^{ (l)}\right).
 \end{align}

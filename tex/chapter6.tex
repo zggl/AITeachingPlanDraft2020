@@ -581,7 +581,7 @@ $\Omega$的幂集可包括如下子集:
 %%%%-------------------------------------------------
 \begin{example}
 若定义$2^{\Omega}$上的一个基本函数$m$:
-\begin{align}
+\begin{align}\label{AIC6exam6.17}
   m(\{\emptyset,\textup{红}\},& \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄}\}, \{\textup{红, 白}\}, \{\textup{黄, 白}\}, \{\textup{红, 黄, 白}\})\notag\\
               &=(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2).
 \end{align}
@@ -611,7 +611,7 @@ $\Omega$的幂集可包括如下子集:
 (2) 概率分配函数不是概率
 %%%%-------------------------------------------------%
 \begin{example}
-在例6.5中, $m$符合概率分配函数的定义, 但
+在例 \ref{AIC6exam6.17} 中, $m$符合概率分配函数的定义, 但
 \begin{align*}
     m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
 \end{align*}
@@ -621,31 +621,31 @@ $\Omega$的幂集可包括如下子集:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{信任函数}{1}
-信任函数$Bel: 2^{\Omega}\rightarrow [0,1]$为
+信任函数$\textup{Bel}: 2^{\Omega}\rightarrow [0,1]$为
 \begin{align*}
     \textup{Bel}(A)=\sum_{B \subseteq A} m(B),
 \end{align*}
-其中, $2^\Omega$是$\Omega$的幂集. $Bel$又称为下限函数, $Bel(A)$表示对$A$的总的信任度.
+其中, $2^\Omega$是$\Omega$的幂集. $\textup{Bel}$又称为下限函数, $\textup{Bel}(A)$表示对$A$的总的信任度.
 \end{mydef}
 %%%%-------------------------------------------------
 \begin{example}
 对例6.5有
 \begin{align*}
-  &Bel(\{\textup{红}\})=0.3;\\
-  &Bel(\{\textup{红, 白}\})=m(\{\textup{红}\}) +m(\{\textup{白}\})+ m(\{\textup{红, 白}\})=0.3+0.1+0.2=0.6.
+  &\textup{Bel}(\{\textup{红}\})=0.3;\\
+  &\textup{Bel}(\{\textup{红, 白}\})=m(\{\textup{红}\}) +m(\{\textup{白}\})+ m(\{\textup{红, 白}\})=0.3+0.1+0.2=0.6.
 \end{align*}
 根据定义还可以得到:
 \begin{align*}
 \begin{array}{l}
-\text {\textup{Bel}}(\Phi)=m(\Phi)=0; \\
-\text {\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
+    \text{\textup{Bel}}(\Phi)=m(\Phi)=0; \\
+    \text{\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
 \end{array}
 \end{align*}
 \vspace{-0.2cm}
 \end{example}
 %%%%-------------------------------------------------
 \begin{example}
-对例6.5有
+对例 \ref{AIC6exam6.17}有
 \begin{align*}
   \textup{Bel}(\emptyset ) &= m(\emptyset )=0.\\
 　  \textup{Bel}(\{\textup{红, 黄, 白}\})&=m(\emptyset)+m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})+m(\{\textup{红, 黄}\})\notag\\
@@ -658,7 +658,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{mydef}{似然函数}{1}
 似然函数$P_l: 2^\Omega\rightarrow [0, 1]$为
 \begin{align}
-  P_l(A)=1-Bel(\neg A), A\subseteq \Omega,
+    P_l(A)=1-\textup{Bel}(\neg A), A\subseteq \Omega,
 \end{align}
 其中, $\neg A=\Omega-A$.
 \end{mydef}
@@ -667,9 +667,9 @@ $\Omega$的幂集可包括如下子集:
 似然函数又称为\textbf{不可驳斥函数}或\textbf{上限函数}.由于$Bel(\neg A)$表示对$\neg A$的信任度, 即$A$为假的信任度, 因此, $P_l(A)$表示对$A$为非假的信任度.
 %%%%-------------------------------------------------
 \begin{example}
-以例6.5为例:
+以例 \ref{AIC6exam6.17}为例:
 \begin{align*}
-  P_l(\{\textup{红}\})&=1-\textup{Bel}(\neg \{\textup{红}\})\notag\\
+    P_l(\{\textup{红}\})&=1-\textup{Bel}(\neg \{\textup{红}\})\notag\\
                      &=1-\textup{Bel}(\{\textup{黄, 白}\})\notag\\
                      &=1-(m(\{\textup{黄}\})+m(\{\textup{白}\})+m(\{\textup{黄, 白}\}))=1-(0+0.1+0)=0.9.
 \end{align*}
@@ -679,7 +679,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{example}
 再如:
 \begin{align*}
-    P_l(\{\textup{黄, 白}\})=1-Bel(\neg \{\textup{黄, 白}\})=1-Bel(\{\textup{红}\})=1-0.3=0.7,
+    P_l(\{\textup{黄, 白}\})=1-\textup{Bel}(\neg \{\textup{黄, 白}\})=1-\textup{Bel}(\{\textup{红}\})=1-0.3=0.7,
 \end{align*}
 这里的0.7的含义与上面分析类似.
 \end{example}
@@ -699,7 +699,7 @@ $\Omega$的幂集可包括如下子集:
 \end{align*}
 如果把它推广到一般可得公式:
 \begin{align*}
-  P_l(A)=\sum_{A \cap B \neq \Phi} m(B).
+    P_l(A)=\sum_{A \cap B \neq \Phi} m(B).
 \end{align*}
 证明略.
 
@@ -741,7 +741,7 @@ $\Omega$的幂集可包括如下子集:
 其中, $\textup{Bel}(A)=0$, 说明对$A$无信任;
 再由$P_l(A)=1-\textup{Bel}(\neg A)=1$, 可知$\textup{Bel}(\neg A)=0$, 说明对$\neg A$也没有信任.
 \begin{itemize}
-\item $A[0, 0]$: 说明A为假. 即$\textup{Bel}(A)=0, Bel(\neg A)=1$.
+\item $A[0, 0]$: 说明A为假. 即$\textup{Bel}(A)=0, \textup{Bel}(\neg A)=1$.
 \item $A[1, 1]$: 说明A为真. 即$\textup{Bel}(A)=1, \textup{Bel}(\neg A)=0$.
 \item $A[0.6,1]$: 说明对A部分信任. 即$\textup{Bel}(A)=0.6, \textup{Bel}(\neg A)=0$.
 \item $A[0, 0.4]$: 说明对﹁A部分信任. 即$\textup{Bel}(A)=0, \textup{Bel}(\neg A)=0.6$.
@@ -1006,8 +1006,8 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega), \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align*}
 \begin{aligned}
 f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
-    &=m(\{\textup{红}\})+m(\{\textup{黄}\})+\frac{2}{3} \times ( 1-\textup{Bel}(\neg A)-0.8) \\
-    &=0.6+0.2+\frac{2}{3} \times (1-\textup{Bel}(\neg A)-0.6)\\
+    &=m(\{\textup{红}\})+m(\{\textup{黄}\})+\frac{2}{3} \times ( 1-\textup{Bel}(\neg A)-0.8)) \\
+    &=0.6+0.2+\frac{2}{3} \times (1-\textup{Bel}(\neg A)-0.6))\\
     &=0.6+0.2+\frac{2}{3} \times 0.1=0.87.
 \end{aligned}
 \end{align*}
@@ -1034,7 +1034,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{example}
 设$A$是规则条件部分的命题, $E'$是外部输入的证据和已证实的命题, 在证据$E'$的条件下, 命题$A$与证据$E'$的匹配程度为
 \begin{align}
-  MD\left(A / E^{\prime}\right)=
+  \textup{MD}\left(A / E^{\prime}\right)=
   \left\{
   \begin{array}{l}
   1 \\
@@ -1048,7 +1048,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{mydef}{条件部分命题$A$的确定性}{1}
 条件部分命题$A$的确定性为
 \begin{align}
-  \textup{CER}(A)=MD(A/E')\times f(A),
+  \textup{CER}(A)=\textup{MD}(A/E')\times f(A),
 \end{align}
 其中$f(A)$为类概率函数.
 \end{mydef}
@@ -1160,7 +1160,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 (3) 求$\textup{CER}(H)$, 由$r_3$可得
 \begin{align*}
   m_1({h_1}, {h_2}, {h_3})&=\{\textup{CER}(A)\times 0.1, \textup{CER}(A)\times 0.5, \textup{CER}(A)\times 0.3\}\\
-                      &=\{0.584\times 0.1, 0.584\times 0.5, 0.584\times 0.3\}=\{0.058, 0.292, 0.175\}
+                      &=\{0.584\times 0.1, 0.584\times 0.5, 0.584\times 0.3\}=\{0.058, 0.292, 0.175\}.
 \end{align*}
 \begin{align*}
   m_1(\Omega)=1-[m_1({h_1})+m_1({h_2})+m_1({h_3})] =1-(0.058+0.292+0.175)=0.475.
@@ -1337,7 +1337,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 其中:
 \begin{align*}
 \begin{array}{l}
-F \cdot G=\vee\left(\mu_{F}\left(u_{i}\right) \wedge \mu_{G}\left(u_{i}\right)\right);\\
+F \cdot G=\vee_{U}\left(\mu_{F}\left(u_{i}\right) \wedge \mu_{G}\left(u_{i}\right)\right);\\
 F \odot G=\bigwedge_{U}\left(\mu_{F}\left(u_{i}\right) \vee \mu_{G}\left(u_{i}\right)\right).
 \end{array}
 \end{align*}

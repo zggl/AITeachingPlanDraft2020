@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  15 MAY 2020 09:33
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  15 MAY 2020 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9308,10 +9308,10 @@ File: gif2pnffolder/CNN2016102114165963416.png Graphic file (type bmp)
 <gif2pnffolder/CNN2016102114165963416.png>
  <a4,fr15>
 [458]
-Package mdframed Info: mdframed works in twoside mode on input line 1590.
+Package mdframed Info: mdframed works in twoside mode on input line 1591.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1590.
+(mdframed)              on input line 1591.
 File: figures/20170715175257862.png Graphic file (type bmp)
 <figures/20170715175257862.png>
  [459]
@@ -9410,17 +9410,17 @@ Underfull \vbox (badness 3375) has occurred while \output is active []
  [466]
 File: figures/CNNMLCompare001.JPG Graphic file (type bmp)
 <figures/CNNMLCompare001.JPG>
-Package mdframed Info: mdframed works in twoside mode on input line 1913.
+Package mdframed Info: mdframed works in twoside mode on input line 1914.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1913.
+(mdframed)              on input line 1914.
 Missing character: There is no ™ in font ntx-Regular-tlf-t1!
 
 [467]
-Package mdframed Info: mdframed works in twoside mode on input line 1943.
+Package mdframed Info: mdframed works in twoside mode on input line 1944.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1943.
+(mdframed)              on input line 1944.
 File: figures/CNNMatlabGPU001.JPG Graphic file (type bmp)
 <figures/CNNMatlabGPU001.JPG>
  [468]
@@ -9506,10 +9506,10 @@ File: figures/RNNImage191229001.png Graphic file (type bmp)
 [482]
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
-Package mdframed Info: mdframed works in twoside mode on input line 2294.
+Package mdframed Info: mdframed works in twoside mode on input line 2297.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2294.
+(mdframed)              on input line 2297.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -9523,7 +9523,7 @@ File: figures/RNNImage191229007.png Graphic file (type bmp)
  [483] [484]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2408.
+(mdframed)              on input line 2411.
  [485] [486]
 File: figures/RNNImage191229008.png Graphic file (type bmp)
 <figures/RNNImage191229008.png>
@@ -9545,14 +9545,14 @@ File: figures/RNNAPP2019121500004.PNG Graphic file (type bmp)
 File: figures/RNNAPP2019121500005.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500005.PNG>
  [490]
-Package mdframed Info: mdframed works in twoside mode on input line 2519.
+Package mdframed Info: mdframed works in twoside mode on input line 2522.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2519.
-Package mdframed Info: mdframed works in twoside mode on input line 2525.
+(mdframed)              on input line 2522.
+Package mdframed Info: mdframed works in twoside mode on input line 2528.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2525.
+(mdframed)              on input line 2528.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
  [491]
@@ -9840,10 +9840,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 95771 strings out of 492922
- 2308199 string characters out of 6136750
- 3072330 words of memory out of 5000000
- 96810 multiletter control sequences out of 15000+600000
+ 95772 strings out of 492922
+ 2308213 string characters out of 6136750
+ 3072364 words of memory out of 5000000
+ 96811 multiletter control sequences out of 15000+600000
  742397 words of font info for 373 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,24n,424p,3753b,5380s stack positions out of 5000i,500n,10000p,200000b,80000s
