@@ -1037,7 +1037,7 @@ Tikhonov正则化是在许多不同的工作中独立发现的. 在Andrey Tikhon
 \begin{align}
     \|\bm A\bm x-\bm b\|_{P}^{2}+\|\bm x-\bm x_{0}\|_{Q}^{2}\,
 \end{align}
-其中, 我们使用$\left\|\bm x\right\|_{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$(与Mahalanobis距离比较).
+其中, 我们使用$\left\|\bm x\right\|_{\bm Q}^{2}$表示加权范数$\bm x^{T}\bm Q\bm x$ (与Mahalanobis距离比较).
 
 \begin{remark}
 贝叶斯方法将$\bm P$解释为$\bm b$的逆协方差矩阵, $\bm x_0$是$x$的期望值, 而$\bm Q$是$\bm x$的逆协方差矩阵.
@@ -1462,7 +1462,7 @@ TT2-RVFL 的输出可用下式表示
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TT2-RVFL中的张量逆} \label{Trapezoidsection5-1}
 张量方程 $\mathcal A *_N \mathcal X = \mathcal Y$的张量运算被用于求解 TT2-RVFL网络的权重向量,  该运算非常适合计算TT2-RVFL增强节点部分的权重向量.
-求解方程使用的偶数阶张量的 Moore-Penrose (M-P) 逆可由表 \ref{T2RVFL3:alg1}中的算法中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
+求解方程使用的偶数阶张量的 Moore-Penrose (M-P) 逆可由表 \ref{T2RVFL3:alg1} 中的算法中给出, 在得到M-P逆的基础上, 可以很容易算出权重矩阵.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure} [!htp]
 %    \begin{center}
@@ -2084,47 +2084,47 @@ f(x)=
     \ding{172} 二进制交叉: 二进制交叉(Binary Valued Crossover)是指二进制编码情况下所采用的交叉操作, 它主要包括单点交叉、两点交叉、多点交叉和均匀交叉等方法.
 
     \ding{173} 单点交叉: 单点交叉也称简单交叉, 它是先在两个父代个体的编码串中随机设定一个交叉点, 然后对这两个父代个体交叉点前面或后面部分的基因进行交换, 并生成子代中的两个新的个体. 假设两个父代的个体串分别是:
-\begin{align}
+\begin{align*}
     X&=x_1 x_2 \cdots x_k\, x_{k+1} \cdots x_n\\
     Y&=y_1 y_2 \cdots y_k\,  y_{k+1} \cdots y_n.
-\end{align}
+\end{align*}
 
     随机选择第$k$位为交叉点, 若采用对交叉点后面的基因进行交换的方法, 但点交叉是将X中的$x_{k+1}$到$x_n$部分与$Y$中的$y_{k+1}$到$y_n$部分进行交叉, 交叉后生成的两个新的个体是:
-\begin{align}
+\begin{align*}
     X'&= x_1 x_2 \cdots x_k y_{k+1} \cdots y_n\\
     Y'&= y_1 y_2 \cdots y_k x_{k+1} \cdots x_n.
-\end{align}
+\end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
     设有两个父代的个体串$A=0\, 0\,  1\,  1\,  0\,  1$和$B=1\,  1\,  0\,  0\,  1\,  0$, 若随机交叉点为4, 则交叉后生成的两个新的个体是:
-\begin{align}
+\begin{align*}
     A'= 0\, 0\, 1\, 1\, 1\, 0\\
     B'= 1\, 1\, 0\, 0\, 0\, 1
-\end{align}
+\end{align*}
 \vspace{-0.4cm}
 \end{example}
 
     \ding{174} 两点交叉: 两点交叉是指先在两个父代个体的编码串中随机设定两个交叉点, 然后再按这两个交叉点进行部分基因交换, 生成子代中的两个新的个体.
 
 假设两个父代的个体串分别是:
-\begin{align}
+\begin{align*}
     X&=x_1\, x_2 \cdots x_i \cdots x_j \cdots x_n\\
     Y&=y_1\, y_2 \cdots y_i \cdots y_j \cdots y_n.
-\end{align}
+\end{align*}
 
 随机设定第$i,j$位为两个交叉点(其中$i<j<n$), 两点交叉是将$X$中的$x_{i+1}$到$x_j$部分与$Y$中的$y_{i+1}$到$y_j$部分进行交换, 交叉后生成的两个新的个体是:
-\begin{align}
+\begin{align*}
     X'&= x_1\, x_2 \cdots x_i\, y_{i+1} \cdots y_j\, x_{j+1} \cdots x_n\\
     Y'&= y_1\, y_2  \cdots y_i\, x_{i+1} \cdots x_j\, y_{j+1} \cdots y_n.
-\end{align}
+\end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有两个父代的个体串$A= 0\, 0\,  1\,  1\,  0\,  1$和B=$1\,  1\,  0\,  0\,  1\,  0$, 若随机交叉点为3和5, 则交叉后的两个新的个体是:
-\begin{align}
+\begin{align*}
      A'&= 0 0 1 0 1 1\\
-    B'&= 1 1 0 1 0 0
-\end{align}
+    B'&= 1 1 0 1 0 0.
+\end{align*}
 \vspace{-0.4cm}
 \end{example}
 
@@ -2139,17 +2139,17 @@ f(x)=
 下面以$m=3$为例进行讨论.
 假设两个父代的个体串分别是$$X=x_1 x_2 \cdots x_i \cdots x_j \cdots x_k \cdots x_n$$和$$Y=y_1 y_2 \cdots y_i \cdots y_j \cdots y_k \cdots y_n,$$
 随机设定第$i,j,k$位为三个交叉点(其中$i<j<k<n$), 则将构成两个交叉段. 交叉后生成的两个新的个体是:
-\begin{align}
-  X'&= x_1 x_2 \cdots x_i  y_{i+1} \cdots y_j x_{j+1} \cdots x_k y_{k+1} \cdots y_n\\
-  Y'&= y_1 y_2 \cdots y_i x_{i+1} \cdots x_j y_{j+1} \cdots y_k x_{k+1} \cdots x_n.
-\end{align}
+\begin{align*}
+  X'&= x_1 x_2 \cdots x_i  \,\,y_{i+1} \cdots y_j \,\,x_{j+1} \cdots x_k \,\,y_{k+1} \cdots y_n\\
+  Y'&= y_1 y_2 \cdots y_i\,\, x_{i+1} \cdots x_j\,\, y_{j+1} \cdots y_k \,\,x_{k+1} \cdots x_n.
+\end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设有两个父代的个体串$A= 0\, 0\, 1\, 1\, 0\, 1$和$B= 1\, 1\, 0\, 0\, 1\, 0$, 若随机交叉点为1、3和5, 则交叉后的两个新的个体是:
-\begin{align}
-    &A'= 0\, 1\, 0\, 1\, 0\, 0\\
-    &B'= 1\, 0\, 1\, 0\, 1\, 1
-\end{align}
+\begin{align*}
+    &A'= 0\,\, 1\, 0\,\, 1\, 0\,\, 0\\
+    &B'= 1\,\, 0\, 1\,\, 0\, 1\,\, 1.
+\end{align*}
 \vspace{-0.4cm}
 \end{example}
 
@@ -2179,10 +2179,10 @@ f(x)=
 \end{example}
 
 以部分离散交叉为例, 假设两个父代个体的$n$维实向量分别是 $X=x_1x_2\cdots x_i\cdots x_k\cdots x_n$和$Y=y_1 y_2\cdots y_i \cdots y_k \cdots y_n$, 若随机选择对第$k$个分量以后的所有分量进行交换, 则生成的两个新的个体向量是:
-\begin{align}
+\begin{align*}
   &X'= x_1 x_2 \cdots x_k\,\, y_{k+1} \cdots y_n\\
   &Y'= y_1 y_2 \cdots y_k\,\, x_{k+1} \cdots x_n.
-\end{align}
+\end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -2598,7 +2598,7 @@ $S_{24}$=11110\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
-    有种遍历搜索空间的方法被称为繁殖的过程, 这种方法与神经进化所使用的遗传编码密切相关.
+    遍历搜索空间的一种方法被称为繁殖的过程, 这种方法与神经进化所使用的遗传编码密切相关.
     通常通过突变或重组基因组来创造新的基因组, 新的基因组也继承了旧的基因组.
     突变让后代基因组探索人工神经网络新的结构、权重和超参数. 重组基因组本质上是将两个基因组及其独特的特征合并.
 突变与遗传编码紧密相关, 因为神经网络的参数只能突变到以遗传编码表示的程度. 因此, 为神经进化算法定义突变有以下三种情况.
@@ -2611,7 +2611,7 @@ $S_{24}$=11110\\
     神经进化算法可以对低适应度基因组使用较大的突变, 对高性能基因组使用微小的突变.
 \end{example}
 
-3) 突变采用何种方式. 是定向还是随机?
+3) 突变采用何种方式, 是定向还是随机?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -3071,7 +3071,7 @@ Shifted Rotated  Rastrigin&  -&  -&  -330 &  $x\in [-5,5]^N$\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{经典函数仿真实例}
-基于两种新自适应趋药阶段步长方案和第三节 AQBFA, 提出了两种新细菌觅食算法的改进AQBFA模型(IAQBFA 和 FAQBFA). IAQBFA 和 FAQBFA 是使用式\eqref{IAQBFA} 和 \eqref{FAQBFA}自适应趋药阶段步长方案的改进型 AQBFA. 本节给出了 IAQBFA、FAQBFA、 QBFA、 IBFA 以及FIBFA (Nasir et al. 2015)的比较结果. 算法中使用的参数设置为 $N_b=50, N_c=100, N_s=N_{re}=4, N_{ed}=2$和 $P_{ed}=0.25$. 自适应趋药阶段步长采用式\eqref{IAQBFA} 和式\eqref{FAQBFA}, 参数设定为 $\alpha=2$, $c_{\min}=6E-3$, $k_1=1E-2$和 $\beta=0.2$. SDA 的参数为$\alpha_1=\beta_1=0.67$.
+基于两种新自适应趋药阶段步长方案和第三节 AQBFA, 提出了两种新细菌觅食算法的改进AQBFA模型(IAQBFA 和 FAQBFA). IAQBFA 和 FAQBFA 是使用式 \eqref{IAQBFA} 和 \eqref{FAQBFA}自适应趋药阶段步长方案的改进型 AQBFA. 本节给出了 IAQBFA、FAQBFA、 QBFA、 IBFA 以及FIBFA (Nasir et al. 2015)的比较结果. 算法中使用的参数设置为 $N_b=50, N_c=100, N_s=N_{re}=4, N_{ed}=2$和 $P_{ed}=0.25$. 自适应趋药阶段步长采用式 \eqref{IAQBFA} 和式 \eqref{FAQBFA}, 参数设定为 $\alpha=2$, $c_{\min}=6E-3$, $k_1=1E-2$和 $\beta=0.2$. SDA 的参数为$\alpha_1=\beta_1=0.67$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{经典测试函数}
 为了测试五种算法的性能, 本节挑选了两类测试函数集, 基本测试函数集和  CEC05 测试函数集.基本测试函数集 (Yao et al. 1999) 和  CEC05 基本测试函数集 (Suganthan et al. 2005) 具体内容见表 \ref{tab:test2} 和表 \ref{Tab:CEC05}. 这两类测试函数及被广泛用于进化计算领域算法的适应值精度和收敛速度 (Chen et al. 2014; Xu 并且 Chen 2014; Nasir et al. 2015).
@@ -3679,8 +3679,8 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 20世纪70年代中期, 中国开始引进模糊数学.
 80年代在理论研究和应用研究方面都非常活跃并取得了大量研究成果, 主要代表人物有著名数学家汪培庄、张文修、蒲保明、刘应明、王国俊等教授.
 1988年, 汪培庄教授及其指导的几名博士生研制成功一台模糊推理机——分立元件样机, 它的推理速度为1500万次/秒; 这表明中国在突破模糊信息处理难关方面迈出了重要的一步, 确实是一项了不起的研究成果.
-2005年, 中国科学院院士刘应明教授((1940.10.8-2016.7.15), 福建福州人, 数学家, 中国科学院院士.
-主要从事拓扑学与不确定性(主要是模糊性)数学处理等方面的教学与科学研究. 被誉为“中国的查德(模糊数学奠基人)")获国际模糊系统协会(IFSA)授予“Fuzzy Fellow”称号, 他是作为首位非发达国家学者获此殊荣的.
+2005年, 中国科学院院士刘应明教授(1940.10.8-2016.7.15, 福建福州人, 数学家, 中国科学院院士.
+主要从事拓扑学与不确定性(主要是模糊性)数学处理等方面的教学与科学研究. 被誉为“中国的查德") 获国际模糊系统协会 (IFSA) 授予“Fuzzy Fellow”称号, 他是作为首位非发达国家学者获此殊荣的.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -3764,16 +3764,16 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 在这种表示方法中, 当某个$u_i$对$F$的隶属度等于$0$时, 可省略不写.
 \begin{example}
     前面例 \ref{AIC5Fuzzyexam551} 的模糊集$F$可表示为:
-    \begin{align}
+    \begin{align*}
         F=1 / 20+0.8 / 30+0.6 / 40+0.2 / 50.
-    \end{align}
+    \end{align*}
     有时, 模糊集也可写成如下两种形式:
-    \begin{align}
+    \begin{align*}
         \begin{array}{l}
             F=\left\{\mu_{F}\left(u_{1}\right) / u_{1}, \mu_{F}\left(u_{2}\right) / u_{2}, \cdots, \mu_{F}\left(u_{n}\right) / u_{n}\right\},\\
             F=\left\{\left(\mu_{F}\left(u_{1}\right), u_{1}\right),\left(\mu_{F}\left(u_{2}\right), u_{2}\right), \cdots,\left(\mu_{F}\left(u_{n}\right), u_{n}\right)\right\},
         \end{array}
-    \end{align}
+    \end{align*}
 其中, 前一种称为单点形式, 后一种称为序偶形式.
 \end{example}
 
@@ -3784,14 +3784,14 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 扎德以年龄为论域, 取$U=[0, 100]$, 给出了“年轻”与“年老”这两的模糊概念的隶属函数
-\begin{align}
+\begin{align*}
 \begin{array}{ll}
 {\mu_{\textup{老}}(u)=\left\{\begin{array}{ll}{0,} & { 0 \leq u \leq 50} \\
 {\left[1+\left(\frac{5}{u-50}\right)^{2}\right]^{-1},} & {50<u \leq 100}\end{array}\right.} \\
  {\mu_{\textup{年轻}}(u)=\left\{\begin{array}{ll}{1,} & {0 \leq u \leq 25} \\
  {\left[1+\left(\frac{u-25}{5}\right)^{2}\right]^{-1},} & { 25<4 \leq 100}\end{array}\right.}
  \end{array}
-\end{align}
+\end{align*}
 \end{example}
 
 (3) 一般表示方法
@@ -3901,7 +3901,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{example}
 设有一组学生$U=\{u_1,u_2\}=$\{秦学, 郝玩\}, 一些在计算机上的活动$V={v_1,v_2,v_3}=$\{编程, 上网, 玩游戏\},
 并设每个学生对各种活动的爱好程度分别为 $\mu_{F}\left(u_{i}, v_{j}\right),\, i=1,2; j=1,2,3$, 即
-\begin{align}
+\begin{align*}
   \mu_{R}(u_i,v_j)=
   \mu_{R}
   \left\{
@@ -3910,11 +3910,11 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
     (u_2,v_1),&(u_2,v_2),&(u_2,v_3),
   \end{array}
   \right.
-\end{align}
+\end{align*}
 则$U\times V$上的模糊关系R为
-\begin{align}
+\begin{align*}
     R=\left[\begin{array}{lll}{0.9} & {0.6} & {0} \\ {0.2} & {0.3} & {0.8}\end{array}\right].
-\end{align}
+\end{align*}
 \vspace{-0.4cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3983,6 +3983,10 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \end{custom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{custom}[explorecolor]{探索}
+    用遗传算法及其变种求表 \ref{tab:test2} 和 \ref{Tab:CEC05} 的最值.
+\end{custom}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{custom}[explorecolor]{探索}
 设有论域$U=\{u_1, u_2, u_3, u_4, u_5\}$, 并设$F,\, G$是$U$上的两个模糊集, 且有
 \begin{align*}
     F&=0.9/u_1+0.7/u_2+0.5/u_3+0.3/u_4\\
@@ -4037,7 +4041,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{enumerate}
 \item 试将感知机学习算法用C语言编成程序, 并做下述的 $n$维随机矢量$\mbox{X}=[x_{1} ,x_{2} ,\cdots ,x_{n} ]^{T}$的二值分类的模拟实验：
 	\begin{enumerate}
-	\item 用程序产生M个均值为0, 方差为1的正态随机矢量(取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots, M$; 
+	\item 用程序产生M个均值为0, 方差为1的正态随机矢量(取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots, M$;
 每个$x_{i} (k)$为服从$N(0,1)$分布的随机变量). 要求产生三组矢量 (分别取M$=$10,20,30), 分别用每组矢量训练一个感知机模型. 对于每个训练矢量 $\mbox{X}(k)$, 给定其理想输出为
 $d(k)=
 \left\{
