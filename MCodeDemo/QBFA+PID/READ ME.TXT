@@ -1,0 +1,125 @@
+QBFA£º
+PIDSim£ºPID control using QBFA for automatic voltage regulator system 
+myqbfa: main function for QBFA
+PID_AVR: PID implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------
+%-------High  Dimensional Unimodal Benchmark Functions
+%--------------------------------------------------------------------------
+case 1
+    %    Sphere Model:min(f(0,...,0))=0;time=;
+    %   f_{1}(x)=\sum_{i=1}^{30}(x_i^2)%x_i\in [-100,100]
+case 2
+    %    schwefel's Problem 2.22:min(f(0,...,0))=0;time=;
+    %   f_{2}(x)=\sum_{i=1}^{30}abs(x_i)+\prod_{i=1}^{30}abs(x_i)
+    %   x_i\in [-10,10]
+case 3
+%   schwefel's Problem 1.2:x_i\in [-100,100],min(f(0,...,0))=0;y=0,pbest=[0,0]
+%   f_{3}(x)=\sum_{i=1}^{30}(\sum_{j=1}^{i}(x_j))^2;time=;
+case 4
+    %   schewfel's problem 2.21:x_i\in [-100,100],min(f(0,...,0))=0;time=;
+    %   f_{4}(x)=\max(abs(x_i))
+case 5
+    %   generalized Rosenbrock's Function
+    %   :x_i\in [-30,30],min(f(1,...,1))=0;time=
+    %   f_{5}(x)=\sum_{i=1}^{29}(100(x_{i+1}-x_i)+(x_i-1)^2)
+case 6       
+    %   Step function: $x_i\in (-100,100),min(f([-0.5,0.5],...,1-0.5,0.5]))=0;$
+case 7
+    %   Quartic Function i.e. Noise:x_i\in [-1.28,1.28],min(f(0,...,0))=0;
+    %   f_{7}(x)=\sum_{i=1}^{30}(i x_^4_i)+random[0,1]%
+%--------------------------------------------------------------------------
+%-------High  Dimensional Multimodal Benchmark Functions
+%--------------------------------------------------------------------------
+case 8
+    %   $f_8(x)=-\sum_{i=1}^{30}:x_i\in [-500,500],(x_i...
+    %   \sin(\sqrt{|x_i|}));minf(x_i)=-12569.5,x_i=420.9687;time=;$
+    %   minf =-418.9829n
+case 9
+    %   Generalized Rastrigin's Function
+    %   x_i\in [-5.12,5.12],min(f(0,...,0))=0;ok
+    %   f_{9}(x)=-\sum_{i=1}^{30}(x_i^2-10 cos(2*pi x_i+10);
+case 10
+    %   Ackley's Function:min(f(0,...,0))=0;time=;
+    %   f_{10}(x)=-20 \exp(-0.2\sqrt{\frac{1}{30}\sum_{i=1}^{30}{x_i^2}}-\exp(\frac{1}{30}\sum_{i=1}^{30}\cos{2\pi x_i})+20+e
+case 11
+    %   Griewank function         
+    %   $f_{11}(x)=\frac{1}{4000}\sum_{i=1}^{30}{x_i^2}-\prod_{i=1}^{30}\cos(\f
+    %   rac{x_i}{\sqrt{i}})+1,min(f(0,...0))=0;$
+case 12
+    %    Generalized Grewank function 1       
+    %   $f_{12}(x)= \frac{\pi}{30}\sum_{i=1}^{29}(y_i-1)^2 [1+10\sin^2(\pi
+    %   y_{i+1})]+(y_n-1)^2 \}\\+\frac{\pi}{3}\sin^2(\pi y_i)+ \sum_{i=1}^{30}u(x_i,10,100,4)$
+    %   min(f(1,...,1))=0;$x_i\in [-50,50]$;
+case 13
+    %   Generalized Grewank function 2       
+    %   $f_{13}(x)= 0.1(sin(3\pi x_1).^2+\sum_{i=1}^{29}(x_i-1)^2(1+sin(3\pi x_{i+1}).^2)+((x_n)^2)(1+sin(2\pi x_{30}).^2))+ \sum_{i=1}^{30}u(x_i,5,100,4)$
+    %   min(f(1,...,1))=0;$x_i\in [-50,50]$;time=;
+%--------------------------------------------------------------------------
+%   Low Dimensional Multimodal Benchmark Functions
+%--------------------------------------------------------------------------
+case 14
+    %   Shekel's Foxholes function:$x_i\in -65.536,65.536,min(f(-32,-32))=0.998;$
+    %   f_{14}(x)=1/500+\Sum_{j=1}^{2}{\frac{5}{j+\Sum_{i=1}^{2}(x_i-a_{ij})^6}};
+    %   a=16*((mod(i,5))-2);b=16*(floor(mod(i,5))-2);
+case 15
+    %   Kawalik's function
+    %   f(0.1928,0.1928,0.1231,0.1358)=0.0003075;x_i\in [-5,5];
+    a=[0.1957,0.1947,0.1735,0.16,0.0844,0.0627,0.0456,0.0342,0.0323,0.235,0.0246];
+    b=1./[0.25,0.5,1,2:2:16];f_value=0;
+    for i=1:11
+        f_value=f_value+(a(i)-(x(:,1).*b(i).*(b(i)+x(:,2)))./(b(i).*(b(i)+x(:,3))+x(:,4))).^2;
+    end
+case 16
+    %   Six-Hump Camel-Back function
+    %   $f_{16}(x)= 4*x_1^2-2.1*x_1^4+x_1^6/3+x_1*x_2-4*x_2^2+4*x_2^4;
+    %   dimension=2;min(f(0.08983,-0.7126))=-1.0316285;time=;$
+    f_value=4*x(:,1).^2-2.1*x(:,1).^4+x(:,1).^6/3+x(:,1).*x(:,2)-4*x(:,2).^2.*(1-x(:,2).^2);
+case 17
+    %   $f_{17}(x)=\frac{x_2-5.1x_1^2}{4 \pi^2}+\frac{5 x_1^2}{\pi-6}+10(1-\frac{1}{8 \pi}cos(x_1))+10;
+    %   x\in [-5,10]*[0,15];time=;$
+    f_value=(x(:,2)-5.1*x(:,1).^2/(4*pi^2)+5*x(:,1)/pi-6).^2+10*(1-1/(8*pi)).*cos(x(:,1))+10;
+case 18
+    %   Goldstein-Price function        
+    %   $f_{18}(x)= ;
+    %   dimension=2;min(f(0,-1))=3$
+    f_value=(1+(x(:,1)+x(:,2)+1).^2.*(19-14*x(:,1)+3*x(:,1).^2-14*x(:,2)+6*x(:,1).*x(:,2)+3*x(:,2).^2))...
+    .*(30+(2*x(:,1)-3*x(:,2)).^2.*(18-32*x(:,1)+12*x(:,1).^2+48*x(:,2)-36*x(:,1).*x(:,2)+27*x(:,2).^2));
+case 19
+    f_value=(x(:,2)-x(:,1)).^2+100.0*(x(:,1)-1).^2;
+case 20
+    %AVR system, pid
+    % beta=0.5;
+    % beta=1;
+    % beta=1.5;
+    for i=1:sizeRow
+        %[Kp,Ki,Kd]=x(i,:);
+        f_value(i)=pid(beta1,x(i,1),x(i,2),x(i,3));
+    end
+end
+
+
+
