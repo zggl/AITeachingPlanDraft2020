@@ -87,35 +87,6 @@
 \caption{特征提取步骤}
 \label{AI32fig2019121501}
 \end{figure}
-
-\textbf{深度学习}: 模仿人脑处理信息的过程——分层处理机制. 底层捕捉输入的“简单"特征, 高层通过组合底层特征从而形成更加复杂抽象化的特征. 深度学习由简到繁, 自动实现特征提取. 深度学习结构如图 \ref{AI32fig2019121502}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{t2019121500002.PNG}
-\caption{深度学习结构}
-\label{AI32fig2019121502}
-\end{figure}
-%%%%---------------------------------------------
-\textbf{工业4.0时代的机器学习}
-
-机器学习属于数据科学范畴，被视为一种涵盖数据处理所有方面的研究，它是人工智能的一个分支，赋予机器自主学习的能力，而不需要人工干预. 机器学习使计算机不需要人工编程，就可以自动化地执行任务.
-
-机器学习的流程如下:
-
-\quad 1. 数据收集: 这是机器学习流程的第一步，也是最重要的一步. 计算机根据问题陈述收集相关数据，这些被收集的数据被称为训练数据，它们应当准确完整，以便解决问题;
-
-\quad 2. 数据预处理: 预处理是为了将采集到的不完整、不一致和错误的数据转换为可行的数据，以便更好地拟合机器学习模型. 在除去了数据集的问题后，数据的特征将被提取出来，并用于模型训练;
-
-\quad 3. 模型构建: 选择适当的机器学习技术来获得预期结果的过程. 机器学习的模型种类很多，总体可分为有监督学习、无监督学习和强化学习三种，不同的技术适合处理的问题不同;
-
-\quad 4. 模型训练与测试: 在确定选择哪种模型之后，预处理的数据集会被分为训练集和测试集两个部分，分别满足训练和测试两种要求. 模型训练指利用机器学习技术将模型评估的误差降到最小，当模型训练完成后，它就被用于测试数据集中进行测试工作，以评估模型的效率和准确性，测试的结果会由一些评价指标进行反映;
-
-\quad 5. 性能评估: 利用交叉验证、参数调整和多种机器学习算法，尝试得到效果更好的算法，或者使用组合方法将多个算法的结果组合起来;
-
-\quad 6. 模型执行: 执行模型输出结果，以便在未来利用模型完成机器学习任务;
-
-由于不同的VUCA战略所要实现的目标不同，这就涉及到了一些具体的机器学习算法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subparagraph{一般性解释}
 学习是一个有特定目的知识获取和能力增长过程, 其内在行为是获得知识、积累经验、发现规律等, 其外部表现是改进性能、适应环境、实现自我完善等.
@@ -207,7 +178,7 @@
     \end{itemize}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{记忆学习}
+\subsection{记忆学习}
 
 记忆学习 (Rote learning)也叫死记硬背学习, 是一种最基本的学习过程, 它没有足够的能力独立完成智能学习, 但对学习系统来说都是十分重要的一个组成部分, 原因是任何学习系统都必须记住它们所获取的知识, 以便将来使用.
 
@@ -225,10 +196,7 @@
 \caption{机械式学习的学习模型}
 \label{AI32fig2702}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%-------------------------------------------------------------------------------
-\section{机械式学习的学习模型}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%--------------------------------------------------------------
 \subsection{归纳学习}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
@@ -237,7 +205,7 @@
 \item 决策树学习是一种以示例为基础的归纳学习方法, 也是目前最流行的归纳学习方法之一. 在现有的各种决策树学习算法中, 影响较大的是ID3算法. 本节主要讨论决策树的概念和决策树学习的ID3算法.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{示例学习的类型}
+\subsection{示例学习}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item 按例子的来源分类
@@ -297,7 +265,7 @@
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%-------------------------------------------------------------------------------
-\section{示例学习的解释方法}
+\subsubsection{示例学习的解释方法}
 是指解释过程从具体示例形成一般性知识所采用的归纳推理方法. 最常用的解释方法有以下4种:
 \begin{itemize}
 \item (1) 把常量转换为变量: 把示例中的常量换成变量而得到一个一般性的规则.
@@ -345,10 +313,11 @@ $\bullet$ 规则1: 花色 ($c_1$, x) $\wedge$ 花色 ($c_2$, x) $\wedge$ 花色 
 
 \item (3)增加选择: 在析取条件中增加一个新的析取项. 包括前件析取法和内部析取法.
 
-\textbf{前件析取法}: 是通过对示例的前件的析取来形成知识的.
+\ding{171} \textbf{前件析取法}: 是通过对示例的前件的析取来形成知识的.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}示例的前件有4个:
+\begin{example}\label{AIC7MLexam7.7}
+示例的前件有4个:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item 点数 ($c_1$, J)$\rightarrow$脸 ($c_1$).
@@ -358,13 +327,13 @@ $\bullet$ 规则1: 花色 ($c_1$, x) $\wedge$ 花色 ($c_2$, x) $\wedge$ 花色 
 
 将各示例的前件进行析取, 就可得到所要求的规则:
 
- $\bullet$ 规则2: 点数 ($c_1, J) \vee$ 点数 ($c_1, Q) \vee$ 点数 ($c_1, K) \rightarrow$ 脸 ($c_1$)
+ $\bullet$ 规则2: 点数 ($c_1, J)\, \vee$ 点数 ($c_1, Q)\, \vee$ 点数 ($c_1, K)\, \rightarrow$ 脸 ($c_1$)
 \end{example}
 
-\textbf{内部析取法}: 是在示例的表示中使用集合与集合的成员关系来形成知识的.
+\ding{171} \textbf{内部析取法}: 是在示例的表示中使用集合与集合的成员关系来形成知识的.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
+\begin{example}\label{AIC7MLexam7.8}
 有如下关于 ``脸牌"的示例:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
@@ -375,13 +344,13 @@ $\bullet$ 规则1: 花色 ($c_1$, x) $\wedge$ 花色 ($c_2$, x) $\wedge$ 花色 
 
 用内部析取法, 可得到如下规则:
 
-$\bullet$ 规则3: 点数$ (c_1)\in {J, Q, K}\rightarrow$脸 ($c_1$).
+$\bullet$ 规则3: 点数$ (c_1)\in \{J, Q, K\}\rightarrow$脸 ($c_1$).
 \end{example}
 \item (4) 曲线拟合: 对数值问题的归纳可采用曲线拟合法.
 \end{itemize}
 假设示例空间中的每个示例$ (x, y, z)$都是输入$x, y$与输出$z$之间关系的三元组.
-\begin{example}
-有下3个点:$ (0, 2, 7), (6, -1, 10), (-1, -5, -16)$, 用最小二乘法进行曲线拟合, 可得$x, y, z$之间关系的规则如下: $\bullet$ 规则4: $z=2x+3y+1$.
+\begin{example}\label{AIC7MLexam7.9}
+有下3个点: $ (0, 2, 7), (6, -1, 10), (-1, -5, -16)$, 用最小二乘法进行曲线拟合, 可得$x, y, z$之间关系的规则如下: $\bullet$ 规则4: $z=2x+3y+1$.
 \end{example}
 %%%%%%-------------------------------------------------
 \begin{remark}
@@ -398,20 +367,23 @@ $\bullet$ 规则3: 点数$ (c_1)\in {J, Q, K}\rightarrow$脸 ($c_1$).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-对示例4、示例5及示例6, 若使用方法 (1) ,则会归纳出如下的错误规则:
+对示例 \ref{AIC7MLexam7.7}、示例 \ref{AIC7MLexam7.8} 及示例  \ref{AIC7MLexam7.9}, 若使用方法 (1) ,则会归纳出如下的错误规则:
 
 规则5: (错误)点数 ($c_1, x)\rightarrow$脸 ($c_1$),
 
 它说明, 归纳过程是很容易出错的.
 \end{example}
 \end{remark}
-
-决策树是一种由节点和边构成的用来描述分类过程的层次数据结构. 该树的根接点表示分类的开始, 叶节点表示一个实例的结束, 中间节点表示相应实例中的某一属性, 而边则代表某一属性可能的属性值.
+%%%%%%%%-------------------------------------------------------------------------------
+\subsubsection{决策树}
+决策树是一种由节点和边构成的用来描述分类过程的层次数据结构. 
+该树的根接点表示分类的开始, 叶节点表示一个实例的结束, 中间节点表示相应实例中的某一属性, 而边则代表某一属性可能的属性值.
 在决策树中, 从根节点到叶节点的每一条路径都代表一个具体的实例, 并且同一路径上的所有属性之间为合取关系, 不同路径 (即一个属性的不同属性值)之间为析取关系.
 决策树的分类过程就是从这棵树的根接点开始, 按照给定的事例的属性值去测试对应的树枝, 并依次下移, 直至到达某个叶节点为止.
 
 图 \ref{AI32fig2704} 是一个非常简单的用来描述对鸟类进行分类的决策树.
-在该图中: 根节点包含各种鸟类, 叶节点是所能识别的各种鸟的名称;  中间节点是鸟的一些属性, 边是鸟的某一属性的属性值;
+在该图中: 根节点包含各种鸟类, 叶节点是所能识别的各种鸟的名称; 
+中间节点是鸟的一些属性, 边是鸟的某一属性的属性值;
 从根节点到叶节点的每一条路径都描述了一种鸟, 它包括该种鸟的一些属性及相应的属性值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -431,7 +403,7 @@ $\bullet$ 规则3: 点数$ (c_1)\in {J, Q, K}\rightarrow$脸 ($c_1$).
 
 决策树学习过程实际上是一个构造决策树的过程. 当学习完成后, 就可以利用这棵决策树对未知事物进行分类.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{ID3算法}
+\subsubsection{ID3算法}
 D3算法是昆兰  (J. R. Quinlan) 于1979年提出的一种以信息熵  (entropy) 的下降速度作为属性选择标准的一种学习算法.
 其输入是一个用来描述各种已知类别的例子集, 学习结果是一棵用于进行分类的决策树.
 
@@ -499,7 +471,7 @@ ID3算法的学习过程:
 \begin{center}
 \begin{tabular} {lccccc}
 \hline
-序号&	属性值	&&&决策方案\\
+序号& \multicolumn{3}{c}{属性值}&决策方案\\
 \hline
 $y_i$&$x_1$&$x_2$&$x_3$\\
 1	&1	&1	&1&	$y_3$\\
@@ -556,7 +528,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 则有:
 \begin{align}
     H (S_1)&= - P_{s1} (y_1)\log_2 P_{s1} (y_1) - P_{s_1} (y_2)\log_2 P_{s1} (y_2 )- P_{s_1} (y_3)\log_2 P_{s_1} (y_3 )\notag\\
-     &= - (1/4)\log_2 (1/4)- (1/4)\log_2 (1/4)- (2/4)\log_2 (2/4) =1.5.
+           &= - (1/4)\log_2 (1/4)- (1/4)\log_2 (1/4)- (2/4)\log_2 (2/4) =1.5.
 \end{align}
 
 再由$S_2$可知:
@@ -565,16 +537,16 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 \end{align}
 则有:
 \begin{align}
-    H (S_2)&=– P_{s_2} (y_2)\log_2 P_{s_2} (y_2 )- P_{s_2} (y_3)\log_2\\
-    P_{s_2} (y_3)&=-\frac 1 4\log_2\left (\frac 1 4\right)- \left (\frac 3 4\right)\log_2\left (\frac 3 4\right) =0.8113.
+    H(S_2)&=– P_{s_2} (y_2)\log_2 P_{s_2} (y_2 )- P_{s_2} (y_3)\log_2 P_{s_2} (y_3)\notag\\
+          &=-\frac 1 4\log_2\left (\frac 1 4\right)- \left (\frac 3 4\right)\log_2\left (\frac 3 4\right) =0.8113.
 \end{align}
 将$H (S_1)$和$H (S_2)$代入条件熵公式, 有:
 \begin{align}
-    H (S|x_1)= (|S_1|/|S|)H (S_1)+ (|S_2|/|S|)H (S_2)=\left (\frac 4 8\right)\times 1.5+\left (\frac 4 8\right)\times 0.8113 =1.1557.
+    H(S|x_1)= (|S_1|/|S|)H (S_1)+ (|S_2|/|S|)H (S_2)=\left (\frac 4 8\right)\times 1.5+\left (\frac 4 8\right)\times 0.8113 =1.1557.
 \end{align}
 同样道理, 可以求得:
 \begin{align}
-    H (S|x_2)=1.1557, H (S|x_3)=0.75.
+    H(S|x_2)=1.1557, H(S|x_3)=0.75.
 \end{align}
 可见, 应该选择属性$x_3$对根节点进行扩展. 用$x_3$对$S$扩展后所得到的得到部分决策树如图 \ref{bufenjueceshu2019112901} 所示.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -611,7 +583,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 至于节点 ``$x_3=2, x_1,x_2$", 其扩展方法与上面的过程类似. 通过计算可知, 该节点对属性$x_1$和$x_2$, 其条件熵均为1.
 由于它对属性$x_1$和$x_2$的条件熵相同, 因此可以先选择$x_1$, 也可以先选择$x_2$, 本例是先选择$x_2$.
 
-依此进行下去, 可得到如图 \ref{bufenjueceshu2019112902} 所示的最终的决策树. 
+依此进行下去, 可得到如图 \ref{bufenjueceshu2019112902} 所示的最终的决策树.
 在该决策树中, 各节点的含义与图 \ref{bufenjueceshu2019112901} 类似.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -620,13 +592,15 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 \caption{最终决策树}
 \label{bufenjueceshu2019112902}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%-------------------------------------------------------------------------------
-\subsection{解释学习的空间描述}
-解释学习涉及三个不同的空间: 例子空间, 概念空间和概念描述空间. 三个空间及它们之间的关系如图 \ref{AI32fig2705} 所示.
+\subsection{解释学习}
+\subsubsection{解释学习的空间描述}
+解释学习涉及三个不同的空间: 例子空间, 概念空间和概念描述空间.
+三个空间及它们之间的关系如图 \ref{AI32fig2705} 所示.
 
 概念描述空间是所有概念描述的集合, 其中的概念描述可分为两大类, 一类是可操作的, 另一类是不可操作的.
-所谓可操作是指一个概念描述能有效的用于识别相应概念的例子. 否则是不可操作的. 解释学习的任务就是要把不可操作的概念描述转化为可操作的概念描述.
+所谓可操作是指一个概念描述能有效的用于识别相应概念的例子. 否则是不可操作的.
+解释学习的任务就是要把不可操作的概念描述转化为可操作的概念描述.
 
 概念空间是学习过程能够描述的所有概念的集合. 例子空间是用于问题求解的例子集合
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -638,7 +612,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%-------------------------------------------------------------------------------
-\subsection{解释学习的模型}
+\subsubsection{解释学习的模型}
 模型组成说明:
 
 1) EXL 为学习系统
@@ -662,7 +636,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%-------------------------------------------------------------------------------
-\subsection{解释学习的基本原理}
+\subsubsection{解释学习的基本原理}
 本节主要讨论米切尔等人提出的解释泛化学习方法.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{解释泛化学习方法-1}
@@ -670,13 +644,13 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 
 其一般性描述为: 已知:
 \begin{itemize}
-\item 目标概念 GC\,  (Goal Concept);
+\item 目标概念 GC\, (Goal Concept);
       \begin{itemize}
-          \item 训练实例 TE\,  (Training Example);
-          \item 领域理论 DT\,  (Domain Theory);
-           \item 操作性标准 OC(Operationality Criterion).
+          \item 训练实例 TE\, (Training Example);
+          \item 领域理论 DT\, (Domain Theory);
+           \item 操作性标准  OC\,(Operationality Criterion).
        \end{itemize}
-\item \textbf{求出}: 满足OC的关于GC的充分概念描述, 其中: 目标概念GC 是要学习概念的描述.
+\item \textbf{求出}: 满足OC的关于GC的充分概念描述, 其中: 目标概念 GC 是要学习概念的描述.
 \end{itemize}
 
 \begin{itemize}
@@ -712,7 +686,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 一旦得到解, 便完成了该问题的证明, 同时也获得了一个解释结构.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
+\begin{example}\label{AIC7exam7.14}
     假设要学习的目标是 ``一个物体$x$可以安全地放置在另一个物体$y$的上面". 即目标概念:
 \begin{center}
     Safe-to-Stack ($x, y$)
@@ -756,7 +730,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
 
 5) 如果$p_1$的重量是$w_1, p_2$的重量是$w_2,w_1$比$w_2$小,  则$p_1$比$p_2$轻.
 
-其证明过程是一个由目标引导的逆向推理, 最终得到的解释树就是该例的解释结构 (如图 \ref{AI32fig2707}).
+其证明过程是一个由目标引导的逆向推理, 最终得到的解释树就是例  \ref{AIC7exam7.14} 的解释结构 (如图 \ref{AI32fig2707}).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -785,7 +759,7 @@ $y_i$&$x_1$&$x_2$&$x_3$\\
                           &\wedge \textup{Is}-a (O_2,\textup{table})\wedge\textup{Smaller} (w_1,5)\rightarrow \textup{Safe-to-stack} (O_1,O_2).
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{浅层神经学习的心理学基础}
+\section{浅层神经学习}
 
 神经生理学研究表明, 人脑的神经元既是学习的基本单位, 同是也是记忆的基本单位. 目前, 关于人脑学习和记忆机制的研究有两大学派:
 \begin{itemize}
@@ -815,7 +789,7 @@ Hebb学习规则在人工神经网络学习中的影响比较大, 但不符合�
 \begin{align}
     w_{i j} (t+1)=w_{i j} (t)+\eta\left[d_{j} (t)-y_{j} (t)\right] x_{i} (t),
 \end{align}
-其中,  $w_{ij} (t)$表示时刻$t$的权值;  $w_{ij} (t+1)$表示对时刻$t$的权值修正一次后所得到的新的权值; $\eta$是一正常量, 也称为学习因子; $y_j (t)$为神经元$j$的实际输出; $d_j (t)$为神经元$j$的希望输出; $d_j (t)-y_j (t)$表示神经元$j$的输出误差; $x_i (t)$为第$i$个神经元的输入.
+其中, $w_{ij} (t)$表示时刻$t$的权值; $w_{ij} (t+1)$表示对时刻$t$的权值修正一次后所得到的新的权值; $\eta$是一正常量, 也称为学习因子; $y_j (t)$为神经元$j$的实际输出; $d_j (t)$为神经元$j$的希望输出; $d_j (t)-y_j (t)$表示神经元$j$的输出误差; $x_i (t)$为第$i$个神经元的输入.
 
  (3) \textbf{竞争学习} 基本思想: 网络中某一组神经元相互竞争对外界刺激模式响应的权力, 在竞争中获胜的神经元, 其连接权会向着对这一刺激模式竞争更为有利的方向发展.
 
@@ -825,12 +799,12 @@ Hebb学习规则在人工神经网络学习中的影响比较大, 但不符合�
 
 单层感知器学习实际上是一种基于纠错学习规则, 采用迭代的思想对连接权值和阈值进行不断调整, 直到满足结束条件为止的学习算法.
 
-假设$X (k)$和$W (k)$分别表示学习算法在第$k$次迭代时输入向量和权值向量, 为方便, 把阈值$\theta$作为权值向量$W (k)$中的第一个分量, 对应地把 ``-1"固定地作为输入向量$X (k)$中的第一个分量. 即$W (k)$和$X (k)$可分别表示如下:
+假设$X (k)$和$W(k)$分别表示学习算法在第$k$次迭代时输入向量和权值向量, 为方便, 把阈值$\theta$作为权值向量$W (k)$中的第一个分量, 对应地把 ``-1"固定地作为输入向量$X (k)$中的第一个分量. 即$W (k)$和$X (k)$可分别表示如下:
 \begin{align}
     X (k)&=[-1, x_1 (k), x_2 (k),\cdots, x_n (k)],\\
     W (k)&=[\theta (k),w_1 (k), w_2 (k),\cdots,w_n (k)];
 \end{align}
-即$x_0 (k)=-1, w_0 (k)=θ (k)$.
+即$x_0 (k)=-1, w_0 (k)=\theta  (k)$.
 
 单层感知器学习是一种有导师学习, 它需要给出输入样本的期望输出.
 
@@ -867,9 +841,7 @@ Hebb学习规则在人工神经网络学习中的影响比较大, 但不符合�
 \begin{result}
 根据 ``与"运算的逻辑关系, 可将问题转换为:
 
-输入向量: $X_1=[0, 0, 1, 1],X_2=[0, 1, 0, 1]$,
-
-输出向量: $Y=[0, 0, 0, 1]$.
+输入向量: $X_1=[0, 0, 1, 1],X_2=[0, 1, 0, 1]$; 输出向量: $Y=[0, 0, 0, 1]$.
 
 为减少算法的迭代次数, 设初始连接权值和阈值取值如下:
 \begin{align}
@@ -883,7 +855,7 @@ Hebb学习规则在人工神经网络学习中的影响比较大, 但不符合�
 设两个输入为$x_1 (0)=0$和$x_2 (0)=0$, 其期望输出为$d (0)=0$, 实际输出为:
 \begin{align*}
 y (0)&=f (w_1 (0)x_1 (0)+ w_2 (0)x_2 (0)-\theta (0))\notag\\
-    &=f (0.5\times 0+0.7\times 0-0.6)=f (-0.6)=0.
+     &=f (0.5\times 0+0.7\times 0-0.6)=f (-0.6)=0.
 \end{align*}
 实际输出与期望输出相同, 不需要调节权值.
 
@@ -1028,6 +1000,13 @@ BP网络学习过程是一个对给定训练模式, 利用传播公式, 沿着�
 \end{align*}
 这说明, 低层节点的$\delta$值是通过上一层节点的$\delta$值来计算的. 这样, 我们就可以先计算出输出层上的$\delta$值, 然后把它返回到较低层上, 并计算出各较低层上节点的$\delta$值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{MultilayerPercepton020201.jpg}
+\caption{多层感知机}
+\label{MultilayerPercepton020201}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{BP网络学习}
 
  (1) 初始化网络及学习参数, 将各节点的连接权值、阈值赋予$[-1, 1]$区间的一个随机数;
@@ -1099,7 +1078,7 @@ Hopfield网络学习的过程实际上是一个从网络初始状态向其稳定
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
 \begin{align}
-E&=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{31}v_3v_1+w_{32}v_3 v_2\big)+ \theta_1 v_1+ \theta_2v_2+ \theta_3v_3\notag\\
+E   &=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{31}v_3v_1+w_{32}v_3 v_2\big)+ \theta_1 v_1+ \theta_2v_2+ \theta_3v_3\notag\\
     &= - (w_{12}v_1v_2+w_{13}v_1v_3+w_{23}v_2v_3)+ \theta_1v_1+\theta_2v_2+\theta_3v_3\notag\\
     &=- (1\times 1\times 0+ (-2)\times 1\times 1+3\times 0\times 1)+ (-1) \times 1+2\times 0+1\times 1\notag\\
     &=2.
@@ -1121,10 +1100,43 @@ E&=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{31}v
 \begin{align}
     y_{i} (t+1)=f\left (\sum_{i=1}^{n} w_{i j} y_{i} (t)\right), \quad 1 \leq j \leq n,
 \end{align}
-其中, 函数$f$为阈值型. 重复这一步骤, 直到新的迭代不能再改变节点的输出为止, 即收敛为止. 这时, 各节点的输出与输入样例达到最佳匹配. 否则 转第 (2)步继续.
+其中, 函数$f$为阈值型. 重复这一步骤, 直到新的迭代不能再改变节点的输出为止, 即收敛为止. 
+这时, 各节点的输出与输入样例达到最佳匹配. 否则 转第 (2)步继续.
 \end{result}
+\textbf{深度学习}: 模仿人脑处理信息的过程——分层处理机制. 
+底层捕捉输入的 “简单" 特征, 高层通过组合底层特征从而形成更加复杂抽象化的特征. 
+深度学习由简到繁, 自动实现特征提取. 深度学习结构如图 \ref{AI32fig2019121502}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{AdaBoost}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.76\textwidth]{t2019121500002.PNG}
+\caption{深度学习结构}
+\label{AI32fig2019121502}
+\end{figure}
+%%%%---------------------------------------------
+\section{工业4.0时代的机器学习}
+
+机器学习属于数据科学范畴，被视为一种涵盖数据处理所有方面的研究，它是人工智能的一个分支，赋予机器自主学习的能力，而不需要人工干预. 
+机器学习使计算机不需要人工编程，就可以自动化地执行任务.
+
+机器学习的流程如下:
+
+\quad 1. 数据收集: 这是机器学习流程的第一步，也是最重要的一步. 计算机根据问题陈述收集相关数据，这些被收集的数据被称为训练数据，它们应当准确完整，以便解决问题;
+
+\quad 2. 数据预处理: 预处理是为了将采集到的不完整、不一致和错误的数据转换为可行的数据，以便更好地拟合机器学习模型. 在除去了数据集的问题后，数据的特征将被提取出来，并用于模型训练;
+
+\quad 3. 模型构建: 选择适当的机器学习技术来获得预期结果的过程. 机器学习的模型种类很多，总体可分为有监督学习、无监督学习和强化学习三种，不同的技术适合处理的问题不同;
+
+\quad 4. 模型训练与测试: 在确定选择哪种模型之后，预处理的数据集会被分为训练集和测试集两个部分，分别满足训练和测试两种要求. 
+模型训练指利用机器学习技术将模型评估的误差降到最小，当模型训练完成后，它就被用于测试数据集中进行测试工作，以评估模型的效率和准确性，测试的结果会由一些评价指标进行反映;
+
+\quad 5. 性能评估: 利用交叉验证、参数调整和多种机器学习算法，尝试得到效果更好的算法，或者使用组合方法将多个算法的结果组合起来;
+
+\quad 6. 模型执行: 执行模型输出结果，以便在未来利用模型完成机器学习任务;
+
+由于不同的VUCA战略所要实现的目标不同，这就涉及到了一些具体的机器学习算法.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{AdaBoost}
 \begin{remark}\index{AdaBoost}
 1989年, 哈佛大学的莱斯利·维利昂特 (Leslie Valiant, 计算学习理论奠基人、2010年ACM图灵奖得主） 和他的学生迈克尔·肯斯 (Michael Kearns, 后来担任贝尔实验室人工智能研究部主任） 提出了一个公开问题: “弱可学习性是否等价于强可学习性? "
 这个问题大致上是说: 如果一个机器学习任务存在着比“随机猜测"略好一点的“弱学习算法", 那么是否就必然存在着准确率任意高 (与该问题的理论上限任意接近）的“强学习算法"?
@@ -1146,7 +1158,7 @@ AdaBoost的算法仅需“十来行代码".  算法和算法修改版能应用�
 机器学习中著名的支持向量机SVM就是通过优化技术来求解出间隔最大的划分超平面, 换一个角度看, 就是试图使样本点相对超平面的“最小间隔"尽可能大.
 在夏柏尔等人的新理论中, AdaBoost的泛化误差界包含一个关于间隔的阈值项$\theta$, 并且$\theta$出现在分母上; 这意味着间隔越大, 泛化误差就可能会越小.
 这个理论漂亮地解释了AdaBoost为什么没有发生过拟合:
-这是因为即便训练误差达到0, 间隔仍有可能增大. 如图\ref{AI32Adboostplane}, 超平面B已经把两类训练样本点完全分开, 其训练误差为0;
+这是因为即便训练误差达到0, 间隔仍有可能增大. 如图 \ref{AI32Adboostplane}, 超平面B已经把两类训练样本点完全分开, 其训练误差为0;
 继续训练可能找到超平面$A$, 训练误差仍为0, 但是$A$的间隔比$B$更大, 所以泛化误差可以进一步减小.
 %%%%%%%----------------------------------------
 \begin{figure}[H]
@@ -1207,7 +1219,7 @@ AdaBoost出现过三个最主要的理论结果,
 \section{深度神经网络——DNN}
 2006年, Hinton利用预训练方法缓解了局部最优解问题, 将隐含层推动到了7层 \cite{Hinton2006-9587}, 神经网络真正意义上有了 ``深度", 由此揭开了深度学习的热潮.
 这里的 ``深度"并没有固定的定义——在语音识别中4层网络就能够被认为是 ``较深", 而在图像识别中常见到20层以上的网络.
-为了克服梯度消失, ReLU、maxout等传输函数代替了sigmoid, 形成了如今DNN的基本形式. 
+为了克服梯度消失, ReLU、maxout等传输函数代替了sigmoid, 形成了如今DNN的基本形式.
 单从结构上来说, 全连接的DNN和图 \ref{MultilayerPercepton020201}的多层感知机是没有任何区别的.
 深度学习与其他算法比较如图 \ref{DNNVSOtherNN}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1232,46 +1244,74 @@ DNN是用了很多浅层神经网络的技巧之外的多层网络, 它能够 ``
 2020年3月, Intel实验室联合美国莱斯大学宣布了一种突破性的深度学习新算法SLIDE.
 SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法) 所基于的矩阵乘法.
 借助SLIDE, CPU用于传统AI模型深度学习训练的效率大大提升.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{DNN1912180.png}
+\caption{DNN的各种结构 (1)}
+\label{DNN191218121500010}
+\end{figure}
+典型的深度神经网络如图 \ref{DNN191225001}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.76\textwidth]{DNN191225001.JPG}
+    \caption{深度神经网络}
+    \label{DNN191225001}
+\end{figure}
+深度学习模型越来越复杂, 如果无法直接在存储中处理数据和模型, 就会对带宽造成巨大堵塞, 对效率产生很大影响.
+这就要求提高边缘端的计算能力, 主要的推进方向有两个:
+一是从神经网络模型的表示、计算、存储和学习等方面, 通过压缩、剪枝和量化等方法来简化模型;
+二是使用专用加速器加速深度学习应用, 将 32位浮点数转换为定点数, 减少延迟, 降低能耗.
+深度学习常用的神经网络算法图  \ref{DNN191218121500010}和图  \ref{DNN191218121500011}.
+CNN相对于DNN, 比较特殊的是卷积层和池化层, 在熟悉DNN的基础上, 理解卷积层和池化层的原理就学会了CNN.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{DNN1912181.png}
+    \caption{DNN的各种结构 (2)}
+    \label{DNN191218121500011}
+    \vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%----------------------------------------------------
+\begin{example}
+    深度学习中的 AlexNet一开始有 8层网络, 约 6000万个参数; 发展到 2014 年的 VGG-19模型, 有 19 层网络, 大概 1.43 亿个参数. 
+\end{example}
+%%%%%%%%%----------------------------------------------------
+深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展.
+深度学习是一种特定形式的机器学习, 训练多层神经网络.
+深度学习在神经网络研究者中间已经被讨论了超过二十年. 最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
+深度学习已经代替了机器学习的地位.
+
 %%%%%%%%----------------------------------------
 \begin{exampleT}
     一套拥有44个Xeon核心的平台和一套由8张NVIDIA Vlta V100加速卡支撑的平台 (TensorFlow框架, 价值10万美元) 执行相同的训练任务, 前者用1小时, 后者用了3.5小时.
 Intel表示, 它们这套平台尚未充分优化, 还是 ``残血"状态, 比如处理器的DLBoost并未启用.
 不过, 这套44核至强平台的CPU型号并未公布, 一说就是22核心44线程的至强铂金6238, 一说是双路至强铂金6238, 还有可能是未发布的产品.
 \end{exampleT}
+%%%%%%%%----------------------------------------
+\begin{exampleT}
+    Github上 \href{https://github.com/zggl/DenseNet}{DenseNet} 的实现方式.
+\end{exampleT}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{MultilayerPercepton020201.jpg}
-\caption{多层感知机}
-\label{MultilayerPercepton020201}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{DNN1912180.png}
-\caption{DNN的各种结构 (1)}
-\label{DNN191218121500010}
-\end{figure}
-Github上\href{https://github.com/zggl/DenseNet}{DenseNet}的其他实现方式.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{Densetransferflag0322.png}
-\caption{Desnenet结构}
-\label{Densetransferflag03220304}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Densetransferflag0322.png}
+    \caption{Desnenet结构}
+    \label{Densetransferflag03220304}
 \end{figure}
 
 使用Matlab中的DNN 设计APP可以很快设计出DNN网络 \ref{DNNDesigner20200304}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.56\textwidth]{DNNDesigner.pdf}
-\caption{Matlab中的DNN 设计APP}
-\label{DNNDesigner20200304}
+    \centering
+    \includegraphics[width=0.6\textwidth]{DNNDesigner.pdf}
+    \caption{Matlab中的DNN 设计APP}
+    \label{DNNDesigner20200304}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{自动机器学习 (AutoML)}
-自动机器学习是将机器学习应用于现实问题的端到端过程自动化的过程. 
+自动机器学习是将机器学习应用于现实问题的端到端过程自动化的过程.
 AutoML 使机器学习真正意义上成为可能, 即使对于在该领域没有专业知识的人也是如此.
 典型的机器学习模型包括以下四个过程 (图 \ref{AutoML2019fig2702}):
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1302,18 +1342,19 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PandaPy
 3、Google Earth Engine – 300多个Jupyter笔记本可分析地理空间数据.
 
 \href{https://github.com/netZoo/netZooM}{netZooM-github}, \href{https://github.com/netZoo/netZooPy}{netZooPy-github},
-\href{https://github.com/DanyWind/fast_neptune}{Fast Neptune库}使我们能够快速记录启动机器学习实验所需的所有信息.
-
-Using PANDA to infer gene regulatory networks
-
-panda.mlx
+\href{https://github.com/DanyWind/fast_neptune}{Fast Neptune库} 使我们能够快速记录启动机器学习实验所需的所有信息.
+%%%%%%%%----------------------------------------
+\begin{exampleT}
+使用 PANDA来构建推理出基因调控网络-panda.mlx
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.46\textwidth]{pandamatlab2020032501.PNG}
-\caption{netZooM (panda工具箱)}
-\label{pandamatlab2020032501}
-\vspace{-0.5cm}
-\end{figure}
+    \centering
+    \includegraphics[width=0.46\textwidth]{pandamatlab2020032501.PNG}
+    \caption{netZooM (panda工具箱)}
+    \label{pandamatlab2020032501}
+    \vspace{-0.5cm}
+\end{figure}  
+\end{exampleT}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{高速公路网络 (Highway network) }
 高速公路网络和深度残差学习 (DRL) 进一步避免了梯度消失, 网络层数达到了前所未有的一百多层 (深度残差学习: 152层) \cite{HeCVPR2016-9590, NIPS2015-5850}.
@@ -1322,10 +1363,10 @@ panda.mlx
     \mathbf{y}=H\left (\mathbf{x}, \mathbf{W}_{\mathbf{H}}\right) \cdot T\left (\mathbf{x}, \mathbf{W}_{\mathbf{T}}\right)+\mathbf{x} \cdot C\left (\mathbf{x}, \mathbf{W}_{\mathbf{C}}\right),
 \end{align}
 其中$\bm y$向量由两项组成. $T$叫做transform gate, $C$叫做carry gate. $C$和$T$的激活函数都是sigmoid函数.
-$T= (b_1, b_2, \cdots, b_n)$,其中每个数字都是$ (0, 1)$之间的浮点数, 代表$y$中由$x$变化后的内容所占的比例;
-$C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$ (0, 1)$之间的浮点数, 代表$y$中由$x$本身内容所占的比例;
- (为了简便起见, 有时候令$C$可以简化, 取$C=1-T$. $\bm 1$代表了维度和$T$向量样长的单位向量).
-需要注意的是, 由于是点乘, 当$C (x,WC)$取了$1-T (x,WT)$之后那么$x,y,H (x,WH),T (x,WT)$必须是同样的维度相容, 以保证可乘.
+$T= (b_1, b_2, \cdots, b_n)$,其中每个数字都是$(0, 1)$之间的浮点数, 代表$y$中由$x$变化后的内容所占的比例;
+$C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点数, 代表$y$中由$x$本身内容所占的比例;
+(为了简便起见, 有时候令$C$可以简化, 取$C=1-T$. $\bm 1$代表了维度和$T$向量样长的单位向量).
+需要注意的是, 由于是点乘, 当$C (x,WC)$取了$1-T (x,WT)$之后那么$x, y, H(x,WH), T(x,WT)$必须是同样的维度相容, 以保证可乘.
 如果我们想更改$x$的维度变成$B$的维度的话, 一种方法是采用填充零和下采样的方法, 或者是引入一个维度为$A*B$的变换矩阵, 使每次都乘上这个矩阵.
 
 高速公路网络就是在输出和网络层之间加了一个连接, 直接让输入$X$的信息直接通过, 不需要通过神经网络层, 跟高速公路一样.
@@ -1342,8 +1383,8 @@ $C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$ (0, 1)$之间的浮点
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{残差网络}
 残差网络用于解决由深度增加而出现错误率增加的情况, 通过拟合残差映射来取代直接的拟合映射.
-将一个底层的映射记作 $H (x)$, 用一个堆叠非线性的映射记作 $F (x) = H (x) - x$, 原始的映射变为$F (x) + x$, 我们假设残差映射的优化易于直接映射, 如果某个恒等的映射是最优的, 那么把残差变为0比非线性层的堆叠更简单.
-$F (x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 快捷连接 是指跨过或者跳过一定的层, 如图 \ref{ResidualNND2020202002}, 在这里短连接正好实现了恒等映射.
+将一个底层的映射记作 $H(x)$, 用一个堆叠非线性的映射记作 $F(x) = H(x) - x$, 原始的映射变为$F(x) + x$, 我们假设残差映射的优化易于直接映射, 如果某个恒等的映射是最优的, 那么把残差变为0比非线性层的堆叠更简单.
+$F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 快捷连接是指跨过或者跳过一定的层, 如图 \ref{ResidualNND2020202002}, 在这里短连接正好实现了恒等映射.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -1352,7 +1393,7 @@ $F (x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 
     \label{ResidualNND2020202002}
     \vspace{-0.4cm}
 \end{figure}
-网络要学习的是$H(x)$, 那么由于图中$\textup{identity} x$之间跨过了2层, 那么其实相当于拟合的是$F (x)=H (x)-x$, 这就是残差概念的来源, 这是论文里的说法.
+网络要学习的是$H(x)$, 那么由于图中$\textup{identity}\,\, x$之间跨过了2层, 那么其实相当于拟合的是$F(x)=H (x)-x$, 这就是残差概念的来源, 这是论文里的说法.
 作者提出的结构打破了传统的神经网络$n-1$层的输出只能给$n$层作为输入的惯例, 使某一层的输出可以直接跨过几层作为后面某一层的输入.
 图 \ref{DRL2020020301} 就是其构造深度残差网络的构思来源图, 一个是56层的网络一个是20层的网络, 从原理上来说其实56层网络的解空间是包括了20层网络的解空间的, 换而言之也就是说, 56层网络取得的性能应该大于等于20层网络的性能的.
 但是从训练的迭代过程来看, 56层的网络无论从训练误差来看还是测试误差来看, 误差都大于20层的网络 (这也说明了为什么这不是过拟合现象, 因为56层网络本身的训练误差都没有降下去).
@@ -1368,13 +1409,96 @@ $F (x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 
 
 在构造这个网络的时候, 如果20层的网络可以取得非常好的结果, 在构造56层网络的时候前20层从20层网络中拷贝过来, 后面的36层只做inentity map至少效果不会差于20层的网络.
 于是乎深度残差的网络就提出了, 这个思想其实不复杂, 说白了打破了每一层网络输入只能来自于上一层网络输出的规律, 可以让一些网络的输出直接跳过几层到达后面的输入.
-这样的网络确实也取得了非常好的效果. 另外要注意的是, 在真正训练的时候, 有几点小技巧要注意:
+这样的网络确实也取得了非常好的效果. 
+%%%%------------------------------------------
+\begin{remark}
+在真正训练的时候, 有几点小技巧要注意:
 
 1、层与层之间使用批量正则化技术, 否则由于网络过深会导致梯度消失的问题, 导致网络训练无法收敛;
 
 2、为了保持每一层网络的参数差不多, 每当经过了池化层输入的维度减少了一般, 那么滤子的个数就要增加一倍.
 
-其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层, 而直接到后面的层中去, 只不过Highway网络需要一个权值来控制每次直接通过的数据量, 而深度残差网络就直接让一部分数据通到了后面.
+其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层, 而直接到后面的层中去, 只不过Highway网络需要一个权值来控制每次直接通过的数据量, 而深度残差网络就直接让一部分数据通到了后面.  
+\end{remark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{深度神经网络轻量化}
+ ``深度学习"的学习模式:  ``深度学习"这个名词其实最主要是针对人工智能领域, 它是指机器的一种学习模式, 与我们平常所指的人类的深度学习是不同的概念.
+\begin{itemize}
+    \item  ``深度学习"是机器学习的一种特定技术, 它是建立在大数据的基础上, 用大数据对机器进行训练, 在机器反馈的过程中不断地纠错.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{example}
+    对于婴孩来说, 我们拿三个不同杯子告诉宝宝, 这是杯子.
+    基本上, 他就知道什么是杯子了. 不管第四个杯子的形状或者图案有什么不同, 但孩子基本已经能够非常清楚地辨别杯子的本质特征.
+    然而, 对于机器来说, 它需要通过足够多的例子,
+    \end{example}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{example}
+    你给它展示一个圆柱形的杯子, 告诉它:  ``这是杯子. "但是当你拿另一个圆形的杯子给它看的时候, 它可能会说这是一个球.
+    所以, 深度学习就是建立在大数据的基础上, 给它看足够多的数据, 直到机器最后总结出杯子的本质特征.
+    \end{example}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item  ``深度学习"技术, 是建立在 ``人工神经网络"上的, 而人工神经网络, 又是来自人类神经生物学的深刻理解和延展.
+    我们人类的神经网络通过神经元的联结来传递和处理信息, 而人工神经网络则是模拟大脑的工作机制.
+    通过研究人类智能的工作机制, 可以模拟出人工智能的工作原理.
+
+    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论, 而且, 机器到底是怎么得出结论的, 我们尚未可知.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{RNNAPP2019121500006.PNG}
+\caption{深度神经网络应用的轻量化}
+\label{RNNAPP2019121500006}\vspace{-0.4cm}
+\end{figure}
+
+网络模型结构改进:
+
+\begin{tcolorbox}[title=MobileNet]
+$\bullet$ 堆叠地使用深度可分离卷积;
+
+$\bullet$ 深度可分离卷积由深度卷积和$1\times 1$的逐点卷积组成.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=ShuffleNet]
+
+$\bullet$ 逐点分组卷积;
+
+$\bullet$ 通道重排 ( channel shuffle);
+
+$\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
+\end{tcolorbox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{RNNAPP2019121500007.PNG}
+    \caption{网络模型参数压缩}
+    \label{RNNAPP2019121500007}\vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
+    \caption{通道重排和ShuffleNet单元}
+    \label{RNNAPP2019121500008}\vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{无限宽度DNN}
+无限宽度DNN会收敛成一类更为简单的模型, 称为高斯过程, 复杂的现象可以被归结为简单的线性代数方程.
+谷歌研究宣称可通过神经正切核使用贝叶斯推理或梯度下降分析式地训练无限宽度的神经网络.
+使用谷歌开源的软件库 (Neural Tangents, \href{www.github.com/google/neural-tangents}{Neural Tangents: Fast and Easy Infinite Neural Networks in Python}),
+过程不仅简单且快速, 而且效果非常好, 甚至只需 5 行代码就能一步到位地构建并训练这种无限宽度网络的集成模型!
+已被 ICLR 2020 接收为 Spotlight论文, 深度学习都已取得了广泛的成功, 仍还有一些有趣而又重要的问题有待解答,
+比如: 为什么即使在过度参数化时, 深度神经网络 (DNN) 也能取得非常好的泛化能力?
+深度网络的架构、训练和性能之间有何关系? 如何提取出深度学习模型中的显著特征?
+一大关键理论见解是: 增加 DNN 的宽度能使 DNN的行为更有规律可循, 也就人更容易理解它们.
+近来的许多研究已经表明, 宽度可无限扩增的 DNN 可以收敛成另一类更为简单的名为「高斯过程的模型.
+因此, 贝叶斯推理与卷积神经网络的梯度下降情况等复杂现象便可约简为简单的线性代数方程.
+从这些无限宽度网络所得到的见解通常也适用于它们对应的有限版本.
+因此, 无限宽度网络可用作研究深度学习的透镜, 而且它们本身也可用作有用的模型.
+\href{https://arxiv.org/abs/1912.02803}{论文地址},
+\href{https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html}{fast-and-easy-infinitely-wide-networks.html},
+\href{https://github.com/google/neural-tangents}{GitHub地址},
+\href{https://colab.research.google.com/github/google/neural-tangents/blob/master/notebooks/neural_tangents_cookbook.ipynb}{Colab地址}.
 %%%%%%%%-------------------------------------------------------------------------------
 \section{卷积神经网络 (Convolutional Neural Networks, CNN)}
 人工神经网络包括多个神经网络层 (卷积层、全连接层和LSTM等) , 每一层又包括很多神经元, 超过三层的非线性神经网络都可以被成为深度神经网络.
@@ -1388,42 +1512,18 @@ $F (x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 
 \textbf{深度学习领域被引最高的论文}:
 神经网络实际上是一个泛逼近器. 用形象点的类比来说, 可以把神经网络视为一个超级大的万能工匠玩具——大量互相连接的节点阵列, 可以训练来完成许多任务, 从语言翻译到识别物体、识别人类讲话.
 作为 ``LSTM 之父"的 Jürgen Schmidhuber 在深度学习领域的贡献仍然获得了整个社区的认可.
-Google Scholar 2019年统计发现:  Hochreiter 和 Schmidhuber 1997 年发表的 LSTM 论文成为了20世纪被引最高的深度学习研究论文 \cite{HochreiterNC1997}.
+Google Scholar 2019年统计发现: Hochreiter 和 Schmidhuber 1997 年发表的 LSTM 论文成为了20世纪被引最高的深度学习研究论文 \cite{HochreiterNC1997}.
 \end{remark}
 
 François Chollet, Keras作者、谷歌大脑高级研究员 François Chollet的观点: 深度学习应该指的是一种表征学习方法, 其中的模型是由一连串的模块组成的 (一般都会堆成一个多层的或者金字塔形的模型, 这也就是「深度」的由来) , 而其中的每一个模块分别拿出来训练之后都可以作为独立的特征提取器. CNN 专门解决图像问题的特征提取.
-\begin{example}
-  如果你有一个卷积网络模型, 然后你用 ADMM 训练它的权重, 它就不是深度学习了吗? 一个自己学习特征的 HMAX 模型就不是深度学习了吗? 甚至于, 用贪婪算法逐层训练的深度神经网络就不是深度学习了吗? 要我说的话, 它们都是深度学习.
-\end{example}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{DNN1912181.png}
-    \caption{DNN的各种结构 (2)}
-    \label{DNN191218121500011}
-    \vspace{-0.4cm}
-\end{figure}
-深度学习中的 AlexNet一开始有 8层网络, 约 6000万个参数; 发展到 2014 年的 VGG-19模型, 有 19 层网络, 大概 1.43 亿个参数, 深度学习模型越来越复杂, 如果无法直接在存储中处理数据和模型, 就会对带宽造成巨大堵塞, 对效率产生很大影响.
-这就要求提高边缘端的计算能力, 主要的推进方向有两个:  一是从神经网络模型的表示、计算、存储、 和学习等方面, 通过压缩、剪枝、量化等方法来简化模型;  二是使用专用加速器加速深度学习应用, 将 32位浮点数转换为定点数, 减少延迟, 降低能耗.
-深度学习常用的神经网络算法图  \ref{DNN191218121500010}-图  \ref{DNN191218121500011}.
-CNN相对于DNN, 比较特殊的是卷积层和池化层, 在熟悉DNN的基础上, 理解卷积层和池化层的原理就学会了CNN.
+\begin{remark}
+    一个卷积网络模型, 用 ADMM 训练它的权重, 或者一个自己学习特征的 HMAX 模型; 甚至于, 用贪婪算法逐层训练的深度神经网络都被认为是深度学习.
+\end{remark}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-深度学习在神经网络研究者中间已经被讨论了超过二十年. 最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
-深度学习是一种特定形式的机器学习, 训练多层神经网络. 深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展. (Stuart Russell: 人工智能基础概念与34个误区.)
-深度学习已经代替了机器学习的地位.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.76\textwidth]{lstm20191229085814.png}
-    \caption{LSTM结构}
-    \label{lstm20191229085814}
-    \vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局部连接, 权重共享和下采样极大降低了模型的参数数量, 以提高一般BP网络的训练性能.
 在CNN中, 图像的一小部分 (局部感受区域)作为层级结构的最低层的输入, 神经元只与上一层中部分神经元相连, 并且不同的神经元共享权值, 每层通过不同的卷积核去获得观测数据的不同特征, 然后通过下采样 (池化) 将语义上相似的特
-征合并起来, 降低特征图的空间分辨率.  CNN能够提取对平移、缩放和旋转不变的观测数据的显著特征, 在图像处理、语音处理等领域得到了广泛而深入的应用.
+征合并起来, 降低特征图的空间分辨率. 
+CNN能够提取对平移、缩放和旋转不变的观测数据的显著特征, 在图像处理、语音处理等领域得到了广泛而深入的应用.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CNN应用场景——计算机视觉问题}
 
@@ -1482,13 +1582,6 @@ CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局
     \includegraphics[width=0.76\textwidth]{CNNAPP201912150001.PNG}
     \caption{ AlexNet的目标分割}
     \label{CNNAPP201912150001}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.76\textwidth]{DNN191225001.JPG}
-    \caption{深度神经网络}
-    \label{DNN191225001}
 \end{figure}
 %%%%%%%%-------------------------------------------------------------------------------
 \subsection{卷积神经网络结构}
@@ -1920,14 +2013,14 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 \item 在 MATLAB 中使用网络摄像头的支持包;
 \item 使用 AlexNet 的支持包.
 \end{itemize}
-在加载 AlexNet 后, 我们连接到网络摄像头并拍摄一张实时图像.
+在加载 AlexNet 后, 连接到网络摄像头， 拍摄一张实时图像.
 \begin{Verbatim}
     camera = webcam; % 连接到摄像头
     nnet = AlexNet; % 加载神经网络
     picture = camera.snapshot;
     % 抓取图片
 \end{Verbatim}
-接下来, 我们调整图像大小为 227x227 像素, 即 AlexNet所需的大小.
+接下来, 调整图像大小为 227x227 像素, 即 AlexNet所需的大小.
 \begin{Verbatim}
     picture = imresize (picture,[227,227]);
     % 调整图片大小
@@ -1941,7 +2034,7 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 上一示例使用的是现成的网络. 我们完全不做任何修改, 因为 AlexNet 训练所用的图像类似于我们想要分类的图像.
 
 要使用 AlexNet 对未在原有网络中训练的对象分类, 可以通过迁移学习重新训练.
-迁移学习是将一个类型问题的知识应用于不同类型但相关的问题的学习方法.
+迁移学习是将一个类型问题的知识应用于不同类型但相关的问题的学习方法. \index{迁移学习}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 本例只是剪去网络的最后3层, 用新图像重新训练.
@@ -2060,6 +2153,17 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
     \label{CNNSoftmaxLoss0203}
     \vspace{-0.4cm}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{防止CNN的过拟合——diffGrad}
+Train CIFAR10 with PyTorch. \href{https://ieeexplore.ieee.org/document/8939562}{diffGrad: An Optimization Method for Convolutional Neural Networks}. IEEE Transactions on Neural Networks and Learning Systems, 2019.
+DOI: 10.1109/TNNLS.2019.2955777, 2919-12-23.
+
+DiffGrad是Dubey等人在论文《DiffGrad: CNN的优化器》中介绍的一种新的优化器, 它建立在Adam优化器的基础上, 开发了一种自适应的 ``friction clamp", 并监测梯度的局部变化, 以便自动锁定Adam可以跳过的最优参数值.
+通过 ``friction clamping"锁定到最优的最小值: 相比之下, diffGrad监测当前梯度与前一步的即时变化, 并应用自适应 ``friction clamping", 可在梯度变化很小的时候迅速减速, 从而暗示最优解可能就在附近.
+diffGrad能够以理想的损失锁定到全局最小值. Adam由于无法及时减速而跳到了更高的局部最小值.
+一些论文已经提出了解决已知overshoot问题的解决方案, 但是diffGrad可以稳定地解决它, 还给出了其他几个变量如何应用clamping或friction系数.
+\href{https://ieeexplore.ieee.org/document/8939562}{IEEE TNNLS version文献}, 实验室用的框架 \href{https://github.com/kuangliu/pytorch-cifar}{pytorch-cifar}.
+%Abstract: Stochastic Gradient Decent (SGD) is one of the core techniques behind the success of deep neural networks. The gradient provides information on the direction in which 函数 has the steepest rate of change. The main problem with basic SGD is to change by equal sized steps for all parameters, irrespective of gradient behavior. Hence, an efficient way of deep network optimization is to make adaptive step sizes for each parameter. Recently, several attempts have been made to improve gradient descent methods such as AdaGrad, AdaDelta, RMSProp and Adam. These methods rely on the square roots of exponential moving averages of squared past gradients. Thus, these methods do not take the advantage of local change in gradients. In this paper, a novel optimizer is proposed based on the difference between the present and the immediate past gradient (i.e., diffGrad). In the proposed diffGrad optimization technique, the step size is adjusted for each parameter in such a way that it should have a larger step size for faster gradient changing parameters and lower step size for lower gradient changing parameters. The convergence analysis is done using the regret bound approach of online learning framework. Rigorous analysis is made in this paper over three synthetic complex non-convex 函数s. The image categorization experiments are also conducted over the CIFAR10 and CIFAR100 datasets to observe the performance of diffGrad with respect to the state-of-the-art optimizers such as SGDM, AdaGrad, AdaDelta, RMSProp, AMSGrad, and Adam. The residual unit (ResNet) based Convolutional Neural Networks (CNN) architecture is used in the experiments. The experiments show that diffGrad outperforms the other optimizers. Also, we showed that diffGrad performs uniformly well on network using different activation 函数s.
 %%%%%%%%-------------------------------------------------------------------------------
 \subsection{CNN的应用}
 \subsubsection{CNN解释器在线交互可视化工具}
@@ -2140,7 +2244,7 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
 \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{图卷积神经网络}
+\section{图卷积神经网络}
 \href{https://github.com/zggl/planetoid}{图卷积网络}由University of Amsterdam的Thomas N. Kipf提出，2020年博士毕业， \href{https://arxiv.org/abs/1609.02907}{SEMI-SUPERVISED CLASSIFICATION WITH
 GRAPH CONVOLUTIONAL NETWORKS},
 
@@ -2232,7 +2336,7 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 构建了 Comment Graph, 再用图卷积就能抽取节点信息了, 因为每一个节点输出向量都聚合了周围节点的信息, 它就能代表全局上这一些相似评论的意义.
 最后, 结合异构图卷积与同构图卷积的结果, 再来做个简单的分类就很合理了.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{循环神经网络 (Recurrent Neural Networks, RNN)}
+\section{循环神经网络 (Recurrent Neural Networks, RNN)}
 针对对象: 序列数据. 例如文本是字母和词汇的序列; 语音是音节的序列; 视频是图像的序列;
 气象观测数据, 股票交易数据等也都是序列数据. RNN 专门解决时间序列问题, 用来提取时间序列信息, 一般放在CNN特征提取层之后.
 
@@ -2285,7 +2389,7 @@ RNN主要用于序列分类
 简而言之, 链式法则归结为特定时间步的所有隐藏表示的偏导数的乘积.
 \begin{align}
     \frac{\partial \mathscr{L}_{t} (\theta)}{\partial W}&=\frac{\partial \mathscr{L}_{t} (\theta)}{\partial s_{t}} \sum_{k=1}^{t} \frac{\partial s_{t}}{\partial s_{k}} \frac{\partial s_{k}}{\partial W}\\
-    \frac{\partial s_{t}}{\partial s_{k}}               &=\frac{\partial s_{t}}{\partial s_{t-1}} \frac{\partial s_{t-1}}{\partial s_{t-2}} \frac{\partial s_{t-2}}{\partial s_{t-3}} \cdots \frac{\partial s_{k+1}}{\partial s_{k}} \Rightarrow \frac{\partial s_{t}}{\partial s_{k}}               &=\prod_{j=k+1}^{t} \frac{\partial s_{j}}{\partial s_{j-1}}.    
+    \frac{\partial s_{t}}{\partial s_{k}}               &=\frac{\partial s_{t}}{\partial s_{t-1}} \frac{\partial s_{t-1}}{\partial s_{t-2}} \frac{\partial s_{t-2}}{\partial s_{t-3}} \cdots \frac{\partial s_{k+1}}{\partial s_{k}} \Rightarrow \frac{\partial s_{t}}{\partial s_{k}}=\prod_{j=k+1}^{t} \frac{\partial s_{j}}{\partial s_{j-1}}.
 \end{align}
 
 如果我们有超过100个或者更长的序列的隐藏表示, 那么我们必须计算这些表示的乘积来进行反向传播.
@@ -2410,6 +2514,16 @@ $i_t$的数学公式如下:
 \end{example}
 $\bullet$ RNN或LSTM中的选择性遗忘.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.76\textwidth]{lstm20191229085814.png}
+    \caption{LSTM结构}
+    \label{lstm20191229085814}
+    \vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 遗忘门决定从隐藏向量中保留或丢弃的信息部分. 本小节讨论如何结合$s_{t-1}$和来计算当前状态向量$s_t$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -2512,100 +2626,6 @@ LSTM 改变了循环体A的网络结构, 引入 ``门"的概念, 让信息有选
     \label{RNNAPP2019121500005}
     \vspace{-0.4cm}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{深度神经网络轻量化}
- ``深度学习"的学习模式:  ``深度学习"这个名词其实最主要是针对人工智能领域, 它是指机器的一种学习模式, 与我们平常所指的人类的深度学习是不同的概念.
-\begin{itemize}
-    \item  ``深度学习"是机器学习的一种特定技术, 它是建立在大数据的基础上, 用大数据对机器进行训练, 在机器反馈的过程中不断地纠错.
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{example}
-    对于婴孩来说, 我们拿三个不同杯子告诉宝宝, 这是杯子.
-    基本上, 他就知道什么是杯子了. 不管第四个杯子的形状或者图案有什么不同, 但孩子基本已经能够非常清楚地辨别杯子的本质特征.
-    然而, 对于机器来说, 它需要通过足够多的例子,
-    \end{example}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{example}
-    你给它展示一个圆柱形的杯子, 告诉它:  ``这是杯子. "但是当你拿另一个圆形的杯子给它看的时候, 它可能会说这是一个球.
-    所以, 深度学习就是建立在大数据的基础上, 给它看足够多的数据, 直到机器最后总结出杯子的本质特征.
-    \end{example}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item  ``深度学习"技术, 是建立在 ``人工神经网络"上的, 而人工神经网络, 又是来自人类神经生物学的深刻理解和延展.
-    我们人类的神经网络通过神经元的联结来传递和处理信息, 而人工神经网络则是模拟大脑的工作机制.
-    通过研究人类智能的工作机制, 可以模拟出人工智能的工作原理.
-
-    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论, 而且, 机器到底是怎么得出结论的, 我们尚未可知.
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{RNNAPP2019121500006.PNG}
-\caption{深度神经网络应用的轻量化}
-\label{RNNAPP2019121500006}\vspace{-0.4cm}
-\end{figure}
-
-网络模型结构改进:
-
-\begin{tcolorbox}[title=MobileNet]
-$\bullet$ 堆叠地使用深度可分离卷积;
-
-$\bullet$ 深度可分离卷积由深度卷积和$1\times 1$的逐点卷积组成.
-\end{tcolorbox}
-
-\begin{tcolorbox}[title=ShuffleNet]
-
-$\bullet$ 逐点分组卷积;
-
-$\bullet$ 通道重排 ( channel shuffle);
-
-$\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
-\end{tcolorbox}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{RNNAPP2019121500007.PNG}
-    \caption{网络模型参数压缩}
-    \label{RNNAPP2019121500007}\vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
-    \caption{通道重排和ShuffleNet单元}
-    \label{RNNAPP2019121500008}\vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{防止CNN的过拟合——diffGrad}
-Train CIFAR10 with PyTorch. \href{https://ieeexplore.ieee.org/document/8939562}{diffGrad: An Optimization Method for Convolutional Neural Networks}. IEEE Transactions on Neural Networks and Learning Systems, 2019.
-DOI: 10.1109/TNNLS.2019.2955777, 2919-12-23.
-
-DiffGrad是Dubey等人在论文《DiffGrad: CNN的优化器》中介绍的一种新的优化器, 它建立在Adam优化器的基础上, 开发了一种自适应的 ``friction clamp", 并监测梯度的局部变化, 以便自动锁定Adam可以跳过的最优参数值.
-通过 ``friction clamping"锁定到最优的最小值: 相比之下, diffGrad监测当前梯度与前一步的即时变化, 并应用自适应 ``friction clamping", 可在梯度变化很小的时候迅速减速, 从而暗示最优解可能就在附近.
-diffGrad能够以理想的损失锁定到全局最小值. Adam由于无法及时减速而跳到了更高的局部最小值.
-一些论文已经提出了解决已知overshoot问题的解决方案, 但是diffGrad可以稳定地解决它.
-论文还深入研究了其他几个变量如何应用clamping或friction系数.
-%Abstract: Stochastic Gradient Decent (SGD) is one of the core techniques behind the success of deep neural networks. The gradient provides information on the direction in which 函数 has the steepest rate of change. The main problem with basic SGD is to change by equal sized steps for all parameters, irrespective of gradient behavior. Hence, an efficient way of deep network optimization is to make adaptive step sizes for each parameter. Recently, several attempts have been made to improve gradient descent methods such as AdaGrad, AdaDelta, RMSProp and Adam. These methods rely on the square roots of exponential moving averages of squared past gradients. Thus, these methods do not take the advantage of local change in gradients. In this paper, a novel optimizer is proposed based on the difference between the present and the immediate past gradient (i.e., diffGrad). In the proposed diffGrad optimization technique, the step size is adjusted for each parameter in such a way that it should have a larger step size for faster gradient changing parameters and lower step size for lower gradient changing parameters. The convergence analysis is done using the regret bound approach of online learning framework. Rigorous analysis is made in this paper over three synthetic complex non-convex 函数s. The image categorization experiments are also conducted over the CIFAR10 and CIFAR100 datasets to observe the performance of diffGrad with respect to the state-of-the-art optimizers such as SGDM, AdaGrad, AdaDelta, RMSProp, AMSGrad, and Adam. The residual unit (ResNet) based Convolutional Neural Networks (CNN) architecture is used in the experiments. The experiments show that diffGrad outperforms the other optimizers. Also, we showed that diffGrad performs uniformly well on network using different activation 函数s.
-
-\href{https://ieeexplore.ieee.org/document/8939562}{IEEE TNNLS version}.
-All experiments are perfomed using the framework \href{https://github.com/kuangliu/pytorch-cifar}{pytorch-cifar}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{无限宽度DNN}
-无限宽度DNN会收敛成一类更为简单的模型, 称为高斯过程, 复杂的现象可以被归结为简单的线性代数方程.
-谷歌研究宣称可通过神经正切核使用贝叶斯推理或梯度下降分析式地训练无限宽度的神经网络.
-使用谷歌开源的软件库 (Neural Tangents, \href{www.github.com/google/neural-tangents}{Neural Tangents: Fast and Easy Infinite Neural Networks in Python}),
-过程不仅简单且快速, 而且效果非常好, 甚至只需 5 行代码就能一步到位地构建并训练这种无限宽度网络的集成模型!
-已被 ICLR 2020 接收为 Spotlight论文, 深度学习都已取得了广泛的成功, 仍还有一些有趣而又重要的问题有待解答,
-比如: 为什么即使在过度参数化时, 深度神经网络 (DNN) 也能取得非常好的泛化能力?
-深度网络的架构、训练和性能之间有何关系? 如何提取出深度学习模型中的显著特征?
-一大关键理论见解是: 增加 DNN 的宽度能使 DNN的行为更有规律可循, 也就人更容易理解它们.
-近来的许多研究已经表明, 宽度可无限扩增的 DNN 可以收敛成另一类更为简单的名为「高斯过程的模型.
-因此, 贝叶斯推理与卷积神经网络的梯度下降情况等复杂现象便可约简为简单的线性代数方程.
-从这些无限宽度网络所得到的见解通常也适用于它们对应的有限版本.
-因此, 无限宽度网络可用作研究深度学习的透镜, 而且它们本身也可用作有用的模型.
-\href{https://arxiv.org/abs/1912.02803}{论文地址},
-\href{https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html}{fast-and-easy-infinitely-wide-networks.html},
-\href{https://github.com/google/neural-tangents}{GitHub地址},
-\href{https://colab.research.google.com/github/google/neural-tangents/blob/master/notebooks/neural_tangents_cookbook.ipynb}{Colab地址}.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{强化学习及深度强化学习}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
