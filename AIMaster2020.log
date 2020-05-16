@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 MAY 2020 13:12
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  16 MAY 2020 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8147,8 +8147,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 351.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 351.
-Missing character: There is no ∨ in font ntx-Regular-tlf-t1!
-Missing character: There is no ∨ in font ntx-Regular-tlf-t1!
 Package mdframed Info: mdframed works in twoside mode on input line 367.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -8158,10 +8156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
-
-Underfull \vbox (badness 1137) has occurred while \output is active []
-
- [421]
+[421]
 Package mdframed Info: mdframed works in twoside mode on input line 383.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -8172,8 +8167,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 400.
 File: figures/zhengxiangtuili2019112704.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112704.PNG>
-
-[422] [423]
+ [422] [423]
 Package mdframed Info: mdframed works in twoside mode on input line 474.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -8206,8 +8200,8 @@ Package mdframed Info: mdframed works in twoside mode on input line 864.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 864.
- [433]
-[434] [435] [436] [437]
+
+[433] [434] [435] [436] [437]
 Package mdframed Info: mdframed works in twoside mode on input line 1084.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9481,10 +9475,10 @@ File: figures/RNNImage191229001.png Graphic file (type bmp)
 [482]
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
-Package mdframed Info: mdframed works in twoside mode on input line 2297.
+Package mdframed Info: mdframed works in twoside mode on input line 2295.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2297.
+(mdframed)              on input line 2295.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -9498,7 +9492,7 @@ File: figures/RNNImage191229007.png Graphic file (type bmp)
  [483] [484]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2411.
+(mdframed)              on input line 2408.
  [485] [486]
 File: figures/RNNImage191229008.png Graphic file (type bmp)
 <figures/RNNImage191229008.png>
@@ -9520,14 +9514,14 @@ File: figures/RNNAPP2019121500004.PNG Graphic file (type bmp)
 File: figures/RNNAPP2019121500005.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500005.PNG>
  [490]
-Package mdframed Info: mdframed works in twoside mode on input line 2522.
+Package mdframed Info: mdframed works in twoside mode on input line 2519.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2522.
-Package mdframed Info: mdframed works in twoside mode on input line 2528.
+(mdframed)              on input line 2519.
+Package mdframed Info: mdframed works in twoside mode on input line 2525.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2528.
+(mdframed)              on input line 2525.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
  [491]
@@ -9817,7 +9811,7 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 Here is how much of TeX's memory you used:
  95777 strings out of 492922
  2308303 string characters out of 6136750
- 3072556 words of memory out of 5000000
+ 3072555 words of memory out of 5000000
  96816 multiletter control sequences out of 15000+600000
  742397 words of font info for 373 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
