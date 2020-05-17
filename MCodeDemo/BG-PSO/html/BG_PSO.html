@@ -1,0 +1,404 @@
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>Bacterial Foraging Orientec by Particle swarm optimization</title>
+      <meta name="generator" content="MATLAB 7.2">
+      <meta name="date" content="2008-06-09">
+      <meta name="m-file" content="BG_PSO"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows.  On Gecko-based browsers, the shrink-to-fit doesn't work. */ 
+p,h1,h2,div.content div {
+  /* for MATLAB's browser */
+  width: 600px;
+  /* for Mozilla, but the "width" tag overrides it anyway */
+  max-width: 600px;
+  /* for IE */
+  width:expression(document.body.clientWidth > 620 ? "600px": "auto" );
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content">
+         <h1>Bacterial Foraging Orientec by Particle swarm optimization</h1>
+         <p>Animiation of bacteria movement to get the global minimum solution every chemotactic</p><pre class="codeinput"><span class="comment">%My work has been accpepted in GECCO 2008 as Graduat Student workshop. I</span>
+<span class="comment">%have used this techique in PID tunning and i got better result thatn BG</span>
+<span class="comment">%and PSO</span>
+<span class="comment">%</span>
+<span class="comment">% Author: Wael Mansour (wael192@yahoo.com)</span>
+<span class="comment">%</span>
+<span class="comment">% MSc Student, Electrical Enginering Dept,</span>
+<span class="comment">% Faculty of Engineering Cairo University, Egypt</span>
+</pre><pre class="codeinput"><span class="comment">%Initialization</span>
+clear <span class="string">all</span>
+clc
+p=2;                         <span class="comment">% dimension of search space</span>
+s=10;                        <span class="comment">% The number of bacteria</span>
+Nc=20;                       <span class="comment">% Number of chemotactic steps</span>
+Ns=4;                        <span class="comment">% Limits the length of a swim</span>
+Nre=4;                       <span class="comment">% The number of reproduction steps</span>
+Ned=2;                       <span class="comment">% The number of elimination-dispersal events</span>
+Sr=s/2;                      <span class="comment">% The number of bacteria reproductions (splits) per generation</span>
+Ped=0.25;                    <span class="comment">% The probabilty that each bacteria will be eliminated/dispersed</span>
+c(:,1)=0.5*ones(s,1);       <span class="comment">% the run length</span>
+<span class="keyword">for</span> i = 1:s
+    Delta(:,i)=(2*round(rand(p,1))-1).*rand(p,1);
+<span class="keyword">end</span>
+<span class="keyword">for</span> m=1:s                    <span class="comment">% the initital posistions</span>
+    P(1,:,1,1,1)= 50*rand(s,1)';
+    P(2,:,1,1,1)= 0.2*rand(s,1)';
+   <span class="comment">%P(3,:,1,1,1)= .2*rand(s,1)';</span>
+<span class="keyword">end</span>
+c1 =1.2;                                        <span class="comment">%  PSO parameter C1 1.2</span>
+c2 = 0.5;                                       <span class="comment">%  PSO parameter C2 .5</span>
+R1 = rand(p,s);                                 <span class="comment">%  PSO parameter</span>
+R2 = rand(p,s);                                 <span class="comment">%  PSO parameter</span>
+Plocal_best_position=0*ones(p,s,Nc);            <span class="comment">%  PSO</span>
+Pglobal_best_position=0*ones(p,s,Nc);           <span class="comment">%  PSO</span>
+velocity = .3*randn(p,s);                       <span class="comment">%  PSO</span>
+current_position=0*ones(p,s,Nc);                <span class="comment">%  PSO</span>
+</pre><pre class="codeinput"><span class="comment">%Main loop</span>
+
+
+<span class="comment">%Elimination and dispersal loop</span>
+<span class="keyword">for</span> ell=1:Ned
+
+
+<span class="comment">%Reprodution loop</span>
+
+
+    <span class="keyword">for</span> K=1:Nre
+
+<span class="comment">%  swim/tumble(chemotaxis)loop</span>
+
+        <span class="keyword">for</span> j=1:Nc
+
+            <span class="keyword">for</span> i=1:s
+                J(i,j,K,ell)=Live_fn(P(:,i,j,K,ell));
+
+<span class="comment">% Tumble</span>
+
+                Jlast=J(i,j,K,ell);
+                Jlocal(i,j)=Jlast;
+                P(:,i,j+1,K,ell)=P(:,i,j,K,ell)+c(i,K)*Delta(:,i); <span class="comment">% This adds a unit vector in the random direction</span>
+
+<span class="comment">% Swim (for bacteria that seem to be headed in the right direction)</span>
+
+                J(i,j+1,K,ell)=Live_fn(P(:,i,j+1,K,ell));
+                m=0;         <span class="comment">% Initialize counter for swim length</span>
+                    <span class="keyword">while</span> m&lt;Ns
+                          m=m+1;
+                          <span class="keyword">if</span> J(i,j+1,K,ell)&lt;Jlast
+                             Jlast=J(i,j+1,K,ell);
+                             P(:,i,j+1,K,ell)=P(:,i,j+1,K,ell)+c(i,K)*Delta(:,i) ;
+                             J(i,j+1,K,ell)=Live_fn(P(:,i,j+1,K,ell));
+                             current_position(:,i,j+1)= P(:,i,j+1,K,ell) ;          <span class="comment">%   PSO</span>
+                             Jlocal(i,j+1) = J(i,j+1,K,ell) ;                       <span class="comment">%   PSO</span>
+                          <span class="keyword">else</span>
+                             Jlocal(i,j+1) = J(i,j+1,K,ell) ;
+                             current_position(:,i,j+1)= P(:,i,j+1,K,ell);
+                             m=Ns ;
+                          <span class="keyword">end</span>
+
+                    <span class="keyword">end</span>
+
+                sprintf(<span class="string">'The value of interation i %3.0f ,j = %3.0f  , K= %3.0f, ell= %3.0f'</span> , i, j, K ,ell );
+
+            <span class="keyword">end</span> <span class="comment">% Go to next bacterium</span>
+
+<span class="comment">%For each chemotactic evaluate the local and global best position</span>
+
+<span class="comment">%Local best position over all chemotactic that each bacteria move through it</span>
+            [Jmin_for_each_chemotactic,index]=min(Jlocal,[],2);
+            <span class="keyword">for</span> m=1:s
+                Plocal_best_position(:,m,j) = current_position(:,m,index(m,:));
+            <span class="keyword">end</span>
+<span class="comment">%Global best position over all chemotactic and for each bacteria</span>
+            [Y,I]=min(Jmin_for_each_chemotactic);
+            global_best_position =current_position(:,I,index(I,:));
+            <span class="keyword">for</span> m =1:s
+                Pglobal_best_position(:,m,j)=global_best_position;
+            <span class="keyword">end</span>
+<span class="comment">%Caluculate the new direction for each bacteria</span>
+velocity =.9* velocity + c1*(R1.*(Plocal_best_position(:,:,j)-current_position(:,:,j+1))) + c2*(R2.*(Pglobal_best_position(:,:,j)-current_position(:,:,j+1)));
+Delta    = velocity ;
+
+
+            x = P(1,:,j,K,ell);
+            y = P(2,:,j,K,ell);
+            clf
+            plot(x, y , <span class="string">'h'</span>)
+            axis([-5 5 -5 5]);
+            pause(.1)
+        <span class="keyword">end</span>  <span class="comment">% Go to the next chemotactic</span>
+
+
+<span class="comment">%Reprodution</span>
+        Jhealth=sum(J(:,:,K,ell),2);              <span class="comment">% Set the health of each of the S bacteria</span>
+        [Jhealth,sortind]=sort(Jhealth);          <span class="comment">% Sorts the nutrient concentration in order of ascending</span>
+        P(:,:,1,K+1,ell)=P(:,sortind,Nc+1,K,ell);
+        c(:,K+1)=c(sortind,K);                    <span class="comment">% And keeps the chemotaxis parameters with each bacterium at the next generation</span>
+
+
+<span class="comment">%Split the bacteria (reproduction)</span>
+            <span class="keyword">for</span> i=1:Sr
+                P(:,i+Sr,1,K+1,ell)=P(:,i,1,K+1,ell); <span class="comment">% The least fit do not reproduce, the most fit ones split into two identical copies</span>
+                c(i+Sr,K+1)=c(i,K+1);
+            <span class="keyword">end</span>
+        <span class="keyword">end</span> <span class="comment">%  Go to next reproduction</span>
+
+
+<span class="comment">%Eliminatoin and dispersal</span>
+        <span class="keyword">for</span> m=1:s
+            <span class="keyword">if</span>  Ped&gt;rand <span class="comment">% % Generate random number</span>
+                P(1,:,1,1,1)= 0.2*rand(s,1)';
+                P(2,:,1,1,1)= 0.2*rand(s,1)';
+               <span class="comment">%P(3,:,1,1,1)= .2*rand(s,1)';</span>
+            <span class="keyword">else</span>
+                P(:,m,1,1,ell+1)=P(:,m,1,Nre+1,ell); <span class="comment">% Bacteria that are not dispersed</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span> <span class="comment">% Go to next elimination and disperstal</span>
+
+<span class="comment">%Report</span>
+           reproduction = J(:,1:Nc,Nre,Ned);
+           [jlastreproduction,O] = min(reproduction,[],2);  <span class="comment">% min cost function for each bacterial</span>
+           [Y,I] = min(jlastreproduction)
+           pbest=P(:,I,O(I,:),K,ell)
+</pre><pre class="codeoutput">
+Y =
+
+ -186.7309
+
+
+I =
+
+     7
+
+
+pbest =
+
+   -1.4251
+   -0.8003
+
+</pre><img vspace="5" hspace="5" src="BG_PSO_01.png"> <p class="footer"><br>
+            Published with MATLAB&reg; 7.2<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% Bacterial Foraging Orientec by Particle swarm optimization 
+% Animiation of bacteria movement to get the global minimum solution every chemotactic
+%
+%My work has been accpepted in GECCO 2008 as Graduat Student workshop. I
+%have used this techique in PID tunning and i got better result thatn BG
+%and PSO
+%
+% Author: Wael Mansour (wael192@yahoo.com)
+%
+% MSc Student, Electrical Enginering Dept, 
+% Faculty of Engineering Cairo University, Egypt
+
+
+
+
+
+%%
+%Initialization
+clear all   
+clc
+p=2;                         % dimension of search space 
+s=10;                        % The number of bacteria 
+Nc=20;                       % Number of chemotactic steps 
+Ns=4;                        % Limits the length of a swim 
+Nre=4;                       % The number of reproduction steps 
+Ned=2;                       % The number of elimination-dispersal events 
+Sr=s/2;                      % The number of bacteria reproductions (splits) per generation 
+Ped=0.25;                    % The probabilty that each bacteria will be eliminated/dispersed 
+c(:,1)=0.5*ones(s,1);       % the run length
+for i = 1:s 
+    Delta(:,i)=(2*round(rand(p,1))-1).*rand(p,1);  
+end 
+for m=1:s                    % the initital posistions 
+    P(1,:,1,1,1)= 50*rand(s,1)';
+    P(2,:,1,1,1)= 0.2*rand(s,1)';
+   %P(3,:,1,1,1)= .2*rand(s,1)';
+end                                                                  
+c1 =1.2;                                        %  PSO parameter C1 1.2
+c2 = 0.5;                                       %  PSO parameter C2 .5
+R1 = rand(p,s);                                 %  PSO parameter
+R2 = rand(p,s);                                 %  PSO parameter
+Plocal_best_position=0*ones(p,s,Nc);            %  PSO                       
+Pglobal_best_position=0*ones(p,s,Nc);           %  PSO
+velocity = .3*randn(p,s);                       %  PSO                        
+current_position=0*ones(p,s,Nc);                %  PSO
+
+%%
+%Main loop 
+    
+
+%Elimination and dispersal loop 
+for ell=1:Ned
+    
+
+%Reprodution loop
+
+
+    for K=1:Nre    
+
+%  swim/tumble(chemotaxis)loop   
+
+        for j=1:Nc
+            
+            for i=1:s        
+                J(i,j,K,ell)=Live_fn(P(:,i,j,K,ell));         
+
+% Tumble
+                    
+                Jlast=J(i,j,K,ell);
+                Jlocal(i,j)=Jlast; 	             	
+                P(:,i,j+1,K,ell)=P(:,i,j,K,ell)+c(i,K)*Delta(:,i); % This adds a unit vector in the random direction            
+ 
+% Swim (for bacteria that seem to be headed in the right direction)     
+                
+                J(i,j+1,K,ell)=Live_fn(P(:,i,j+1,K,ell));  
+                m=0;         % Initialize counter for swim length 
+                    while m<Ns     
+                          m=m+1;
+                          if J(i,j+1,K,ell)<Jlast  
+                             Jlast=J(i,j+1,K,ell);    
+                             P(:,i,j+1,K,ell)=P(:,i,j+1,K,ell)+c(i,K)*Delta(:,i) ;  
+                             J(i,j+1,K,ell)=Live_fn(P(:,i,j+1,K,ell));
+                             current_position(:,i,j+1)= P(:,i,j+1,K,ell) ;          %   PSO
+                             Jlocal(i,j+1) = J(i,j+1,K,ell) ;                       %   PSO
+                          else
+                             Jlocal(i,j+1) = J(i,j+1,K,ell) ;
+                             current_position(:,i,j+1)= P(:,i,j+1,K,ell);
+                             m=Ns ;     
+                          end        
+                    
+                    end 
+      
+                sprintf('The value of interation i %3.0f ,j = %3.0f  , K= %3.0f, ell= %3.0f' , i, j, K ,ell );
+                   
+            end % Go to next bacterium
+            
+%For each chemotactic evaluate the local and global best position
+
+%Local best position over all chemotactic that each bacteria move through it
+            [Jmin_for_each_chemotactic,index]=min(Jlocal,[],2);
+            for m=1:s 
+                Plocal_best_position(:,m,j) = current_position(:,m,index(m,:));    
+            end
+%Global best position over all chemotactic and for each bacteria  
+            [Y,I]=min(Jmin_for_each_chemotactic);
+            global_best_position =current_position(:,I,index(I,:));
+            for m =1:s  
+                Pglobal_best_position(:,m,j)=global_best_position;
+            end 
+%Caluculate the new direction for each bacteria           
+velocity =.9* velocity + c1*(R1.*(Plocal_best_position(:,:,j)-current_position(:,:,j+1))) + c2*(R2.*(Pglobal_best_position(:,:,j)-current_position(:,:,j+1)));
+Delta    = velocity ;
+
+
+            x = P(1,:,j,K,ell);
+            y = P(2,:,j,K,ell);
+            clf    
+            plot(x, y , 'h')   
+            axis([-5 5 -5 5]);
+            pause(.1)
+        end  % Go to the next chemotactic    
+
+                 
+%Reprodution                                              
+        Jhealth=sum(J(:,:,K,ell),2);              % Set the health of each of the S bacteria
+        [Jhealth,sortind]=sort(Jhealth);          % Sorts the nutrient concentration in order of ascending 
+        P(:,:,1,K+1,ell)=P(:,sortind,Nc+1,K,ell); 
+        c(:,K+1)=c(sortind,K);                    % And keeps the chemotaxis parameters with each bacterium at the next generation
+                                     
+
+%Split the bacteria (reproduction)                             
+            for i=1:Sr
+                P(:,i+Sr,1,K+1,ell)=P(:,i,1,K+1,ell); % The least fit do not reproduce, the most fit ones split into two identical copies  
+                c(i+Sr,K+1)=c(i,K+1);                 
+            end   
+        end %  Go to next reproduction    
+
+
+%Eliminatoin and dispersal
+        for m=1:s 
+            if  Ped>rand % % Generate random number 
+                P(1,:,1,1,1)= 0.2*rand(s,1)';
+                P(2,:,1,1,1)= 0.2*rand(s,1)';
+               %P(3,:,1,1,1)= .2*rand(s,1)';   
+            else 
+                P(:,m,1,1,ell+1)=P(:,m,1,Nre+1,ell); % Bacteria that are not dispersed
+            end        
+        end 
+    end % Go to next elimination and disperstal 
+
+%Report
+           reproduction = J(:,1:Nc,Nre,Ned);
+           [jlastreproduction,O] = min(reproduction,[],2);  % min cost function for each bacterial 
+           [Y,I] = min(jlastreproduction)
+           pbest=P(:,I,O(I,:),K,ell)
+         
+
+                           
+
+
+                             
+##### SOURCE END #####
+-->
+   </body>
+</html>
