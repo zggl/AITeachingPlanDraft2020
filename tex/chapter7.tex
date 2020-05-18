@@ -31,7 +31,7 @@
 
 「机器不能学习, 它们只能做程序员告诉它的事情」. 这显然是错的, 程序员能够告诉机器如何学习. Samuel 是一个优秀的跳棋玩家, 但他的程序很快就通过学习超过了他. 近年来, 机器学习的很多应用都需要大量数据来进行训练.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{代表性观点}
+\paragraph{代表性观点} 西蒙、明斯基和 迈克尔斯.
 
  (1) 西蒙 (Simon, 1983): 学习就是系统中的适应性变化, 这种变化使系统在重复同样工作或类似工作时, 能够做得更好.
 
@@ -72,7 +72,7 @@
 
 结论:  模型复杂, 需要大样本. 样本小, 简化模型.
 
-\textbf{人工智能 (1950's->1980's)到机器学习 (1980's->2010's)再到深度学习的脉络 (2010's->至今)}
+\textbf{人工智能 (1950's->1980's)到机器学习 (1980's->2010's), 再到深度学习的脉络 (2010's->至今)}
 \begin{center}
 以“推理"为重点- > 以“知识"为重点 .
 
@@ -343,14 +343,19 @@ $\bullet$ 规则1: 花色 ($c_1$, x) $\wedge$ 花色 ($c_2$, x) $\wedge$ 花色 
 \end{itemize}
 
 用内部析取法, 可得到如下规则:
-
-$\bullet$ 规则3: 点数$ (c_1)\in \{J, Q, K\}\rightarrow$脸 ($c_1$).
+\begin{center}
+    $\bullet$ 规则3: 点数$ (c_1)\in \{J, Q, K\}\rightarrow$脸 ($c_1$). 
+\end{center}
 \end{example}
 \item (4) 曲线拟合: 对数值问题的归纳可采用曲线拟合法.
 \end{itemize}
 假设示例空间中的每个示例$ (x, y, z)$都是输入$x, y$与输出$z$之间关系的三元组.
 \begin{example}\label{AIC7MLexam7.9}
-有下3个点: $ (0, 2, 7), (6, -1, 10), (-1, -5, -16)$, 用最小二乘法进行曲线拟合, 可得$x, y, z$之间关系的规则如下: $\bullet$ 规则4: $z=2x+3y+1$.
+有下3个点: $ (0, 2, 7), (6, -1, 10), (-1, -5, -16)$, 用最小二乘法进行曲线拟合, 可得$x, y, z$之间关系的规则如下: 
+
+\begin{center}
+    $\bullet$ 规则4: $z=2x+3y+1$.
+\end{center}
 \end{example}
 %%%%%%-------------------------------------------------
 \begin{remark}
@@ -369,20 +374,25 @@ $\bullet$ 规则3: 点数$ (c_1)\in \{J, Q, K\}\rightarrow$脸 ($c_1$).
 \begin{example}
 对示例 \ref{AIC7MLexam7.7}、示例 \ref{AIC7MLexam7.8} 及示例  \ref{AIC7MLexam7.9}, 若使用方法 (1) ,则会归纳出如下的错误规则:
 
-规则5: (错误)点数 ($c_1, x)\rightarrow$脸 ($c_1$),
+\begin{center}
+    规则5: (错误)点数 ($c_1, x)\rightarrow$脸 ($c_1$).
+\end{center}
 
-它说明, 归纳过程是很容易出错的.
+规则5说明, 归纳过程是很容易出错的.
 \end{example}
 \end{remark}
 %%%%%%%%-------------------------------------------------------------------------------
 \subsubsection{决策树}
-决策树是一种由节点和边构成的用来描述分类过程的层次数据结构. 
+\begin{mydef}{决策树}{1}
+    决策树是一种由节点和边构成的用来描述分类过程的层次数据结构.
+\end{mydef}
+
 该树的根接点表示分类的开始, 叶节点表示一个实例的结束, 中间节点表示相应实例中的某一属性, 而边则代表某一属性可能的属性值.
 在决策树中, 从根节点到叶节点的每一条路径都代表一个具体的实例, 并且同一路径上的所有属性之间为合取关系, 不同路径 (即一个属性的不同属性值)之间为析取关系.
 决策树的分类过程就是从这棵树的根接点开始, 按照给定的事例的属性值去测试对应的树枝, 并依次下移, 直至到达某个叶节点为止.
 
 图 \ref{AI32fig2704} 是一个非常简单的用来描述对鸟类进行分类的决策树.
-在该图中: 根节点包含各种鸟类, 叶节点是所能识别的各种鸟的名称; 
+在该图中: 根节点包含各种鸟类, 叶节点是所能识别的各种鸟的名称;
 中间节点是鸟的一些属性, 边是鸟的某一属性的属性值;
 从根节点到叶节点的每一条路径都描述了一种鸟, 它包括该种鸟的一些属性及相应的属性值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -841,7 +851,7 @@ Hebb学习规则在人工神经网络学习中的影响比较大, 但不符合�
 \begin{result}
 根据 ``与"运算的逻辑关系, 可将问题转换为:
 
-输入向量: $X_1=[0, 0, 1, 1],X_2=[0, 1, 0, 1]$; 输出向量: $Y=[0, 0, 0, 1]$.
+\textit{输入向量}: $X_1=[0, 0, 1, 1],X_2=[0, 1, 0, 1]$; \textit{输出向量}: $Y=[0, 0, 0, 1]$.
 
 为减少算法的迭代次数, 设初始连接权值和阈值取值如下:
 \begin{align}
@@ -943,7 +953,6 @@ BP网络学习过程是一个对给定训练模式, 利用传播公式, 沿着�
     w_{j k} (t+1)=w_{j k} (t)+\Delta w_{j k},
 \end{align*}
 其中, $w_{jk} (t)$和$w_{jk} (t+1)$分别是时刻$t$和$t+1$时, 从节点$j$到节点$k$的连接权值; $\Delta w_{jk}$是连接权值的变化量.
-
 为了使连接权值能沿着$E$的梯度变化方向逐渐改善, 网络逐渐收敛, BP算法按如下公式计算$\Delta w_{jk}$:
 \begin{align*}
     \Delta w_{j k}=-\eta \frac{\partial e}{\partial w_{j k}},
@@ -1100,11 +1109,11 @@ E   &=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{3
 \begin{align}
     y_{i} (t+1)=f\left (\sum_{i=1}^{n} w_{i j} y_{i} (t)\right), \quad 1 \leq j \leq n,
 \end{align}
-其中, 函数$f$为阈值型. 重复这一步骤, 直到新的迭代不能再改变节点的输出为止, 即收敛为止. 
+其中, 函数$f$为阈值型. 重复这一步骤, 直到新的迭代不能再改变节点的输出为止, 即收敛为止.
 这时, 各节点的输出与输入样例达到最佳匹配. 否则 转第 (2)步继续.
 \end{result}
-\textbf{深度学习}: 模仿人脑处理信息的过程——分层处理机制. 
-底层捕捉输入的 “简单" 特征, 高层通过组合底层特征从而形成更加复杂抽象化的特征. 
+\textbf{深度学习}: 模仿人脑处理信息的过程——分层处理机制.
+底层捕捉输入的 “简单" 特征, 高层通过组合底层特征从而形成更加复杂抽象化的特征.
 深度学习由简到繁, 自动实现特征提取. 深度学习结构如图 \ref{AI32fig2019121502}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1116,7 +1125,7 @@ E   &=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{3
 %%%%---------------------------------------------
 \section{工业4.0时代的机器学习}
 
-机器学习属于数据科学范畴，被视为一种涵盖数据处理所有方面的研究，它是人工智能的一个分支，赋予机器自主学习的能力，而不需要人工干预. 
+机器学习属于数据科学范畴，被视为一种涵盖数据处理所有方面的研究，它是人工智能的一个分支，赋予机器自主学习的能力，而不需要人工干预.
 机器学习使计算机不需要人工编程，就可以自动化地执行任务.
 
 机器学习的流程如下:
@@ -1127,7 +1136,7 @@ E   &=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{3
 
 \quad 3. 模型构建: 选择适当的机器学习技术来获得预期结果的过程. 机器学习的模型种类很多，总体可分为有监督学习、无监督学习和强化学习三种，不同的技术适合处理的问题不同;
 
-\quad 4. 模型训练与测试: 在确定选择哪种模型之后，预处理的数据集会被分为训练集和测试集两个部分，分别满足训练和测试两种要求. 
+\quad 4. 模型训练与测试: 在确定选择哪种模型之后，预处理的数据集会被分为训练集和测试集两个部分，分别满足训练和测试两种要求.
 模型训练指利用机器学习技术将模型评估的误差降到最小，当模型训练完成后，它就被用于测试数据集中进行测试工作，以评估模型的效率和准确性，测试的结果会由一些评价指标进行反映;
 
 \quad 5. 性能评估: 利用交叉验证、参数调整和多种机器学习算法，尝试得到效果更好的算法，或者使用组合方法将多个算法的结果组合起来;
@@ -1195,7 +1204,7 @@ AdaBoost出现过三个最主要的理论结果,
 其中 $\theta=\hat{y}_{1} f\left (\hat{\boldsymbol{x}}_{1}\right)>4 \sqrt{\frac{2}{|\boldsymbol{H}|}}, R=\frac{32 \ln 2|\boldsymbol{\mu}|}{m \theta^{2}} \leq 2 m$.
 \end{mythm}
 %%%%-------------------------------------------------------------
-\begin{mythm}{gao and Zhou, 2013 \cite{ZhouDBLP}}{}\label{AIthm7.3}
+\begin{mythm}{Gao and Zhou, 2013 \cite{ZhouDBLP}}{}\label{AIthm7.3}
     对任意$\delta>0$, 以至少是$1-\delta$的概率在$m \geq 5$大小的样本$S$随机选取样本, 每个候选分类器 $f \in \mathcal{C} (\mathcal{H})$满足下面的给定界:
 \begin{align}
     \operatorname{Pr}[y f (\boldsymbol{x})<0] \leq \frac{2}{m}+\inf _{\theta \in (0,1]}\left[\operatorname{Pr}[y f (\boldsymbol{x})<\theta]+\frac{7 \mu+3 \sqrt{3 \mu}}{3 m}+\sqrt{\frac{3 \mu}{m} \operatorname{Pr}[y f (\boldsymbol{x})<\theta]}\right],
@@ -1206,11 +1215,11 @@ AdaBoost出现过三个最主要的理论结果,
 
 众所周知, 以支持向量机为代表的一大类统计学习方法都在试图最大化 ``最小间隔", 而这个新理论揭示: 若能最大化 ``平均间隔" 同时最小化 ``间隔方差", 得到的学习器会更好?
 周志华的博士生张腾等开始了这方面的探索.
-2014年左右建立起 ``最优间隔分布学习机 (Optimal margin Distribution Machine, ODM)" 这个新的算法族, 包括二分类、多分类、聚类、半监督等学习算法. \index{聚类}\index{半监督等学习}
 
 2013年的工作引起了很多反响, 如在2014年国际人工智能大会 (AAAI)上, 国际人工智能学会主席、卡内基梅隆大学机器学习系主任曼纽拉·维罗索 (Manuela Veloso) 教授的Keynote报告将它作为人工智能领域的重要进展介绍, 称其使 ``间隔理论复兴", 为 ``学习算法设计带来了新洞察".
 虽然2013理论相应的泛化误差界在当时是最紧致的, 但今后会不会有人基于其他的间隔物理量获得更紧的界, 导致我们关于  ``AdaBoost 为何未发生过拟合"的答案和 ``最大化平均间隔同时最小化间隔方差"的算法指导思想被推翻呢?
-六年后, 在2019年底的NeurIPS会议上, 丹麦奥胡斯大学的阿兰·格洛隆德 (Allan Grønlund)、卡斯柏·拉森 (Kasper G. Larsen)、莱尔·卡玛 (Lior Kamma)、亚历山大·马塞 厄森 (Alexander Mathiasen)与加州大学伯克利分校的杰拉尼·纳尔逊 (Jelani Nelson) 合作发表了一篇论文.
+2014年左右建立起 ``最优间隔分布学习机 (ODM, Optimal margin Distribution Machine)" 这个新的算法族, 包括二分类、多分类、聚类、半监督等学习算法. \index{聚类}\index{半监督等学习}
+三年后, 在2019年底的NeurIPS会议上, 丹麦奥胡斯大学的阿兰·格洛隆德 (Allan Grønlund)、卡斯柏·拉森 (Kasper G. Larsen)、莱尔·卡玛 (Lior Kamma)、亚历山大·马塞 厄森 (Alexander Mathiasen)与加州大学伯克利分校的杰拉尼·纳尔逊 (Jelani Nelson) 合作发表了一篇论文.
 纳尔逊是美国总统奖和斯隆研究奖得主, 拉森在STOC和FOCS曾两获最佳学生论文奖, 是理论计算机科学界的新星, 卡玛则毕业于以色列魏兹曼研究所.
 理论计算机科学家出手机器学习理论问题, 是近年来的一个重要趋势.
 这篇论文最终证明了2013年 \cite{ZhouDBLP} 给出的已经几乎是最紧的泛化误差上界, 至多再改进一个log因子, 并且这个上界已经与下界匹配, 理论上不可能有更好的结果!
@@ -1233,7 +1242,8 @@ AdaBoost出现过三个最主要的理论结果,
 深度学习并不是一种独立的学习方法, 会用到有监督和无监督的学习方法来训练深度神经网络.
 但由于近几年该领域发展迅猛, 一些特有的学习手段相继被提出 (如残差网络), 因此越来越多的人将其单独看作一种学习的方法.
 最初的深度学习是利用深度神经网络来解决特征表达的一种学习过程.
-深度神经网络本身并不是一个全新的概念, 可大致理解为包含多个隐含层的神经网络结构. 为了提高深层神经网络的训练效果, 人们对神经元的连接方法和激活函数等方面做出相应的调整.
+深度神经网络本身并不是一个全新的概念, 可大致理解为包含多个隐含层的神经网络结构. 
+为了提高深层神经网络的训练效果, 人们对神经元的连接方法和激活函数等方面做出相应的调整.
 其实有不少想法早年间也曾有过, 但由于当时用于训练的数据量不足、计算能力落后, 因此最终的效果不尽如人意.
 但随着近几年互联网的成熟, 以及GPU系统的提高, 深度学习的潜力逐渐被挖掘, 深度学习以摧枯拉朽般地效果实现了各种任务, 使得似乎所有的机器辅助功能都变为可能.
 无人驾驶汽车和预防性医疗保健, 甚至影视剧的推荐系统.
@@ -1265,23 +1275,6 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
 二是使用专用加速器加速深度学习应用, 将 32位浮点数转换为定点数, 减少延迟, 降低能耗.
 深度学习常用的神经网络算法图  \ref{DNN191218121500010}和图  \ref{DNN191218121500011}.
 CNN相对于DNN, 比较特殊的是卷积层和池化层, 在熟悉DNN的基础上, 理解卷积层和池化层的原理就学会了CNN.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{DNN1912181.png}
-    \caption{DNN的各种结构 (2)}
-    \label{DNN191218121500011}
-    \vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%----------------------------------------------------
-\begin{example}
-    深度学习中的 AlexNet一开始有 8层网络, 约 6000万个参数; 发展到 2014 年的 VGG-19模型, 有 19 层网络, 大概 1.43 亿个参数. 
-\end{example}
-%%%%%%%%%----------------------------------------------------
-深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展.
-深度学习是一种特定形式的机器学习, 训练多层神经网络.
-深度学习在神经网络研究者中间已经被讨论了超过二十年. 最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
-深度学习已经代替了机器学习的地位.
 
 %%%%%%%%----------------------------------------
 \begin{exampleT}
@@ -1296,16 +1289,36 @@ Intel表示, 它们这套平台尚未充分优化, 还是 ``残血"状态, 比�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{Densetransferflag0322.png}
+    \includegraphics[width=0.9\textwidth]{DNN1912181.png}
+    \caption{DNN的各种结构 (2)}
+    \label{DNN191218121500011}
+    \vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%----------------------------------------------------
+\begin{example}
+    深度学习中的 AlexNet一开始有 8层网络, 约 6000万个参数; 发展到 2014 年的 VGG-19模型, 有 19 层网络, 大概 1.43 亿个参数.
+\end{example}
+%%%%%%%%%----------------------------------------------------
+深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展.
+深度学习是一种特定形式的机器学习, 训练多层神经网络.
+深度学习在神经网络研究者中间已经被讨论了超过二十年. 
+最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
+深度学习已经代替了机器学习的地位.
+
+Desnenet结构如图 \ref{Densetransferflag03220304}, 网络有三个密集块, 池化用于缩减特征映射的规模大小, 密集块之间的特征映射需要相互匹配, .
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Densetransferflag0322.png}
     \caption{Desnenet结构}
     \label{Densetransferflag03220304}
 \end{figure}
 
-使用Matlab中的DNN 设计APP可以很快设计出DNN网络 \ref{DNNDesigner20200304}.
+使用Matlab中的 DNN 设计APP可以很快设计出DNN网络 \ref{DNNDesigner20200304}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{DNNDesigner.pdf}
+    \includegraphics[width=0.65\textwidth]{DNNDesigner.pdf}
     \caption{Matlab中的DNN 设计APP}
     \label{DNNDesigner20200304}
 \end{figure}
@@ -1322,7 +1335,7 @@ AutoML 使机器学习真正意义上成为可能, 即使对于在该领域没�
     \label{AutoML2019fig2702}
 \end{figure}
 如何自动化机器学习管道 (Axel de Romblay):
-从摄取数据到 预处理、优化, 然后预测结果, 每个步骤都由人来控制和执行.
+从摄取数据、预处理到优化, 然后预测结果, 每个步骤都由人来控制和执行.
 AutoML 主要关注两个主要方面: 数据采集 / 收集和预测.
 中间发生的所有其他步骤都可以轻松实现自动化, 同时提供经过优化并准备好进行预测的模型.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1335,24 +1348,24 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PandaPy
 
 1) 对于小型数据集 (即加号, 多号, 对数) 的简单计算, PandaPy比Pandas快25倍-80倍.
 
-2) 对于小型数据集上的表函数 (即组, 枢纽, 放置, 连接, 填充, 填充) , PyPanda比Pandas快5倍-100倍.
+2) 对于小型数据集上的表函数 (即组, 枢纽, 放置, 连接, 填充), PyPanda比Pandas快5倍-100倍.
 
 3) 对于大多数使用小数据的用例, PandaPy比Dask, Modin Ray和Pandas快.
 
-3、Google Earth Engine – 300多个Jupyter笔记本可分析地理空间数据.
+4) Google Earth Engine-300多个Jupyter笔记本可分析地理空间数据.
 
-\href{https://github.com/netZoo/netZooM}{netZooM-github}, \href{https://github.com/netZoo/netZooPy}{netZooPy-github},
+5) \href{https://github.com/netZoo/netZooM}{netZooM-github}, \href{https://github.com/netZoo/netZooPy}{netZooPy-github},
 \href{https://github.com/DanyWind/fast_neptune}{Fast Neptune库} 使我们能够快速记录启动机器学习实验所需的所有信息.
 %%%%%%%%----------------------------------------
 \begin{exampleT}
-使用 PANDA来构建推理出基因调控网络-panda.mlx
+使用 PANDA构建推理出基因调控网络-panda.mlx
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.46\textwidth]{pandamatlab2020032501.PNG}
     \caption{netZooM (panda工具箱)}
     \label{pandamatlab2020032501}
     \vspace{-0.5cm}
-\end{figure}  
+\end{figure}
 \end{exampleT}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1409,7 +1422,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
 
 在构造这个网络的时候, 如果20层的网络可以取得非常好的结果, 在构造56层网络的时候前20层从20层网络中拷贝过来, 后面的36层只做inentity map至少效果不会差于20层的网络.
 于是乎深度残差的网络就提出了, 这个思想其实不复杂, 说白了打破了每一层网络输入只能来自于上一层网络输出的规律, 可以让一些网络的输出直接跳过几层到达后面的输入.
-这样的网络确实也取得了非常好的效果. 
+这样的网络确实也取得了非常好的效果.
 %%%%------------------------------------------
 \begin{remark}
 在真正训练的时候, 有几点小技巧要注意:
@@ -1418,7 +1431,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
 
 2、为了保持每一层网络的参数差不多, 每当经过了池化层输入的维度减少了一般, 那么滤子的个数就要增加一倍.
 
-其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层, 而直接到后面的层中去, 只不过Highway网络需要一个权值来控制每次直接通过的数据量, 而深度残差网络就直接让一部分数据通到了后面.  
+其实深度残差网络和Highway网络这两种网络结构都能够让一部分的数据可以跳过某些变换层, 而直接到后面的层中去, 只不过Highway网络需要一个权值来控制每次直接通过的数据量, 而深度残差网络就直接让一部分数据通到了后面.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{深度神经网络轻量化}
@@ -1441,7 +1454,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
     我们人类的神经网络通过神经元的联结来传递和处理信息, 而人工神经网络则是模拟大脑的工作机制.
     通过研究人类智能的工作机制, 可以模拟出人工智能的工作原理.
 
-    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论, 而且, 机器到底是怎么得出结论的, 我们尚未可知.
+    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论; 而且, 机器到底是怎么得出结论的, 我们尚未可知.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1522,7 +1535,7 @@ François Chollet, Keras作者、谷歌大脑高级研究员 François Chollet�
 
 CNN是第一个真正成功训练多层网络结构的学习算法. 它利用局部连接, 权重共享和下采样极大降低了模型的参数数量, 以提高一般BP网络的训练性能.
 在CNN中, 图像的一小部分 (局部感受区域)作为层级结构的最低层的输入, 神经元只与上一层中部分神经元相连, 并且不同的神经元共享权值, 每层通过不同的卷积核去获得观测数据的不同特征, 然后通过下采样 (池化) 将语义上相似的特
-征合并起来, 降低特征图的空间分辨率. 
+征合并起来, 降低特征图的空间分辨率.
 CNN能够提取对平移、缩放和旋转不变的观测数据的显著特征, 在图像处理、语音处理等领域得到了广泛而深入的应用.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CNN应用场景——计算机视觉问题}
@@ -1907,9 +1920,9 @@ SoftExponential
 \begin{align}
   f (\alpha, x)=\left\{
   \begin{array}{ll}
-    {-\frac{\ln (1-\alpha (x+\alpha))}{\alpha}}, & {\text { for } \alpha<0} \\
-    {x}, & {\text { for } \alpha=0} \\
-    {\frac{e^{\alpha x}-1}{\alpha}+\alpha}, & {\text { for } \alpha>0}
+    {-\frac{\ln (1-\alpha (x+\alpha))}{\alpha}}, & {\textup {当} \alpha<0} \\
+    {x}, & {\textup {当} \alpha=0} \\
+    {\frac{e^{\alpha x}-1}{\alpha}+\alpha}, & {\textup {当} \alpha>0}
 \end{array}\right.,
 x\in (-\infty, \infty).
 \end{align}
@@ -1948,17 +1961,17 @@ x\in \left (-\frac{1}{\sqrt{\alpha}}, \infty\right).
 
 SoftPlus \cite{glorot2011}
 \begin{align}
-  f (x)=\ln \left (1+e^{x}\right), x\in (0, \infty).
+    f (x)=\ln \left (1+e^{x}\right), x\in (0, \infty).
 \end{align}
 
 输出序列Multi-layer long short-term memory (LSTM) RNN.
 \begin{align}
 \begin{array}{l}
-{i_{t}=\sigma\left (W_{i i} x_{t}+b_{i i}+W_{h i} h_{ (t-1)}+b_{h i}\right)} \\
-{f_{t}=\sigma\left (W_{i f} x_{t}+b_{i f}+W_{h f} h_{ (t-1)}+b_{h f}\right)} \\
-{g_{t}=\tanh \left (W_{i g} x_{t}+b_{i g}+W_{h g} h_{ (t-1)}+b_{h g}\right)} \\
-{o_{t}=\sigma\left (W_{i o} x_{t}+b_{i o}+W_{h o} h_{ (t-1)}+b_{h o}\right)} \\
-{c_{t}=f_{t}  c_{ (t-1)}+i_{t}  g_{t}} \\
+{i_{t}=\sigma\left (W_{i i} x_{t}+b_{i i}+W_{h i} h_{ (t-1)}+b_{h i}\right)}, \\
+{f_{t}=\sigma\left (W_{i f} x_{t}+b_{i f}+W_{h f} h_{ (t-1)}+b_{h f}\right)}, \\
+{g_{t}=\tanh \left (W_{i g} x_{t}+b_{i g}+W_{h g} h_{ (t-1)}+b_{h g}\right)}, \\
+{o_{t}=\sigma\left (W_{i o} x_{t}+b_{i o}+W_{h o} h_{ (t-1)}+b_{h o}\right)}, \\
+{c_{t}=f_{t}  c_{ (t-1)}+i_{t}  g_{t}}, \\
 {h_{t}=o_{t}  \tanh \left (c_{t}\right)}.
 \end{array}
 \end{align}
@@ -2007,7 +2020,8 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
- (\textbf{AlexNet 的Matlab示例}) 使用 AlexNet 对任何图像中的对象分类. 在本例中, 我们使用它对桌上安装的网络摄像头捕获的图像中的对象分类. 除了 MATLAB, 还需使用下列工具:
+ (\textbf{AlexNet 的Matlab示例}) 使用 AlexNet 对任何图像中的对象分类. 在本例中, 我们使用它对桌上安装的网络摄像头捕获的图像中的对象分类. 
+ 除了 MATLAB, 还需使用下列工具:
 \begin{itemize}
 \item Deep Learning Toolbox™;
 \item 在 MATLAB 中使用网络摄像头的支持包;
@@ -2031,7 +2045,7 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
     title (char (label)); % 显示标签
 \end{Verbatim}
 \end{example}
-上一示例使用的是现成的网络. 我们完全不做任何修改, 因为 AlexNet 训练所用的图像类似于我们想要分类的图像.
+上一示例使用的是现成的网络. 完全不需要做任何修改, 因为 AlexNet训练所用的图像类似于我们想要分类的图像.
 
 要使用 AlexNet 对未在原有网络中训练的对象分类, 可以通过迁移学习重新训练.
 迁移学习是将一个类型问题的知识应用于不同类型但相关的问题的学习方法. \index{迁移学习}
@@ -2041,7 +2055,7 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 
 如果迁移学习不适合您的应用场景, 您可能需要从头开始训练您自己的网络. 这种方法产生最精确的结果, 但一般需要成百上千张带标签的图像和大量的计算资源.
 培训深度学习模型可能需要几小时、几天或几星期, 具体取决于数据量大小以及可投入使用的处理能力. 选择计算资源是您建立工作流程时的重要考虑因素.
-当前, 有三个计算选项: 基于 CPU、基于 GPU 和基于云.
+当前, 有三个计算选项: 基于 CPU、基于 GPU 和基于云三种.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -2237,11 +2251,11 @@ diffGrad能够以理想的损失锁定到全局最小值. Adam由于无法及时
 图 \ref{CCNshuidao20191216181137} 给出了在稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{CCNshuidao20191216181137.jpg}
-\caption{稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果}
-\label{CCNshuidao20191216181137}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.6\textwidth]{CCNshuidao20191216181137.jpg}
+    \caption{稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果}
+    \label{CCNshuidao20191216181137}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{图卷积神经网络}
@@ -2253,11 +2267,11 @@ GRAPH CONVOLUTIONAL NETWORKS},
 GAS 的整体流程是 如图 \ref{GNNGAS20191216202234}, 模型会从左侧图抽取出表示商品、用户和评论的信息, 从右侧抽取出类似评论表示的意义. 最后结合这些信息进行分类, 模型就能很好地识别垃圾信息了.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{GNNGAS20191216202234.jpg}
-\caption{GCN-based Anti-Spam System (GAS) 的垃圾评论过滤系统}
-\label{GNNGAS20191216202234}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.76\textwidth]{GNNGAS20191216202234.jpg}
+    \caption{基于GCN的垃圾信息过滤系统 (GAS)}
+    \label{GNNGAS20191216202234}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 图卷积的核心思想是希望利用近邻节点的信息进行聚合而生成当前节点的新表征, 这样的节点表示可以进一步用于下游任务.
@@ -2272,10 +2286,11 @@ GAS 的整体流程是 如图 \ref{GNNGAS20191216202234}, 模型会从左侧图�
 这样的 $Z$再来做预测或生成就会非常有效. 直观而言, 图卷积将图片的 RGB 像素值替换成节点特征, 并且通过边的关系引入了邻居的概念, 完成卷积运算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{GNNGAS20191216202340.jpg}
-\caption{图卷积网络的输入输出结构}
-\label{GNNGAS20191216202340}\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.76\textwidth]{GNNGAS20191216202340.jpg}
+    \caption{图卷积网络的输入输出结构}
+    \label{GNNGAS20191216202340}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2323,11 +2338,11 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 图 \ref{GNNGAS20191216202416} 给出了一小部分 Comment Graph, 如果说局部模型无法根据「add v」判断出意思是加微信, 那么放在 Comment Graph 中就非常明确了, 它与类似的说法都应该被判断为垃圾评论.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{GNNGAS20191216202416.jpg}
-\caption{基于闲鱼 Graph 构建的 同构Comment Graph}
-\label{GNNGAS20191216202416}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.7\textwidth]{GNNGAS20191216202416.jpg}
+    \caption{基于闲鱼 Graph 构建的 同构Comment Graph}
+    \label{GNNGAS20191216202416}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 简单而言, Comment Graph 的构建主要分为四个步骤: 移除所有重复的评论;
@@ -2344,20 +2359,20 @@ $W^l$表示该神经网络层所需要学习的权重, $\sigma$表示激活函�
 通过神经网络在时序上的展开, 我们能够找到样本之间的序列相关性.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{RNN201912150001.PNG}
-\caption{RNN网络结构按时间展开}
-\label{RNN201912150001}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.76\textwidth]{RNN201912150001.PNG}
+    \caption{RNN网络结构按时间展开}
+    \label{RNN201912150001}
+    \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{RNNImage191229001.png}
-\caption{RNN网络结构}
-\label{RNNImage191229001}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.76\textwidth]{RNNImage191229001.png}
+    \caption{RNN网络结构}
+    \label{RNNImage191229001}
+    \vspace{-0.4cm}
 \end{figure}
 
 RNN主要用于序列分类
@@ -2379,10 +2394,10 @@ RNN主要用于序列分类
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{RNNImage191229002.png}
-\caption{RNN权重作用示意图}
-\label{RNNImage191229002}\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.6\textwidth]{RNNImage191229002.png}
+    \caption{RNN权重作用示意图}
+    \label{RNNImage191229002}\vspace{-0.4cm}
 \end{figure}
 
 为了将信息传播回向量$W$, 我们需要用到链式法则的概念.
@@ -2394,21 +2409,21 @@ RNN主要用于序列分类
 
 如果我们有超过100个或者更长的序列的隐藏表示, 那么我们必须计算这些表示的乘积来进行反向传播.
 假设其中一个偏导数值很大, 那么整个梯度值就会非常大, 从而导致梯度爆炸问题.
-如果其中一个偏导数是一个很小的值, 那么整个梯度就会变得更小或消失, 使得网络难以训练, 这就是梯度消失问题.
+如果其中一个偏导数是一个很小的值, 那么整个梯度就会变得更小或消失, 使得网络难以训练, 导致出现梯度消失问题.
 由于RNN具有有限的状态大小, 而不是从所有的时间步长中提取信息并计算隐藏状态表示.
 在从不同的时间步长中提取信息时, 我们需要遵循选择性读 (read)、写 (write)和遗忘 (forget)策略.
 
 \begin{example}RNN示例
 
-让我们以使用RNN进行情感分析为例, 看看选择性read, write和forget策略的工作原理.
+让我们以使用RNN进行情感分析为例, 看看选择性读、写和遗忘策略的工作原理.
 %评论: The first half of the movie is dry but the second half really picked up the pace. The lead actor delivered an amazing performance.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.76\textwidth]{RNNImage191229003.png}
-\caption{RNN权重作用示意图}
-\label{RNNImage191229003}
-\vspace{-0.4cm}
+    \centering
+    \includegraphics[width=0.72\textwidth]{RNNImage191229003.png}
+    \caption{RNN权重作用示意图}
+    \label{RNNImage191229003}
+    \vspace{-0.4cm}
 \end{figure}
 评论始于负面情绪, 后来变成正面.
 
@@ -2458,7 +2473,8 @@ $\bullet$ RNN或LSTM中的选择性写方式.
     \label{RNNImage191229006}
     \vspace{-0.4cm}
 \end{figure}
-我们进行 ``选择性写"的方式是, 将$s_{t-1}$的每个元素乘以一个介于0到1之间的值, 以计算出一个新的向量$h_{t-1}$. 我们将使用这个新向量来计算隐藏表示$s_t$.
+我们进行 ``选择性写"的方式是, 将$s_{t-1}$的每个元素乘以一个介于0到1之间的值, 以计算出一个新的向量$h_{t-1}$. 
+下面使用这个新向量来计算隐藏表示$s_t$.
 就像我们使用基于梯度下降优化的参数学习来学习其他参数 (例如$U$和$W$)一样, 我们将从数据中学习$o_{t-1}$的数学方程式如下:
 \begin{align}
     o_{t-1}&=\sigma\left (U_{o} x_{t-1}+W_{o} h_{t-2}+b_{o}\right),\\
@@ -2491,26 +2507,26 @@ $t$从先前状态$h_{t-1}$和当前输入$x_t$捕获所有信息.
 
 $i_t$的数学公式如下:
 
-\quad\quad Input gate: $i_{t}=\sigma\left (W_{i} h_{t-1}+U_{i} x_{t}+b_{i}\right)$.
+\quad\quad 输入门: $i_{t}=\sigma\left (W_{i} h_{t-1}+U_{i} x_{t}+b_{i}\right)$.
 
-\quad\quad Selectively Read: $i_{t} \odot \tilde{s_{t}}$.
+\quad\quad 选择性地度读: $i_{t} \odot \tilde{s_{t}}$.
 
 在输入门中,\index{输入门} 我们将前一时间步的隐藏状态信息$h_{t-1}$和当前输入$x_t$连同偏差传递给 sigmoid 函数.
 计算的输出将在0–1之间, 它将决定从当前输入和上一时间步隐藏状态流入哪些信息. 0表示不重要, 1表示重要.
 
 回顾到目前为止所学的知识, 我们拥有先前的隐藏状态$s_{t-1}$, 我们的目标是使用选择性取、写和遗忘策略来计算当前状态$s_t$:
 
-\quad\quad Previous state: $s_{t-1}$.
+\quad\quad 前状态: $s_{t-1}$.
 
-\quad\quad Output gate: $o_{t-1}=\sigma\left (W_{o} h_{t-2}+U_{o} x_{t-1}+b_{o}\right)$.
+\quad\quad 输出门: $o_{t-1}=\sigma\left (W_{o} h_{t-2}+U_{o} x_{t-1}+b_{o}\right)$.
 
-\quad\quad Selectively Write: $h_{t-1}=o_{t-1} \odot \sigma\left (s_{t-1}\right)$.
+\quad\quad 选择性地写: $h_{t-1}=o_{t-1} \odot \sigma\left (s_{t-1}\right)$.
 
-\quad\quad Current (temporary) state: $\tilde{s_{t}}=\sigma\left (W h_{t-1}+U x_{t}+b\right)$.
+\quad\quad 当前(temporary)状态: $\tilde{s_{t}}=\sigma\left (W h_{t-1}+U x_{t}+b\right)$.
 
-\quad\quad Input gate: $i_{t}=\sigma\left (W_{i} h_{t-1}+U_{i} x_{t}+b_{i}\right)$.
+\quad\quad 输入门: $i_{t}=\sigma\left (W_{i} h_{t-1}+U_{i} x_{t}+b_{i}\right)$.
 
-\quad Selectively Read: $i_{t} \odot \tilde{s_{t}}$.
+\quad 选择性地度读: $i_{t} \odot \tilde{s_{t}}$.
 \end{example}
 $\bullet$ RNN或LSTM中的选择性遗忘.
 
@@ -2572,7 +2588,7 @@ $\bullet$ 门控循环单元— GRU
 门控循环单元是LSTM的一个变体. GRU使用的门较少.
 在像LSTM一样的门控循环单元中, 我们有一个输出门, 可以控制哪些信息进入下一个隐藏状态. 同样, 我们还有一个输入门, 它控制从当前输入中流入的信息.
 LSTM和GRU之间的主要区别在于它们将中间隐藏状态向量和先前的隐藏状态表示向量$s$组合的方式.
-在LSTM中, forget确定要从$s$中保留多少信息.
+在LSTM中, 遗忘机制确定要从$s$中保留多少信息.
 在GRU中, 我们根据输入门向量 (1-it)的剩余来决定保留或丢弃多少过去的信息, 而不是遗忘门.
 \begin{align}
     f_{t} = 1-x_{t} (1-i_t).

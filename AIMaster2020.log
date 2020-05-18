@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  18 MAY 2020 08:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  18 MAY 2020 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3421,6 +3421,9 @@ LaTeX Warning: Label `def:1' multiply defined.
 LaTeX Warning: Label `MLDNN12019121501' multiply defined.
 
 
+LaTeX Warning: Label `def:1' multiply defined.
+
+
 LaTeX Warning: Label `RNNAPP2019121500005' multiply defined.
 
 ) (./tex/chapter8.aux) (./tex/chapter9.aux) (./tex/chapter10.aux)
@@ -6601,24 +6604,19 @@ Package mdframed Info: mdframed works in twoside mode on input line 2122.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2122.
- [335]
-Package mdframed Info: mdframed works in twoside mode on input line 2146.
+Package mdframed Info: mdframed works in twoside mode on input line 2134.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2146.
+(mdframed)              on input line 2134.
+ [335]
 Package mdframed Info: mdframed works in twoside mode on input line 2164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2164.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 2178.
+
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
  [336]
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last split box is empty
-(mdframed)                You have to change the settings on input line 2178.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2205.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -6659,7 +6657,7 @@ Underfull \vbox (badness 1466) has occurred while \output is active []
 
  [339]
 [340]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 6396) has occurred while \output is active []
 
  [341]
 [342] [343]
@@ -6669,290 +6667,250 @@ File: figures/GenerationElvovlilng2020020401.png Graphic file (type bmp)
 File: figures/IndirectGencode2020020401.png Graphic file (type bmp)
 <figures/IndirectGencode2020020401.png>
  [345]
-Package mdframed Info: mdframed works in twoside mode on input line 2643.
+Package mdframed Info: mdframed works in twoside mode on input line 2644.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2643.
+(mdframed)              on input line 2644.
+Package mdframed Info: mdframed works in twoside mode on input line 2663.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2663.
+Package mdframed Info: mdframed works in twoside mode on input line 2670.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2670.
 File: figures/Crossovers2020020402.png Graphic file (type bmp)
 <figures/Crossovers2020020402.png>
-Package mdframed Info: mdframed works in twoside mode on input line 2668.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2668.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [346]
-Package mdframed Info: mdframed works in twoside mode on input line 2675.
+Package mdframed Info: mdframed works in twoside mode on input line 2691.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2675.
-Package mdframed Info: mdframed works in twoside mode on input line 2689.
+(mdframed)              on input line 2691.
+Package mdframed Info: mdframed works in twoside mode on input line 2697.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2689.
-Package mdframed Info: mdframed works in twoside mode on input line 2695.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2695.
- [347] [348] [349] [350]
-Overfull \hbox (3.57274pt too wide) in paragraph at lines 2908--2908
+(mdframed)              on input line 2697.
+
+[347] [348] [349] [350] [351]
+Overfull \hbox (3.57274pt too wide) in paragraph at lines 2915--2915
 []|$\OML/ntxmi/m/it/12.045 C[]$| 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2908--2908
+Underfull \hbox (badness 10000) in alignment at lines 2915--2915
 [][] 
  []
 
-[351] [352]
+[352] [353]
 File: figures/AdaptQBFA.pdf Graphic file (type pdf)
 <use figures/AdaptQBFA.pdf>
 File: figures/AQBFA_SDAFlowChart.pdf Graphic file (type pdf)
 <use figures/AQBFA_SDAFlowChart.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3028--3028
+Underfull \hbox (badness 10000) in paragraph at lines 3035--3035
 []|\T1/ntxtlf/m/n/12.045 Range of
  []
 
 
-Overfull \hbox (5.89305pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (5.89305pt too wide) in paragraph at lines 3035--3035
 []|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
-Overfull \hbox (14.19728pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (14.19728pt too wide) in paragraph at lines 3035--3035
 []|\T1/ntxtlf/m/n/12.045 Rosenbrock| 
  []
 
 
-Overfull \hbox (0.96893pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (0.96893pt too wide) in paragraph at lines 3035--3035
 []|$\LMS/ntxsy/m/n/12.045 »^^@\OT1/ntxtlf/m/n/12.045 1\OML/ntxmi/m/it/12.045 :\
 OT1/ntxtlf/m/n/12.045 28\OML/ntxmi/m/it/12.045 ; \OT1/ntxtlf/m/n/12.045 1\OML/n
 txmi/m/it/12.045 :\OT1/ntxtlf/m/n/12.045 28\LMS/ntxsy/m/n/12.045 ¼[]$| 
  []
 
 
-Overfull \hbox (1.55002pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (1.55002pt too wide) in paragraph at lines 3035--3035
 []|\T1/ntxtlf/m/n/12.045 Rastrigin| 
  []
 
 
-Overfull \hbox (0.96893pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (0.96893pt too wide) in paragraph at lines 3035--3035
 []|$\LMS/ntxsy/m/n/12.045 »^^@\OT1/ntxtlf/m/n/12.045 5\OML/ntxmi/m/it/12.045 :\
 OT1/ntxtlf/m/n/12.045 12\OML/ntxmi/m/it/12.045 ; \OT1/ntxtlf/m/n/12.045 5\OML/n
 txmi/m/it/12.045 :\OT1/ntxtlf/m/n/12.045 12\LMS/ntxsy/m/n/12.045 ¼[]$| 
  []
 
 
-Overfull \hbox (4.39267pt too wide) in paragraph at lines 3028--3028
+Overfull \hbox (4.39267pt too wide) in paragraph at lines 3035--3035
 []|\T1/ntxtlf/m/n/12.045 Griewank| 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3028--3028
+Underfull \hbox (badness 10000) in alignment at lines 3035--3035
 [][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3051--3051
+Underfull \hbox (badness 10000) in paragraph at lines 3058--3058
 []|\T1/ntxtlf/m/n/12.045 Shifted Rosen-brock's
  []
 
 
-Overfull \hbox (52.45276pt too wide) in alignment at lines 3051--3051
+Overfull \hbox (52.45276pt too wide) in alignment at lines 3058--3058
 [][] 
  []
 
-[353] [354]
-
-LaTeX Warning: Text page 355 contains only floats.
-
-[355]
+[354] [355]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 3102.
+(Font)              scaled to size 7.0pt on input line 3109.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3102.
+(Font)              scaled to size 5.0pt on input line 3109.
 
-Overfull \hbox (21.59161pt too wide) in alignment at lines 3116--3116
+Overfull \hbox (21.59161pt too wide) in alignment at lines 3123--3123
 [][][][][] 
  []
 
 [356] [357] [358] [359]
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3148--3148
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3155--3155
 []|\TU/SimSun(0)/m/n/12.045 函
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3148--3148
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3155--3155
 \TU/SimSun(0)/m/n/12.045 数| 
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3148--3148
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3155--3155
 []|\TU/SimSun(0)/m/n/12.045 维
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3148--3148
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3155--3155
 \TU/SimSun(0)/m/n/12.045 数| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3148--3148
+Underfull \hbox (badness 10000) in paragraph at lines 3155--3155
 []|\TU/SimSun(0)/m/n/12.045 排
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3144--3150
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3151--3157
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3153--3153
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3160--3160
 []|\TU/SimSun(0)/m/n/12.045 函
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3153--3153
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3160--3160
 \TU/SimSun(0)/m/n/12.045 数| 
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3153--3153
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3160--3160
 []|\TU/SimSun(0)/m/n/12.045 维
  []
 
 
-Overfull \hbox (3.5091pt too wide) in paragraph at lines 3153--3153
+Overfull \hbox (3.5091pt too wide) in paragraph at lines 3160--3160
 \TU/SimSun(0)/m/n/12.045 数| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3153--3153
+Underfull \hbox (badness 10000) in paragraph at lines 3160--3160
 []|\TU/SimSun(0)/m/n/12.045 排
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3150--3155
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3157--3162
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3155--3157
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3162--3164
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3157--3159
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3164--3166
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3160--3160
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3167--3167
 []|$\OML/ntxmi/m/it/12.045 f[]$| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3160--3160
-[]|\T1/ntxtlf/m/n/12.045 30| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3161--3161
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3162--3162
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3163--3163
-[]|\T1/ntxtlf/m/n/12.045 30| 
- []
-
-
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3163--3163
-[]|\T1/ntxtlf/m/n/12.045 295.480| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3164--3164
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3164--3164
-[]|\T1/ntxtlf/m/n/12.045 9049.05| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3165--3165
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3165--3165
-[]|\T1/ntxtlf/m/n/12.045 9036.61| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3166--3166
-[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3167--3167
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3168--3168
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3169--3169
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3169--3169
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3170--3170
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3171--3171
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3172--3172
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3172--3172
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3173--3173
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3170--3170
+[]|\T1/ntxtlf/m/n/12.045 295.480| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3171--3171
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3174--3174
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3171--3171
+[]|\T1/ntxtlf/m/n/12.045 9049.05| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3172--3172
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3176--3176
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3172--3172
+[]|\T1/ntxtlf/m/n/12.045 9036.61| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3173--3173
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3174--3174
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3175--3175
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3176--3176
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
@@ -6971,6 +6929,11 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3178--3178
  []
 
 
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3179--3179
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
+ []
+
+
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3179--3179
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
@@ -6981,78 +6944,73 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3180--3180
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3180--3180
-[]|\T1/ntxtlf/m/n/12.045 101.828| 
- []
-
-
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3159--3181
- [] [] [] [] [] [] [] [] [] 
- []
-
-
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3181--3181
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3182--3182
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3183--3183
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3183--3183
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3184--3184
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3185--3185
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3185--3185
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3186--3186
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3187--3187
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3188--3188
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3188--3188
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3189--3189
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3187--3187
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3190--3190
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3187--3187
+[]|\T1/ntxtlf/m/n/12.045 101.828| 
+ []
+
+
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3166--3188
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3188--3188
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3192--3192
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3189--3189
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3190--3190
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3191--3191
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3192--3192
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
@@ -7061,18 +7019,8 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3192--3192
  []
 
 
-Overfull \hbox (11.02547pt too wide) in paragraph at lines 3192--3192
-[]|\T1/ntxtlf/m/n/12.045 2153.348| 
- []
-
-
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3193--3193
 []|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (11.02547pt too wide) in paragraph at lines 3193--3193
-[]|\T1/ntxtlf/m/n/12.045 2319.845| 
  []
 
 
@@ -7081,13 +7029,13 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3194--3194
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3195--3195
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3195--3195
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3195--3195
-[]|\T1/ntxtlf/m/n/12.045 167.089| 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3195--3195
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
@@ -7096,88 +7044,98 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3196--3196
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3196--3196
-[]|\T1/ntxtlf/m/n/12.045 122.326| 
- []
-
-
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3197--3197
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3197--3197
-[]|\T1/ntxtlf/m/n/12.045 178.774| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3198--3198
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3199--3199
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3199--3199
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (11.02547pt too wide) in paragraph at lines 3199--3199
+[]|\T1/ntxtlf/m/n/12.045 2153.348| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3200--3200
-[]|\T1/ntxtlf/m/n/12.045 60| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3201--3201
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+Overfull \hbox (11.02547pt too wide) in paragraph at lines 3200--3200
+[]|\T1/ntxtlf/m/n/12.045 2319.845| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3201--3201
-[]|\T1/ntxtlf/m/n/12.045 30| 
- []
-
-
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3181--3202
- [] [] [] [] [] [] [] [] [] 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3202--3202
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3203--3203
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3204--3204
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3204--3204
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3205--3205
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3202--3202
+[]|\T1/ntxtlf/m/n/12.045 167.089| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3203--3203
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3206--3206
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3203--3203
+[]|\T1/ntxtlf/m/n/12.045 122.326| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3204--3204
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3208--3208
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3204--3204
+[]|\T1/ntxtlf/m/n/12.045 178.774| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3205--3205
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3206--3206
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3207--3207
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3208--3208
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3208--3208
 []|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3188--3209
+ [] [] [] [] [] [] [] [] [] 
  []
 
 
@@ -7188,6 +7146,11 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3209--3209
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3210--3210
 []|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3211--3211
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
  []
 
 
@@ -7206,70 +7169,58 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3213--3213
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3214--3214
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3215--3215
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3215--3215
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3216--3216
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3217--3217
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3217--3217
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3218--3218
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3219--3219
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3220--3220
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3220--3220
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3221--3221
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3219--3219
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3222--3222
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3220--3220
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3202--3224
- [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3221--3221
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
-[360
 
-]
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3224--3224
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3222--3222
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3223--3223
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3224--3224
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
@@ -7288,13 +7239,13 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3226--3226
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3227--3227
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3227--3227
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3227--3227
-[]|\T1/ntxtlf/m/n/12.045 159.810| 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3227--3227
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
@@ -7303,78 +7254,85 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3228--3228
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3228--3228
-[]|\T1/ntxtlf/m/n/12.045 153.452| 
- []
-
-
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3229--3229
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3229--3229
-[]|\T1/ntxtlf/m/n/12.045 152.610| 
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3209--3231
+ [] [] [] [] [] [] [] [] [] 
  []
 
+[360
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3230--3230
-[]|\T1/ntxtlf/m/n/12.045 30| 
+]
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3231--3231
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3231--3231
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3232--3232
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3233--3233
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3233--3233
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3234--3234
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3235--3235
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3236--3236
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3236--3236
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3237--3237
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3234--3234
+[]|\T1/ntxtlf/m/n/12.045 159.810| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3235--3235
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3238--3238
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3235--3235
+[]|\T1/ntxtlf/m/n/12.045 153.452| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3236--3236
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3240--3240
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3236--3236
+[]|\T1/ntxtlf/m/n/12.045 152.610| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3237--3237
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3238--3238
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3239--3239
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3240--3240
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
@@ -7393,13 +7351,13 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3242--3242
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3243--3243
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3243--3243
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3243--3243
-[]|\T1/ntxtlf/m/n/12.045 105.882| 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3243--3243
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
@@ -7408,83 +7366,83 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3244--3244
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3244--3244
-[]|\T1/ntxtlf/m/n/12.045 143.584| 
- []
-
-
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3224--3245
- [] [] [] [] [] [] [] [] [] 
- []
-
-
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3245--3245
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (5.00298pt too wide) in paragraph at lines 3245--3245
-[]|\T1/ntxtlf/m/n/12.045 163.006| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3246--3246
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3247--3247
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3247--3247
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3248--3248
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3249--3249
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3249--3249
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3250--3250
-[]|\T1/ntxtlf/m/n/12.045 45| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3251--3251
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3252--3252
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3252--3252
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3253--3253
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3250--3250
+[]|\T1/ntxtlf/m/n/12.045 105.882| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3251--3251
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3254--3254
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3251--3251
+[]|\T1/ntxtlf/m/n/12.045 143.584| 
+ []
+
+
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3231--3252
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3252--3252
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (1.16753pt too wide) in paragraph at lines 3256--3256
-[]|$\OML/ntxmi/m/it/12.045 f[]$| 
+Overfull \hbox (5.00298pt too wide) in paragraph at lines 3252--3252
+[]|\T1/ntxtlf/m/n/12.045 163.006| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3253--3253
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3254--3254
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3255--3255
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3256--3256
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
  []
 
 
@@ -7503,6 +7461,11 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3258--3258
  []
 
 
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3259--3259
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
+ []
+
+
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3259--3259
 []|\T1/ntxtlf/m/n/12.045 30| 
  []
@@ -7518,282 +7481,317 @@ Overfull \hbox (3.50908pt too wide) in paragraph at lines 3261--3261
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3262--3262
-[]|\T1/ntxtlf/m/n/12.045 30| 
+Overfull \hbox (1.16753pt too wide) in paragraph at lines 3263--3263
+[]|$\OML/ntxmi/m/it/12.045 f[]$| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3263--3263
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3264--3264
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (9.12236pt too wide) in paragraph at lines 3265--3265
-[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3265--3265
-[]|\T1/ntxtlf/m/n/12.045 30| 
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3245--3266
- [] [] [] [] [] [] [] [] [] 
- []
-
-[361]
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3266--3266
-[]|\T1/ntxtlf/m/n/12.045 45| 
+[]|\T1/ntxtlf/m/n/12.045 30| 
  []
 
 
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3267--3267
-[]|\T1/ntxtlf/m/n/12.045 60| 
- []
-
-
-Overfull \hbox (10.96523pt too wide) in paragraph at lines 3268--3268
-[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3268--3268
-[]|\T1/ntxtlf/m/n/12.045 30| 
- []
-
-
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3269--3269
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (3.50908pt too wide) in paragraph at lines 3270--3270
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3268--3268
 []|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (62.47536pt too wide) in alignment at lines 3266--3272
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3269--3269
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3270--3270
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3271--3271
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (9.12236pt too wide) in paragraph at lines 3272--3272
+[]|\T1/ntxtlf/m/n/12.045 IAQBFA| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3272--3272
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3252--3273
  [] [] [] [] [] [] [] [] [] 
  []
 
-[362]
-Overfull \hbox (8.78493pt too wide) in alignment at lines 3291--3291
-[][][][][] 
+[361]
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3273--3273
+[]|\T1/ntxtlf/m/n/12.045 45| 
  []
 
 
-Overfull \hbox (36.05205pt too wide) in alignment at lines 3312--3312
-[][][][] 
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3274--3274
+[]|\T1/ntxtlf/m/n/12.045 60| 
  []
 
 
-Overfull \hbox (2.42932pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (10.96523pt too wide) in paragraph at lines 3275--3275
 []|\T1/ntxtlf/m/n/12.045 FAQBFA| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3275--3275
+[]|\T1/ntxtlf/m/n/12.045 30| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3276--3276
+[]|\T1/ntxtlf/m/n/12.045 45| 
+ []
+
+
+Overfull \hbox (3.50908pt too wide) in paragraph at lines 3277--3277
+[]|\T1/ntxtlf/m/n/12.045 60| 
+ []
+
+
+Overfull \hbox (62.47536pt too wide) in alignment at lines 3273--3279
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[362]
+Overfull \hbox (8.78493pt too wide) in alignment at lines 3298--3298
+[][][][][] 
+ []
+
+
+Overfull \hbox (36.05205pt too wide) in alignment at lines 3319--3319
+[][][][] 
+ []
+
+
+Overfull \hbox (2.42932pt too wide) in paragraph at lines 3370--3370
+[]|\T1/ntxtlf/m/n/12.045 FAQBFA| 
+ []
+
+
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8909.4279| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8650.6850| 
  []
 
 
-Overfull \hbox (0.87505pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (0.87505pt too wide) in paragraph at lines 3370--3370
 []|$\OMS/cmsy/b/n/12.045 ^^@\OT1/cmr/bx/n/12.045 449\OML/cmm/b/it/12.045 :\OT1/
 cmr/bx/n/12.045 5195$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3363--3363
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 -
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 \T1/ntxtlf/m/n/12.045 232.4032| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8909.6041| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8653.9868| 
  []
 
 
-Overfull \hbox (0.87505pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (0.87505pt too wide) in paragraph at lines 3370--3370
 []|$\OMS/cmsy/b/n/12.045 ^^@\OT1/cmr/bx/n/12.045 449\OML/cmm/b/it/12.045 :\OT1/
 cmr/bx/n/12.045 4842$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3363--3363
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 -
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 \T1/ntxtlf/m/n/12.045 225.0580| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8992.9453| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8721.3704| 
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 650.1049| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8935.4329| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8674.7632| 
  []
 
 
-Overfull \hbox (1.39886pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (1.39886pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 6689.7910| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 5911.8439| 
  []
 
 
-Overfull \hbox (1.39886pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (1.39886pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 6524.5539| 
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 483.1981| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8939.5689| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8681.5180| 
  []
 
 
-Overfull \hbox (1.39886pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (1.39886pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 6656.4715| 
  []
 
 
-Overfull \hbox (19.36917pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (19.36917pt too wide) in paragraph at lines 3370--3370
 []|$\OMS/cmsy/b/n/12.045 ^^@\OT1/cmr/bx/n/12.045 119\OML/cmm/b/it/12.045 :\OT1/
 cmr/bx/n/12.045 0299$| 
  []
 
 
-Overfull \hbox (1.39886pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (1.39886pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 9923.6429| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8920.2839| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8676.8111| 
  []
 
 
-Overfull \hbox (7.42136pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (7.42136pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 10283.4198| 
  []
 
 
-Overfull \hbox (0.87505pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (0.87505pt too wide) in paragraph at lines 3370--3370
 []|$\OMS/cmsy/b/n/12.045 ^^@\OT1/cmr/bx/n/12.045 309\OML/cmm/b/it/12.045 :\OT1/
 cmr/bx/n/12.045 3002$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3363--3363
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 -
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 \T1/ntxtlf/m/n/12.045 166.5421| 
  []
 
 
-Overfull \hbox (7.42136pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (7.42136pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 13693.1746| 
  []
 
 
-Overfull \hbox (5.6666pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (5.6666pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8919.5089| 
  []
 
 
-Overfull \hbox (8.51205pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (8.51205pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 8663.0473| 
  []
 
 
-Overfull \hbox (1.39886pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (1.39886pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 9677.1638| 
  []
 
 
-Overfull \hbox (0.87505pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (0.87505pt too wide) in paragraph at lines 3370--3370
 []|$\OMS/cmsy/b/n/12.045 ^^@\OT1/cmr/bx/n/12.045 309\OML/cmm/b/it/12.045 :\OT1/
 cmr/bx/n/12.045 2905$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3363--3363
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 -
  []
 
 
-Overfull \hbox (2.48956pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (2.48956pt too wide) in paragraph at lines 3370--3370
 \T1/ntxtlf/m/n/12.045 164.1773| 
  []
 
 
-Overfull \hbox (7.42136pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (7.42136pt too wide) in paragraph at lines 3370--3370
 []|\T1/ntxtlf/m/n/12.045 11164.5167| 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3363--3363
+Underfull \hbox (badness 10000) in alignment at lines 3370--3370
 [][][][][][][] 
  []
 
@@ -7806,55 +7804,55 @@ File: figures/Liuyingmingyuanshi.JPG Graphic file (type bmp)
 File: figures/IFSA1983.JPG Graphic file (type bmp)
 <figures/IFSA1983.JPG>
  [365]
-Package mdframed Info: mdframed works in twoside mode on input line 3780.
+Package mdframed Info: mdframed works in twoside mode on input line 3787.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3780.
+(mdframed)              on input line 3787.
  [366]
-Package mdframed Info: mdframed works in twoside mode on input line 3817.
+Package mdframed Info: mdframed works in twoside mode on input line 3824.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3817.
-Package mdframed Info: mdframed works in twoside mode on input line 3837.
+(mdframed)              on input line 3824.
+Package mdframed Info: mdframed works in twoside mode on input line 3844.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3837.
-Package mdframed Info: Not enough space on this page on input line 3847.
+(mdframed)              on input line 3844.
+Package mdframed Info: Not enough space on this page on input line 3854.
  [367]
-Package mdframed Info: Not enough space on this page on input line 3847.
+Package mdframed Info: Not enough space on this page on input line 3854.
 
 Underfull \vbox (badness 1824) has occurred while \output is active []
 
  [368]
-Package mdframed Info: mdframed works in twoside mode on input line 3889.
+Package mdframed Info: mdframed works in twoside mode on input line 3896.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3889.
-Package mdframed Info: mdframed works in twoside mode on input line 3924.
+(mdframed)              on input line 3896.
+Package mdframed Info: mdframed works in twoside mode on input line 3931.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3924.
+(mdframed)              on input line 3931.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 3931.
+(mdframed)              on input line 3938.
 
 [369]
-Package mdframed Info: mdframed works in twoside mode on input line 3953.
+Package mdframed Info: mdframed works in twoside mode on input line 3960.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3953.
+(mdframed)              on input line 3960.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [370]
-Package mdframed Info: mdframed works in twoside mode on input line 3987.
+Package mdframed Info: mdframed works in twoside mode on input line 3994.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3987.
-Package mdframed Info: mdframed works in twoside mode on input line 4014.
+(mdframed)              on input line 3994.
+Package mdframed Info: mdframed works in twoside mode on input line 4021.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4014.
+(mdframed)              on input line 4021.
 
 [371]
 Missing character: There is no π in font ntxmi!
@@ -8151,20 +8149,23 @@ Underfull \vbox (badness 2547) has occurred while \output is active []
 [418]
 File: figures/t2019121500001.PNG Graphic file (type bmp)
 <figures/t2019121500001.PNG>
- [419] [420]
+ [419]
+Underfull \vbox (badness 4156) has occurred while \output is active []
+
+ [420]
+[421]
 File: figures/zhengxiangtuili2019112702.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112702.PNG>
- [421] [422]
+ [422]
 Package mdframed Info: mdframed works in twoside mode on input line 280.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 280.
+ [423]
 Package mdframed Info: mdframed works in twoside mode on input line 292.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 292.
- [423]
-Package mdframed Info: Not enough space on this page on input line 296.
 Package mdframed Info: mdframed works in twoside mode on input line 301.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -8177,111 +8178,121 @@ Package mdframed Info: mdframed works in twoside mode on input line 336.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 336.
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+ [424]
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 352.
+Package mdframed Info: mdframed works in twoside mode on input line 353.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 352.
-
-Underfull \vbox (badness 1389) has occurred while \output is active []
-
- [424]
-Package mdframed Info: Not enough space on this page on input line 354.
-Package mdframed Info: mdframed works in twoside mode on input line 369.
+(mdframed)              on input line 353.
+Package mdframed Info: mdframed works in twoside mode on input line 374.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 369.
+(mdframed)              on input line 374.
 File: figures/zhengxiangtuili2019112704.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112704.PNG>
+[425]
+Underfull \vbox (badness 1817) has occurred while \output is active []
 
-[425] [426]
-Package mdframed Info: mdframed works in twoside mode on input line 446.
+ [426]
+Package mdframed Info: mdframed works in twoside mode on input line 456.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 446.
- [427] [428]
-Missing character: There is no – in font ntx-Regular-tlf-ot1!
-Missing character: There is no – in font ntx-Regular-tlf-ot1!
-File: figures/bufenjueceshu20191130.png Graphic file (type bmp)
-<figures/bufenjueceshu20191130.png>
- [429]
-File: figures/zhengxiangtuili2019112705.PNG Graphic file (type bmp)
-<figures/zhengxiangtuili2019112705.PNG>
- [430]
-File: figures/zhengxiangtuili2019112706.PNG Graphic file (type bmp)
-<figures/zhengxiangtuili2019112706.PNG>
- [431]
-Package mdframed Info: mdframed works in twoside mode on input line 689.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 689.
+(mdframed)              on input line 456.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 709.
- [432]
+(mdframed)              on input line 473.
+
+[427] [428]
+Missing character: There is no – in font ntx-Regular-tlf-ot1!
+Missing character: There is no – in font ntx-Regular-tlf-ot1!
+ [429]
+File: figures/bufenjueceshu20191130.png Graphic file (type bmp)
+<figures/bufenjueceshu20191130.png>
+ [430]
+File: figures/zhengxiangtuili2019112705.PNG Graphic file (type bmp)
+<figures/zhengxiangtuili2019112705.PNG>
+File: figures/zhengxiangtuili2019112706.PNG Graphic file (type bmp)
+<figures/zhengxiangtuili2019112706.PNG>
+
+Underfull \vbox (badness 5217) has occurred while \output is active []
+
+ [431]
+[432]
+Package mdframed Info: mdframed works in twoside mode on input line 699.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 699.
+ [433]
 File: figures/zhengxiangtuili2019112707.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112707.PNG>
 File: figures/zhengxiangtuili2019112708.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112708.PNG>
- [433] [434] [435]
-Package mdframed Info: mdframed works in twoside mode on input line 838.
+ [434] [435] [436]
+Package mdframed Info: mdframed works in twoside mode on input line 848.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 838.
- [436]
-[437] [438] [439]
+(mdframed)              on input line 848.
+ [437] [438] [439]
 File: figures/MultilayerPercepton020201.jpg Graphic file (type bmp)
 <figures/MultilayerPercepton020201.jpg>
  [440] [441]
-Package mdframed Info: mdframed works in twoside mode on input line 1063.
+Package mdframed Info: mdframed works in twoside mode on input line 1072.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1063.
+(mdframed)              on input line 1072.
+Package mdframed Info: Not enough space on this page on input line 1086.
  [442]
+Package mdframed Info: Not enough space on this page on input line 1086.
 File: figures/t2019121500002.PNG Graphic file (type bmp)
 <figures/t2019121500002.PNG>
- [443] [444]
-Package mdframed Info: mdframed works in twoside mode on input line 1153.
+ [443]
+[444]
+Package mdframed Info: mdframed works in twoside mode on input line 1162.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1153.
+(mdframed)              on input line 1162.
 File: figures/Adboostplane.PNG Graphic file (type bmp)
 <figures/Adboostplane.PNG>
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 1173.
  [445]
-Package mdframed Info: mdframed works in twoside mode on input line 1175.
+Package mdframed Info: mdframed works in twoside mode on input line 1184.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1175.
- [446]
-File: figures/DNNVSOtherNN.png Graphic file (type bmp)
-<figures/DNNVSOtherNN.png>
- [447]
-File: figures/DNN1912180.png Graphic file (type bmp)
-<figures/DNN1912180.png>
+(mdframed)              on input line 1184.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [446]
+[447]
+File: figures/DNNVSOtherNN.png Graphic file (type bmp)
+<figures/DNNVSOtherNN.png>
  [448]
+File: figures/DNN1912180.png Graphic file (type bmp)
+<figures/DNN1912180.png>
 File: figures/DNN191225001.JPG Graphic file (type bmp)
 <figures/DNN191225001.JPG>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [449]
 File: figures/DNN1912181.png Graphic file (type bmp)
 <figures/DNN1912181.png>
 
-[449]
-Package mdframed Info: mdframed works in twoside mode on input line 1277.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [450]
+Package mdframed Info: mdframed works in twoside mode on input line 1298.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1277.
+(mdframed)              on input line 1298.
 File: figures/Densetransferflag0322.png Graphic file (type bmp)
 <figures/Densetransferflag0322.png>
- [450]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [451]
 File: figures/DNNDesigner.pdf Graphic file (type pdf)
 <use figures/DNNDesigner.pdf>
 File: figures/AutoML20191218110118.jpg Graphic file (type bmp)
@@ -8289,36 +8300,36 @@ File: figures/AutoML20191218110118.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [451]
+ [452]
 File: figures/pandamatlab2020032501.PNG Graphic file (type bmp)
 <figures/pandamatlab2020032501.PNG>
 
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [452]
+ [453]
 File: figures/20170105154423858.png Graphic file (type bmp)
 <figures/20170105154423858.png>
 
-[453]
+[454]
 File: figures/ResidualNND2020202002.PNG Graphic file (type bmp)
 <figures/ResidualNND2020202002.PNG>
 File: figures/DRL2020020301.PNG Graphic file (type bmp)
 <figures/DRL2020020301.PNG>
- [454] [455]
-Package mdframed Info: mdframed works in twoside mode on input line 1429.
+ [455] [456]
+Package mdframed Info: mdframed works in twoside mode on input line 1442.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1429.
-Package mdframed Info: mdframed works in twoside mode on input line 1435.
+(mdframed)              on input line 1442.
+Package mdframed Info: mdframed works in twoside mode on input line 1448.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1435.
+(mdframed)              on input line 1448.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [456]
+ [457]
 File: figures/RNNAPP2019121500007.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500007.PNG>
 File: figures/RNNAPP2019121500008.PNG Graphic file (type bmp)
@@ -8326,11 +8337,11 @@ File: figures/RNNAPP2019121500008.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [457]
-[458] [459]
+ [458]
+[459] [460]
 File: figures/DNNUlabelSet.JPG Graphic file (type bmp)
 <figures/DNNUlabelSet.JPG>
- [460]
+ [461]
 File: figures/GPUCloud.JPG Graphic file (type bmp)
 <figures/GPUCloud.JPG>
 File: figures/AleNet130.JPG Graphic file (type bmp)
@@ -8340,7 +8351,7 @@ File: figures/CNNAPP201912150001.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 3138) has occurred while \output is active []
 
- [461]
+ [462]
 File: gif2pnffolder/ConvolutionOP02031.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02031.png>
 
@@ -9224,23 +9235,23 @@ File: gif2pnffolder/ConvolutionOP0203280.png Graphic file (type bmp)
 <a2,fr282> <a2,fr283> <a2,fr284> <a2,fr285> <a2,fr286> <a2,fr287> <a2,fr288>
 <a2,fr289> <a2,fr290> <a2,fr291> <a2,fr292> <a2,fr293> <a2,fr294> <a2,fr295>
 <a2,fr296> <a2,fr297> <a2,fr298> <a2,fr299> <a2,fr300>
-Package mdframed Info: mdframed works in twoside mode on input line 1603.
+Package mdframed Info: mdframed works in twoside mode on input line 1616.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1603.
+(mdframed)              on input line 1616.
 File: figures/TUCon2020020302.PNG Graphic file (type bmp)
 <figures/TUCon2020020302.PNG>
 File: figures/JuanJi2020020301.PNG Graphic file (type bmp)
 <figures/JuanJi2020020301.PNG>
- [462]
-Package mdframed Info: Not enough space on this page on input line 1629.
-Package mdframed Info: mdframed works in twoside mode on input line 1632.
+ [463]
+Package mdframed Info: Not enough space on this page on input line 1642.
+Package mdframed Info: mdframed works in twoside mode on input line 1645.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1632.
+(mdframed)              on input line 1645.
 File: figures/20161021131748099.png Graphic file (type bmp)
 <figures/20161021131748099.png>
- [463]
+ [464]
 File: gif2pnffolder/201610211352412051.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412051.png>
  <a3,fr0>
@@ -9319,11 +9330,11 @@ File: gif2pnffolder/CNN2016102114165963415.png Graphic file (type bmp)
 File: gif2pnffolder/CNN2016102114165963416.png Graphic file (type bmp)
 <gif2pnffolder/CNN2016102114165963416.png>
  <a4,fr15>
-[464] [465]
-Package mdframed Info: mdframed works in twoside mode on input line 1686.
+[465] [466]
+Package mdframed Info: mdframed works in twoside mode on input line 1699.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1686.
+(mdframed)              on input line 1699.
 File: figures/20170715175257862.png Graphic file (type bmp)
 <figures/20170715175257862.png>
 File: gif2pnffolder/Dconop02031.png Graphic file (type bmp)
@@ -9406,28 +9417,28 @@ File: gif2pnffolder/Dconop020325.png Graphic file (type bmp)
  <a5,fr24>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [466]
-[467] [468] [469] [470] [471]
+ [467]
+[468] [469] [470] [471] [472]
 File: figures/CNNStructure1225001.JPG Graphic file (type bmp)
 <figures/CNNStructure1225001.JPG>
 File: figures/CNNStructure1225002.JPG Graphic file (type bmp)
 <figures/CNNStructure1225002.JPG>
- [472]
+ [473]
 File: figures/AlexNetdemo002.JPG Graphic file (type bmp)
 <figures/AlexNetdemo002.JPG>
 File: figures/CNNMLCompare001.JPG Graphic file (type bmp)
 <figures/CNNMLCompare001.JPG>
- [473]
-Package mdframed Info: mdframed works in twoside mode on input line 2009.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2009.
-Missing character: There is no ™ in font ntx-Regular-tlf-t1!
  [474]
-Package mdframed Info: mdframed works in twoside mode on input line 2039.
+Package mdframed Info: mdframed works in twoside mode on input line 2022.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2039.
+(mdframed)              on input line 2022.
+Missing character: There is no ™ in font ntx-Regular-tlf-t1!
+ [475]
+Package mdframed Info: mdframed works in twoside mode on input line 2053.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2053.
 File: figures/CNNMatlabGPU001.JPG Graphic file (type bmp)
 <figures/CNNMatlabGPU001.JPG>
 File: figures/CNN10-01429-ag.png Graphic file (type bmp)
@@ -9435,7 +9446,7 @@ File: figures/CNN10-01429-ag.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [475]
+ [476]
 File: figures/FCN20170811112941027.png Graphic file (type bmp)
 <figures/FCN20170811112941027.png>
 File: figures/FCN-8W640.jpg Graphic file (type bmp)
@@ -9445,7 +9456,7 @@ File: figures/fcn8.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [476]
+ [477]
 File: figures/fcn32.pdf Graphic file (type pdf)
 <use figures/fcn32.pdf>
 File: figures/Unetushape.pdf Graphic file (type pdf)
@@ -9453,13 +9464,13 @@ File: figures/Unetushape.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [477]
+ [478]
 File: figures/Unet.pdf Graphic file (type pdf)
 <use figures/Unet.pdf>
 File: figures/vgg16.pdf Graphic file (type pdf)
 <use figures/vgg16.pdf>
 
-[478]
+[479]
 File: figures/CNNvgg16LayerPara.png Graphic file (type bmp)
 <figures/CNNvgg16LayerPara.png>
 File: figures/SoftmaxLoss.pdf Graphic file (type pdf)
@@ -9467,13 +9478,13 @@ File: figures/SoftmaxLoss.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
- [479]
+ [480]
 File: figures/CNNAPP201912150002.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150002.PNG>
 File: figures/CNNAPP201912150003.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150003.PNG>
 
-[480]
+[481]
 File: figures/CNNAPP201912150004.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150004.PNG>
 File: figures/CNNAPP201912150005.PNG Graphic file (type bmp)
@@ -9481,50 +9492,50 @@ File: figures/CNNAPP201912150005.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [481]
+ [482]
 File: figures/CCNshuidao20191216181023.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181023.jpg>
 File: figures/CCNshuidao20191216181108.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181108.jpg>
 
-[482]
+[483]
 File: figures/CCNshuidao20191216181137.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181137.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [483]
+ [484]
 File: figures/GNNGAS20191216202234.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202234.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [484]
+ [485]
 File: figures/GNNGAS20191216202340.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202340.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [485]
+ [486]
 File: figures/GNNGAS20191216202359.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202359.jpg>
 
-[486]
+[487]
 File: figures/GNNGAS20191216202416.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202416.jpg>
- [487]
+ [488]
 File: figures/RNN201912150001.PNG Graphic file (type bmp)
 <figures/RNN201912150001.PNG>
- [488]
+ [489]
 File: figures/RNNImage191229001.png Graphic file (type bmp)
 <figures/RNNImage191229001.png>
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
- [489]
-Package mdframed Info: mdframed works in twoside mode on input line 2401.
+ [490]
+Package mdframed Info: mdframed works in twoside mode on input line 2416.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2401.
+(mdframed)              on input line 2416.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -9535,26 +9546,22 @@ File: figures/RNNImage191229006.png Graphic file (type bmp)
 <figures/RNNImage191229006.png>
 File: figures/RNNImage191229007.png Graphic file (type bmp)
 <figures/RNNImage191229007.png>
- [490] [491]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 2514.
- [492] [493]
+ [491] [492] [493] [494]
 File: figures/lstm20191229085814.png Graphic file (type bmp)
 <figures/lstm20191229085814.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [494]
+ [495]
 File: figures/RNNImage191229008.png Graphic file (type bmp)
 <figures/RNNImage191229008.png>
 File: figures/RNN20191229185940.JPG Graphic file (type bmp)
 <figures/RNN20191229185940.JPG>
 
-[495]
+[496]
 File: figures/RNN201912150002.PNG Graphic file (type bmp)
 <figures/RNN201912150002.PNG>
- [496]
+ [497]
 File: figures/RNNAPP2019121500003.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500003.PNG>
 File: figures/RNNAPP2019121500004.PNG Graphic file (type bmp)
@@ -9564,15 +9571,11 @@ File: figures/RNNAPP2019121500005.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [497]
-[498]) [499]
+ [498]
+[499]) [500]
 \openout2 = `tex/chapter8.aux'.
 
- (./tex/chapter8.tex [500
-
-
-
-]
+ (./tex/chapter8.tex
 第八章
 File: figures/NLP20191218008.jpg Graphic file (type bmp)
 <figures/NLP20191218008.jpg>
@@ -9584,7 +9587,11 @@ ster/AIMaster2020.pdf" in version 0-M.>
 
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
-[501] [502]
+[501
+
+
+
+] [502]
 File: figures/Reformerpytorch0118.PNG Graphic file (type bmp)
 <figures/Reformerpytorch0118.PNG>
 File: figures/yuyanc820191130001.png Graphic file (type bmp)
@@ -9841,10 +9848,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 95810 strings out of 492922
- 2310172 string characters out of 6136750
- 3071183 words of memory out of 5000000
- 96849 multiletter control sequences out of 15000+600000
+ 95815 strings out of 492922
+ 2310262 string characters out of 6136750
+ 3071228 words of memory out of 5000000
+ 96854 multiletter control sequences out of 15000+600000
  742397 words of font info for 373 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,24n,424p,3753b,5380s stack positions out of 5000i,500n,10000p,200000b,80000s

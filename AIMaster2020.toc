@@ -405,15 +405,15 @@
 \contentsline {section}{\numberline {5.6}神经进化}{343}{section.5.6}% 
 \contentsline {subsection}{\numberline {5.6.1}竞争性共同进化}{344}{subsection.5.6.1}% 
 \contentsline {section}{\numberline {5.7}量子细菌觅食算法}{347}{section.5.7}% 
-\contentsline {subsection}{\numberline {5.7.1}自适应步长模型——BFA 模型}{348}{subsection.5.7.1}% 
-\contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{348}{subsection.5.7.2}% 
+\contentsline {subsection}{\numberline {5.7.1}BFA 模型}{348}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{349}{subsection.5.7.2}% 
 \contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{349}{subsection.5.7.3}% 
-\contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{350}{subsection.5.7.4}% 
+\contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{351}{subsection.5.7.4}% 
 \contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{352}{subsection.5.7.5}% 
-\contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{353}{subsection.5.7.6}% 
-\contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{356}{subsection.5.7.7}% 
-\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{356}{subsection.5.7.8}% 
-\contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{356}{subsection.5.7.9}% 
+\contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{354}{subsection.5.7.6}% 
+\contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{354}{subsection.5.7.7}% 
+\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{357}{subsection.5.7.8}% 
+\contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{357}{subsection.5.7.9}% 
 \contentsline {subsubsection}{\numberline {5.7.9.1}经典测试函数}{357}{subsubsection.5.7.9.1}% 
 \contentsline {subsection}{\numberline {5.7.10}测试函数结果}{358}{subsection.5.7.10}% 
 \contentsline {section}{\numberline {5.8}模糊计算}{364}{section.5.8}% 
@@ -471,7 +471,7 @@
 \contentsline {paragraph}{机器学习的常见误解}{418}{paragraph*.403}% 
 \contentsline {paragraph}{代表性观点}{418}{paragraph*.404}% 
 \contentsline {paragraph}{机器学习的主要方法}{419}{paragraph*.405}% 
-\contentsline {subparagraph}{一般性解释}{419}{subparagraph*.407}% 
+\contentsline {subparagraph}{一般性解释}{420}{subparagraph*.407}% 
 \contentsline {subparagraph}{一般性解释}{420}{subparagraph*.408}% 
 \contentsline {subparagraph}{神经元模型研究}{420}{subparagraph*.409}% 
 \contentsline {paragraph}{学习系统}{420}{paragraph*.410}% 
@@ -479,49 +479,49 @@
 \contentsline {subsection}{\numberline {7.2.1}记忆学习}{421}{subsection.7.2.1}% 
 \contentsline {subsection}{\numberline {7.2.2}归纳学习}{422}{subsection.7.2.2}% 
 \contentsline {subsection}{\numberline {7.2.3}示例学习}{422}{subsection.7.2.3}% 
-\contentsline {paragraph}{示例学习的典型方式}{422}{paragraph*.413}% 
+\contentsline {paragraph}{示例学习的典型方式}{423}{paragraph*.413}% 
 \contentsline {subsubsection}{\numberline {7.2.3.1}示例学习的解释方法}{423}{subsubsection.7.2.3.1}% 
 \contentsline {subsubsection}{\numberline {7.2.3.2}决策树}{425}{subsubsection.7.2.3.2}% 
 \contentsline {subsubsection}{\numberline {7.2.3.3}ID3算法}{426}{subsubsection.7.2.3.3}% 
 \contentsline {paragraph}{ID3算法的数学基础}{426}{paragraph*.416}% 
-\contentsline {subparagraph}{信息熵}{426}{subparagraph*.417}% 
-\contentsline {subparagraph}{条件熵}{426}{subparagraph*.418}% 
+\contentsline {subparagraph}{信息熵}{427}{subparagraph*.417}% 
+\contentsline {subparagraph}{条件熵}{427}{subparagraph*.418}% 
 \contentsline {paragraph}{ID3算法及举例}{427}{paragraph*.419}% 
-\contentsline {subsection}{\numberline {7.2.4}解释学习}{430}{subsection.7.2.4}% 
-\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{430}{subsubsection.7.2.4.1}% 
+\contentsline {subsection}{\numberline {7.2.4}解释学习}{431}{subsection.7.2.4}% 
+\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{431}{subsubsection.7.2.4.1}% 
 \contentsline {subsubsection}{\numberline {7.2.4.2}解释学习的模型}{431}{subsubsection.7.2.4.2}% 
-\contentsline {subsubsection}{\numberline {7.2.4.3}解释学习的基本原理}{431}{subsubsection.7.2.4.3}% 
-\contentsline {paragraph}{解释泛化学习方法-1}{431}{paragraph*.425}% 
+\contentsline {subsubsection}{\numberline {7.2.4.3}解释学习的基本原理}{432}{subsubsection.7.2.4.3}% 
+\contentsline {paragraph}{解释泛化学习方法-1}{432}{paragraph*.425}% 
 \contentsline {paragraph}{解释泛化学习方法-2}{432}{paragraph*.426}% 
-\contentsline {section}{\numberline {7.3}浅层神经学习}{434}{section.7.3}% 
-\contentsline {subsection}{\numberline {7.3.1}感知器学习}{435}{subsection.7.3.1}% 
-\contentsline {subsection}{\numberline {7.3.2}BP网络学习}{440}{subsection.7.3.2}% 
-\contentsline {subsection}{\numberline {7.3.3}Hopfield网络学习}{441}{subsection.7.3.3}% 
-\contentsline {section}{\numberline {7.4}工业4.0时代的机器学习}{443}{section.7.4}% 
-\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{444}{subsection.7.4.1}% 
-\contentsline {section}{\numberline {7.5}深度神经网络——DNN}{447}{section.7.5}% 
-\contentsline {subsection}{\numberline {7.5.1}自动机器学习 (AutoML)}{451}{subsection.7.5.1}% 
-\contentsline {section}{\numberline {7.6}netZooPy库}{452}{section.7.6}% 
-\contentsline {subsection}{\numberline {7.6.1}高速公路网络 (Highway network) }{453}{subsection.7.6.1}% 
-\contentsline {subsection}{\numberline {7.6.2}残差网络}{454}{subsection.7.6.2}% 
-\contentsline {subsection}{\numberline {7.6.3}深度神经网络轻量化}{456}{subsection.7.6.3}% 
-\contentsline {subsection}{\numberline {7.6.4}无限宽度DNN}{458}{subsection.7.6.4}% 
-\contentsline {section}{\numberline {7.7}卷积神经网络 (Convolutional Neural Networks, CNN)}{459}{section.7.7}% 
-\contentsline {subsection}{\numberline {7.7.1}CNN应用场景——计算机视觉问题}{460}{subsection.7.7.1}% 
-\contentsline {subsection}{\numberline {7.7.2}卷积神经网络结构}{462}{subsection.7.7.2}% 
-\contentsline {subsubsection}{\numberline {7.7.2.1}卷积}{462}{subsubsection.7.7.2.1}% 
-\contentsline {subsubsection}{\numberline {7.7.2.2}反卷积 (后卷积, 转置卷积)}{465}{subsubsection.7.7.2.2}% 
-\contentsline {subsubsection}{\numberline {7.7.2.3}卷积神经网络的层结构}{467}{subsubsection.7.7.2.3}% 
-\contentsline {subsubsection}{\numberline {7.7.2.4}激活函数和层范数}{468}{subsubsection.7.7.2.4}% 
-\contentsline {subsection}{\numberline {7.7.3}防止CNN的过拟合——diffGrad}{480}{subsection.7.7.3}% 
-\contentsline {subsection}{\numberline {7.7.4}CNN的应用}{480}{subsection.7.7.4}% 
-\contentsline {subsubsection}{\numberline {7.7.4.1}CNN解释器在线交互可视化工具}{480}{subsubsection.7.7.4.1}% 
-\contentsline {subsection}{\numberline {7.7.5}卷积编译码网络学习语义图形实现水稻自动除草}{482}{subsection.7.7.5}% 
-\contentsline {section}{\numberline {7.8}图卷积神经网络}{484}{section.7.8}% 
-\contentsline {section}{\numberline {7.9}循环神经网络 (Recurrent Neural Networks, RNN)}{488}{section.7.9}% 
-\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{498}{section.7.10}% 
-\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{498}{section.7.11}% 
-\contentsline {section}{\numberline {7.12}作业}{499}{section.7.12}% 
+\contentsline {section}{\numberline {7.3}浅层神经学习}{435}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}感知器学习}{436}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}BP网络学习}{441}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.3}Hopfield网络学习}{442}{subsection.7.3.3}% 
+\contentsline {section}{\numberline {7.4}工业4.0时代的机器学习}{444}{section.7.4}% 
+\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{445}{subsection.7.4.1}% 
+\contentsline {section}{\numberline {7.5}深度神经网络——DNN}{448}{section.7.5}% 
+\contentsline {subsection}{\numberline {7.5.1}自动机器学习 (AutoML)}{452}{subsection.7.5.1}% 
+\contentsline {section}{\numberline {7.6}netZooPy库}{453}{section.7.6}% 
+\contentsline {subsection}{\numberline {7.6.1}高速公路网络 (Highway network) }{454}{subsection.7.6.1}% 
+\contentsline {subsection}{\numberline {7.6.2}残差网络}{455}{subsection.7.6.2}% 
+\contentsline {subsection}{\numberline {7.6.3}深度神经网络轻量化}{457}{subsection.7.6.3}% 
+\contentsline {subsection}{\numberline {7.6.4}无限宽度DNN}{459}{subsection.7.6.4}% 
+\contentsline {section}{\numberline {7.7}卷积神经网络 (Convolutional Neural Networks, CNN)}{460}{section.7.7}% 
+\contentsline {subsection}{\numberline {7.7.1}CNN应用场景——计算机视觉问题}{461}{subsection.7.7.1}% 
+\contentsline {subsection}{\numberline {7.7.2}卷积神经网络结构}{463}{subsection.7.7.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.1}卷积}{463}{subsubsection.7.7.2.1}% 
+\contentsline {subsubsection}{\numberline {7.7.2.2}反卷积 (后卷积, 转置卷积)}{466}{subsubsection.7.7.2.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.3}卷积神经网络的层结构}{468}{subsubsection.7.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.7.2.4}激活函数和层范数}{469}{subsubsection.7.7.2.4}% 
+\contentsline {subsection}{\numberline {7.7.3}防止CNN的过拟合——diffGrad}{481}{subsection.7.7.3}% 
+\contentsline {subsection}{\numberline {7.7.4}CNN的应用}{481}{subsection.7.7.4}% 
+\contentsline {subsubsection}{\numberline {7.7.4.1}CNN解释器在线交互可视化工具}{481}{subsubsection.7.7.4.1}% 
+\contentsline {subsection}{\numberline {7.7.5}卷积编译码网络学习语义图形实现水稻自动除草}{483}{subsection.7.7.5}% 
+\contentsline {section}{\numberline {7.8}图卷积神经网络}{485}{section.7.8}% 
+\contentsline {section}{\numberline {7.9}循环神经网络 (Recurrent Neural Networks, RNN)}{489}{section.7.9}% 
+\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{499}{section.7.10}% 
+\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{499}{section.7.11}% 
+\contentsline {section}{\numberline {7.12}作业}{500}{section.7.12}% 
 \contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{501}{chapter.8}% 
 \contentsline {paragraph}{Transformer 架构}{502}{paragraph*.501}% 
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{503}{section.8.1}% 

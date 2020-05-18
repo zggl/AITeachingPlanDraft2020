@@ -874,7 +874,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 \begin{aligned}
 P_l(A) &=1-\textup{Bel}(\neg A)=1-\sum_{s_{i} \in-A} m\left(\left\{s_{i}\right\}\right)
         =1-\left[\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)-\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right)\right] \\
-       &=1-[1-m(\Omega)-\textup{Bel}(A)] \\ 
+       &=1-[1-m(\Omega)-\textup{Bel}(A)] \\
        &=m(\Omega)+\textup{Bel}(A). \\
 P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \end{aligned}
@@ -1319,7 +1319,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
     d(F, G)=\frac{1}{b-a} \int_{a}^{b}\left|\mu_{F}(u)-\mu_{G}(u)\right| d(u).
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
+\begin{example}\label{AIC6exam6.53}
 设论域$U=\{-10, 0, 10, 20, 30\}$表示温度, 模糊集
 \begin{align*}
     F&= 0.8/(-10)+0.5/0+0.1/10;\\
@@ -1346,7 +1346,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 称$F\cdot G$为内积, $F\odot G$为外积.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-设论域$U$及其上的模糊集$F$和$G$如上例所示, 则
+设论域$U$及其上的模糊集$F$和$G$如例 \ref{AIC6exam6.53} 所示, 则
 \begin{align*}
 F\cdot G&=0.8\wedge 0.9\vee 0.5\wedge 0.6\vee 0.1\wedge 0.2 \vee  0\wedge 0\vee  0\wedge 0=0.8\vee 0.5\vee 0.1 \vee  0 \vee  0=0.8.\\
 F\odot G&= (0.8\vee 0.9)\wedge (0.5\vee 0.6)\wedge (0.1\vee 0.2) \wedge (0\vee 0) \wedge (0\vee 0)\\
@@ -1508,7 +1508,7 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-  设$F$和$G$如例4.19所示, 已知事实为$\{y \,\,\textup{ is\,\,  较大}\}$且“较大”的模糊集为: 较大$=0.2/1+0.7/2+1/3$, 若已知事实与$G$匹配, 以模糊关系$R_c$为例, 在此已知事实下推出$F'$.
+  设$F$和$G$如例 \ref{AIFuzzyexamp654} 所示, 已知事实为$\{y \,\,\textup{ is\,\,  较大}\}$且“较大”的模糊集为: 较大$=0.2/1+0.7/2+1/3$, 若已知事实与$G$匹配, 以模糊关系$R_c$为例, 在此已知事实下推出$F'$.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
