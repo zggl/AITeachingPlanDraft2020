@@ -10,10 +10,6 @@
 % MSc Student, Electrical Enginering Dept, 
 % Faculty of Engineering Cairo University, Egypt
 
-
-
-
-
 %%
 %Initialization
 clear all   

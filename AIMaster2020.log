@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  18 MAY 2020 10:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  19 MAY 2020 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7888,175 +7888,177 @@ master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 [379] [380]
 File: figures/AI32C42019112618.PNG Graphic file (type bmp)
 <figures/AI32C42019112618.PNG>
-Package mdframed Info: mdframed works in twoside mode on input line 93.
+Package mdframed Info: mdframed works in twoside mode on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 93.
+(mdframed)              on input line 95.
  [381]
-Package mdframed Info: mdframed works in twoside mode on input line 102.
+Package mdframed Info: mdframed works in twoside mode on input line 104.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 102.
-Package mdframed Info: mdframed works in twoside mode on input line 132.
+(mdframed)              on input line 104.
+Package mdframed Info: mdframed works in twoside mode on input line 134.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 132.
+(mdframed)              on input line 134.
 Missing character: There is no Φ in font ntx-Regular-tlf-t1!
  [382]
-Package mdframed Info: mdframed works in twoside mode on input line 164.
+Package mdframed Info: mdframed works in twoside mode on input line 166.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 164.
+(mdframed)              on input line 166.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [383]
-Package mdframed Info: mdframed works in twoside mode on input line 216.
+Package mdframed Info: mdframed works in twoside mode on input line 218.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 216.
+(mdframed)              on input line 218.
 
 [384]
-Package mdframed Info: mdframed works in twoside mode on input line 243.
+Package mdframed Info: mdframed works in twoside mode on input line 247.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 243.
+(mdframed)              on input line 247.
  [385]
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
- [386]
-Overfull \hbox (9.82883pt too wide) in paragraph at lines 382--383
+ [386] [387]
+Overfull \hbox (9.82883pt too wide) in paragraph at lines 384--385
 []\TU/SimSun(0)/m/n/12.045 合 取\T1/ntxtlf/m/n/12.045 : \TU/SimSun(0)/m/n/12.045 
 当 组 合 证 据 是 多 个 单 一 证 据 的 组 合 时\T1/ntxtlf/m/n/12.045 , \TU/SimSun(0)/m/n/12.045
  即 $\OML/ntxmi/m/it/12.045 E \U/ntxmia/m/it/12.045 = \OML/ntxmi/m/it/12.045 E[]
   AND  E[]  AND   []   AND  E[]$
  []
 
-[387] [388]
-Package mdframed Info: mdframed works in twoside mode on input line 440.
+[388]
+Missing character: There is no 且 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 且 in font ntx-Regular-tlf-ot1!
+Package mdframed Info: mdframed works in twoside mode on input line 441.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 440.
+(mdframed)              on input line 441.
  [389] [390] [391]
 Missing character: There is no Ω in font ntx-Regular-tlf-t1!
 Missing character: There is no Ω in font ntx-Regular-tlf-t1!
-Package mdframed Info: mdframed works in twoside mode on input line 559.
+Package mdframed Info: mdframed works in twoside mode on input line 564.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 559.
-Package mdframed Info: mdframed works in twoside mode on input line 572.
+(mdframed)              on input line 564.
+Package mdframed Info: mdframed works in twoside mode on input line 577.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 572.
-Package mdframed Info: mdframed works in twoside mode on input line 584.
+(mdframed)              on input line 577.
+Package mdframed Info: mdframed works in twoside mode on input line 589.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 584.
-Package mdframed Info: mdframed works in twoside mode on input line 603.
+(mdframed)              on input line 589.
+Package mdframed Info: mdframed works in twoside mode on input line 608.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 603.
-Package mdframed Info: Not enough space on this page on input line 611.
+(mdframed)              on input line 608.
+Package mdframed Info: Not enough space on this page on input line 616.
  [392]
-Package mdframed Info: Not enough space on this page on input line 611.
-Package mdframed Info: mdframed works in twoside mode on input line 615.
+Package mdframed Info: Not enough space on this page on input line 616.
+Package mdframed Info: mdframed works in twoside mode on input line 620.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 615.
-Package mdframed Info: mdframed works in twoside mode on input line 633.
+(mdframed)              on input line 620.
+Package mdframed Info: mdframed works in twoside mode on input line 638.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 633.
-Package mdframed Info: mdframed works in twoside mode on input line 649.
+(mdframed)              on input line 638.
+Package mdframed Info: mdframed works in twoside mode on input line 654.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 649.
+(mdframed)              on input line 654.
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 658.
+(mdframed)              on input line 663.
  [393]
-Package mdframed Info: mdframed works in twoside mode on input line 671.
+Package mdframed Info: mdframed works in twoside mode on input line 676.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 671.
-Package mdframed Info: mdframed works in twoside mode on input line 681.
+(mdframed)              on input line 676.
+Package mdframed Info: mdframed works in twoside mode on input line 686.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 681.
+(mdframed)              on input line 686.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [394]
-Package mdframed Info: mdframed works in twoside mode on input line 726.
+Package mdframed Info: mdframed works in twoside mode on input line 731.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 726.
+(mdframed)              on input line 731.
 
 [395]
-Package mdframed Info: mdframed works in twoside mode on input line 757.
+Package mdframed Info: mdframed works in twoside mode on input line 762.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 757.
+(mdframed)              on input line 762.
  [396]
-Package mdframed Info: mdframed works in twoside mode on input line 789.
+Package mdframed Info: mdframed works in twoside mode on input line 794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 789.
-Package mdframed Info: Not enough space on this page on input line 796.
+(mdframed)              on input line 794.
+Package mdframed Info: Not enough space on this page on input line 801.
  [397]
-Package mdframed Info: mdframed works in twoside mode on input line 852.
+Package mdframed Info: mdframed works in twoside mode on input line 857.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 852.
-Package mdframed Info: mdframed works in twoside mode on input line 860.
+(mdframed)              on input line 857.
+Package mdframed Info: mdframed works in twoside mode on input line 865.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 860.
-Package mdframed Info: mdframed works in twoside mode on input line 890.
+(mdframed)              on input line 865.
+Package mdframed Info: mdframed works in twoside mode on input line 895.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 890.
-Package mdframed Info: Not enough space on this page on input line 897.
+(mdframed)              on input line 895.
+Package mdframed Info: Not enough space on this page on input line 902.
  [398]
-Package mdframed Info: Not enough space on this page on input line 897.
-Package mdframed Info: mdframed works in twoside mode on input line 918.
+Package mdframed Info: Not enough space on this page on input line 902.
+Package mdframed Info: mdframed works in twoside mode on input line 923.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 918.
+(mdframed)              on input line 923.
  [399]
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 989.
+(amsmath)                 on input line 994.
 
 
 Underfull \vbox (badness 1210) has occurred while \output is active []
 
  [400]
-Package mdframed Info: mdframed works in twoside mode on input line 999.
+Package mdframed Info: mdframed works in twoside mode on input line 1004.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 999.
+(mdframed)              on input line 1004.
 
 [401]
-Package mdframed Info: mdframed works in twoside mode on input line 1036.
+Package mdframed Info: mdframed works in twoside mode on input line 1041.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1036.
+(mdframed)              on input line 1041.
  [402]
-Package mdframed Info: mdframed works in twoside mode on input line 1084.
+Package mdframed Info: mdframed works in twoside mode on input line 1089.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1084.
-Package mdframed Info: mdframed works in twoside mode on input line 1111.
+(mdframed)              on input line 1089.
+Package mdframed Info: mdframed works in twoside mode on input line 1116.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1111.
+(mdframed)              on input line 1116.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1125.
+(mdframed)              on input line 1130.
  [403]
 File: figures/AI32C42019112808.PNG Graphic file (type bmp)
 <figures/AI32C42019112808.PNG>
@@ -8065,60 +8067,60 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [404]
 [405] [406]
-Package mdframed Info: mdframed works in twoside mode on input line 1222.
+Package mdframed Info: mdframed works in twoside mode on input line 1227.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1222.
-Package mdframed Info: mdframed works in twoside mode on input line 1249.
+(mdframed)              on input line 1227.
+Package mdframed Info: mdframed works in twoside mode on input line 1254.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1249.
+(mdframed)              on input line 1254.
  [407]
-Package mdframed Info: mdframed works in twoside mode on input line 1289.
+Package mdframed Info: mdframed works in twoside mode on input line 1294.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1289.
+(mdframed)              on input line 1294.
  [408]
-Package mdframed Info: mdframed works in twoside mode on input line 1322.
+Package mdframed Info: mdframed works in twoside mode on input line 1327.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1322.
-Package mdframed Info: mdframed works in twoside mode on input line 1348.
+(mdframed)              on input line 1327.
+Package mdframed Info: mdframed works in twoside mode on input line 1353.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1348.
+(mdframed)              on input line 1353.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1357.
+(mdframed)              on input line 1362.
  [409]
-Package mdframed Info: mdframed works in twoside mode on input line 1374.
+Package mdframed Info: mdframed works in twoside mode on input line 1379.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1374.
-Package mdframed Info: mdframed works in twoside mode on input line 1397.
+(mdframed)              on input line 1379.
+Package mdframed Info: mdframed works in twoside mode on input line 1402.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1397.
+(mdframed)              on input line 1402.
  [410]
-Package mdframed Info: mdframed works in twoside mode on input line 1429.
+Package mdframed Info: mdframed works in twoside mode on input line 1434.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1429.
+(mdframed)              on input line 1434.
  [411]
-Package mdframed Info: mdframed works in twoside mode on input line 1468.
+Package mdframed Info: mdframed works in twoside mode on input line 1473.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1468.
+(mdframed)              on input line 1473.
  [412]
-Package mdframed Info: mdframed works in twoside mode on input line 1510.
+Package mdframed Info: mdframed works in twoside mode on input line 1515.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1510.
+(mdframed)              on input line 1515.
  [413]
-Package mdframed Info: mdframed works in twoside mode on input line 1579.
+Package mdframed Info: mdframed works in twoside mode on input line 1584.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1579.
+(mdframed)              on input line 1584.
  [414]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -8316,14 +8318,14 @@ File: figures/ResidualNND2020202002.PNG Graphic file (type bmp)
 File: figures/DRL2020020301.PNG Graphic file (type bmp)
 <figures/DRL2020020301.PNG>
  [455] [456]
-Package mdframed Info: mdframed works in twoside mode on input line 1442.
+Package mdframed Info: mdframed works in twoside mode on input line 1444.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1442.
-Package mdframed Info: mdframed works in twoside mode on input line 1448.
+(mdframed)              on input line 1444.
+Package mdframed Info: mdframed works in twoside mode on input line 1450.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1448.
+(mdframed)              on input line 1450.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
 
@@ -8338,24 +8340,38 @@ File: figures/RNNAPP2019121500008.PNG Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [458]
-[459] [460]
+[459]
+Package mdframed Info: mdframed works in twoside mode on input line 1528.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1528.
+ [460]
+Package mdframed Info: mdframed works in twoside mode on input line 1540.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1540.
+Package mdframed Info: mdframed works in twoside mode on input line 1546.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1546.
+ [461]
+Package mdframed Info: mdframed works in twoside mode on input line 1552.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1552.
+ [462] [463]
 File: figures/DNNUlabelSet.JPG Graphic file (type bmp)
 <figures/DNNUlabelSet.JPG>
- [461]
 File: figures/GPUCloud.JPG Graphic file (type bmp)
 <figures/GPUCloud.JPG>
+ [464]
 File: figures/AleNet130.JPG Graphic file (type bmp)
 <figures/AleNet130.JPG>
 File: figures/CNNAPP201912150001.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150001.PNG>
-
-Underfull \vbox (badness 3138) has occurred while \output is active []
-
- [462]
 File: gif2pnffolder/ConvolutionOP02031.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02031.png>
-
-<a2,fr0>
+ <a2,fr0>
 File: gif2pnffolder/ConvolutionOP02032.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02032.png>
  <a2,fr1>
@@ -8367,7 +8383,8 @@ File: gif2pnffolder/ConvolutionOP02034.png Graphic file (type bmp)
  <a2,fr3>
 File: gif2pnffolder/ConvolutionOP02035.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02035.png>
- <a2,fr4>
+
+<a2,fr4>
 File: gif2pnffolder/ConvolutionOP02036.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02036.png>
  <a2,fr5>
@@ -8379,8 +8396,7 @@ File: gif2pnffolder/ConvolutionOP02038.png Graphic file (type bmp)
  <a2,fr7>
 File: gif2pnffolder/ConvolutionOP02039.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02039.png>
-
-<a2,fr8>
+ <a2,fr8>
 File: gif2pnffolder/ConvolutionOP020310.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020310.png>
  <a2,fr9>
@@ -8392,7 +8408,8 @@ File: gif2pnffolder/ConvolutionOP020312.png Graphic file (type bmp)
  <a2,fr11>
 File: gif2pnffolder/ConvolutionOP020313.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020313.png>
- <a2,fr12>
+
+<a2,fr12>
 File: gif2pnffolder/ConvolutionOP020314.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020314.png>
  <a2,fr13>
@@ -8404,8 +8421,7 @@ File: gif2pnffolder/ConvolutionOP020316.png Graphic file (type bmp)
  <a2,fr15>
 File: gif2pnffolder/ConvolutionOP020317.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020317.png>
-
-<a2,fr16>
+ <a2,fr16>
 File: gif2pnffolder/ConvolutionOP020318.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020318.png>
  <a2,fr17>
@@ -8414,7 +8430,8 @@ File: gif2pnffolder/ConvolutionOP020319.png Graphic file (type bmp)
  <a2,fr18>
 File: gif2pnffolder/ConvolutionOP020320.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020320.png>
- <a2,fr19>
+
+<a2,fr19>
 File: gif2pnffolder/ConvolutionOP020321.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020321.png>
  <a2,fr20>
@@ -8426,8 +8443,7 @@ File: gif2pnffolder/ConvolutionOP020323.png Graphic file (type bmp)
  <a2,fr22>
 File: gif2pnffolder/ConvolutionOP020324.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020324.png>
-
-<a2,fr23>
+ <a2,fr23>
 File: gif2pnffolder/ConvolutionOP020325.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020325.png>
  <a2,fr24>
@@ -8436,7 +8452,8 @@ File: gif2pnffolder/ConvolutionOP020326.png Graphic file (type bmp)
  <a2,fr25>
 File: gif2pnffolder/ConvolutionOP020327.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020327.png>
- <a2,fr26>
+
+<a2,fr26>
 File: gif2pnffolder/ConvolutionOP020328.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020328.png>
  <a2,fr27>
@@ -8448,8 +8465,7 @@ File: gif2pnffolder/ConvolutionOP020330.png Graphic file (type bmp)
  <a2,fr29>
 File: gif2pnffolder/ConvolutionOP020331.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020331.png>
-
-<a2,fr30>
+ <a2,fr30>
 File: gif2pnffolder/ConvolutionOP020332.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020332.png>
  <a2,fr31>
@@ -8458,7 +8474,8 @@ File: gif2pnffolder/ConvolutionOP020333.png Graphic file (type bmp)
  <a2,fr32>
 File: gif2pnffolder/ConvolutionOP020334.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020334.png>
- <a2,fr33>
+
+<a2,fr33>
 File: gif2pnffolder/ConvolutionOP020335.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020335.png>
  <a2,fr34>
@@ -8470,8 +8487,7 @@ File: gif2pnffolder/ConvolutionOP020337.png Graphic file (type bmp)
  <a2,fr36>
 File: gif2pnffolder/ConvolutionOP020338.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020338.png>
-
-<a2,fr37>
+ <a2,fr37>
 File: gif2pnffolder/ConvolutionOP020339.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020339.png>
  <a2,fr38>
@@ -8480,7 +8496,8 @@ File: gif2pnffolder/ConvolutionOP020340.png Graphic file (type bmp)
  <a2,fr39>
 File: gif2pnffolder/ConvolutionOP020341.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020341.png>
- <a2,fr40>
+
+<a2,fr40>
 File: gif2pnffolder/ConvolutionOP020342.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020342.png>
  <a2,fr41>
@@ -8492,8 +8509,7 @@ File: gif2pnffolder/ConvolutionOP020344.png Graphic file (type bmp)
  <a2,fr43>
 File: gif2pnffolder/ConvolutionOP020345.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020345.png>
-
-<a2,fr44>
+ <a2,fr44>
 File: gif2pnffolder/ConvolutionOP020346.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020346.png>
  <a2,fr45>
@@ -8502,7 +8518,8 @@ File: gif2pnffolder/ConvolutionOP020347.png Graphic file (type bmp)
  <a2,fr46>
 File: gif2pnffolder/ConvolutionOP020348.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020348.png>
- <a2,fr47>
+
+<a2,fr47>
 File: gif2pnffolder/ConvolutionOP020349.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020349.png>
  <a2,fr48>
@@ -8514,8 +8531,7 @@ File: gif2pnffolder/ConvolutionOP020351.png Graphic file (type bmp)
  <a2,fr50>
 File: gif2pnffolder/ConvolutionOP020352.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020352.png>
-
-<a2,fr51>
+ <a2,fr51>
 File: gif2pnffolder/ConvolutionOP020353.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020353.png>
  <a2,fr52>
@@ -8524,7 +8540,8 @@ File: gif2pnffolder/ConvolutionOP020354.png Graphic file (type bmp)
  <a2,fr53>
 File: gif2pnffolder/ConvolutionOP020355.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020355.png>
- <a2,fr54>
+
+<a2,fr54>
 File: gif2pnffolder/ConvolutionOP020356.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020356.png>
  <a2,fr55>
@@ -8536,8 +8553,7 @@ File: gif2pnffolder/ConvolutionOP020358.png Graphic file (type bmp)
  <a2,fr57>
 File: gif2pnffolder/ConvolutionOP020359.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020359.png>
-
-<a2,fr58>
+ <a2,fr58>
 File: gif2pnffolder/ConvolutionOP020360.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020360.png>
  <a2,fr59>
@@ -8546,7 +8562,8 @@ File: gif2pnffolder/ConvolutionOP020361.png Graphic file (type bmp)
  <a2,fr60>
 File: gif2pnffolder/ConvolutionOP020362.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020362.png>
- <a2,fr61>
+
+<a2,fr61>
 File: gif2pnffolder/ConvolutionOP020363.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020363.png>
  <a2,fr62>
@@ -8558,8 +8575,7 @@ File: gif2pnffolder/ConvolutionOP020365.png Graphic file (type bmp)
  <a2,fr64>
 File: gif2pnffolder/ConvolutionOP020366.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020366.png>
-
-<a2,fr65>
+ <a2,fr65>
 File: gif2pnffolder/ConvolutionOP020367.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020367.png>
  <a2,fr66>
@@ -8568,7 +8584,8 @@ File: gif2pnffolder/ConvolutionOP020368.png Graphic file (type bmp)
  <a2,fr67>
 File: gif2pnffolder/ConvolutionOP020369.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020369.png>
- <a2,fr68>
+
+<a2,fr68>
 File: gif2pnffolder/ConvolutionOP020370.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020370.png>
  <a2,fr69>
@@ -8580,8 +8597,7 @@ File: gif2pnffolder/ConvolutionOP020372.png Graphic file (type bmp)
  <a2,fr71>
 File: gif2pnffolder/ConvolutionOP020373.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020373.png>
-
-<a2,fr72>
+ <a2,fr72>
 File: gif2pnffolder/ConvolutionOP020374.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020374.png>
  <a2,fr73>
@@ -8590,7 +8606,8 @@ File: gif2pnffolder/ConvolutionOP020375.png Graphic file (type bmp)
  <a2,fr74>
 File: gif2pnffolder/ConvolutionOP020376.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020376.png>
- <a2,fr75>
+
+<a2,fr75>
 File: gif2pnffolder/ConvolutionOP020377.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020377.png>
  <a2,fr76>
@@ -8602,8 +8619,7 @@ File: gif2pnffolder/ConvolutionOP020379.png Graphic file (type bmp)
  <a2,fr78>
 File: gif2pnffolder/ConvolutionOP020380.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020380.png>
-
-<a2,fr79>
+ <a2,fr79>
 File: gif2pnffolder/ConvolutionOP020381.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020381.png>
  <a2,fr80>
@@ -8612,7 +8628,8 @@ File: gif2pnffolder/ConvolutionOP020382.png Graphic file (type bmp)
  <a2,fr81>
 File: gif2pnffolder/ConvolutionOP020383.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020383.png>
- <a2,fr82>
+
+<a2,fr82>
 File: gif2pnffolder/ConvolutionOP020384.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020384.png>
  <a2,fr83>
@@ -8624,8 +8641,7 @@ File: gif2pnffolder/ConvolutionOP020386.png Graphic file (type bmp)
  <a2,fr85>
 File: gif2pnffolder/ConvolutionOP020387.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020387.png>
-
-<a2,fr86>
+ <a2,fr86>
 File: gif2pnffolder/ConvolutionOP020388.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020388.png>
  <a2,fr87>
@@ -8634,7 +8650,8 @@ File: gif2pnffolder/ConvolutionOP020389.png Graphic file (type bmp)
  <a2,fr88>
 File: gif2pnffolder/ConvolutionOP020390.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020390.png>
- <a2,fr89>
+
+<a2,fr89>
 File: gif2pnffolder/ConvolutionOP020391.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020391.png>
  <a2,fr90>
@@ -8646,8 +8663,7 @@ File: gif2pnffolder/ConvolutionOP020393.png Graphic file (type bmp)
  <a2,fr92>
 File: gif2pnffolder/ConvolutionOP020394.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020394.png>
-
-<a2,fr93>
+ <a2,fr93>
 File: gif2pnffolder/ConvolutionOP020395.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020395.png>
  <a2,fr94>
@@ -8656,7 +8672,8 @@ File: gif2pnffolder/ConvolutionOP020396.png Graphic file (type bmp)
  <a2,fr95>
 File: gif2pnffolder/ConvolutionOP020397.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020397.png>
- <a2,fr96>
+
+<a2,fr96>
 File: gif2pnffolder/ConvolutionOP020398.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020398.png>
  <a2,fr97>
@@ -8668,8 +8685,7 @@ File: gif2pnffolder/ConvolutionOP0203100.png Graphic file (type bmp)
  <a2,fr99>
 File: gif2pnffolder/ConvolutionOP0203101.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203101.png>
-
-<a2,fr100>
+ <a2,fr100>
 File: gif2pnffolder/ConvolutionOP0203102.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203102.png>
  <a2,fr101>
@@ -8678,7 +8694,8 @@ File: gif2pnffolder/ConvolutionOP0203103.png Graphic file (type bmp)
  <a2,fr102>
 File: gif2pnffolder/ConvolutionOP0203104.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203104.png>
- <a2,fr103>
+
+<a2,fr103>
 File: gif2pnffolder/ConvolutionOP0203105.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203105.png>
  <a2,fr104>
@@ -8690,8 +8707,7 @@ File: gif2pnffolder/ConvolutionOP0203107.png Graphic file (type bmp)
  <a2,fr106>
 File: gif2pnffolder/ConvolutionOP0203108.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203108.png>
-
-<a2,fr107>
+ <a2,fr107>
 File: gif2pnffolder/ConvolutionOP0203109.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203109.png>
  <a2,fr108>
@@ -8700,7 +8716,8 @@ File: gif2pnffolder/ConvolutionOP0203110.png Graphic file (type bmp)
  <a2,fr109>
 File: gif2pnffolder/ConvolutionOP0203111.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203111.png>
- <a2,fr110>
+
+<a2,fr110>
 File: gif2pnffolder/ConvolutionOP0203112.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203112.png>
  <a2,fr111>
@@ -8712,8 +8729,7 @@ File: gif2pnffolder/ConvolutionOP0203114.png Graphic file (type bmp)
  <a2,fr113>
 File: gif2pnffolder/ConvolutionOP0203115.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203115.png>
-
-<a2,fr114>
+ <a2,fr114>
 File: gif2pnffolder/ConvolutionOP0203116.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203116.png>
  <a2,fr115>
@@ -8722,7 +8738,8 @@ File: gif2pnffolder/ConvolutionOP0203117.png Graphic file (type bmp)
  <a2,fr116>
 File: gif2pnffolder/ConvolutionOP0203118.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203118.png>
- <a2,fr117>
+
+<a2,fr117>
 File: gif2pnffolder/ConvolutionOP0203119.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203119.png>
  <a2,fr118>
@@ -8734,8 +8751,7 @@ File: gif2pnffolder/ConvolutionOP0203121.png Graphic file (type bmp)
  <a2,fr120>
 File: gif2pnffolder/ConvolutionOP0203122.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203122.png>
-
-<a2,fr121>
+ <a2,fr121>
 File: gif2pnffolder/ConvolutionOP0203123.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203123.png>
  <a2,fr122>
@@ -8744,7 +8760,8 @@ File: gif2pnffolder/ConvolutionOP0203124.png Graphic file (type bmp)
  <a2,fr123>
 File: gif2pnffolder/ConvolutionOP0203125.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203125.png>
- <a2,fr124>
+
+<a2,fr124>
 File: gif2pnffolder/ConvolutionOP0203126.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203126.png>
  <a2,fr125>
@@ -8756,8 +8773,7 @@ File: gif2pnffolder/ConvolutionOP0203128.png Graphic file (type bmp)
  <a2,fr127>
 File: gif2pnffolder/ConvolutionOP0203129.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203129.png>
-
-<a2,fr128>
+ <a2,fr128>
 File: gif2pnffolder/ConvolutionOP0203130.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203130.png>
  <a2,fr129>
@@ -8766,7 +8782,8 @@ File: gif2pnffolder/ConvolutionOP0203131.png Graphic file (type bmp)
  <a2,fr130>
 File: gif2pnffolder/ConvolutionOP0203132.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203132.png>
- <a2,fr131>
+
+<a2,fr131>
 File: gif2pnffolder/ConvolutionOP0203133.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203133.png>
  <a2,fr132>
@@ -8778,8 +8795,7 @@ File: gif2pnffolder/ConvolutionOP0203135.png Graphic file (type bmp)
  <a2,fr134>
 File: gif2pnffolder/ConvolutionOP0203136.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203136.png>
-
-<a2,fr135>
+ <a2,fr135>
 File: gif2pnffolder/ConvolutionOP0203137.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203137.png>
  <a2,fr136>
@@ -8788,7 +8804,8 @@ File: gif2pnffolder/ConvolutionOP0203138.png Graphic file (type bmp)
  <a2,fr137>
 File: gif2pnffolder/ConvolutionOP0203139.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203139.png>
- <a2,fr138>
+
+<a2,fr138>
 File: gif2pnffolder/ConvolutionOP0203140.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203140.png>
  <a2,fr139>
@@ -8800,8 +8817,7 @@ File: gif2pnffolder/ConvolutionOP0203142.png Graphic file (type bmp)
  <a2,fr141>
 File: gif2pnffolder/ConvolutionOP0203143.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203143.png>
-
-<a2,fr142>
+ <a2,fr142>
 File: gif2pnffolder/ConvolutionOP0203144.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203144.png>
  <a2,fr143>
@@ -8810,7 +8826,8 @@ File: gif2pnffolder/ConvolutionOP0203145.png Graphic file (type bmp)
  <a2,fr144>
 File: gif2pnffolder/ConvolutionOP0203146.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203146.png>
- <a2,fr145>
+
+<a2,fr145>
 File: gif2pnffolder/ConvolutionOP0203147.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203147.png>
  <a2,fr146>
@@ -8822,8 +8839,7 @@ File: gif2pnffolder/ConvolutionOP0203149.png Graphic file (type bmp)
  <a2,fr148>
 File: gif2pnffolder/ConvolutionOP0203150.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203150.png>
-
-<a2,fr149>
+ <a2,fr149>
 File: gif2pnffolder/ConvolutionOP0203151.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203151.png>
  <a2,fr150>
@@ -8832,7 +8848,8 @@ File: gif2pnffolder/ConvolutionOP0203152.png Graphic file (type bmp)
  <a2,fr151>
 File: gif2pnffolder/ConvolutionOP0203153.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203153.png>
- <a2,fr152>
+
+<a2,fr152>
 File: gif2pnffolder/ConvolutionOP0203154.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203154.png>
  <a2,fr153>
@@ -8844,8 +8861,7 @@ File: gif2pnffolder/ConvolutionOP0203156.png Graphic file (type bmp)
  <a2,fr155>
 File: gif2pnffolder/ConvolutionOP0203157.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203157.png>
-
-<a2,fr156>
+ <a2,fr156>
 File: gif2pnffolder/ConvolutionOP0203158.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203158.png>
  <a2,fr157>
@@ -8854,7 +8870,8 @@ File: gif2pnffolder/ConvolutionOP0203159.png Graphic file (type bmp)
  <a2,fr158>
 File: gif2pnffolder/ConvolutionOP0203160.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203160.png>
- <a2,fr159>
+
+<a2,fr159>
 File: gif2pnffolder/ConvolutionOP0203161.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203161.png>
  <a2,fr160>
@@ -8866,8 +8883,7 @@ File: gif2pnffolder/ConvolutionOP0203163.png Graphic file (type bmp)
  <a2,fr162>
 File: gif2pnffolder/ConvolutionOP0203164.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203164.png>
-
-<a2,fr163>
+ <a2,fr163>
 File: gif2pnffolder/ConvolutionOP0203165.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203165.png>
  <a2,fr164>
@@ -8876,7 +8892,8 @@ File: gif2pnffolder/ConvolutionOP0203166.png Graphic file (type bmp)
  <a2,fr165>
 File: gif2pnffolder/ConvolutionOP0203167.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203167.png>
- <a2,fr166>
+
+<a2,fr166>
 File: gif2pnffolder/ConvolutionOP0203168.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203168.png>
  <a2,fr167>
@@ -8888,8 +8905,7 @@ File: gif2pnffolder/ConvolutionOP0203170.png Graphic file (type bmp)
  <a2,fr169>
 File: gif2pnffolder/ConvolutionOP0203171.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203171.png>
-
-<a2,fr170>
+ <a2,fr170>
 File: gif2pnffolder/ConvolutionOP0203172.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203172.png>
  <a2,fr171>
@@ -8898,7 +8914,8 @@ File: gif2pnffolder/ConvolutionOP0203173.png Graphic file (type bmp)
  <a2,fr172>
 File: gif2pnffolder/ConvolutionOP0203174.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203174.png>
- <a2,fr173>
+
+<a2,fr173>
 File: gif2pnffolder/ConvolutionOP0203175.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203175.png>
  <a2,fr174>
@@ -8910,8 +8927,7 @@ File: gif2pnffolder/ConvolutionOP0203177.png Graphic file (type bmp)
  <a2,fr176>
 File: gif2pnffolder/ConvolutionOP0203178.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203178.png>
-
-<a2,fr177>
+ <a2,fr177>
 File: gif2pnffolder/ConvolutionOP0203179.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203179.png>
  <a2,fr178>
@@ -8920,7 +8936,8 @@ File: gif2pnffolder/ConvolutionOP0203180.png Graphic file (type bmp)
  <a2,fr179>
 File: gif2pnffolder/ConvolutionOP0203181.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203181.png>
- <a2,fr180>
+
+<a2,fr180>
 File: gif2pnffolder/ConvolutionOP0203182.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203182.png>
  <a2,fr181>
@@ -8932,8 +8949,7 @@ File: gif2pnffolder/ConvolutionOP0203184.png Graphic file (type bmp)
  <a2,fr183>
 File: gif2pnffolder/ConvolutionOP0203185.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203185.png>
-
-<a2,fr184>
+ <a2,fr184>
 File: gif2pnffolder/ConvolutionOP0203186.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203186.png>
  <a2,fr185>
@@ -8942,7 +8958,8 @@ File: gif2pnffolder/ConvolutionOP0203187.png Graphic file (type bmp)
  <a2,fr186>
 File: gif2pnffolder/ConvolutionOP0203188.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203188.png>
- <a2,fr187>
+
+<a2,fr187>
 File: gif2pnffolder/ConvolutionOP0203189.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203189.png>
  <a2,fr188>
@@ -8954,8 +8971,7 @@ File: gif2pnffolder/ConvolutionOP0203191.png Graphic file (type bmp)
  <a2,fr190>
 File: gif2pnffolder/ConvolutionOP0203192.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203192.png>
-
-<a2,fr191>
+ <a2,fr191>
 File: gif2pnffolder/ConvolutionOP0203193.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203193.png>
  <a2,fr192>
@@ -8964,7 +8980,8 @@ File: gif2pnffolder/ConvolutionOP0203194.png Graphic file (type bmp)
  <a2,fr193>
 File: gif2pnffolder/ConvolutionOP0203195.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203195.png>
- <a2,fr194>
+
+<a2,fr194>
 File: gif2pnffolder/ConvolutionOP0203196.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203196.png>
  <a2,fr195>
@@ -8976,8 +8993,7 @@ File: gif2pnffolder/ConvolutionOP0203198.png Graphic file (type bmp)
  <a2,fr197>
 File: gif2pnffolder/ConvolutionOP0203199.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203199.png>
-
-<a2,fr198>
+ <a2,fr198>
 File: gif2pnffolder/ConvolutionOP0203200.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203200.png>
  <a2,fr199>
@@ -8986,7 +9002,8 @@ File: gif2pnffolder/ConvolutionOP0203201.png Graphic file (type bmp)
  <a2,fr200>
 File: gif2pnffolder/ConvolutionOP0203202.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203202.png>
- <a2,fr201>
+
+<a2,fr201>
 File: gif2pnffolder/ConvolutionOP0203203.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203203.png>
  <a2,fr202>
@@ -8998,8 +9015,7 @@ File: gif2pnffolder/ConvolutionOP0203205.png Graphic file (type bmp)
  <a2,fr204>
 File: gif2pnffolder/ConvolutionOP0203206.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203206.png>
-
-<a2,fr205>
+ <a2,fr205>
 File: gif2pnffolder/ConvolutionOP0203207.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203207.png>
  <a2,fr206>
@@ -9008,7 +9024,8 @@ File: gif2pnffolder/ConvolutionOP0203208.png Graphic file (type bmp)
  <a2,fr207>
 File: gif2pnffolder/ConvolutionOP0203209.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203209.png>
- <a2,fr208>
+
+<a2,fr208>
 File: gif2pnffolder/ConvolutionOP0203210.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203210.png>
  <a2,fr209>
@@ -9020,8 +9037,7 @@ File: gif2pnffolder/ConvolutionOP0203212.png Graphic file (type bmp)
  <a2,fr211>
 File: gif2pnffolder/ConvolutionOP0203213.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203213.png>
-
-<a2,fr212>
+ <a2,fr212>
 File: gif2pnffolder/ConvolutionOP0203214.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203214.png>
  <a2,fr213>
@@ -9030,7 +9046,8 @@ File: gif2pnffolder/ConvolutionOP0203215.png Graphic file (type bmp)
  <a2,fr214>
 File: gif2pnffolder/ConvolutionOP0203216.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203216.png>
- <a2,fr215>
+
+<a2,fr215>
 File: gif2pnffolder/ConvolutionOP0203217.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203217.png>
  <a2,fr216>
@@ -9042,8 +9059,7 @@ File: gif2pnffolder/ConvolutionOP0203219.png Graphic file (type bmp)
  <a2,fr218>
 File: gif2pnffolder/ConvolutionOP0203220.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203220.png>
-
-<a2,fr219>
+ <a2,fr219>
 File: gif2pnffolder/ConvolutionOP0203221.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203221.png>
  <a2,fr220>
@@ -9052,7 +9068,8 @@ File: gif2pnffolder/ConvolutionOP0203222.png Graphic file (type bmp)
  <a2,fr221>
 File: gif2pnffolder/ConvolutionOP0203223.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203223.png>
- <a2,fr222>
+
+<a2,fr222>
 File: gif2pnffolder/ConvolutionOP0203224.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203224.png>
  <a2,fr223>
@@ -9064,8 +9081,7 @@ File: gif2pnffolder/ConvolutionOP0203226.png Graphic file (type bmp)
  <a2,fr225>
 File: gif2pnffolder/ConvolutionOP0203227.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203227.png>
-
-<a2,fr226>
+ <a2,fr226>
 File: gif2pnffolder/ConvolutionOP0203228.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203228.png>
  <a2,fr227>
@@ -9074,7 +9090,8 @@ File: gif2pnffolder/ConvolutionOP0203229.png Graphic file (type bmp)
  <a2,fr228>
 File: gif2pnffolder/ConvolutionOP0203230.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203230.png>
- <a2,fr229>
+
+<a2,fr229>
 File: gif2pnffolder/ConvolutionOP0203231.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203231.png>
  <a2,fr230>
@@ -9086,8 +9103,7 @@ File: gif2pnffolder/ConvolutionOP0203233.png Graphic file (type bmp)
  <a2,fr232>
 File: gif2pnffolder/ConvolutionOP0203234.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203234.png>
-
-<a2,fr233>
+ <a2,fr233>
 File: gif2pnffolder/ConvolutionOP0203235.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203235.png>
  <a2,fr234>
@@ -9096,7 +9112,8 @@ File: gif2pnffolder/ConvolutionOP0203236.png Graphic file (type bmp)
  <a2,fr235>
 File: gif2pnffolder/ConvolutionOP0203237.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203237.png>
- <a2,fr236>
+
+<a2,fr236>
 File: gif2pnffolder/ConvolutionOP0203238.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203238.png>
  <a2,fr237>
@@ -9108,8 +9125,7 @@ File: gif2pnffolder/ConvolutionOP0203240.png Graphic file (type bmp)
  <a2,fr239>
 File: gif2pnffolder/ConvolutionOP0203241.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203241.png>
-
-<a2,fr240>
+ <a2,fr240>
 File: gif2pnffolder/ConvolutionOP0203242.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203242.png>
  <a2,fr241>
@@ -9118,7 +9134,8 @@ File: gif2pnffolder/ConvolutionOP0203243.png Graphic file (type bmp)
  <a2,fr242>
 File: gif2pnffolder/ConvolutionOP0203244.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203244.png>
- <a2,fr243>
+
+<a2,fr243>
 File: gif2pnffolder/ConvolutionOP0203245.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203245.png>
  <a2,fr244>
@@ -9130,8 +9147,7 @@ File: gif2pnffolder/ConvolutionOP0203247.png Graphic file (type bmp)
  <a2,fr246>
 File: gif2pnffolder/ConvolutionOP0203248.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203248.png>
-
-<a2,fr247>
+ <a2,fr247>
 File: gif2pnffolder/ConvolutionOP0203249.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203249.png>
  <a2,fr248>
@@ -9140,7 +9156,8 @@ File: gif2pnffolder/ConvolutionOP0203250.png Graphic file (type bmp)
  <a2,fr249>
 File: gif2pnffolder/ConvolutionOP0203251.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203251.png>
- <a2,fr250>
+
+<a2,fr250>
 File: gif2pnffolder/ConvolutionOP0203252.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203252.png>
  <a2,fr251>
@@ -9152,8 +9169,7 @@ File: gif2pnffolder/ConvolutionOP0203254.png Graphic file (type bmp)
  <a2,fr253>
 File: gif2pnffolder/ConvolutionOP0203255.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203255.png>
-
-<a2,fr254>
+ <a2,fr254>
 File: gif2pnffolder/ConvolutionOP0203256.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203256.png>
  <a2,fr255>
@@ -9162,7 +9178,8 @@ File: gif2pnffolder/ConvolutionOP0203257.png Graphic file (type bmp)
  <a2,fr256>
 File: gif2pnffolder/ConvolutionOP0203258.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203258.png>
- <a2,fr257>
+
+<a2,fr257>
 File: gif2pnffolder/ConvolutionOP0203259.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203259.png>
  <a2,fr258>
@@ -9174,8 +9191,7 @@ File: gif2pnffolder/ConvolutionOP0203261.png Graphic file (type bmp)
  <a2,fr260>
 File: gif2pnffolder/ConvolutionOP0203262.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203262.png>
-
-<a2,fr261>
+ <a2,fr261>
 File: gif2pnffolder/ConvolutionOP0203263.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203263.png>
  <a2,fr262>
@@ -9184,7 +9200,8 @@ File: gif2pnffolder/ConvolutionOP0203264.png Graphic file (type bmp)
  <a2,fr263>
 File: gif2pnffolder/ConvolutionOP0203265.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203265.png>
- <a2,fr264>
+
+<a2,fr264>
 File: gif2pnffolder/ConvolutionOP0203266.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203266.png>
  <a2,fr265>
@@ -9196,8 +9213,7 @@ File: gif2pnffolder/ConvolutionOP0203268.png Graphic file (type bmp)
  <a2,fr267>
 File: gif2pnffolder/ConvolutionOP0203269.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203269.png>
-
-<a2,fr268>
+ <a2,fr268>
 File: gif2pnffolder/ConvolutionOP0203270.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203270.png>
  <a2,fr269>
@@ -9206,7 +9222,8 @@ File: gif2pnffolder/ConvolutionOP0203271.png Graphic file (type bmp)
  <a2,fr270>
 File: gif2pnffolder/ConvolutionOP0203272.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203272.png>
- <a2,fr271>
+
+<a2,fr271>
 File: gif2pnffolder/ConvolutionOP0203273.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203273.png>
  <a2,fr272>
@@ -9218,8 +9235,7 @@ File: gif2pnffolder/ConvolutionOP0203275.png Graphic file (type bmp)
  <a2,fr274>
 File: gif2pnffolder/ConvolutionOP0203276.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203276.png>
-
-<a2,fr275>
+ <a2,fr275>
 File: gif2pnffolder/ConvolutionOP0203277.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203277.png>
  <a2,fr276>
@@ -9228,37 +9244,39 @@ File: gif2pnffolder/ConvolutionOP0203278.png Graphic file (type bmp)
  <a2,fr277>
 File: gif2pnffolder/ConvolutionOP0203279.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203279.png>
- <a2,fr278>
+
+<a2,fr278>
 File: gif2pnffolder/ConvolutionOP0203280.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203280.png>
- <a2,fr279> <a2,fr280> <a2,fr281>
-<a2,fr282> <a2,fr283> <a2,fr284> <a2,fr285> <a2,fr286> <a2,fr287> <a2,fr288>
-<a2,fr289> <a2,fr290> <a2,fr291> <a2,fr292> <a2,fr293> <a2,fr294> <a2,fr295>
-<a2,fr296> <a2,fr297> <a2,fr298> <a2,fr299> <a2,fr300>
-Package mdframed Info: mdframed works in twoside mode on input line 1616.
+ <a2,fr279> <a2,fr280> <a2,fr281> <a2,fr282> <a2,fr283> <a2,fr284>
+<a2,fr285> <a2,fr286> <a2,fr287> <a2,fr288> <a2,fr289> <a2,fr290> <a2,fr291>
+<a2,fr292> <a2,fr293> <a2,fr294> <a2,fr295> <a2,fr296> <a2,fr297> <a2,fr298>
+<a2,fr299> <a2,fr300>
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+ [465]
+Package mdframed Info: mdframed works in twoside mode on input line 1657.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1616.
+(mdframed)              on input line 1657.
 File: figures/TUCon2020020302.PNG Graphic file (type bmp)
 <figures/TUCon2020020302.PNG>
 File: figures/JuanJi2020020301.PNG Graphic file (type bmp)
 <figures/JuanJi2020020301.PNG>
- [463]
-Package mdframed Info: Not enough space on this page on input line 1642.
-Package mdframed Info: mdframed works in twoside mode on input line 1645.
+
+[466]
+Package mdframed Info: mdframed works in twoside mode on input line 1686.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1645.
+(mdframed)              on input line 1686.
 File: figures/20161021131748099.png Graphic file (type bmp)
 <figures/20161021131748099.png>
- [464]
 File: gif2pnffolder/201610211352412051.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412051.png>
  <a3,fr0>
 File: gif2pnffolder/201610211352412052.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412052.png>
-
-<a3,fr1>
+ <a3,fr1>
 File: gif2pnffolder/201610211352412053.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412053.png>
  <a3,fr2>
@@ -9279,7 +9297,11 @@ File: gif2pnffolder/201610211352412058.png Graphic file (type bmp)
  <a3,fr7>
 File: gif2pnffolder/201610211352412059.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412059.png>
- <a3,fr8>
+
+<a3,fr8>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [467]
 File: gif2pnffolder/CNN201610211416596341.png Graphic file (type bmp)
 <gif2pnffolder/CNN201610211416596341.png>
 
@@ -9330,13 +9352,14 @@ File: gif2pnffolder/CNN2016102114165963415.png Graphic file (type bmp)
 File: gif2pnffolder/CNN2016102114165963416.png Graphic file (type bmp)
 <gif2pnffolder/CNN2016102114165963416.png>
  <a4,fr15>
-[465] [466]
-Package mdframed Info: mdframed works in twoside mode on input line 1699.
+[468]
+Package mdframed Info: mdframed works in twoside mode on input line 1740.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1699.
+(mdframed)              on input line 1740.
 File: figures/20170715175257862.png Graphic file (type bmp)
 <figures/20170715175257862.png>
+ [469]
 File: gif2pnffolder/Dconop02031.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02031.png>
  <a5,fr0>
@@ -9417,36 +9440,41 @@ File: gif2pnffolder/Dconop020325.png Graphic file (type bmp)
  <a5,fr24>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [467]
-[468] [469] [470] [471] [472]
+ [470]
+[471] [472] [473] [474]
 File: figures/CNNStructure1225001.JPG Graphic file (type bmp)
 <figures/CNNStructure1225001.JPG>
+ [475]
 File: figures/CNNStructure1225002.JPG Graphic file (type bmp)
 <figures/CNNStructure1225002.JPG>
- [473]
 File: figures/AlexNetdemo002.JPG Graphic file (type bmp)
 <figures/AlexNetdemo002.JPG>
+
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+ [476]
 File: figures/CNNMLCompare001.JPG Graphic file (type bmp)
 <figures/CNNMLCompare001.JPG>
- [474]
-Package mdframed Info: mdframed works in twoside mode on input line 2022.
+Package mdframed Info: mdframed works in twoside mode on input line 2063.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2022.
+(mdframed)              on input line 2063.
 Missing character: There is no ™ in font ntx-Regular-tlf-t1!
- [475]
-Package mdframed Info: mdframed works in twoside mode on input line 2053.
+
+[477]
+Package mdframed Info: mdframed works in twoside mode on input line 2094.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2053.
+(mdframed)              on input line 2094.
 File: figures/CNNMatlabGPU001.JPG Graphic file (type bmp)
 <figures/CNNMatlabGPU001.JPG>
+ [478]
 File: figures/CNN10-01429-ag.png Graphic file (type bmp)
 <figures/CNN10-01429-ag.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [476]
+ [479]
 File: figures/FCN20170811112941027.png Graphic file (type bmp)
 <figures/FCN20170811112941027.png>
 File: figures/FCN-8W640.jpg Graphic file (type bmp)
@@ -9456,7 +9484,7 @@ File: figures/fcn8.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [477]
+ [480]
 File: figures/fcn32.pdf Graphic file (type pdf)
 <use figures/fcn32.pdf>
 File: figures/Unetushape.pdf Graphic file (type pdf)
@@ -9464,13 +9492,13 @@ File: figures/Unetushape.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [478]
+ [481]
 File: figures/Unet.pdf Graphic file (type pdf)
 <use figures/Unet.pdf>
 File: figures/vgg16.pdf Graphic file (type pdf)
 <use figures/vgg16.pdf>
 
-[479]
+[482]
 File: figures/CNNvgg16LayerPara.png Graphic file (type bmp)
 <figures/CNNvgg16LayerPara.png>
 File: figures/SoftmaxLoss.pdf Graphic file (type pdf)
@@ -9478,13 +9506,15 @@ File: figures/SoftmaxLoss.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
- [480]
+ [483]
 File: figures/CNNAPP201912150002.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150002.PNG>
 File: figures/CNNAPP201912150003.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150003.PNG>
 
-[481]
+Underfull \vbox (badness 2662) has occurred while \output is active []
+
+ [484]
 File: figures/CNNAPP201912150004.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150004.PNG>
 File: figures/CNNAPP201912150005.PNG Graphic file (type bmp)
@@ -9492,50 +9522,48 @@ File: figures/CNNAPP201912150005.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [482]
+ [485]
 File: figures/CCNshuidao20191216181023.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181023.jpg>
 File: figures/CCNshuidao20191216181108.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181108.jpg>
 
-[483]
+[486]
 File: figures/CCNshuidao20191216181137.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181137.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [484]
+ [487]
 File: figures/GNNGAS20191216202234.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202234.jpg>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [485]
+[488]
 File: figures/GNNGAS20191216202340.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202340.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [486]
+ [489]
 File: figures/GNNGAS20191216202359.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202359.jpg>
 
-[487]
+[490]
 File: figures/GNNGAS20191216202416.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202416.jpg>
- [488]
+ [491]
 File: figures/RNN201912150001.PNG Graphic file (type bmp)
 <figures/RNN201912150001.PNG>
- [489]
+ [492]
 File: figures/RNNImage191229001.png Graphic file (type bmp)
 <figures/RNNImage191229001.png>
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
- [490]
-Package mdframed Info: mdframed works in twoside mode on input line 2416.
+ [493]
+Package mdframed Info: mdframed works in twoside mode on input line 2457.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2416.
+(mdframed)              on input line 2457.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -9546,22 +9574,22 @@ File: figures/RNNImage191229006.png Graphic file (type bmp)
 <figures/RNNImage191229006.png>
 File: figures/RNNImage191229007.png Graphic file (type bmp)
 <figures/RNNImage191229007.png>
- [491] [492] [493] [494]
+ [494] [495] [496] [497]
 File: figures/lstm20191229085814.png Graphic file (type bmp)
 <figures/lstm20191229085814.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [495]
+ [498]
 File: figures/RNNImage191229008.png Graphic file (type bmp)
 <figures/RNNImage191229008.png>
 File: figures/RNN20191229185940.JPG Graphic file (type bmp)
 <figures/RNN20191229185940.JPG>
 
-[496]
+[499]
 File: figures/RNN201912150002.PNG Graphic file (type bmp)
 <figures/RNN201912150002.PNG>
- [497]
+ [500]
 File: figures/RNNAPP2019121500003.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500003.PNG>
 File: figures/RNNAPP2019121500004.PNG Graphic file (type bmp)
@@ -9571,11 +9599,15 @@ File: figures/RNNAPP2019121500005.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [498]
-[499]) [500]
+ [501]
+[502]) [503]
 \openout2 = `tex/chapter8.aux'.
 
- (./tex/chapter8.tex
+ (./tex/chapter8.tex [504
+
+
+
+]
 第八章
 File: figures/NLP20191218008.jpg Graphic file (type bmp)
 <figures/NLP20191218008.jpg>
@@ -9587,24 +9619,20 @@ ster/AIMaster2020.pdf" in version 0-M.>
 
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
-[501
-
-
-
-] [502]
+[505] [506]
 File: figures/Reformerpytorch0118.PNG Graphic file (type bmp)
 <figures/Reformerpytorch0118.PNG>
 File: figures/yuyanc820191130001.png Graphic file (type bmp)
 <figures/yuyanc820191130001.png>
- [503]
+ [507]
 Package mdframed Info: mdframed works in twoside mode on input line 91.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
- [504]
+ [508]
 File: figures/zhengxiangtuili2019112901.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112901.PNG>
- [505]
+ [509]
 Package mdframed Info: mdframed works in twoside mode on input line 150.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9616,7 +9644,7 @@ File: figures/zhengxiangtuili2019112903.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 2521) has occurred while \output is active []
 
- [506]
+ [510]
 Package mdframed Info: mdframed works in twoside mode on input line 183.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9628,30 +9656,31 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 209.
 
-[507]
+[511]
 File: figures/zhengxiangtuili2019112909.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112909.PNG>
- [508]
+ [512]
 Package mdframed Info: mdframed works in twoside mode on input line 278.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 278.
- [509]
+ [513]
 Package mdframed Info: mdframed works in twoside mode on input line 338.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 338.
- [510]
+ [514]
 File: figures/bloglong.png Graphic file (type bmp)
 <figures/bloglong.png>
- [511] [512]
+ [515] [516] [517] [518]
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
-) [513]
+) [519]
 \openout2 = `tex/chapter9.aux'.
 
- (./tex/chapter9.tex [514
+ (./tex/chapter9.tex
+[520
 
 
 
@@ -9670,30 +9699,30 @@ master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 
 Underfull \vbox (badness 2573) has occurred while \output is active []
 
- [515]
+ [521]
 File: figures/Agentfansi2020012801.PNG Graphic file (type bmp)
 <figures/Agentfansi2020012801.PNG>
 
 Underfull \vbox (badness 3428) has occurred while \output is active []
 
- [516]
+ [522]
 File: figures/Agentshensi2020012801.PNG Graphic file (type bmp)
 <figures/Agentshensi2020012801.PNG>
 
-[517] [518] [519] [520]
+[523] [524] [525] [526]
 Package mdframed Info: mdframed works in twoside mode on input line 199.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 199.
- [521] [522]
+ [527] [528]
 File: figures/Tu01920121204001.png Graphic file (type bmp)
 <figures/Tu01920121204001.png>
- [523]
+ [529]
 Package mdframed Info: mdframed works in twoside mode on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 290.
-) [524]
+) [530]
 \openout2 = `tex/chapter10.aux'.
 
  (./tex/chapter10.tex
@@ -9708,7 +9737,7 @@ ster/AIMaster2020.pdf" in version 0-M.>
 
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
-[525
+[531
 
 
 
@@ -9718,14 +9747,14 @@ File: figures/Expertbase20191203.png Graphic file (type bmp)
 
 Underfull \vbox (badness 1584) has occurred while \output is active []
 
- [526]
+ [532]
 File: figures/Expertbase20191303.png Graphic file (type bmp)
 <figures/Expertbase20191303.png>
 
-[527]
+[533]
 File: figures/Expertbase20191403.png Graphic file (type bmp)
 <figures/Expertbase20191403.png>
- [528] [529]) [530]
+ [534] [535]) [536]
 \openout2 = `tex/chapter11.aux'.
 
  (./tex/chapter11.tex
@@ -9740,43 +9769,43 @@ ster/AIMaster2020.pdf" in version 0-M.>
 
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
-[531
+[537
 
 
 
 ]
 File: figures/DPLandCV20191224001.png Graphic file (type bmp)
 <figures/DPLandCV20191224001.png>
- [532]
+ [538]
 File: figures/DPLandCV20191224002.png Graphic file (type bmp)
 <figures/DPLandCV20191224002.png>
- [533] [534]
+ [539] [540]
 File: figures/DPLandCV20191224003.png Graphic file (type bmp)
 <figures/DPLandCV20191224003.png>
- [535] [536]
+ [541] [542]
 Underfull \vbox (badness 3179) has occurred while \output is active []
 
- [537]
+ [543]
 File: figures/tempsnip.png Graphic file (type bmp)
 <figures/tempsnip.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [538]
+ [544]
 File: figures/DEEPlearningFlow.JPG Graphic file (type bmp)
 <figures/DEEPlearningFlow.JPG>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [539]
-[540]
+ [545]
+[546]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [541]
-Underfull \vbox (badness 5302) has occurred while \output is active []
+ [547]
+Underfull \vbox (badness 1728) has occurred while \output is active []
 
- [542])
-[543] [544
+ [548])
+[549] [550
 
 
 ]
@@ -9787,19 +9816,19 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 Package biblatex Warning: No driver for entry type 'inprodeeding'.
 (biblatex)                Using fallback driver on input line 121.
 
-[545
+[551
 
 
-] [546] [547]
-
-Package biblatex Warning: No driver for entry type 'inproceddings'.
-(biblatex)                Using fallback driver on input line 121.
-
+] [552] [553]
 
 Package biblatex Warning: No driver for entry type 'inproceddings'.
 (biblatex)                Using fallback driver on input line 121.
 
-[548]
+
+Package biblatex Warning: No driver for entry type 'inproceddings'.
+(biblatex)                Using fallback driver on input line 121.
+
+[554]
 
 Package biblatex Warning: Month out of range
 (biblatex)                at entry 'PiramanayagamSaber2018-9591' on input line 
@@ -9810,9 +9839,9 @@ Package biblatex Warning: No driver for entry type 'inproceddings'.
 (biblatex)                Using fallback driver on input line 121.
 
 Missing character: There is no š in font ntx-Regular-tlf-t1!
-[549] [550]
+[555] [556]
 Missing character: There is no Ⅰ in font ntx-Regular-tlf-t1!
- [551] [552
+ [557] [558
 
 ]
 No file AIMaster2020.ind.
@@ -9848,12 +9877,12 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 95815 strings out of 492922
- 2310262 string characters out of 6136750
- 3071228 words of memory out of 5000000
- 96854 multiletter control sequences out of 15000+600000
+ 95868 strings out of 492922
+ 2313219 string characters out of 6136750
+ 3075580 words of memory out of 5000000
+ 96907 multiletter control sequences out of 15000+600000
  742397 words of font info for 373 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,24n,424p,3753b,5380s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on AIMaster2020.pdf (571 pages).
+Output written on AIMaster2020.pdf (577 pages).
