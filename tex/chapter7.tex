@@ -1678,13 +1678,13 @@ y[0,0]=& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
       =& 0\cdot 1+0 \cdot 2+0 \cdot 1+0 \cdot 0+1 \cdot 0+2 \cdot 0+0 \cdot (-1)+4 \cdot (-2)+5 \cdot (-1)\\
       =&-13.
 \end{aligned}$$
-通过滑动卷积核, 就可以得到整张图片的卷积结果 (图\ref{TUCon2020020302}的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样甚至变小.
+通过滑动卷积核, 就可以得到整张图片的卷积结果 (图 \ref{TUCon2020020302} 的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样甚至变小.
 \vspace{-0.4cm}
 \end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-从左到右运算后, 原像素经过卷积由$1$变成$-8$ (图\ref{CNN20161021131748099}).
+从左到右运算后, 原像素经过卷积由$1$变成$-8$ (图 \ref{CNN20161021131748099}).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1695,9 +1695,9 @@ y[0,0]=& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
 \vspace{-0.4cm}
 \end{example}
 
-图\ref{TUCon2020020302}经过same卷积计算后图像大小不变.
-图\ref{CNN20161021131748099}卷积计算后图像大小不变.
-图\ref{20161021135241205}经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
+图 \ref{TUCon2020020302} 经过same卷积计算后图像大小不变.
+图 \ref{CNN20161021131748099} 卷积计算后图像大小不变.
+图 \ref{20161021135241205} 经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1742,7 +1742,11 @@ FCN作者和后来的研究人员都对最终$1\times 1$的结果使用反卷积
 
 1) 输入图片每个像素进行一次full卷积, 根据full卷积大小计算可以知道每个像素的卷积后大小为 $1+4-1=4$, 即$4\times 4$大小的特征图, 输入有4个像素所以4个$4\times 4$的特征图.
 
-2) 将4个特征图进行步长为3的融合 (即相加) ; 例如红色的特征图仍然是在原来输入位置 (左上角), 绿色还是在原来的位置 (右上角), 步长为3是指每隔3个像素进行融合, 重叠部分进行相加, 即输出的第1行第4列是由红色特阵图的第一行第四列与绿色特征图的第一行第一列相加得到, 其他如此类推.
+2) 将4个特征图进行步长为3的融合 (即相加);
+
+\begin{remark}
+    红色的特征图仍然是在原来输入位置 (左上角), 绿色还是在原来的位置 (右上角), 步长为3是指每隔3个像素进行融合, 重叠部分进行相加, 即输出的第1行第4列是由红色特阵图的第一行第四列与绿色特征图的第一行第一列相加得到, 其他如此类推.
+\end{remark}
 
 可以看出反卷积的大小是由卷积核大小与滑动步长决定, in是输入大小, $k$是卷积核大小, $s$是滑动步长, out是输出大小.
 得到 $\textup{out} = (\textup{in} - 1) \times  s + k$, 图 \ref{20170715175257862} 过程就可以写为$ (2 - 1)\times 3 + 4 = 7$.
@@ -2445,7 +2449,8 @@ RNN主要用于序列分类
 简而言之, 链式法则归结为特定时间步的所有隐藏表示的偏导数的乘积.
 \begin{align}
     \frac{\partial \mathscr{L}_{t} (\theta)}{\partial W}&=\frac{\partial \mathscr{L}_{t} (\theta)}{\partial s_{t}} \sum_{k=1}^{t} \frac{\partial s_{t}}{\partial s_{k}} \frac{\partial s_{k}}{\partial W}\\
-    \frac{\partial s_{t}}{\partial s_{k}}               &=\frac{\partial s_{t}}{\partial s_{t-1}} \frac{\partial s_{t-1}}{\partial s_{t-2}} \frac{\partial s_{t-2}}{\partial s_{t-3}} \cdots \frac{\partial s_{k+1}}{\partial s_{k}} \Rightarrow \frac{\partial s_{t}}{\partial s_{k}}=\prod_{j=k+1}^{t} \frac{\partial s_{j}}{\partial s_{j-1}}.
+    \frac{\partial s_{t}}{\partial s_{k}}               &=\frac{\partial s_{t}}{\partial s_{t-1}} \frac{\partial s_{t-1}}{\partial s_{t-2}} \frac{\partial s_{t-2}}{\partial s_{t-3}} \cdots \frac{\partial
+                                                               s_{k+1}}{\partial s_{k}} \Rightarrow \frac{\partial s_{t}}{\partial s_{k}}=\prod_{j=k+1}^{t} \frac{\partial s_{j}}{\partial s_{j-1}}.
 \end{align}
 
 如果我们有超过100个或者更长的序列的隐藏表示, 那么我们必须计算这些表示的乘积来进行反向传播.
@@ -2457,7 +2462,19 @@ RNN主要用于序列分类
 \begin{example}RNN示例
 
 让我们以使用RNN进行情感分析为例, 看看选择性读、写和遗忘策略的工作原理.
-%评论: The first half of the movie is dry but the second half really picked up the pace. The lead actor delivered an amazing performance.
+
+\begin{tcolorbox}
+    评论: The first half of the movie is dry but the second half really picked up the pace. The lead actor delivered an amazing performance.
+\end{tcolorbox}
+
+评论始于负面情绪, 后来变成正面. 过程如下:
+
+过程说明: 我们首先遗忘由stop words ($a$, the, is等) 添加的信息. 有选择地阅读由情感表达的单词所添加的信息 (amazing, awesome等).
+有选择地将隐藏状态表示信息从当前单词写入新的隐藏状态.
+使用选择性的读、写和遗忘策略, 我们可以控制信息流, 这样网络就不会出现短期记忆的问题, 也可以确保有限大小的状态向量得到有效的使用.
+
+长期短期记忆— LSTM: 引入LSTM是为了克服vanilla RNN存在的短期记忆和梯度消失等问题.
+在LSTM中, 通过使用门来调节信息流, 我们可以有选择地读写和遗忘信息.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -2466,16 +2483,6 @@ RNN主要用于序列分类
     \label{RNNImage191229003}
     \vspace{-0.4cm}
 \end{figure}
-评论始于负面情绪, 后来变成正面.
-
-过程如下:
-
-过程说明: 我们首先遗忘由stop words ($a$, the, is等) 添加的信息. 有选择地阅读由情感表达的单词所添加的信息 (amazing, awesome等).
-有选择地将隐藏状态表示信息从当前单词写入新的隐藏状态.
-使用选择性的读、写和遗忘策略, 我们可以控制信息流, 这样网络就不会出现短期记忆的问题, 也可以确保有限大小的状态向量得到有效的使用.
-
-长期短期记忆— LSTM: 引入LSTM是为了克服vanilla RNN存在的短期记忆和梯度消失等问题.
-在LSTM中, 通过使用门来调节信息流, 我们可以有选择地读写和遗忘信息.
 
 $\bullet$ RNN或LSTM中的写.
 
@@ -2489,7 +2496,7 @@ $\bullet$ RNN或LSTM中的写.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{RNNImage191229004.png}
+\includegraphics[width=0.55\textwidth]{RNNImage191229004.png}
 \caption{RNN节点计算}
 \label{RNNImage191229004}\vspace{-0.4cm}
 \end{figure}
@@ -2567,7 +2574,7 @@ $i_t$的数学公式如下:
 
 \quad\quad 输入门: $i_{t}=\sigma\left (W_{i} h_{t-1}+U_{i} x_{t}+b_{i}\right)$.
 
-\quad 选择性地度读: $i_{t} \odot \tilde{s_{t}}$.
+\quad 选择性地读: $i_{t} \odot \tilde{s_{t}}$.
 \end{example}
 $\bullet$ RNN或LSTM中的选择性遗忘.
 

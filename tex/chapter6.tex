@@ -225,7 +225,7 @@
 %%%------------------------------------------------
 \subsection{CF模型}
 可信度模型是 Shortliffe等人在开发细菌感染疾病诊断专家系统 MYCIN中提出的一种不确定性推理模型, 它是基于确定性理论, 结合概率论和模糊集合论等方法提出的一种推理方法。
-该方法采用可信度 CF(Certainty Factor)作为不确定性的测度, 通过对$\textup{CF}(H,E)$的计算, 探讨证据$E$对假设$H$的定量支持程度, 因此, 该方法也称为C-F模型。 
+该方法采用可信度 CF(Certainty Factor)作为不确定性的测度, 通过对$\textup{CF}(H,E)$的计算, 探讨证据$E$对假设$H$的定量支持程度, 因此, 该方法也称为C-F模型。
 \subsection{知识不确定性的表示形式}
 在C-F模型中, 知识是用产生式规则表示的, 其一般形式为:
 \begin{center}
@@ -534,12 +534,12 @@ $\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
 \end{align}
 即把取值为$[0,1]$的$P(X)$放大为取值为$[0,+\infty]$的$O(X)$.
 
-把 \eqref{AI32C6eq6.28} 式代入 \eqref{AI32C6eq6.30} 式有:
+由 \eqref{AI32C6eq6.28} 式, 和 \eqref{AI32C6eq6.30} 式中的$O(X)$, 有:
 \begin{align}
     O(H | E)=\frac{P(E | H)}{P(E | \neg H)} \times O(H).
 \end{align}
 再把LS代入此式, 可得:
-\begin{align}
+\begin{align}\label{AI32C6eq6.35}
     O(H | E)=\textup{LS} \times O(H).
 \end{align}
 
@@ -548,7 +548,7 @@ $\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
     &\frac{P(H|\neg E)}{P(\neg H|\neg E)}=\frac{P(E | H)}{P(\neg E |\neg H)} \times \frac{P(H)}{P(-H)}.\label{AI32C6eq6.36} \\
     &O(H| \neg E)=\textup{LN} \times O(H). \label{AI32C6eq6.37}
 \end{align}
-式 \eqref{AI32C6eq6.36} 和 \eqref{AI32C6eq6.37} 就是修改的Bayes公式.
+式 \eqref{AI32C6eq6.35} 和 \eqref{AI32C6eq6.37} 就是修改的Bayes公式.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{证据理论}
 证据理论是由德普斯特 (A. P. Dempster) 首先提出, 并由沙佛 (G. Shafer) 进一步发展起来的用于处理不确定性的一种理论, 也称 DS (Dempster-Shafer) 理论.
@@ -556,7 +556,7 @@ $\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
 %%%------------------------------------------------
 \section{DS理论的形式描述}
     在DS理论中, 可以分别用\uwave{信任函数、似然函数及类概率函数来描述知识的精确信任度、不可驳斥信任度及估计信任度}.
-DS理论处理的是集合上的不确定性问题, 为此需要先建立命题与集合之间的一一对应关系, 以把命题的不确定性问题转化为集合的不确定性问题.
+DS理论处理的是集合上的不确定性问题, 为此需要先建立命题与集合之间的一一对应关系, 以把命题的不确定性问题转化为集合的不确定性问题. \index{信任函数}\index{似然函数}\index{类概率函数}
 
 设$\Omega$为样本空间, 且$\Omega$Ω中的每个元素都相互独立, 则由Ω的所有子集构成的幂集记为$2^\Omega$.
 当$\Omega$中的元素个数为$N$时, 则其幂集$2^{\Omega}$的元素个数为$2^N$, 且其中的每一个元素都对应于一个关于$x$取值情况的命题.
@@ -589,7 +589,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{example}\label{AIC6exam6.17}
 若定义$2^{\Omega}$上的一个基本函数$m$:
 \begin{align}
-  m(\{\emptyset,\textup{红}\}, & \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄}\}, \{\textup{红, 白}\}, \{\textup{黄, 白}\}, \{\textup{红, 黄, 白}\})\notag\\
+  m(\{\emptyset\},\{\textup{红}\}, & \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄}\}, \{\textup{红, 白}\}, \{\textup{黄, 白}\}, \{\textup{红, 黄, 白}\})\notag\\
                               &=(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2).
 \end{align}
 其中, $(0, 0.3, 0, 0.1, 0.2, 0.2, 0, 0.2)$ 分别是幂集$2^{\Omega}$中各个子集的基本概率数.
@@ -644,8 +644,7 @@ $\Omega$的幂集可包括如下子集:
 根据定义还可以得到:
 \begin{align*}
 \begin{array}{l}
-    \text{\textup{Bel}}(\Phi)=m(\Phi)=0; \\
-    \text{\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
+    \text{\textup{Bel}}(\Phi)=m(\Phi)=0; \text{\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
 \end{array}
 \end{align*}
 \vspace{-0.2cm}
@@ -671,13 +670,12 @@ $\Omega$的幂集可包括如下子集:
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-似然函数又称为\textbf{不可驳斥函数}或\textbf{上限函数}.由于$Bel(\neg A)$表示对$\neg A$的信任度, 即$A$为假的信任度, 因此, $P_l(A)$表示对$A$为非假的信任度.
+似然函数又称为\textbf{不可驳斥函数}或\textbf{上限函数}.由于$\textbf{Bel}(\neg A)$表示对$\neg A$的信任度, 即$A$为假的信任度, 因此, $P_l(A)$表示对$A$为非假的信任度.
 %%%%-------------------------------------------------
 \begin{example}
 以例 \ref{AIC6exam6.17} 为例:
 \begin{align*}
-    P_l(\{\textup{红}\})&=1-\textup{Bel}(\neg \{\textup{红}\})\notag\\
-                     &=1-\textup{Bel}(\{\textup{黄, 白}\})\notag\\
+    P_l(\{\textup{红}\})&=1-\textup{Bel}(\neg \{\textup{红}\})=1-\textup{Bel}(\{\textup{黄, 白}\})\notag\\
                      &=1-(m(\{\textup{黄}\})+m(\{\textup{白}\})+m(\{\textup{黄, 白}\}))=1-(0+0.1+0)=0.9.
 \end{align*}
      这里的0.9是“红”为非假的信任度. 由于“红”为真的精确信任度为0.3, 而剩下的0.9-0.3=0.6, 则是知道非假, 但却不能肯定为真的那部分.
@@ -701,8 +699,7 @@ $\Omega$的幂集可包括如下子集:
 \end{align*}
 可见, $P_l(\{\textup{红}\}), P_l(\{\textup{黄, 白}\})$亦可分别用下式计算:
 \begin{align*}
-    &P_l(\{\textup{红}\})=\sum_{\{\textup{红}\}\cap B =\emptyset} m(B),\\
-    &P_l(\{\textup{黄, 白}\})=  \sum_{\{\textup{黄, 白}\}\cap B =\emptyset} m(B).
+    P_l(\{\textup{红}\})=\sum_{\{\textup{红}\}\cap B =\emptyset} m(B), P_l(\{\textup{黄, 白}\})=  \sum_{\{\textup{黄, 白}\}\cap B =\emptyset} m(B).
 \end{align*}
 如果把它推广到一般可得公式:
 \begin{align*}
@@ -779,8 +776,7 @@ $\Omega$的幂集可包括如下子集:
 设$m_1$和$m_2$是两个不同的概率分配函数, 则其正交和$m=m_1\oplus m_2$满足
 \begin{align}
   \begin{array}{l}
-  m(\Phi)=0, \\
-  m(A)=K^{-1} \times \sum_{x \cap y=A} m_{1}(x) \times m_{2}(y),
+        m(\Phi)=0, m(A)=K^{-1} \times \sum_{x \cap y=A} m_{1}(x) \times m_{2}(y),
   \end{array}
 \end{align}
 其中:
@@ -821,8 +817,7 @@ m(\{a\})
 \end{align*}
 同理可求得
 \begin{align*}
-    & m(\{b\})=0.43;\\
-    & m(\{a, b\})=0.03.
+    & m(\{b\})=0.43; m(\{a, b\})=0.03.
 \end{align*}
 故有
 \begin{align*}
@@ -852,7 +847,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 
 \qquad\ding{173} 当子集中有多个或0个元素, 且不等于全集时, 其概率分配数均为0;
 
-\qquad\ding{174}  全集$\Omega$的概率分配数按(3)计算.
+\qquad\ding{174}  全集$\Omega$的概率分配数按(3)式计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
     设$\Omega=\{\textup{红, 黄, 白}\}$, 有如下概率分配函数
@@ -865,10 +860,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 \begin{example}
 对任何命题$A\subset \Omega$, 其信任函数为
 \begin{align*}
-    \begin{array}{l}
-    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \\
-    \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
-    \end{array}
+    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
 \end{align*}
 \vspace{-0.2cm}
 \end{example}
@@ -879,8 +871,8 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 \begin{aligned}
 P_l(A) &=1-\textup{Bel}(\neg A)=1-\sum_{s_{i} \in-A} m\left(\left\{s_{i}\right\}\right)
         =1-\left[\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)-\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right)\right] \\
-       &=1-[1-m(\Omega)-\textup{Bel}(A)] \\
-       &=m(\Omega)+\textup{Bel}(A). \\
+       &=1-[1-m(\Omega)-\textup{Bel}(A)]
+        =m(\Omega)+\textup{Bel}(A). \\
 P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \end{aligned}
 \end{align}
@@ -916,14 +908,14 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 \begin{mydef}{基本概率分配函数的正交和}{1}
 设$m_1$和$m_2$是$2^{\Omega}$上的基本概率分配函数, 它们的正交和定义为
 \begin{align}
-    m\left(\left\{s_{i}\right\}\right)=K^{-1} \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
+    m\left(\left\{s_{i}\right\}\right)=\frac 1 K  \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
 \end{align}
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align}
-    m(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
+    m(\{\},\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align}
 $A=\{\textup{红, 黄}\}$, 求$m(\Omega),\, \textup{Bel}(A)$和$P_l(A)$的值.
 \end{example}
@@ -945,10 +937,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega),\, \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{align}
     m\left(\left\{s_{i}\right\}\right)=K^{-1} \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right],
 \end{align}
-其中,
-\begin{align}
-    K=m_{1}(\Omega) \times m_{2}(\Omega)+\sum_{i=1}^{n}\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
-\end{align}
+其中, $K=m_{1}(\Omega) \times m_{2}(\Omega)+\sum_{i=1}^{n}\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right]$.
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{类概率函数}{1}
@@ -1027,15 +1016,10 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 其中:
      $E$为前提条件, 它既可以是简单条件, 也可以是用合取或析取词连接起来的复合条件;
      $H$是结论, 它用样本空间中的子集表示, $h_1, h_2, \cdots, h_n$是该子集中的元素;
-     $\textup{CF}$是可信度因子, 用集合形式表示.该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
+     $\textup{CF}$是可信度因子, 用集合形式表示. 
+     该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
 
- 并且$c_i$应满足如下条件:
-\begin{align}
- \begin{array}{ll}
-   1)&\, c_{i} \geq 0, \\
-   2)&\, \sum_{i=1}^{n} c_i\leq 1.
- \end{array},\, i=1, 2, \cdots, n.
-\end{align}
+ 并且$c_i$应满足如下条件: 1) $c_{i} \geq 0$; 2) $\sum_{i=1}^{n} c_i\leq 1, i=1, 2, \cdots, n$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -1045,7 +1029,8 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
   \left\{
   \begin{array}{l}
   1 \\
-  0\end{array}
+  0
+  \end{array}
   \right..
 \end{align}
 \vspace{-0.2cm}
@@ -1059,7 +1044,9 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \end{align}
 其中$f(A)$为类概率函数.
 \end{mydef}
-由于$f(A) \in [0, 1]$, 因此$\textup{CER}(A)\in [0,  1]$.
+\begin{remark}
+    由于$f(A) \in [0, 1]$, 因此$\textup{CER}(A)\in [0,  1]$.
+\end{remark}
 
 当组合证据是多个证据的合取时:
 \begin{align}
@@ -1130,7 +1117,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
-由给定知识形成的推理网络 \ref{AI32fig2808} 为:
+    由给定知识形成的推理网络 \ref{AI32fig2808} 为:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -1294,8 +1281,10 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 \begin{example}
 语言变量“真实性”取值“真”和“假”的隶属函数定义为:
 \begin{align*}
-    &\mu_{\textup{真}}(u)=u & u \in[0,1;\\
-    &\mu_{\textup{假}}(u)=1-u & u \in[0,1].
+\begin{array}{lll}
+  &\mu_{\textup{真}}(u)=u, & u \in[0,1;\\
+    &\mu_{\textup{假}}(u)=1-u, & u \in[0,1].
+\end{array}
 \end{align*}
 则“非常真”、“有些真”、“非常假”、“有些假”可定义为
 \begin{align*}
@@ -1327,8 +1316,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 \begin{example}\label{AIC6exam6.53}
 设论域$U=\{-10, 0, 10, 20, 30\}$表示温度, 模糊集
 \begin{align*}
-    F&= 0.8/(-10)+0.5/0+0.1/10;\\
-    G&=0.9/(-10)+0.6/0+0.2/10.
+    F= 0.8/(-10)+0.5/0+0.1/10; G=0.9/(-10)+0.6/0+0.2/10.
 \end{align*}
 分别表示“冷”和“比较冷”, 则
 \begin{align*}
@@ -1343,10 +1331,7 @@ m\left(h_{3}\right)=& \frac{1}{K} \times\left[m_{1}\left(\left\{h_{3}\right\}\ri
 \end{align*}
 其中:
 \begin{align*}
-\begin{array}{ll}
-    &F \cdot G=\vee_{U}\left(\mu_{F}\left(u_{i}\right) \wedge \mu_{G}\left(u_{i}\right)\right);\\
-    &F \odot G=\bigwedge_{U}\left(\mu_{F}\left(u_{i}\right) \vee \mu_{G}\left(u_{i}\right)\right).
-\end{array}
+    F \cdot G=\vee_{U}\left(\mu_{F}\left(u_{i}\right) \wedge \mu_{G}\left(u_{i}\right)\right); F \odot G=\bigwedge_{U}\left(\mu_{F}\left(u_{i}\right) \vee \mu_{G}\left(u_{i}\right)\right).
 \end{align*}
 称$F\cdot G$为内积, $F\odot G$为外积.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1436,10 +1421,14 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \begin{align*}
     F=1/1+0.6/2+0.1/3, G=0.1/1+0.6/2+1/3,
 \end{align*}
-其$R_g$为
+其中
 \begin{align*}
-    R_{g}=\left[\begin{array}{ccc}{0.1} & {0.6} & {1} \\
-    {0.1} & {1} & {1} \\ {1} & {1} & {1}\end{array}\right].
+    R_{g}=\left[
+    \begin{array}{ccc}
+    {0.1} & {0.6} & {1} \\
+    {0.1} & {1} & {1} \\ 
+    {1} & {1} & {1}
+    \end{array}\right].
 \end{align*}
 \vspace{-0.3cm}
 \end{example}
