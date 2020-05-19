@@ -487,8 +487,8 @@
 \contentsline {subparagraph}{信息熵}{427}{subparagraph*.417}% 
 \contentsline {subparagraph}{条件熵}{427}{subparagraph*.418}% 
 \contentsline {paragraph}{ID3算法及举例}{427}{paragraph*.419}% 
-\contentsline {subsection}{\numberline {7.2.4}解释学习}{431}{subsection.7.2.4}% 
-\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{431}{subsubsection.7.2.4.1}% 
+\contentsline {subsection}{\numberline {7.2.4}解释学习}{430}{subsection.7.2.4}% 
+\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{430}{subsubsection.7.2.4.1}% 
 \contentsline {subsubsection}{\numberline {7.2.4.2}解释学习的模型}{431}{subsubsection.7.2.4.2}% 
 \contentsline {subsubsection}{\numberline {7.2.4.3}解释学习的基本原理}{432}{subsubsection.7.2.4.3}% 
 \contentsline {paragraph}{解释泛化学习方法-1}{432}{paragraph*.425}% 
@@ -498,7 +498,7 @@
 \contentsline {subsection}{\numberline {7.3.2}BP网络学习}{441}{subsection.7.3.2}% 
 \contentsline {subsection}{\numberline {7.3.3}Hopfield网络学习}{442}{subsection.7.3.3}% 
 \contentsline {section}{\numberline {7.4}工业4.0时代的机器学习}{444}{section.7.4}% 
-\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{445}{subsection.7.4.1}% 
+\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{444}{subsection.7.4.1}% 
 \contentsline {section}{\numberline {7.5}深度神经网络——DNN}{448}{section.7.5}% 
 \contentsline {subsection}{\numberline {7.5.1}自动机器学习 (AutoML)}{452}{subsection.7.5.1}% 
 \contentsline {section}{\numberline {7.6}netZooPy库}{453}{section.7.6}% 

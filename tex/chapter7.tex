@@ -405,10 +405,10 @@ $\bullet$ 规则1: 花色 ($c_1$, x) $\wedge$ 花色 ($c_2$, x) $\wedge$ 花色 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  决策树还可以表示成规则的形式. 上图 \ref{AI32fig2704} 的决策树可表示为如下规则集:
 \begin{Verbatim}
-    IF  鸟类会飞       AND  是家养的          THEN  该鸟类是和平鸽
-    IF  鸟类会飞       AND  不是家养的      THEN  该鸟类是信天翁
-    IF  鸟类不会飞   AND  会游泳              THEN  该鸟类是企鹅
-    IF  鸟类不会飞   AND  不会游泳         THEN  该鸟类是鸵鸟
+    IF  鸟类会飞       AND  是家养的           THEN  该鸟类是和平鸽
+    IF  鸟类会飞       AND  不是家养的         THEN  该鸟类是信天翁
+    IF  鸟类不会飞     AND  会游泳            THEN  该鸟类是企鹅
+    IF  鸟类不会飞      AND  不会游泳          THEN  该鸟类是鸵鸟
 \end{Verbatim}
 
 决策树学习过程实际上是一个构造决策树的过程. 当学习完成后, 就可以利用这棵决策树对未知事物进行分类.
@@ -454,9 +454,8 @@ ID3算法的学习过程:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-用ID3算法完成下述学生选课
-
-假设将决策$y$分为以下３类:
+用ID3算法完成下述学生选课.
+假设将决策$y$分为以下三类:
 \begin{Verbatim}
     $y_1$: 必修AI
     $y_2$: 选修AI
@@ -891,8 +890,7 @@ y (1)&=f (w_1 (1) x_1 (1)+ w_2 (1) x_2 (1)-\theta (1))\notag\\
 
 再取下一组输入: $x_1 (1)=1$和$x_2 (1)=1$, 其期望输出为$d (1)=1$, 实际输出为:
 \begin{align*}
-  y (1)&=f (w_1 (1) x1 (1)+ w_2 (1) x_2 (1)-\theta (1))\notag\\
-      &=f (0.5\times 1+0.3\times 1-1)=f (-0.2)=0.
+  y (1)=f (w_1 (1) x1 (1)+ w_2 (1) x_2 (1)-\theta (1))=f (0.5\times 1+0.3\times 1-1)=f (-0.2)=0.
 \end{align*}
 实际输出与期望输出不同, 需要调节权值, 其调整如下:
 \begin{align*}
@@ -1066,7 +1064,6 @@ Hopfield网络学习的过程实际上是一个从网络初始状态向其稳定
     \sum_{j=1 \atop j \neq k}^{n} w_{k j} v_{j}-\theta_{k}<0;
 \end{align}
 即$\Delta E<0$.
-
 可见, 无论神经元的状态由 ``0"变为 ``1", 还是由 ``1"变为 ``0", 都总有$\delta E<0$. 它说明离散Hopfield网络在运行中, 其能量函数总是在不断降低的, 最终将趋于稳定状态.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
@@ -1158,7 +1155,8 @@ E   &=-\frac 1 2 \big (w_{12}v_1v_2+w_{13}v_1v_3+w_{21}v_2 v_1+w_{23}v_2v_3+w_{3
 夏柏尔和弗洛恩德因这项工作获2003年“哥德尔奖"、2004年“ACM帕里斯·卡内拉基斯 (Paris Kanellakis)理论与实践奖".
 \end{remark}
 
-AdaBoost的算法仅需“十来行代码".  算法和算法修改版能应用于诸多类型的任务.
+AdaBoost的算法仅需“十来行代码". 算法和算法修改版能应用于诸多类型的任务.
+%%%%---------------------------------
 \begin{example}
 在人脸识别领域被誉为“第一个实时人脸检测器"、获得2011年龙格-希金斯 (Longuet-Higgins) 奖的维奥拉-琼斯 (Viola-Jones) 检测器就是基于AdaBoost研制的, AdaBoost为何未发生过拟合. \index{AdaBoost}\index{Viola-Jones检测器}
 夏柏尔和弗洛恩德很快意识到1997理论中的问题. 1998年, 他们与后来领导伯克利著名的西蒙斯计算理论研究所的彼得·巴特莱特 (Peter Bartlett)和李伟上 (Wee Sun Lee) 合作发表了一个新的基于“间隔 (margin)"的理论.
@@ -1178,9 +1176,9 @@ AdaBoost的算法仅需“十来行代码".  算法和算法修改版能应用�
     \label{AI32Adboostplane}
 \end{figure}
 
-AdaBoost后来衍生出一个庞大的算法家族, 统称 Boosting, 是机器学习中 ``集成学习"的主流代表性技术.   \index{集成学习}\index{AdaBoost}
+AdaBoost衍生出许多算法, 有一个庞大的算法家族, 统称 Boosting, 是机器学习中 ``集成学习"的主流代表性技术. 即便在当今这个 ``深度学习时代", Boosting仍发挥着重要作用. \index{集成学习}\index{AdaBoost}
 \end{example}
-即便在当今这个 ``深度学习时代", Boosting仍发挥着重要作用,
+%%%%---------------------------------
 \begin{example}
     经常在许多数据分析竞赛中打败深度神经网络而夺魁的XGBoost, 就是Boosting家族中GradientBoost算法的一种高效实现. \index{GradientBoost算法}
 \end{example}
@@ -1998,8 +1996,8 @@ LocalResponseNorm
 Inverse square root linear unit (ISRLU) \cite{BradCarlile2017}
 \begin{align}
 f (x)=\left\{\begin{array}{ll}
-    \frac{x}{\sqrt{1+\alpha x^{2}}}, & \text { for } x<0 \\
-    x, &  x \geq 0
+    \frac{x}{\sqrt{1+\alpha x^{2}}}, & \textup{当} x<0 \\
+    x, &  \textup{当} x \geq 0
 \end{array}\right.,
 x\in \left (-\frac{1}{\sqrt{\alpha}}, \infty\right).
 \end{align}
@@ -2033,7 +2031,9 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 
 \textbf{分类层}在特征检测之后, CNN 的架构转移到分类. 倒数第二层是全连接层 (FCL), 输出$K$维度的向量, 其中$K$是网络能够预测的类数量. 此向量包含任何图像的每个类进行分类的概率. CNN 架构的最后一层使用 softmax 函数提供分类输出.
 
-没有用于选择层数的确切公式. 最好的方法是尝试一些层, 查看工作效果如何, 或者使用预先训练好的网络.
+\begin{remark}
+    没有用于选择层数的确切公式. 最好的方法是尝试一些层, 查看工作效果如何, 或者使用预先训练好的网络.
+\end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -2053,8 +2053,9 @@ $i_t$, $f_t, g_t, o_t$分别是输入, 遗忘, 元胞和输出们. $\sigma$ 是s
 \label{AlexNetdemo002}
 \vspace{-0.4cm}
 \end{figure}
-刚接触深度学习, 快速而轻松的入门方法是使用现有网络, 比如 2012 年首次发布的AlexNet, 已成为研究团体中众所周知的模型. 用一百多万张图像训练好的 CNN.  AlexNet 最常用于
-图像分类. 它可将图像划分为 1000 个不同的类别, 包括键盘、鼠标、铅笔和其他办公设备, 以及各个品种的狗、猫、马和其他动物.
+刚接触深度学习, 快速而轻松的入门方法是使用现有网络, 比如 2012 年首次发布的AlexNet, 已成为研究团体中众所周知的模型. 
+用一百多万张图像训练好的 CNN. 
+AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类别, 包括键盘、鼠标、铅笔和其他办公设备, 以及各个品种的狗、猫、马和其他动物.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -2291,7 +2292,7 @@ diffGrad能够以理想的损失锁定到全局最小值. Adam由于无法及时
 
 所提出的数据注释方法语义图形直观, 并且注释所需目标的工作量很少. ``extended skip network"是一种改进的深卷积编译码神经网络, 用于语义图形的高效学习.
 研究结果表明, 在水稻行和杂草检测中, 相对于基线网络, 联合平均交叉数 (mIoU)分别增加了6.29％和6.14％.
-并且与当前流行的基于边界框的对象检测方法相比, 该方法也使得mIoU增加了3.56\%, 具有更高的召回率.
+并且与当前流行的基于边界框的对象检测方法相比, 该方法也使得 mIoU 增加了3.56\%, 具有更高的召回率.
 图 \ref{CCNshuidao20191216181108} 给出了在稻田数据集上使用拟议的扩展跳过网络学习语义线的定性结果.
 图 \ref{CCNshuidao20191216181137} 给出了在稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2305,7 +2306,7 @@ diffGrad能够以理想的损失锁定到全局最小值. Adam由于无法及时
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{图卷积神经网络}
 \href{https://github.com/zggl/planetoid}{图卷积网络}由University of Amsterdam的Thomas N. Kipf提出, 2020年博士毕业, \href{https://arxiv.org/abs/1609.02907}{SEMI-SUPERVISED CLASSIFICATION WITH
-GRAPH CONVOLUTIONAL NETWORKS}, 纽约大学,纽约大学上海分校,AWS上海研究院以及AWS MXNet Science Team共同开发的 \href{https://www.dgl.ai/}{图神经网络的框架}
+GRAPH CONVOLUTIONAL NETWORKS}, 纽约大学, 纽约大学上海分校, AWS上海研究院以及 AWS MXNet Science Team 共同开发的 \href{https://www.dgl.ai/}{图神经网络的框架}
 
 阿里如何把图卷积网络用于闲鱼的垃圾评论过滤. 目前该系统已经部署到了闲鱼使用环境中, 它每天能处理百万级的闲鱼评论, 并在其他强有力的深度学习模型基础上, 额外筛选出一千多条非常隐秘的垃圾评论.
 基于图卷积的垃圾信息筛选是一种非常通用的思想, 它的应用范围远不止垃圾评论过滤, 淘宝信息的知识产权保护、淘宝商品管控和用户恶意评价等方面都可以采用.
