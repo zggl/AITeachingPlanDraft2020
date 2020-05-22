@@ -839,7 +839,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 从信任函数和似然函数的定义看, 它们都是建立在概率分配函数之上的, 可见不同的概率分配函数将得到不同的推理模型.
 下面就给出一个特殊的概率分配函数, 并在其上建立推理模型.
 
-设$\Omega={s_1,s_2,\cdots,s_n}$, $m$为定义在$2^{\Omega}$上的概率分配函数, 且$m$满足
+设$\Omega=\{s_1,s_2,\cdots,s_n\}$, $m$为定义在$2^{\Omega}$上的概率分配函数, 且$m$满足
 \begin{align}
 \begin{array}{lll}
     \text { (1) } m\left(\left\{s_{i}\right\}\right) \geq 0; \\
@@ -869,7 +869,8 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 \begin{example}
 对任何命题$A\subset \Omega$, 其信任函数为
 \begin{align*}
-    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
+    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); 
+    \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
 \end{align*}
 \vspace{-0.2cm}
 \end{example}
@@ -878,7 +879,7 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 对任何命题$A\subset \Omega$, 其似然函数为
 \begin{align}
 \begin{aligned}
-P_l(A) &=1-\textup{Bel}(\neg A)=1-\sum_{s_{i} \in-A} m\left(\left\{s_{i}\right\}\right)
+P_l(A) &=1-\textup{Bel}(\neg A)=1-\sum_{s_{i} \in\neg A} m\left(\left\{s_{i}\right\}\right)
         =1-\left[\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)-\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right)\right] \\
        &=1-[1-m(\Omega)-\textup{Bel}(A)]
         =m(\Omega)+\textup{Bel}(A). \\
@@ -896,7 +897,7 @@ P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align*}
-    m( \{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1).
+    m(\{\}, \{\textup{红}\}, \{\textup{黄}\}, \{白\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align*}
 $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -907,34 +908,6 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
      &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
      &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})
      =0.1+0.8=0.9.
-\end{align*}
-或
-\begin{align*}
-    P_l(\{\textup{红, 黄}\})=1-\textup{Bel}(\neg \{\textup{红, 黄}\})=1-\textup{Bel}(\{\textup{白}\})=1-0.1=0.9.
-\end{align*}
-\end{result}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{mydef}{基本概率分配函数的正交和}{1}
-设$m_1$和$m_2$是$2^{\Omega}$上的基本概率分配函数, 它们的正交和定义为
-\vspace{-0.2cm}
-\begin{align}
-    m\left(\left\{s_{i}\right\}\right)=\frac 1 K  \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
-\end{align}
-\end{mydef}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
-设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
-\begin{align}
-    m(\{\},\{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄, 白}\})=(0,  0.6,  0.2,  0.1,  0.1).
-\end{align}
-$A=\{\textup{红, 黄}\}$, 求$m(\Omega),\, \textup{Bel}(A)$和$P_l(A)$的值.
-\end{example}
-%%%%%%-------------------------------------
-\begin{result}
-\begin{align*}
-    &m(\Omega)=1-[m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})]=1-(0.6+0.2+0.1)=0.1;\\
-    &\textup{Bel}(\{\textup{红, 黄}\})=m(\{\textup{红}\})+m(\{\textup{黄}\})=0.6+0.2=0.8;\\
-    &P_l(\{\textup{红, 黄}\})=m(\Omega)+\textup{Bel}(\{\textup{红, 黄}\})=0.1+0.8=0.9.
 \end{align*}
 或
 \begin{align*}
@@ -953,14 +926,14 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega),\, \textup{Bel}(A)$和$P_l(A)$的值.
 \begin{mydef}{类概率函数}{1}
 设$\Omega$为有限域, 对任何命题$A\subset \Omega$, 命题$A$的类概率函数为
 \begin{align}
-    f(A)=\textup{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)],
+    f(A)=\textup{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)], s_{i}\in \Omega,
 \end{align}
 其中, $|A|$和$|\Omega|$分别是$A$及$\Omega$中元素的个数.
 \end{mydef}
 
 类概率函数$f(A)$的性质
 
-\text{(1)} $\sum_{i=1}^{n} f\left(\left\{s_{i}\right\}\right)=1$.
+\text{(1)} $\sum_{i=1}^{n} f\left(\left\{s_{i}\right\}\right)=1, s_{i}\in \Omega$.
 \begin{align*}
 \because f\left(\left\{s_{i}\right\}\right) &=\textup{Bel}\left(\left\{s_{i}\right\}\right)+\frac{\left|\left\{s_{i}\right\}\right|}{|\Omega|} \times\left[P_l\left(\left\{s_{i}\right\}\right)-\textup{Bel}\left(\left\{s_{i}\right\}\right)\right] \notag\\
   &=m\left(\left\{s_{i}\right\}\right)+\frac{1}{n} \times m(\Omega) \quad i=1,2, \ldots, n \\
