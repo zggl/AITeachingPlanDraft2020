@@ -320,7 +320,7 @@ $\textup{MD}$称为不信任增长度, $\textup{MB}(H, E)$定义为
 
 根据$\textup{MB}$和$\textup{MD}$的定义及概率的性质, 有:
 \begin{align}
-M D(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(1-P(H))}{-(1-P(H))}\notag \\
+\textup{MD}(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(1-P(H))}{-(1-P(H))}\notag \\
 &=\frac{-P(H | E)+P(H)}{-(1-P(H))}=\frac{-(P(H | E)-P(H))}{-(1-P(H))}\notag\\
 &=\frac{P(H | E)-P(H)}{1-P(H)}=MB(H, E). \qquad \textup{信任增长度}
 \end{align}
@@ -332,13 +332,17 @@ M D(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(
               &=(\textup{MB}(H,E)-0)+(0-\textup{MD}(\neg H,E)),\qquad \textup{(由互斥性)}\\
               &=\textup{MB}(H,E)-\textup{MD}(\neg H,E)=0.
 \end{align*}
+即
+\begin{align*}
+    \textup{CF}(H,E)=-\textup{CF}(\neg H,E).
+\end{align*}
 它说明
 
-        (1)对$H$的信任增长度等于对非$H$的不信任增长度.
+        (1) $E$对$H$的信任增长度等于$E$对非$H$的不信任增长度.
 
-        (2)对$H$的可信度与非$H$的可信度之和等于0.
+        (2) $E$对$H$的可信度与$E$对非$H$的可信度之和等于0.
 
-        (3)可信度不是概率, 不满足
+        (3) 可信度不是概率, 不满足
 \begin{align*}
     P(H)+P(\neg H)=1, 0\leq P(H), P(\neg H)\leq 1.
 \end{align*}
@@ -373,12 +377,15 @@ M D(\neg H, E) &=\frac{P(\neg H | E)-P(\neg H)}{-P(\neg H)}=\frac{(1-P(H | E))-(
     \item $-1<\textup{CF}(E)<0$, 证据$E$以$\textup{CF}(E)$程度为假.
 \end{itemize}
 %%%%-------------------------------------------------
-\paragraph{否定证据不确定性的计算}
+
+1) 否定证据不确定性的计算
+
 \begin{align}
     \textup{CF}(\neg E)=-\textup{CF}(E).
 \end{align}
 %%%%-------------------------------------------------
-\paragraph{组合证据不确定性的计算}
+
+2) 组合证据不确定性的计算
 对证据的组合形式可分为“合取”与“析取”两种基本情况.
 \begin{itemize}
     \item 合取: 当组合证据是多个单一证据的组合时, 即 $E=E_1\,\,  AND\,\,    E_2\,\,    AND \,\,   \cdots\,\,     AND \,\,   E_n$时, 若已知$\textup{CF}(E_1),\, \textup{CF}(E_2),\, \cdots,\, \textup{CF}(E_n)$, 则
@@ -400,13 +407,14 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
 \begin{align}
     \textup{CF}(H)=\textup{CF}(H, E)\times \max\{0, \textup{CF}(E)\}.
 \end{align}
-    若$\textup{CF}(E)<0$, 则
+
+1) 若$\textup{CF}(E)<0$, 则
 \begin{align}
     \textup{CF}(H)=0,
 \end{align}
 即该模型没考虑$E$为假对$H$的影响.
 
-若$\textup{CF}(E)=1$, 则
+2) 若$\textup{CF}(E)=1$, 则
 \begin{align}
     \textup{CF}(H)=\textup{CF}(H,E),
 \end{align}
@@ -714,7 +722,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{proof}
 \begin{align*}
 \begin{aligned}
-    \textup{Bel}(A)+\textup{Bel}(\neg A)&=\sum_{B \in A} m(B)+\sum_{c_{E-A}} m(C) \leq \sum_{E \subseteq \Omega} m(E)=1.\\
+    \textup{Bel}(A)+\textup{Bel}(\neg A)&=\sum_{B \in A} m(B)+\sum_{c\in \neg A} m(C) \leq \sum_{E \subseteq \Omega} m(E)=1.\\
     P_l(A)-\textup{Bel}(A) &=1-\textup{Bel}(\neg A)-\textup{Bel}(A)\\
                             &=1-(\textup{Bel}(\neg A)+\textup{Bel}(A)) \geq 0. \\
     P_l(A) \geq \textup{Bel}(A).&
@@ -838,9 +846,10 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
     \text { (2) } \sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right) \leq 1; \\
     \text { (3) } m(\Omega)=1-\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right).
 \end{array}
-    A \subset \Omega,\, &|A|>>1\,\textup{或者}\,|A|=0\Rightarrow m(A)=0.
+    A \subset \Omega,\, &|A|>>1\,\textup{或者}\,|A|=0\Rightarrow m(A)=0,
 \end{align}
 其中$|A|$表示命题$A$所对应的集合中的元素个数.
+
 该概率分配函数的特殊性:
 
 \qquad\ding{172} 只有当子集中的元素个数为1时, 其概率分配数才有可能大于0;
@@ -907,6 +916,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{基本概率分配函数的正交和}{1}
 设$m_1$和$m_2$是$2^{\Omega}$上的基本概率分配函数, 它们的正交和定义为
+\vspace{-0.2cm}
 \begin{align}
     m\left(\left\{s_{i}\right\}\right)=\frac 1 K  \times\left[m_{1}\left(s_{i}\right) \times m_{2}\left(s_{i}\right)+m_{1}\left(s_{i}\right) \times m_{2}(\Omega)+m_{1}(\Omega) \times m_{2}\left(s_{i}\right)\right].
 \end{align}
@@ -1027,10 +1037,10 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{align}
   \textup{MD}\left(A | E^{\prime}\right)=
   \left\{
-  \begin{array}{l}
-  1 \\
-  0
-  \end{array}
+    \begin{array}{lll}
+    {1},&\textup{如果}H\textup{所要求的证据都已出现}\\
+    {0},&\textup{否则}
+    \end{array}
   \right..
 \end{align}
 规则条件部分命题$A$的确定性为
