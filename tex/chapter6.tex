@@ -287,7 +287,7 @@ $\textup{MD}$称为不信任增长度, $\textup{MB}(H, E)$定义为
     \ding{173} 当$\textup{MD}(H, E)>0$时, 有$P(H|E)<P(H)$, 即$E$的出现降低了$H$的概率.
 \end{center}
 
-根据前面对$\textup{CF}(H, E)$可信度 、$\textup{MB}(H, E)$信任增长度、$\textup{MD}(H, E)$不信增长度的定义, 可得到$\textup{CF}(H, E)$的计算公式:
+根据前面对$\textup{CF}(H, E)$可信度 、$\textup{MB}(H, E)$信任增长度、$\textup{MD}(H, E)$不信任增长度的定义, 可得到$\textup{CF}(H, E)$的计算公式:
 \begin{align}
   \textup{CF}(H, E)=
   \left\{
@@ -441,7 +441,7 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
  \begin{array}{llr}
   \textup{CF}_{1}(H)+\textup{CF}_{2}(H)-C F_{1}(H) \times \textup{CF}_{2}(H),  & \textup{若} \textup{CF}_{1}(H) \geq 0且{\textup{且} \textup{CF}_{2}(H) \geq 0} \\
   \textup{CF}_{1}(H)+\textup{CF}_{2}(H)+C H_{1}(H) \times \textup{CF}_{2}(H),  & \textup{若} \textup{CF}_{1}(H)<0\,\textup{且} \textup{CF}(H)< 0\\
-  \frac{\textup{CF}_{1}(H)+\textup{CF}_{2}(H)}{1-\min \left\{\textup{CF}_{1}(H),\left|\textup{CF}_{2}(H)\right|\right\}}, &\textup{CF}_{1}(H)<0\,\textup{且} \textup{CF}_{2}(H)\textup{异号}
+  \frac{\textup{CF}_{1}(H)+\textup{CF}_{2}(H)}{1-\min \left\{\textup{CF}_{1}(H),\left|\textup{CF}_{2}(H)\right|\right\}}, &\textup{CF}_{1}(H) \textup{与} \textup{CF}_{2}(H)\textup{异号}
     \end{array}
   \right..
 \end{align}
@@ -550,10 +550,13 @@ $\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
 \begin{align}\label{AI32C6eq6.35}
     O(H | E)=\textup{LS} \times O(H).
 \end{align}
-
+由
+\begin{align}
+  \frac{P(H|\neg E)}=\frac{P(\neg E | H) \times P(H)}{P(\neg H)},  P(\neg H | \neg E) &=\frac{P(\neg E | \neg H) \times P(\neg H)}{P(\neg E)}.
+\end{align}
 同理可得到关于LN的公式:
 \begin{align}
-    &\frac{P(H|\neg E)}{P(\neg H|\neg E)}=\frac{P(E | H)}{P(\neg E |\neg H)} \times \frac{P(H)}{P(-H)}.\label{AI32C6eq6.36} \\
+    &\frac{P(H|\neg E)}{P(\neg H|\neg E)}=\frac{P(\neg E | H)}{P(\neg E |\neg H)} \times \frac{P(H)}{P(\neg H)}.\label{AI32C6eq6.36} \\
     &O(H| \neg E)=\textup{LN} \times O(H). \label{AI32C6eq6.37}
 \end{align}
 式 \eqref{AI32C6eq6.35} 和 \eqref{AI32C6eq6.37} 就是修改的Bayes公式.
@@ -574,7 +577,7 @@ DS理论处理的是集合上的不确定性问题, 为此需要先建立命题�
 \end{example}
 %%%%-------------------------------------------------
 \begin{result}
-$\Omega$的幂集可包括如下子集:
+$\Omega$的幂集可包括如下8个子集:
 \begin{align}
     &A_0=\emptyset,                A_1=\{\textup{红}\},        A_2=\{\textup{黄}\},        A_3=\{\textup{白}\},\notag\\
     &A_4=\{\textup{红,黄}\},       A_5=\{\textup{红,白}\},     A_6=\{\textup{黄,白}\},     A_7=\{\textup{红,黄,白}\}\notag
@@ -627,7 +630,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{align*}
     m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})=0.3+0+0.1=0.4<1.
 \end{align*}
-\vspace{-0.4cm}
+\vspace{-0.5cm}
 \end{example}
 因此$m$不是概率测度, 因为概率$P$要求: $P(\{\textup{红}\})+P(\{\textup{黄}\})+P(\{\textup{白}\})=1$.
 
@@ -642,6 +645,7 @@ $\Omega$的幂集可包括如下子集:
 %%%%-------------------------------------------------
 \begin{example}
 对例 \ref{AIC6exam6.25} 有
+\vspace{-0.2cm}
 \begin{align*}
     &\textup{Bel}(\{\textup{红}\})=0.3;\\
     &\textup{Bel}(\{\textup{红, 白}\})=m(\{\textup{红}\}) + m(\{\textup{白}\})+ m(\{\textup{红, 白}\})=0.3+0.1+0.2=0.6.
@@ -652,7 +656,7 @@ $\Omega$的幂集可包括如下子集:
     \text{\textup{Bel}}(\Phi)=m(\Phi)=0; \text{\textup{Bel}}(\Omega)=\sum_{B \subseteq \Omega} m(B)=1.
 \end{array}
 \end{align*}
-\vspace{-0.2cm}
+\vspace{-0.4cm}
 \end{example}
 %%%%-------------------------------------------------
 \begin{example}
@@ -660,7 +664,7 @@ $\Omega$的幂集可包括如下子集:
 \begin{align*}
   \textup{Bel}(\emptyset ) &= m(\emptyset )=0.\\
 　  \textup{Bel}(\{\textup{红, 黄, 白}\})&=m(\emptyset)+m(\{\textup{红}\})+m(\{\textup{黄}\})+m(\{\textup{白}\})+m(\{\textup{红, 黄}\})\notag\\
-                              &\quad   +(\{\textup{红, 白}\})+(\{\textup{黄, 白}\})+(\{\textup{红, 黄, 白}\})\notag\\
+                              &\qquad   +(\{\textup{红, 白}\})+(\{\textup{黄, 白}\})+(\{\textup{红, 黄, 白}\})\notag\\
                               &=0+0.3+0+0.1+0.2+0.2+0+0.2=1.
 \end{align*}
 \vspace{-0.4cm}
@@ -707,7 +711,7 @@ $\Omega$的幂集可包括如下子集:
     P_l(\{\textup{红}\})=\sum_{\{\textup{红}\}\cap B =\emptyset} m(B),
     P_l(\{\textup{黄, 白}\})=  \sum_{\{\textup{黄, 白}\}\cap B =\emptyset} m(B).
 \end{align*}
-如果把它推广到一般可得公式:
+如果把它推广到一般形式, 可得公式:
 \begin{align*}
     P_l(A)=\sum_{A \cap B \neq \Phi} m(B).
 \end{align*}
@@ -742,9 +746,9 @@ $\Omega$的幂集可包括如下子集:
 
 同理可以求得其他颜色的信任程度的下限和上限:
 \begin{itemize}
-    \item \{黄\}=[0, 0.4],         \quad         \{白\}=[0.1,  0.5]
-    \item \{红, 黄\}=[0.5,  0.9],  \quad         \{红, 白\}=[0.6,  1]
-    \item \{黄, 白\}=[0.1,  0.7],  \quad         \{红, 黄, 白\}=[1, 1]
+    \item \{黄\}[0, 0.4],         \quad         \{白\}[0.1,  0.5]
+    \item \{红, 黄\}[0.5,  0.9],  \quad         \{红, 白\}[0.6,  1]
+    \item \{黄, 白\}[0.1,  0.7],  \quad         \{红, 黄, 白\}[1, 1]
     \item \{\}[0,  0]
 \end{itemize}
 
@@ -770,7 +774,7 @@ $\Omega$的幂集可包括如下子集:
 \end{align*}
 假设从不同知识源得到的两个概率分配函数分别为:
 \begin{align*}
-    &m_1(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.4, 0.5, 0.1).\\
+    &m_1(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.4, 0.5, 0.1),\\
     &m_2(\{\textup{红}\}, \{\textup{黄}\}, \{\textup{红, 黄}\})=(0, 0.6, 0.2, 0.2).
 \end{align*}
 \vspace{-0.4cm}
@@ -790,7 +794,10 @@ $\Omega$的幂集可包括如下子集:
 \begin{align}
     K=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y)=\sum_{x \cap y \neq \Phi} m_{1}(x) \times m_{2}(y).
 \end{align}
-如果$K\neq 0$, 则正交和也是一个概率分配函数; 如果$K=0$, 则不存在正交和$m$, 称$m_1$与$m_2$矛盾.
+
+\ding{172} 如果$K\neq 0$, 则正交和也是一个概率分配函数; 
+
+\ding{173} 如果$K=0$, 则不存在正交和$m$, 称$m_1$与$m_2$矛盾.
 \end{mydef}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -819,7 +826,7 @@ K   &=1-\sum_{x \cap y=\Phi} m_{1}(x) \times m_{2}(y) \\
 m(\{a\})
     &=\frac{1}{0.61} \times \sum_{x \cap y=\{a\}} m_{1}(x) \times m_{2}(y) \\
     &=\frac{1}{0.61} \times\left(m_{1}(\{a\}) \times m_{2}(\{a\})+m_{1}(\{a\}) \times m_{2}(\{a, b\})+m_{1}(\{a, b\}) \times m_{2}(\{a\})\right) \\
-    &=\frac{1}{0.61} \times(0.3 \times 0.6+0.3 \times 0.1+0.2 \times 0.6)=0.54.
+    &=\frac{1}{0.61} \times(0.3 \times 0.6+0.3 \times 0.1+0.2 \times 0.6)\frac{33}{65}=0.54.
 \end{aligned}
 \end{align*}
 
@@ -866,14 +873,14 @@ $\textup{Bel}(A)$和$P_l(A)$分别表示命题$A$的信任度的下限和上限,
 其中: $m(\emptyset, \{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\},\{ \textup{红, 黄, 白}\})=0$, 可见, $m$符合上述概率分配函数的定义.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{example}
+\begin{myprop}{类概率函数的性质}{myprop6.1}
 对任何命题$A\subset \Omega$, 其信任函数为
 \begin{align*}
-    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right); 
+    \textup{Bel}(A)=\sum_{s_{i} \in A} m\left(\left\{s_{i}\right\}\right);
     \textup{Bel}(\Omega)=\sum_{B \subseteq \Omega} m(B)=\sum_{i=1}^{n} m\left(\left\{s_{i}\right\}\right)+m(\Omega)=1.
 \end{align*}
 \vspace{-0.2cm}
-\end{example}
+\end{myprop}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{似然函数}{1}
 对任何命题$A\subset \Omega$, 其似然函数为
@@ -887,17 +894,19 @@ P_l(\Omega) &=1-\textup{Bel}(\neg \Omega)=1-\textup{Bel}(\Phi)=1.
 \end{aligned}
 \end{align}
 \end{mydef}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{remark}
 可以看出, 对任意命题$A\subset \Omega$和$B\subset \Omega$均有:
 \begin{align}
     P_l(A)-\textup{Bel}(A)=P_l(B)-\textup{Bel}(B)= m(\Omega),
 \end{align}
-它表示对$A$(或$B$)不知道的程度.
-
+它表示对$A$(或$B$)不知道的程度.  
+\end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 设$\Omega=\{\textup{红, 黄, 白}\}$, 概率分配函数
 \begin{align*}
-    m(\{\}, \{\textup{红}\}, \{\textup{黄}\}, \{白\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1).
+    m(\{\}, \{\textup{红}\}, \{\textup{黄}\}, \{\textup{白}\}, \{\textup{红, 黄,白}\})=(0,  0.6,  0.2,  0.1,  0.1).
 \end{align*}
 $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -956,7 +965,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 
 \begin{align*}
 \because f(\neg A)&=\textup{Bel}(\neg A)+\frac{|A|}{|P_l(\neg A)-\textup{Bel}(\neg A)}.\\
-\textup{Bel}(\neg A)&=\sum_{s \in-A \atop s \in A |} m\left(\left\{s_{i}\right\}\right)\notag\\
+\textup{Bel}(\neg A)&=\sum_{s_i \in \neg A \atop s_i \in \Omega |} m\left(\left\{s_{i}\right\}\right)\notag\\
                           &=1-\sum_{s_{i} \in A \atop s_{i} d} m\left(\left\{s_{i}\right\}\right)-m(\Omega)=1-\textup{Bel}(A)-m(\Omega).\\
             |\neg A|&=|\Omega|-|A|.\\
          P_l(\neg A)&-\textup{Bel}(\neg A)=m(\Omega).\\
@@ -1001,7 +1010,6 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
      $H$是结论, 它用样本空间中的子集表示, $h_1, h_2, \cdots, h_n$是该子集中的元素;
      $\textup{CF}$是可信度因子, 用集合形式表示.
      该集合中的元素$c_1, c_2, \cdots, c_n$用来指出$h_1, h_2, \cdots, h_n$ 的可信度, $c_i$与$h_i$一一对应.
-
  并且$c_i$应满足如下条件: 1) $c_{i} \geq 0$; 2) $\sum_{i=1}^{n} c_i\leq 1, i=1, 2, \cdots, n$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1119,7 +1127,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 
 (2) 求\textup{CER}(B)
 \begin{align*}
- \textup{CER}(E_3 \,\, AND\,\,  (E_4\,\,  OR\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4),\, \textup{CER}(E_5)\}\}\\
+ \textup{CER}(E_3 \,\, \textup{AND}\,\,  (E_4\,\,  \textup{OR}\,\,  E_5))&=\min\{\textup{CER}(E_3), \max\{\textup{CER}(E_4),\, \textup{CER}(E_5)\}\}\\
                                                         &=\min\{0.9, \max\{0.5, 0.7\}\}=\min\{0.9, 0.7\}=0.7. \\
  m({b_1})&=0.7\times 0.7=0.49.\\
    \textup{Bel}(B)&=m({b_1})=0.49.\\
