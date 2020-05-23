@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  23 MAY 2020 20:34
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  23 MAY 2020 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3412,6 +3412,9 @@ LaTeX Warning: Label `def:1' multiply defined.
 
 
 LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:myprop6.1' multiply defined.
 
 
 LaTeX Warning: Label `def:1' multiply defined.
@@ -8025,14 +8028,15 @@ Package mdframed Info: mdframed works in twoside mode on input line 868.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 868.
- [398]
+
+
+LaTeX Warning: Reference `myprop6.1' on page 398 undefined on input line 899.
+
+[398]
 Package mdframed Info: mdframed works in twoside mode on input line 906.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 906.
-
-Underfull \vbox (badness 3965) has occurred while \output is active []
-
  [399]
 
 Package amsmath Warning: Foreign command \atop;
@@ -9881,8 +9885,8 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  95878 strings out of 492922
- 2313380 string characters out of 6136750
- 3074669 words of memory out of 5000000
+ 2313370 string characters out of 6136750
+ 3074641 words of memory out of 5000000
  96917 multiletter control sequences out of 15000+600000
  747997 words of font info for 375 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
