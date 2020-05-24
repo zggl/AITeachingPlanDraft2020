@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  24 MAY 2020 17:50
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  24 MAY 2020 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7806,65 +7806,70 @@ File: figures/Liuyingmingyuanshi.JPG Graphic file (type bmp)
 <figures/Liuyingmingyuanshi.JPG>
 File: figures/IFSA1983.JPG Graphic file (type bmp)
 <figures/IFSA1983.JPG>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [365]
-Missing character: There is no 第 in font ntx-Regular-tlf-t1!
-Missing character: There is no 五 in font ntx-Regular-tlf-t1!
-Missing character: There is no 章 in font ntx-Regular-tlf-t1!
-Missing character: There is no 计 in font ntx-Regular-tlf-t1!
-Missing character: There is no 算 in font ntx-Regular-tlf-t1!
-Missing character: There is no 智 in font ntx-Regular-tlf-t1!
-Missing character: There is no 能 in font ntx-Regular-tlf-t1!
- [366]
-Package mdframed Info: mdframed works in twoside mode on input line 3820.
+Package mdframed Info: mdframed works in twoside mode on input line 3794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3820.
-Package mdframed Info: mdframed works in twoside mode on input line 3857.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3857.
- [367]
-Package mdframed Info: Not enough space on this page on input line 3870.
-Package mdframed Info: mdframed works in twoside mode on input line 3877.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3877.
+(mdframed)              on input line 3794.
 
-Underfull \vbox (badness 1540) has occurred while \output is active []
+[366]
+Package mdframed Info: mdframed works in twoside mode on input line 3831.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3831.
 
- [368]
-Package mdframed Info: mdframed works in twoside mode on input line 3930.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3930.
 
-[369]
-Package mdframed Info: mdframed works in twoside mode on input line 3965.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3965.
-Package mdframed Info: mdframed works in twoside mode on input line 3995.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3995.
- [370]
-Package mdframed Info: mdframed works in twoside mode on input line 4029.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4029.
-Package mdframed Info: mdframed works in twoside mode on input line 4056.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4056.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 4074.
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 3844.
+
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 4074.
- [371]
+(mdframed)              on input line 3844.
+[367]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last split box is empty
+(mdframed)                You have to change the settings on input line 3844.
+
+Package mdframed Info: mdframed works in twoside mode on input line 3851.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3851.
+[368]
+Package mdframed Info: mdframed works in twoside mode on input line 3904.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3904.
+Package mdframed Info: mdframed works in twoside mode on input line 3939.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3939.
+ [369]
+Package mdframed Info: mdframed works in twoside mode on input line 3969.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3969.
+Package mdframed Info: mdframed works in twoside mode on input line 4003.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4003.
+ [370]
+Package mdframed Info: Not enough space on this page on input line 4023.
+Package mdframed Info: mdframed works in twoside mode on input line 4030.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4030.
 Missing character: There is no π in font ntxmi!
- [372] [373]
+ [371] [372]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [373]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [374])
@@ -9884,10 +9889,10 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 95875 strings out of 492922
- 2313311 string characters out of 6136750
- 3074589 words of memory out of 5000000
- 96914 multiletter control sequences out of 15000+600000
+ 95876 strings out of 492922
+ 2313332 string characters out of 6136750
+ 3074617 words of memory out of 5000000
+ 96915 multiletter control sequences out of 15000+600000
  747997 words of font info for 375 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,24n,424p,3753b,5380s stack positions out of 5000i,500n,10000p,200000b,80000s
