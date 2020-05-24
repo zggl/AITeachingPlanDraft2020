@@ -424,10 +424,10 @@ CF模型中的不确定性推理实际上是从不确定的初始证据出发, �
 当有多条知识支持同一个结论, 且这些知识的前提相互独立, 结论的可信度又不相同时, 可利用不确定性的合成算法求出结论的综合可信度.
     设有知识:
 \begin{align}
-  &\textup{IF}\,\,    E_1\,\,     \textup{THEN} \,\,    H(\textup{CF}(H, E_1));\\
-  &\textup{IF}\,\,    E_2 \,\,    \textup{THEN} \,\,    H(\textup{CF}(H, E_2)).
+  &\textup{IF}\,\,    E_1\,\,     \textup{THEN} \,\,    H\,\,(\textup{CF}(H, E_1));\\
+  &\textup{IF}\,\,    E_2 \,\,    \textup{THEN} \,\,    H\,\,(\textup{CF}(H, E_2)).
 \end{align}
-则结论$H$的综合可信度可分以下两步计算综合:
+则结论$H$的综合可信度可分以下两步计算来综合:
 
 (1) 分别对每条知识求出其$\textup{CF}(H)$. 即
 \begin{align*}
@@ -505,9 +505,12 @@ $\textup{CF}_{12}(H)$和$\textup{CF}_3(H)$异号, 有:
 \end{remark}
 %%%------------------------------------------------
 \section{主观Bayes方法}\index{主观Bayes方法}
+在某些情况下, 同类事件发生的频率养不高, 甚至很低, 无法做概率统计, 这时一般需要根据观测到的数据, 凭领堿专家给出一些主观上的判断, 称为主观概率, 一般可以解释对证据和规则的主观信任度。
+概率推理中起头键作用的是 Bayes公式, 它是主观 Bayes的基础。
+主观 Bayes方渎是由杜达 (R. O. Duda) 等人在1976年在杌率论的基础上, 通过对 Bayes公式的修正而形成的一种不确定性推理模型, 并成功地应用在他们自已开发的地矿勘探专家条统 PROSPECTOR中。
 在主观Bayes方法中, 知识是用产生式表示的, 其形式为:
 \begin{align}
-   \textup{IF} \,\, E\,\,  \textup{THEN}\,\,  \textup{(LS, LN)}\, H(P(H)),
+   \textup{IF} \,\, E\,\,  \textup{THEN}\,\,  \textup{(LS, LN)}\, H\,\,(P(H)),
 \end{align}
 其中, \textup{(LS, LN)} 用来表示该知识的知识强度, \textup{LS} (充分性度量) 和 \textup{LN} (必要性度量) 的表示形式分别为:
 \begin{align}
@@ -954,9 +957,8 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 (2) 对任何$A\subset\Omega$, 有$\textup{Bel}(A)\leq f(A)\leq P_l(A)$.
 \begin{align}
 \begin{array}{l}
-{\because P_l(A)-P_l(B)=m(\Omega), \quad \frac{|A|}{|\Omega|} \geq 0} \\
-{\therefore \textup{Bel}(A) \leq f(A)}. \\
- {\quad \because \frac{|A|}{|\Omega|} \leq 1, \text { BP } f(A) \leq \textup{Bel}(A)+\textup{P}_l(A)-\textup{Bel}(A)}.\\
+ \because P_l(A)-P_l(B)=m(\Omega), \quad \frac{|A|}{|\Omega|} \geq 0, \therefore \textup{Bel}(A) \leq f(A). \\
+ {\quad \because \frac{|A|}{|\Omega|} \leq 1, f(A) \leq \textup{Bel}(A)+\textup{P}_l(A)-\textup{Bel}(A)}.\\
   \therefore f(A) \leq P_l(A).
   \end{array}
 \end{align}
@@ -965,8 +967,7 @@ $A=\{\textup{红, 黄}\}$, 求$m(\Omega)$、$\textup{Bel}(A)$和$P_l(A)$的值.
 
 \begin{align*}
 \because f(\neg A)&=\textup{Bel}(\neg A)+\frac{|A|}{|P_l(\neg A)-\textup{Bel}(\neg A)}.\\
-\textup{Bel}(\neg A)&=\sum_{s_i \in \neg A \atop s_i \in \Omega} m\left(\left\{s_{i}\right\}\right)\notag\\
-                          &=1-\sum_{s_{i} \in A \atop s_{i} d} m\left(\left\{s_{i}\right\}\right)-m(\Omega)=1-\textup{Bel}(A)-m(\Omega).\\
+\textup{Bel}(\neg A)&=\sum_{s_i \in \neg A \atop s_i \in \Omega} m\left(\left\{s_{i}\right\}\right)=1-\sum_{s_{i} \in A \atop s_{i}\in \Omega} m\left(\left\{s_{i}\right\}\right)-m(\Omega)=1-\textup{Bel}(A)-m(\Omega).\\
             |\neg A|&=|\Omega|-|A|.\\
          P_l(\neg A)&-\textup{Bel}(\neg A)=m(\Omega).\\
 \therefore f(\neg A) &=1-\textup{Bel}(A)-m(\Omega)+\frac{|\Omega|-|A|}{|\Omega|} \times m(\Omega) \notag\\
@@ -1031,7 +1032,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 其中$f(A)$为类概率函数.
 \end{mydef}
 \begin{remark}
-    由于$f(A) \in [0, 1]$, 因此$\textup{CER}(A)\in [0,  1]$.
+    由于$f(A) \in [0, 1]$, 因此$\textup{CER}(A)\in [0, 1]$.
 \end{remark}
 
 \ding{171} 当组合证据是多个证据的合取时:
@@ -1048,7 +1049,8 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
     \textup{CER}(E)=\max\{\textup{CER}(E_1),\,\textup{CER}(E_2),\,\cdots,\, \textup{CER}(E_n)\}.
 \end{align}
 
-设有知识 $\textup{IF}\,\, E \,\, \textup{THEN} \,\, H=\{h_1, h_2, \cdots , h_n\}, \,\, CF=\{c_1, c_2, \cdots, c_n\}$, 则求结论$H$的确定性$\textup{CER}(H)$的方法如下:
+设有知识 $\textup{IF}\,\, E \,\, \textup{THEN} \,\, H=\{h_1, h_2, \cdots , h_n\}, \,\, CF=\{c_1, c_2, \cdots, c_n\}$,
+则求结论$H$的确定性$\textup{CER}(H)$的方法如下:
 
 (1) 求$H$的概率分配函数
 \begin{align}
@@ -1100,7 +1102,7 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 \begin{center}
     \textup{CER}($E_1$)=0.8,\,\textup{CER}($E_2$)=0.6,\,\textup{CER}($E_3$)=0.9,\,\textup{CER}($E_4$)=0.5,\,\textup{CER}($E_5$)=0.7.
 \end{center}
-并假$\Omega$定中的元素个数$|\Omega|=10$, 求: $\textup{CER}(H)=?$
+并假$\Omega$定中的元素个数$|\Omega|=10$, 求$\textup{CER}(H)$.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
@@ -1156,8 +1158,8 @@ f(A)&=\text{Bel}(A)+\frac{|A|}{|\Omega|} \times[P_l(A)-\textup{Bel}(A)] \\
 求正交和$m=m_1\oplus m_2$
 \begin{align*}
    K&=m_1(\Omega )\times m_2(\Omega )+m_1({h_1})\times m_2({h_1})+m_1({h_1})\times m_2(\Omega )+m_1(\Omega )\times m_2({h_1})\\
-    &\quad +m_1({h_2})\times m_2({h_2})+m_1({h_2})\times m_2(\Omega )+m_1(\Omega )\times m_2({h_2})\\
-    &\quad +m_1({h_3})\times m_2({h_3})+m_1({h_3})\times m_2(\Omega )+m_1(\Omega )\times m_2({h_3})\\
+    &\quad\quad +m_1({h_2})\times m_2({h_2})+m_1({h_2})\times m_2(\Omega )+m_1(\Omega )\times m_2({h_2})\\
+    &\quad\quad +m_1({h_3})\times m_2({h_3})+m_1({h_3})\times m_2(\Omega )+m_1(\Omega )\times m_2({h_3})\\
     &=0.475\times 0.622+0.058\times 0.216+0.058\times 0.622+0.475\times 0.216\\
     &\quad +0.292\times 0.108+0.292\times 0.622+0.475\times 0.108\\
     &\quad  +0.175\times 0.054+0.175\times 0.622+0.475\times 0.054 =0.855.
@@ -1454,7 +1456,7 @@ $R_g$是米祖莫托(Mizumoto)提出的一种构造模糊关系的方法.
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{result}
-本例\ref{AIFuzzyexamp660}的模糊关系$R_m$已在例 \ref{AIFuzzyexamp654} 中求出, 设已知模糊事实“较小”为$F'$, $F'$与$R_m$的合成即为所求结论$G'$.
+    例 \ref{AIFuzzyexamp660} 的模糊关系$R_m$已在例 \ref{AIFuzzyexamp654} 中求出, 设已知模糊事实“较小”为$F'$, $F'$与$R_m$的合成即为所求结论$G'$.
 \begin{align*}
 G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
 \left[
@@ -1623,6 +1625,6 @@ G^{\prime}=F^{\prime} \circ R_{m}=\{1,0.7,0.2\} \circ
     r3:  IF  E4  THEN  H (0.8)
     r4:  IF  E5  THEN  H (0.9),
 \end{Verbatim}
-且已知$\textup{CF}(E1)=0.5$,  $\textup{CF}(E2)=0.6$,  $\textup{CF}(E3)=0.7$.求$\textup{CF}(H)=?$
+且已知$\textup{CF}(E1)=0.5$,  $\textup{CF}(E2)=0.6$,  $\textup{CF}(E3)=0.7$. 求$\textup{CF}(H)$.
 \end{think}
 

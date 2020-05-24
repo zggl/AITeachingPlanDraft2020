@@ -3762,21 +3762,54 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
     \caption{1983年国际模糊系统协会筹备会在法国马xi举行, 参加会议的我国学者有, 刘应明(四川大学), 汪培庄(北师大), 王震源(河北大学), 邓聚㔫(华中科大)和张文修(西交大)}
     \label{WPZ20191218122443}
 \end{figure}
+%蒲保明(1910.8-1988.2.24)，教授。四川金堂人。1937的毕业于华西协和大学数理系。曾任华西协和大学副教授。1950年获美国叙拉古斯大学哲学博士学位。1952年后，历任四川大学教授、数学系主任、数学研究所副所长，中国系统工程学会模糊数学与模糊系统学会第一届理事长，四川省数学会第一、二届副理事长。九三学社社员。专于半亚纯函数论、黎曼流形、拓扑学。与人使用对一般拓扑及不分明拓扑进行研究，引进重域概念，解决了不分明点概念及其邻近构造以及收敛这两个基本问题。合编《拓扑学》。
+
+%杨忠道， 著名数学家，专长代数拓扑和拓扑变换群。1946年，毕业于浙江大学数学系。1948年，任中央研究院数学研究所助理员。1949年，进美国杜伦大学学习，1954年获数学博士学位，同年去伊利诺大学攻读博士后。
+%1954年，在美国普林斯顿高级研究院作访问研究。
+%长期担任美国宾夕法尼亚大学数学教授，曾兼任数学系研究生部主任4年，数学系主任5年。
+%1968年，当选为中央研究院院士（台湾）。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{remark}
+(一般拓扑学中的杨忠道定理)\,\,若集合$X$中每个单点集的导集是闭集, 则$X$的每个子集的导集也是闭集, $\bar{A} \subseteq A \cup A^{\prime}$.  
+\end{remark}
+
+引理1.  $\forall x \in\left(A \cup A^{\prime}\right)^{c}=A^{c} \cap\left(A^{\prime}\right)^{c}$
+$x \in\left(A^{\prime}\right)^{c} \Rightarrow \exists$$x$的开邻域$U$, $(U-\{x\}) \cap A=\emptyset$
+$x \in A^{c} \Rightarrow U \cap A=\emptyset \Rightarrow x \in(\bar{A})^{c}$
+蕴含着 $\left(A \cup A^{\prime}\right)^{c} \subseteq(\bar{A})^{c}$, 这等价于$\bar{A} \subseteq A \cup A^{\prime}$
+
+引理 2. $A^{\prime} \subseteq A \Rightarrow A$闭，证明 $A^{\prime} \subseteq A \Rightarrow A \cup A^{\prime}=A \Rightarrow \bar{A} \subseteq A \Rightarrow A$是闭的.
+
+Theorem. $\forall x \in X,\{x\}^{\prime}$ is closed $\Rightarrow \forall A \subseteq X, A^{\prime}$ is closed
+
+由引理 2 , 可以证明 $\left(A^{\prime}\right)^{\prime} \subseteq A^{\prime}$ $\forall x \in\left(A^{\prime}\right)^{\prime} \Rightarrow \forall o p e n n b h U$ of $x,(U-\{x\}) \cap A^{\prime} \neq \emptyset$
+欲证 $\forall$open $n b h V$ of $x,(V-\{x\}) \cap A \neq \emptyset$, 等价于$x \in A^{\prime}$.
+
+由于$\{x\}^{\prime}$ 闭且$V$ 开, $V \cap\left(\{x\}^{\prime}\right)^{c}$ 也是开的. 
+显然有$x \in\left(\{x\}^{\prime}\right)^{c}$, 因此有$V \cap\left(\{x\}^{\prime}\right)^{c}$是$x$的开邻域, 即$\left[V \cap\left(\{x\}^{\prime}\right)^{c} \cap\{x\}^{c}\right] \cap A^{\prime} \neq \emptyset$
+因为 $\{\bar{x}\} \subseteq\{x\} \cup(\{x\})^{\prime}, V \cap\{\bar{x}\}^{c} \cap A^{\prime} \supseteq\left[V \cap\left(\{x\}^{\prime}\right)^{c} \cap\{x\}^{c}\right] \cap A^{\prime} \neq \emptyset$
+因此, 可以找到$y \in V \cap\{\bar{x}\}^{c} \cap A^{\prime}$
+因为 $V \cap\{\bar{x}\}^{c}$ is an open nbh of $y, V \cap\{\bar{x}\}^{c} \cap\{y\}^{c} \cap A \neq \emptyset$
+注意到 $\{x\}^{c} \supseteq\{\bar{x}\}^{c}$
+因此 $(V-\{x\}) \cap A \supseteq V \cap\{\bar{x}\}^{c} \cap\{y\}^{c} \cap A \neq \emptyset$, 定理得证.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{remark}
     中国著名学者周海中教授曾指出：“模糊数学的诞生,是科学技术发展的必然结果, 更是现代数学发展的必然产物. 但就现状而言,模糊数学的理论尚未成熟、体系还未形成, 对它也还存在不同看法和意见; 这些都有待日后完善和实践检验. ”
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊集}{1}
-设$U$是给定论域,   是把任意$u\in U$映射为$[0, 1]$上某个实值的函数, 即
+设$U$是给定论域, $\mu_F$是把任意$u\in U$映射为$[0, 1]$上某个实值的函数, 即
 \begin{align}
     U\rightarrow [0, 1], u\rightarrow \mu_F(u),
 \end{align}
-则称 $ \mu_F(x)$为定义在$U$上的一个隶属函数, 由   (对所有    )所构成的集合$F$称为$U$上的一个模糊集, 称为$u$对$F$的隶属度.
+则称 $\mu_F(x)$为定义在$U$上的一个隶属函数, 由   (对所有) 所构成的集合$F$称为$U$上的一个模糊集, 称为$u$对$F$的隶属度.
 \end{mydef}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{remark}
+\begin{remark}模糊集的二点注记
+
 \ding{172} 模糊集$F$完全是由隶属函数$\mu_{F}$来刻画的, 把$U$中的每一个元素$u$都映射为$[0, 1]$上的一个值$\mu_F(x)$ .
 
 \ding{173} \,$\mu_F(u)$的值表示$u$隶属于$F$的程度, 其值越大, 表示$u$隶属于$F$的程度越高. 当$\mu_F(u)$仅取0和1时, 模糊集$F$便退化为一个普通集合.
@@ -3906,7 +3939,7 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
      F\wedge G&=(1\wedge 0.1)/1+(0.6\wedge 0.6)/2+(0.1\wedge 1)=0.1/1+0.6/1+0.1/1,\\
      F&=(1-1)/1+(1-0.6)/2+(1-0.1)=0.4/2+0.9/3.
  \end{align*}
-  \vspace{-0.4cm}
+  \vspace{-0.6cm}
 \end{example}
 从这个例子可以看出, 两个模糊集之间的运算实际上就是逐点对隶属函数作相应的运算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3936,9 +3969,9 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
     V\times W =\{(1\textup{班}, \textup{男队}), (2\textup{班}, \textup{男队}), (3\textup{班}, \textup{男队}), (1\textup{班}, \textup{女队}), (2\textup{班}, \textup{女队}), (3\textup{班}, \textup{女队})\},
     \vspace{-0.3cm}
  \end{align*}
-\vspace{-0.2cm} 
+ 其中, 每个元素是一代表队. 假设要进行一种双方对垒的循环赛, 则每一个赛局都是$V\times W$中的一个子集, 它构成了$V\times W$上的一个关系.
+\vspace{-0.55cm}
 \end{example}
-其中, 每个元素是一代表队. 假设要进行一种双方对垒的循环赛, 则每一个赛局都是$V\times W$中的一个子集, 它构成了$V\times W$上的一个关系.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mydef}{模糊集}{1}
@@ -4034,10 +4067,10 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 则
 \begin{align*}
   G=F\circ R&=\{(1\wedge 1)\vee (0.6\wedge 0.5)\vee (0.2\wedge 0), (1\wedge 0.5)\vee (0.6\wedge 1)\vee (0.2\wedge 0.5),\\
-            &\qquad  (1\wedge 0)\vee (0.6\wedge 0.5)\vee (0.2\wedge 1), (1\wedge 0)\vee (0.6\wedge 0)\vee (0.2\wedge 0.5)\}\\
+            &\qquad\quad  (1\wedge 0)\vee (0.6\wedge 0.5)\vee (0.2\wedge 1), (1\wedge 0)\vee (0.6\wedge 0)\vee (0.2\wedge 0.5)\}\\
             & =\{1, 0.6, 0.5, 0.2\}.
 \end{align*}
-\vspace{-0.4cm}
+\vspace{-0.55cm}
 \end{example}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{FNN}
@@ -4076,7 +4109,40 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 \begin{custom}[explorecolor]{探索}
     试证明感知机学习算法收敛定理.
 \end{custom}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{custom}[explorecolor]{探索}
+\begin{enumerate}
+\item 试将感知机学习算法用C语言编成程序, 并做下述的 $n$维随机矢量$\mbox{X}=[x_{1} ,x_{2} ,\cdots ,x_{n} ]^{T}$的二值分类的模拟实验：
+	\begin{enumerate}
+	\item 用程序产生M个均值为0, 方差为1的正态随机矢量(取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots, M$;
+每个$x_{i} (k)$为服从$N(0,1)$分布的随机变量).
+要求产生三组矢量 (分别取M$=$10,20,30), 分别用每组矢量训练一个感知机模型. 对于每个训练矢量 $\mbox{X}(k)$, 给定其理想输出为
+$d(k)=
+\left\{
+\begin{array}{*{20}c}
+ 1\;,\;x_{2}(k)\ge 0 \\
+ 0\;,\;x_{2}(k)<0  \\
+\end{array}
+\right.$
+在每组训练收敛后, 再产生30个新矢量, 用来检验所得到的感知机的分类性能.
+对每一组结果要给出收敛时所用的迭代次数$K_{0}$, 收敛时的权矢量值$\mbox{W}(K_{0})$, 和检验时所达到的正确分类率$R$.
+	\item 取维数$n=5$, 做与(1)相同的模拟实验 (仍产生$M=10,20,30$的三组正态随机矢量, 给出相应的结果.
+在本题中, 对于每个5维训练矢量$\mbox{X}(k)$, 其理想输出$d(k)$为 $d(k)=
+\left\{
+\begin{array}{*{20}c}
+ 1\;,\;\;x_{3}(k)\ge 0\\
+ 0\;,\;\;x_{3}(k)<0\\
+\end{array} \right.$.
+	\end{enumerate}
+\item[\textbullet] \textbf{提示 }: 产生正态随机数 $X\sim N(0,1)$的方法:
+	\begin{enumerate}
+	\item 先产生在$(0, 1)$区间均匀分布的两个随机数 $U_{1}$ 和 $U_{2}$;
+	\item 令 $X_{1} =(-2\ln U_{1} )^{1/2}\sin (2\pi \,U_{2} )$, $X_{2} =(-2\ln U_{1} )^{1/2}\cos (2\pi \,U_{2})$.
+	\end{enumerate}
+\end{enumerate}
+则$X_{1} $ 和 $X_{2} $ 均为服从$N(0,1)$分布的正态随机数.
+\end{custom}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%---------------------------------
 \begin{think}
     描述支持向量机的基本思想, 给出伪代码.
@@ -4109,38 +4175,6 @@ $f_{14}$&  Mean&8919.5089   &8663.0473   &9677.1638  &$\bm{-309.2905}$  &-164.17
 %\end{array} }} \right]$. Define the range of values for the learning-rate
 %parameter $\alpha$ of the LMS algorithm for it to be convergent in the mean
 %square.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{custom}[explorecolor]{探索}
-\begin{enumerate}
-\item 试将感知机学习算法用C语言编成程序, 并做下述的 $n$维随机矢量$\mbox{X}=[x_{1} ,x_{2} ,\cdots ,x_{n} ]^{T}$的二值分类的模拟实验：
-	\begin{enumerate}
-	\item 用程序产生M个均值为0, 方差为1的正态随机矢量(取维数$n=3$, 即 $\mbox{X}(k)=[x_{1} (k),x_{2} (k),x_{3} (k)]^{T}$, $k=1,2,\cdots, M$;
-每个$x_{i} (k)$为服从$N(0,1)$分布的随机变量). 要求产生三组矢量 (分别取M$=$10,20,30), 分别用每组矢量训练一个感知机模型. 对于每个训练矢量 $\mbox{X}(k)$, 给定其理想输出为
-$d(k)=
-\left\{
-\begin{array}{*{20}c}
- 1\;,\;x_{2}(k)\ge 0 \\
- 0\;,\;x_{2}(k)<0  \\
-\end{array}
-\right.$
-在每组训练收敛后, 再产生30个新矢量, 用来检验所得到的感知机的分类性能. 对每一组结果要给出收敛时所用的迭代次数$K_{0}$, 收敛时的权矢量值$\mbox{W}(K_{0})$, 和检验时所达到的正确分类率$R$.
-	\item 取维数$n=5$, 做与(1)相同的模拟实验 (仍产生$M=10,20,30$的三组正态随机矢量, 给出相应的结果. 在本题中, 对于每个5维训练矢量$\mbox{X}(k)$, 其理想输出$d(k)$为 $d(k)=
-\left\{
-\begin{array}{*{20}c}
- 1\;,\;\;x_{3}(k)\ge 0\\
- 0\;,\;\;x_{3}(k)<0\\
-\end{array} \right.$.
-	\end{enumerate}
-\item[\textbullet] \textbf{提示 }: 产生正态随机数 $X\sim N(0,1)$的方法:
-	\begin{enumerate}
-	\item 先产生在$(0, 1)$区间均匀分布的两个随机数 $U_{1}$ 和 $U_{2}$;
-	\item 令 $X_{1} =(-2\ln U_{1} )^{1/2}\sin (2\pi \,U_{2} )$, $X_{2} =(-2\ln U_{1} )^{1/2}\cos (2\pi \,U_{2})$.
-	\end{enumerate}
-\end{enumerate}
-则$X_{1} $ 和 $X_{2} $ 均为服从$N(0,1)$分布的正态随机数.
-\end{custom}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{custom}[explorecolor]{探索}
 \begin{enumerate}
