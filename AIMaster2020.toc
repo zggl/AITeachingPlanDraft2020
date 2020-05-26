@@ -479,24 +479,29 @@
 \contentsline {subsection}{\numberline {7.2.3}示例学习}{420}{subsection.7.2.3}% 
 \contentsline {paragraph}{示例学习的典型方式}{421}{paragraph*.410}% 
 \contentsline {subsubsection}{\numberline {7.2.3.1}示例学习的解释方法}{421}{subsubsection.7.2.3.1}% 
-\contentsline {subsubsection}{\numberline {7.2.3.2}决策树}{423}{subsubsection.7.2.3.2}% 
-\contentsline {subsubsection}{\numberline {7.2.3.3}ID3算法}{424}{subsubsection.7.2.3.3}% 
-\contentsline {paragraph}{ID3算法的数学基础}{424}{paragraph*.413}% 
+\contentsline {subsubsection}{\numberline {7.2.3.2}决策树}{424}{subsubsection.7.2.3.2}% 
+\contentsline {subsubsection}{\numberline {7.2.3.3}ID3算法}{425}{subsubsection.7.2.3.3}% 
+\contentsline {paragraph}{ID3算法的数学基础}{425}{paragraph*.413}% 
 \contentsline {subparagraph}{信息熵}{425}{subparagraph*.414}% 
 \contentsline {subparagraph}{条件熵}{425}{subparagraph*.415}% 
 \contentsline {paragraph}{ID3算法及举例}{425}{paragraph*.416}% 
-\contentsline {subsection}{\numberline {7.2.4}解释学习}{428}{subsection.7.2.4}% 
-\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{428}{subsubsection.7.2.4.1}% 
+\contentsline {subsection}{\numberline {7.2.4}解释学习}{429}{subsection.7.2.4}% 
+\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{429}{subsubsection.7.2.4.1}% 
 \contentsline {subsubsection}{\numberline {7.2.4.2}解释学习的模型}{429}{subsubsection.7.2.4.2}% 
 \contentsline {subsubsection}{\numberline {7.2.4.3}解释学习的基本原理}{430}{subsubsection.7.2.4.3}% 
 \contentsline {paragraph}{解释泛化学习方法-1}{430}{paragraph*.422}% 
 \contentsline {paragraph}{解释泛化学习方法-2}{430}{paragraph*.423}% 
 \contentsline {section}{\numberline {7.3}浅层神经学习}{433}{section.7.3}% 
-\contentsline {subsection}{\numberline {7.3.1}感知器学习}{434}{subsection.7.3.1}% 
-\contentsline {subsection}{\numberline {7.3.2}BP网络学习}{439}{subsection.7.3.2}% 
-\contentsline {subsection}{\numberline {7.3.3}Hopfield网络学习}{440}{subsection.7.3.3}% 
+\contentsline {subsection}{\numberline {7.3.1}学习规则}{433}{subsection.7.3.1}% 
+\contentsline {subsubsection}{\numberline {7.3.1.1}Hebb学习}{433}{subsubsection.7.3.1.1}% 
+\contentsline {subsubsection}{\numberline {7.3.1.2}纠错学习}{434}{subsubsection.7.3.1.2}% 
+\contentsline {subsubsection}{\numberline {7.3.1.3}竞争学习}{434}{subsubsection.7.3.1.3}% 
+\contentsline {subsubsection}{\numberline {7.3.1.4}随机学习}{434}{subsubsection.7.3.1.4}% 
+\contentsline {subsubsection}{\numberline {7.3.1.5}感知器学习}{434}{subsubsection.7.3.1.5}% 
+\contentsline {subsubsection}{\numberline {7.3.1.6}BP网络学习}{439}{subsubsection.7.3.1.6}% 
+\contentsline {subsubsection}{\numberline {7.3.1.7}Hopfield网络学习}{440}{subsubsection.7.3.1.7}% 
 \contentsline {section}{\numberline {7.4}工业4.0时代的机器学习}{442}{section.7.4}% 
-\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{442}{subsection.7.4.1}% 
+\contentsline {subsection}{\numberline {7.4.1}AdaBoost}{443}{subsection.7.4.1}% 
 \contentsline {section}{\numberline {7.5}深度神经网络——DNN}{446}{section.7.5}% 
 \contentsline {subsection}{\numberline {7.5.1}自动机器学习 (AutoML)}{450}{subsection.7.5.1}% 
 \contentsline {section}{\numberline {7.6}netZooPy库}{451}{section.7.6}% 
