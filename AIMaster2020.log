@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  26 MAY 2020 10:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  26 MAY 2020 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8234,29 +8234,29 @@ Package mdframed Info: mdframed detected package amsthm
 File: figures/MultilayerPercepton020201.jpg Graphic file (type bmp)
 <figures/MultilayerPercepton020201.jpg>
  [439] [440]
-Package mdframed Info: mdframed works in twoside mode on input line 1087.
+Package mdframed Info: mdframed works in twoside mode on input line 1111.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1087.
+(mdframed)              on input line 1111.
  [441]
 File: figures/t2019121500002.PNG Graphic file (type bmp)
 <figures/t2019121500002.PNG>
 
 [442] [443]
-Package mdframed Info: mdframed works in twoside mode on input line 1179.
+Package mdframed Info: mdframed works in twoside mode on input line 1203.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1179.
+(mdframed)              on input line 1203.
 File: figures/Adboostplane.PNG Graphic file (type bmp)
 <figures/Adboostplane.PNG>
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1199.
+(mdframed)              on input line 1223.
  [444]
-Package mdframed Info: mdframed works in twoside mode on input line 1201.
+Package mdframed Info: mdframed works in twoside mode on input line 1225.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1201.
+(mdframed)              on input line 1225.
  [445]
 File: figures/DNNVSOtherNN.png Graphic file (type bmp)
 <figures/DNNVSOtherNN.png>
@@ -8273,10 +8273,10 @@ File: figures/DNN191225001.JPG Graphic file (type bmp)
 [448]
 File: figures/DNN1912181.png Graphic file (type bmp)
 <figures/DNN1912181.png>
-Package mdframed Info: mdframed works in twoside mode on input line 1315.
+Package mdframed Info: mdframed works in twoside mode on input line 1339.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1315.
+(mdframed)              on input line 1339.
 File: figures/Densetransferflag0322.png Graphic file (type bmp)
 <figures/Densetransferflag0322.png>
  [449]
@@ -8300,14 +8300,14 @@ File: figures/ResidualNND2020202002.PNG Graphic file (type bmp)
 File: figures/DRL2020020301.PNG Graphic file (type bmp)
 <figures/DRL2020020301.PNG>
  [453] [454]
-Package mdframed Info: mdframed works in twoside mode on input line 1461.
+Package mdframed Info: mdframed works in twoside mode on input line 1485.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1461.
-Package mdframed Info: mdframed works in twoside mode on input line 1467.
+(mdframed)              on input line 1485.
+Package mdframed Info: mdframed works in twoside mode on input line 1491.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1467.
+(mdframed)              on input line 1491.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
 
@@ -8323,24 +8323,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [456]
 [457]
-Package mdframed Info: mdframed works in twoside mode on input line 1545.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1545.
- [458]
-Package mdframed Info: mdframed works in twoside mode on input line 1557.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1557.
-Package mdframed Info: mdframed works in twoside mode on input line 1563.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1563.
- [459]
 Package mdframed Info: mdframed works in twoside mode on input line 1569.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1569.
+ [458]
+Package mdframed Info: mdframed works in twoside mode on input line 1581.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1581.
+Package mdframed Info: mdframed works in twoside mode on input line 1587.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1587.
+ [459]
+Package mdframed Info: mdframed works in twoside mode on input line 1593.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1593.
  [460] [461]
 File: figures/DNNUlabelSet.JPG Graphic file (type bmp)
 <figures/DNNUlabelSet.JPG>
@@ -9237,20 +9237,20 @@ File: gif2pnffolder/ConvolutionOP0203280.png Graphic file (type bmp)
 Underfull \vbox (badness 2435) has occurred while \output is active []
 
  [463]
-Package mdframed Info: mdframed works in twoside mode on input line 1674.
+Package mdframed Info: mdframed works in twoside mode on input line 1698.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1674.
+(mdframed)              on input line 1698.
 File: figures/TUCon2020020302.PNG Graphic file (type bmp)
 <figures/TUCon2020020302.PNG>
 File: figures/JuanJi2020020301.PNG Graphic file (type bmp)
 <figures/JuanJi2020020301.PNG>
 
 [464]
-Package mdframed Info: mdframed works in twoside mode on input line 1703.
+Package mdframed Info: mdframed works in twoside mode on input line 1727.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1703.
+(mdframed)              on input line 1727.
 File: figures/20161021131748099.png Graphic file (type bmp)
 <figures/20161021131748099.png>
 File: gif2pnffolder/201610211352412051.png Graphic file (type bmp)
@@ -9335,15 +9335,15 @@ File: gif2pnffolder/CNN2016102114165963416.png Graphic file (type bmp)
 <gif2pnffolder/CNN2016102114165963416.png>
  <a4,fr15>
 [466]
-Package mdframed Info: mdframed works in twoside mode on input line 1757.
+Package mdframed Info: mdframed works in twoside mode on input line 1781.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1757.
+(mdframed)              on input line 1781.
 File: figures/20170715175257862.png Graphic file (type bmp)
 <figures/20170715175257862.png>
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1777.
+(mdframed)              on input line 1801.
  [467]
 File: gif2pnffolder/Dconop02031.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02031.png>
@@ -9437,16 +9437,16 @@ File: figures/AlexNetdemo002.JPG Graphic file (type bmp)
  [474]
 File: figures/CNNMLCompare001.JPG Graphic file (type bmp)
 <figures/CNNMLCompare001.JPG>
-Package mdframed Info: mdframed works in twoside mode on input line 2087.
+Package mdframed Info: mdframed works in twoside mode on input line 2111.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2087.
+(mdframed)              on input line 2111.
 Missing character: There is no ™ in font ntx-Regular-tlf-t1!
  [475]
-Package mdframed Info: mdframed works in twoside mode on input line 2118.
+Package mdframed Info: mdframed works in twoside mode on input line 2142.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2118.
+(mdframed)              on input line 2142.
 File: figures/CNNMatlabGPU001.JPG Graphic file (type bmp)
 <figures/CNNMatlabGPU001.JPG>
  [476]
@@ -9541,10 +9541,10 @@ File: figures/RNNImage191229001.png Graphic file (type bmp)
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
  [491]
-Package mdframed Info: mdframed works in twoside mode on input line 2482.
+Package mdframed Info: mdframed works in twoside mode on input line 2506.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2482.
+(mdframed)              on input line 2506.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -9860,7 +9860,7 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 Here is how much of TeX's memory you used:
  95871 strings out of 492922
  2313257 string characters out of 6136750
- 3074606 words of memory out of 5000000
+ 3074608 words of memory out of 5000000
  96910 multiletter control sequences out of 15000+600000
  747997 words of font info for 375 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
