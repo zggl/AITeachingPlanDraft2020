@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  28 MAY 2020 22:25
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  29 MAY 2020 07:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8198,10 +8198,20 @@ Package mdframed Info: mdframed works in twoside mode on input line 469.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 469.
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [426]
 Missing character: There is no – in font ntx-Regular-tlf-ot1!
 Missing character: There is no – in font ntx-Regular-tlf-ot1!
- [427]
+
+[427]
 File: figures/bufenjueceshu20191130.png Graphic file (type bmp)
 <figures/bufenjueceshu20191130.png>
  [428]
@@ -9709,11 +9719,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 290.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-318' on page 528 undefined on input lin
-e 292.
-
 ) [528]
 \openout2 = `tex/chapter10.aux'.
 
@@ -9841,11 +9846,7 @@ No file AIMaster2020.ind.
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
-(./AIMaster2020.aux
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-(./tex/preface.aux
+(./AIMaster2020.aux (./tex/preface.aux
 <Reading QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/mast
 er/AIMaster2020.pdf" at level 5-M from aux file.>
 ) (./tex/overview.aux) (./tex/chapter1.aux) (./tex/chapter2.aux)
@@ -9875,7 +9876,7 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 Here is how much of TeX's memory you used:
  95875 strings out of 492922
  2313294 string characters out of 6136750
- 3074737 words of memory out of 5000000
+ 3074676 words of memory out of 5000000
  96914 multiletter control sequences out of 15000+600000
  747997 words of font info for 375 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
