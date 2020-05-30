@@ -478,7 +478,7 @@
 \newenvironment{Problem}{\par\noindent\textbf{问题: }\color{black!90}}{\par\vspace{.5\baselineskip}}
 \newenvironment{result}{\par\noindent\textbf{解: }\color{black!90}}{\par\vspace{.5\baselineskip}}
 %%%====================================================================
-\usepackage{tikz}
+%\usepackage{tikz}
 \usetikzlibrary{matrix,shapes}
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{flowchart}
