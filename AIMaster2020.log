@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  31 MAY 2020 21:18
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.11.23)  1 JUN 2020 07:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3017,20 +3017,417 @@ LaTeX Warning: Label `AI:Fig4' multiply defined.
 
 LaTeX Warning: Label `AI:7bf40ad1cb80Fig4' multiply defined.
 
-)
-Runaway argument?
-{{1--57}{109}{tensors flow\relax }{figure.c 
-! File ended while scanning use of \@newl@bel.
-<inserted text> 
-                \par 
-l.62 \@input{tex/chapter1.aux}
-                              
-? 
-! Undefined control sequence.
-l.115 \pbs@newke
-                
-? 
-)
+
+LaTeX Warning: Label `VSstudio2019CNTK013001' multiply defined.
+
+
+LaTeX Warning: Label `VSstudio2019CNTK013001' multiply defined.
+
+) (./tex/chapter2.aux
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `AI32fig02' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `AI32fig000022' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+) (./tex/chapter3.aux
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `AIthm3.1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+) (./tex/chapter4.aux
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+) (./tex/chapter5.aux
+<Reading QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/mast
+er/5-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AC%AC%E4%BA%94%E7%AB%A0%E7%AC%AC%E
+4%B8%80%E6%AC%A1%20%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD.pdf" at level 10-M from
+ aux file.>
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `AI_table2019112902' multiply defined.
+
+
+LaTeX Warning: Label `TensorRVFLEq08' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `AI_table2019112810' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `WPZ20191218122443' multiply defined.
+
+
+LaTeX Warning: Label `WPZ20191218122443' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+) (./tex/chapter6.aux
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `thm:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `prop:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+) (./tex/chapter7.aux
+
+LaTeX Warning: Label `MLDNN12019121501' multiply defined.
+
+
+LaTeX Warning: Label `AIC7MLexam7.8' multiply defined.
+
+
+LaTeX Warning: Label `def:1' multiply defined.
+
+
+LaTeX Warning: Label `RNNAPP2019121500005' multiply defined.
+
+) (./tex/chapter8.aux) (./tex/chapter9.aux) (./tex/chapter10.aux)
+(./tex/chapter11.aux))
 \openout1 = `AIMaster2020.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 13.
@@ -3052,7 +3449,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 13.
 LaTeX Font Info:    Try loading font information for U+ntxexa on input line 13.
-
 
 (c:/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
@@ -3473,28 +3869,27 @@ Package hyperref Warning: Suppressing link with empty target on input line 63.
 ) [3] [4
 
 
-] (./AIMaster2020.toc)
+] (./AIMaster2020.toc [5
+
+] [6] [7] [8] [9] [10] [11] [12] [13])
 \tf@toc=\write9
 \openout9 = `AIMaster2020.toc'.
 
- [5
-
-] [6
-
-]
+ [14]
 \openout2 = `tex/overview.aux'.
 
- (./tex/overview.tex) [7
+
+(./tex/overview.tex) [15
 
 
-] [8
+
+] [16
 
 
 ]
 \openout2 = `tex/chapter1.aux'.
 
-
-(./tex/chapter1.tex [0
+ (./tex/chapter1.tex [0
 
 
 ]
@@ -3783,11 +4178,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 1500.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1500.
-
-
-LaTeX Warning: Reference `AIchap2' on page 60 undefined on input line 1501.
-
-[60]
+ [60]
 Package mdframed Info: mdframed works in twoside mode on input line 1534.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4703,34 +5094,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [108]
 File: figures/TensorFlowcd0a1f3cf7c8f5b.jpeg Graphic file (type bmp)
 <figures/TensorFlowcd0a1f3cf7c8f5b.jpeg>
-
-
-LaTeX Warning: Reference `TenserflowGPU1060' on page 109 undefined on input lin
-e 2751.
-
 File: figures/TenserflowGPU1060.PNG Graphic file (type bmp)
 <figures/TenserflowGPU1060.PNG>
+
 [109] [110]
 Package mdframed Info: mdframed works in twoside mode on input line 2775.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2775.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-31' on page 111 undefined on input line
- 2777.
-
-[111]
+ [111]
 Package mdframed Info: mdframed works in twoside mode on input line 2814.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2814.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-32' on page 112 undefined on input line
- 2816.
-
-[112] [113]
+ [112] [113]
 Underfull \vbox (badness 3179) has occurred while \output is active []
 
  [114]
@@ -4746,17 +5123,13 @@ File: figures/MetaFlowlogo.jpg Graphic file (type bmp)
 File: figures/Metaflow20200102134412.JPG Graphic file (type bmp)
 <figures/Metaflow20200102134412.JPG>
  [117] [118]
-
-LaTeX Warning: Reference `VSstudio2019CNTK013001' on page 119 undefined on inpu
-t line 2979.
-
 File: figures/VSstudio2019CNTK013001.PNG Graphic file (type bmp)
 <figures/VSstudio2019CNTK013001.PNG>
 File: figures/NUgget0130.PNG Graphic file (type bmp)
 <figures/NUgget0130.PNG>
 File: figures/NAS20200331181652.jpg Graphic file (type bmp)
 <figures/NAS20200331181652.jpg>
-[119]
+ [119]
 File: figures/ImageKJ2020022901.jpg Graphic file (type bmp)
 <figures/ImageKJ2020022901.jpg>
 File: figures/ImageHisilicon.jpg Graphic file (type bmp)
@@ -4767,13 +5140,10 @@ File: figures/ImageKuangshi.jpg Graphic file (type bmp)
 File: figures/KuangshiTY20200325190557.jpg Graphic file (type bmp)
 <figures/KuangshiTY20200325190557.jpg>
  [121] [122]
-
-LaTeX Warning: Reference `AIOpenGitClone2020030801' on page 123 undefined on in
-put line 3078.
-
 File: figures/AIOpenGitClone.PNG Graphic file (type bmp)
 <figures/AIOpenGitClone.PNG>
-[123] [124] [125] [126] [127]) [128]
+ [123] [124] [125] [126] [127])
+[128]
 \openout2 = `tex/chapter2.aux'.
 
  (./tex/chapter2.tex
@@ -4801,40 +5171,22 @@ Package mdframed Info: mdframed works in twoside mode on input line 65.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 65.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-33' on page 131 undefined on input line
- 67.
-
-[131]
+ [131]
 Package mdframed Info: mdframed works in twoside mode on input line 80.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-34' on page 132 undefined on input line
- 82.
-
 Package mdframed Info: mdframed works in twoside mode on input line 88.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 88.
-
-LaTeX Warning: Reference `mdf@pagelabel-35' on page 132 undefined on input line
- 90.
-
 Package mdframed Info: mdframed works in twoside mode on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 93.
-
-LaTeX Warning: Reference `mdf@pagelabel-36' on page 132 undefined on input line
- 95.
-
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 1
 05.
-(c:/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+ (c:/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
@@ -4843,19 +5195,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 112.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 112.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-37' on page 132 undefined on input line
- 114.
-
 Package mdframed Info: mdframed works in twoside mode on input line 119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
-
-LaTeX Warning: Reference `mdf@pagelabel-38' on page 132 undefined on input line
- 121.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -4865,94 +5208,47 @@ Package mdframed Info: mdframed works in twoside mode on input line 250.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 250.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-39' on page 135 undefined on input line
- 254.
-
 Package mdframed Info: mdframed works in twoside mode on input line 272.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 272.
-
-LaTeX Warning: Reference `mdf@pagelabel-40' on page 135 undefined on input line
- 292.
-
-[135]
-
-LaTeX Warning: Reference `mdf@pagelabel-41' on page 136 undefined on input line
- 292.
-
-[136]
+ [135] [136]
 Package mdframed Info: mdframed works in twoside mode on input line 341.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 341.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-42' on page 137 undefined on input line
- 343.
-
 Package mdframed Info: mdframed works in twoside mode on input line 361.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 361.
-
-LaTeX Warning: Reference `mdf@pagelabel-43' on page 137 undefined on input line
- 366.
-
 Package mdframed Info: mdframed works in twoside mode on input line 379.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 379.
-
-LaTeX Warning: Reference `mdf@pagelabel-44' on page 137 undefined on input line
- 381.
-
 Package mdframed Info: mdframed works in twoside mode on input line 383.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 383.
-
-LaTeX Warning: Reference `mdf@pagelabel-45' on page 137 undefined on input line
- 385.
-
 Package mdframed Info: mdframed works in twoside mode on input line 397.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 397.
-[137]
-
-LaTeX Warning: Reference `mdf@pagelabel-46' on page 138 undefined on input line
- 405.
-
+ [137]
 Package mdframed Info: mdframed works in twoside mode on input line 409.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 409.
-
-LaTeX Warning: Reference `mdf@pagelabel-47' on page 138 undefined on input line
- 415.
-
 Package mdframed Info: mdframed works in twoside mode on input line 419.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 419.
-
-LaTeX Warning: Reference `mdf@pagelabel-48' on page 138 undefined on input line
- 439.
-
 Package mdframed Info: mdframed works in twoside mode on input line 444.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 444.
-
-LaTeX Warning: Reference `mdf@pagelabel-49' on page 138 undefined on input line
- 446.
-
 File: figures/MoneyStateSpace.jpg Graphic file (type bmp)
 <figures/MoneyStateSpace.jpg>
-[138]
+ [138]
 Package mdframed Info: mdframed works in twoside mode on input line 465.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4973,16 +5269,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--528
 /n/12.045 : $[]$
  []
 
-
-LaTeX Warning: Reference `mdf@pagelabel-50' on page 139 undefined on input line
- 580.
-
 [139]
-
-LaTeX Warning: Reference `mdf@pagelabel-51' on page 140 undefined on input line
- 580.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [140]
@@ -4997,280 +5284,121 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 619.
 
-
-LaTeX Warning: Reference `AI32fig03' on page 141 undefined on input line 619.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-52' on page 141 undefined on input line
- 681.
-
-[141]
-
-LaTeX Warning: Reference `mdf@pagelabel-53' on page 142 undefined on input line
- 681.
-
-[142] [143]
+[141] [142] [143]
 Package mdframed Info: mdframed works in twoside mode on input line 788.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 788.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-54' on page 144 undefined on input line
- 791.
-
 Package mdframed Info: mdframed works in twoside mode on input line 794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 794.
-
-LaTeX Warning: Reference `mdf@pagelabel-55' on page 144 undefined on input line
- 811.
-
-[144]
-
-LaTeX Warning: Reference `mdf@pagelabel-56' on page 145 undefined on input line
- 811.
-
-[145] [146]
+ [144] [145] [146]
 Package mdframed Info: mdframed works in twoside mode on input line 923.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 923.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-57' on page 147 undefined on input line
- 953.
-
-[147]
-
-LaTeX Warning: Reference `mdf@pagelabel-58' on page 148 undefined on input line
- 953.
-
-
-LaTeX Warning: Reference `AI32fig06' on page 148 undefined on input line 970.
-
-
-LaTeX Warning: Reference `AI32fig06' on page 148 undefined on input line 970.
-
+ [147]
 File: figures/Chanshengshi2019112506.PNG Graphic file (type bmp)
 <figures/Chanshengshi2019112506.PNG>
-[148] [149] [150]
+ [148] [149] [150]
 Package mdframed Info: mdframed works in twoside mode on input line 1079.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1079.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-59' on page 151 undefined on input line
- 1081.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1104.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1104.
-
-LaTeX Warning: Reference `mdf@pagelabel-60' on page 151 undefined on input line
- 1112.
-
-
-LaTeX Warning: Reference `AI32fig07' on page 151 undefined on input line 1113.
-
-[151]
+ [151]
 File: figures/Chanshengshiiegou2019112506.PNG Graphic file (type bmp)
 <figures/Chanshengshiiegou2019112506.PNG>
-
-
-LaTeX Warning: Reference `AIchap4' on page 152 undefined on input line 1129.
-
-[152]
+ [152]
 Package mdframed Info: mdframed works in twoside mode on input line 1172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1172.
-
-
-LaTeX Warning: Reference `AI32fig000021' on page 153 undefined on input line 11
-73.
-
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 1191.
 
-LaTeX Warning: Reference `mdf@pagelabel-61' on page 153 undefined on input line
- 1191.
-
 [153]
-
-LaTeX Warning: Reference `mdf@pagelabel-62' on page 154 undefined on input line
- 1191.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1196.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1196.
-
-LaTeX Warning: Reference `mdf@pagelabel-63' on page 154 undefined on input line
- 1198.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1220.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1220.
-
-LaTeX Warning: Reference `mdf@pagelabel-64' on page 154 undefined on input line
- 1222.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1243.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1243.
-
-LaTeX Warning: Reference `mdf@pagelabel-65' on page 154 undefined on input line
- 1245.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1253.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1253.
-
-LaTeX Warning: Reference `mdf@pagelabel-66' on page 154 undefined on input line
- 1270.
-
-[154]
-
-LaTeX Warning: Reference `mdf@pagelabel-67' on page 155 undefined on input line
- 1270.
-
+ [154]
 Package mdframed Info: mdframed works in twoside mode on input line 1275.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1275.
-
-LaTeX Warning: Reference `mdf@pagelabel-68' on page 155 undefined on input line
- 1293.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1298.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1298.
-
-LaTeX Warning: Reference `mdf@pagelabel-69' on page 155 undefined on input line
- 1313.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1327.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1327.
-
-LaTeX Warning: Reference `mdf@pagelabel-70' on page 155 undefined on input line
- 1342.
-
-[155]
-
-LaTeX Warning: Reference `mdf@pagelabel-71' on page 156 undefined on input line
- 1342.
-
+ [155]
 Package mdframed Info: mdframed works in twoside mode on input line 1348.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1348.
-
-LaTeX Warning: Reference `mdf@pagelabel-72' on page 156 undefined on input line
- 1363.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1370.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1370.
-
-LaTeX Warning: Reference `mdf@pagelabel-73' on page 156 undefined on input line
- 1385.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1389.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1389.
-
-LaTeX Warning: Reference `mdf@pagelabel-74' on page 156 undefined on input line
- 1404.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1419.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1419.
-[156]
+ [156]
 Package mdframed Info: Not enough space on this page on input line 1434.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-75' on page 157 undefined on input line
- 1434.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1447.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1447.
-
-LaTeX Warning: Reference `mdf@pagelabel-76' on page 157 undefined on input line
- 1462.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1472.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1472.
-
-LaTeX Warning: Reference `mdf@pagelabel-77' on page 157 undefined on input line
- 1487.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1496.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1496.
-[157]
+ [157]
 Package mdframed Info: Not enough space on this page on input line 1498.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-78' on page 158 undefined on input line
- 1498.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1505.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1505.
-
-LaTeX Warning: Reference `ISAExam2020021201' on page 158 undefined on input lin
-e 1506.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-79' on page 158 undefined on input line
- 1507.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1509.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1509.
-
-LaTeX Warning: Reference `mdf@pagelabel-80' on page 158 undefined on input line
- 1527.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1537.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1537.
-
-LaTeX Warning: Reference `mdf@pagelabel-81' on page 158 undefined on input line
- 1544.
-
 File: figures/eryuanguanxi2019112509.PNG Graphic file (type bmp)
 <figures/eryuanguanxi2019112509.PNG>
-
-LaTeX Warning: Reference `Chap2exam264' on page 158 undefined on input line 155
-0.
-
-
-LaTeX Warning: Reference `Chap2exam264' on page 158 undefined on input line 155
-0.
-
 
 Underfull \vbox (badness 2205) has occurred while \output is active []
 
@@ -5279,40 +5407,12 @@ Package mdframed Info: mdframed works in twoside mode on input line 1555.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1555.
-
-
-LaTeX Warning: Reference `wangqianli2.69' on page 159 undefined on input line 1
-580.
-
-
-LaTeX Warning: Reference `wangqianli2.69' on page 159 undefined on input line 1
-580.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-82' on page 159 undefined on input line
- 1584.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1586.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1586.
-
-LaTeX Warning: Reference `AI32fig10' on page 159 undefined on input line 1590.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-83' on page 159 undefined on input line
- 1591.
-
 File: figures/tuli2019112510.PNG Graphic file (type bmp)
 <figures/tuli2019112510.PNG>
-
-LaTeX Warning: Reference `Chap2exam266' on page 159 undefined on input line 159
-6.
-
-
-LaTeX Warning: Reference `Chap2exam266' on page 159 undefined on input line 159
-6.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -5321,59 +5421,22 @@ Package mdframed Info: mdframed works in twoside mode on input line 1609.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1609.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-84' on page 160 undefined on input line
- 1611.
-
-
-LaTeX Warning: Reference `Chap2exam268' on page 160 undefined on input line 165
-8.
-
-
-LaTeX Warning: Reference `Chap2exam268' on page 160 undefined on input line 165
-8.
-
 File: figures/tuli20191125102.PNG Graphic file (type bmp)
 <figures/tuli20191125102.PNG>
+
 [160]
 Package mdframed Info: mdframed works in twoside mode on input line 1678.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1678.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-85' on page 161 undefined on input line
- 1680.
-
 File: figures/tuli20191125103.PNG Graphic file (type bmp)
 <figures/tuli20191125103.PNG>
-
-LaTeX Warning: Reference `Chap2exam269' on page 161 undefined on input line 168
-7.
-
-
-LaTeX Warning: Reference `Chap2exam269' on page 161 undefined on input line 168
-7.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1696.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1696.
-
-LaTeX Warning: Reference `mdf@pagelabel-86' on page 161 undefined on input line
- 1698.
-
 File: figures/tuli20191125104.PNG Graphic file (type bmp)
 <figures/tuli20191125104.PNG>
-
-LaTeX Warning: Reference `Chap2exam270' on page 161 undefined on input line 171
-2.
-
-
-LaTeX Warning: Reference `Chap2exam270' on page 161 undefined on input line 171
-2.
-
 Missing character: There is no 语 in font ntx-Regular-tlf-t1!
 Missing character: There is no 义 in font ntx-Regular-tlf-t1!
 Missing character: There is no 网 in font ntx-Regular-tlf-t1!
@@ -5381,175 +5444,51 @@ Missing character: There is no 络 in font ntx-Regular-tlf-t1!
 Missing character: There is no 表 in font ntx-Regular-tlf-t1!
 Missing character: There is no 示 in font ntx-Regular-tlf-t1!
 Missing character: There is no 法 in font ntx-Regular-tlf-t1!
-[161]
+ [161]
 Package mdframed Info: mdframed works in twoside mode on input line 1722.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1722.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-87' on page 162 undefined on input line
- 1724.
-
-
-LaTeX Warning: Reference `AI32fig00105' on page 162 undefined on input line 172
-6.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1746.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1746.
-
-LaTeX Warning: Reference `mdf@pagelabel-88' on page 162 undefined on input line
- 1748.
-
-
-LaTeX Warning: Reference `AI32fig106' on page 162 undefined on input line 1750.
-
-
-
-LaTeX Warning: Reference `Chap2exam271' on page 162 undefined on input line 177
-9.
-
-
-LaTeX Warning: Reference `Chap2exam271' on page 162 undefined on input line 177
-9.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1786.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1786.
-
-LaTeX Warning: Reference `mdf@pagelabel-89' on page 162 undefined on input line
- 1788.
-
-
-LaTeX Warning: Reference `AI32fig107' on page 162 undefined on input line 1789.
-
-
 File: figures/tuli20191125107.PNG Graphic file (type bmp)
 <figures/tuli20191125107.PNG>
-
-LaTeX Warning: Reference `Chap2exam273' on page 162 undefined on input line 179
-4.
-
-
-LaTeX Warning: Reference `Chap2exam273' on page 162 undefined on input line 179
-4.
-
-[162]
+ [162]
 Package mdframed Info: mdframed works in twoside mode on input line 1811.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1811.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-90' on page 163 undefined on input line
- 1813.
-
-
-LaTeX Warning: Reference `AI32fig10007' on page 163 undefined on input line 181
-5.
-
 File: figures/tuli2019112910007.PNG Graphic file (type bmp)
 <figures/tuli2019112910007.PNG>
-
-LaTeX Warning: Reference `Chap2exam274' on page 163 undefined on input line 182
-0.
-
-
-LaTeX Warning: Reference `Chap2exam274' on page 163 undefined on input line 182
-0.
-
-[163]
+ [163]
 Package mdframed Info: mdframed works in twoside mode on input line 1835.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1835.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-91' on page 164 undefined on input line
- 1837.
-
-
-LaTeX Warning: Reference `AI32fig1008' on page 164 undefined on input line 1839
-.
-
 File: figures/tuli20191125108.PNG Graphic file (type bmp)
 <figures/tuli20191125108.PNG>
-
-LaTeX Warning: Reference `Chap2exam275' on page 164 undefined on input line 184
-4.
-
-
-LaTeX Warning: Reference `Chap2exam275' on page 164 undefined on input line 184
-4.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1854.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1854.
-
-LaTeX Warning: Reference `mdf@pagelabel-92' on page 164 undefined on input line
- 1856.
-
-
-LaTeX Warning: Reference `AI32fig109' on page 164 undefined on input line 1858.
-
-
 File: figures/tuli20191125109.PNG Graphic file (type bmp)
 <figures/tuli20191125109.PNG>
-
-LaTeX Warning: Reference `Chap2exam276' on page 164 undefined on input line 186
-3.
-
-
-LaTeX Warning: Reference `Chap2exam276' on page 164 undefined on input line 186
-3.
-
-[164]
+ [164]
 Package mdframed Info: mdframed works in twoside mode on input line 1885.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1885.
-
-
-LaTeX Warning: Reference `AI32fig09' on page 165 undefined on input line 1886.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-93' on page 165 undefined on input line
- 1887.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1900.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1900.
-
-LaTeX Warning: Reference `AI32fig032205' on page 165 undefined on input line 19
-01.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-94' on page 165 undefined on input line
- 1902.
-
-
-LaTeX Warning: Reference `Chap2exam278' on page 165 undefined on input line 191
-7.
-
-
-LaTeX Warning: Reference `Chap2exam278' on page 165 undefined on input line 191
-7.
-
-[165]
-
-LaTeX Warning: Reference `AI32fig032205' on page 166 undefined on input line 19
-21.
-
-
-LaTeX Warning: Reference `Chap2exam278' on page 166 undefined on input line 192
-5.
-
-
+ [165]
 Underfull \vbox (badness 2547) has occurred while \output is active []
 
  [166]
@@ -5558,56 +5497,30 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 1970.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-95' on page 167 undefined on input line
- 1972.
-
 [167] [168]
 Package mdframed Info: mdframed works in twoside mode on input line 2050.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2050.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-96' on page 169 undefined on input line
- 2052.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2055.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2055.
-[169]
+ [169]
 Package mdframed Info: Not enough space on this page on input line 2057.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-97' on page 170 undefined on input line
- 2057.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2060.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2060.
-
-LaTeX Warning: Reference `mdf@pagelabel-98' on page 170 undefined on input line
- 2062.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2063.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2063.
-
-LaTeX Warning: Reference `mdf@pagelabel-99' on page 170 undefined on input line
- 2065.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2072.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2072.
-
-LaTeX Warning: Reference `mdf@pagelabel-100' on page 170 undefined on input lin
-e 2098.
-
-[170]
+ [170]
 Underfull \hbox (badness 10000) in paragraph at lines 2110--2111
 
  []
@@ -5616,24 +5529,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 2111.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2111.
-
-LaTeX Warning: Reference `AI32fig11' on page 171 undefined on input line 2112.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-101' on page 171 undefined on input lin
-e 2113.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2116.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2116.
-
-LaTeX Warning: Reference `mdf@pagelabel-102' on page 171 undefined on input lin
-e 2118.
-
-
-LaTeX Warning: Reference `AI32fig11' on page 171 undefined on input line 2120.
-
 File: figures/kuangjia2019112511.PNG Graphic file (type bmp)
 <figures/kuangjia2019112511.PNG>
 [171]
@@ -5641,23 +5540,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 2152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2152.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-103' on page 172 undefined on input lin
-e 2159.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2163.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2163.
-[172]
+ [172]
 Package mdframed Info: Not enough space on this page on input line 2177.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-104' on page 173 undefined on input lin
-e 2177.
-
-[173]
+ [173]
 Package mdframed Info: mdframed works in twoside mode on input line 2226.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5666,25 +5555,12 @@ LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <7.52812> not available
 (Font)              Font shape `T1/qhv/b/n' tried instead on input line 2250.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 6.77525pt on input line 2250.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-105' on page 174 undefined on input lin
-e 2252.
-
-[174]
-
-LaTeX Warning: Reference `mdf@pagelabel-106' on page 175 undefined on input lin
-e 2252.
-
+ [174]
 Package mdframed Info: mdframed works in twoside mode on input line 2261.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2261.
-
-LaTeX Warning: Reference `mdf@pagelabel-107' on page 175 undefined on input lin
-e 2269.
-
-[175]
+ [175]
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
@@ -5693,15 +5569,11 @@ Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
- [177] [178]
-
-LaTeX Warning: Reference `YUYINETlizi01' on page 179 undefined on input line 23
-91.
-
-) [179] [180]
+ [177] [178]) [179] [180]
 \openout2 = `tex/chapter3.aux'.
 
- (./tex/chapter3.tex
+
+(./tex/chapter3.tex
 第三章
 File: figures/KRC412184.jpg Graphic file (type bmp)
 <figures/KRC412184.jpg>
@@ -5726,72 +5598,35 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-108' on page 182 undefined on input lin
-e 34.
-
 [182]
 Package mdframed Info: mdframed works in twoside mode on input line 50.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
 Package mdframed Info: Not enough space on this page on input line 53.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-109' on page 183 undefined on input lin
-e 53.
-
 Package mdframed Info: mdframed works in twoside mode on input line 61.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 61.
-
-LaTeX Warning: Reference `mdf@pagelabel-110' on page 183 undefined on input lin
-e 69.
-
 Package mdframed Info: mdframed works in twoside mode on input line 78.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
-
-LaTeX Warning: Reference `mdf@pagelabel-111' on page 183 undefined on input lin
-e 84.
-
-[183]
+ [183]
 Package mdframed Info: mdframed works in twoside mode on input line 101.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 101.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-112' on page 184 undefined on input lin
-e 110.
-
 Package mdframed Info: mdframed works in twoside mode on input line 131.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 131.
-
-LaTeX Warning: Reference `mdf@pagelabel-113' on page 184 undefined on input lin
-e 133.
-
-[184] [185]
+ [184] [185]
 Package mdframed Info: mdframed works in twoside mode on input line 168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-114' on page 186 undefined on input lin
-e 170.
-
-
-LaTeX Warning: Reference `AIchap4' on page 186 undefined on input line 192.
-
-[186]
-
-LaTeX Warning: Reference `AI32fig12' on page 187 undefined on input line 211.
-
+ [186]
 Package mdframed Info: mdframed works in twoside mode on input line 266.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -5799,263 +5634,124 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 273.
-[187]
-
-LaTeX Warning: Reference `mdf@pagelabel-115' on page 188 undefined on input lin
-e 273.
-
-
-LaTeX Warning: Reference `AI32fig13' on page 188 undefined on input line 296.
-
-[188] [189] [190] [191] [192]
+ [187] [188] [189] [190] [191] [192]
 Package mdframed Info: mdframed works in twoside mode on input line 487.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 487.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-116' on page 193 undefined on input lin
-e 489.
-
-[193] [194]
+ [193]
+[194]
 Package mdframed Info: mdframed works in twoside mode on input line 527.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 527.
 Package mdframed Info: Not enough space on this page on input line 529.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-117' on page 195 undefined on input lin
-e 529.
-
 Package mdframed Info: mdframed works in twoside mode on input line 558.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 558.
-
-LaTeX Warning: Reference `mdf@pagelabel-118' on page 195 undefined on input lin
-e 577.
-
 Package mdframed Info: mdframed works in twoside mode on input line 590.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 590.
 Package mdframed Info: Not enough space on this page on input line 592.
-[195]
+ [195]
 Package mdframed Info: Not enough space on this page on input line 592.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-119' on page 196 undefined on input lin
-e 592.
-
-
-LaTeX Warning: Reference `AI_table2019113003' on page 196 undefined on input li
-ne 594.
-
-
-LaTeX Warning: Reference `AI_table2019113004' on page 196 undefined on input li
-ne 611.
-
-[196] [197] [198]
+ [196] [197] [198]
 Package mdframed Info: mdframed works in twoside mode on input line 763.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 763.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-120' on page 199 undefined on input lin
-e 765.
-
 Package mdframed Info: mdframed works in twoside mode on input line 775.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 775.
-
-LaTeX Warning: Reference `mdf@pagelabel-121' on page 199 undefined on input lin
-e 777.
-
 Package mdframed Info: mdframed works in twoside mode on input line 785.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 785.
 Missing character: There is no 和 in font ntx-Regular-tlf-ot1!
-
-LaTeX Warning: Reference `mdf@pagelabel-122' on page 199 undefined on input lin
-e 787.
-
-[199]
+ [199]
 Package mdframed Info: mdframed works in twoside mode on input line 807.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 807.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-123' on page 200 undefined on input lin
-e 810.
-
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
-[200]
+ [200]
 Package mdframed Info: mdframed works in twoside mode on input line 842.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 842.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-124' on page 201 undefined on input lin
-e 844.
-
 Missing character: There is no ① in font ntx-Regular-tlf-t1!
 Missing character: There is no ② in font ntx-Regular-tlf-t1!
 Package mdframed Info: mdframed works in twoside mode on input line 870.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 870.
-
-LaTeX Warning: Reference `mdf@pagelabel-125' on page 201 undefined on input lin
-e 876.
-
-[201]
+ [201]
 Package mdframed Info: mdframed works in twoside mode on input line 908.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 908.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-126' on page 202 undefined on input lin
-e 912.
-
 Package mdframed Info: mdframed works in twoside mode on input line 923.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 923.
-
-LaTeX Warning: Reference `mdf@pagelabel-127' on page 202 undefined on input lin
-e 933.
-
-
-LaTeX Warning: Reference `C3examp0355' on page 202 undefined on input line 944.
-
-
-[202]
-
-LaTeX Warning: Reference `AI32C3Sec3.2' on page 203 undefined on input line 976
-.
-
+ [202]
 Package mdframed Info: mdframed works in twoside mode on input line 991.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 991.
 Package mdframed Info: Not enough space on this page on input line 993.
-[203]
+ [203]
 Package mdframed Info: Not enough space on this page on input line 993.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-128' on page 204 undefined on input lin
-e 993.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1000.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1000.
-
-LaTeX Warning: Reference `mdf@pagelabel-129' on page 204 undefined on input lin
-e 1002.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1027.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1027.
-
-LaTeX Warning: Reference `mdf@pagelabel-130' on page 204 undefined on input lin
-e 1035.
-
-[204]
+ [204]
 Package mdframed Info: mdframed works in twoside mode on input line 1057.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1057.
-
-
-LaTeX Warning: Reference `C3exam3.64' on page 205 undefined on input line 1058.
-
-
-
-LaTeX Warning: Reference `C3equa3.12' on page 205 undefined on input line 1058.
-
-
-
-LaTeX Warning: Reference `mdf@pagelabel-131' on page 205 undefined on input lin
-e 1062.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1068.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1068.
-
-LaTeX Warning: Reference `mdf@pagelabel-132' on page 205 undefined on input lin
-e 1073.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1080.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1080.
-
-LaTeX Warning: Reference `mdf@pagelabel-133' on page 205 undefined on input lin
-e 1085.
-
-[205]
+ [205]
 Package mdframed Info: mdframed works in twoside mode on input line 1100.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1100.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-134' on page 206 undefined on input lin
-e 1105.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1122.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1122.
-
-LaTeX Warning: Reference `mdf@pagelabel-135' on page 206 undefined on input lin
-e 1127.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1133.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1133.
-
-LaTeX Warning: Reference `C3equ3.27' on page 206 undefined on input line 1134.
-
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 1138.
 
-LaTeX Warning: Reference `mdf@pagelabel-136' on page 206 undefined on input lin
-e 1138.
-
 [206]
-
-LaTeX Warning: Reference `mdf@pagelabel-137' on page 207 undefined on input lin
-e 1138.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1144.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1144.
-
-LaTeX Warning: Reference `mdf@pagelabel-138' on page 207 undefined on input lin
-e 1150.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1157.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1157.
-
-LaTeX Warning: Reference `mdf@pagelabel-139' on page 207 undefined on input lin
-e 1163.
-
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
@@ -6070,34 +5766,17 @@ Package mdframed Info: mdframed works in twoside mode on input line 1277.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1277.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-140' on page 210 undefined on input lin
-e 1279.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1285.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1285.
-
-LaTeX Warning: Reference `mdf@pagelabel-141' on page 210 undefined on input lin
-e 1287.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1297.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1297.
-[210]
+ [210]
 Package mdframed Info: Not enough space on this page on input line 1299.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-142' on page 211 undefined on input lin
-e 1299.
-
-
-LaTeX Warning: Reference `AI32fig14' on page 211 undefined on input line 1312.
-
-[211]
+ [211]
 
 LaTeX Font Warning: Font shape `TU/KaiTi(0)/m/it' undefined
 (Font)              using `TU/KaiTi(0)/m/n' instead on input line 1400.
@@ -6107,26 +5786,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 1451.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1451.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-143' on page 213 undefined on input lin
-e 1453.
-
-
-LaTeX Warning: Reference `AI32fig15' on page 213 undefined on input line 1457.
-
-[213]
+ [213]
 Package mdframed Info: mdframed works in twoside mode on input line 1523.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1523.
  [214]
 Package mdframed Info: Not enough space on this page on input line 1525.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-144' on page 215 undefined on input lin
-e 1525.
-
 
 Overfull \hbox (8.47173pt too wide) detected at line 1534
 []
@@ -6137,10 +5803,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 1537.
 
-LaTeX Warning: Reference `mdf@pagelabel-145' on page 215 undefined on input lin
-e 1539.
-
-
 Overfull \hbox (7.61655pt too wide) detected at line 1549
 []
  []
@@ -6149,53 +5811,25 @@ Package mdframed Info: mdframed works in twoside mode on input line 1560.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1560.
-
-LaTeX Warning: Reference `mdf@pagelabel-146' on page 215 undefined on input lin
-e 1562.
-
-
-LaTeX Warning: Reference `C3guijie3.90' on page 215 undefined on input line 156
-8.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1573.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1573.
-
-LaTeX Warning: Reference `mdf@pagelabel-147' on page 215 undefined on input lin
-e 1575.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1582.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1582.
 [215]
-
-LaTeX Warning: Reference `mdf@pagelabel-148' on page 216 undefined on input lin
-e 1584.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1618.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1618.
-
-LaTeX Warning: Reference `mdf@pagelabel-149' on page 216 undefined on input lin
-e 1620.
-
-[216]
+ [216]
 Package mdframed Info: mdframed works in twoside mode on input line 1646.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1646.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-150' on page 217 undefined on input lin
-e 1653.
-
-[217]
-
-LaTeX Warning: Reference `AI32fig16' on page 218 undefined on input line 1683.
-
+ [217]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.53937pt on input line 1699.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -6232,10 +5866,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 1724.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1724.
-
-LaTeX Warning: Reference `mdf@pagelabel-151' on page 218 undefined on input lin
-e 1727.
-
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.045pt on input line 1740.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -6256,10 +5886,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 1791.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1791.
-
-LaTeX Warning: Reference `mdf@pagelabel-152' on page 219 undefined on input lin
-e 1794.
-
 [219]
 File: figures/guijieyuanli2019112518.PNG Graphic file (type bmp)
 <figures/guijieyuanli2019112518.PNG>
@@ -6268,126 +5894,61 @@ Package mdframed Info: mdframed works in twoside mode on input line 1875.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1875.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-153' on page 222 undefined on input lin
-e 1881.
-
-[222]
+ [222]
 Package mdframed Info: mdframed works in twoside mode on input line 1952.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1952.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-154' on page 223 undefined on input lin
-e 1958.
-
-[223]
+ [223]
 Package mdframed Info: mdframed works in twoside mode on input line 2028.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2028.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-155' on page 224 undefined on input lin
-e 2034.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2039.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2039.
-
-LaTeX Warning: Reference `mdf@pagelabel-156' on page 224 undefined on input lin
-e 2041.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2050.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2050.
-
-LaTeX Warning: Reference `mdf@pagelabel-157' on page 224 undefined on input lin
-e 2060.
-
-[224]
+ [224]
 Package mdframed Info: mdframed works in twoside mode on input line 2071.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2071.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-158' on page 225 undefined on input lin
-e 2077.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2121.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2121.
-[225]
+ [225]
 Package mdframed Info: Not enough space on this page on input line 2127.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-159' on page 226 undefined on input lin
-e 2127.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2131.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2131.
-
-LaTeX Warning: Reference `mdf@pagelabel-160' on page 226 undefined on input lin
-e 2136.
-
-[226]
+ [226]
 Package mdframed Info: mdframed works in twoside mode on input line 2204.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2204.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-161' on page 227 undefined on input lin
-e 2210.
-
-
-LaTeX Warning: Reference `AI32fig20200424' on page 227 undefined on input line 
-2213.
-
-[227]
+ [227]
 Package mdframed Info: mdframed works in twoside mode on input line 2273.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2273.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-162' on page 228 undefined on input lin
-e 2275.
-
-
-LaTeX Warning: Reference `AI32fig20200425' on page 228 undefined on input line 
-2306.
-
 File: figures/Gguijieshu2019112525.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112525.PNG>
-[228]
+ [228]
 Package mdframed Info: mdframed works in twoside mode on input line 2320.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2320.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-163' on page 229 undefined on input lin
-e 2326.
-
-[229]
+ [229]
 Package mdframed Info: mdframed works in twoside mode on input line 2360.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2360.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-164' on page 230 undefined on input lin
-e 2370.
-
 
 Overfull \hbox (25.8003pt too wide) in paragraph at lines 2372--2375
 [] []\TU/SimHei(0)/bx/n/12.045 事 实 表 达 式 的 与\T1/ntxtlf/b/n/12.045 /\TU/SimHei(0
@@ -6400,101 +5961,42 @@ Package mdframed Info: mdframed works in twoside mode on input line 2375.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2375.
-
-LaTeX Warning: Reference `AI32C3fig26' on page 230 undefined on input line 2378
-.
-
 Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Reference `mdf@pagelabel-165' on page 230 undefined on input lin
-e 2432.
-
 [230]
-
-LaTeX Warning: Reference `mdf@pagelabel-166' on page 231 undefined on input lin
-e 2432.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2436.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2436.
-
-LaTeX Warning: Reference `mdf@pagelabel-167' on page 231 undefined on input lin
-e 2438.
-
-
-LaTeX Warning: Reference `AIchap2' on page 231 undefined on input line 2441.
-
-[231] [232]
+ [231] [232]
 Package mdframed Info: mdframed works in twoside mode on input line 2496.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2496.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-168' on page 233 undefined on input lin
-e 2514.
-
-[233]
+ [233]
 Package mdframed Info: mdframed works in twoside mode on input line 2524.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2524.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-169' on page 234 undefined on input lin
-e 2532.
-
-
-LaTeX Warning: Reference `AI32fig2019120127' on page 234 undefined on input lin
-e 2535.
-
 File: figures/Gguijieshu2019112527.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112527.PNG>
-
-LaTeX Warning: Reference `AI32fig2019120128' on page 234 undefined on input lin
-e 2550.
-
-[234]
+ [234]
 Package mdframed Info: mdframed works in twoside mode on input line 2598.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2598.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-170' on page 235 undefined on input lin
-e 2606.
-
-
-LaTeX Warning: Reference `AI32fig2019120129' on page 235 undefined on input lin
-e 2608.
-
 File: figures/Gguijieshu2019112529.PNG Graphic file (type bmp)
 <figures/Gguijieshu2019112529.PNG>
-[235]
+ [235]
 Package mdframed Info: mdframed works in twoside mode on input line 2630.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2630.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-171' on page 236 undefined on input lin
-e 2643.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2651.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2651.
-
-LaTeX Warning: Reference `AI32fig2019120130' on page 236 undefined on input lin
-e 2652.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-172' on page 236 undefined on input lin
-e 2661.
-
 Missing character: There is no ; in font nullfont!
-[236] [237]
+ [236] [237]
 File: figures/1567654649499.png Graphic file (type bmp)
 <figures/1567654649499.png>
 Missing character: There is no 第 in font ntx-Regular-tlf-t1!
@@ -6536,11 +6038,6 @@ Package mdframed Info: mdframed works in twoside mode on input line 2891.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2891.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-173' on page 242 undefined on input lin
-e 2893.
-
 File: figures/Zadel20191218120335.jpg Graphic file (type bmp)
 <figures/Zadel20191218120335.jpg>
 File: figures/AIMIngren20191218120616.jpg Graphic file (type bmp)
@@ -6550,10 +6047,6 @@ Underfull \vbox (badness 3240) has occurred while \output is active []
 
  [242]
 [243]
-
-LaTeX Warning: Reference `wangguojun20191218121937' on page 244 undefined on in
-put line 3009.
-
 File: figures/wangguojun20191218121937.jpg Graphic file (type bmp)
 <figures/wangguojun20191218121937.jpg>
 File: figures/Gyminstall.PNG Graphic file (type bmp)
@@ -6586,72 +6079,36 @@ Package mdframed Info: mdframed works in twoside mode on input line 72.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 72.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-174' on page 251 undefined on input lin
-e 74.
-
-
-LaTeX Warning: Reference `AI32fig2019120222' on page 251 undefined on input lin
-e 91.
-
 File: figures/AI32C42019112501.PNG Graphic file (type bmp)
 <figures/AI32C42019112501.PNG>
 
 Underfull \vbox (badness 3713) has occurred while \output is active []
 
  [251]
-
-LaTeX Warning: Reference `AI32fig2019120223' on page 252 undefined on input lin
-e 111.
-
 Package mdframed Info: mdframed works in twoside mode on input line 116.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 116.
 File: figures/AI32C42019112502.PNG Graphic file (type bmp)
 <figures/AI32C42019112502.PNG>
-
-LaTeX Warning: Reference `mdf@pagelabel-175' on page 252 undefined on input lin
-e 125.
-
-
-LaTeX Warning: Reference `AI32fig2019120223' on page 252 undefined on input lin
-e 128.
-
 Package mdframed Info: mdframed works in twoside mode on input line 131.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 131.
+
 [252]
 Package mdframed Info: Not enough space on this page on input line 139.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-176' on page 253 undefined on input lin
-e 139.
-
-[253]
-
-LaTeX Warning: Reference `Tabexam4.1' on page 254 undefined on input line 186.
-
+ [253]
 Package mdframed Info: mdframed works in twoside mode on input line 204.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 204.
-
-LaTeX Warning: Reference `mdf@pagelabel-177' on page 254 undefined on input lin
-e 206.
-
-[254]
-
-LaTeX Warning: Reference `AI32fig2019120224' on page 255 undefined on input lin
-e 230.
-
+ [254]
 File: figures/AI32C42019112503.PNG Graphic file (type bmp)
 <figures/AI32C42019112503.PNG>
+ [255]
 File: figures/yushu2019112525.PNG Graphic file (type bmp)
 <figures/yushu2019112525.PNG>
-[255]
 File: figures/yushu2019112526.PNG Graphic file (type bmp)
 <figures/yushu2019112526.PNG>
 File: figures/yushu2019112527.PNG Graphic file (type bmp)
@@ -6661,58 +6118,24 @@ Package mdframed Info: mdframed works in twoside mode on input line 309.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 309.
-
-
-LaTeX Warning: Reference `AI32fig28' on page 257 undefined on input line 310.
-
-
-LaTeX Warning: Reference `AI32fig28' on page 257 undefined on input line 310.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-178' on page 257 undefined on input lin
-e 311.
-
 File: figures/yushu2019112528.PNG Graphic file (type bmp)
 <figures/yushu2019112528.PNG>
 Package mdframed Info: mdframed works in twoside mode on input line 324.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 324.
-
-LaTeX Warning: Reference `AI32fig29' on page 257 undefined on input line 325.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-179' on page 257 undefined on input lin
-e 326.
-
 File: figures/yushu2019112529.PNG Graphic file (type bmp)
 <figures/yushu2019112529.PNG>
-
-Underfull \vbox (badness 4531) has occurred while \output is active []
-
  [257]
-
-LaTeX Warning: Reference `AI32fig2019120230' on page 258 undefined on input lin
-e 352.
-
 File: figures/yushu2019112530.PNG Graphic file (type bmp)
 <figures/yushu2019112530.PNG>
-[258] [259]
+ [258] [259]
 Missing character: There is no ② in font ntx-Italic-tlf-t1!
  [260]
 Package mdframed Info: mdframed works in twoside mode on input line 476.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 476.
-
-
-LaTeX Warning: Reference `AI32fig2019120231' on page 261 undefined on input lin
-e 477.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-180' on page 261 undefined on input lin
-e 482.
-
 File: figures/yushu2019112531.PNG Graphic file (type bmp)
 <figures/yushu2019112531.PNG>
 File: figures/yushu2019112532.PNG Graphic file (type bmp)
@@ -6725,34 +6148,14 @@ Package mdframed Info: mdframed works in twoside mode on input line 519.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 519.
-
-
-LaTeX Warning: Reference `AI32fig33' on page 262 undefined on input line 520.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-181' on page 262 undefined on input lin
-e 521.
-
 File: figures/yushu2019112533.PNG Graphic file (type bmp)
 <figures/yushu2019112533.PNG>
+
 [262]
 Package mdframed Info: mdframed works in twoside mode on input line 563.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 563.
-
-
-LaTeX Warning: Reference `AI32fig2019120234' on page 263 undefined on input lin
-e 564.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-182' on page 263 undefined on input lin
-e 566.
-
-
-LaTeX Warning: Reference `AI32fig2019120234' on page 263 undefined on input lin
-e 569.
-
 File: figures/yushu2019112534.PNG Graphic file (type bmp)
 <figures/yushu2019112534.PNG>
 File: figures/yushu2019112535.PNG Graphic file (type bmp)
@@ -6776,19 +6179,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 622.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 622.
-
-
-LaTeX Warning: Reference `AI32fig2019120134' on page 265 undefined on input lin
-e 623.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-183' on page 265 undefined on input lin
-e 628.
-
 File: figures/yushu2019112536.PNG Graphic file (type bmp)
 <figures/yushu2019112536.PNG>
 
-Underfull \vbox (badness 3029) has occurred while \output is active []
+Underfull \vbox (badness 1533) has occurred while \output is active []
 
  [265]
 Package mdframed Info: mdframed works in twoside mode on input line 641.
@@ -6796,31 +6190,14 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 641.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-184' on page 266 undefined on input lin
-e 646.
-
 [266]
 Package mdframed Info: mdframed works in twoside mode on input line 684.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 684.
-
-
-LaTeX Warning: Reference `AI32fig2019120134' on page 267 undefined on input lin
-e 685.
-
-
-LaTeX Warning: Reference `AI32C4exam08' on page 267 undefined on input line 685
-.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-185' on page 267 undefined on input lin
-e 686.
-
 File: figures/yushu2019112538.PNG Graphic file (type bmp)
 <figures/yushu2019112538.PNG>
-[267]
+ [267]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 712.
@@ -6869,43 +6246,23 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 1008.
 [274]
 Package mdframed Info: Not enough space on this page on input line 1008.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-186' on page 275 undefined on input lin
-e 1008.
-
 File: figures/yushu2019112539.PNG Graphic file (type bmp)
 <figures/yushu2019112539.PNG>
 Package mdframed Info: mdframed works in twoside mode on input line 1022.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1022.
-
-LaTeX Warning: Reference `mdf@pagelabel-187' on page 275 undefined on input lin
-e 1024.
-
-
-LaTeX Warning: Reference `AI32fig40' on page 275 undefined on input line 1034.
-
 File: figures/yushu2019112540.PNG Graphic file (type bmp)
 <figures/yushu2019112540.PNG>
-[275] [276]
+ [275] [276]
 Package mdframed Info: mdframed works in twoside mode on input line 1092.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1092.
-
-
-LaTeX Warning: Reference `AI32fig41' on page 277 undefined on input line 1093.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-188' on page 277 undefined on input lin
-e 1094.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[277] [278]
+ [277] [278]
 File: figures/yushu2019112542.PNG Graphic file (type bmp)
 <figures/yushu2019112542.PNG>
  [279]
@@ -6913,33 +6270,20 @@ Package mdframed Info: mdframed works in twoside mode on input line 1270.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1270.
-
-
-LaTeX Warning: Reference `AI32fig43' on page 280 undefined on input line 1271.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-189' on page 280 undefined on input lin
-e 1273.
-
 File: figures/yushu2019112543.PNG Graphic file (type bmp)
 <figures/yushu2019112543.PNG>
-[280] [281]
+ [280] [281]
 Package mdframed Info: mdframed works in twoside mode on input line 1356.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1356.
 File: figures/yushu2019112544.PNG Graphic file (type bmp)
 <figures/yushu2019112544.PNG>
-
-
-LaTeX Warning: Reference `mdf@pagelabel-190' on page 282 undefined on input lin
-e 1364.
-
 File: figures/yushu2019112545.PNG Graphic file (type bmp)
 <figures/yushu2019112545.PNG>
 File: figures/yushu2019112546.PNG Graphic file (type bmp)
 <figures/yushu2019112546.PNG>
-[282]
+ [282]
 File: figures/yushu2019112547.PNG Graphic file (type bmp)
 <figures/yushu2019112547.PNG>
 Package mdframed Info: mdframed works in twoside mode on input line 1408.
@@ -6948,53 +6292,27 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 1408.
  [283]
 Package mdframed Info: Not enough space on this page on input line 1410.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-191' on page 284 undefined on input lin
-e 1410.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1419.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1419.
-
-LaTeX Warning: Reference `mdf@pagelabel-192' on page 284 undefined on input lin
-e 1421.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1425.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1425.
-
-LaTeX Warning: Reference `mdf@pagelabel-193' on page 284 undefined on input lin
-e 1427.
-
-
-LaTeX Warning: Reference `AI32fig001' on page 284 undefined on input line 1484.
-
-
-[284]
+ [284]
 Package mdframed Info: mdframed works in twoside mode on input line 1492.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1492.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-194' on page 285 undefined on input lin
-e 1495.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1510.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1510.
-
-LaTeX Warning: Reference `mdf@pagelabel-195' on page 285 undefined on input lin
-e 1512.
-
 Missing character: There is no ○ in font ntx-Regular-tlf-ot1!
 File: figures/yushu2019112548.PNG Graphic file (type bmp)
 <figures/yushu2019112548.PNG>
-[285]
+ [285]
 
 LaTeX Warning: Reference `AI32fig49 ' on page 286 undefined on input line 1531.
 
@@ -7008,32 +6326,14 @@ Package mdframed Info: mdframed works in twoside mode on input line 1565.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1565.
-
-
-LaTeX Warning: Reference `AI32fig51' on page 287 undefined on input line 1566.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-196' on page 287 undefined on input lin
-e 1567.
-
 File: figures/yushu2019112551.PNG Graphic file (type bmp)
 <figures/yushu2019112551.PNG>
-
-LaTeX Warning: Reference `AI32fig51' on page 287 undefined on input line 1576.
-
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
  [287]
-
-LaTeX Warning: Reference `20200314174705fig51' on page 288 undefined on input l
-ine 1599.
-
 File: figures/20200314174705.png Graphic file (type bmp)
 <figures/20200314174705.png>
-
-LaTeX Warning: Reference `AI32fig51' on page 288 undefined on input line 1609.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -7064,128 +6364,47 @@ master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 ster/5-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AC%AC%E4%BA%94%E7%AB%A0%E7%AC%AC
 %E4%B8%80%E6%AC%A1%20%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD.pdf" in version 0-M.>
 
-\qr@newforcount=\count655
 
-<Calculating QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
+<Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/5-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AC%AC%E4%BA%94%E7%AB%A0%E7%AC%
 AC%E4%B8%80%E6%AC%A1%20%E8%AE%A1%E7%AE%97%E6%99%BA%E8%83%BD.pdf" in version 10-
-M.>
-<Splitting off block 1> <Splitting off block 2> <Splitting off block 3>
-<Splitting off block 4> <Splitting off block 5> <Making error block 1>
-<Making error block 2> <Making error block 3> <Making error block 4>
-<Making error block 5> <Interleaving datablocks of length 43\ and 44:  1, 2,
-3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
-24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,
-43, 44.> <Interleaving errorblocks of length 26:  1, 2, 3, 4, 5, 6, 7, 8, 9,
-10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-.><Interleaving complete.> <Writing data... done.>
-<Applying Mask 0... done. Calculating penalty... penalty is 2742>
-<Applying Mask 1... done. Calculating penalty... penalty is 2453>
-<Applying Mask 2... done. Calculating penalty... penalty is 2523>
-<Applying Mask 3... done. Calculating penalty... penalty is 2657>
-<Applying Mask 4... done. Calculating penalty... penalty is 2701>
-<Applying Mask 5... done. Calculating penalty... penalty is 2736>
-<Applying Mask 6... done. Calculating penalty... penalty is 2789>
-<Applying Mask 7... done. Calculating penalty... penalty is 2628>
-<Selected Mask 1>
-<Encoding and writing format string... done.>
-<Encoding and writing version information... done.>
-<Saving QR code to memory... done.>
-<Writing QR code to aux file... done.>
-<Printing matrix... done.>
-
+M as previously calculated.>
 
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [291]
 [292]
-
-LaTeX Warning: Reference `AI32fig26000001' on page 293 undefined on input line 
-50.
-
 File: figures/AI32C42019112601.PNG Graphic file (type bmp)
 <figures/AI32C42019112601.PNG>
-
-LaTeX Warning: Reference `AI32fig26000001' on page 293 undefined on input line 
-60.
-
 
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
  [293]
 [294]
-
-LaTeX Warning: Reference `AI32fig2602' on page 295 undefined on input line 103.
-
-
 File: figures/AI32C42019112602.PNG Graphic file (type bmp)
 <figures/AI32C42019112602.PNG>
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 112.
-[295]
+ [295]
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
  [296]
-
-LaTeX Warning: Reference `AI32fig2603' on page 297 undefined on input line 162.
-
-
-
-LaTeX Warning: Reference `AI32fig2604' on page 297 undefined on input line 189.
-
-
-
 Underfull \vbox (badness 4229) has occurred while \output is active []
 
  [297]
-[298]
-
-LaTeX Warning: Reference `AI32fig1202105' on page 299 undefined on input line 3
-20.
-
-
-LaTeX Warning: Reference `AI32fig1202205' on page 299 undefined on input line 3
-56.
-
-[299]
-
-LaTeX Warning: Reference `AI32PChapter7' on page 300 undefined on input line 39
-3.
-
-[300]
+[298] [299] [300]
 Package mdframed Info: mdframed works in twoside mode on input line 431.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 431.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-197' on page 301 undefined on input lin
-e 433.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [301]
-
-LaTeX Warning: Reference `AI32fig201912012607' on page 302 undefined on input l
-ine 499.
-
 Package mdframed Info: mdframed works in twoside mode on input line 502.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 502.
-
-LaTeX Warning: Reference `mdf@pagelabel-198' on page 302 undefined on input lin
-e 504.
-
-
-LaTeX Warning: Reference `AI_table2019112902' on page 302 undefined on input li
-ne 506.
-
-
-LaTeX Warning: Reference `AI_table2019112902' on page 302 undefined on input li
-ne 506.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -7195,53 +6414,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 526.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-199' on page 303 undefined on input lin
-e 528.
-
-
-LaTeX Warning: Reference `AI_table2019112902' on page 303 undefined on input li
-ne 549.
-
-
-LaTeX Warning: Reference `Tu9120100511' on page 303 undefined on input line 549
-.
-
-
-LaTeX Warning: Reference `Tu9120100509' on page 303 undefined on input line 594
-.
-
 [303]
-
-LaTeX Warning: Reference `Tu9120100509' on page 304 undefined on input line 644
-.
-
 Package mdframed Info: mdframed works in twoside mode on input line 647.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 647.
-
-LaTeX Warning: Reference `Tu9120100514' on page 304 undefined on input line 648
-.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-200' on page 304 undefined on input lin
-e 709.
-
-
-LaTeX Warning: Reference `Tu9120100514' on page 304 undefined on input line 710
-.
-
-[304]
-
-LaTeX Warning: Reference `Tu9120100515' on page 305 undefined on input line 724
-.
-
-
-LaTeX Warning: Reference `Tu9120100516' on page 305 undefined on input line 771
-.
-
-[305]
+ [304] [305]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [306]
@@ -7250,23 +6428,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 951.
 
-
-LaTeX Warning: Reference `AI32fig201912022608' on page 307 undefined on input l
-ine 952.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-201' on page 307 undefined on input lin
-e 962.
-
 [307]
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 308 undefined on input lin
-e 974.
-
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 308 undefined on input lin
-e 974.
-
 File: figures/OPELM20161021.PNG Graphic file (type bmp)
 <figures/OPELM20161021.PNG>
 
@@ -7275,107 +6437,16 @@ Overfull \hbox (6.44182pt too wide) in paragraph at lines 995--996
  []
 
 [308] [309]
-
-LaTeX Warning: Reference `TROPEMLmodel20161021fig2' on page 310 undefined on in
-put line 1058.
-
 File: figures/TROPEMLmodel20161021.PNG Graphic file (type bmp)
 <figures/TROPEMLmodel20161021.PNG>
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 310 undefined on input lin
-e 1063.
-
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 310 undefined on input lin
-e 1063.
-
-[310]
-
-LaTeX Warning: Reference `AIC5eqn519' on page 311 undefined on input line 1100.
-
-
-[311]
-
-LaTeX Warning: Reference `TROPEMLmodel20161021fig2' on page 312 undefined on in
-put line 1126.
-
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 312 undefined on input lin
-e 1126.
-
-
-LaTeX Warning: Reference `OPELM20161021fig2' on page 312 undefined on input lin
-e 1126.
-
-
-LaTeX Warning: Reference `RVFLNN181102Sys' on page 312 undefined on input line 
-1141.
-
-
-LaTeX Warning: Reference `RVFLNN181102Sys' on page 312 undefined on input line 
-1142.
-
+ [310] [311]
 File: figures/RVFL20181102Sys.PNG Graphic file (type bmp)
 <figures/RVFL20181102Sys.PNG>
-[312]
-
-LaTeX Warning: Reference `RVFL20181102eq9' on page 313 undefined on input line 
-1181.
-
-
-LaTeX Warning: Reference `RVFL20181102eq8' on page 313 undefined on input line 
-1181.
-
-[313]
-
-LaTeX Warning: Reference `RVFL20181102eq10' on page 314 undefined on input line
- 1187.
-
-
-LaTeX Warning: Reference `RVFL20181102eq10' on page 314 undefined on input line
- 1191.
-
-
-LaTeX Warning: Reference `RVFL20181102eq12' on page 314 undefined on input line
- 1204.
-
-
-LaTeX Warning: Reference `RVFL20181102eq13' on page 314 undefined on input line
- 1204.
-
-
-LaTeX Warning: Reference `RVFL20181102eq14' on page 314 undefined on input line
- 1204.
-
-
-LaTeX Warning: Reference `RVFL20181102eq15' on page 314 undefined on input line
- 1209.
-
-
-LaTeX Warning: Reference `RVFL20181102eq12' on page 314 undefined on input line
- 1213.
-
-
-LaTeX Warning: Reference `RVFL20181102eq16' on page 314 undefined on input line
- 1213.
-
-[314]
-
-LaTeX Warning: Reference `TFLN:fig1-2' on page 315 undefined on input line 1237
-.
-
+ [312] [313] [314]
 File: figures/IntervalT2MF.pdf Graphic file (type pdf)
 <use figures/IntervalT2MF.pdf>
-
-LaTeX Warning: Reference `TensorRVFL20180927-2' on page 315 undefined on input 
-line 1254.
-
 Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Reference `TensorRVFL20180927-2' on page 315 undefined on input 
-line 1322.
-
-[315]
+ [315]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 1325.
@@ -7385,14 +6456,6 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 1325.
 
 [316]
-
-LaTeX Warning: Reference `IT2TSKNM_mu1' on page 317 undefined on input line 133
-2.
-
-
-LaTeX Warning: Reference `IT2TSKNM_mu2' on page 317 undefined on input line 133
-2.
-
 Missing character: There is no 、 in font ntx-Regular-tlf-ot1!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -7400,65 +6463,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [317]
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
-
-
-LaTeX Warning: Reference `TensorRVFLEq09' on page 318 undefined on input line 1
-393.
-
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
 
-LaTeX Warning: Reference `TensorRVFLEq09' on page 318 undefined on input line 1
-397.
-
-[318]
-
-LaTeX Warning: Reference `TensorRVFLEq08' on page 319 undefined on input line 1
-426.
-
-
-LaTeX Warning: Reference `T2RVFL3:alg1' on page 319 undefined on input line 146
-5.
-
-[319]
-
-LaTeX Warning: Reference `T2RVFL3:alg1' on page 320 undefined on input line 148
-3.
-
-
-LaTeX Warning: Reference `TensorRVFLEq08' on page 320 undefined on input line 1
-487.
-
-
-LaTeX Warning: Reference `TensorRVFLEq08' on page 320 undefined on input line 1
-492.
-
-
-LaTeX Warning: Reference `TensorRVFLEq08' on page 320 undefined on input line 1
-495.
-
-
-LaTeX Warning: Reference `TensorRVFLEq13' on page 320 undefined on input line 1
-496.
-
-
-LaTeX Warning: Reference `TensorRVFLEq08' on page 320 undefined on input line 1
-497.
-
-[320]
+[318] [319] [320]
 Package mdframed Info: mdframed works in twoside mode on input line 1544.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1544.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-202' on page 321 undefined on input lin
-e 1554.
-
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
-
-LaTeX Warning: Reference `TT2-RVFL181123:Sec4-1' on page 321 undefined on input
- line 1556.
-
 
 Overfull \hbox (0.7522pt too wide) in paragraph at lines 1565--1565
 []|[]| 
@@ -7486,24 +6498,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 1588.
-
-LaTeX Warning: Reference `mdf@pagelabel-203' on page 321 undefined on input lin
-e 1588.
-
 [321]
-
-LaTeX Warning: Reference `mdf@pagelabel-204' on page 322 undefined on input lin
-e 1588.
-
-
-LaTeX Warning: Reference `AIC5exam4.2' on page 322 undefined on input line 1590
-.
-
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
-
-LaTeX Warning: Reference `TT2-RVFL181121:Sec4-2' on page 322 undefined on input
- line 1592.
-
 
 Overfull \hbox (0.7522pt too wide) in paragraph at lines 1601--1601
 []|[]| 
@@ -7525,10 +6521,6 @@ Overfull \hbox (4.93181pt too wide) in paragraph at lines 1609--1609
  []
 
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
-
-LaTeX Warning: Reference `TT2-RVFL181121:Sec4-3' on page 322 undefined on input
- line 1625.
-
 File: figures/nonlinearfunTstRslutsT2RVFL.pdf Graphic file (type pdf)
 <use figures/nonlinearfunTstRslutsT2RVFL.pdf>
 
@@ -7551,73 +6543,43 @@ Overfull \hbox (4.93181pt too wide) in paragraph at lines 1648--1648
 []|[]| 
  []
 
-
-LaTeX Warning: Reference `nonlinearfunTstRslutsT2RVFL-fig4' on page 322 undefin
-ed on input line 1669.
-
 [322] [323]
-
-LaTeX Warning: Reference `TT2-RVFL181116:Sec4-1' on page 324 undefined on input
- line 1722.
-
-
-LaTeX Warning: Reference `TT2-RVFL181116:Sec4-1' on page 324 undefined on input
- line 1722.
-
 Missing character: There is no   in font ntx-Regular-tlf-ot1!
-
-LaTeX Warning: Reference `TT2-RVFL181116:Sec4-1' on page 324 undefined on input
- line 1727.
-
-
-LaTeX Warning: Reference `TT2-RVFL181121:Sec4-2' on page 324 undefined on input
- line 1733.
-
-[324]
+ [324]
 File: figures/NetEvolving2020020401.png Graphic file (type bmp)
 <figures/NetEvolving2020020401.png>
  [325]
-Missing character: There is no 第 in font ntx-Regular-tlf-t1!
-Missing character: There is no 五 in font ntx-Regular-tlf-t1!
-Missing character: There is no 章 in font ntx-Regular-tlf-t1!
+Underfull \vbox (badness 6559) has occurred while \output is active []
+
+ [326]
+Missing character: There is no 进 in font ntx-Regular-tlf-t1!
+Missing character: There is no 化 in font ntx-Regular-tlf-t1!
 Missing character: There is no 计 in font ntx-Regular-tlf-t1!
 Missing character: There is no 算 in font ntx-Regular-tlf-t1!
-Missing character: There is no 智 in font ntx-Regular-tlf-t1!
-Missing character: There is no 能 in font ntx-Regular-tlf-t1!
- [326] [327] [328]
+
+[327]
+Underfull \vbox (badness 6348) has occurred while \output is active []
+
+ [328]
 Package mdframed Info: mdframed works in twoside mode on input line 1874.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1874.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-205' on page 329 undefined on input lin
-e 1876.
-
 [329]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `AI32fig2019120226518' on page 330 undefined on input 
-line 1909.
-
-[330]
+ [330]
 Package mdframed Info: mdframed works in twoside mode on input line 1955.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1955.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-206' on page 331 undefined on input lin
-e 1961.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1966.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1966.
 
-LaTeX Warning: Reference `mdf@pagelabel-207' on page 331 undefined on input lin
-e 1968.
-
-
+[331]
 Overfull \hbox (10.32925pt too wide) in paragraph at lines 1974--1976
 []\TU/SimSun(0)/m/n/12.045 它 有 效 地 解 决 了 汉 明 悬 崖 问 题\T1/ntxtlf/m/n/12.045 , \TU
 /SimSun(0)/m/n/12.045 格 雷 编 码 的 基 本 原 理 如 下\T1/ntxtlf/m/n/12.045 : \TU/SimSun(0
@@ -7630,57 +6592,35 @@ Package mdframed Info: mdframed works in twoside mode on input line 1985.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1985.
-
-LaTeX Warning: Reference `mdf@pagelabel-208' on page 331 undefined on input lin
-e 1987.
-
-[331]
 Package mdframed Info: mdframed works in twoside mode on input line 2009.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2009.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-209' on page 332 undefined on input lin
-e 2015.
-
-[332] [333]
+Missing character: There is no 第 in font ntx-Regular-tlf-t1!
+Missing character: There is no 五 in font ntx-Regular-tlf-t1!
+Missing character: There is no 章 in font ntx-Regular-tlf-t1!
+Missing character: There is no 计 in font ntx-Regular-tlf-t1!
+Missing character: There is no 算 in font ntx-Regular-tlf-t1!
+Missing character: There is no 智 in font ntx-Regular-tlf-t1!
+Missing character: There is no 能 in font ntx-Regular-tlf-t1!
+[332] [333] [334]
 Package mdframed Info: mdframed works in twoside mode on input line 2122.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2122.
-Package mdframed Info: Not enough space on this page on input line 2129.
- [334]
-Package mdframed Info: Not enough space on this page on input line 2129.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-210' on page 335 undefined on input lin
-e 2129.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2134.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2134.
-
-LaTeX Warning: Reference `mdf@pagelabel-211' on page 335 undefined on input lin
-e 2153.
-
+ [335]
 Package mdframed Info: mdframed works in twoside mode on input line 2164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2164.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 2178.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 2178.
-[335]
 
-LaTeX Warning: Reference `mdf@pagelabel-212' on page 336 undefined on input lin
-e 2178.
+Underfull \vbox (badness 3872) has occurred while \output is active []
 
-[336]
+ [336]
 Package mdframed Info: mdframed works in twoside mode on input line 2205.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -7694,168 +6634,71 @@ TU/SimSun(0)/m/it/12.045 以 部 分 离 散 交 叉 为 例\T1/ntxtlf/m/n/12.04
 /m/it/12.045 x[]x[] [] x[] [] x[] [] x[]$
  []
 
-
-LaTeX Warning: Reference `mdf@pagelabel-213' on page 337 undefined on input lin
-e 2218.
-
+[337]
 Package mdframed Info: mdframed works in twoside mode on input line 2232.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2232.
-
-LaTeX Warning: Reference `mdf@pagelabel-214' on page 337 undefined on input lin
-e 2235.
-
-[337]
 Package mdframed Info: mdframed works in twoside mode on input line 2244.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2244.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-215' on page 338 undefined on input lin
-e 2250.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2255.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2255.
-
-LaTeX Warning: Reference `mdf@pagelabel-216' on page 338 undefined on input lin
-e 2261.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2264.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2264.
-
-LaTeX Warning: Reference `mdf@pagelabel-217' on page 338 undefined on input lin
-e 2266.
-
+ [338]
 Package mdframed Info: mdframed works in twoside mode on input line 2276.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2276.
 
-LaTeX Warning: Reference `mdf@pagelabel-218' on page 338 undefined on input lin
-e 2278.
+Underfull \vbox (badness 1466) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `AI_table2019112802' on page 338 undefined on input li
-ne 2293.
-
-[338]
-
-LaTeX Warning: Reference `AI_table2019112804' on page 339 undefined on input li
-ne 2338.
-
-[339]
-
-LaTeX Warning: Reference `AI_table2019112807' on page 340 undefined on input li
-ne 2396.
-
-
-Underfull \vbox (badness 1484) has occurred while \output is active []
-
- [340]
-
-LaTeX Warning: Reference `AI_table2019112808' on page 341 undefined on input li
-ne 2435.
-
-
-LaTeX Warning: Reference `AI_table2019112809' on page 341 undefined on input li
-ne 2475.
-
-
-Underfull \vbox (badness 4441) has occurred while \output is active []
+ [339]
+[340]
+Underfull \vbox (badness 6396) has occurred while \output is active []
 
  [341]
-
-LaTeX Warning: Reference `AI_table2019112810' on page 342 undefined on input li
-ne 2512.
-
-
-LaTeX Warning: Reference `AI_table2019112810' on page 342 undefined on input li
-ne 2532.
-
-[342]
+[342] [343]
 File: figures/GenerationElvovlilng2020020401.png Graphic file (type bmp)
 <figures/GenerationElvovlilng2020020401.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [343]
-
-LaTeX Warning: Reference `IndirectGencode2020020401' on page 344 undefined on i
-nput line 2624.
-
+ [344]
 File: figures/IndirectGencode2020020401.png Graphic file (type bmp)
 <figures/IndirectGencode2020020401.png>
-[344]
+ [345]
 Package mdframed Info: mdframed works in twoside mode on input line 2644.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2644.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-219' on page 345 undefined on input lin
-e 2646.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2663.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2663.
-[345]
-Package mdframed Info: Not enough space on this page on input line 2665.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-220' on page 346 undefined on input lin
-e 2665.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2670.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2670.
-
-LaTeX Warning: Reference `mdf@pagelabel-221' on page 346 undefined on input lin
-e 2672.
-
-
-LaTeX Warning: Reference `Crossovers2020020402' on page 346 undefined on input 
-line 2674.
-
 File: figures/Crossovers2020020402.png Graphic file (type bmp)
 <figures/Crossovers2020020402.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [346]
 Package mdframed Info: mdframed works in twoside mode on input line 2691.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2691.
-[346]
-Package mdframed Info: Not enough space on this page on input line 2695.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-222' on page 347 undefined on input lin
-e 2695.
-
 Package mdframed Info: mdframed works in twoside mode on input line 2697.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2697.
 
-LaTeX Warning: Reference `mdf@pagelabel-223' on page 347 undefined on input lin
-e 2699.
-
-[347]
-
-LaTeX Warning: Reference `fig:FlowchartAQBFA' on page 348 undefined on input li
-ne 2752.
-
-[348] [349]
-
-LaTeX Warning: Reference `Para_QBFASys20150225' on page 350 undefined on input 
-line 2841.
-
-[350]
+[347] [348] [349] [350] [351]
 Overfull \hbox (3.57274pt too wide) in paragraph at lines 2915--2915
 []|$\OML/ntxmi/m/it/12.045 C[]$| 
  []
@@ -7865,44 +6708,7 @@ Underfull \hbox (badness 10000) in alignment at lines 2915--2915
 [][] 
  []
 
-[351]
-
-LaTeX Warning: Reference `QBFA_diffSys1' on page 352 undefined on input line 29
-38.
-
-
-LaTeX Warning: Reference `QBFA_diffSys_alphax' on page 352 undefined on input l
-ine 2956.
-
-
-LaTeX Warning: Reference `CIAQBFA1' on page 352 undefined on input line 2967.
-
-[352]
-
-LaTeX Warning: Reference `AdapchemCI' on page 353 undefined on input line 2972.
-
-
-
-LaTeX Warning: Reference `AdaptQBFA:fig1' on page 353 undefined on input line 2
-976.
-
-
-LaTeX Warning: Reference `AdapchemCI' on page 353 undefined on input line 2976.
-
-
-
-LaTeX Warning: Reference `IAQBFA' on page 353 undefined on input line 2977.
-
-
-LaTeX Warning: Reference `AdapchemCI' on page 353 undefined on input line 2977.
-
-
-
-LaTeX Warning: Reference `IAQBFA0' on page 353 undefined on input line 2981.
-
-
-LaTeX Warning: Reference `IAQBFA' on page 353 undefined on input line 2981.
-
+[352] [353]
 File: figures/AdaptQBFA.pdf Graphic file (type pdf)
 <use figures/AdaptQBFA.pdf>
 File: figures/AQBFA_SDAFlowChart.pdf Graphic file (type pdf)
@@ -7961,27 +6767,7 @@ Overfull \hbox (52.45276pt too wide) in alignment at lines 3058--3058
 [][] 
  []
 
-[353]
-
-LaTeX Warning: Reference `SDAEquation120150221' on page 354 undefined on input 
-line 3090.
-
-
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
- [354]
-
-LaTeX Warning: Text page 355 contains only floats.
-
-[355]
-
-LaTeX Warning: Reference `SDAEquation120150221' on page 356 undefined on input 
-line 3093.
-
-
-LaTeX Warning: Reference `fig:FlowchartAQBFA' on page 356 undefined on input li
-ne 3105.
-
+[354] [355]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.0pt on input line 3109.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -7991,110 +6777,7 @@ Overfull \hbox (21.59161pt too wide) in alignment at lines 3123--3123
 [][][][][] 
  []
 
-
-LaTeX Warning: Reference `IAQBFA' on page 356 undefined on input line 3131.
-
-
-LaTeX Warning: Reference `FAQBFA' on page 356 undefined on input line 3131.
-
-
-LaTeX Warning: Reference `IAQBFA' on page 356 undefined on input line 3131.
-
-
-LaTeX Warning: Reference `FAQBFA' on page 356 undefined on input line 3131.
-
-[356]
-
-LaTeX Warning: Reference `tab:test2' on page 357 undefined on input line 3134.
-
-
-LaTeX Warning: Reference `Tab:CEC05' on page 357 undefined on input line 3134.
-
-
-LaTeX Warning: Reference `tab:test2' on page 357 undefined on input line 3136.
-
-
-LaTeX Warning: Reference `Tab:CEC05' on page 357 undefined on input line 3138.
-
-
-LaTeX Warning: Reference `Tab:CEC05' on page 357 undefined on input line 3138.
-
-
-LaTeX Warning: Reference `Tab:CEC05ofbias' on page 357 undefined on input line 
-3138.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 357 undefined on input line 3143
-.
-
-[357]
-
-LaTeX Warning: Reference `TableDifBFA' on page 358 undefined on input line 3145
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 358 undefined on input line 3145
-.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 358 undefined on input line 3145
-.
-
-
-LaTeX Warning: Reference `Friedman_test' on page 358 undefined on input line 31
-45.
-
-
-LaTeX Warning: Reference `FAQBFA' on page 358 undefined on input line 3145.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 358 undefined on input line
- 3147.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 358 undefined on input line
- 3147.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 358 undefined on input line 3147
-.
-
-
-LaTeX Warning: Reference `Friedman_test' on page 358 undefined on input line 31
-47.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 358 undefined on input line 3147
-.
-
-
-LaTeX Warning: Reference `Friedman_test' on page 358 undefined on input line 31
-47.
-
-
-LaTeX Warning: Reference `IAQBFA' on page 358 undefined on input line 3147.
-
-[358]
+[356] [357] [358] [359]
 Overfull \hbox (3.5091pt too wide) in paragraph at lines 3155--3155
 []|\TU/SimSun(0)/m/n/12.045 函
  []
@@ -8584,7 +7267,7 @@ Overfull \hbox (62.47536pt too wide) in alignment at lines 3209--3231
  [] [] [] [] [] [] [] [] [] 
  []
 
-[359
+[360
 
 ]
 Overfull \hbox (1.16753pt too wide) in paragraph at lines 3231--3231
@@ -8866,7 +7549,7 @@ Overfull \hbox (62.47536pt too wide) in alignment at lines 3252--3273
  [] [] [] [] [] [] [] [] [] 
  []
 
-[360]
+[361]
 Overfull \hbox (3.50908pt too wide) in paragraph at lines 3273--3273
 []|\T1/ntxtlf/m/n/12.045 45| 
  []
@@ -8901,59 +7584,10 @@ Overfull \hbox (62.47536pt too wide) in alignment at lines 3273--3279
  [] [] [] [] [] [] [] [] [] 
  []
 
-[361]
-
-LaTeX Warning: Reference `TableDifBFA' on page 362 undefined on input line 3284
-.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3284.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3284.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 362 undefined on input line 3284
-.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3284.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3284.
-
-
+[362]
 Overfull \hbox (8.78493pt too wide) in alignment at lines 3298--3298
 [][][][][] 
  []
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 362 undefined on input line 3305
-.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3305.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3305.
-
-
-LaTeX Warning: Reference `TableDifBFA' on page 362 undefined on input line 3305
-.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3305.
-
-
-LaTeX Warning: Reference `tab:CEC05results' on page 362 undefined on input line
- 3305.
 
 
 Overfull \hbox (36.05205pt too wide) in alignment at lines 3319--3319
@@ -9165,10 +7799,10 @@ Underfull \hbox (badness 10000) in alignment at lines 3370--3370
 [][][][][][][] 
  []
 
-[362]
+[363]
 File: figures/WPZ20191218122443.jpg Graphic file (type bmp)
 <figures/WPZ20191218122443.jpg>
- [363]
+ [364]
 File: figures/Liuyingmingyuanshi.JPG Graphic file (type bmp)
 <figures/Liuyingmingyuanshi.JPG>
 File: figures/IFSA1983.JPG Graphic file (type bmp)
@@ -9176,25 +7810,17 @@ File: figures/IFSA1983.JPG Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [364]
+ [365]
 Package mdframed Info: mdframed works in twoside mode on input line 3794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3794.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-224' on page 365 undefined on input lin
-e 3796.
-
-[365]
+[366]
 Package mdframed Info: mdframed works in twoside mode on input line 3831.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3831.
-
-
-LaTeX Warning: Reference `AIC5Fuzzyexam551' on page 366 undefined on input line
- 3832.
 
 
 Package mdframed Warning: You got a bad break
@@ -9206,100 +7832,52 @@ Package mdframed Warning: You got a bad break
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 3844.
-
-LaTeX Warning: Reference `mdf@pagelabel-225' on page 366 undefined on input lin
-e 3844.
-
-[366]
+[367]
 
 Package mdframed Warning: You got a bad break
 (mdframed)                because the last split box is empty
 (mdframed)                You have to change the settings on input line 3844.
 
-
-LaTeX Warning: Reference `mdf@pagelabel-226' on page 367 undefined on input lin
-e 3844.
-
 Package mdframed Info: mdframed works in twoside mode on input line 3851.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3851.
-
-LaTeX Warning: Reference `mdf@pagelabel-227' on page 367 undefined on input lin
-e 3861.
-
-[367]
+[368]
 Package mdframed Info: mdframed works in twoside mode on input line 3904.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3904.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-228' on page 368 undefined on input lin
-e 3917.
-
 Package mdframed Info: mdframed works in twoside mode on input line 3939.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3939.
-
-LaTeX Warning: Reference `mdf@pagelabel-229' on page 368 undefined on input lin
-e 3948.
-
-[368]
-
-LaTeX Warning: Reference `mdf@pagelabel-230' on page 369 undefined on input lin
-e 3948.
-
+ [369]
 Package mdframed Info: mdframed works in twoside mode on input line 3969.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3969.
-
-LaTeX Warning: Reference `mdf@pagelabel-231' on page 369 undefined on input lin
-e 3990.
-
 Package mdframed Info: mdframed works in twoside mode on input line 4003.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4003.
-[369]
+ [370]
 Package mdframed Info: Not enough space on this page on input line 4023.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-232' on page 370 undefined on input lin
-e 4023.
-
 Package mdframed Info: mdframed works in twoside mode on input line 4030.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4030.
-
-LaTeX Warning: Reference `mdf@pagelabel-233' on page 370 undefined on input lin
-e 4048.
-
 Missing character: There is no π in font ntxmi!
-
-LaTeX Warning: Reference `tab:test2' on page 370 undefined on input line 4068.
-
-
-LaTeX Warning: Reference `Tab:CEC05' on page 370 undefined on input line 4068.
-
-[370] [371]
+ [371] [372]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [372]
+ [373]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [373])
-[374] [375]
+ [374])
+[375] [376]
 \openout2 = `tex/chapter6.aux'.
 
- (./tex/chapter6.tex [376
-
-
-
-]
+ (./tex/chapter6.tex
 第六章
 File: figures/KRR20191218002.jpg Graphic file (type bmp)
 <figures/KRR20191218002.jpg>
@@ -9311,7 +7889,11 @@ ster/AIMaster2020.pdf" in version 0-M.>
 
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
-[377] [378]
+[377
+
+
+
+] [378]
 File: figures/AI32C42019112618.PNG Graphic file (type bmp)
 <figures/AI32C42019112618.PNG>
  [379]
@@ -9319,19 +7901,10 @@ Package mdframed Info: mdframed works in twoside mode on input line 98.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 98.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-234' on page 380 undefined on input lin
-e 100.
-
 Package mdframed Info: mdframed works in twoside mode on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 107.
-
-LaTeX Warning: Reference `mdf@pagelabel-235' on page 380 undefined on input lin
-e 109.
-
 Package mdframed Info: mdframed works in twoside mode on input line 137.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9339,23 +7912,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 147.
-
-LaTeX Warning: Reference `mdf@pagelabel-236' on page 380 undefined on input lin
-e 147.
-
-[380]
-
-LaTeX Warning: Reference `mdf@pagelabel-237' on page 381 undefined on input lin
-e 147.
-
+ [380]
 Package mdframed Info: mdframed works in twoside mode on input line 169.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 169.
-
-LaTeX Warning: Reference `mdf@pagelabel-238' on page 381 undefined on input lin
-e 172.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -9365,20 +7926,11 @@ Package mdframed Info: mdframed works in twoside mode on input line 225.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 225.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-239' on page 383 undefined on input lin
-e 227.
-
 Package mdframed Info: mdframed works in twoside mode on input line 251.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 251.
-
-LaTeX Warning: Reference `mdf@pagelabel-240' on page 383 undefined on input lin
-e 257.
-
-[383]
+ [383]
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 时 in font ntx-Regular-tlf-ot1!
  [384] [385]
@@ -9399,152 +7951,61 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 462.
  [387]
 Package mdframed Info: Not enough space on this page on input line 462.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-241' on page 388 undefined on input lin
-e 462.
-
-[388]
-
-LaTeX Warning: Reference `AI32C6Sec6.3' on page 389 undefined on input line 527
-.
-
-[389]
-
-LaTeX Warning: Reference `AI32C6eq6.28' on page 390 undefined on input line 551
-.
-
-
-LaTeX Warning: Reference `AI32C6eq6.30' on page 390 undefined on input line 551
-.
-
-
-LaTeX Warning: Reference `AI32C6eq6.35' on page 390 undefined on input line 568
-.
-
-
-LaTeX Warning: Reference `AI32C6eq6.37' on page 390 undefined on input line 568
-.
-
-[390]
+ [388] [389] [390]
 Missing character: There is no Ω in font ntx-Regular-tlf-t1!
 Package mdframed Info: mdframed works in twoside mode on input line 581.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 581.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-242' on page 391 undefined on input lin
-e 583.
-
 Package mdframed Info: mdframed works in twoside mode on input line 594.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 594.
-
-LaTeX Warning: Reference `mdf@pagelabel-243' on page 391 undefined on input lin
-e 600.
-
 Package mdframed Info: mdframed works in twoside mode on input line 603.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 603.
-
-LaTeX Warning: Reference `mdf@pagelabel-244' on page 391 undefined on input lin
-e 611.
-
-[391]
+ [391]
 Package mdframed Info: mdframed works in twoside mode on input line 622.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 622.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-245' on page 392 undefined on input lin
-e 630.
-
 Package mdframed Info: mdframed works in twoside mode on input line 634.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 634.
-
-LaTeX Warning: Reference `AIC6exam6.17' on page 392 undefined on input line 635
-.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-246' on page 392 undefined on input lin
-e 640.
-
 Package mdframed Info: mdframed works in twoside mode on input line 652.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 652.
-
-LaTeX Warning: Reference `AIC6exam6.25' on page 392 undefined on input line 653
-.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-247' on page 392 undefined on input lin
-e 666.
-
 Package mdframed Info: mdframed works in twoside mode on input line 668.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 668.
-
-LaTeX Warning: Reference `AIC6exam6.17' on page 392 undefined on input line 669
-.
-
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 677.
-[392]
-
-LaTeX Warning: Reference `mdf@pagelabel-248' on page 393 undefined on input lin
-e 677.
-
+ [392]
 Package mdframed Info: mdframed works in twoside mode on input line 690.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 690.
-
-LaTeX Warning: Reference `AIC6exam6.17' on page 393 undefined on input line 691
-.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-249' on page 393 undefined on input lin
-e 697.
-
 Package mdframed Info: mdframed works in twoside mode on input line 699.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 699.
-
-LaTeX Warning: Reference `mdf@pagelabel-250' on page 393 undefined on input lin
-e 705.
-
-[393]
+ [393]
 Package mdframed Info: mdframed works in twoside mode on input line 745.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 745.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-251' on page 394 undefined on input lin
-e 751.
-
-[394]
+ [394]
 Package mdframed Info: mdframed works in twoside mode on input line 776.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 776.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-252' on page 395 undefined on input lin
-e 787.
-
 Package mdframed Info: mdframed works in twoside mode on input line 811.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -9552,34 +8013,16 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 818.
-[395]
-
-LaTeX Warning: Reference `mdf@pagelabel-253' on page 396 undefined on input lin
-e 818.
-
-[396]
+ [395] [396]
 Package mdframed Info: mdframed works in twoside mode on input line 875.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 875.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-254' on page 397 undefined on input lin
-e 881.
-
-
-LaTeX Warning: Reference `myprop6.1' on page 397 undefined on input line 906.
-
-[397]
+ [397]
 Package mdframed Info: mdframed works in twoside mode on input line 913.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 913.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-255' on page 398 undefined on input lin
-e 920.
-
 
 Underfull \vbox (badness 3965) has occurred while \output is active []
 
@@ -9596,41 +8039,18 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 996.
-
-LaTeX Warning: Reference `mdf@pagelabel-256' on page 399 undefined on input lin
-e 996.
-
-[399]
-
-LaTeX Warning: Reference `mdf@pagelabel-257' on page 400 undefined on input lin
-e 996.
-
-[400]
+[399] [400]
 Package mdframed Info: mdframed works in twoside mode on input line 1069.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1069.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-258' on page 401 undefined on input lin
-e 1081.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1096.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1096.
 Package mdframed Info: Not enough space on this page on input line 1110.
-[401]
+ [401]
 Package mdframed Info: Not enough space on this page on input line 1110.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-259' on page 402 undefined on input lin
-e 1110.
-
-
-LaTeX Warning: Reference `AI32fig2808' on page 402 undefined on input line 1113
-.
-
 File: figures/AI32C42019112808.PNG Graphic file (type bmp)
 <figures/AI32C42019112808.PNG>
 
@@ -9642,46 +8062,24 @@ Package mdframed Info: mdframed works in twoside mode on input line 1207.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1207.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-260' on page 405 undefined on input lin
-e 1209.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1237.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1237.
-
-LaTeX Warning: Reference `mdf@pagelabel-261' on page 405 undefined on input lin
-e 1243.
-
-[405]
+ [405]
 Package mdframed Info: mdframed works in twoside mode on input line 1277.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1277.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-262' on page 406 undefined on input lin
-e 1291.
-
-[406]
+ [406]
 Package mdframed Info: mdframed works in twoside mode on input line 1312.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1312.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-263' on page 407 undefined on input lin
-e 1323.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1336.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1336.
-
-LaTeX Warning: Reference `AIC6exam6.53' on page 407 undefined on input line 133
-7.
 
 
 Package mdframed Warning: You got a bad break
@@ -9693,99 +8091,36 @@ Package mdframed Warning: You got a bad break
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 1345.
-
-LaTeX Warning: Reference `mdf@pagelabel-264' on page 407 undefined on input lin
-e 1345.
-
 [407]
-
-LaTeX Warning: Reference `mdf@pagelabel-265' on page 408 undefined on input lin
-e 1345.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1362.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1362.
-
-LaTeX Warning: Reference `mdf@pagelabel-266' on page 408 undefined on input lin
-e 1368.
-
 Package mdframed Info: mdframed works in twoside mode on input line 1390.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1390.
-
-LaTeX Warning: Reference `AIFuzzyexamp654' on page 408 undefined on input line 
-1391.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-267' on page 408 undefined on input lin
-e 1401.
-
-[408]
-
-LaTeX Warning: Reference `mdf@pagelabel-268' on page 409 undefined on input lin
-e 1401.
-
+ [408]
 Package mdframed Info: mdframed works in twoside mode on input line 1422.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1422.
-
-LaTeX Warning: Reference `AIFuzzyexamp654' on page 409 undefined on input line 
-1423.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-269' on page 409 undefined on input lin
-e 1438.
-
-[409]
+ [409]
 Package mdframed Info: mdframed works in twoside mode on input line 1466.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1466.
-
-
-LaTeX Warning: Reference `AIFuzzyexamp654' on page 410 undefined on input line 
-1467.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-270' on page 410 undefined on input lin
-e 1468.
-
-
-LaTeX Warning: Reference `AIFuzzyexamp660' on page 410 undefined on input line 
-1471.
-
-
-LaTeX Warning: Reference `AIFuzzyexamp654' on page 410 undefined on input line 
-1471.
-
-[410]
+ [410]
 Package mdframed Info: mdframed works in twoside mode on input line 1508.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1508.
-
-
-LaTeX Warning: Reference `AIFuzzyexamp654' on page 411 undefined on input line 
-1509.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-271' on page 411 undefined on input lin
-e 1510.
-
-[411]
+ [411]
 Package mdframed Info: mdframed works in twoside mode on input line 1581.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1581.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-272' on page 412 undefined on input lin
-e 1583.
-
-[412]
+ [412]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [413])
@@ -9813,391 +8148,186 @@ Underfull \vbox (badness 2547) has occurred while \output is active []
 
 ]
 [416]
-
-LaTeX Warning: Reference `AI32fig2019121501' on page 417 undefined on input lin
-e 82.
-
 File: figures/t2019121500001.PNG Graphic file (type bmp)
 <figures/t2019121500001.PNG>
-[417]
-
-LaTeX Warning: Reference `AI32fig2701' on page 418 undefined on input line 111.
-
-
-[418]
+ [417] [418]
 File: figures/zhengxiangtuili2019112702.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112702.PNG>
  [419] [420]
-Package mdframed Info: mdframed works in twoside mode on input line 276.
+Package mdframed Info: mdframed works in twoside mode on input line 280.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 276.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-273' on page 421 undefined on input lin
-e 281.
-
-Package mdframed Info: mdframed works in twoside mode on input line 288.
+(mdframed)              on input line 280.
+Package mdframed Info: mdframed works in twoside mode on input line 292.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 288.
-
-LaTeX Warning: Reference `mdf@pagelabel-274' on page 421 undefined on input lin
-e 292.
-
-Package mdframed Info: mdframed works in twoside mode on input line 297.
+(mdframed)              on input line 292.
+Package mdframed Info: mdframed works in twoside mode on input line 301.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 297.
-
-LaTeX Warning: Reference `mdf@pagelabel-275' on page 421 undefined on input lin
-e 304.
-
-[421]
-
-LaTeX Warning: Reference `mdf@pagelabel-276' on page 422 undefined on input lin
-e 304.
-
-Package mdframed Info: mdframed works in twoside mode on input line 315.
+(mdframed)              on input line 301.
+ [421]
+Package mdframed Info: mdframed works in twoside mode on input line 319.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 315.
-
-LaTeX Warning: Reference `mdf@pagelabel-277' on page 422 undefined on input lin
-e 328.
-
-Package mdframed Info: mdframed works in twoside mode on input line 333.
+(mdframed)              on input line 319.
+Package mdframed Info: mdframed works in twoside mode on input line 337.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 333.
-
-LaTeX Warning: Reference `mdf@pagelabel-278' on page 422 undefined on input lin
-e 347.
-
-Package mdframed Info: mdframed works in twoside mode on input line 351.
+(mdframed)              on input line 337.
+Package mdframed Info: mdframed works in twoside mode on input line 355.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 351.
-
-LaTeX Warning: Reference `mdf@pagelabel-279' on page 422 undefined on input lin
-e 360.
-
-[422]
-Package mdframed Info: mdframed works in twoside mode on input line 377.
+(mdframed)              on input line 355.
+ [422]
+Package mdframed Info: mdframed works in twoside mode on input line 381.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 377.
-
-
-LaTeX Warning: Reference `AIC7MLexam7.7' on page 423 undefined on input line 37
-8.
-
-
-LaTeX Warning: Reference `AIC7MLexam7.8' on page 423 undefined on input line 37
-8.
-
-
-LaTeX Warning: Reference `AIC7MLexam7.9' on page 423 undefined on input line 37
-8.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-280' on page 423 undefined on input lin
-e 383.
-
-
-LaTeX Warning: Reference `AIC7MLexam7.8' on page 423 undefined on input line 38
-4.
-
-
-LaTeX Warning: Reference `AI32fig2704' on page 423 undefined on input line 397.
-
-
+(mdframed)              on input line 381.
 File: figures/zhengxiangtuili2019112704.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112704.PNG>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [423]
-
-LaTeX Warning: Reference `AI32fig2704' on page 424 undefined on input line 409.
-
-
 [424]
-Package mdframed Info: mdframed works in twoside mode on input line 462.
+Package mdframed Info: mdframed works in twoside mode on input line 466.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 462.
+(mdframed)              on input line 466.
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
 Missing character: There is no 　 in font ntx-Regular-tlf-ot1!
-
-
-LaTeX Warning: Reference `mdf@pagelabel-281' on page 425 undefined on input lin
-e 478.
-
-
-LaTeX Warning: Reference `AItable20122435' on page 425 undefined on input line 
-480.
-
-[425] [426]
+ [425] [426]
 Missing character: There is no – in font ntx-Regular-tlf-ot1!
 Missing character: There is no – in font ntx-Regular-tlf-ot1!
-
-
-LaTeX Warning: Reference `EntropyAIC67.7' on page 427 undefined on input line 5
-58.
-
-
-LaTeX Warning: Reference `bufenjueceshu2019112901' on page 427 undefined on inp
-ut line 566.
-
-[427]
-
-LaTeX Warning: Reference `bufenjueceshu2019112902' on page 428 undefined on inp
-ut line 602.
-
-
-LaTeX Warning: Reference `bufenjueceshu2019112901' on page 428 undefined on inp
-ut line 603.
-
+ [427]
 File: figures/bufenjueceshu20191130.png Graphic file (type bmp)
 <figures/bufenjueceshu20191130.png>
-
-LaTeX Warning: Reference `AI32fig2705' on page 428 undefined on input line 615.
-
-
-[428]
+ [428]
 File: figures/zhengxiangtuili2019112705.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112705.PNG>
 File: figures/zhengxiangtuili2019112706.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112706.PNG>
  [429]
-Package mdframed Info: mdframed works in twoside mode on input line 688.
+Package mdframed Info: mdframed works in twoside mode on input line 692.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 688.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-282' on page 430 undefined on input lin
-e 703.
-
-[430]
-
-LaTeX Warning: Reference `AIC7exam7.14' on page 431 undefined on input line 731
-.
-
-
-LaTeX Warning: Reference `AI32fig2707' on page 431 undefined on input line 731.
-
-
+(mdframed)              on input line 692.
+ [430]
 File: figures/zhengxiangtuili2019112707.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112707.PNG>
-
-LaTeX Warning: Reference `AI32fig2707' on page 431 undefined on input line 744.
-
-
 File: figures/zhengxiangtuili2019112708.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112708.PNG>
-[431] [432] [433] [434]
-Package mdframed Info: mdframed works in twoside mode on input line 878.
+ [431] [432] [433] [434]
+Package mdframed Info: mdframed works in twoside mode on input line 882.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 878.
-Package mdframed Info: Not enough space on this page on input line 880.
+(mdframed)              on input line 882.
+Package mdframed Info: Not enough space on this page on input line 884.
  [435]
-Package mdframed Info: Not enough space on this page on input line 880.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-283' on page 436 undefined on input lin
-e 880.
+Package mdframed Info: Not enough space on this page on input line 884.
 
 [436] [437] [438]
-
-LaTeX Warning: Reference `MultilayerPercepton020201' on page 439 undefined on i
-nput line 1059.
-
 File: figures/MultilayerPercepton020201.jpg Graphic file (type bmp)
 <figures/MultilayerPercepton020201.jpg>
-[439] [440]
-Package mdframed Info: mdframed works in twoside mode on input line 1125.
+ [439] [440]
+Package mdframed Info: mdframed works in twoside mode on input line 1129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1125.
+(mdframed)              on input line 1129.
 
 
 LaTeX Warning: Reference `{HopfieldNet714}, 需重绘' on page 441 undefined on input
- line 1126.
+ line 1130.
 
 File: figures/HopfieldNet714.pdf Graphic file (type pdf)
 <use figures/HopfieldNet714.pdf>
-Package mdframed Info: Not enough space on this page on input line 1146.
+Package mdframed Info: Not enough space on this page on input line 1150.
 [441]
-Package mdframed Info: Not enough space on this page on input line 1146.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-284' on page 442 undefined on input lin
-e 1146.
-
+Package mdframed Info: Not enough space on this page on input line 1150.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [442]
 [443]
-Package mdframed Info: mdframed works in twoside mode on input line 1228.
+Package mdframed Info: mdframed works in twoside mode on input line 1232.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1228.
-
-
-LaTeX Warning: Reference `AI32Adboostplane' on page 444 undefined on input line
- 1231.
-
-
-LaTeX Warning: Reference `AI32Adboostplane' on page 444 undefined on input line
- 1236.
-
+(mdframed)              on input line 1232.
 File: figures/Adboostplane.PNG Graphic file (type bmp)
 <figures/Adboostplane.PNG>
-[444]
-Package mdframed Info: Not enough space on this page on input line 1250.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-285' on page 445 undefined on input lin
-e 1250.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1252.
+ [444]
+Package mdframed Info: Not enough space on this page on input line 1254.
+Package mdframed Info: mdframed works in twoside mode on input line 1256.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1252.
+(mdframed)              on input line 1256.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [445]
-Package mdframed Info: Not enough space on this page on input line 1254.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-286' on page 446 undefined on input lin
-e 1254.
+Package mdframed Info: Not enough space on this page on input line 1258.
 
 [446]
-
-LaTeX Warning: Reference `AI32fig2019121502' on page 447 undefined on input lin
-e 1300.
-
 File: figures/t2019121500002.PNG Graphic file (type bmp)
 <figures/t2019121500002.PNG>
-
-LaTeX Warning: Reference `MultilayerPercepton020201' on page 447 undefined on i
-nput line 1312.
-
-
-LaTeX Warning: Reference `DNNVSOtherNN' on page 447 undefined on input line 131
-3.
-
 File: figures/DNNVSOtherNN.png Graphic file (type bmp)
 <figures/DNNVSOtherNN.png>
-[447]
+ [447]
 File: figures/DNN1912180.png Graphic file (type bmp)
 <figures/DNN1912180.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [448]
-
-LaTeX Warning: Reference `DNN191225001' on page 449 undefined on input line 134
-4.
-
 File: figures/DNN191225001.JPG Graphic file (type bmp)
 <figures/DNN191225001.JPG>
 
-LaTeX Warning: Reference `DNN191218121500010' on page 449 undefined on input li
-ne 1356.
-
-
-LaTeX Warning: Reference `DNN191218121500011' on page 449 undefined on input li
-ne 1356.
-
 [449]
-Package mdframed Info: mdframed works in twoside mode on input line 1370.
+Package mdframed Info: mdframed works in twoside mode on input line 1374.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1370.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-287' on page 450 undefined on input lin
-e 1372.
-
+(mdframed)              on input line 1374.
 File: figures/DNN1912181.png Graphic file (type bmp)
 <figures/DNN1912181.png>
-
-LaTeX Warning: Reference `Densetransferflag03220304' on page 450 undefined on i
-nput line 1388.
-
 File: figures/Densetransferflag0322.png Graphic file (type bmp)
 <figures/Densetransferflag0322.png>
-[450]
-
-LaTeX Warning: Reference `DNNDesigner20200304' on page 451 undefined on input l
-ine 1397.
-
+ [450]
 File: figures/DNNDesigner.pdf Graphic file (type pdf)
 <use figures/DNNDesigner.pdf>
-
-LaTeX Warning: Reference `AutoML2019fig2702' on page 451 undefined on input lin
-e 1409.
-
 File: figures/AutoML20191218110118.jpg Graphic file (type bmp)
 <figures/AutoML20191218110118.jpg>
-[451]
+ [451]
 File: figures/pandamatlab2020032501.PNG Graphic file (type bmp)
 <figures/pandamatlab2020032501.PNG>
 
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
  [452]
-
-LaTeX Warning: Reference `20170105154423858' on page 453 undefined on input lin
-e 1469.
-
 File: figures/20170105154423858.png Graphic file (type bmp)
 <figures/20170105154423858.png>
+
 [453]
-
-LaTeX Warning: Reference `ResidualNND2020202002' on page 454 undefined on input
- line 1485.
-
 File: figures/ResidualNND2020202002.PNG Graphic file (type bmp)
 <figures/ResidualNND2020202002.PNG>
-
-LaTeX Warning: Reference `DRL2020020301' on page 454 undefined on input line 14
-96.
-
 File: figures/DRL2020020301.PNG Graphic file (type bmp)
 <figures/DRL2020020301.PNG>
-[454] [455]
-Package mdframed Info: mdframed works in twoside mode on input line 1527.
+ [454] [455]
+Package mdframed Info: mdframed works in twoside mode on input line 1531.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1527.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-288' on page 456 undefined on input lin
-e 1531.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1533.
+(mdframed)              on input line 1531.
+Package mdframed Info: mdframed works in twoside mode on input line 1537.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1533.
-
-LaTeX Warning: Reference `mdf@pagelabel-289' on page 456 undefined on input lin
-e 1536.
-
+(mdframed)              on input line 1537.
 File: figures/RNNAPP2019121500006.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500006.PNG>
-[456]
+ [456]
 File: figures/20190322141457724.PNG Graphic file (type bmp)
 <figures/20190322141457724.PNG>
 File: figures/RNNAPP2019121500007.PNG Graphic file (type bmp)
@@ -10205,47 +8335,25 @@ File: figures/RNNAPP2019121500007.PNG Graphic file (type bmp)
 File: figures/RNNAPP2019121500008.PNG Graphic file (type bmp)
 <figures/RNNAPP2019121500008.PNG>
  [457] [458]
-Package mdframed Info: mdframed works in twoside mode on input line 1638.
+Package mdframed Info: mdframed works in twoside mode on input line 1642.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1638.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-290' on page 459 undefined on input lin
-e 1642.
-
-[459]
-Package mdframed Info: mdframed works in twoside mode on input line 1650.
+(mdframed)              on input line 1642.
+ [459]
+Package mdframed Info: mdframed works in twoside mode on input line 1654.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1650.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-291' on page 460 undefined on input lin
-e 1652.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1656.
+(mdframed)              on input line 1654.
+Package mdframed Info: mdframed works in twoside mode on input line 1660.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1656.
-
-LaTeX Warning: Reference `mdf@pagelabel-292' on page 460 undefined on input lin
-e 1659.
-
-[460]
-
-LaTeX Warning: Reference `mdf@pagelabel-293' on page 461 undefined on input lin
-e 1659.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1662.
+(mdframed)              on input line 1660.
+ [460]
+Package mdframed Info: mdframed works in twoside mode on input line 1666.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1662.
-
-LaTeX Warning: Reference `mdf@pagelabel-294' on page 461 undefined on input lin
-e 1665.
-
-[461] [462]
+(mdframed)              on input line 1666.
+ [461] [462]
 File: figures/DNNUlabelSet.JPG Graphic file (type bmp)
 <figures/DNNUlabelSet.JPG>
 File: figures/GPUCloud.JPG Graphic file (type bmp)
@@ -10255,17 +8363,13 @@ File: figures/AleNet130.JPG Graphic file (type bmp)
 <figures/AleNet130.JPG>
 File: figures/CNNAPP201912150001.PNG Graphic file (type bmp)
 <figures/CNNAPP201912150001.PNG>
-
-
-LaTeX Warning: Reference `anim@abspage2' on page 464 undefined on input line 17
-65.
-
 File: gif2pnffolder/ConvolutionOP02031.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02031.png>
-<a2,fr0>
+ <a2,fr0>
 File: gif2pnffolder/ConvolutionOP02032.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02032.png>
- <a2,fr1>
+
+<a2,fr1>
 File: gif2pnffolder/ConvolutionOP02033.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02033.png>
  <a2,fr2>
@@ -10286,11 +8390,11 @@ File: gif2pnffolder/ConvolutionOP02038.png Graphic file (type bmp)
  <a2,fr7>
 File: gif2pnffolder/ConvolutionOP02039.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP02039.png>
-
-<a2,fr8>
+ <a2,fr8>
 File: gif2pnffolder/ConvolutionOP020310.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020310.png>
- <a2,fr9>
+
+<a2,fr9>
 File: gif2pnffolder/ConvolutionOP020311.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020311.png>
  <a2,fr10>
@@ -10311,11 +8415,11 @@ File: gif2pnffolder/ConvolutionOP020316.png Graphic file (type bmp)
  <a2,fr15>
 File: gif2pnffolder/ConvolutionOP020317.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020317.png>
-
-<a2,fr16>
+ <a2,fr16>
 File: gif2pnffolder/ConvolutionOP020318.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020318.png>
- <a2,fr17>
+
+<a2,fr17>
 File: gif2pnffolder/ConvolutionOP020319.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020319.png>
  <a2,fr18>
@@ -10333,11 +8437,11 @@ File: gif2pnffolder/ConvolutionOP020323.png Graphic file (type bmp)
  <a2,fr22>
 File: gif2pnffolder/ConvolutionOP020324.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020324.png>
-
-<a2,fr23>
+ <a2,fr23>
 File: gif2pnffolder/ConvolutionOP020325.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020325.png>
- <a2,fr24>
+
+<a2,fr24>
 File: gif2pnffolder/ConvolutionOP020326.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020326.png>
  <a2,fr25>
@@ -10355,11 +8459,11 @@ File: gif2pnffolder/ConvolutionOP020330.png Graphic file (type bmp)
  <a2,fr29>
 File: gif2pnffolder/ConvolutionOP020331.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020331.png>
-
-<a2,fr30>
+ <a2,fr30>
 File: gif2pnffolder/ConvolutionOP020332.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020332.png>
- <a2,fr31>
+
+<a2,fr31>
 File: gif2pnffolder/ConvolutionOP020333.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020333.png>
  <a2,fr32>
@@ -10377,11 +8481,11 @@ File: gif2pnffolder/ConvolutionOP020337.png Graphic file (type bmp)
  <a2,fr36>
 File: gif2pnffolder/ConvolutionOP020338.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020338.png>
-
-<a2,fr37>
+ <a2,fr37>
 File: gif2pnffolder/ConvolutionOP020339.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020339.png>
- <a2,fr38>
+
+<a2,fr38>
 File: gif2pnffolder/ConvolutionOP020340.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020340.png>
  <a2,fr39>
@@ -10399,11 +8503,11 @@ File: gif2pnffolder/ConvolutionOP020344.png Graphic file (type bmp)
  <a2,fr43>
 File: gif2pnffolder/ConvolutionOP020345.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020345.png>
-
-<a2,fr44>
+ <a2,fr44>
 File: gif2pnffolder/ConvolutionOP020346.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020346.png>
- <a2,fr45>
+
+<a2,fr45>
 File: gif2pnffolder/ConvolutionOP020347.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020347.png>
  <a2,fr46>
@@ -10421,11 +8525,11 @@ File: gif2pnffolder/ConvolutionOP020351.png Graphic file (type bmp)
  <a2,fr50>
 File: gif2pnffolder/ConvolutionOP020352.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020352.png>
-
-<a2,fr51>
+ <a2,fr51>
 File: gif2pnffolder/ConvolutionOP020353.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020353.png>
- <a2,fr52>
+
+<a2,fr52>
 File: gif2pnffolder/ConvolutionOP020354.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020354.png>
  <a2,fr53>
@@ -10443,11 +8547,11 @@ File: gif2pnffolder/ConvolutionOP020358.png Graphic file (type bmp)
  <a2,fr57>
 File: gif2pnffolder/ConvolutionOP020359.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020359.png>
-
-<a2,fr58>
+ <a2,fr58>
 File: gif2pnffolder/ConvolutionOP020360.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020360.png>
- <a2,fr59>
+
+<a2,fr59>
 File: gif2pnffolder/ConvolutionOP020361.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020361.png>
  <a2,fr60>
@@ -10465,11 +8569,11 @@ File: gif2pnffolder/ConvolutionOP020365.png Graphic file (type bmp)
  <a2,fr64>
 File: gif2pnffolder/ConvolutionOP020366.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020366.png>
-
-<a2,fr65>
+ <a2,fr65>
 File: gif2pnffolder/ConvolutionOP020367.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020367.png>
- <a2,fr66>
+
+<a2,fr66>
 File: gif2pnffolder/ConvolutionOP020368.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020368.png>
  <a2,fr67>
@@ -10487,11 +8591,11 @@ File: gif2pnffolder/ConvolutionOP020372.png Graphic file (type bmp)
  <a2,fr71>
 File: gif2pnffolder/ConvolutionOP020373.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020373.png>
-
-<a2,fr72>
+ <a2,fr72>
 File: gif2pnffolder/ConvolutionOP020374.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020374.png>
- <a2,fr73>
+
+<a2,fr73>
 File: gif2pnffolder/ConvolutionOP020375.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020375.png>
  <a2,fr74>
@@ -10509,11 +8613,11 @@ File: gif2pnffolder/ConvolutionOP020379.png Graphic file (type bmp)
  <a2,fr78>
 File: gif2pnffolder/ConvolutionOP020380.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020380.png>
-
-<a2,fr79>
+ <a2,fr79>
 File: gif2pnffolder/ConvolutionOP020381.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020381.png>
- <a2,fr80>
+
+<a2,fr80>
 File: gif2pnffolder/ConvolutionOP020382.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020382.png>
  <a2,fr81>
@@ -10531,11 +8635,11 @@ File: gif2pnffolder/ConvolutionOP020386.png Graphic file (type bmp)
  <a2,fr85>
 File: gif2pnffolder/ConvolutionOP020387.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020387.png>
-
-<a2,fr86>
+ <a2,fr86>
 File: gif2pnffolder/ConvolutionOP020388.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020388.png>
- <a2,fr87>
+
+<a2,fr87>
 File: gif2pnffolder/ConvolutionOP020389.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020389.png>
  <a2,fr88>
@@ -10553,11 +8657,11 @@ File: gif2pnffolder/ConvolutionOP020393.png Graphic file (type bmp)
  <a2,fr92>
 File: gif2pnffolder/ConvolutionOP020394.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020394.png>
-
-<a2,fr93>
+ <a2,fr93>
 File: gif2pnffolder/ConvolutionOP020395.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020395.png>
- <a2,fr94>
+
+<a2,fr94>
 File: gif2pnffolder/ConvolutionOP020396.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP020396.png>
  <a2,fr95>
@@ -10575,11 +8679,11 @@ File: gif2pnffolder/ConvolutionOP0203100.png Graphic file (type bmp)
  <a2,fr99>
 File: gif2pnffolder/ConvolutionOP0203101.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203101.png>
-
-<a2,fr100>
+ <a2,fr100>
 File: gif2pnffolder/ConvolutionOP0203102.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203102.png>
- <a2,fr101>
+
+<a2,fr101>
 File: gif2pnffolder/ConvolutionOP0203103.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203103.png>
  <a2,fr102>
@@ -10597,11 +8701,11 @@ File: gif2pnffolder/ConvolutionOP0203107.png Graphic file (type bmp)
  <a2,fr106>
 File: gif2pnffolder/ConvolutionOP0203108.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203108.png>
-
-<a2,fr107>
+ <a2,fr107>
 File: gif2pnffolder/ConvolutionOP0203109.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203109.png>
- <a2,fr108>
+
+<a2,fr108>
 File: gif2pnffolder/ConvolutionOP0203110.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203110.png>
  <a2,fr109>
@@ -10619,11 +8723,11 @@ File: gif2pnffolder/ConvolutionOP0203114.png Graphic file (type bmp)
  <a2,fr113>
 File: gif2pnffolder/ConvolutionOP0203115.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203115.png>
-
-<a2,fr114>
+ <a2,fr114>
 File: gif2pnffolder/ConvolutionOP0203116.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203116.png>
- <a2,fr115>
+
+<a2,fr115>
 File: gif2pnffolder/ConvolutionOP0203117.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203117.png>
  <a2,fr116>
@@ -10641,11 +8745,11 @@ File: gif2pnffolder/ConvolutionOP0203121.png Graphic file (type bmp)
  <a2,fr120>
 File: gif2pnffolder/ConvolutionOP0203122.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203122.png>
-
-<a2,fr121>
+ <a2,fr121>
 File: gif2pnffolder/ConvolutionOP0203123.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203123.png>
- <a2,fr122>
+
+<a2,fr122>
 File: gif2pnffolder/ConvolutionOP0203124.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203124.png>
  <a2,fr123>
@@ -10663,11 +8767,11 @@ File: gif2pnffolder/ConvolutionOP0203128.png Graphic file (type bmp)
  <a2,fr127>
 File: gif2pnffolder/ConvolutionOP0203129.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203129.png>
-
-<a2,fr128>
+ <a2,fr128>
 File: gif2pnffolder/ConvolutionOP0203130.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203130.png>
- <a2,fr129>
+
+<a2,fr129>
 File: gif2pnffolder/ConvolutionOP0203131.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203131.png>
  <a2,fr130>
@@ -10685,11 +8789,11 @@ File: gif2pnffolder/ConvolutionOP0203135.png Graphic file (type bmp)
  <a2,fr134>
 File: gif2pnffolder/ConvolutionOP0203136.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203136.png>
-
-<a2,fr135>
+ <a2,fr135>
 File: gif2pnffolder/ConvolutionOP0203137.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203137.png>
- <a2,fr136>
+
+<a2,fr136>
 File: gif2pnffolder/ConvolutionOP0203138.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203138.png>
  <a2,fr137>
@@ -10707,11 +8811,11 @@ File: gif2pnffolder/ConvolutionOP0203142.png Graphic file (type bmp)
  <a2,fr141>
 File: gif2pnffolder/ConvolutionOP0203143.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203143.png>
-
-<a2,fr142>
+ <a2,fr142>
 File: gif2pnffolder/ConvolutionOP0203144.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203144.png>
- <a2,fr143>
+
+<a2,fr143>
 File: gif2pnffolder/ConvolutionOP0203145.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203145.png>
  <a2,fr144>
@@ -10729,11 +8833,11 @@ File: gif2pnffolder/ConvolutionOP0203149.png Graphic file (type bmp)
  <a2,fr148>
 File: gif2pnffolder/ConvolutionOP0203150.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203150.png>
-
-<a2,fr149>
+ <a2,fr149>
 File: gif2pnffolder/ConvolutionOP0203151.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203151.png>
- <a2,fr150>
+
+<a2,fr150>
 File: gif2pnffolder/ConvolutionOP0203152.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203152.png>
  <a2,fr151>
@@ -10751,11 +8855,11 @@ File: gif2pnffolder/ConvolutionOP0203156.png Graphic file (type bmp)
  <a2,fr155>
 File: gif2pnffolder/ConvolutionOP0203157.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203157.png>
-
-<a2,fr156>
+ <a2,fr156>
 File: gif2pnffolder/ConvolutionOP0203158.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203158.png>
- <a2,fr157>
+
+<a2,fr157>
 File: gif2pnffolder/ConvolutionOP0203159.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203159.png>
  <a2,fr158>
@@ -10773,11 +8877,11 @@ File: gif2pnffolder/ConvolutionOP0203163.png Graphic file (type bmp)
  <a2,fr162>
 File: gif2pnffolder/ConvolutionOP0203164.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203164.png>
-
-<a2,fr163>
+ <a2,fr163>
 File: gif2pnffolder/ConvolutionOP0203165.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203165.png>
- <a2,fr164>
+
+<a2,fr164>
 File: gif2pnffolder/ConvolutionOP0203166.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203166.png>
  <a2,fr165>
@@ -10795,11 +8899,11 @@ File: gif2pnffolder/ConvolutionOP0203170.png Graphic file (type bmp)
  <a2,fr169>
 File: gif2pnffolder/ConvolutionOP0203171.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203171.png>
-
-<a2,fr170>
+ <a2,fr170>
 File: gif2pnffolder/ConvolutionOP0203172.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203172.png>
- <a2,fr171>
+
+<a2,fr171>
 File: gif2pnffolder/ConvolutionOP0203173.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203173.png>
  <a2,fr172>
@@ -10817,11 +8921,11 @@ File: gif2pnffolder/ConvolutionOP0203177.png Graphic file (type bmp)
  <a2,fr176>
 File: gif2pnffolder/ConvolutionOP0203178.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203178.png>
-
-<a2,fr177>
+ <a2,fr177>
 File: gif2pnffolder/ConvolutionOP0203179.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203179.png>
- <a2,fr178>
+
+<a2,fr178>
 File: gif2pnffolder/ConvolutionOP0203180.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203180.png>
  <a2,fr179>
@@ -10839,11 +8943,11 @@ File: gif2pnffolder/ConvolutionOP0203184.png Graphic file (type bmp)
  <a2,fr183>
 File: gif2pnffolder/ConvolutionOP0203185.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203185.png>
-
-<a2,fr184>
+ <a2,fr184>
 File: gif2pnffolder/ConvolutionOP0203186.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203186.png>
- <a2,fr185>
+
+<a2,fr185>
 File: gif2pnffolder/ConvolutionOP0203187.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203187.png>
  <a2,fr186>
@@ -10861,11 +8965,11 @@ File: gif2pnffolder/ConvolutionOP0203191.png Graphic file (type bmp)
  <a2,fr190>
 File: gif2pnffolder/ConvolutionOP0203192.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203192.png>
-
-<a2,fr191>
+ <a2,fr191>
 File: gif2pnffolder/ConvolutionOP0203193.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203193.png>
- <a2,fr192>
+
+<a2,fr192>
 File: gif2pnffolder/ConvolutionOP0203194.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203194.png>
  <a2,fr193>
@@ -10883,11 +8987,11 @@ File: gif2pnffolder/ConvolutionOP0203198.png Graphic file (type bmp)
  <a2,fr197>
 File: gif2pnffolder/ConvolutionOP0203199.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203199.png>
-
-<a2,fr198>
+ <a2,fr198>
 File: gif2pnffolder/ConvolutionOP0203200.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203200.png>
- <a2,fr199>
+
+<a2,fr199>
 File: gif2pnffolder/ConvolutionOP0203201.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203201.png>
  <a2,fr200>
@@ -10905,11 +9009,11 @@ File: gif2pnffolder/ConvolutionOP0203205.png Graphic file (type bmp)
  <a2,fr204>
 File: gif2pnffolder/ConvolutionOP0203206.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203206.png>
-
-<a2,fr205>
+ <a2,fr205>
 File: gif2pnffolder/ConvolutionOP0203207.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203207.png>
- <a2,fr206>
+
+<a2,fr206>
 File: gif2pnffolder/ConvolutionOP0203208.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203208.png>
  <a2,fr207>
@@ -10927,11 +9031,11 @@ File: gif2pnffolder/ConvolutionOP0203212.png Graphic file (type bmp)
  <a2,fr211>
 File: gif2pnffolder/ConvolutionOP0203213.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203213.png>
-
-<a2,fr212>
+ <a2,fr212>
 File: gif2pnffolder/ConvolutionOP0203214.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203214.png>
- <a2,fr213>
+
+<a2,fr213>
 File: gif2pnffolder/ConvolutionOP0203215.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203215.png>
  <a2,fr214>
@@ -10949,11 +9053,11 @@ File: gif2pnffolder/ConvolutionOP0203219.png Graphic file (type bmp)
  <a2,fr218>
 File: gif2pnffolder/ConvolutionOP0203220.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203220.png>
-
-<a2,fr219>
+ <a2,fr219>
 File: gif2pnffolder/ConvolutionOP0203221.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203221.png>
- <a2,fr220>
+
+<a2,fr220>
 File: gif2pnffolder/ConvolutionOP0203222.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203222.png>
  <a2,fr221>
@@ -10971,11 +9075,11 @@ File: gif2pnffolder/ConvolutionOP0203226.png Graphic file (type bmp)
  <a2,fr225>
 File: gif2pnffolder/ConvolutionOP0203227.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203227.png>
-
-<a2,fr226>
+ <a2,fr226>
 File: gif2pnffolder/ConvolutionOP0203228.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203228.png>
- <a2,fr227>
+
+<a2,fr227>
 File: gif2pnffolder/ConvolutionOP0203229.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203229.png>
  <a2,fr228>
@@ -10993,11 +9097,11 @@ File: gif2pnffolder/ConvolutionOP0203233.png Graphic file (type bmp)
  <a2,fr232>
 File: gif2pnffolder/ConvolutionOP0203234.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203234.png>
-
-<a2,fr233>
+ <a2,fr233>
 File: gif2pnffolder/ConvolutionOP0203235.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203235.png>
- <a2,fr234>
+
+<a2,fr234>
 File: gif2pnffolder/ConvolutionOP0203236.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203236.png>
  <a2,fr235>
@@ -11015,11 +9119,11 @@ File: gif2pnffolder/ConvolutionOP0203240.png Graphic file (type bmp)
  <a2,fr239>
 File: gif2pnffolder/ConvolutionOP0203241.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203241.png>
-
-<a2,fr240>
+ <a2,fr240>
 File: gif2pnffolder/ConvolutionOP0203242.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203242.png>
- <a2,fr241>
+
+<a2,fr241>
 File: gif2pnffolder/ConvolutionOP0203243.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203243.png>
  <a2,fr242>
@@ -11037,11 +9141,11 @@ File: gif2pnffolder/ConvolutionOP0203247.png Graphic file (type bmp)
  <a2,fr246>
 File: gif2pnffolder/ConvolutionOP0203248.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203248.png>
-
-<a2,fr247>
+ <a2,fr247>
 File: gif2pnffolder/ConvolutionOP0203249.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203249.png>
- <a2,fr248>
+
+<a2,fr248>
 File: gif2pnffolder/ConvolutionOP0203250.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203250.png>
  <a2,fr249>
@@ -11059,11 +9163,11 @@ File: gif2pnffolder/ConvolutionOP0203254.png Graphic file (type bmp)
  <a2,fr253>
 File: gif2pnffolder/ConvolutionOP0203255.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203255.png>
-
-<a2,fr254>
+ <a2,fr254>
 File: gif2pnffolder/ConvolutionOP0203256.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203256.png>
- <a2,fr255>
+
+<a2,fr255>
 File: gif2pnffolder/ConvolutionOP0203257.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203257.png>
  <a2,fr256>
@@ -11081,11 +9185,11 @@ File: gif2pnffolder/ConvolutionOP0203261.png Graphic file (type bmp)
  <a2,fr260>
 File: gif2pnffolder/ConvolutionOP0203262.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203262.png>
-
-<a2,fr261>
+ <a2,fr261>
 File: gif2pnffolder/ConvolutionOP0203263.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203263.png>
- <a2,fr262>
+
+<a2,fr262>
 File: gif2pnffolder/ConvolutionOP0203264.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203264.png>
  <a2,fr263>
@@ -11103,11 +9207,11 @@ File: gif2pnffolder/ConvolutionOP0203268.png Graphic file (type bmp)
  <a2,fr267>
 File: gif2pnffolder/ConvolutionOP0203269.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203269.png>
-
-<a2,fr268>
+ <a2,fr268>
 File: gif2pnffolder/ConvolutionOP0203270.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203270.png>
- <a2,fr269>
+
+<a2,fr269>
 File: gif2pnffolder/ConvolutionOP0203271.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203271.png>
  <a2,fr270>
@@ -11125,11 +9229,11 @@ File: gif2pnffolder/ConvolutionOP0203275.png Graphic file (type bmp)
  <a2,fr274>
 File: gif2pnffolder/ConvolutionOP0203276.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203276.png>
-
-<a2,fr275>
+ <a2,fr275>
 File: gif2pnffolder/ConvolutionOP0203277.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203277.png>
- <a2,fr276>
+
+<a2,fr276>
 File: gif2pnffolder/ConvolutionOP0203278.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203278.png>
  <a2,fr277>
@@ -11138,77 +9242,36 @@ File: gif2pnffolder/ConvolutionOP0203279.png Graphic file (type bmp)
  <a2,fr278>
 File: gif2pnffolder/ConvolutionOP0203280.png Graphic file (type bmp)
 <gif2pnffolder/ConvolutionOP0203280.png>
- <a2,fr279> <a2,fr280> <a2,fr281>
-<a2,fr282> <a2,fr283> <a2,fr284> <a2,fr285> <a2,fr286> <a2,fr287> <a2,fr288>
-<a2,fr289> <a2,fr290> <a2,fr291> <a2,fr292> <a2,fr293> <a2,fr294> <a2,fr295>
-<a2,fr296> <a2,fr297> <a2,fr298> <a2,fr299> <a2,fr300>
+ <a2,fr279> <a2,fr280> <a2,fr281> <a2,fr282>
+<a2,fr283> <a2,fr284> <a2,fr285> <a2,fr286> <a2,fr287> <a2,fr288> <a2,fr289>
+<a2,fr290> <a2,fr291> <a2,fr292> <a2,fr293> <a2,fr294> <a2,fr295> <a2,fr296>
+<a2,fr297> <a2,fr298> <a2,fr299> <a2,fr300>
 Underfull \vbox (badness 1122) has occurred while \output is active []
 
  [464]
-Package mdframed Info: mdframed works in twoside mode on input line 1773.
+Package mdframed Info: mdframed works in twoside mode on input line 1777.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1773.
-
-
-LaTeX Warning: Reference `JuanJi2020020301' on page 465 undefined on input line
- 1774.
-
+(mdframed)              on input line 1777.
 File: figures/TUCon2020020302.PNG Graphic file (type bmp)
 <figures/TUCon2020020302.PNG>
 File: figures/JuanJi2020020301.PNG Graphic file (type bmp)
 <figures/JuanJi2020020301.PNG>
 
-Overfull \hbox (24.70776pt too wide) detected at line 1806
+Overfull \hbox (24.70776pt too wide) detected at line 1810
 [][]
  []
 
-
-LaTeX Warning: Reference `TUCon2020020302' on page 465 undefined on input line 
-1807.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-295' on page 465 undefined on input lin
-e 1809.
-
 [465]
-
-LaTeX Warning: Reference `mdf@pagelabel-296' on page 466 undefined on input lin
-e 1809.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1812.
+Package mdframed Info: mdframed works in twoside mode on input line 1816.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1812.
-
-LaTeX Warning: Reference `CNN20161021131748099' on page 466 undefined on input 
-line 1813.
-
+(mdframed)              on input line 1816.
 File: figures/20161021131748099.png Graphic file (type bmp)
 <figures/20161021131748099.png>
-
-LaTeX Warning: Reference `mdf@pagelabel-297' on page 466 undefined on input lin
-e 1822.
-
-
-LaTeX Warning: Reference `TUCon2020020302' on page 466 undefined on input line 
-1824.
-
-
-LaTeX Warning: Reference `CNN20161021131748099' on page 466 undefined on input 
-line 1825.
-
-
-LaTeX Warning: Reference `20161021135241205' on page 466 undefined on input lin
-e 1826.
-
-
-LaTeX Warning: Reference `anim@abspage3' on page 466 undefined on input line 18
-30.
-
 File: gif2pnffolder/201610211352412051.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412051.png>
-<a3,fr0>
+ <a3,fr0>
 File: gif2pnffolder/201610211352412052.png Graphic file (type bmp)
 <gif2pnffolder/201610211352412052.png>
  <a3,fr1>
@@ -11237,20 +9300,9 @@ File: gif2pnffolder/201610211352412059.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [466]
-
-LaTeX Warning: Reference `CNN20161021141659634' on page 467 undefined on input 
-line 1836.
-
-
-LaTeX Warning: Reference `CNN20161021141659634' on page 467 undefined on input 
-line 1837.
-
-
-LaTeX Warning: Reference `anim@abspage4' on page 467 undefined on input line 18
-44.
-
 File: gif2pnffolder/CNN201610211416596341.png Graphic file (type bmp)
 <gif2pnffolder/CNN201610211416596341.png>
+
 <a4,fr0>
 File: gif2pnffolder/CNN201610211416596342.png Graphic file (type bmp)
 <gif2pnffolder/CNN201610211416596342.png>
@@ -11299,55 +9351,19 @@ File: gif2pnffolder/CNN2016102114165963416.png Graphic file (type bmp)
 <gif2pnffolder/CNN2016102114165963416.png>
  <a4,fr15>
 [467]
-
-LaTeX Warning: Reference `CNN20161021141659634' on page 468 undefined on input 
-line 1852.
-
-
-LaTeX Warning: Reference `20161021135241205' on page 468 undefined on input lin
-e 1857.
-
-Package mdframed Info: mdframed works in twoside mode on input line 1866.
+Package mdframed Info: mdframed works in twoside mode on input line 1870.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1866.
-
-LaTeX Warning: Reference `20170715175257862' on page 468 undefined on input lin
-e 1867.
-
-
-LaTeX Warning: Reference `20170715175257862' on page 468 undefined on input lin
-e 1867.
-
-
-LaTeX Warning: Reference `20170715175257862' on page 468 undefined on input lin
-e 1878.
-
+(mdframed)              on input line 1870.
 File: figures/20170715175257862.png Graphic file (type bmp)
 <figures/20170715175257862.png>
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1886.
-
-LaTeX Warning: Reference `mdf@pagelabel-298' on page 468 undefined on input lin
-e 1886.
-
-[468]
-
-LaTeX Warning: Reference `mdf@pagelabel-299' on page 469 undefined on input lin
-e 1886.
-
-
-LaTeX Warning: Reference `Dconop0203' on page 469 undefined on input line 1888.
-
-
-
-LaTeX Warning: Reference `anim@abspage5' on page 469 undefined on input line 18
-92.
-
+(mdframed)              on input line 1890.
+ [468]
 File: gif2pnffolder/Dconop02031.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02031.png>
-<a5,fr0>
+ <a5,fr0>
 File: gif2pnffolder/Dconop02032.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02032.png>
  <a5,fr1>
@@ -11368,11 +9384,11 @@ File: gif2pnffolder/Dconop02037.png Graphic file (type bmp)
  <a5,fr6>
 File: gif2pnffolder/Dconop02038.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02038.png>
- <a5,fr7>
+
+<a5,fr7>
 File: gif2pnffolder/Dconop02039.png Graphic file (type bmp)
 <gif2pnffolder/Dconop02039.png>
-
-<a5,fr8>
+ <a5,fr8>
 File: gif2pnffolder/Dconop020310.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020310.png>
  <a5,fr9>
@@ -11393,11 +9409,11 @@ File: gif2pnffolder/Dconop020315.png Graphic file (type bmp)
  <a5,fr14>
 File: gif2pnffolder/Dconop020316.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020316.png>
- <a5,fr15>
+
+<a5,fr15>
 File: gif2pnffolder/Dconop020317.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020317.png>
-
-<a5,fr16>
+ <a5,fr16>
 File: gif2pnffolder/Dconop020318.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020318.png>
  <a5,fr17>
@@ -11415,11 +9431,11 @@ File: gif2pnffolder/Dconop020322.png Graphic file (type bmp)
  <a5,fr21>
 File: gif2pnffolder/Dconop020323.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020323.png>
- <a5,fr22>
+
+<a5,fr22>
 File: gif2pnffolder/Dconop020324.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020324.png>
-
-<a5,fr23>
+ <a5,fr23>
 File: gif2pnffolder/Dconop020325.png Graphic file (type bmp)
 <gif2pnffolder/Dconop020325.png>
  <a5,fr24>
@@ -11427,12 +9443,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [469]
 
-LaTeX Warning: Reference `ReLU20200203001' on page 470 undefined on input line 
-1901.
-
-
 LaTeX Warning: Citation 'Nagi2011-6144164' on page 470 undefined on input line 
-1937.
+1941.
 
 File: figures/Pooling14827576.png Graphic file (type bmp)
 <figures/Pooling14827576.png>
@@ -11440,16 +9452,16 @@ File: figures/Pooling14827576.png Graphic file (type bmp)
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) [471]
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 1974.
+(Font)              scaled to size 9.03374pt on input line 1978.
 
 (./Code/averagePooling.m
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.52437pt on input line 1.
 ) (./Code/maxPooling.m [472])
-Package mdframed Info: mdframed works in twoside mode on input line 1979.
+Package mdframed Info: mdframed works in twoside mode on input line 1983.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1979.
+(mdframed)              on input line 1983.
 File: figures/1e7180cfff7e697ef0.png Graphic file (type bmp)
 <figures/1e7180cfff7e697ef0.png>
 File: figures/6d060f10dd7cb586c4.png Graphic file (type bmp)
@@ -11462,46 +9474,19 @@ File: figures/c4b80789d46ed.png Graphic file (type bmp)
 <figures/c4b80789d46ed.png>
 File: figures/17c950028daf31.png Graphic file (type bmp)
 <figures/17c950028daf31.png>
-
-
-LaTeX Warning: Reference `mdf@pagelabel-300' on page 473 undefined on input lin
-e 2017.
-
-[473]
+ [473]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2017.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-301' on page 474 undefined on input lin
-e 2017.
-
-[474]
-
-LaTeX Warning: Reference `mdf@pagelabel-302' on page 475 undefined on input lin
-e 2017.
-
-[475]
-
-LaTeX Warning: Reference `mdf@pagelabel-303' on page 476 undefined on input lin
-e 2017.
-
-Package mdframed Info: mdframed works in twoside mode on input line 2020.
+(mdframed)              on input line 2021.
+ [474] [475]
+Package mdframed Info: mdframed works in twoside mode on input line 2024.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2020.
-
-LaTeX Warning: Reference `mdf@pagelabel-304' on page 476 undefined on input lin
-e 2022.
-
-Package mdframed Info: mdframed works in twoside mode on input line 2031.
+(mdframed)              on input line 2024.
+Package mdframed Info: mdframed works in twoside mode on input line 2035.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2031.
-
-LaTeX Warning: Reference `mdf@pagelabel-305' on page 476 undefined on input lin
-e 2039.
-
+(mdframed)              on input line 2035.
 Missing character: There is no   in font ntx-Regular-tlf-t1!
 File: figures/962516fc6e636830a.png Graphic file (type bmp)
 <figures/962516fc6e636830a.png>
@@ -11520,55 +9505,34 @@ File: figures/AlexNetdemo002.JPG Graphic file (type bmp)
 File: figures/CNNMLCompare001.JPG Graphic file (type bmp)
 <figures/CNNMLCompare001.JPG>
  [483]
-Package mdframed Info: mdframed works in twoside mode on input line 2356.
+Package mdframed Info: mdframed works in twoside mode on input line 2360.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2356.
+(mdframed)              on input line 2360.
 Missing character: There is no ™ in font ntx-Regular-tlf-t1!
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2381.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-306' on page 484 undefined on input lin
-e 2381.
-
-[484]
-
-LaTeX Warning: Reference `mdf@pagelabel-307' on page 485 undefined on input lin
-e 2381.
-
-Package mdframed Info: mdframed works in twoside mode on input line 2387.
+(mdframed)              on input line 2385.
+ [484]
+Package mdframed Info: mdframed works in twoside mode on input line 2391.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2387.
+(mdframed)              on input line 2391.
 File: figures/CNNMatlabGPU001.JPG Graphic file (type bmp)
 <figures/CNNMatlabGPU001.JPG>
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2405.
-
-LaTeX Warning: Reference `mdf@pagelabel-308' on page 485 undefined on input lin
-e 2405.
-
-[485]
-
-LaTeX Warning: Reference `mdf@pagelabel-309' on page 486 undefined on input lin
-e 2405.
-
+(mdframed)              on input line 2409.
+ [485]
 File: figures/CNN10-01429-ag.png Graphic file (type bmp)
 <figures/CNN10-01429-ag.png>
-
-LaTeX Warning: Reference `FCN20170811112941027' on page 486 undefined on input 
-line 2415.
-
 File: figures/FCN20170811112941027.png Graphic file (type bmp)
 <figures/FCN20170811112941027.png>
 File: figures/FCN-8W640.jpg Graphic file (type bmp)
 <figures/FCN-8W640.jpg>
 File: figures/fcn8.pdf Graphic file (type pdf)
 <use figures/fcn8.pdf>
-[486]
+ [486]
 File: figures/fcn32.pdf Graphic file (type pdf)
 <use figures/fcn32.pdf>
 File: figures/Unetushape.pdf Graphic file (type pdf)
@@ -11579,13 +9543,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [487]
 File: figures/Unet.pdf Graphic file (type pdf)
 <use figures/Unet.pdf>
-
-
-LaTeX Warning: Reference `CNNvgg16020301' on page 488 undefined on input line 2
-476.
-
 File: figures/vgg16.pdf Graphic file (type pdf)
 <use figures/vgg16.pdf>
+
 [488]
 File: figures/CNNvgg16LayerPara.png Graphic file (type bmp)
 <figures/CNNvgg16LayerPara.png>
@@ -11617,64 +9577,33 @@ File: figures/CCNshuidao20191216181108.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181108.jpg>
 
 [492]
-
-LaTeX Warning: Reference `CCNshuidao20191216181108' on page 493 undefined on in
-put line 2584.
-
-
-LaTeX Warning: Reference `CCNshuidao20191216181137' on page 493 undefined on in
-put line 2585.
-
 File: figures/CCNshuidao20191216181137.jpg Graphic file (type bmp)
 <figures/CCNshuidao20191216181137.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [493]
-
-LaTeX Warning: Reference `GNNGAS20191216202234' on page 494 undefined on input 
-line 2601.
-
 File: figures/GNNGAS20191216202234.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202234.jpg>
+
 [494]
-
-LaTeX Warning: Reference `GNNGAS20191216202340' on page 495 undefined on input 
-line 2619.
-
 File: figures/GNNGAS20191216202340.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202340.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [495]
-
-LaTeX Warning: Reference `GNNGAS20191216202359' on page 496 undefined on input 
-line 2634.
-
-
-LaTeX Warning: Reference `GNNGAS20191216202359' on page 496 undefined on input 
-line 2635.
-
 File: figures/GNNGAS20191216202359.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202359.jpg>
+
 [496]
-Package mdframed Info: mdframed works in twoside mode on input line 2664.
+Package mdframed Info: mdframed works in twoside mode on input line 2668.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2664.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-310' on page 497 undefined on input lin
-e 2666.
-
-
-LaTeX Warning: Reference `GNNGAS20191216202416' on page 497 undefined on input 
-line 2675.
-
+(mdframed)              on input line 2668.
 File: figures/GNNGAS20191216202416.jpg Graphic file (type bmp)
 <figures/GNNGAS20191216202416.jpg>
-[497] [498]
+ [497] [498]
 File: figures/RNN201912150001.PNG Graphic file (type bmp)
 <figures/RNN201912150001.PNG>
 File: figures/RNNImage191229001.png Graphic file (type bmp)
@@ -11682,10 +9611,10 @@ File: figures/RNNImage191229001.png Graphic file (type bmp)
 File: figures/RNNImage191229002.png Graphic file (type bmp)
 <figures/RNNImage191229002.png>
  [499]
-Package mdframed Info: mdframed works in twoside mode on input line 2754.
+Package mdframed Info: mdframed works in twoside mode on input line 2758.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2754.
+(mdframed)              on input line 2758.
 File: figures/RNNImage191229003.png Graphic file (type bmp)
 <figures/RNNImage191229003.png>
 File: figures/RNNImage191229004.png Graphic file (type bmp)
@@ -11696,31 +9625,7 @@ File: figures/RNNImage191229006.png Graphic file (type bmp)
 <figures/RNNImage191229006.png>
 File: figures/RNNImage191229007.png Graphic file (type bmp)
 <figures/RNNImage191229007.png>
-
-
-LaTeX Warning: Reference `mdf@pagelabel-311' on page 500 undefined on input lin
-e 2870.
-
-[500]
-
-LaTeX Warning: Reference `mdf@pagelabel-312' on page 501 undefined on input lin
-e 2870.
-
-[501]
-
-LaTeX Warning: Reference `mdf@pagelabel-313' on page 502 undefined on input lin
-e 2870.
-
-[502]
-
-LaTeX Warning: Reference `mdf@pagelabel-314' on page 503 undefined on input lin
-e 2870.
-
-[503]
-
-LaTeX Warning: Reference `mdf@pagelabel-315' on page 504 undefined on input lin
-e 2870.
-
+ [500] [501] [502] [503]
 File: figures/lstm20191229085814.png Graphic file (type bmp)
 <figures/lstm20191229085814.png>
 
@@ -11766,80 +9671,35 @@ ster/AIMaster2020.pdf" in version 0-M.>
 <Copying the QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/
 master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 [511] [512]
-
-LaTeX Warning: Reference `PycharmPytorchReformer' on page 513 undefined on inpu
-t line 54.
-
 File: figures/Reformerpytorch0118.PNG Graphic file (type bmp)
 <figures/Reformerpytorch0118.PNG>
-
-LaTeX Warning: Reference `AI32fig3001' on page 513 undefined on input line 66.
-
 File: figures/yuyanc820191130001.png Graphic file (type bmp)
 <figures/yuyanc820191130001.png>
-[513]
+ [513]
 Package mdframed Info: mdframed works in twoside mode on input line 91.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-316' on page 514 undefined on input lin
-e 93.
-
-[514]
-
-LaTeX Warning: Reference `AI32fig2901' on page 515 undefined on input line 115.
-
-
-
-LaTeX Warning: Reference `AI32fig2901' on page 515 undefined on input line 117.
-
-
+ [514]
 File: figures/zhengxiangtuili2019112901.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112901.PNG>
+ [515]
 Package mdframed Info: mdframed works in twoside mode on input line 150.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 150.
-[515]
-Package mdframed Info: Not enough space on this page on input line 154.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-317' on page 516 undefined on input lin
-e 154.
-
-
-LaTeX Warning: Reference `AI32fig2902' on page 516 undefined on input line 156.
-
-
 File: figures/zhengxiangtuili2019112902.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112902.PNG>
-
-LaTeX Warning: Reference `AI32fig2903' on page 516 undefined on input line 173.
-
-
 File: figures/zhengxiangtuili2019112903.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112903.PNG>
+
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [516]
 Package mdframed Info: mdframed works in twoside mode on input line 183.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 183.
-[516]
-Package mdframed Info: Not enough space on this page on input line 185.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-318' on page 517 undefined on input lin
-e 185.
-
-
-LaTeX Warning: Reference `AI32fig2904' on page 517 undefined on input line 192.
-
-
-
-LaTeX Warning: Reference `AI32fig2904' on page 517 undefined on input line 192.
-
-
 File: figures/zhengxiangtuili2019112904.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112904.PNG>
 Package mdframed Info: mdframed works in twoside mode on input line 209.
@@ -11847,66 +9707,31 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 209.
 
-LaTeX Warning: Reference `AI32fig2909' on page 517 undefined on input line 210.
-
-
-
-LaTeX Warning: Reference `mdf@pagelabel-319' on page 517 undefined on input lin
-e 214.
-
 [517]
-
-LaTeX Warning: Reference `AI32fig2903' on page 518 undefined on input line 248.
-
-
-
-LaTeX Warning: Reference `AI32fig2909' on page 518 undefined on input line 248.
-
-
 File: figures/zhengxiangtuili2019112909.PNG Graphic file (type bmp)
 <figures/zhengxiangtuili2019112909.PNG>
-
-LaTeX Warning: Reference `AI32fig2904' on page 518 undefined on input line 258.
-
-
-[518]
+ [518]
 Package mdframed Info: mdframed works in twoside mode on input line 278.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 278.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-320' on page 519 undefined on input lin
-e 290.
-
-[519]
+ [519]
 Package mdframed Info: mdframed works in twoside mode on input line 338.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 338.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-321' on page 520 undefined on input lin
-e 348.
-
-[520]
-
-LaTeX Warning: Reference `mdf@pagelabel-322' on page 521 undefined on input lin
-e 348.
-
-
-LaTeX Warning: Reference `bloglong' on page 521 undefined on input line 352.
-
+ [520]
 File: figures/bloglong.png Graphic file (type bmp)
 <figures/bloglong.png>
-[521] [522] [523] [524]
+ [521] [522] [523] [524]
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 Missing character: There is no ​ in font ntx-Regular-tlf-t1!
 ) [525]
 \openout2 = `tex/chapter9.aux'.
 
- (./tex/chapter9.tex [526
+ (./tex/chapter9.tex
+[526
 
 
 
@@ -11926,10 +9751,6 @@ master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 Underfull \vbox (badness 2573) has occurred while \output is active []
 
  [527]
-
-LaTeX Warning: Reference `Agentfansi2020012801' on page 528 undefined on input 
-line 43.
-
 File: figures/Agentfansi2020012801.PNG Graphic file (type bmp)
 <figures/Agentfansi2020012801.PNG>
 
@@ -11944,28 +9765,14 @@ Package mdframed Info: mdframed works in twoside mode on input line 199.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 199.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-323' on page 533 undefined on input lin
-e 201.
-
-[533] [534]
-
-LaTeX Warning: Reference `Tu01920121204001' on page 535 undefined on input line
- 259.
-
+ [533] [534]
 File: figures/Tu01920121204001.png Graphic file (type bmp)
 <figures/Tu01920121204001.png>
-[535]
+ [535]
 Package mdframed Info: mdframed works in twoside mode on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 290.
-
-
-LaTeX Warning: Reference `mdf@pagelabel-324' on page 536 undefined on input lin
-e 292.
-
 ) [536]
 \openout2 = `tex/chapter10.aux'.
 
@@ -11986,34 +9793,19 @@ master/AIMaster2020.pdf" in version 5-M as previously calculated.>
 
 
 ]
-
-LaTeX Warning: Reference `Expertbase20191203' on page 538 undefined on input li
-ne 49.
-
 File: figures/Expertbase20191203.png Graphic file (type bmp)
 <figures/Expertbase20191203.png>
 
 Underfull \vbox (badness 1584) has occurred while \output is active []
 
  [538]
-
-LaTeX Warning: Reference `Expertbase20191303' on page 539 undefined on input li
-ne 60.
-
 File: figures/Expertbase20191303.png Graphic file (type bmp)
 <figures/Expertbase20191303.png>
 
-LaTeX Warning: Reference `Expertbase20191203' on page 539 undefined on input li
-ne 71.
-
 [539]
-
-LaTeX Warning: Reference `Expertbase20191403' on page 540 undefined on input li
-ne 76.
-
 File: figures/Expertbase20191403.png Graphic file (type bmp)
 <figures/Expertbase20191403.png>
-[540] [541]) [542]
+ [540] [541]) [542]
 \openout2 = `tex/chapter11.aux'.
 
  (./tex/chapter11.tex
@@ -12106,17 +9898,10 @@ Missing character: There is no Ⅰ in font ntx-Regular-tlf-t1!
 No file AIMaster2020.ind.
 No file AIMaster2020.ind.
 
-Package lastpage Warning: Rerun to get the references right on input line 134.
-
-
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
-(./AIMaster2020.aux
-
-Package pdfbase Warning: Rerun to get internal references right!
-
-(./tex/preface.aux
+(./AIMaster2020.aux (./tex/preface.aux
 <Reading QR code for "https://github.com/zggl/AITeachingPlanDraft2020/blob/mast
 er/AIMaster2020.pdf" at level 5-M from aux file.>
 ) (./tex/overview.aux) (./tex/chapter1.aux) (./tex/chapter2.aux)
@@ -12149,12 +9934,12 @@ Package logreq Info: Writing requests to 'AIMaster2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 106297 strings out of 492922
- 2483117 string characters out of 6136750
- 3031365 words of memory out of 5000000
- 107332 multiletter control sequences out of 15000+600000
+ 96559 strings out of 492922
+ 2323954 string characters out of 6136750
+ 3078774 words of memory out of 5000000
+ 97574 multiletter control sequences out of 15000+600000
  750813 words of font info for 377 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 219i,24n,610p,3751b,5381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,24n,424p,3753b,5380s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on AIMaster2020.pdf (575 pages).
+Output written on AIMaster2020.pdf (583 pages).

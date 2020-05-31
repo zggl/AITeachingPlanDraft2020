@@ -2,7 +2,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \contentsline {chapter}{前\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}言}{i}{chapter*.1}% 
 \contentsline {paragraph}{在线课程}{i}{paragraph*.5}% 
-\contentsline {chapter}{概\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}览}{vii}{chapter*.7}% 
+\contentsline {chapter}{概\nobreakspace {}\nobreakspace {}\nobreakspace {}\nobreakspace {}览}{xv}{chapter*.7}% 
 \contentsline {chapter}{\numberline {第一章\hspace {.3em}}人工智能概述}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}AI的定义及其研究目标}{2}{section.1.1}% 
 \contentsline {subsection}{\numberline {1.1.1}AI的定义及其研究目标}{2}{subsection.1.1.1}% 
@@ -395,34 +395,34 @@
 \contentsline {subsubsection}{\numberline {5.4.3.7}非线性系统参数识别}{322}{subsubsection.5.4.3.7}% 
 \contentsline {subsubsection}{\numberline {5.4.3.8}回归问题}{323}{subsubsection.5.4.3.8}% 
 \contentsline {section}{\numberline {5.5}进化计算}{325}{section.5.5}% 
-\contentsline {subsection}{\numberline {5.5.1}进化计算的产生与发展}{327}{subsection.5.5.1}% 
-\contentsline {subsection}{\numberline {5.5.2}进化计算的基本结构}{328}{subsection.5.5.2}% 
-\contentsline {subsection}{\numberline {5.5.3}遗传编码}{330}{subsection.5.5.3}% 
+\contentsline {subsection}{\numberline {5.5.1}进化计算的产生与发展}{328}{subsection.5.5.1}% 
+\contentsline {subsection}{\numberline {5.5.2}进化计算的基本结构}{329}{subsection.5.5.2}% 
+\contentsline {subsection}{\numberline {5.5.3}遗传编码}{331}{subsection.5.5.3}% 
 \contentsline {subsection}{\numberline {5.5.4}适应度函数}{332}{subsection.5.5.4}% 
-\contentsline {paragraph}{极小化问题}{332}{paragraph*.348}% 
-\contentsline {paragraph}{极大化问题}{332}{paragraph*.349}% 
-\contentsline {subsection}{\numberline {5.5.5}遗传算法中的基本操作}{333}{subsection.5.5.5}% 
+\contentsline {paragraph}{极小化问题}{333}{paragraph*.348}% 
+\contentsline {paragraph}{极大化问题}{333}{paragraph*.349}% 
+\contentsline {subsection}{\numberline {5.5.5}遗传算法中的基本操作}{334}{subsection.5.5.5}% 
 \contentsline {section}{\numberline {5.6}神经进化}{343}{section.5.6}% 
-\contentsline {subsection}{\numberline {5.6.1}竞争性共同进化}{343}{subsection.5.6.1}% 
+\contentsline {subsection}{\numberline {5.6.1}竞争性共同进化}{344}{subsection.5.6.1}% 
 \contentsline {section}{\numberline {5.7}量子细菌觅食算法}{347}{section.5.7}% 
-\contentsline {subsection}{\numberline {5.7.1}BFA 模型}{347}{subsection.5.7.1}% 
-\contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{348}{subsection.5.7.2}% 
-\contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{348}{subsection.5.7.3}% 
-\contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{350}{subsection.5.7.4}% 
-\contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{351}{subsection.5.7.5}% 
-\contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{353}{subsection.5.7.6}% 
-\contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{353}{subsection.5.7.7}% 
-\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{356}{subsection.5.7.8}% 
+\contentsline {subsection}{\numberline {5.7.1}BFA 模型}{348}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.2}BFA的自适应步长模型}{349}{subsection.5.7.2}% 
+\contentsline {subsection}{\numberline {5.7.3}自适应量子细菌觅食算法}{349}{subsection.5.7.3}% 
+\contentsline {subsection}{\numberline {5.7.4}量子BFA算法}{351}{subsection.5.7.4}% 
+\contentsline {subsection}{\numberline {5.7.5}迭代自适应步长设计}{352}{subsection.5.7.5}% 
+\contentsline {subsection}{\numberline {5.7.6}适应值自适应步长设计}{354}{subsection.5.7.6}% 
+\contentsline {subsection}{\numberline {5.7.7}螺旋动力学算法}{354}{subsection.5.7.7}% 
+\contentsline {subsection}{\numberline {5.7.8}自适应量子细菌觅食算法}{357}{subsection.5.7.8}% 
 \contentsline {subsection}{\numberline {5.7.9}经典函数仿真实例}{357}{subsection.5.7.9}% 
 \contentsline {subsubsection}{\numberline {5.7.9.1}经典测试函数}{357}{subsubsection.5.7.9.1}% 
-\contentsline {subsection}{\numberline {5.7.10}测试函数结果}{357}{subsection.5.7.10}% 
-\contentsline {section}{\numberline {5.8}模糊计算}{363}{section.5.8}% 
-\contentsline {subsection}{\numberline {5.8.1}模糊集及其运算}{365}{subsection.5.8.1}% 
-\contentsline {subsection}{\numberline {5.8.2}模糊关系及其运算}{368}{subsection.5.8.2}% 
-\contentsline {paragraph}{模糊关系的定义}{368}{paragraph*.379}% 
-\contentsline {subsection}{\numberline {5.8.3}模糊关系的合成}{369}{subsection.5.8.3}% 
-\contentsline {section}{\numberline {5.9}参考书}{370}{section.5.9}% 
-\contentsline {section}{\numberline {5.10}作 业}{371}{section.5.10}% 
+\contentsline {subsection}{\numberline {5.7.10}测试函数结果}{358}{subsection.5.7.10}% 
+\contentsline {section}{\numberline {5.8}模糊计算}{364}{section.5.8}% 
+\contentsline {subsection}{\numberline {5.8.1}模糊集及其运算}{366}{subsection.5.8.1}% 
+\contentsline {subsection}{\numberline {5.8.2}模糊关系及其运算}{369}{subsection.5.8.2}% 
+\contentsline {paragraph}{模糊关系的定义}{369}{paragraph*.379}% 
+\contentsline {subsection}{\numberline {5.8.3}模糊关系的合成}{370}{subsection.5.8.3}% 
+\contentsline {section}{\numberline {5.9}参考书}{371}{section.5.9}% 
+\contentsline {section}{\numberline {5.10}作 业}{372}{section.5.10}% 
 \contentsline {chapter}{\numberline {第六章\hspace {.3em}}不确定性推理}{377}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}不确定性推理的含义}{378}{section.6.1}% 
 \contentsline {paragraph}{什么是不确定性推理}{378}{paragraph*.381}% 
@@ -475,19 +475,19 @@
 \contentsline {section}{\numberline {7.2}机器学习的主要策略}{419}{section.7.2}% 
 \contentsline {subsection}{\numberline {7.2.1}记忆学习}{419}{subsection.7.2.1}% 
 \contentsline {subsection}{\numberline {7.2.2}归纳学习}{420}{subsection.7.2.2}% 
-\contentsline {subsection}{\numberline {7.2.3}示例学习}{420}{subsection.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.2.2.1}示例学习}{420}{subsubsection.7.2.2.1}% 
 \contentsline {paragraph}{示例学习的典型方式}{420}{paragraph*.409}% 
-\contentsline {subsubsection}{\numberline {7.2.3.1}示例学习的解释方法}{421}{subsubsection.7.2.3.1}% 
-\contentsline {subsubsection}{\numberline {7.2.3.2}决策树}{423}{subsubsection.7.2.3.2}% 
-\contentsline {subsubsection}{\numberline {7.2.3.3}ID3算法}{424}{subsubsection.7.2.3.3}% 
+\contentsline {subsubsection}{\numberline {7.2.2.2}示例学习的解释方法}{421}{subsubsection.7.2.2.2}% 
+\contentsline {subsubsection}{\numberline {7.2.2.3}决策树}{423}{subsubsection.7.2.2.3}% 
+\contentsline {subsubsection}{\numberline {7.2.2.4}ID3算法}{424}{subsubsection.7.2.2.4}% 
 \contentsline {paragraph}{ID3算法的数学基础}{424}{paragraph*.412}% 
 \contentsline {subparagraph}{信息熵}{424}{subparagraph*.413}% 
 \contentsline {subparagraph}{条件熵}{425}{subparagraph*.414}% 
 \contentsline {paragraph}{ID3算法及举例}{425}{paragraph*.415}% 
-\contentsline {subsection}{\numberline {7.2.4}解释学习}{428}{subsection.7.2.4}% 
-\contentsline {subsubsection}{\numberline {7.2.4.1}解释学习的空间描述}{428}{subsubsection.7.2.4.1}% 
-\contentsline {subsubsection}{\numberline {7.2.4.2}解释学习的模型}{429}{subsubsection.7.2.4.2}% 
-\contentsline {subsubsection}{\numberline {7.2.4.3}解释学习的基本原理}{429}{subsubsection.7.2.4.3}% 
+\contentsline {subsection}{\numberline {7.2.3}解释学习}{428}{subsection.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.2.3.1}解释学习的空间描述}{428}{subsubsection.7.2.3.1}% 
+\contentsline {subsubsection}{\numberline {7.2.3.2}解释学习的模型}{429}{subsubsection.7.2.3.2}% 
+\contentsline {subsubsection}{\numberline {7.2.3.3}解释学习的基本原理}{429}{subsubsection.7.2.3.3}% 
 \contentsline {paragraph}{解释泛化学习方法}{430}{paragraph*.421}% 
 \contentsline {section}{\numberline {7.3}浅层神经学习}{432}{section.7.3}% 
 \contentsline {subparagraph}{神经元模型研究}{432}{subparagraph*.424}% 
@@ -532,8 +532,8 @@
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{513}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}词法分析}{514}{section.8.2}% 
 \contentsline {section}{\numberline {8.3}句法分析}{514}{section.8.3}% 
-\contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{514}{subsection.8.3.1}% 
-\contentsline {paragraph}{句子结构的表示}{514}{paragraph*.511}% 
+\contentsline {subsection}{\numberline {8.3.1}句法规则的表示方法}{515}{subsection.8.3.1}% 
+\contentsline {paragraph}{句子结构的表示}{515}{paragraph*.511}% 
 \contentsline {paragraph}{上下文无关文法}{515}{paragraph*.513}% 
 \contentsline {paragraph}{变换文法}{516}{paragraph*.515}% 
 \contentsline {paragraph}{自顶向下与自底向上分析}{517}{paragraph*.518}% 
