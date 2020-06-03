@@ -512,21 +512,21 @@
 \contentsline {subsection}{\numberline {7.6.5}深度学习和其他机器学习方法的比较}{459}{subsection.7.6.5}% 
 \contentsline {section}{\numberline {7.7}卷积神经网络 (Convolutional Neural Networks, CNN)}{461}{section.7.7}% 
 \contentsline {subsection}{\numberline {7.7.1}CNN应用场景——计算机视觉问题}{462}{subsection.7.7.1}% 
-\contentsline {subsection}{\numberline {7.7.2}卷积神经网络结构}{464}{subsection.7.7.2}% 
-\contentsline {subsubsection}{\numberline {7.7.2.1}卷积}{464}{subsubsection.7.7.2.1}% 
-\contentsline {subsubsection}{\numberline {7.7.2.2}反卷积 (后卷积, 转置卷积)}{468}{subsubsection.7.7.2.2}% 
-\contentsline {subsubsection}{\numberline {7.7.2.3}卷积神经网络的层结构}{470}{subsubsection.7.7.2.3}% 
-\contentsline {subsubsection}{\numberline {7.7.2.4}激活函数和层范数}{478}{subsubsection.7.7.2.4}% 
-\contentsline {subsection}{\numberline {7.7.3}防止CNN的过拟合——diffGrad}{490}{subsection.7.7.3}% 
-\contentsline {subsection}{\numberline {7.7.4}CNN的应用}{490}{subsection.7.7.4}% 
-\contentsline {subsubsection}{\numberline {7.7.4.1}CNN解释器在线交互可视化工具}{490}{subsubsection.7.7.4.1}% 
-\contentsline {subsection}{\numberline {7.7.5}卷积编译码网络学习语义图形实现水稻自动除草}{492}{subsection.7.7.5}% 
-\contentsline {section}{\numberline {7.8}图卷积神经网络}{494}{section.7.8}% 
-\contentsline {section}{\numberline {7.9}循环神经网络 (Recurrent Neural Networks, RNN)}{498}{section.7.9}% 
-\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{508}{section.7.10}% 
-\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{508}{section.7.11}% 
-\contentsline {section}{\numberline {7.12}其他}{509}{section.7.12}% 
-\contentsline {section}{\numberline {7.13}作业}{509}{section.7.13}% 
+\contentsline {subsection}{\numberline {7.7.2}完全卷积神经网络结构}{464}{subsection.7.7.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.1}卷积的数学定义}{466}{subsubsection.7.7.2.1}% 
+\contentsline {subsubsection}{\numberline {7.7.2.2}反卷积 (后卷积, 转置卷积)}{469}{subsubsection.7.7.2.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.3}卷积神经网络的层结构}{471}{subsubsection.7.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.7.2.4}激活函数和层范数}{479}{subsubsection.7.7.2.4}% 
+\contentsline {subsection}{\numberline {7.7.3}防止CNN的过拟合——diffGrad}{491}{subsection.7.7.3}% 
+\contentsline {subsection}{\numberline {7.7.4}CNN的应用}{491}{subsection.7.7.4}% 
+\contentsline {subsubsection}{\numberline {7.7.4.1}CNN解释器在线交互可视化工具}{491}{subsubsection.7.7.4.1}% 
+\contentsline {subsection}{\numberline {7.7.5}卷积编译码网络学习语义图形实现水稻自动除草}{493}{subsection.7.7.5}% 
+\contentsline {section}{\numberline {7.8}图卷积神经网络}{495}{section.7.8}% 
+\contentsline {section}{\numberline {7.9}循环神经网络 (Recurrent Neural Networks, RNN)}{499}{section.7.9}% 
+\contentsline {section}{\numberline {7.10}强化学习及深度强化学习}{509}{section.7.10}% 
+\contentsline {section}{\numberline {7.11}AI的未来-NeurlPS 2019}{509}{section.7.11}% 
+\contentsline {section}{\numberline {7.12}其他}{510}{section.7.12}% 
+\contentsline {section}{\numberline {7.13}作业}{510}{section.7.13}% 
 \contentsline {chapter}{\numberline {第八章\hspace {.3em}}自然语言理解}{511}{chapter.8}% 
 \contentsline {paragraph}{Transformer 架构}{512}{paragraph*.508}% 
 \contentsline {section}{\numberline {8.1}语言及其理解的基本概念}{513}{section.8.1}% 

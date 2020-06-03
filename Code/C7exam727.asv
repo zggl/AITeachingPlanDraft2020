@@ -1,0 +1,16 @@
+clc
+clear
+input=[1,2,3;4,5,6;7,8,9]
+insize=size(input);
+CovKenel=[-1,-2,-1;0,0,0,;1,2,1]
+covsize=size(CovKenel);
+midpos=round(covsize(2)/2);
+CovKenelMul=flipud(CovKenel)
+ for ii=1:insize(1)
+     for jj=1:insize(2)
+        ind=[ii,jj]-midpos;
+        M1=input(midpos:end-1,midpos:end-1)
+        M2=CovKenelMul()
+    end
+ end
+
