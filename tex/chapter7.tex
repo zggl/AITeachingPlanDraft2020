@@ -1488,7 +1488,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PandaPy
 \begin{align}
     \mathbf{y}=H\left (\mathbf{x}, \mathbf{W}_{\mathbf{H}}\right) \cdot T\left (\mathbf{x}, \mathbf{W}_{\mathbf{T}}\right)+\mathbf{x} \cdot C\left (\mathbf{x}, \mathbf{W}_{\mathbf{C}}\right),
 \end{align}
-其中$\bm y$向量由两项组成. $T$叫做transform gate, $C$叫做carry gate. $C$和$T$的激活函数都是sigmoid函数.
+其中$\bm y$向量由两项组成. $T$叫做转换门, $C$叫做搬运门. $C$和$T$的激活函数都是sigmoid函数.
 $T= (b_1, b_2, \cdots, b_n)$,其中每个数字都是$(0, 1)$之间的浮点数, 代表$y$中由$x$变化后的内容所占的比例;
 $C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点数, 代表$y$中由$x$本身内容所占的比例;
 (为了简便起见, 简化$C$, 具体来说, 取$C=\bm 1-T$. $\bm 1$代表了维度和$T$向量样长的单位向量).
@@ -1536,7 +1536,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
     \vspace{-0.4cm}
 \end{figure}
 
-在构造这个网络的时候, 如果20层的网络可以取得非常好的结果, 在构造56层网络的时候前20层从20层网络中拷贝过来, 后面的36层只做inentity map至少效果不会差于20层的网络.
+在构造这个网络的时候, 如果20层的网络可以取得非常好的结果, 在构造56层网络的时候前20层从20层网络中拷贝过来, 后面的36层只做恒等映射, 至少效果不会差于20层的网络.
 深度残差的网络提出的这个思想其实不复杂, 这种网络结构打破了每一层网络输入只能来自于上一层网络输出的规律, 可以让一些网络的输出直接跳过几层到达后面的输入.
 这样的网络确实也取得了非常好的效果.
 %%%%------------------------------------------
@@ -1566,74 +1566,30 @@ $\bullet$ 堆叠地使用深度可分离卷积;
 
 $\bullet$ 深度可分离卷积由深度卷积和$1\times 1$的逐点卷积组成.
 \end{tcolorbox}
-\begin{remark}
-卷积基础
-描述一个二维矩阵，使用row col. 三维的，使用channel row col. 四维则多了一个参数：batch channel row col. batch channel row col的逻辑顺序则和数据格式有关，常见的有NHWC和NCHW：https://mp.weixin.qq.com/s/I4Q1Bv7yecqYXUra49o7tw?
-
-2D卷积
-
-2D卷积只有col row的概念. （略）
-
-3D卷积和4D卷积
-
-
-
-我们先看3D卷积.
-
-假设过滤器窗口是 $3\times 3\times 3$（其中一个3代表了in\_depth）. 有四个这样的窗口,
-用于提取同一个图片的四个属性(out\_depth指定，对应输出Out channel 0…3). 那么，针对图片里面的某个Batch（譬如Batch 0），其处理流程如下：
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{20190322141457724.PNG}
-\caption{深度卷积示意图}
-\label{20190322141457724}
-\vspace{-0.4cm}
-\end{figure}
-\end{remark}
-
-\begin{tcolorbox}[title=ShuffleNet]
-$\bullet$ 逐点分组卷积;
-
-$\bullet$ 通道重排 ( channel shuffle);
-
-$\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
-\end{tcolorbox}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{RNNAPP2019121500007.PNG}
-    \caption{网络模型参数压缩}
-    \label{RNNAPP2019121500007}\vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
-    \caption{通道重排和ShuffleNet单元}
-    \label{RNNAPP2019121500008}\vspace{-0.4cm}
-\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{无限宽度DNN}
 无限宽度DNN会收敛成一类更为简单的模型, 称为高斯过程, 复杂的现象可以被归结为简单的线性代数方程.
-谷歌研究宣称可通过神经正切核使用贝叶斯推理或梯度下降分析式地训练无限宽度的神经网络.
+谷歌宣称可通过神经正切核使用贝叶斯推理或梯度下降分析式地训练无限宽度的神经网络.
 使用谷歌开源的软件库 (Neural Tangents, \href{www.github.com/google/neural-tangents}{Neural Tangents: Fast and Easy Infinite Neural Networks in Python}),
 过程不仅简单且快速, 而且效果非常好, 甚至只需 5 行代码就能一步到位地构建并训练这种无限宽度网络的集成模型!
 已被 ICLR 2020 接收为 Spotlight论文.
 
 \begin{remark}
-深度学习都已取得了广泛的成功, 仍还有一些有趣而又重要的问题有待解答,
-比如: 为什么即使在过度参数化时, 深度神经网络 (DNN) 也能取得非常好的泛化能力?
-深度网络的架构、训练和性能之间有何关系? 如何提取出深度学习模型中的显著特征?
-一大关键理论见解是: 增加 DNN 的宽度能使 DNN的行为更有规律可循, 也就人更容易理解它们.
+深度学习都已取得了广泛的成功, 仍还有一些有趣而需解答的问题
+\begin{itemize}
+    \item 即使在过度参数化时, 为什么深度神经网络 (DNN) 也能取得非常好的泛化能力?
+    \item 深度网络的架构、训练和性能之间有何关系? 如何提取出深度学习模型中的显著特征?
+    \item 增加 DNN 的宽度能使 DNN的行为是否更有规律可循, 更易理解.  
+\end{itemize}
+
 近来的许多研究已经表明, 宽度可无限扩增的 DNN 可以收敛成另一类更为简单的名为「高斯过程的模型.
 因此, 贝叶斯推理与卷积神经网络的梯度下降情况等复杂现象便可约简为简单的线性代数方程.
 从这些无限宽度网络所得到的见解通常也适用于它们对应的有限版本.
 因此, 无限宽度网络可用作研究深度学习的透镜, 而且它们本身也可用作有用的模型.
-\href{https://arxiv.org/abs/1912.02803}{论文地址},
-\href{https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html}{fast-and-easy-infinitely-wide-networks.html},
-\href{https://github.com/google/neural-tangents}{GitHub地址},
-\href{https://colab.research.google.com/github/google/neural-tangents/blob/master/notebooks/neural_tangents_cookbook.ipynb}{Colab地址}.
+\href{https://arxiv.org/abs/1912.02803}{论文地址}、
+\href{https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html}{论文网站},
+\href{https://github.com/google/neural-tangents}{论文代码GitHub地址}和
+\href{https://colab.research.google.com/github/google/neural-tangents/blob/master/notebooks/neural_tangents_cookbook.ipynb}{论文Colab地址}.
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{深度学习和其他机器学习方法的比较}
@@ -1646,7 +1602,7 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
 一个模式识别系统包括特征和分类器两部分. 在传统方法中，特征和分类器的优化是分开的. 而在神经网络的框架下，特征表示和分类器是联合优化的，可以最大程度地发挥二者联合协作的性能.
 
 \begin{example}
-2012年ImageNet比赛所采用的卷积网络模型的特征表示包含了从上百万样本中学习得到的6000万个参数.
+2012年, ImageNet比赛所采用的卷积网络模型的特征表示包含了从上百万样本中学习得到的6000万个参数.
 从ImageNet上学习得到的特征表示具有非常强的泛化能力，可以成功应用到其他数据集和任务中，例如物体的检测、跟踪和检索等.
 在计算机视觉领域另外一个著名的竞赛是PSACAL VOC. 但是它的训练集规模较小，不适合训练深度学习模型. 有学者将ImageNet上学习得到的特征表示用于 PSACAL VOC上的物体检测，检测率提高了20\%.
 \end{example}
@@ -1767,7 +1723,8 @@ CNN能够提取对平移、缩放和旋转不变的观测数据的显著特征, 
 %%%%%%%%-------------------------------------------------------------------------------
 \subsection{完全卷积神经网络结构}
 传统的CNN网络只能给出图像的LABEL, 但是在很多情况下需要对识别的物体进行首尾相连地分割,
-Berkeley团队提出 Fully Convolutional Networks (FCN) 方法用于图像语义分割, 将图像级别的分类扩展到像素级别的分类 (图 \ref{FCN20170811112941027}), 获得 CVPR2015 的 最佳论文奖 \cite{Long2015-9593}.
+Berkeley团队提出 Fully Convolutional Networks (FCN) 方法, 用于图像语义分割, 
+将图像级别的分类扩展到像素级别的分类 (图 \ref{FCN20170811112941027}), 获得 CVPR2015 的 最佳论文奖 \cite{Long2015-9593}.
 FCN将传统卷积网络后面的全连接层换成了卷积层, 这样网络输出不再是类别而是 heatmap; 同时为了解决因为卷积和池化对图像尺寸的影响, 提出使用上采样的方式恢复.
 
 $\bullet$ FCN不含全连接层 (fc)的全卷积 (fully conv)网络. 可适应任意尺寸输入.
@@ -1775,19 +1732,18 @@ $\bullet$ FCN不含全连接层 (fc)的全卷积 (fully conv)网络. 可适应�
 $\bullet$ FCN增大数据尺寸的反卷积 (deconv)层. 能够输出精细的结果.
 
 $\bullet$ FCN结合不同深度层结果的跳级 (skip)结构. 同时确保鲁棒性和精确性.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.6\textwidth]{FCN20170811112941027.png}
+%    \caption{完全CNN结构 (FCN-8) \cite{}}\index{FCN-8}
+%    \label{FCN20170811112941027}
+%    \vspace{-0.4cm}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{FCN20170811112941027.png}
-    \caption{完全CNN结构 (FCN-8) \cite{}}\index{FCN-8}
-    \label{FCN20170811112941027}
-    \vspace{-0.4cm}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.76\textwidth]{FCN-8W640.jpg}
+    \includegraphics[width=0.86\textwidth]{FCN-8W640.jpg}
     \caption{完全CNN结构 (FCN-8) \cite{PiramanayagamSaber2018-9591}}\index{FCN-8}
     \label{FCN-8W640}
     \vspace{-0.4cm}
@@ -1797,7 +1753,8 @@ $\bullet$ FCN结合不同深度层结果的跳级 (skip)结构. 同时确保鲁�
     \centering
     \includegraphics[width=0.86\textwidth]{fcn8.pdf}
     \caption{FCN-8}
-    \label{CNNfcn80203}\vspace{-0.4cm}
+    \label{CNNfcn80203}
+    \vspace{-0.4cm}
 \end{figure}
 
 FCN的出现给物体分割提供了一个非常重要的解决思路, 其核心就是卷积与反卷积.
@@ -1927,7 +1884,7 @@ $4\times 4$的卷积是完整的卷积计算. 其他比它小的卷积结果都�
 valid卷积 (滤镜全部在image里面的时候, 进行卷积运算, 可见滤镜的移动范围较same卷积更小), 三种卷积后图像大小的计算公式:
 
 1) full卷积: 滑动步长为1, 图片大小为$N_1\times N_1$, 卷积核大小为$N_2\times N_2$, 卷积后图像大小: $ (N_1+N_2-1) \times (N_1+N_2-1)$.
-如图 \ref{CNN20161021141659634}, 滑动步长为1, 图片大小为$2\times 2$, 卷积核大小为$3\times 3$, 卷积后图像大小: $4\times 4$.
+如图 \ref{CNN20161021141659634}的 2 维完全卷积, 滑动步长为1, 图片大小为$2\times 2$, 卷积核大小为$3\times 3$, 卷积后图像大小: $4\times 4$.
 
 2) same卷积: 滑动步长为1, 图片大小为$N_1\times N_1$, 卷积核大小为$N_2\times N_2$, 卷积后图像大小: $N_1\times N_1$.
 
@@ -2007,61 +1964,7 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
     \label{ReLU20200203001}
     \end{figure}
     \item \textbf{卷积}将输入图像放进一组卷积过滤器, 每个过滤器激活图像中的某些特征.
-    \item \textbf{池化}是卷积神经网络中一个重要的概念, 通过执行非线性下采样, 减少网络需要学习的参数个数, 去除冗余信息的同时保留关键信息, 从而简化输出.
-
-    \ding{171} \href{https://blog.csdn.net/tianwenbo6666/article/details/104349425}{池化（Pooling）}它实际上是一种形式的采样方法.
-    池化会压缩输入的特征图, 减少数据的特征和参数个数, 进而简化了卷积网络计算时的复杂度；另一方面保持了特征的某种不变性（旋转、平移、伸缩等）.
-
-池化操作主要有两种方式( ICSIPA 2011 \cite{Nagi2011-6144164}), 一种是平均池化(Average Pooling), 即对邻域内的特征点求平均; 另一种是最大池化(Max Pooling), 即对邻域内的特征点取最大.
-最大池化 (Max pooling) 是将输入的图像划分为若干个矩形区域, 对每个子区域输出最大值.
-直觉上, 这种机制能够有效地原因在于, 在发现一个特征之后, 它的精确位置远不及它和其他特征的相对位置的关系重要.
-池化层会不断地减小数据的空间大小, 因此参数的数量和计算量也会下降, 这在一定程度上也控制了过拟合.
-通常来说, CNN的卷积层之间都会周期性地插入池化层.
-\begin{tcolorbox}[title=池化层]
-池化层通常会分别作用于每个输入的特征并减小其大小.
-当前最常用形式的池化层是每隔2个元素从图像划分出$2\times 2$的区块, 然后对每个区块中的4个数取最大值.
-这将会减少75\%的数据量.
-\end{tcolorbox}
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=0.7\textwidth]{Pooling14827576.png}
-%    \vspace{-0.5cm}
-%    \caption{池化结果}
-%    \label{Pooling14827576}
-%\end{figure}
-池化结果如式 \ref{AIC7Pooling747}.
-\begin{align}\label{AIC7Pooling747}
-\begin{tabularx}{0.3\textwidth}{llllllllllll}
-\cellcolor{intnull} {1}&\cellcolor{intnull} { 0} & 2 & 3 \\
-\cellcolor{intnull} {4} &\cellcolor{intnull} { 6} & 6 & 8 \\
-3 & 1 &\cellcolor{intnull} { 1} &\cellcolor{intnull} { 0 }\\
-1 & 2 &\cellcolor{intnull} { 2} &\cellcolor{intnull} { 4}
-\end{tabularx}
-\;\cellcolor{intnull} {\rightarrow}\;
-\begin{tabularx}{0.15\textwidth}{llllllllllll}
-6 & 8 \\
-3 & 4\\
-\end{tabularx}
-\end{align}
-池化方法特征提取误差主要来自两个部分：
-一是, 邻域大小受限造成了估计值方差增大；
-二是, 卷积层参数误差造成了估计均值的偏移.
-一般来说, 在图像研究领域, 对图像进行平均池化操作能减少第一种误差, 同时更多地保留图像的背景信息；
-而另一方面, 最大池化能减小第二种误差, 更多地保留纹理信息.
-因此在进行卷积神经网络结构设计时, 这两种池化方式往往交替使用.
-
-池化操作后的结果相比其输入缩小了. 池化层的引入是仿照人的视觉系统对视觉输入对象进行降维和抽象.
-池化层有如下三个功效：
-\begin{itemize}
-\item 特征不变形：池化操作是模型更加关注是否存在某些特征而不是特征具体的位置.
-\item 特征降维：池化相当于在空间范围内做了维度约减, 从而使模型可以抽取更加广范围的特征.
-同时减小了下一层的输入大小, 进而减少计算量和参数个数.
-\item 在一定程度上防止过拟合, 更方便优化.
 \end{itemize}
-
-    \item \textbf{修正线性单元} (ReLU) 通过将负值映射到零和保持正数值, 实现更快、更高效的训练.
-\end{itemize}
-上述三种操作在几十层或几百层上反复进行, 每一层都学习检测不同的特征.
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstinputlisting[language=matlab, caption={平均池化操作函数averagePooling2dLayer}]{code/averagePooling.m}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2327,10 +2230,100 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 
 事实证明在信号处理中或某些数学分支中, 在卷积的定义包含翻转, 使得卷积运算符拥有这个性质, 即, 这在数学中被称为结合律. 这对于一些信号处理应用来说很好, 但对于深度神经网络来说它真的不重要, 因此省略了这个双重镜像操作, 就简化了代码, 并使神经网络也能正常工作.
 大多数人都叫它卷积, 尽管数学家们更喜欢称之为互相关, 这不会影响你的编程练习和实践, 也不影响你理解深度学习.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{高维卷积操作——3D卷积}
+描述一个二维矩阵，使用行和列. 三维的，使用通道、行和列. 四维则多了一个参数batch. 四个维度batch channel row col的逻辑顺序则和数据格式有关，常见的有 \href{https://mp.weixin.qq.com/s/I4Q1Bv7yecqYXUra49o7tw?}{NHWC和NCHW}：
 
+假设过滤器窗口是 $3\times 3\times 3$（其中一个3代表了in\_depth）. 有四个这样的窗口,
+用于提取同一个图片的四个属性(out\_depth指定，深度对应输出Out channel 0…3). 那么，针对图片里面的某个Batch（譬如Batch 0），其处理流程如下：
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{20190322141457724.PNG}
+\caption{深度卷积示意图}
+\label{20190322141457724}
+\vspace{-0.4cm}
+\end{figure}
+
+\begin{tcolorbox}[title=ShuffleNet]
+$\bullet$ 逐点分组卷积;
+
+$\bullet$ 通道重排 ( channel shuffle);
+
+$\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
+\end{tcolorbox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{RNNAPP2019121500007.PNG}
+    \caption{网络模型参数压缩}
+    \label{RNNAPP2019121500007}\vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
+    \caption{通道重排和ShuffleNet单元}
+    \label{RNNAPP2019121500008}\vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{池化操作}
+\textbf{池化}是卷积神经网络中一个重要的概念, 通过执行非线性下采样, 减少网络需要学习的参数个数, 去除冗余信息的同时保留关键信息, 从而简化输出.
+
+池化操作主要有两种方式( ICSIPA 2011 \cite{Nagi2011-6144164}), 一种是平均池化(Average Pooling), 即对邻域内的特征点求平均; 另一种是最大池化(Max Pooling), 即对邻域内的特征点取最大.
+最大池化 (Max pooling) 是将输入的图像划分为若干个矩形区域, 对每个子区域输出最大值.
+直觉上, 这种机制能够有效地原因在于, 在发现一个特征之后, 它的精确位置远不及它和其他特征的相对位置的关系重要.
+池化层会不断地减小数据的空间大小, 因此参数的数量和计算量也会下降, 这在一定程度上也控制了过拟合.
+通常来说, CNN的卷积层之间都会周期性地插入池化层.
+
+\ding{171} \href{https://blog.csdn.net/tianwenbo6666/article/details/104349425}{池化（Pooling）}它实际上是一种形式的采样方法.
+池化会压缩输入的特征图, 减少数据的特征和参数个数, 进而简化了卷积网络计算时的复杂度；另一方面保持了特征的某种不变性（旋转、平移、伸缩等）
+\begin{tcolorbox}[title=池化层]
+池化层通常会分别作用于每个输入的特征并减小其大小.
+当前最常用形式的池化层是每隔2个元素从图像划分出$2\times 2$的区块, 然后对每个区块中的4个数取最大值.
+这将会减少75\%的数据量.
+\end{tcolorbox}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{Pooling14827576.png}
+%    \vspace{-0.5cm}
+%    \caption{池化结果}
+%    \label{Pooling14827576}
+%\end{figure}
+池化结果如式 \ref{AIC7Pooling747}.
+\begin{align}\label{AIC7Pooling747}
+\begin{tabularx}{0.3\textwidth}{llllllllllll}
+\cellcolor{intnull} {1}&\cellcolor{intnull} { 0} & 2 & 3 \\
+\cellcolor{intnull} {4} &\cellcolor{intnull} { 6} & 6 & 8 \\
+3 & 1 &\cellcolor{intnull} { 1} &\cellcolor{intnull} { 0 }\\
+1 & 2 &\cellcolor{intnull} { 2} &\cellcolor{intnull} { 4}
+\end{tabularx}
+\;\cellcolor{intnull} {\rightarrow}\;
+\begin{tabularx}{0.15\textwidth}{llllllllllll}
+6 & 8 \\
+3 & 4\\
+\end{tabularx}
+\end{align}
+池化方法特征提取误差主要来自两个部分：
+一是, 邻域大小受限造成了估计值方差增大；
+二是, 卷积层参数误差造成了估计均值的偏移.
+一般来说, 在图像研究领域, 对图像进行平均池化操作能减少第一种误差, 同时更多地保留图像的背景信息；
+而另一方面, 最大池化能减小第二种误差, 更多地保留纹理信息.
+因此在进行卷积神经网络结构设计时, 这两种池化方式往往交替使用.
+
+池化操作后的结果相比其输入缩小了. 池化层的引入是仿照人的视觉系统对视觉输入对象进行降维和抽象.
+池化层有如下三个功效：
+\begin{itemize}
+    \item 特征不变形：池化操作是模型更加关注是否存在某些特征而不是特征具体的位置.
+    \item 特征降维：池化相当于在空间范围内做了维度约减, 从而使模型可以抽取更加广范围的特征.
+            同时减小了下一层的输入大小, 进而减少计算量和参数个数.
+    \item 在一定程度上防止过拟合, 更方便优化.
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{激活函数和层范数}
-\href{https://dashee87.github.io/deep\%20learning/visualising-activation-functions-in-neural-networks/}{在线绘制 各类激活函数}.
+\textbf{修正线性单元} (ReLU) 通过将负值映射到零和保持正数值, 实现更快、更高效的训练.
+CNN的卷积、池化和修正单元三种操作在几十层或几百层上反复进行, 每一层都学习检测不同的特征.
+\href{https://dashee87.github.io/deep\%20learning/visualising-activation-functions-in-neural-networks/}{在线绘制各类激活函数网站}.
 \begin{remark}
 Leaky ReLU激活函数是在声学模型 (2013) 中提出的, 给所有负值赋予一个非零斜率$\alpha=\frac 1 {a_i},\, a_i\in (1,\infty)$.
 \end{remark}
