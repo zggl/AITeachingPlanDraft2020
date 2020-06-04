@@ -1305,6 +1305,11 @@ AdaBoost出现过三个最主要的理论结果,
 \textbf{深度学习}: 模仿人脑处理信息的过程——分层处理机制.
 底层捕捉输入的 “简单" 特征, 高层通过组合底层特征从而形成更加复杂抽象化的特征.
 深度学习由简到繁, 自动实现特征提取.
+深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展.
+深度学习用特定形式的机器学习方法来训练多层神经网络.
+深度学习在神经网络研究者中间已经被讨论了超过二十年.
+最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
+深度学习已经代替了机器学习的地位.
 深度学习结构如图 \ref{AI32fig2019121502}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
@@ -1327,6 +1332,28 @@ AdaBoost出现过三个最主要的理论结果,
     \caption{深度学习与其他算法比较}
     \label{DNNVSOtherNN}
 \end{figure}
+ ``深度学习"的学习模式:  ``深度学习"这个名词其实最主要是针对人工智能领域, 它是指机器的一种学习模式, 与我们平常所指的人类的深度学习是不同的概念.
+\begin{itemize}
+    \item  ``深度学习"是机器学习的一种特定技术, 它是建立在大数据的基础上, 用大数据对机器进行训练, 在机器反馈的过程中不断地纠错.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{example}
+    对于婴孩来说, 我们拿三个不同杯子告诉宝宝, 这是杯子.
+    基本上, 他就知道什么是杯子了. 不管第四个杯子的形状或者图案有什么不同, 但孩子基本已经能够非常清楚地辨别杯子的本质特征.
+    然而, 对于机器来说, 它需要通过足够多的例子,
+    \end{example}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{example}
+    你给它展示一个圆柱形的杯子, 告诉它:  ``这是杯子. "但是当你拿另一个圆形的杯子给它看的时候, 它可能会说这是一个球.
+    所以, 深度学习就是建立在大数据的基础上, 给它看足够多的数据, 直到机器最后总结出杯子的本质特征.
+    \end{example}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item  ``深度学习"技术, 是建立在 ``人工神经网络"上的, 而人工神经网络, 又是来自人类神经生物学的深刻理解和延展.
+    我们人类的神经网络通过神经元的联结来传递和处理信息, 而人工神经网络则是模拟大脑的工作机制.
+    通过研究人类智能的工作机制, 可以模拟出人工智能的工作原理.
+
+    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论; 而且, 机器到底是怎么得出结论的, 我们尚未可知.
+\end{itemize}
+
 深度学习并不是一种独立的学习方法, 会用到有监督和无监督的学习方法来训练深度神经网络.
 但由于近几年该领域发展迅猛, 一些特有的学习手段相继被提出 (如残差网络), 因此越来越多的人将其单独看作一种学习的方法.
 最初的深度学习是利用深度神经网络来解决特征表达的一种学习过程.
@@ -1337,7 +1364,7 @@ AdaBoost出现过三个最主要的理论结果,
 无人驾驶汽车和预防性医疗保健, 甚至影视剧的推荐系统.
 
 DNN是一种用了很多浅层神经网络技巧之外的多层网络, 它能够 ``深"到解决浅层神经网络很难解决的问题.
-深度学习则是AI训练的重要手段之一,  学习要靠硬件和算法支撑 这方面.
+深度学习是AI的一种重要手段, 要靠硬件和算法支撑.
 在深层学习方面, 存在两个阵营: Intel力挺CPU, NVIDIA则发力 GPU.
 2020年3月, Intel实验室联合美国莱斯大学宣布了一种突破性的深度学习新算法SLIDE.
 SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法) 所基于的矩阵乘法.
@@ -1360,16 +1387,13 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
 \end{figure}
 深度学习模型越来越复杂, 如果无法直接在存储中处理数据和模型, 就会对带宽造成巨大堵塞, 对效率产生很大影响.
 这就要求提高边缘端的计算能力, 主要的推进方向有两个:
-一是从神经网络模型的表示、计算、存储和学习等方面, 通过压缩、剪枝和量化等方法来简化模型;
-二是使用专用加速器加速深度学习应用, 将 32位浮点数转换为定点数, 减少延迟, 降低能耗.
+一是从神经网络模型的表示、计算、存储和学习等方面着手, 通过压缩、剪枝和量化等方法来简化模型;
+二是使用专用加速器来加速深度学习应用, 将 32位浮点数转换为定点数, 减少延迟, 降低能耗.
 深度学习常用的神经网络算法如图  \ref{DNN191218121500010} 到图  \ref{DNN191218121500011}.
-CNN相对于DNN, 比较特殊的是加入了卷积层和池化层, 在熟悉DNN的基础上, 理解卷积层和池化层的原理就学会了CNN.
-
 %%%%%%%%----------------------------------------
 \begin{exampleT}
     一套拥有44个Xeon核心的平台和一套由8张NVIDIA Vlta V100加速卡支撑的平台 (TensorFlow框架, 价值10万美元) 执行相同的训练任务, 前者用1小时, 后者用了3.5小时.
-Intel表示, 它们这套平台尚未充分优化, 还是 ``残血"状态, 比如处理器的DLBoost并未启用.
-不过, 这套44核至强平台的CPU型号并未公布, 一说就是22核心44线程的至强铂金6238, 一说是双路至强铂金6238, 还有可能是未发布的产品.
+Intel还在优化, 比如将来要启用处理器的DLBoost功能.
 \end{exampleT}
 %%%%%%%%----------------------------------------
 \begin{exampleT}
@@ -1388,11 +1412,6 @@ Intel表示, 它们这套平台尚未充分优化, 还是 ``残血"状态, 比�
     \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%----------------------------------------------------
-深度学习近年来非常流行, 引领了图像识别和语音识别等领域的突破性进展.
-深度学习是一种特定形式的机器学习, 训练多层神经网络.
-深度学习在神经网络研究者中间已经被讨论了超过二十年.
-最近深度学习的发展是由相对较小的算法改进以及大数据集模型和计算机硬件发展驱动的.
-深度学习已经代替了机器学习的地位.
 
 Desnenet结构如图 \ref{Densetransferflag03220304}, 网络有三个密集块, 池化用于缩减特征映射的规模大小, 密集块之间的特征映射需要相互匹配.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1403,7 +1422,7 @@ Desnenet结构如图 \ref{Densetransferflag03220304}, 网络有三个密集块, 
     \label{Densetransferflag03220304}
 \end{figure}
 
-使用Matlab中的 DNN 设计APP可以很快设计出 DNN 网络 \ref{DNNDesigner20200304}.
+使用Matlab中的 DNN如图 \ref{DNNDesigner20200304}, 设计APP可以很快设计出 DNN 网络.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -1462,9 +1481,9 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PandaPy
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{高速公路网络 (Highway network)}
-高速公路网络和深度残差学习 (DRL) 进一步避免了梯度消失, 网络层数达到了前所未有的一百多层 (深度残差学习: 152层) \cite{HeCVPR2016-9590, NIPS2015-5850}.
+高速公路网络和深度残差学习 (DRL)的提出, 进一步避免了梯度消失, 网络层数达到了前所未有的一百多层 (深度残差学习: 152层) \cite{HeCVPR2016-9590, NIPS2015-5850}.
 高速公路网络受LSTM门机制的启发, 给网络添加一个传递门和一个搬运门.
-Highway网络再输入某一层, 网络的数据一部分经过非线性变换, 另一部分直接从该网络跨过去不做任何转换, 就像走在高速公路上一样,
+将Highway网络再输入某一层, 网络的数据一部分经过非线性变换, 另一部分直接从该网络跨过去不做任何转换, 就像走在高速公路上一样,
 做非线性变换的数据量和直接跨过去的数据量是由一个权值矩阵和输入数据共同决定的.
 \begin{align}
     \mathbf{y}=H\left (\mathbf{x}, \mathbf{W}_{\mathbf{H}}\right) \cdot T\left (\mathbf{x}, \mathbf{W}_{\mathbf{T}}\right)+\mathbf{x} \cdot C\left (\mathbf{x}, \mathbf{W}_{\mathbf{C}}\right),
@@ -1472,9 +1491,9 @@ Highway网络再输入某一层, 网络的数据一部分经过非线性变换, 
 其中$\bm y$向量由两项组成. $T$叫做transform gate, $C$叫做carry gate. $C$和$T$的激活函数都是sigmoid函数.
 $T= (b_1, b_2, \cdots, b_n)$,其中每个数字都是$(0, 1)$之间的浮点数, 代表$y$中由$x$变化后的内容所占的比例;
 $C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点数, 代表$y$中由$x$本身内容所占的比例;
-(为了简便起见, 有时候令$C$可以简化, 取$C=1-T$. $\bm 1$代表了维度和$T$向量样长的单位向量).
-需要注意的是, 由于是点乘, 当$C (x,W_C)$取了$1-T (x,W_T)$之后那么$x, y, H(x,W_H), T(x,W_T)$必须是同样的维度相容, 以保证可乘.
-如果我们想更改$x$的维度变成$B$的维度的话, 一种方法是采用填充零和下采样的方法, 或者是引入一个维度为$A*B$的变换矩阵, 使每次都乘上这个矩阵.
+(为了简便起见, 简化$C$, 具体来说, 取$C=\bm 1-T$. $\bm 1$代表了维度和$T$向量样长的单位向量).
+需要注意的是, 由于是点乘, 当$C (x,W_C)$取了$1-T (x,W_T)$之后, 那么$x, y, H(x,W_H), T(x,W_T)$必须是同样的维度相容, 以保证可乘.
+如果我们想更改$x$的维度为$B$的维度的话, 一种方法是采用填充零和下采样的方法, 或者是引入一个维度为$A*B$的变换矩阵, 使每次都乘上这个矩阵.
 
 高速公路网络就是在输出和网络层之间加了一个连接, 直接让输入$X$的信息直接通过, 不需要通过神经网络层, 跟高速公路一样.
 高速公路网络主要解决的是多层深度神经网络的训练收敛问题, 即使层数很多, 也可以使用简单的方法, 比方说反向传播来进行训练,
@@ -1492,7 +1511,7 @@ $C= (c_1, c_2, \cdots, c_n)$,其中每个数字也都是$(0, 1)$之间的浮点�
 \subsection{残差网络}
 残差网络用于解决由深度增加而出现错误率增加的情况, 通过拟合残差映射来取代直接的拟合映射.
 原始底层的映射记作 $H(x)$, 堆叠非线性的映射记作 $F(x) = H(x) - x$, 原始的映射变为$F(x) + x$,
-我们假设残差映射的优化易于直接映射, 如果某个恒等的映射是最优的, 那么把残差变为0比非线性层的堆叠更简单.
+假设残差映射的优化易于直接映射, 如果某个恒等的映射是最优的, 那么把残差变为0比非线性层的堆叠更简单.
 $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, 快捷连接是指跨过或者跳过一定的层,
 如图 \ref{ResidualNND2020202002}, 在这里短连接正好实现了恒等映射.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1504,7 +1523,7 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
     \vspace{-0.4cm}
 \end{figure}
 网络要学习的是$H(x)$, 那么由于图中$\textup{identity}\,\, x$之间跨过了2层, 那么其实相当于拟合的是$F(x)=H (x)-x$, 这就是残差概念的来源.
-提出的结构打破了传统的神经网络$n-1$层的输出只能给$n$层作为输入的惯例, 使某一层的输出可以直接跨过几层作为后面某一层的输入.
+该结构打破了传统的神经网络$n-1$层的输出只能给$n$层作为输入的惯例, 使某一层的输出可以直接跨过几层作为后面某一层的输入.
 图 \ref{DRL2020020301} 就是其构造深度残差网络的构思来源图, 比较使用了56层的网络和一个是20层的网络, 从原理上来说其实56层网络的解空间是包括了20层网络的解空间的, 换而言之也就是说, 56层网络取得的性能应该大于等于20层网络的性能的.
 但是从训练的迭代过程来看, 56层的网络无论从训练误差来看还是测试误差来看, 误差都大于20层的网络 (这也说明了为什么这不是过拟合现象, 因为56层网络本身的训练误差都没有降下去).
 导致这个原因就是虽然56层网络的解空间包含了20层网络的解空间, 训练网络用的随机梯度下降策略往往得不到全局最优解, 而是局部的最优解, 显而易见56层网络的解空间更加的复杂, 所以导致使用随机梯度下降算法无法解到最优解.
@@ -1532,27 +1551,6 @@ $F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现, �
 \end{remark}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{深度神经网络轻量化}
- ``深度学习"的学习模式:  ``深度学习"这个名词其实最主要是针对人工智能领域, 它是指机器的一种学习模式, 与我们平常所指的人类的深度学习是不同的概念.
-\begin{itemize}
-    \item  ``深度学习"是机器学习的一种特定技术, 它是建立在大数据的基础上, 用大数据对机器进行训练, 在机器反馈的过程中不断地纠错.
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{example}
-    对于婴孩来说, 我们拿三个不同杯子告诉宝宝, 这是杯子.
-    基本上, 他就知道什么是杯子了. 不管第四个杯子的形状或者图案有什么不同, 但孩子基本已经能够非常清楚地辨别杯子的本质特征.
-    然而, 对于机器来说, 它需要通过足够多的例子,
-    \end{example}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{example}
-    你给它展示一个圆柱形的杯子, 告诉它:  ``这是杯子. "但是当你拿另一个圆形的杯子给它看的时候, 它可能会说这是一个球.
-    所以, 深度学习就是建立在大数据的基础上, 给它看足够多的数据, 直到机器最后总结出杯子的本质特征.
-    \end{example}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \item  ``深度学习"技术, 是建立在 ``人工神经网络"上的, 而人工神经网络, 又是来自人类神经生物学的深刻理解和延展.
-    我们人类的神经网络通过神经元的联结来传递和处理信息, 而人工神经网络则是模拟大脑的工作机制.
-    通过研究人类智能的工作机制, 可以模拟出人工智能的工作原理.
-
-    \item 深度学习不比人类的学习, 人类通过认知、推理、总结和反思来认识陌生的事物, 但机器没有人类的意识和思维, 它需要足够多的数据, 才能得出结论; 而且, 机器到底是怎么得出结论的, 我们尚未可知.
-\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -1684,6 +1682,7 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
  ``深度"是指网络中的层数 — 层数越多, 网络越深. 传统的神经网络只包含 2 层或 3 层, 而深度网络可能有几百层.
 深度学习是机器学习的一个类型, 该类型的模型直接从图像、文本或声音中学习执行分类任务. 通常使用神经网络架构实现深度学习.
 深度学习由一连串可微分的参数化的层组成, 而且是用反向传播算法端到端地训练的.
+CNN相对于DNN, 比较特殊的是加入了卷积层和池化层, 在熟悉DNN的基础上, 理解卷积层和池化层的原理就学会了CNN.
 \begin{remark}
 \textbf{深度学习领域被引最高的论文}:
 神经网络实际上是一个泛逼近器. 用形象点的类比来说, 可以把神经网络视为一个超级大的万能工匠玩具——大量互相连接的节点阵列, 可以训练来完成许多任务, 从语言翻译到识别物体、识别人类讲话.
@@ -1818,17 +1817,53 @@ FCN的出现给物体分割提供了一个非常重要的解决思路, 其核心
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 图 \ref{TUCon2020020302} 是卷积运算需要的输入矩阵和卷积核, 图 \ref{JuanJi2020020301} 左上角是计算 第一行第一列像素的卷积后像素值, 其中
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.65\textwidth]{TUCon2020020302.PNG}
+%\caption{输入和卷积核}
+%\label{TUCon2020020302}
+%\end{figure}
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.65\textwidth]{TUCon2020020302.PNG}
-\caption{输入和卷积核}
+\begin{align*}
+\begin{tabularx}{0.16\textwidth}{llllllllllll}
+\cellcolor{intnull} {1}&\cellcolor{intnull} {2} &  \cellcolor{intnull} {3} \\
+\cellcolor{intnull} {4} &\cellcolor{intnull} { 5} & \cellcolor{intnull} {6}\\
+\cellcolor{intnull} {7} & \cellcolor{intnull} {8} &\cellcolor{intnull} \cellcolor{intnull} {9}\\
+\end{tabularx}
+\;\cellcolor{intnull} {\rightarrow}\;
+\begin{tabularx}{0.16\textwidth}{llllllllllll}
+\cellcolor{intnull} {-1}&\cellcolor{intnull} {-2} &  \cellcolor{intnull} {-1} \\
+\cellcolor{intnull} {0} &\cellcolor{inteins} { 0} & \cellcolor{intnull} {0}\\
+\cellcolor{intnull} {1} & \cellcolor{intnull} {2}&\cellcolor{intnull} {1}\\
+\end{tabularx}
+\;\cellcolor{intnull} {\rightarrow}\;
+\begin{tabularx}{0.2\textwidth}{llllllllllll}
+\cellcolor{intnull} {-13}&\cellcolor{intnull} {-20} &  \cellcolor{intnull} {-17} \\
+\cellcolor{intnull} {-18} &\cellcolor{intnull} {-24} & \cellcolor{intnull} {-18}\\
+\cellcolor{intnull} {13} & \cellcolor{intnull} {20} &\cellcolor{intnull} {17}\\
+\end{tabularx}
+\end{align*}
+\caption{输入、卷积核和输出}
 \label{TUCon2020020302}
 \end{figure}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.3\textwidth]{JuanJi2020020301.PNG}
+%\caption{第一行第一列像素值}
+%\label{JuanJi2020020301}
+%\end{figure}
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.3\textwidth]{JuanJi2020020301.PNG}
+\begin{align*}
+\begin{tabularx}{0.25\textwidth}{llllllllllll}
+\cellcolor{intnull} {1} & \cellcolor{intnull} {2}&\cellcolor{intnull} {1}&\\
+\cellcolor{intnull} {0} &\cellcolor{intnull} { 0} \cellcolor{inteins}{\footnotesize 1}  & \cellcolor{intnull} {\footnotesize0} \cellcolor{inteins}{\footnotesize2} &\cellcolor{inteins}{\footnotesize 3}\\
+\cellcolor{intnull} {-1}&\cellcolor{intnull} {-2} \cellcolor{inteins}{\footnotesize 4} &  \cellcolor{intnull} {\footnotesize-1} \cellcolor{inteins}{\footnotesize5}&\cellcolor{inteins}{\footnotesize 6} \\
+&\cellcolor{inteins}{\footnotesize \quad 7}&\cellcolor{inteins}{\;\;\footnotesize 8}&\cellcolor{inteins}{\footnotesize \;\;9}\\
+\end{tabularx}
+\end{align*}
 \caption{第一行第一列像素值}
-\label{JuanJi2020020301}
+\label{TUCon2020020302}
 \end{figure}
 像素左上角位置记为$[0,0]$, 图像值为1; $h$为卷积核, $x$为图像值, 不足的填充0.
 $$
@@ -1851,7 +1886,7 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
       =&-13.
 \end{aligned}$$
 通过滑动卷积核, 就可以得到整张图片的卷积结果 (图 \ref{TUCon2020020302} 的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样甚至变小.
-\vspace{-0.4cm}
+\vspace{-0.2cm}
 \end{example}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1860,26 +1895,18 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-从左到右运算后, 原像素经过卷积由$1$变成$-8$ (图 \ref{CNN20161021131748099}).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth]{20161021131748099.png}
-\caption{卷积核对图像逐像素点运算}
-\label{CNN20161021131748099}
-\end{figure}
-\vspace{-0.4cm}
+    从左到右运算后, 原像素经过卷积由$1$变成$-8$ (图 \ref{CNN20161021131748099}).
 \end{example}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 经过same卷积计算后图像大小不变.
 图 \ref{CNN20161021131748099} 卷积计算后图像大小不变.
 图 \ref{20161021135241205} 经过valid卷积后图像变小, 是因为没有对所用像素进行卷积计算.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\animategraphics[width=0.4\textwidth,autoplay,controls]{2}{20161021135241205}{1}{9}
-\caption{valid卷积运算}
-\label{20161021135241205}
+    \centering
+    \animategraphics[width=0.4\textwidth,autoplay,controls]{2}{20161021135241205}{1}{9}
+    \caption{valid卷积运算}
+    \label{20161021135241205}
 \end{figure}
 
 \href{https://cn.mathworks.com/help/matlab/ref/conv2.html?requestedDomain=www.mathworks.com}{Matlab}中2维卷积分为完全卷积、same卷积和valid卷积.
@@ -1890,13 +1917,14 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
 $4\times 4$的卷积是完整的卷积计算. 其他比它小的卷积结果都是省去了部分像素的卷积.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
-\centering
-\animategraphics[width=0.4\textwidth,autoplay,controls]{2}{CNN20161021141659634}{1}{16}
-\caption{2维完全卷积}
-\label{CNN20161021141659634}
+    \centering
+    \animategraphics[width=0.4\textwidth,autoplay,controls]{2}{CNN20161021141659634}{1}{16}
+    \caption{2维完全卷积}
+    \label{CNN20161021141659634}
 \end{figure}
-对应图像卷积后多出部分的解释 (来自WIKI): 多出来的部分根据实际情况可以有不同的处理方法 (这里的full卷积就是后面要说的反卷积) ,
-我们可以对卷积核移动范围的不同限制, 得到full卷积, same卷积 (指经过卷积的特征图和原图的size保持不变), valid卷积 (滤镜全部在image里面的时候, 进行卷积运算, 可见滤镜的移动范围较same卷积更小), 三种卷积后图像大小的计算公式:
+图像卷积后多出部分的解释 (来自WIKI): 多出来的部分根据实际情况可以有不同的处理方法 (这里的full卷积就是后面要说的反卷积) ,
+我们可以对卷积核移动范围作不同限制, 得到full卷积, same卷积 (指经过卷积的特征图和原图的size保持不变), 
+valid卷积 (滤镜全部在image里面的时候, 进行卷积运算, 可见滤镜的移动范围较same卷积更小), 三种卷积后图像大小的计算公式:
 
 1) full卷积: 滑动步长为1, 图片大小为$N_1\times N_1$, 卷积核大小为$N_2\times N_2$, 卷积后图像大小: $ (N_1+N_2-1) \times (N_1+N_2-1)$.
 如图 \ref{CNN20161021141659634}, 滑动步长为1, 图片大小为$2\times 2$, 卷积核大小为$3\times 3$, 卷积后图像大小: $4\times 4$.
@@ -1909,14 +1937,14 @@ $4\times 4$的卷积是完整的卷积计算. 其他比它小的卷积结果都�
 %%%%%%%%-------------------------------------------------------------------------------
 \subsubsection{反卷积 (后卷积, 转置卷积)}
 
-反卷积跟1维信号处理的反卷积计算不一样, FCN称为后向卷积层\index{后向卷积层}, 有人称反卷积层应该称为转移卷积层.
+反卷积跟1维信号处理的反卷积计算不一样, FCN称为后向卷积层\index{后向卷积层}, 有人称反卷积层, 也该称为转移卷积层.
 CNN中有卷积层与池化层, 卷积层进行对图像卷积提取特征, 池化层对图像缩小一半筛选重要特征, 对于经典的图像识别CNN网络, 如IMAGENET, 最后输出结果是$1\times 1\times 1000$, 1000是类别种类.
 FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN作者最后的输出不是$1\times 1$, 是图片大小的32分之一, 但不影响反卷积的使用) .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-大小为$2\times 2$图像的反卷积过程如图 \ref{20170715175257862}, 其中输入$2\times 2$, 卷积核$4\times 4$, 滑动步长3, 输出$7\times 7$, 图 \ref{20170715175257862}给出了输入为$2\times 2$的图片经过$4\times 4$的卷积核进行步长为3的反卷积运算过程.
+大小为$2\times 2$图像的反卷积过程如图 \ref{20170715175257862}, 其中输入$2\times 2$, 卷积核$4\times 4$, 滑动步长3, 输出$7\times 7$, 图 \ref{20170715175257862}给出了输入为$2\times 2$的图片经过$4\times 4$的卷积核进行步长为3的反卷积的运算过程.
 
-1) 输入图片每个像素进行一次full卷积, 根据full卷积大小计算可以知道每个像素的卷积后大小为 $1+4-1=4$, 即$4\times 4$大小的特征图, 输入有4个像素所以4个$4\times 4$的特征图.
+1) 输入图片每个像素进行一次full卷积, 根据full卷积大小计算, 可以知道每个像素的卷积后大小为 $1+4-1=4$, 即$4\times 4$大小的特征图, 输入有4个像素所以4个$4\times 4$的特征图.
 
 2) 将4个特征图进行步长为3的融合 (即相加);
 
@@ -1994,13 +2022,27 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
 当前最常用形式的池化层是每隔2个元素从图像划分出$2\times 2$的区块, 然后对每个区块中的4个数取最大值.
 这将会减少75\%的数据量.
 \end{tcolorbox}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{Pooling14827576.png}
-    \vspace{-0.5cm}
-    \caption{池化的作用}
-    \label{Pooling14827576}
-\end{figure}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{Pooling14827576.png}
+%    \vspace{-0.5cm}
+%    \caption{池化结果}
+%    \label{Pooling14827576}
+%\end{figure}
+池化结果如式 \ref{AIC7Pooling747}.
+\begin{align}\label{AIC7Pooling747}
+\begin{tabularx}{0.3\textwidth}{llllllllllll}
+\cellcolor{intnull} {1}&\cellcolor{intnull} { 0} & 2 & 3 \\
+\cellcolor{intnull} {4} &\cellcolor{intnull} { 6} & 6 & 8 \\
+3 & 1 &\cellcolor{intnull} { 1} &\cellcolor{intnull} { 0 }\\
+1 & 2 &\cellcolor{intnull} { 2} &\cellcolor{intnull} { 4}
+\end{tabularx}
+\;\cellcolor{intnull} {\rightarrow}\;
+\begin{tabularx}{0.15\textwidth}{llllllllllll}
+6 & 8 \\
+3 & 4\\
+\end{tabularx}
+\end{align}
 池化方法特征提取误差主要来自两个部分：
 一是, 邻域大小受限造成了估计值方差增大；
 二是, 卷积层参数误差造成了估计均值的偏移.
@@ -2027,48 +2069,170 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
 \lstinputlisting[language=matlab, caption={最大池化操作函数maxPooling2dLayer}]{code/maxPooling.m}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-卷积中的\href{https://blog.csdn.net/weicao1990/article/details/80282837}{步幅}是另一个构建卷积神经网络的基本操作 , 例
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{1e7180cfff7e697ef0.png}
-\end{figure}
-如果你想用$3\times 3$的过滤器卷积这个$7\times 7$的图像, 和之前不同的是, 我们把步幅设置成了2.
-还和之前一样取左上方的$3\times 3$区域的元素的乘积, 再加起来, 最后结果为91.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{6d060f10dd7cb586c4.png}
-\end{figure}
-之前我们移动蓝框的步长是1, 现在移动的步长是2, 我们让过滤器跳过2个步长, 注意一下左上角, 这个点移动到其后两格的点, 跳过了一个位置.
-然后你还是将每个元素相乘并求和, 你将会得到的结果是100.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{2ee8aff917acab.png}
-\end{figure}
-现在我们继续, 将蓝色框移动两个步长, 你将会得到结果为83.
-当你移动到下一行的时候, 也是使用步长2而不是步长1, 所以我们将蓝色框移动到这里
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{54a3b259569f45.png}
-\end{figure}
-注意到我们跳过了一个位置, 得到结果为69, 现在你继续移动两个步长, 会得到91, 127, 最后一行分别是44, 72, 74.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{c4b80789d46ed.png}
-\end{figure}
-所以在这个例子中, 我们用$3\times 3$的矩阵卷积一个$7\times 7$的矩阵, 得到一个$3\times 3$的输出.
+卷积中的\href{https://blog.csdn.net/weicao1990/article/details/80282837}{步幅}是另一个构建卷积神经网络的基本操作.
+
+1) 对默认步幅为1, 取左上方的$3\times 3$区域的元素的乘积, 再加起来, 卷积结果的第一个位置(1,1)为91.
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{1e7180cfff7e697ef0.png}
+%\end{figure}
+\begin{align*}
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline 2\;\; ^{3} & 3\;\;^{4} & 7\;\;^{4} & 4 & 6 & 2 & 9 \\
+\hline 6\;\;^{1} & 6\;\;^{0} & 9\;\;^{9} & 8 & 7 & 4 & 3 \\
+\hline 3\;\;^{-1} & 4\;\;^{0} & 8\;\;^{3} & 3 & 8 & 9 & 7 \\
+\hline 7 & 8 & 3 & 6 & 6 & 3 & 4 \\
+\hline 4 & 2 & 1 & 8 & 3 & 4 & 6 \\
+\hline 3 & 2 & 4 & 1 & 9 & 8 & 3 \\
+\hline 0 & 1 & 3 & 9 & 2 & 1 & 4 \\
+\hline
+\end{array}
+\;*\;
+\begin{array}{|c|c|c|}
+\hline 3 & 4 & 4 \\
+\hline 1 & 0 & 2 \\
+\hline-1 & 0 & 3 \\
+\hline
+\end{array}
+=
+\begin{matrix}
+91 &-&- \\
+-&- &- \\
+-&- &-\\
+\end{matrix}
+\end{align*}
+2) 用$3\times 3$的过滤器卷积这个$7\times 7$的图像, 和之前不同的是, 我们把步幅设置成了2, 即stride=2.
+\begin{align*}
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline 2 & 3 & 7\;\; ^{3} & 4\;\; ^{4} & 6\;\; ^{4} & 2 & 9 \\
+\hline 6 & 6 & 9\;\; ^{1} & 8\;\; ^{0} & 7\;\; ^{2} & 4 & 3 \\
+\hline 3 & 4 & 8\;\; ^{-1} & 3\;\; ^{0} & 8\;\; ^{3} & 9 & 7 \\
+\hline 7 & 8 & 3 & 6 & 6 & 3 & 4 \\
+\hline 4 & 2 & 1 & 8 & 3 & 4 & 6 \\
+\hline 3 & 2 & 4 & 1 & 9 & 8 & 3 \\
+\hline 0 & 1 & 3 & 9 & 2 & 1 & 4 \\
+\hline
+\end{array}
+\;*\;
+\begin{array}{|c|c|c|}
+\hline 3 & 4 & 4 \\
+\hline 1 & 0 & 2 \\
+\hline-1 & 0 & 3 \\
+\hline
+\end{array}
+=  
+\begin{matrix}
+91 &100&- \\
+-&- &- \\
+-&- &-\\
+\end{matrix}
+\end{align*}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{6d060f10dd7cb586c4.png}
+%\end{figure}
+现在移动的步长是2, 我们让过滤器跳过2个步幅, 注意一下左上角, 这个点移动到其后两格的点, 跳过了一个位置.
+然后你还是将每个元素相乘并求和, (1,2)位置卷积的结果是100 .
+\begin{align*}
+\begin{array}{|l|l|l|l|l|l|l|}
+\hline 2 & 3 & 7 & 4 & 6^{3} & 2^{4} & 9^{4} \\
+\hline 6 & 6 & 9 & 8 & 7^{1} & 4^{0} & 3^{2} \\
+\hline 3 & 4 & 8 & 3 & 8^{-1} & 9^{0} & 7^{3} \\
+\hline 7 & 8 & 3 & 6 & 6 & 3 & 4 \\
+\hline 4 & 2 & 1 & 8 & 3 & 4 & 6 \\
+\hline 3 & 2 & 4 & 1 & 9 & 8 & 3 \\
+\hline 0 & 1 & 3 & 9 & 2 & 1 & 4 \\
+\hline
+\end{array}
+\;*\;
+\begin{array}{|c|c|c|}
+\hline 3 & 4 & 4 \\
+\hline 1 & 0 & 2 \\
+\hline-1 & 0 & 3 \\
+\hline
+\end{array}
+=
+\begin{matrix}
+91 &100&83\\
+-&- &- \\
+-&- &-\\
+\end{matrix}
+\end{align*}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{2ee8aff917acab.png}
+%\end{figure}
+现在我们继续, 将蓝色框移动两个步长, (1,3)位置卷积的结果为83.
+%\begin{align*}
+%\begin{array}{|l|l|l|l|l|l|l|}
+%\hline 2 & 3 & 7 & 4 & 6 & 2 & 9 \\
+%\hline 6 & 6 & 9 & 8 & 7 & 4 & 3 \\
+%\hline 3\;\; ^{3} & 4\;\;^{4} & 8\;\;^{4} & 3 & 8 & 9 & 7 \\
+%\hline 7\;\;^{1} & 8\;\;^{0} & 3\;\;^{2} & 6 & 6 & 3 & 4 \\
+%\hline 4\;\;^{-1} &2\;\;^{2} & 1\;\;^{3} & 8 & 3 & 4 & 6 \\
+%\hline 3 & 2 & 4 & 1 & 9 & 8 & 3 \\
+%\hline 0 & 1 & 3 & 9 & 2 & 1 & 4 \\
+%\hline
+%\end{array}
+%\;*\;
+%\begin{array}{|c|c|c|}
+%\hline 3 & 4 & 4 \\
+%\hline 1 & 0 & 2 \\
+%\hline-1 & 0 & 3 \\
+%\hline
+%\end{array}
+%=
+%\begin{matrix}
+%91 &100&83\\
+%69&- &- \\
+%-&- &-\\
+%\end{matrix}
+%\end{align*}
+\begin{align*}
+\begin{tabularx}{0.4\textwidth}{llllllllllll}
+2 & 3 & 7 & 4 & 6 & 2 & 9 \\
+6 & 6 & 9 & 8 & 7 & 4 & 3 \\
+\cellcolor{intnull} {3\;\; $^{3}$} & \cellcolor{intnull} {4\;\;$^{4}$} & \cellcolor{intnull} {8\;\;$^{4}$} & 3 & 8 & 9 & 7 \\
+\cellcolor{intnull} {7\;\;$^{1}$} &\cellcolor{intnull} {8\;\;$^{0}$} & \cellcolor{intnull} {3\;\;$^{2}$} & 6 & 6 & 3 & 4 \\
+\cellcolor{intnull} {4\;\;$^{-1}$} &\cellcolor{intnull} {2\;\;$^{2}$} & \cellcolor{intnull} {1\;\;$^{3}$} & 8 & 3 & 4 & 6 \\
+3 & 2 & 4 & 1 & 9 & 8 & 3 \\
+0 & 1 & 3 & 9 & 2 & 1 & 4 \\
+\end{tabularx} 
+\;\cellcolor{intnull} {*}\;
+\begin{tabularx}{0.15\textwidth}{llllllllllll}
+3 & 4 & 4 \\
+1 & 0 & 2 \\
+-1 & 0 & 3 \\
+\end{tabularx} 
+\cellcolor{intnull} {=}
+\begin{matrix}
+91 &100&83\\
+69&- &- \\
+-&- &-\\
+\end{matrix}
+\end{align*}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{54a3b259569f45.png}
+%\end{figure}
+以此类推, 继续以步长2移动, 会得到91, 127, 最后一行分别是44, 72, 74.
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{c4b80789d46ed.png}
+%\end{figure}
+
+例子用$3\times 3$的矩阵卷积一个$7\times 7$的矩阵, 得到一个$3\times 3$的输出.
 输入和输出的维度是由下面的公式决定的.
-如果你用一个$f\times f$的过滤器卷积一个$n\times n$的图像, padding为$p$, 步幅为$s$,
-你会得到一个输出, 因为现在你不是一次移动一个步子, 而是一次移动个步子, 输出于是变为
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{17c950028daf31.png}
-\end{figure}
-这即$3\times 3$的输出.
+如果你用一个$f\times f$的过滤器卷积一个$n\times n$的图像, padding为$p$, 步幅为$s$, $3\times 3$的输出变为
+\begin{align*}
+    \left\lfloor\frac{n+2p-f}{s}+1\right\rfloor \quad \times \quad\left\lfloor\frac{n+2p-f}{s}+1\right\rfloor\Rightarrow \left\lfloor\frac{7+0-3}2+1\right\rfloor\times\left\lfloor\frac{7+0-3}2+1\right\rfloor=3\times 3.
+\end{align*}
 \end{example}
 \begin{remark}
-stride是图像处理中常用的概念.
+步幅stride是图像处理中常用的概念.
 \begin{example}
-    一行有 11 个像素(Width = 11), 对一个 32 位(每个像素 4 字节)的图像, $\textup{Stride}= 11 \times 4 = 44$.
+    一行有 11 个像素(Width = 11)的图像, 32 位(每个像素 4 字节), $\textup{Stride}= 11 \times 4 = 44$.
 \end{example}
 \end{remark}
 
@@ -2092,11 +2256,33 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 \begin{align*}
     \left\lfloor\frac{n+2 p-f}{s}+1\right\rfloor \quad \times \quad\left\lfloor\frac{n+2 p-f}{s}+1\right\rfloor.
 \end{align*}
-可以选择所有的数使结果是整数是挺不错的, 尽管一些时候, 你不必这样做, 只要向下取整也就可以了. 你也可以自己选择一些不同参数的值来验证这个输出尺寸的公式.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.86\textwidth]{962516fc6e636830a.png}
-\end{figure}
+选择所有的数使结果是整数是不错的选择, 尽管只要向下取整也就可以. 
+\begin{example}
+自己选择一些参数, 验证卷积输出.
+\begin{align*}
+\begin{array}{|c|c|c|c|c|c|}
+\hline 2\;\;^{7} & 3\;\;^{2} & 7\;\;^{5} & 4 & 6 & 2 \\
+\hline 6\;\;^{9} & 6\;\;^{0} & 9\;\;^{4} & 8 & 7 & 4 \\
+\hline 3\;\;^{-} & 4\;\;^{1} & 8\;\;^{3} & 3 & 8 & 9 \\
+\hline 7 & 8 & 3 & 6 & 6 & 3 \\
+\hline 4 & 2 & 1 & 8 & 3 & 4 \\
+\hline 3 & 2 & 4 & 1 & 9 & 8 \\
+\hline
+\end{array}
+\;*\;
+\begin{array}{|c|c|c|}
+\hline 7 & 2 & 5 \\
+\hline 9 & 0 & 4 \\
+\hline-1 & 1 & 3 \\
+\hline
+\end{array}
+=?
+\end{align*} 
+\end{example}
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.86\textwidth]{962516fc6e636830a.png}
+%\end{figure}
 
 这里有一个关于互相关和卷积的技术性建议, 这不会影响到你构建卷积神经网络的方式, 但取决于你读的是数学教材还是信号处理教材, 在不同的教材里符号可能不一致.
 \begin{remark}
@@ -2137,11 +2323,10 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
     定义上述卷积运算时, 我们跳过了这个镜像操作. 从技术上讲, 我们实际上做的, 我们在前面视频中使用的操作, 有时被称为互相关（cross-correlation）而不是卷积（convolution）. 但在深度学习文献中, 按照惯例, 我们将这（不进行翻转操作）叫做卷积操作 (CS230课程,吴恩达, K. Katanforoosh).
 \end{remark}
 
-总结来说, 按照机器学习的惯例, 我们通常不进行翻转操作. 从技术上说, 这个操作可能叫做互相关更好. 但在大部分的深度学习文献中都把它叫做卷积运算, 因此我们将在这些视频中使用这个约定. 如果你读了很多机器学习文献的话, 你会发现许多人都把它叫做卷积运算, 不需要用到这些翻转.
+按照机器学习的惯例, 通常不进行翻转操作. 从技术上说, 这个操作可能叫做互相关更好. 但在大部分的深度学习文献中都把它叫做卷积运算. 很多机器学习的文献把这种运算叫做卷积运算, 不用翻转操作.
 
 事实证明在信号处理中或某些数学分支中, 在卷积的定义包含翻转, 使得卷积运算符拥有这个性质, 即, 这在数学中被称为结合律. 这对于一些信号处理应用来说很好, 但对于深度神经网络来说它真的不重要, 因此省略了这个双重镜像操作, 就简化了代码, 并使神经网络也能正常工作.
-
-根据惯例, 我们大多数人都叫它卷积, 尽管数学家们更喜欢称之为互相关, 但这不会影响到你在编程练习中要实现的任何东西, 也不会影响你阅读和理解深度学习文献.
+大多数人都叫它卷积, 尽管数学家们更喜欢称之为互相关, 这不会影响你的编程练习和实践, 也不影响你理解深度学习.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{激活函数和层范数}

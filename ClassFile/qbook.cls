@@ -666,4 +666,12 @@
 \graphicspath{{figures/},{gif2pnffolder/}}
 \usepackage{qrcode}
 \usepackage{tabularx}
+\usepackage{colortbl}
+
+\definecolor{intnull}{RGB}{213,229,255}
+\definecolor{inteins}{RGB}{128,179,255}
+\definecolor{intzwei}{RGB}{42,127,255}
+\definecolor{intdrei}{RGB}{0,85,212}
+\definecolor{intvier}{RGB}{0,51,128}
+\definecolor{intfunf}{RGB}{0,34,85}
 \endinput
