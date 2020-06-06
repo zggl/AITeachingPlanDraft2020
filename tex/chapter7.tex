@@ -1952,7 +1952,7 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 得到 $\textup{out} = (\textup{in} - 1) \times  s + k$,
 图 \ref{20170715175257862} 过程就可以写为$ (2 - 1)\times 3 + 4 = 7$.
 \end{example}
-这种反卷积的使用使得图像可以变大, FCN的反卷积方法是上面反卷积的一种变体, 这样就可以获得相应的像素值, 
+这种反卷积的使用使得图像可以变大, FCN的反卷积方法是上面反卷积的一种变体, 这样就可以获得相应的像素值,
 图像可以实现首尾相连地分割. \index{FCN}
 图像的反卷积见图 \ref{Dconop0203} 的 \href{https://github.com/vdumoulin/conv_arithmetic}{full卷积原理}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2008,9 +2008,9 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 \lstinputlisting[language=matlab, caption={最大池化操作函数maxPooling2dLayer}]{code/maxPooling.m}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-卷积中的\href{https://blog.csdn.net/weicao1990/article/details/80282837}{步幅}是另一个构建卷积神经网络的基本操作.
+卷积中的\href{https://blog.csdn.net/weicao1990/article/details/80282837}{滑动步长}是另一个构建卷积神经网络的基本操作.
 
-1) 对默认步幅为1, 取左上方的$3\times 3$区域的元素的乘积, 再加起来, 卷积结果的第一个位置(1,1)为91.
+1) 对默认滑动步长为1, 取左上方的$3\times 3$区域的元素的乘积, 再加起来, 卷积结果的第一个位置(1,1)为91.
 %\begin{figure}[H]
 %    \centering
 %    \includegraphics[width=0.86\textwidth]{1e7180cfff7e697ef0.png}
@@ -2041,7 +2041,7 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 \end{matrix}
 \end{align*}
 
-2) 用$3\times 3$的过滤器卷积这个$7\times 7$的图像, 和之前不同的是, 我们把步幅设置成了2, 即stride=2.
+2) 用$3\times 3$的过滤器卷积这个$7\times 7$的图像, 和之前不同的是, 我们把滑动步长设置成了2, 即stride=2.
 \begin{align*}
 \begin{array}{|c|c|c|c|c|c|c|}
 \hline 2 & 3 & 7\;\; ^{3} & 4\;\; ^{4} & 6\;\; ^{4} & 2 & 9 \\
@@ -2071,7 +2071,7 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 %    \centering
 %    \includegraphics[width=0.86\textwidth]{6d060f10dd7cb586c4.png}
 %\end{figure}
-现在移动的步长是2, 我们让过滤器跳过2个步幅, 注意一下左上角, 这个点移动到其后两格的点, 跳过了一个位置.
+现在移动的步长是2, 我们让过滤器跳过2个滑动步长, 注意一下左上角, 这个点移动到其后两格的点, 跳过了一个位置.
 然后你还是将每个元素相乘并求和, (1,2)位置卷积的结果是100 .
 \begin{align*}
 \begin{array}{|l|l|l|l|l|l|l|}
@@ -2165,7 +2165,7 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 
 例子用$3\times 3$的矩阵卷积一个$7\times 7$的矩阵, 得到一个$3\times 3$的输出.
 输入和输出的维度是由公式 \eqref{AIC7} 决定的.
-如果你用一个$N_2\times N_2$的过滤器卷积一个$N_1\times N_1$的图像, 填充数为$P$, 步幅为$S$, $3\times 3$的输出变为
+如果你用一个$N_2\times N_2$的过滤器卷积一个$N_1\times N_1$的图像, 填充数为$P$, 滑动步长为$S$, $3\times 3$的输出变为
 \begin{align}\label{AIC7}
     \left\lfloor\frac{N_1+2P-N_2}{S}+1\right\rfloor \times \left\lfloor\frac{N_1+2P-N_2}{S}+1\right\rfloor
           \Rightarrow \left\lfloor\frac{7+0-3}2+1\right\rfloor\times\left\lfloor\frac{7+0-3}2+1\right\rfloor=3\times 3.
@@ -2173,7 +2173,7 @@ FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输�
 \vspace{-0.2cm}
 \end{example}
 \begin{remark}
-步幅stride是图像处理中常用的概念.
+滑动步长stride是图像处理中常用的概念.
 \begin{example}
     一行有 11 个像素(Width = 11)的图像, 32 位(每个像素 4 字节), $\textup{Stride}= 11 \times 4 = 44$.
 \vspace{-0.2cm}
@@ -2192,11 +2192,11 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 
 1) $\textup{Stride} = \textup{每像素占用的字节数(像素位数/8)} \times \textup{Width}$;
 
-2) 如果步幅 Stride 不是 4 的倍数, 那么步幅 $\textup{Stride} = \textup{Stride} + (4 - \textup{Stride}\, \textup{mod}\, 4)$;
+2) 如果滑动步长 Stride 不是 4 的倍数, 那么滑动步长 $\textup{Stride} = \textup{Stride} + (4 - \textup{Stride}\, \textup{mod}\, 4)$;
 \vspace{-0.5cm}
 \end{example} 
 
-总结一下维度情况, 如果你有一个$M\times N_1$的矩阵或者$M\times N_1$的图像, 与一个$N_2\times N_2$的矩阵卷积, 或者说$N_2\times N_2$的过滤器. Padding是$P$, 步幅为$S$, 输出尺寸为
+总结一下维度情况, 如果你有一个$M\times N_1$的矩阵或者$M\times N_1$的图像, 与一个$N_2\times N_2$的矩阵卷积, 或者说$N_2\times N_2$的过滤器. Padding是$P$, 滑动步长为$S$, 输出尺寸为
 \begin{align*}
     \left\lfloor\frac{N_1+2 P-N_2}{S}+1\right\rfloor \quad \times \quad\left\lfloor\frac{N_1+2 P-N_2}{S}+1\right\rfloor.
 \end{align*}
@@ -2341,7 +2341,7 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 池化操作后的结果相比其输入缩小了. 池化层的引入是仿照人的视觉系统对视觉输入对象进行降维和抽象.
 池化层有如下三个功效：
 \begin{itemize}
-    \item 特征不变形：池化操作是模型更加关注是否存在某些特征而不是特征具体的位置.
+    \item 特征不变形：池化操作时, 模型更加关注是否存在某些特征而不是特征具体的位置.
     \item 特征降维：池化相当于在空间范围内做了维度约减, 从而使模型可以抽取更加广范围的特征.
             同时减小了下一层的输入大小, 进而减少计算量和参数个数.
     \item 在一定程度上防止过拟合, 更方便优化.
@@ -2877,7 +2877,7 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{CCNshuidao20191216181108.jpg}
-    \caption{稻田数据集上使用拟议的扩展跳过网络学习语义线的定性结果}
+    \caption{稻田数据集上使用语义扩展跳过网络学习语义线的定性结果}
     \label{CCNshuidao20191216181108}
     \vspace{-0.4cm}
 \end{figure}
@@ -2893,7 +2893,7 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{CCNshuidao20191216181137.jpg}
-    \caption{稻谷数据集上使用拟议的卷积编码器/解码器网络学习语义图形的定性结果}
+    \caption{稻谷数据集上使用语义卷积编码器/解码器网络学习语义图形的定性结果}
     \label{CCNshuidao20191216181137}
     \vspace{-0.4cm}
 \end{figure}
