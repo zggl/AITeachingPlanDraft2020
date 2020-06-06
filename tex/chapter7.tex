@@ -1401,7 +1401,7 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
 深度学习可以从大数据中自动学习特征的表示，可以包含成千上万的参数.
 采用手工设计出有效的特征往往需要五到十年时间，而深度学习可以针对新的应用从训练数据中很快学习到新的有效的特征表示.
 
-一个模式识别系统包括特征和分类器两部分. 在传统方法中，特征和分类器的优化是分开的.
+一个模式识别系统包括\uwave{特征和分类器}两部分. 在传统方法中，特征和分类器的优化是分开的.
 而在神经网络的框架下，特征表示和分类器是联合优化的，可以最大程度地发挥二者联合协作的性能.
 
 \begin{example}
@@ -1412,9 +1412,9 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
 \end{example}
 
 既然特征学习如此重要，那么，什么是好的特征呢？一幅图像中，各种复杂的因素往往以非线性的方式结合在一起.
-例如人验图像中就包含了身份、姿态、年龄、表情、光线等各种信息.
+例如人脸图像中就包含了身份、姿态、年龄、表情、光线等各种信息.
 深度学习的关键就是通过多层非线性映射将这些因素成功分开，例如在深度模型的最后一个隐含层，不同神经元代表了不同因素.
-如果将这个隐含层当作特征表示，人脸识别、姿态估计、表情识别、年龄估计就会变得非常简单，因为各个因素之间变成了简单的线性关系，不再彼此干扰.
+如果将这个隐含层当作特征表示，人脸识别、姿态估计、表情识别以及年龄估计就会变得非常简单，因为各个因素之间变成了简单的线性关系，不再彼此干扰.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{深层结构的优势}
 深度学习模型的“深”字意味着神经网络的结构深，由很多层组成. 而支持向量机和Boosting等其他常用的机器学习模型都是浅层结构.
@@ -1432,8 +1432,14 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
 深度模型之所以能减少参数的关键在于重复利用中间层的计算单元.
 
 \begin{example}
-以人脸识别为例，深度学习可以针对人脸图像的分层特征表达进行：最底层从原始像素开始学习滤波器，刻画局部的边缘和纹理特征；
-中层滤波器通过将各种边缘滤波器进行组合，描述不同类型的人脸器官；最高层描述的是整个人脸的全局特征.
+以人脸识别为例，深度学习可以针对人脸图像的分层特征表达进行：
+
+\qquad\ding{169} 最底层从原始像素开始学习滤波器，刻画局部的边缘和纹理特征；
+
+\qquad\ding{169} 中层滤波器通过将各种边缘滤波器进行组合，描述不同类型的人脸器官；
+
+\qquad\ding{169} 最高层描述的是整个人脸的全局特征.
+
 深度学习提供的是分布式的特征表示.
 在最高的隐含层，每个神经元代表一个属性分类器，例如性别、人种和头发颜色等.
 每个神经元将图像空间一分为二，$N$个神经元的组合就可以表达$2^N$次方个局部区域，而用浅层模型表达这些区域的划分至少需要$2^N$次方个模板.
@@ -1459,7 +1465,7 @@ SLIDE基于散列开发, 而非当前最富盛名的BP算法 (反向传播算法
     一些研究计算机视觉的学者将深度学习模型视为黑盒子，这种看法是不全面的.
     传统计算机视觉系统和深度学习模型存在着密切的联系，利用这种联系可以提出新的深度模型和训练方法. 用于行人检测的联合深度学习就是一个成功的例子.
 \begin{example}
-计算机视觉系统包含若干个关键的组戎模块.
+计算机视觉系统包含若干个关键的组件模块.
 例如，以行人检测器为例, 它包括特征提取、部件检测器、部件几何形变建模、部件遮挡推理和分类器等模块.
 在联合深度学习中，深度模型的各个层和视觉系统的各个模块可以建立对应关系.
 如果视觉系统中的关键模块在现有深度学习的模型中没有与之对应的层，则它们可以启发我们提出新的深度模型.
@@ -1600,7 +1606,7 @@ $y=F(x) + x$ 的形式可以通过前愦神经网络中的快捷连接来实现,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{ResidualNND2020202002.PNG}
+    \includegraphics[width=0.6\textwidth]{ResidualNND2020202002.pdf}
     \caption{残差学习网络的结构}
     \label{ResidualNND2020202002}
     \vspace{-0.4cm}
@@ -1746,7 +1752,8 @@ CNN能够提取对平移、缩放和旋转不变的观测数据的显著特征, 
 传统的CNN网络只能给出图像的LABEL, 但是在很多情况下需要对识别的物体进行首尾相连地分割,
 Berkeley团队提出 Fully Convolutional Networks (FCN) 方法, 用于图像语义分割,
 将图像级别的分类扩展到像素级别的分类, 获得 CVPR2015 的 最佳论文奖 \cite{Long2015-9593}.
-FCN将传统卷积网络后面的全连接层换成了卷积层, 这样网络输出不再是类别而是 heatmap; 同时为了解决因为卷积和池化对图像尺寸的影响, 提出使用上采样的方式恢复.
+FCN将传统卷积网络后面的全连接层换成了卷积层, 这样网络输出不再是类别而是热图;
+同时为了解决因为卷积和池化对图像尺寸的影响, 提出使用上采样的方式恢复.
 
 $\bullet$ FCN不含全连接层 (fc)的全卷积 (fully conv)网络. 可适应任意尺寸输入.
 
@@ -1836,12 +1843,12 @@ FCN的出现给物体分割提供了一个非常重要的解决思路, 其核心
 \begin{align*}
 \begin{tabularx}{0.25\textwidth}{llllllllllll}
 \cellcolor{intnull} {1} & \cellcolor{intnull} {2}&\cellcolor{intnull} {1}&\\
-\cellcolor{intnull} {0} &\cellcolor{intnull} { 0} \;\;\cellcolor{inteins}{\footnotesize 1}  & \cellcolor{intnull} {\footnotesize0} \;\;\cellcolor{inteins}{\footnotesize2} &\cellcolor{inteins}{\footnotesize \;\;\; 3}\\
+\cellcolor{intnull} {0} &\cellcolor{intnull} { 0} \;\;\cellcolor{inteins}{\footnotesize 1}  & \cellcolor{intnull} {\footnotesize0} \;\;\cellcolor{inteins}{\,\,\footnotesize2} &\cellcolor{inteins}{\footnotesize \;\;\; 3}\\
 \cellcolor{intnull} {-1}&\cellcolor{intnull} {-2} \;\;\cellcolor{inteins}{\footnotesize 4} &  \cellcolor{intnull} {\footnotesize-1}\;\; \cellcolor{inteins}{\footnotesize5}&\cellcolor{inteins}{\footnotesize\;\;\; 6} \\
 &\cellcolor{inteins}{\footnotesize \;\;\; 7}&\cellcolor{inteins}{\;\;\footnotesize \;\;\; 8}&\cellcolor{inteins}{\footnotesize \;\;\;9}\\
 \end{tabularx}
 \end{align*}
-\vspace{-0.2cm}
+\vspace{-0.3cm}
 \caption{第一行第一列像素值}
 \label{TUCon2020020302}
 \end{figure}
@@ -1858,24 +1865,16 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
   h[1,0]&h[0,0]&h[-1,0] \\
   h[1,-1]&h[0,-1]& h[-1,-1]
 \end{bmatrix}\Big)\Bigg)\\
-& x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
+& =x[-1,-1] \cdot h[1,1]+x[0,-1] \cdot h[0,1]+x[1,-1] \cdot h[-1,1] \\
        &+x[-1,0] \cdot h[1,0]+x[0,0] \cdot h[0,0]+x[1,0] \cdot h[-1,0] \\
        &+x[-1,1] \cdot h[1,-1]+x[0,1] \cdot h[0,-1]+x[1,1] \cdot h[-1,-1] \\
       =&[0,0,0]\cdot [1,2,1]^T+[0,1,2]\cdot [0,0,0]^T+[0,4,5]\cdot [-1,-2,-1]^T\\
       =& 0\cdot 1+0 \cdot 2+0 \cdot 1+0 \cdot 0+1 \cdot 0+2 \cdot 0+0 \cdot (-1)+4 \cdot (-2)+5 \cdot (-1)\\
       =&-13.
 \end{aligned}$$
-通过滑动卷积核, 就可以得到整张图片的卷积结果 (图 \ref{TUCon2020020302} 的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样甚至变小.
+通过滑动卷积核, 就可以得到整张图片的卷积结果 (图 \ref{TUCon2020020302} 的输出), 可以看出, 通过图像卷积后的新图像大小跟原来一样, 甚至变小.
 \vspace{-0.1cm}
 \end{example}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstinputlisting[language=matlab, caption={卷积运算},label=Covalg727]{Code/C7exam727.m}
-%%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-经过same卷积计算后图像大小不变 (算法 \ref{Covalg727}).
-图 \ref{TUCon2020020301} 卷积计算后图像大小不变.
-图 \ref{20161021135241205} 经过valid卷积后图像变小 (因为没有对所用像素进行卷积计算).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -1883,12 +1882,21 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
     \caption{2维完全卷积}
     \label{CNN20161021141659634}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstinputlisting[language=matlab, caption={卷积运算},label=Covalg727]{Code/C7exam727.m}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+经过same卷积计算后图像大小不变 (算法 \ref{Covalg727}).
+图 \ref{TUCon2020020301} 卷积计算后图像大小不变.
+图 \ref{20161021135241205} 经过valid卷积后图像变小 (因为没有对所用像素进行卷积计算).
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.3cm}
 \begin{figure}[H]
     \centering
     \animategraphics[width=0.4\textwidth,autoplay,controls]{2}{20161021135241205}{1}{9}
     \caption{valid卷积运算}
     \label{20161021135241205}
+    \vspace{-0.3cm}
 \end{figure}
 
 \href{https://cn.mathworks.com/help/matlab/ref/conv2.html?requestedDomain=www.mathworks.com}{Matlab} 中定义了2维卷积分为完全卷积、same卷积和valid卷积.
@@ -1912,12 +1920,13 @@ valid卷积 (滤镜全部在image里面的时候, 进行卷积运算, 可见滤�
 
 %%%%%%%%-------------------------------------------------------------------------------
 \subsubsection{反卷积 (后卷积, 转置卷积)}
-
 FCN称为后向卷积层\index{后向卷积层}, 有人称反卷积层, 也该称为转移卷积层.
 FCN的反卷积跟1维信号处理的反卷积计算不一样,
-CNN中有卷积层与池化层, 卷积层进行对图像卷积提取特征, 池化层对图像缩小一半筛选重要特征, 对于经典的图像识别CNN网络,
+CNN中有卷积层与池化层, 卷积层进行对图像卷积提取特征, 池化层对图像缩小一半, 筛选重要特征.
+
+对于经典的图像识别CNN网络,
 如IMAGENET, 最后输出结果是$1\times 1\times 1000$, 1000是类别种类.
-FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN最后的输出不是$1\times 1$, 是图片大小的32分之一, 但不影响反卷积的使用) .
+FCN都对最终$1\times 1$的结果使用反卷积 (事实上, FCN最后的输出不是$1\times 1$, 是图片大小的32分之一, 但不影响反卷积的使用) .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
 大小为$2\times 2$图像的反卷积过程如图 \ref{20170715175257862}, 其中输入$2\times 2$, 卷积核$4\times 4$, 滑动步长3,
@@ -1930,7 +1939,7 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
 \end{figure}
 具体过程为
 
-1) 输入图片每个像素进行一次full卷积, 根据full卷积大小计算, 可以知道每个像素的卷积后大小为 $1+4-1=4$, 即$4\times 4$大小的特征图, 输入有4个像素所以4个$4\times 4$的特征图.
+1) 输入图片每个像素进行一次full卷积, 根据full卷积大小计算, 可以知道每个像素卷积后大小为 $1+4-1=4$, 即$4\times 4$大小的特征图, 输入有4个像素所以4个$4\times 4$的特征图.
 
 2) 将4个特征图进行步长为3的融合 (即相加).
 
@@ -1943,9 +1952,11 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
 得到 $\textup{out} = (\textup{in} - 1) \times  s + k$,
 图 \ref{20170715175257862} 过程就可以写为$ (2 - 1)\times 3 + 4 = 7$.
 \end{example}
-这种反卷积的使用使得图像可以变大, FCN的反卷积方法是上面反卷积的一种变体, 这样就可以获得相应的像素值, 图像可以实现首尾相连地分割. \index{FCN}
+这种反卷积的使用使得图像可以变大, FCN的反卷积方法是上面反卷积的一种变体, 这样就可以获得相应的像素值, 
+图像可以实现首尾相连地分割. \index{FCN}
 图像的反卷积见图 \ref{Dconop0203} 的 \href{https://github.com/vdumoulin/conv_arithmetic}{full卷积原理}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.3cm}
 \begin{figure}[H]
 \centering
 \animategraphics[width=0.45\textwidth,autoplay,controls]{2}{Dconop0203}{1}{25}
@@ -2154,7 +2165,7 @@ FCN的研究人员都对最终$1\times 1$的结果使用反卷积 (事实上FCN�
 
 例子用$3\times 3$的矩阵卷积一个$7\times 7$的矩阵, 得到一个$3\times 3$的输出.
 输入和输出的维度是由公式 \eqref{AIC7} 决定的.
-如果你用一个$N_2\times N_2$的过滤器卷积一个$N_1\times N_1$的图像, padding为$P$, 步幅为$S$, $3\times 3$的输出变为
+如果你用一个$N_2\times N_2$的过滤器卷积一个$N_1\times N_1$的图像, 填充数为$P$, 步幅为$S$, $3\times 3$的输出变为
 \begin{align}\label{AIC7}
     \left\lfloor\frac{N_1+2P-N_2}{S}+1\right\rfloor \times \left\lfloor\frac{N_1+2P-N_2}{S}+1\right\rfloor
           \Rightarrow \left\lfloor\frac{7+0-3}2+1\right\rfloor\times\left\lfloor\frac{7+0-3}2+1\right\rfloor=3\times 3.
@@ -2281,6 +2292,7 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 \label{20190322141457724}
 \vspace{-0.4cm}
 \end{figure}
+\vspace{-0.4cm}
 %%%%%-----------------------------------------------------
 \subsubsection{池化操作}
 \textbf{池化}是卷积神经网络中一个重要的概念, 通过执行非线性下采样, 减少网络需要学习的参数个数, 去除冗余信息的同时保留关键信息, 从而简化输出.
@@ -2308,15 +2320,15 @@ $3\times 3$的过滤器必须完全处于图像中或者填充之后的图像区
 池化结果如式 \eqref{AIC7Pooling747}.
 \begin{align}\label{AIC7Pooling747}
 \begin{tabularx}{0.25\textwidth}{llllllllllll}
-\cellcolor{intnull} {1}&\cellcolor{intnull} { 0} & 2 & 3 \\
-\cellcolor{intnull} {4} &\cellcolor{intnull} { 6} & 6 & 8 \\
-3 & 1 &\cellcolor{intnull} { 1} &\cellcolor{intnull} { 0 }\\
-1 & 2 &\cellcolor{intnull} { 2} &\cellcolor{intnull} { 4}
+\cellcolor{intnull} {1}&\cellcolor{intnull} { 0} & \cellcolor{intdrei}{2} & \cellcolor{intdrei}{3} \\
+\cellcolor{intnull} {4} &\cellcolor{intnull} { 6} & \cellcolor{intdrei}{6} & \cellcolor{intdrei}{8} \\
+\cellcolor{intdrei}{3} & \cellcolor{intdrei}{1} &\cellcolor{intnull} { 1} &\cellcolor{intnull} { 0 }\\
+\cellcolor{intdrei}{1} & \cellcolor{intdrei}{2} &\cellcolor{intnull} { 2} &\cellcolor{intnull} { 4}
 \end{tabularx}
 \;\cellcolor{intnull} {\rightarrow}\quad
 \begin{tabularx}{0.15\textwidth}{llllllllllll}
-6 & 8 \\
-3 & 4\\
+\cellcolor{intnull} {6} & \cellcolor{intdrei}{8} \\
+\cellcolor{intdrei}{3} & \cellcolor{intnull} {4}\\
 \end{tabularx}
 \end{align}
 池化方法特征提取误差主要来自两个部分：
@@ -2644,7 +2656,7 @@ AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类�
 \end{figure}
 \begin{itemize}
 \item 基于 CPU 的计算是最简单、最容易得到的选项. 前面所述的示例在CPU 上运算, 但我们只对使用预先训练网络的简单示例推荐使用基于 CPU 的计算.
-\item 使用 GPU 可将网络训练时间从几天缩短到几小时. 可以在 MATLAB 中使用 GPU, 无需任何额外编程. 推荐 NVIDIA\textcopyright 3.0 计算能力的 GPU. 多个 GPU 能更加快处理速度.
+\item 使用 GPU 可将网络训练时间从几天缩短到几小时. 可以在 MATLAB 中使用 GPU, 无需任何额外编程. 推荐 NVIDIA\textcopyright 3.0 计算能力的 GPU. 多个 GPU 能更加快地处理速度.
 \item 基于云的 GPU 计算意味着您不必亲自购买和设置硬件. 为使用本地 GPU 而编写的 MATLAB 代码只需进行一些设置变更, 便可扩展为使用云资源.
 \end{itemize}
 \end{example}
@@ -2743,7 +2755,7 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{RNNAPP2019121500008.PNG}
+    \includegraphics[width=0.86\textwidth]{RNNAPP2019121500008.PNG}
     \caption{通道重排和ShuffleNet单元}
     \label{RNNAPP2019121500008}\vspace{-0.4cm}
 \end{figure}

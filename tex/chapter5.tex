@@ -992,7 +992,7 @@ LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和 (PreSS) 给�
 提出的方法结合了OP-ELM中$L_1$和$L_2$的约束, 使网络正规化.
 \begin{figure}[t]
     \begin{center}
-    \includegraphics[scale=0.7]{OPELM20161021.PNG}
+    \includegraphics[scale=0.7]{OPELM20161021.pdf}
     \end{center}
     \caption{OP-ELM的三部分框架结构: SLFN使用了ELM的随机初始化权重的方法 ;隐层节点排序使用了 LARS算法那; 最优隐节点的计算使用了含Leave-One-Out准则的OP-ELM模型.}
     \label{OPELM20161021fig2}
@@ -1058,8 +1058,9 @@ Tikhonov正则化是在许多不同的工作中独立发现的. 在Andrey Tikhon
 图 \ref{TROPEMLmodel20161021fig2} 显示了提出的正则化OP-ELM(TROP-ELM).
 \begin{figure}[H]
     \begin{center}
-    \includegraphics[scale=0.7]{TROPEMLmodel20161021.PNG}
+    \includegraphics[scale=0.7]{TROPEMLmodel20161021.pdf}
     \end{center}
+    \vspace{-0.2cm}
     \caption{图 \ref{OPELM20161021fig2} 的改进: TROP-ELM.}
     \label{TROPEMLmodel20161021fig2}
 \end{figure}
@@ -1074,7 +1075,7 @@ OP-ELM中使用的原始PreSS公式是由Allen在 \cite{MADavid1972} 中提出. 
 
 \textbf{算法1}
 
-1: 计算矩阵的逆$\bm C= (\bm X^T X)^{-1}$
+1: 计算矩阵的逆$\bm C= (\bm X^T X)^{-1}$;
 
 2: 计算$\bm P = \bm X\bm C$;
 
@@ -1123,7 +1124,7 @@ Golub等人\cite{GolubHeath1979-10292} 指出: 使用奇异值分解 (SVD) 方�
 由于在优化$\lambda$之前预先计算了效用矩阵($\bm A$, $\bm B$和$\bm C$), 所以此实现碰巧运行得非常快.
 在实际应用中,该算法中$\lambda$的优化是通过一种\textbf{Nelder–Mead最小化方法}来实现的, 这种方法恰好在这个问题上收敛得非常快(Matlab中的fminsearch函数).
 通过使用这个修改后的PreSS, OP-ELM对回归权重(隐藏层和输出层之间的回归)有$L_2$的惩罚, 对于这些权重, 神经元已经使用$L_1$的惩罚进行了排序.
-图 \ref{TROPEMLmodel20161021fig2} 是图 \ref{OPELM20161021fig2} 的修改版本 (图 \ref{OPELM20161021fig2} 是\textbf{OP-ELM}方法).
+图 \ref{TROPEMLmodel20161021fig2} 是图 \ref{OPELM20161021fig2} 的修改版本 (图 \ref{OPELM20161021fig2} 是 \textbf{OP-ELM} 方法).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{区间二型RVFL}
 现在我们使用新的学习范式来训练RVFL网络.
@@ -1145,7 +1146,7 @@ RVFL网络是一种经典的单层前向神经网络, 其结构如图 \ref{RVFLN
 \begin{figure}[tb]
 \centering
   \includegraphics[width=0.85\textwidth]{RVFLStruc.pdf}
-  \vspace{-0.3cm}
+  \vspace{-0.4cm}
   \caption{RVFL的网络结构.}
   \label{RVFLNN181102Sys}
 \end{figure}
@@ -2159,7 +2160,7 @@ f_{\textup{Normal}}(x)=
 
 \qquad (I) 当$m$为偶数时, 对全部交叉点依次进行两两配对, 构成$m/2$个交叉段.
 
-\qquad (II) 当$m$为奇数时, 对前$(m-1)$个交叉点依次进行两两配对, 构成$(m-1)/2$个交叉段, 而第$m$个交叉点则按单点交叉方法构成一个交叉段.
+\qquad (II) 当$m$为奇数时, 对前$m-1$个交叉点依次进行两两配对, 构成$(m-1)/2$个交叉段, 而第$m$个交叉点则按单点交叉方法构成一个交叉段.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
