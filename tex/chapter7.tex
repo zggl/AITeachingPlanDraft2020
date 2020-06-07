@@ -1343,7 +1343,7 @@ AdaBoost出现过三个最主要的理论结果,
 \toprule
 基于规则的系统    & 针对特定任务 的检测逻辑   &输出逻辑\\
 传统机器学习        &人为设计的特征检测方法       &输出逻辑\\
-浅层神网网络        & 浅层特征提取网络                 &输出子网络\\
+浅层神经网络        & 浅层特征提取网络                 &输出子网络\\
 深度学习                &底层特征提取                             &中层特征提取  & 高层特征提取  &输出子网络\\
 \toprule
 \end{tabular}
@@ -1883,7 +1883,7 @@ fliplr\Bigg(flipud\Big(\begin{bmatrix}
     \label{CNN20161021141659634}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstinputlisting[language=matlab, caption={卷积运算},label=Covalg727]{Code/C7exam727.m}
+\lstinputlisting[language=matlab, caption={same卷积运算},label=Covalg727]{Code/C7exam727.m}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% M 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 经过same卷积计算后图像大小不变 (算法 \ref{Covalg727}).
@@ -2611,7 +2611,7 @@ AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类�
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
- (\textbf{AlexNet 的Matlab示例}) 使用 AlexNet 对任何图像中的对象分类. 在本例中, 我们使用它对桌上安装的网络摄像头捕获的图像中的对象分类.
+ (\textbf{AlexNet 的Matlab示例}) 使用 AlexNet 可对任何图像中的对象分类. 本例用它对桌上安装的网络摄像头捕获的图像中的对象分类.
  除了 MATLAB, 还需使用下列工具:
 \begin{itemize}
 \item Deep Learning Toolbox™;
@@ -2635,18 +2635,15 @@ AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类�
     image (picture); % 显示图片
     title (char (label)); % 显示标签
 \end{Verbatim}
+\vspace{-0.2cm}
 \end{example}
-上一示例使用的是现成的网络. 完全不需要做任何修改, 因为 AlexNet训练所用的图像类似于我们想要分类的图像.
+上例使用的是现成的网络. 完全不需要做任何修改, 因为 AlexNet训练所用的图像类似于我们想要分类的图像.
 
 要使用 AlexNet 对未在原有网络中训练的对象分类, 可以通过迁移学习重新训练.
 迁移学习是将一个类型问题的知识应用于不同类型但相关的问题的学习方法. \index{迁移学习}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{example}
-本例只是剪去网络的最后3层, 用新图像重新训练.
-
-如果迁移学习不适合您的应用场景, 您可能需要从头开始训练您自己的网络. 这种方法产生最精确的结果, 但一般需要成百上千张带标签的图像和大量的计算资源.
-培训深度学习模型可能需要几小时、几天或几星期, 具体取决于数据量大小以及可投入使用的处理能力. 选择计算资源是您建立工作流程时的重要考虑因素.
-当前, 有三个计算选项: 基于 CPU、基于 GPU 和基于云三种.
+本例只剪去网络的最后3层, 用新图像重新训练.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -2654,12 +2651,26 @@ AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类�
 \caption{深度学习和机器学习}
 \label{CNNMatlabGPU001}
 \end{figure}
+
+如果迁移学习不适合自己的应用场景, 可能需要从头开始训练您自己的网络. 这种方法产生最精确的结果, 但一般需要成百上千张带标签的图像和大量的计算资源.
+培训深度学习模型可能需要几小时、几天或几星期, 具体取决于数据量大小, 以及可投入使用的处理能力.
+当前, 有三个计算选项: 基于 CPU、基于 GPU 和基于云三种.
+选择计算资源是建立工作流程时的重要考虑因素.
 \begin{itemize}
-\item 基于 CPU 的计算是最简单、最容易得到的选项. 前面所述的示例在CPU 上运算, 但我们只对使用预先训练网络的简单示例推荐使用基于 CPU 的计算.
-\item 使用 GPU 可将网络训练时间从几天缩短到几小时. 可以在 MATLAB 中使用 GPU, 无需任何额外编程. 推荐 NVIDIA\textcopyright 3.0 计算能力的 GPU. 多个 GPU 能更加快地处理速度.
-\item 基于云的 GPU 计算意味着您不必亲自购买和设置硬件. 为使用本地 GPU 而编写的 MATLAB 代码只需进行一些设置变更, 便可扩展为使用云资源.
+\item 基于 CPU 的计算是最简单、最容易得到的选项. 前面所述的示例在CPU 上运算, 只需对使用预先训练网络的简单示例, 一般推荐先使用基于 CPU 的计算.
+\item 使用 GPU 可将网络训练时间从几天缩短到几小时. 可以在 MATLAB 中使用 GPU, 无需任何额外编程. 推荐具有 NVIDIA\textcopyright 3.0 以上计算能力的 GPU.
+多个 GPU 能更加快地处理速度.
+\item 基于云的 GPU 计算意味着不需自行购买和设置硬件, 以及为使用本地 GPU 而编写的 MATLAB 代码; 只需进行一些设置变更, 便可扩展为使用云资源.
 \end{itemize}
+\vspace{-0.2cm}
 \end{example}
+
+通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图映射成一个固定长度的特征向量.
+以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务, 因为它们最后都期望得到整个输入图像的一个数值描述 (概率).
+AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率 (softmax归一化).
+如图 \ref{CNN10-01429-ag}, CNN在第三层后进行了特征融合. 通过最大池化融合了两个数据流, 同时, 进行了批量正则化和 relu层上的卷积运算.
+最后, 两个输出进行了整合, 第四层输出形态含有分类结果 \cite{PiramanayagamSaber2018-9591}.
+FCN对图像进行像素级的分类, 从而解决了语义级别的图像分割 (语义分割) 问题.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
@@ -2668,17 +2679,26 @@ AlexNet 最常用于图像分类. 它可将图像划分为 1000 个不同的类�
     \label{CNN10-01429-ag}
     \vspace{-0.4cm}
 \end{figure}
-通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图 (feature map) 映射成一个固定长度的特征向量.
-以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务, 因为它们最后都期望得到整个输入图像的一个数值描述 (概率), 比如AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率 (softmax归一化).
-FCN对图像进行像素级的分类, 从而解决了语义级别的图像分割 (语义分割) 问题.
+
 与经典的CNN在卷积层之后使用全连接层得到固定长度的特征向量进行分类 (全联接层＋softmax输出) 不同, FCN可以接受任意尺寸的输入图像, 采用反卷积层对最后一个卷积层的特征映射进行上采样,
 使它恢复到输入图像相同的尺寸, 从而可以对每个像素都产生了一个预测, 同时保留了原始输入图像中的空间信息, 最后在上采样的特征图上进行逐像素分类.
+如图 \ref{CNNfcn320203} 给出了FCN-32学习网络的结构, Unet ushape网络 \ref{CNNUnetushape0203} 以及平直化后的 Unet 学习网络 \ref{CNNUnet0203} .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.86\textwidth]{fcn32.pdf}
     \caption{FCN-32学习网络}
     \label{CNNfcn320203}
+    \vspace{-0.4cm}
+\end{figure}
+
+Softmax损失函数的结构如图 \ref{CNNSoftmaxLoss0203}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{SoftmaxLoss.pdf}
+    \caption{Softmax Loss}
+    \label{CNNSoftmaxLoss0203}
     \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2697,9 +2717,9 @@ FCN对图像进行像素级的分类, 从而解决了语义级别的图像分割
     \label{CNNUnet0203}
     \vspace{-0.4cm}
 \end{figure}
-VGGNet是牛津大学计算机视觉组 (Visual Geometry Group) 和Google DeepMind公司的研究员一起研发的深度卷积神经网络 \ref{CNNvgg16020301}.\index{VGGNet}
+VGGNet是牛津大学计算机视觉组和 Google DeepMind 公司的研究员一起研发的深度卷积神经网络 \ref{CNNvgg16020301}.\index{VGGNet}
 VGGNet探索了卷积神经网络的深度与其性能之间的关系, 通过反复堆叠$3\times 3$的小型卷积核和$2\times 2$的最大池化层,
-VGGNet成功地构筑了16\textasciitilde 19层深的卷积神经网络.
+VGGNet成功地构筑了 16\textasciitilde 19 层深的卷积神经网络.
 VGGNet相比之前最前沿的网络结构, 错误率大幅下降,
 VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$的最大池化核, 通过不断加深网络结构来提升性能.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2715,14 +2735,6 @@ VGGNet相关的论文全部使用了$3\times 3$的小型卷积核和$2\times 2$�
     \includegraphics[width=0.9\textwidth]{CNNvgg16LayerPara.png}
     \caption{vgg-16各层的参数和内存使用情况}
     \label{CNNvgg16LayerPara020302}
-    \vspace{-0.4cm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{SoftmaxLoss.pdf}
-    \caption{Softmax Loss}
-    \label{CNNSoftmaxLoss0203}
     \vspace{-0.4cm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2763,13 +2775,13 @@ $\bullet$ 堆叠地使用瓶颈单元ShuffleNet单.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{CNN应用场景——计算机视觉问题}
 
-\qquad\ding{172} 图像分类 ( Classification): 识别出该图像属于哪个类别.
+\qquad\ding{172} 图像分类 : 识别出该图像属于哪个类别.
 
-\qquad\ding{173} 目标定位 ( Localization): 在图像分类的基础上,  定位找到对象在图像中的位置.
+\qquad\ding{173} 目标定位: 在图像分类的基础上,  定位找到对象在图像中的位置.
 
-\qquad\ding{174} 目标检测 ( Detection): 给出在图像内所有该类别的目标和对应的位置.
+\qquad\ding{174} 目标检测: 给出在图像内所有该类别的目标和对应的位置.
 
-\qquad\ding{175} 图像分割 ( Segmentation): 具体到像素级别的图像处理.
+\qquad\ding{175} 图像分割: 具体到像素级别的图像处理.
 
 \qquad\ding{176} 无人驾驶汽车在接近人行横道线时减速.
 
