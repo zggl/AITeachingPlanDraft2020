@@ -1,18 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'AIMaster2020.blg'
-[39] biber-MSWIN32:315> INFO - === 
-[72] Biber.pm:371> INFO - Reading 'AIMaster2020.bcf'
-[195] Biber.pm:889> INFO - Found 65 citekeys in bib section 0
-[212] Biber.pm:4093> INFO - Processing section 0
-[229] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
-[239] bibtex.pm:1523> INFO - LaTeX decoding ...
-[438] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
-[842] Utils.pm:193> WARN - Entry 'BasiratPeterandRoth2019' (bib/qbook.bib): Invalid format 'May 9-10' of date field 'date' - ignoring
-[927] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
-[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1015] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1015] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[1100] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
-[1135] bbl.pm:739> INFO - Output to AIMaster2020.bbl
-[1136] Biber.pm:110> INFO - WARNINGS: 2
+[45] biber-MSWIN32:315> INFO - === 
+[81] Biber.pm:371> INFO - Reading 'AIMaster2020.bcf'
+[230] Biber.pm:889> INFO - Found 67 citekeys in bib section 0
+[247] Biber.pm:4093> INFO - Processing section 0
+[264] Biber.pm:4254> INFO - Looking for bibtex format file 'bib/qbook.bib' for section 0
+[277] bibtex.pm:1523> INFO - LaTeX decoding ...
+[504] bibtex.pm:1340> INFO - Found BibTeX data source 'bib/qbook.bib'
+[1151] Utils.pm:193> WARN - month field 'Jun' in entry 'PhysRev2020-062207' is not an integer - this will probably not sort properly.
+[1262] Utils.pm:193> WARN - month field 'Nov' in entry 'Nagi2011-6144164' is not an integer - this will probably not sort properly.
+[1286] Utils.pm:193> WARN - Entry 'BasiratPeterandRoth2019' (bib/qbook.bib): Invalid format 'May 9-10' of date field 'date' - ignoring
+[1367] Utils.pm:193> WARN - I didn't find a database entry for 'Rong2009-4804697' (section 0)
+[1543] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1544] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1544] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1544] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[1652] bbl.pm:636> INFO - Writing 'AIMaster2020.bbl' with encoding 'UTF-8'
+[1692] bbl.pm:739> INFO - Output to AIMaster2020.bbl
+[1693] Biber.pm:110> INFO - WARNINGS: 4

@@ -277,6 +277,70 @@
       \verb http://arxiv.org/abs/1710.09967
       \endverb
     \endentry
+    \entry{PhysRev2020-062207}{article}{}
+      \name{author}{6}{}{%
+        {{hash=648245f0986cb08138728e8e2d19bc47}{%
+           family={Choudhary},
+           familyi={C\bibinitperiod},
+           given={Anshul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=808c1bb18da0309d237ed522780b6895}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b50e514939c6031d07e2df9ea6347097}{%
+           family={Holliday},
+           familyi={H\bibinitperiod},
+           given={Elliott\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=caaf2d6cc2fd959f17eeb9b6cc1e163a}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Scott\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=911b167c0701aeaef3c8f78767155faa}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Sudeshna},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45e1435063d5d07c4f0df9233444ef76}{%
+           family={Ditto},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{0d6a4ac838fc261f35817adaed7fc75a}
+      \strng{fullhash}{12c6d8d875517cb1b909f677a6831449}
+      \strng{bibnamehash}{0d6a4ac838fc261f35817adaed7fc75a}
+      \strng{authorbibnamehash}{0d6a4ac838fc261f35817adaed7fc75a}
+      \strng{authornamehash}{0d6a4ac838fc261f35817adaed7fc75a}
+      \strng{authorfullhash}{12c6d8d875517cb1b909f677a6831449}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Phys. Rev. E}
+      \field{month}{6}
+      \field{title}{Physics-enhanced neural networks learn order and chaos}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{062207}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.101.062207
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.101.062207
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.101.062207
+      \endverb
+    \endentry
     \entry{Cortes1995Support}{article}{}
       \name{author}{2}{}{%
         {{hash=17acda211a651e90e228f1776ee07818}{%
@@ -1534,6 +1598,76 @@
       \field{year}{2010}
       \field{pages}{158\bibrangedash 62}
       \range{pages}{5}
+    \endentry
+    \entry{Nagi2011-6144164}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=a5d865bc62dbc0b6ae20eef35f1af57b}{%
+           family={{Nagi}},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5307b3accda8918f69335e9f09dffe36}{%
+           family={{Ducatelle}},
+           familyi={D\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7a8a68137d21c362d319d49362b93554}{%
+           family={{Di Caro}},
+           familyi={D\bibinitperiod},
+           given={G.\bibnamedelimi A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a4741b97d7f5dc4a076b08b1ce43344d}{%
+           family={{Cireşan}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=630ac759cc505a878c2925b304be4d99}{%
+           family={{Meier}},
+           familyi={M\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=8cd627d0a35382c0d35d602d86afdce4}{%
+           family={{Giusti}},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7b6873a3ccc891686375c4f1fde5e43c}{%
+           family={{Nagi}},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=07e9fb186fd9976e6be82e64365dc308}{%
+           family={{Schmidhuber}},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fdc59763ebfde507299954f894bd75e3}{%
+           family={{Gambardella}},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{fullhash}{373998d5acc7455ad00b805b037cb69d}
+      \strng{bibnamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authorbibnamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authornamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authorfullhash}{373998d5acc7455ad00b805b037cb69d}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Automatic recognition of gestures using computer vision is important for many real-world applications such as sign language recognition and human-robot interaction (HRI). Our goal is a real-time hand gesture-based HRI interface for mobile robots. We use a state-of-the-art big and deep neural network (NN) combining convolution and max-pooling (MPCNN) for supervised feature learning and classification of hand gestures given by humans to mobile robots using colored gloves. The hand contour is retrieved by color segmentation, then smoothened by morphological image processing which eliminates noisy edges. Our big and deep MPCNN classifies 6 gesture classes with 96\% accuracy, nearly three times better than the nearest competitor. Experiments with mobile robots using an ARM 11 533MHz processor achieve real-time gesture recognition performance.}
+      \field{booktitle}{2011 IEEE International Conference on Signal and Image Processing Applications (ICSIPA)}
+      \field{month}{11}
+      \field{title}{Max-pooling convolutional neural networks for vision-based hand gesture recognition}
+      \field{year}{2011}
+      \field{pages}{342\bibrangedash 347}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICSIPA.2011.6144164
+      \endverb
+      \keyw{data gloves;gesture recognition;human-robot interaction;image colour analysis;image denoising;image retrieval;image segmentation;learning (artificial intelligence); mobile robots;neural nets;robot vision;hand gesture recognition;max-pooling convolutional neural networks;computer vision;HRI interface;human-robot interaction; mobile robots;supervised feature learning;image classification;colored gloves;image retrieval;color image segmentation;morphological image processing;image denoising; ARM 11 533MHz processor;Image color analysis;Gesture recognition;Training;Convolution;Real time systems;Mobile robots}
     \endentry
     \entry{Ng2004-32636}{article}{}
       \name{author}{1}{}{%
