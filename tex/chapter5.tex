@@ -968,6 +968,12 @@ Neural Networks: The Universality Theorem, V 1.0.0 (655 KB) 作者： Mayank Jha
 
 《Neural Networks\_The Universality Theorem》. The original proof for this principle was given by George Cybenko in 1989, and it used concepts from a branch of abstract math called functional analysis.
 Michael Nielson gave a visual proof in his freely available online book \href{http://neuralnetworksanddeeplearning.com/chap4.html}{Nueral Nets and Deep Learning}.
+
+示例代码
+%%%%%%%%%%%%%%%%%%%%%%%%%% matlab 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstinputlisting[language=Matlab,caption={FNN逼近示例.}]{code/FNN3x5x125x1x3Isinxtest.m}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% matlab 代码  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{其它神经学习算法}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -998,7 +1004,7 @@ LOO误差有一个封闭的矩阵形式, 由Allen的预测平方和 (PreSS) 给�
     \label{OPELM20161021fig2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Tikhonov 正则化}\index{Tikhonov Regularization}
+\subsection{Tikhonov 正则化}\index{Tikhonov Regularization}
 Tikhonov正则化以Andrey Tikhonov的名字命名, 是不适定问题最常用的正则化方法之一.
 在统计学上, 这种方法被称为岭回归, 有多个独立存在的版本, 它也被称为\textbf{Tikhonov–Miller 方法}、\textbf{Phillips–Twomey 方法}, 约束线性反演方法和线性正则化索引方法. \index{岭回归}
 它与针对非线性回归最小二乘问题的Levenberg-Marquardt算法有关.
