@@ -221,8 +221,8 @@
 % 设置图片的标题样式
 \DeclareCaptionFont{kaishu}{\kaishu}
 \captionsetup{format=plain,labelformat=simple,labelsep=space,justification=centering,font={small,kaishu}}
-\captionsetup[bi-first]{bi-first}
-\captionsetup[bi-second]{bi-second}
+%\captionsetup[bi-first]{bi-first}
+%\captionsetup[bi-second]{bi-second}
 \captionsetup[sub]{font=footnotesize}
 \DeclareCaptionOption{bi-first}[]{
     \def\tablename{\q@tablename}
